@@ -138,18 +138,20 @@
           <li>schedule recordings on an audio/video source, and maintain these recordings afterwards;</li>
           <li>enable time-shifting scenarios;</li>
           <li>interact with an audio/video source to present the audio/video program;</li>
-          <li>interact with the audio/video source for presenting other supplemental content appropriately such as emergency alerts.</li>
+          <li>interact with the audio/video source for presenting other supplemental content appropriately such as emergency alerts;</li>
+          <li>access Common Interface (CI) cards, when available.</li>
         </ul>
 
-        <p class="todo">A few additional items to discuss/clarify. Some of them depend on the first one, meaning on the targeted runtime for the API. In a regular Web runtime environment, user permissions and security considerations will apply and may restrict the surface exposed.</p>
-        <ul class="todo">
-          <li>Are the APIs intended to run in a regular Web runtime, a TV specific one, a bit of both (i.e. two conformance levels)?</li>
-          <li>Ability to scan channels?</li>
-          <li>Access to CI Cards?</li>
-          <li>Relationship with broadcast protocols (e.g. how to extract the EPG from the broadcast signal)</li>
-          <li>Are radios in scope? If so, should the group name be changed, e.g. to "Tuner Control Working Group"?</li>
-          <li>Possibility to define a purely IP-based audio/video source? Is this just a "sourcing technology" or does it impact the API?</li>
-          <li>Is the use of "audio/video source" above a good idea? Prefer "tuner"?</li>
+        <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. The Working Group may introduce a second level of conformance to expose features that may prove more specific to tuner-centric devices (TV and radio sets typically), such as the ability to scan channels.</p>
+
+        <p>The API layer will be defined with appropriate abstraction model, and will address its relationship with broadcast protocols. TV tuners, radio tuners, purely IP-based audio/video source and other audio/video sources (such as HDMI) are in scope.</p>
+
+        <p>The Working Group expects to refine the technical solution based on discussions as it makes progress on its deliverables, including answering questions such as:</p>
+
+        <ul>
+          <li>how to define the mapping between the API layer and the underlying broadcast protocol;</li>
+          <li>how to source in-band media resource tracks;</li>
+          <li>how to control the entire TV UI, e.g. whether to use a containing web page where the <code>&lt;video&gt;</code> element resides or to use the current TV model where any web page for interactive is overlaid on top of the TV stream.</li>
         </ul>
  
         <div id="section-out-of-scope">
