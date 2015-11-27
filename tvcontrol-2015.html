@@ -71,7 +71,7 @@
     <main>
       <h1 id="title"><i class="todo">[DRAFT]</i> TV Control Working Group Charter</h1>
       
-      <p class="mission">The <strong>mission</strong> of the <a href="#">TV Control Working Group</a> is to provide methods that enable a Web page to browse and control channel-based video sources such as a TV or a radio tuner.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="#">TV Control Working Group</a> is to provide methods that enable a Web page to browse and control channel-based audio and video sources such as a TV or a radio tuner.</p>
             
       <div class="noprint">
         <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/#####/join">Join the TV Control Working Group</a>.</p>
@@ -134,9 +134,9 @@
         <ul>
           <li>provide EPG information associated with the available audio/video sources, including the list of programs and any related information, examples of these are channel number, producers, directors, actors, synopsis, rating etc;</li>
           <li>control and switch an audio/video source to a specific channel identifier based on EPG data;</li>
-          <li>present the selected channel audio/video stream;</li>
+          <li>present the selected channels' audio and video streams;</li>
           <li>enable time-shifting scenarios;</li>
-          <li>enable parental control at the channel level based on EPG data;</li>
+          <li>enable parental control based on EPG data;</li>
           <li>schedule recordings on an audio/video source, and maintain these recordings afterwards;</li>
           <li>interact with the audio/video source for presenting other supplemental content appropriately such as emergency alerts;</li>
           <li>scan channels available on an audio/video source;</li>
@@ -145,7 +145,7 @@
 
         <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. The Working Group may introduce a second level of conformance to expose features that may prove more specific to tuner-centric devices (TV and radio sets typically), such as the ability to scan channels.</p>
 
-        <p>The API layer will be defined with appropriate abstraction model, and will address its relationship with broadcast protocols. TV tuners, radio tuners, purely IP-based audio/video source and other audio/video sources (such as HDMI) are in scope.</p>
+        <p>The API layer will be defined with appropriate abstraction model, and will address its relationship with broadcast protocols. TV tuners, radio tuners, purely IP-based audio/video sources and other audio/video sources (such as HDMI) are in scope.</p>
 
         <p>The Working Group expects to refine the technical solution based on discussions as it makes progress on its deliverables, including answering questions such as:</p>
 
@@ -157,11 +157,12 @@
  
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this working group.</p>
+            <p>The following features are out of scope, and will not be addressed by this working group:</p>
             
             <ul class="out-of-scope">
-              <li>The underlying video sourcing method and technologies</li>
-              <li>The presentation technology and/or presentation application of TV program and supplemental content</li>
+              <li>the underlying video sourcing method and technologies;</li>
+              <li>the presentation technology and/or presentation application of TV program and supplemental content;</li>
+              <li>profiling of the specification to particular device limitations (such as number of simultaneous streams viewable)</li>
             </ul>
         </div>
 
