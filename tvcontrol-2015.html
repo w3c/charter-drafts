@@ -143,7 +143,7 @@
           <li>access Common Interface (CI) cards, when available.</li>
         </ul>
 
-        <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. Specifically, the user must always be in control of privacy-sensitive information that may be conveyed through the APIs, such as the rendering of tuner output, or channel configurations. The Working Group may introduce a second level of conformance to expose features that may prove more specific to tuner-centric devices (TV and radio sets typically), such as the ability to scan channels.</p>
+        <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. Specifically, the user must always be in control of privacy-sensitive information that may be conveyed through the APIs, such as the rendering of tuner output, or channel configurations. In addition, the user must be able to browse Web content, including any tuner functionality related to TV/radio services provided by third parties, in a secure way.</p>
 
         <p>The API layer will be defined with appropriate abstraction model, and will address its relationship with broadcast protocols. TV tuners and radio tuners are in scope. Additional specification for purely IP-based audio/video sources and other audio/video sources (such as HDMI) will be considered based on the capabilities of those sources.</p>
 
@@ -257,9 +257,6 @@
           <dl>
             <dt><a href="https://www.w3.org/community/autowebplatform/">Automotive and Web Platform Business Group</a></dt>
             <dd>The Automotive and Web Platform Business Group discusses radio use cases through its Media Tuner Task Force. This Working Group will interact with that Task Force to discuss possible requirements on the TV Control API.</dd>
-
-            <dt><a href="http://www.w3.org/auto/wg/">Automotive Working Group</a></dt>
-            <dd>The Automotive Working Group develops specifications targeted at priviledged runtimes that may be similar to the runtime that this Working Group may consider to expose tuner-centric functionalities. This Working Group will interact with the Automotive Working to discuss a possible reuse of its security model and considerations.</dd>
 
             <dt><a href="http://www.w3.org/2009/dap">Device APIs Working Group</a></dt>
             <dd>The Device APIs Working Group develops the <a href="http://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a> and the <a href="http://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> specifications together with the Web Real-Time Communication Working Group. This Working Group may need to extend the <code>MediaStream</code> to add a buffering mechanism that supports basic seekability and will interact with the Device APIs Working Group on that topic.</dd>
