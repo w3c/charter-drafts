@@ -5,3 +5,5 @@ get added to this repo necessarily have any official standing at all—anyone
 can create a draft charter here for public discussion. If you’d like to have
 push access to add a draft charter to the repo,
 [file an issue requesting access](https://github.com/w3c/charter-drafts/issues).
+
+The template: http://w3c.github.io/charter-drafts/charter-template.html
