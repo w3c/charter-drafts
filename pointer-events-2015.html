@@ -136,17 +136,52 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p><i class="todo">Brief background of landcape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
+        <p>Web browsers can receive input in a variety of ways including mouse, touch, and pen input. A “pointer” is an abstract form of input that can be any point of contact on a input surface made by a mouse cursor, pen, finger, or multiple fingers.</p>
 
-        <p>W3C has two competing standards for defining touch interfaces: the <a href="http://www.w3.org/TR/touch-events/">Touch Events specification</a> and the <a href="http://www.w3.org/TR/pointerevents/">Pointer Events 1.0 specification</a>. Each has browser implementation, dependent script libraries, and developer uptake. This Working Group will reconcile the relationship and best features between these technologies.</p>
+        <p>Pointer Events provide support for handling mouse, touch, and pen input for web sites and web applications through DOM Events.For example, a content creator using Web Pointer Events would have only use a single model, rather than separate code paths for mouse events, touch events, and pen-tablet events, making authoring content much more efficient and inclusive.</p>
 
-        <p>Among the features under discussion are the touch-action CSS property, behavior in sending touch events when scrolling starts, and the relationship and mappings between mouse events, touch events, and pointer events.</p>
+        <p>This Working Group seeks to enhance the features delivered in the Pointer Events Level 1 Recommendation by exploring changes, such as:</p>
+          <ul>
+            <li>Add direction-specific values for finer=grained control of panning touch behaviors</li>
+            <li>Reducing hit-testing via implicit capture</li>
+            <li>Additional clarifications of API behavior and performance optimizations</li>
+          </ul>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
             <p>The following features are out of scope, and will not be addressed by this working group.</p>
-            
+
             <ul class="out-of-scope">
+              <li>Gestures. Examples of out-of-scope gesture functionality and APIs include, but are not limited to, the following:
+                <ul>
+                  <li>Comparisons between pointers to determine an action (e.g., panning for scrollable regions, pinch for zooming, press-and-hold for a mouse right-click).</li>
+                  <li>Comparisons between time stamps of pointers to determine an action.</li>
+                  <li>Comparisons between combinations of pointers and/or their time stamps to determine an action.</li>
+                  <li>Determining an action based on comparison to a threshold (e.g., scroll speed based on a pressure threshold, panning based on distance threshold, press-and-hold based on a timing threshold).</li>
+                  <li>APIs or functionality processing data that is indicative of a confidence level that a pointer is associated with a gesture.</li>
+                </ul>
+              </li>
+
+              <li>Higher level APIs used to convey user intent.
+                <ul>
+                  <li>High-level representational events, which are in the scope of the Web Events and IndieUI working groups.</li>
+                </ul>
+              </li>
+
+              <li>Input targeting methods and disambiguation.
+                <ul>
+                  <li>The algorithms and underlying systems used to determine target elements and pointer location.</li>
+                  <li>Algorithms to determine unintended input (e.g. palm rejection). </li>
+                </ul>
+              </li>
+
+              <li>Equipment used to detect input events.
+                <ul>
+                  <li>Sensors, algorithms, and systems used to detect physical interactions and convert them into input events.</li>
+                </ul>
+              </li>
+
+              <li>Ink and handwriting APIs.</li>
             </ul>
         </div>
 
@@ -174,9 +209,9 @@
             The working group will deliver the following W3C normative specifications:
           </p>
           <dl>
-            <dt id="pointerevents-v2" class="spec"><a href="http://www.w3.org/TR/pointerevents/">Pointer Events 2.0</a></dt>
+            <dt id="pointerevents-v2" class="spec"><a href="http://www.w3.org/TR/pointerevents/">Pointer Events Level 2</a></dt>
             <dd>
-              <p>This specification build upon both the <a href="http://www.w3.org/TR/pointerevents/">Pointer Events 1.0 specification</a> and the <a href="http://www.w3.org/TR/touch-events/">Touch Events specification</a>. This specification defines a unified interface for web applications to access event information related to pointing devices. This includes mouse, pen, multi-touch screen, and related input mechanisms. While device specific information such as pressure or contact geometry might be included in the events, web developers can program against the events without needing to know what type of device created them.</p>
+              <p>This specification build upon the <a href="http://www.w3.org/TR/pointerevents/">Pointer Events Level 1 specification</a>. This specification defines a unified interface for web applications to access event information related to pointing devices. This includes mouse, pen, multi-touch screen, and related input mechanisms. While device specific information such as pressure or contact geometry might be included in the events, web developers can program against the events without needing to know what type of device created them.</p>
 
               <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">Member Submission</a> | <a href="#">Adopted from WG/CG Foo</a> | <a href="#">Working Draft</a>]</i></p>
               
@@ -211,7 +246,7 @@
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-            <dt>none</dt>
+            <dt><a href="https://www.w3.org/community/touchevents/">Touch Events Community Group</a></dt>
           </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
@@ -255,7 +290,7 @@
           Most Pointer Events Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work on the public mailing list <a id="public-name" href="mailto:public-pointer-events@w3.org">public-pointer-events@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-pointer-events/">archive</a>). The public is invited to post messages to this list.
+          This group primarily conducts its technical work on the public mailing list <a id="public-name" href="mailto:public-pointer-events@w3.org">public-pointer-events@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-pointer-events/">archive</a>). The public is invited to post messages to this list. Additional discussion is conducted on <a href="https://github.com/w3c/pointerevents/">Github</a>.
         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
