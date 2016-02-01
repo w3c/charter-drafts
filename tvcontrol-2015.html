@@ -170,7 +170,7 @@
           <h3>Success Criteria</h3>
           <p>In order to advance to  <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have at least two independent implementations of each of feature defined in the specification.</p>
 
-          <p>Each specification should contain a section detailing any known security implications for implementers, Web authors, and end users.</p>
+          <p>Each specification should contain a section detailing any known security or privacy implications for implementers, Web authors, and end users.</p>
         </div>
       </section>
 
@@ -250,9 +250,9 @@
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD" title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working or Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD" title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
 
-        <p>Additional technical coordination with the following Working Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:</p>
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:</p>
 
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
@@ -260,14 +260,14 @@
             <dt><a href="https://www.w3.org/community/autowebplatform/">Automotive and Web Platform Business Group</a></dt>
             <dd>The Automotive and Web Platform Business Group discusses radio use cases through its Media Tuner Task Force. This Working Group will interact with that Task Force to discuss possible requirements on the TV Control API.</dd>
 
-            <dt><a href="https://www.w3.org/2009/dap">Device APIs Working Group</a></dt>
-            <dd>The Device APIs Working Group develops the <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a> and the <a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> specifications together with the Web Real-Time Communication Working Group. This Working Group may need to extend the <code>MediaStream</code> to add a buffering mechanism that supports basic seekability and will interact with the Device APIs Working Group on that topic.</dd>
+            <dt><a href="https://www.w3.org/2009/dap">Device APIs Working Group</a> and <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communication Working Group</a></dt>
+            <dd>The Device APIs Working Group and the Web Real-Time Communication Working Group jointly develop the <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a> and the <a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> specifications. This Working Group may need to extend the <code>MediaStream</code> to add a buffering mechanism that supports basic seekability and will interact with these groups on that topic.</dd>
+
+            <dt><a href="https://www.w3.org/html/wg">HTML Media Extensions Working Group</a></dt>
+            <dd>The HTML Media Extensions Working Group develops extensions to the <code>HTMLMediaElement</code> interface. The buffering mechanism that this Working Group may add to <code>MediaStream</code> will change the restrictions on the behavior and attribute values of the associated <code>HTMLMediaElement</code>. This Working Group will liaise with the HTML Media Extensions Working Group on that topic.</dd>
 
             <dt><a href="https://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
             <dd>The Web and TV IG handles liaisons with a number of external organizations that define or reference interactive TV platforms. This Working Group will use the Web and TV IG as coordination point to interact with these external organizations, in particular to discuss specific requirements on the TV Control API that these external organizations may raise.</dd>
-
-            <dt><a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communication Working Group</a></dt>
-            <dd>The Web Real-Time Communication Working Group develops the <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a> and the <a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> specifications together with the Device APIs Working Group. This Working Group may need to extend the <code>MediaStream</code> to add a buffering mechanism that supports basic seekability and will interact with the Web Real-Time Communication Working Group on that topic.</dd>
           </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
