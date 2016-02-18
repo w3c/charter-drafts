@@ -101,7 +101,7 @@
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name]</i>
+              Bin Hu
             </td>
           </tr>
           <tr>
@@ -109,7 +109,7 @@
               Team Contacts
             </th>
             <td>
-              <i class="todo">[team contact name]</i> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
+              François Daoust (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -132,7 +132,7 @@
 
         <p>The scope of this Working Group is to define an API layer that is agnostic of any underlying audio/video sourcing technologies to enable a web-based application to:</p>
         <ul>
-          <li>provide Electronic Program Guide (EPG) information associated with the available audio/video sources, including the list of programs and any related information, examples of these are channel number, producers, directors, actors, synopsis, rating etc;</li>
+          <li>provide Electronic Program Guide (EPG) information associated with the available audio/video sources, including the list of programs and any related information, examples of these are channel number, producers, directors, actors, synopsis, rating, as well as captioning, secondary audio channel, etc;</li>
           <li>control and switch an audio/video source to a specific channel identifier based on EPG data;</li>
           <li>present the selected channels' audio and video streams;</li>
           <li>enable time-shifting scenarios;</li>
@@ -143,7 +143,7 @@
           <li>access Common Interface (CI) cards, when available.</li>
         </ul>
 
-        <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. Specifically, the user must always be in control of privacy-sensitive information that may be conveyed through the APIs, such as the rendering of tuner output, or channel configurations. In addition, the user must be able to browse Web content, including any tuner functionality related to TV/radio services provided by third parties, in a secure way.</p>
+        <p>The API layer will meet the usual requirements of the Web runtime, including privacy and security requirements. Specifically, the user must always be in control of privacy-sensitive information that may be conveyed through the APIs, such as the rendering of tuner output, or channel configurations. In addition, the user must be able to browse Web content, including any tuner functionality related to TV/radio services provided by third parties, in a secure way. The user must also be able to gain information from the API and control actions via the API if they use assistive technologies or custom user agent settings.</p>
 
         <p>The API layer will be defined with appropriate abstraction model, and will address its relationship with broadcast protocols. TV tuners and radio tuners are in scope. Additional specification for purely IP-based audio/video sources and other audio/video sources (such as HDMI) will be considered based on the capabilities of those sources.</p>
 
@@ -250,13 +250,16 @@
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working or Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD" title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working or Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD" title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification. Given the expected milestones, this Working Group will pay particular attention to coordinate with the relevant horizontal Groups early on, and ensure that these Groups be given sufficient time to perform reviews and resolve resulting issues with this Working Group.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:</p>
 
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
+            <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures (APA) Working Group</a></dt>
+            <dd>The TV Control Working Group will liaise with the APA Working Group to identify and address potential accessibility issues on the level of UI, APIs, and assistive technologies.</dd>
+
             <dt><a href="https://www.w3.org/community/autowebplatform/">Automotive and Web Platform Business Group</a></dt>
             <dd>The Automotive and Web Platform Business Group discusses radio use cases through its Media Tuner Task Force. This Working Group will interact with that Task Force to discuss possible requirements on the TV Control API.</dd>
 
