@@ -147,9 +147,9 @@
 
 <p>URIs can be used to access machine interpretable descriptions of things. These descriptions enable the automatic generation of scriptable objects, whose properties, actions and events correspond to those of the thing the object stands for. An object on one server can act as a proxy for an object on another server. Application developers are shielded from the implementation details of how objects are coupled, allowing platform developers to choose the transport protocols and communication patterns best suited to the context. Servers can be provided at a wide range of scales from microcontrollers to cloud-based server farms.</p>
 
-<p><img style="margin-left:20%;width:60%" alt="diagram showing two servers, one acting as a proxy for the other" src="wot-proxies.png" /></p>
+<p><img style="margin-left:10%;width:75%" alt="diagram showing two servers, one acting as a proxy for the other" src="wot-proxies.png" /></p>
 
-<p>The diagram above shows a thing on server A that acts as a proxy for a thing on server B which is coupled to a sensor and actuator. The proxy on server A could be set up by a script on that server, or by a script on server B. The latter is useful when server A is on the public Internet and server B is behind a firewall, and you want to provide public access to the thing from server A. Web page scripts can create local proxies for things on servers, subject to the protocols supported by Web browsers and the single origin security policy. The following diagram shows how the abstraction layer for "things" fits into the communications stack.</p>
+<p>The above diagram shows a thing on server A that acts as a proxy for a thing on server B which is coupled to a sensor and actuator. The proxy on server A could be set up by a script on that server, or by a script on server B. The latter is useful when server A is on the public Internet and server B is behind a firewall, and you want to provide public access to the thing from server A. Web page scripts can create local proxies for things on servers, subject to the protocols supported by Web browsers and the single origin security policy. The following diagram shows how the abstraction layer for "things" fits into the communications stack.</p>
 
 <p><img style="margin-left:5%;width:80%" alt="diagram showing layers in the web of things communication stack" src="wot-comms-stack.png" /></p>
 
@@ -306,13 +306,13 @@
           Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/2015/Process-20150901/#confidentiality-levels">public</a>. Meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository, and may permit direct public contribution requests.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">[name]</i> Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="http://www.w3.org/WoT/WG/">Web of Things Working Group home page.</a>
         </p>
         <p>
-          Most <i class="todo">[name]</i> Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most Web of Things Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="http://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>). The public is invited to post messages to this list.
+          This group primarily conducts its technical work on the public mailing list <a id="public-name" href="mailto:public-wot-wg@w3.org">public-wot-wg@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-wot-wg/">archive</a>). The public is invited to post messages to this list.
         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
@@ -362,7 +362,7 @@
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <i class="todo">[pick a license, one of:]</i>  <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a> | <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
 
 
@@ -375,6 +375,7 @@
           This charter has been created according to <a href="https://www.w3.org/Consortium/Process/groups#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
+<!--
         <section id="history">
           <h3>
             Charter History
@@ -444,6 +445,7 @@
             </tbody>
           </table>
         </section>
+-->
       </section>
     </main>
 
@@ -453,11 +455,8 @@
       <address>
         <a href="mailto:dsr@w3.org">Dave Raggett</a>, <a href="mailto:ashimura@w3.org">Kazuyuki Ashimura</a>,
       </address>
-      <p class="issue"><b>Issue:</b> Do we really need a copyright notice on a charter?</p>
-
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        <i class="todo">[yyyy]</i>
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
