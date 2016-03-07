@@ -147,7 +147,9 @@
 
 <p>URIs can be used to access machine interpretable descriptions of things. These descriptions enable the automatic generation of scriptable objects, whose events, properties and actions correspond to those of the thing the object stands for. An object on one server can act as a proxy for an object on another server. Application developers are shielded from the implementation details of how objects are coupled, allowing platform developers to choose the transport protocols and communication patterns best suited to the context. Servers can be provided at a wide range of scales from microcontrollers to cloud-based server farms.</p>
 
-<p><img style="margin-left:20%;width:60%" alt="diagram showing two servers, one acting as a proxy for the other" src="https://camo.githubusercontent.com/0b3036918b192e7255d79cad51a81337f2beef07/687474703a2f2f7777772e77332e6f72672f323031352f30392f776f742d617263682e706e67" /></p>
+<p><img style="margin-left:20%;width:60%" alt="diagram showing two servers, one acting as a proxy for the other" src="wot-proxies.png" /></p>
+
+<p><img style="margin-left:20%;width:60%" alt="diagram showing layers in the web of things communication stack" src="wot-comms-stack.png" /></p>
 
 <p>The diagram shows a thing on server A that acts as a proxy for a thing on server B which is coupled to a sensor and actuator. The proxy on server A could be set up by a script on that server, or by a script on server B. The latter is useful when server A is on the public Internet and server B is behind a firewall, and you want to provide public access to the thing from server A. Web page scripts can create local proxies for things on servers, subject to the protocols supported by Web browsers and the single origin security policy.</p>
 
@@ -155,7 +157,7 @@
 
 <p>There are many possible applications across a wide range of domains, e.g. homes, offices, healthcare, cities, electrical grids, retail and manufacturing. The key to realizing the Web of Things is the metadata that provides the basis for semantic interoperability. This Working Group will focus on the metadata vocabularies that are useful across a broad range of application domains. In addition, we plan work on scripting APIs exposed to application developers, and bindings to common protocols in collaboration with the standards development organizations responsible for those protocols.</p>
 
-<p class="issue"><b>Issue:</b> The following needs lots of discussion as the raw material was too vague and lacked explanation</p>
+<p class="issue"><b>Issue:</b> The following needs lots of discussion as the raw material was too vague and lacked explanation. Imagine that you are a corporate patent lawyer who needs to assess the potential impact on your company of committing to the W3C patent policy in respect to the standards that this group will define.</p>
 
 <h3>Thing Descriptions</h3>
 
