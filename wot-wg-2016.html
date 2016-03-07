@@ -135,7 +135,7 @@
 
         <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
 
-<p>There is broad agreement about the huge potential for services for the Internet of Things (IoT), but this is being held back by fragmentation across many platforms, standards and a rapid evolution of the low level IoT technologies themselves. This Working Group will seek to define Web technology standards for an abstraction layer that sits on top of existing platforms and standards, and simplifies application development. The starting point is the idea of things that stand for physical or abstract entities, whether connected or not. These can be exposed to applications by software objects with data models describing the object’s properties, actions and events. These software objects can encapsulate local things, e.g. for sensors and actuators attached to the same device as an application script, or remote things, where the object acts as a proxy for a software object on another device.</p>
+<p>There is broad agreement about the huge potential for services for the Internet of Things (IoT), but this is being held back by fragmentation across many platforms, standards and a rapid evolution of the low level IoT technologies themselves. This Working Group will seek to define Web technology standards for an abstraction layer that sits on top of existing platforms and standards, and simplifies application development. The starting point is the idea of things that stand for physical or abstract entities, whether connected or not. These can be exposed to applications by software objects with data models describing the object’s properties, actions and events. These software objects can represent local things, e.g. for sensors and actuators attached to the same device as an application script, or remote things, where the object acts as a proxy for a software object on another device.</p>
 
 <p>The approach is based upon the fundamentals of Web architecture:</p>
 
@@ -145,7 +145,7 @@
 <li>Linked Data for describing things as a basis for interoperability and discovery, playing an analogous role to HTML for web pages</li>
 </ul>
 
-<p>URIs can be used to access machine interpretable descriptions of things. These descriptions enable the automatic generation of scriptable objects, whose events, properties and actions correspond to those of the thing the object stands for. An object on one server can act as a proxy for an object on another server. Application developers are shielded from the implementation details of how objects are coupled, allowing platform developers to choose the transport protocols and communication patterns best suited to the context. Servers can be provided at a wide range of scales from microcontrollers to cloud-based server farms.</p>
+<p>URIs can be used to access machine interpretable descriptions of things. These descriptions enable the automatic generation of scriptable objects, whose properties, actions and events correspond to those of the thing the object stands for. An object on one server can act as a proxy for an object on another server. Application developers are shielded from the implementation details of how objects are coupled, allowing platform developers to choose the transport protocols and communication patterns best suited to the context. Servers can be provided at a wide range of scales from microcontrollers to cloud-based server farms.</p>
 
 <p><img style="margin-left:20%;width:60%" alt="diagram showing two servers, one acting as a proxy for the other" src="wot-proxies.png" /></p>
 
@@ -173,7 +173,7 @@
 <p>The Working Group will seek to specify a suite of APIs exposed to applications covering the following:</p>
 
 <ul>
-<li>Discovery for local and remote cases <i class="todo">(to be expanded - waiting for input from Soumya &amp; Louay)</i></li>
+<li>Discovery for local and remote cases, abstracting away from the details of the discovery mechanisms <i class="todo">(to be expanded - waiting for input from Soumya &amp; Louay)</i></li>
 <li>Cross platform security frameworks including provisioning, updates, authentication, and secure communication <i class="todo">(this is a place holder and to be rewritten - waiting for input from Oliver)</i></li>
 <li>Thing lifecycles, e.g. registering and creating things, and enabling applications to be aware of lifecycle transitions</li>
 <li>Cross cutting concerns, e.g. internationalisation, accessibility and privacy</li>
