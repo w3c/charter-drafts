@@ -69,7 +69,7 @@
 
     <main>
       <h1 id="title">Web of Things Working Group Charter</h1>
-      
+
       <p class="issue"><i>Comments are welcome on the <a href="mailto:public-wot-ig@w3.org?subject=[WG%20Charter]%20your%20comment">Web of Things Interest Group public email list</a>, and you are encouraged to file issues on github, but please use the label "[wot]". The github URL for this document is <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/wot-wg-2016.html">https://github.com/w3c/charter-drafts/blob/gh-pages/wot-wg-2016.html</a>.</i></p>
 
       <p class="mission">The <strong>mission</strong> of the <a href=“http://www.w3.org/WoT/WG/”>Web of Things Working Group</a> is to counter the fragmentation of the Internet of Things by introducing a Web based abstraction layer spanning existing IoT platforms and standards. We seek to reduce costs through the global reach of Web standards, to enable open markets of services, and to unleash the power of the network effect.</p>
@@ -179,25 +179,28 @@
 <p>The Working Group will seek to specify a suite of APIs exposed to applications covering the following:</p>
 
 <ul>
-<li><p>Discovery for local and remote cases, abstracting away from the details of the discovery mechanisms. This will cover a range of approaches: things near me, things on the same network, things listed in a repository, and discovery based upon formal or crowd-sourced semantics and social relationships <i class="todo">(waiting for input from Soumya &amp; Louay)</i></p></li>
+<li><p>Interactions with things and reactions/handlers to provide the functionality of a thing</p></li>
+
+<li><p>Discovery for local and remote cases, abstracting away from the details of the discovery mechanisms. This will cover a range of approaches: things on the same server, things near me, things on the same network, things listed in a repository, and discovery based upon formal or crowd-sourced semantics and social relationships <i class="todo">(waiting for input from Soumya &amp; Louay)</i></p></li>
 
 <p>Cross platform security frameworks including authorization, authentication and secure communication, as well as the means for their establishment through provisioning of metadata and keying associations. This will enable the use of security frameworks, such as IETF OAuth and ACE, according to the specific tasks for the client (e.g. security credentials acquisition and supply), and for the server (e.g. security token enforcement and validation), as well as common tasks (e.g. registration). A goal is to decouple applications from the implementations of the security frameworks. This introduces online trusted-third party components to which constrained WoT components (actual servients and their clients) delegate specific processing task (such as authorization and authentication). It requires trusted assertions that report about such processing events as well as protocols to trigger such processing.</p>
 
 <p>Support for secure communications will initially focus on transport-level security e.g. TLS and DTLS. This task will utilize 3rd party defined security frameworks and protocols including their extension points. The profiling of their usage is in scope of this task. The specification of own (new from scratch) exchanges is out-of-scope</p>
 </li>
 
-<li><p>Thing lifecycles, e.g. registering and creating things, and enabling applications to be aware of lifecycle transitions</p></li>
+<li><p>Thing lifecycles, e.g. registering and creating things, either from a thing description or using scripting and enabling applications to be aware of lifecycle transitions</p></li>
 
 <li><p>Cross cutting concerns, e.g. internationalisation, accessibility and privacy</p></li>
 
 <li><p>Error handling</p></li>
 </ul>
-<p>Where practical, APIs will be defined in ways that are independent of the choice of programming languages.</p>
+<p>Where practical, APIs will be defined in ways that are independent of the choice of programming languages. <br/>
+  The underlying assumptions and contracts between the runtime and the application (e.g. security policies and callback signatures) will be well-defined</p>
 
 <h3>Bindings to Common Protocols</h3>
 
 <p>To enable interoperability, the Working Group will seek to define standard bindings to common protocols. This includes the mapping between thing data models and protocol resource models, the relationship between communication patterns and interaction models, and guidelines to standards development organisations for mapping the web of things to their protocols.</p>
-  
+
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -244,7 +247,7 @@
 
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
-            
+
             <dt id="wot-td" class="spec"><a href="#">Thing Descriptions</a></dt>
             <dd>
               <p>This specification defines an ontology and a binding to short names for cross domain metadata for the Web of Things, including the data model exposed to applications, as well as security and communications metadata.</p>
