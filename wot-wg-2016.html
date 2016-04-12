@@ -179,7 +179,7 @@
 <p>The Working Group will seek to specify a suite of APIs exposed to applications covering the following:</p>
 
 <ul>
-<li><p>Interactions with things and reactions/handlers to provide the functionality of a thing</p></li>
+<li><p>Interactions with things and reactions/handlers to provide the functionality of a thing. This includes APIs both for applications acting in the client role interacting with a thing as well as APIs for applications in the server role, exposing a thing.</p></li>
 
 <li><p>Discovery for local and remote cases, abstracting away from the details of the discovery mechanisms. This will cover a range of approaches: things on the same server, things near me, things on the same network, things listed in a repository, and discovery based upon formal or crowd-sourced semantics and social relationships <i class="todo">(waiting for input from Soumya &amp; Louay)</i></p></li>
 
@@ -194,13 +194,18 @@
 
 <li><p>Error handling</p></li>
 </ul>
-<p>Where practical, APIs will be defined in ways that are independent of the choice of programming languages. <br/>
+<p>Where practical, APIs will be defined in ways that are independent of the choice of programming languages. <br/><br/>
+   The scope includes APIs for User Agents/Browsers as well as APIs for web server applications such as node.js applications.<br/><br/>
   The underlying assumptions and contracts between the runtime and the application (e.g. security policies and callback signatures) will be well-defined</p>
 
 <h3>Bindings to Common Protocols</h3>
 
-<p>To enable interoperability, the Working Group will seek to define standard bindings to common protocols. This includes the mapping between thing data models and protocol resource models, the relationship between communication patterns and interaction models, and guidelines to standards development organisations for mapping the web of things to their protocols.</p>
+<p>To enable interoperability, the Working Group will seek to define standard bindings to common protocols in close collaboration with the standards development organizations responsible for those protocols and with other applicable industry alliances. This includes definition of mappings from the ”interactions" (actions, properties, events etc.) at the application layer, via abstract messages at the thing layer, to:</p>
 
+<ul>
+  <li><p>Transfer layer communication patterns, push, pull, pub-sub, bi-directional messaging, etc.</p></li>
+  <li><p>Specific protocols at the transport layer, e.g. REST-based protocols such as HTTP and CoAP, pub-sub-protocols such as MQTT and message-oriented protocols such as XMPP and websockets. Bindings to non-IP transports such as Bluetooth may also be defined.</p></li>
+</ul>
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -208,9 +213,7 @@
 
             <ul class="out-of-scope">
             <li>Application &amp; domain specific metadata vocabularies</li>
-            <li>Definition of protocol bindings without the collaboration of the standards development organisations responsible for those protocols</li>
             <li>APIs and security frameworks specific to particular platforms external to the W3C</li>
-            <li>URI mappings for non-resourceful protocols</li>
             </ul>
         </div>
 
