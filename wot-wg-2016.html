@@ -175,7 +175,7 @@
 <div class="summary">
   <p>Standards for enabling interoperability across IoT platforms</p>
   <ul>
-    <li>Metadata for describing the data models exposed to applications, for the choice of communications patterns, for interoperating with platforms and protocols</li>
+    <li>Metadata for describing the data and interaction models exposed to applications, for the choice of communications patterns, for interoperating with platforms and protocols</li>
     <li>Serialization formats for metadata suitable for processing on resource constrained devices</li>
     <li>Application facing APIs</li>
     <li>Bindings from the abstract messages to specific platforms and protocols in collaboration with the corresponding organizations</li>
@@ -187,7 +187,7 @@
 <h3>Thing Descriptions</h3>
 
 <ul>
-<li><p>A Linked Data vocabulary for describing things in terms of the data models they expose to applications. This will cover datatypes, including streams, integrity constraints, and provision for early and late binding. This cross domain vocabulary will be designed for use in combination with vocabularies for domain specific semantics and metadata. Consideration will be given to the means for describing the stability of data models and metadata, and how they evolve over time. This is needed to manage interdependencies, and is analogous to the role of metadata for package management in the Linux operating system.</p></li>
+<li><p>A Linked Data vocabulary for describing things in terms of the data and interaction  models they expose to applications. This will cover datatypes, including streams, integrity constraints, and provision for early and late binding. This cross domain vocabulary will be designed for use in combination with vocabularies for domain specific semantics and metadata. Consideration will be given to the means for describing the stability of data models and metadata, and how they evolve over time. This is needed to manage interdependencies, and is analogous to the role of metadata for package management in the Linux operating system.</p></li>
 
 <li><p>A Linked Data vocabulary for security metadata as a basis for platforms to determine how to securely interoperate. This will build upon emerging standards and best practices for securing exchanges, and includes metadata relating to authorization, authentication and secure communication. The use of such metadata will be optional (to support deployments which prefer to inform the requester via error responses rather than upfront). It will support, but not mandate, the utilization of online trusted third party services (such as OAuth/ACE authorization servers). It will support a variety of security token form factors (e.g. JSON, CBOR), domain-specific security token contents (e.g. building automation), various security models (bearer, proof-of-possession). It will support a variety of protocols for their acquisition (e.g. OAuth, OAuth-for-CoAP) and supply (e.g. CoAP). Support for secure communications will initially focus on transport-level security e.g. TLS and DTLS.</p></li>
 <li><p>A Linked Data vocabulary for enabling open markets of services, including trust assertions, privacy policies, access control, payments, terms and conditions <i class="todo">this may be too ambitious for a first charter</i></p></li>
