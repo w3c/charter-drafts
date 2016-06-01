@@ -101,7 +101,7 @@
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name]</i>
+              Kiyoshi Tanaka
             </td>
           </tr>
           <tr>
@@ -109,7 +109,7 @@
               Team Contacts
             </th>
             <td>
-              <span class="todo"><a href="mailto:shigeya@w3.org">Shigeya Suzuki</a></span> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+              <a href="mailto:shigeya@w3.org">Shigeya Suzuki</a> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -149,11 +149,10 @@
 	<p>In addition to above functions, the WG will develop functions which enable web applications to access a set of functions in the underlying operating system, such as:
 	  <ul>
 	    <li>Reboot the terminal device at operating system level</li>
-	    <li>Configure or query time or time synchronization parameters at operating system level</li>
 	  </ul>
 	</p>
 
-	<p>Because,  rebooting at the operating system level is useful for some trouble or emergency cases, and configuring or refer to the operating system level clock, which web applications depend on, is important to achieve timing accuracies of presentations.</p>
+	<p>Because,  rebooting at the operating system level is useful for some trouble or emergency cases.</p>
 
 	<p>The specifications produced by this Working Group will address security and privacy considerations based on a security model different from the traditional browser security model, because the device UAs controlled by the device operators rather than the audiences watching the devices. The considerations need to address the combination of both the UAs and the controlling device.</p>
 
@@ -193,21 +192,18 @@
             The working group will deliver the following W3C normative specifications:
           </p>
           <dl>
-            <dt id="web-foo" class="spec"><a href="#">Web Remote Management API</a></dt>
+            <dt id="web-foo" class="spec">Web Remote Management API</dt>
             <dd>
               <p>Remote Management API consists of following functions:</p>
 
 	      <dl>
-		<dt id="web-rmapi-power-management" class="spec"><a href="#">Power Management</a></dt>
+		<dt id="web-rmapi-power-management" class="spec">Power Management</dt>
 		<dd><p>This function enables web applications to access the signage terminal device’s power management system. Restarting the underlying web runtime or rebooting the underlying operating system is useful for some use cases. Restarting the underlying operating system and rebooting the device can be used for the basic trouble shootings. By studying the use cases, the function will be consulted for enhancement. The protocol and data format for controlling the terminal would also be considered for the further discussion.<p></dd>
 
-		<dt id="web-rmapi-clock-management" class="spec"><a href="#">Clock Managementt</a></dt>
-		<dd><p>This function enables web applications to get a precise time stamp for a signage terminal device showing content on a schedule and to allow synchronizing with another device. The timestamp object provides the same functions as the Date object specified in the ECMAScript, but its precision must be guaranteed at the specified level.<p></dd>
-
-		<dt id="web-rmapi-remote-prompting" class="spec"><a href="#">Remote Prompting</a></dt>
+		<dt id="web-rmapi-remote-prompting" class="spec">Remote Prompting</dt>
 		<dd><p>In a case of malfunctions or other signage terminal prompts requiring user interaction, an API needs to define to where the prompt needs to be shown because audiences of the signage terminal device cannot answer for the dialog. This function will be consulted with use case discussion.</p></dd>
 
-		<dt id="web-rmapi-remote-prompting" class="spec"><a href="#">Other Contextual Information</a></dt>
+		<dt id="web-rmapi-other-contextual" class="spec">Other Contextual Information</dt>
 		<dd><p>The other functions besides the above are needed to enable web applications to get system-wide information of the digital signage terminal, such as screen state (power, brightness, colorimetry, color temperature) and memory information (RAM usage). Moreover, it is useful for web applications to prepare such functions as service workers which can interact with any windows (context/domains) or context with a privilege to access any windows and origins. These functions will be considered in further discussion with use cases.</p></dd>
 
 	      </dl>
@@ -282,9 +278,6 @@
 	  <dl>
 	    <dt><a href="http://www.w3.org/2002/mmi/">Multimodal Interaction Working Group</a></dt>
             <dd><p>The Multimodal Interaction Working Group develops open standards that extend the Web to allow multiple modes of interaction which might be used by the Web-based Signage Working Group.</p></dd>
-
-	    <dt><a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group and Community Group</a></dt>
-            <dd><p>The Second Screen Presentation Working Group’s deliverables cover specifications that enable web pages to use secondary screens. This specification enables Web-based signage to access audiences’ mobile device and to realize interactive communications.</p></dd>
 
 	    <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
             <dd><p>The Web-based Signage Working Group intends to have its deliverables reviewed by the Web and TV Interest Group from the perspective of using TV as a Web-based signage terminal.</p></dd>
