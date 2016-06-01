@@ -149,11 +149,10 @@
 	<p>In addition to above functions, the WG will develop functions which enable web applications to access a set of functions in the underlying operating system, such as:
 	  <ul>
 	    <li>Reboot the terminal device at operating system level</li>
-	    <li>Configure or query time or time synchronization parameters at operating system level</li>
 	  </ul>
 	</p>
 
-	<p>Because,  rebooting at the operating system level is useful for some trouble or emergency cases, and configuring or refer to the operating system level clock, which web applications depend on, is important to achieve timing accuracies of presentations.</p>
+	<p>Because,  rebooting at the operating system level is useful for some trouble or emergency cases.</p>
 
 	<p>The specifications produced by this Working Group will address security and privacy considerations based on a security model different from the traditional browser security model, because the device UAs controlled by the device operators rather than the audiences watching the devices. The considerations need to address the combination of both the UAs and the controlling device.</p>
 
@@ -200,9 +199,6 @@
 	      <dl>
 		<dt id="web-rmapi-power-management" class="spec">Power Management</dt>
 		<dd><p>This function enables web applications to access the signage terminal device’s power management system. Restarting the underlying web runtime or rebooting the underlying operating system is useful for some use cases. Restarting the underlying operating system and rebooting the device can be used for the basic trouble shootings. By studying the use cases, the function will be consulted for enhancement. The protocol and data format for controlling the terminal would also be considered for the further discussion.<p></dd>
-
-		<dt id="web-rmapi-clock-management" class="spec">Clock Managementt</dt>
-		<dd><p>This function enables web applications to get a precise time stamp for a signage terminal device showing content on a schedule and to allow synchronizing with another device. The timestamp object provides the same functions as the Date object specified in the ECMAScript, but its precision must be guaranteed at the specified level.<p></dd>
 
 		<dt id="web-rmapi-remote-prompting" class="spec">Remote Prompting</dt>
 		<dd><p>In a case of malfunctions or other signage terminal prompts requiring user interaction, an API needs to define to where the prompt needs to be shown because audiences of the signage terminal device cannot answer for the dialog. This function will be consulted with use case discussion.</p></dd>
