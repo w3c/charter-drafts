@@ -256,40 +256,292 @@ devices, printers, braille devices, handheld devices, etc.
         <h2>
           Deliverables
         </h2>
-        <p class="issue"><b>Issue:</b> I've removed the milestones table, which is always wildly inaccurate, and included the milestones as projected completion dates in the description template for each deliverable. Up-to-date milestones tables should be maintained on the group page and linked to from this charter.</p>
-		
 
         <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/Style/CSS/current-work">group publication status page</a>.</p>
 
         <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
-          <p>This list is not exclusive: The WG may also create new
-  specifications, within its scope.</p>
+          <p>This list is not exclusive: The WG may also create new specifications, within its scope.</p>
   
         <div id="normative">
           <h3>
             Normative Specifications
           </h3>
-		  
-		  <p class="issue css"><b>Issue:</b> The <a href="https://www.w3.org/Style/2014/css-charter">previous charter</a>
-		had a compact, prioritized list of <a href="https://www.w3.org/Style/2014/css-charter#deliverables">deliverables</a>
-		which we need to review and then add to this section. It will be longer in the new format.
-		Last charter carefully avoided any mention of dates;
-		new template has "expected completion date".</p>
 		
           <p>
             The Working Group will deliver the following W3C normative specifications:
           </p>
-          <dl>
-            <dt id="web-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
-            <dd>
-              <p>This specification defines <i class="todo">[concrete description]</i>.</p>
+<dl>
+  <dt id="css-backgrounds-3" class="spec">css-backgrounds-3
+  <dd>
+    <p>This document collects together into one definition all the specs that together form the current state of Cascading Style Sheets (CSS) as of 2016. The primary audience is CSS implementers, not CSS authors, as this definition includes modules by specification stability, not Web browser adoption rate.
+    <p><b>Draft State:</b> No draft
+    <p class="milestone"><b>Expected completion: </b>Q3 2018
+  <dt id="css-backgrounds-3" class="spec">css-backgrounds-3
+  <dd>
+    <p>This draft contains the features of CSS level 3 relating to borders and backgrounds. It includes and extends the functionality of CSS level 2 [CSS21], which builds on CSS level 1 [CSS1]. The main extensions compared to level 2 are borders consisting of images, boxes with multiple backgrounds, boxes with rounded corners and boxes with shadows. 
+    <p><b>Draft State:</b> CR / Stable
+  <dt id="css-conditional-3" class="spec">css-conditional-3
+  <dd>
+    <p>This module contains the features of CSS for conditional processing of parts of style sheets, conditioned on capabilities of the processor or the document the style sheet is being applied to. It includes and extends the functionality of CSS level 2 [CSS21], which builds on CSS level 1 [CSS1]. The main extensions compared to level 2 are allowing nesting of certain at-rules inside '@media', and the addition of the '@supports' rule for conditional processing.
+    <p><b>Draft State:</b> CR / Stable
+    <p class="milestone"><b>Expected completion: </b>Q1 2018
+  <dt id="css-multicol-1" class="spec">css-multicol-1
+  <dd>
+    <p>This specification describes multi-column layouts in CSS, a style sheet language for the web. Using functionality described in the specification, content can be flowed into multiple columns with a gap and a rule between them. 
+    <p><b>Draft State:</b> CR / Stable
+  <dt id="css-values-3" class="spec">css-values-3
+  <dd>
+    <p>This CSS3 module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions.
+    <p><b>Draft State:</b> CR / Stable
+    <p class="milestone"><b>Expected completion: </b>Q4 2018
+  <dt id="css-cascade-3" class="spec">css-cascade-3
+  <dd>
+    <p>This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.
+    <p><b>Draft State:</b> CR / Stable
+    <p class="milestone"><b>Expected completion: </b>Q4 2017
+  <dt id="css-images-3" class="spec">css-images-3
+  <dd>
+    <p>This module contains the features of CSS level 3 relating to the &lt;image&gt; type and replaced elements. It includes and extends the functionality of CSS level 2. The main extensions compared to CSS2.1 are the generalization of the &lt;url&gt; type to the &lt;image&gt; type, several additions to the &lt;image&gt; type, a generic sizing algorithm for images and other replaced content in CSS, definitions for interpolating several &lt;image&gt; types, and several properties controlling the interaction of replaced elements and CSS's layout models.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-speech-1" class="spec">css-speech-1
+  <dd>
+    <p>The Speech module defines aural CSS properties that enable authors to declaratively control the rendering of documents via speech synthesis, and using optional audio cues. Note that this standard was developed in cooperation with the Voice Browser Activity.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-flexbox-1" class="spec">css-flexbox-1
+  <dd>
+    <p>The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions.
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q3 2017
+  <dt id="css-text-decor-3" class="spec">css-text-decor-3
+  <dd>
+    <p>This module contains the features of CSS relating to text decoration, such as underlines, text shadows, and emphasis marks.
+    <p><b>Draft State:</b> CR / testing
+  <dt id="css-fonts-3" class="spec">css-fonts-3
+  <dd>
+    <p>This CSS3 module describes how font properties are specified and how font resources are loaded dynamically. The contents of this specification are a consolidation of content previously divided into CSS3 Fonts and CSS3 Web Fonts modules. The description of font load events was moved into the CSS3 Font Load Events module. 
+    <p><b>Draft State:</b> CR / testing
+    <p class="milestone"><b>Expected completion: </b>Q2 2019
+  <dt id="css-writing-modes-3" class="spec">css-writing-modes-3
+  <dd>
+    <p>CSS Writing Modes Level 3 defines CSS support for various international writing modes, such as left-to-right (e.g. Latin or Indic), right-to-left (e.g. Hebrew or Arabic), bidirectional (e.g. mixed Latin and Arabic) and vertical (e.g. Asian scripts).
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q2 2017
+  <dt id="css-shapes-1" class="spec">css-shapes-1
+  <dd>
+    <p>CSS Shapes describe geometric shapes for use in CSS. For Level 1, CSS Shapes can be applied to floats. A circle shape on a float will cause inline content to wrap around the circle shape instead of the float's bounding box.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-masking-1" class="spec">css-masking-1
+  <dd>
+    <p>CSS Masking provides two means for partially or fully hiding portions of visual elements: masking and clipping.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-counter-styles-3" class="spec">css-counter-styles-3
+  <dd>
+    <p>This module introduces the ''@counter-style'' rule, which allows authors to define their own custom counter styles for use with CSS list-marker and generated-content counters. It also predefines a set of common counter styles, including the ones present in CSS2 and CSS2.1.
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q2 2018
+  <dt id="css-break-3" class="spec">css-break-3
+  <dd>
+    <p>This module describes the fragmentation model that partitions a flow into pages, columns, or regions. It builds on the Page model module and introduces and defines the fragmentation model. It adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="compositing-1" class="spec">compositing-1
+  <dd>
+    <p>Compositing describes how shapes of different elements are combined into a single image. There are various possible approaches for compositing. Previous versions of SVG and CSS used Simple Alpha Compositing. In this model, each element is rendered into its own buffer and is then merged with its backdrop using the Porter Duff source-over operator.
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q2 2019
+  <dt id="css-syntax-3" class="spec">css-syntax-3
+  <dd>
+    <p>This module describes, in general terms, the basic structure and syntax of CSS stylesheets. It defines, in detail, the syntax and parsing of CSS - how to turn a stream of bytes into a meaningful stylesheet.
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q1 2019
+  <dt id="css-ui-3" class="spec">css-ui-3
+  <dd>
+    <p>This specification describes user interface related properties and values that are proposed for CSS level&nbsp;3 to style HTML and XML (including XHTML). It includes and extends user interface related features from the properties and values of CSS level&nbsp;2 revision 1. It uses various properties and values to style basic user interface elements in a document.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="geometry-1" class="spec">geometry-1
+  <dd>
+    <p>This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-cascade-4" class="spec">css-cascade-4
+  <dd>
+    <p>This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.    New in this level are the ''revert'' keyword and &lt;supports-condition&gt; for the ''@import'' rule.
+    <p><b>Draft State:</b> CR / Testing
+    <p class="milestone"><b>Expected completion: </b>Q2 2018
+  <dt id="css-will-change-1" class="spec">css-will-change-1
+  <dd>
+    <p>This document defines the 'will-change' CSS property, which allows an author to inform the UA ahead of time of what kinds of changes they are likely to make to an element.  This allows the UA to optimize how they handle the element ahead of time, performing potentially-expensive work preparing for an animation before the animation actually begins.
+    <p><b>Draft State:</b> CR / Testing
+  <dt id="css-animations-1" class="spec">css-animations-1
+  <dd>
+    <p>This CSS module describes a way for authors to animate the values of CSS properties over time, using keyframes. The behavior of these keyframe animations can be controlled by specifying their duration, number of repeats, and repeating behavior.
+    <p><b>Draft State:</b> WD / Refining
+  <dt id="web-animations" class="spec">web-animations
+  <dd>
+    <p>This specification defines a model for synchronization and timing of changes to the presentation of a Web page. This specification also defines an application programming interface for interacting with this model and it is expected that further specifications will define declarative means for exposing these features.
+    <p><b>Draft State:</b> ED / Refining
+  <dt id="css-text-3" class="spec">css-text-3
+  <dd>
+    <p>This CSS3 module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation.
+    <p><b>Draft State:</b> LC / Refining
+  <dt id="css-transforms" class="spec">css-transforms
+  <dd>
+    <p>CSS transforms allows elements styled with CSS to be transformed in two-dimensional or three-dimensional space. This specification is the convergence of the CSS 2D transforms, CSS 3D transforms and SVG transforms specifications.
+    <p><b>Draft State:</b> WD / Refining
+  <dt id="css-transitions-1" class="spec">css-transitions-1
+  <dd>
+    <p>CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration.
+    <p><b>Draft State:</b> WD / Refining
+  <dt id="css-variables-1" class="spec">css-variables-1
+  <dd>
+    <p>This module introduces cascading variables as a new primitive value type that is accepted by all CSS properties, and custom properties for defining them.
+    <p><b>Draft State:</b> CR / Refining
+  <dt id="css-box-3" class="spec">css-box-3
+  <dd>
+    <p>This module contains the features of CSS relating to the alignment of boxes within their containers in the various CSS box layout models: block layout, table layout, flex layout, and grid layout.
+    <p><b>Draft State:</b> WD / Refining
+  <dt id="css-grid-1" class="spec">css-grid-1
+  <dd>
+    <p>This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid.
+    <p><b>Draft State:</b> WD / Refining
+  <dt id="css-page-3" class="spec">css-page-3
+  <dd>
+    <p>This CSS module specifies how pages are generated and laid out to hold fragmented content in a paged presentation. It adds functionality for controlling page margins, page size and orientation, and headers and footers, and extends generated content to enable page numbering and running headers / footers. The process of paginating a flow into such generated pages is covered in [CSS3-BREAK].
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="cssom-view-1" class="spec">cssom-view-1
+  <dd>
+    <p>The APIs introduced by this specification provide authors with a way to inspect and manipulate the visual view of a document. This includes getting the position of element layout boxes, obtaining the width of the viewport through script, and also scrolling an element.
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="selectors-4" class="spec">selectors-4
+  <dd>
+    <p>Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in an XML document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. They are a core component of CSS (Cascading Style Sheets), which uses Selectors to bind style properties to elements in the document. 
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="css-sizing-3" class="spec">css-sizing-3
+  <dd>
+    <p>This module extends the CSS sizing properties with keywords that represent content-based "intrinsic" sizes and context-based "extrinsic" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context.
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="css-overflow-3" class="spec">css-overflow-3
+  <dd>
+    <p>This module contains the features of CSS relating to scrollable overflow handling in visual media.
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="css-display-3" class="spec">css-display-3
+  <dd>
+    <p>This module describes how the CSS formatting box tree is generated from the document element tree and defines the 'display' and 'box-suppress' properties that control it.
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="css-scroll-snap-1" class="spec">css-scroll-snap-1
+  <dd>
+    <p>This module contains features to control panning and scrolling behavior with “snap positions”.
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="css-pseudo-4" class="spec">css-pseudo-4
+  <dd>
+    <p>This CSS module defines pseudo-elements, abstract elements that represent portions of the CSS render tree that can be selected and styled.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-device-adapt-1" class="spec">css-device-adapt-1
+  <dd>
+    <p>This specification provides a way for an author to specify, in CSS, the size, zoom factor, and orientation of the viewport that is used as the base for the initial containing block.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-exclusions-1" class="spec">css-exclusions-1
+  <dd>
+    <p>CSS Exclusions define arbitrary areas around which inline content ([CSS21]) can flow. CSS Exclusions can be defined on any CSS block-level elements. CSS Exclusions extend the notion of content wrapping previously limited to floats.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="filter-effects" class="spec">filter-effects
+  <dd>
+    <p>Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can be conceptually described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image. 
+    <p><b>Draft State:</b> ED / Exploring
+  <dt id="css-gcpm-3" class="spec">css-gcpm-3
+  <dd>
+    <p>Books and other paged media often use special techniques to display information. Content may be moved to or generated for special areas of the page, such as running heads or footnotes. Generated content within pages, such as tab leaders or cross-references, helps readers navigate within and between pages.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-page-floats-3" class="spec">css-page-floats-3
+  <dd>
+    <p>This document describes floats that move to the top or bottom of content  passages. This feature has traditionally been used in print  publications in which figures and photos are moved to the top or bottom  of columns or pages, along with their captions. This draft describes how to achieve this effects for floats within pages,  columns, regions and elements.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-line-grid-1" class="spec">css-line-grid-1
+  <dd>
+    <p>This module contains CSS features for aligning content to a baseline grid.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-lists-3" class="spec">css-lists-3
+  <dd>
+    <p>This draft contains the features of CSS level&nbsp;3 relating to list styling. It includes and extends the functionality of CSS level&nbsp;2 [[!CSS21]]. The main extensions compared to level&nbsp;2 are a pseudo-element representing the list marker, and a method for authors to define their own list-styles.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-position-3" class="spec">css-position-3
+  <dd>
+    <p>This module contains the features of CSS level 3 relating to positioning and stacking of elements.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-regions-1" class="spec">css-regions-1
+  <dd>
+    <p>The CSS Regions module allows content from one or more elements to flow through one or more boxes called CSS Regions, fragmented as defined in [[!CSS3-BREAK]]. This module also defines CSSOM to expose both the inputs and outputs of this fragmentation.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-ruby-1" class="spec">css-ruby-1
+  <dd>
+    <p>“Ruby”, a form of interlinear annotation, are short runs of text alongside the base text. They are typically used in East Asian documents to indicate pronunciation or to provide a short annotation. This module describes the rendering model and formatting controls related to displaying ruby annotations in CSS.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-tables-3" class="spec">css-tables-3
+  <dd>
+    <p>This CSS module defines a two-dimensional grid-based layout system, optimized for tabular data rendering. In the table layout model, each display node is assigned to an intersection between a set of consecutive rows and a set of consecutive columns, themselves generated from the table structure and sized according to their content.
+    <p><b>Draft State:</b> ED / Exploring
+  <dt id="cssom-1" class="spec">cssom-1
+  <dd>
+    <p>CSSOM defines APIs (including generic parsing and serialization rules) for Media Queries, Selectors, and of course CSS itself.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-font-loading-3" class="spec">css-font-loading-3
+  <dd>
+    <p>This CSS module describes events and interfaces used for dynamically loading font resources.
+    <p><b>Draft State:</b> LC / Exploring
+  <dt id="css-scoping-1" class="spec">css-scoping-1
+  <dd>
+    <p>This specification defines various scoping/encapsulation mechanisms for CSS, including scoped styles and the ''@scope'' rule, Shadow DOM selectors, and page/region-based styling.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="mediaqueries-4" class="spec">mediaqueries-4
+  <dd>
+    <p>Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and Javascript. Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="selectors-nonelement-1" class="spec">selectors-nonelement-1
+  <dd>
+    <p>Non-element Selectors extends [[!SELECTORS4]] and allow selecting other kinds of document nodes than elements. This is useful when selectors are used as a general document query language. Non-element Selectors are not intended to be used in CSS, but only as a separate query language in other host environments.
+    <p><b>Draft State:</b> ED / Exploring
+  <dt id="css-inline-3" class="spec">css-inline-3
+  <dd>
+    <p>The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. The formatting of elements and text within a line, its positioning in the inline progression direction, and the breaking of lines are described in [CSS3TEXT]. This module describes the positioning in the block progression direction both of elements and text within lines and of the lines themselves. This positioning is often relative to a baseline. It also describes special features for formatting of first lines and drop caps. It extends on the model in [CSS2].
+    <p><b>Draft State:</b> WD / Revising
+  <dt id="motion-1" class="spec">motion-1
+  <dd>
+    <p>Motion paths allow authors to animate any graphical object along an author specified path.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-round-display-1" class="spec">css-round-display-1
+  <dd>
+    <p>This document describes CSS extensions to support a round display. The extensions help web authors to build a web page suitable for a round display.
+    <p><b>Draft State:</b> WD / Exploring
+  <dt id="css-ui-4" class="spec">css-ui-4
+  <dd>
+    <p>This specification describes user interface related properties and values to style HTML and XML (including XHTML). It includes and extends user interface related features from the properties and values of previous CSS levels. It uses various properties and values to style basic user interface elements in a document.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-text-4" class="spec">css-text-4
+  <dd>
+    <p>This module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-paint-api-1" class="spec">css-paint-api-1
+  <dd>
+    <p>This specification describes an API which allows developers to paint a part of an box in response to geometry / computed style changes with an additional &lt;image&gt; function.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-properties-values-api-1" class="spec">css-properties-values-api-1
+  <dd>
+    <p>This CSS module defines an API for registering new CSS properties. Properties registered using this API are provided with a parse syntax that defines a type, inheritance behaviour, and an initial value.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-typed-om-1/" class="spec">css-typed-om-1/
+  <dd>
+    <p>Converting CSSOM value strings into meaningfully typed JavaScript representations and back can incur a significant performance overhead. This specification exposes CSS values as typed JavaScript objects to facilitate their performant manipulation.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="worklets-1" class="spec">worklets-1
+  <dd>
+    <p>This specification defines an API for running scripts in stages of the rendering pipeline independent of the main javascript execution environment.
+    <p><b>Draft State:</b> FPWD / Exploring
+  <dt id="css-color-4" class="spec">css-color-4
+  <dd>
+    <p>This specification describes CSS &lt;color&gt; values and properties for foreground color and group opacity.
+    <p><b>Draft State:</b> FPWD / Exploring
 
-              <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">Member Submission</a> | <a href="#">Adopted from WG/CG Foo</a> | <a href="#">Working Draft</a>]</i></p>
+</dl>
 
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
-            </dd>
-          </dl>
         </div>
 
         <div id="ig-other-deliverables">
