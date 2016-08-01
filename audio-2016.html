@@ -206,7 +206,7 @@
           Deliverables
         </h2>
 
-            <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/[groupname]/PubStatus">group publication status page</a>.</p>
+            <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/2011/audio/wiki/PubStatus">group publication status page</a>.</p>
 
             <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
@@ -218,13 +218,34 @@
                     The Working Group will deliver the following W3C normative specifications:
                 </p>
                 <dl>
-                    <dt id="web-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
+                    <dt id="web-audio" class="spec"><a href="https://webaudio.github.io/web-audio-api/">Web Audio API, v.1</a></dt>
                     <dd>
-                        <p>This specification defines <i class="todo">[concrete description]</i>.</p>
+                        <p>This specification describes a high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to
+                            define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported.
+                        </p>
 
-                        <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">Member Submission</a> | <a href="#">Adopted from WG/CG Foo</a> | <a href="#">Working Draft</a>]</i></p>
+                        <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webaudio/">[Working Draft]</a>, being readied for CR</p>
 
-                        <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+                        <p class="milestone"><b>Expected completion:</b> [Q3 2017]</p>
+                    </dd>
+                    <dt id="web-audio-2" class="spec">Web Audio API, v.2</dt>
+                    <dd>
+                        <p>This specification builds on Web Audio 1.0, adding features which were requested by users or implementors but which were deferred to the next version of Web Audio API.
+
+                        </p>
+
+                        <p class="draft-status"><b>Draft state:</b> [No draft], see <a href="https://github.com/WebAudio/web-audio-api/labels/Feature%20Request%2FMissing%20Feature">issues list</a></p>
+
+                        <p class="milestone"><b>Expected completion:</b> [Q4 2019]</p>
+                    </dd>
+                    <dt id="web-midi" class="spec"><a href="http://webaudio.github.io/web-midi-api/">Web Web MIDI</a></dt>
+                    <dd>
+                        <p>This specification defines an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music
+                            MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.</p>
+
+                        <p class="draft-status"><b>Draft state:</b> [<a href="https://www.w3.org/TR/webmidi/">Working Draft</a>]</p>
+
+                        <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q3 2018]</i></p>
                     </dd>
                 </dl>
             </div>
@@ -264,10 +285,7 @@
             <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working
                 and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD"
                     title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
-            <p class="issue"><b>Issue:</b> The paragraph above replaces line-item liaisons and dependencies with individual horizontal groups. There's been a suggestion to name and individually link the specific horizontal groups inline, instead of pointing to a page
-                that lists them.</p>
-            <p class="issue"><b>Issue:</b> The requirement for an invitation to review after FPWD and before CR may seem a bit overly restrictive, but it only requires an invitation, not a review, a commitment to review, or even a response from the horizontal group. This
-                compromise offers early notification without introducing a bottleneck.</p>
+
 
             <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:</p>
 
