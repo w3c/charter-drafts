@@ -37,6 +37,7 @@
         
         .todo {
             color: red;
+            font-style: italic;
         }
         
         footer {
@@ -224,9 +225,9 @@
                             define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported.
                         </p>
 
-                        <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webaudio/">[Working Draft]</a>, being readied for CR</p>
+                        <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webaudio/">Working Draft</a>, being readied for CR</p>
 
-                        <p class="milestone"><b>Expected completion:</b> [Q3 2017]</p>
+                        <p class="milestone"><b>Expected completion:</b> Q3 2017</p>
                     </dd>
                     <dt id="web-audio-2" class="spec">Web Audio API, v.2</dt>
                     <dd>
@@ -234,20 +235,21 @@
 
                         </p>
 
-                        <p class="draft-status"><b>Draft state:</b> [No draft], see <a href="https://github.com/WebAudio/web-audio-api/labels/Feature%20Request%2FMissing%20Feature">issues list</a></p>
+                        <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api/labels/Feature%20Request%2FMissing%20Feature">issues list</a></p>
 
-                        <p class="milestone"><b>Expected completion:</b> [Q4 2019]</p>
+                        <p class="milestone"><b>Expected completion:</b> Q4 2019</p>
                     </dd>
                     <dt id="web-midi" class="spec"><a href="http://webaudio.github.io/web-midi-api/">Web MIDI</a></dt>
                     <dd>
                         <p>This specification defines an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music
                             MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.</p>
 
-                        <p class="draft-status"><b>Draft state:</b> [<a href="https://www.w3.org/TR/webmidi/">Working Draft</a>]</p>
+                        <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webmidi/">Working Draft</a></p>
 
-                        <p class="milestone"><b>Expected completion:</b> [Q3 2018]</p>
+                        <p class="milestone"><b>Expected completion:</b> Q3 2018</p>
                     </dd>
                 </dl>
+                <p class="todo">Multichannel audio inputs and outputs, where does this go?</p>
             </div>
 
             <div id="ig-other-deliverables">
@@ -289,21 +291,23 @@
 
             <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:</p>
 
-            <p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>                to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
-
             <div>
                 <h3 id="w3c-coordination">W3C Groups</h3>
                 <dl>
-                    <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-                    <dd><i class="todo">[specific nature of liaison]</i></dd>
+                    <dt><a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a></dt>
+                    <dd>Supply use cases, requirements, and review of specifications related to audio, including microphone access and speaker output</dd>
+                    <dt><a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
+                    <dd>Ensure that the audio APIs are compatible with the relevant HTML elements</dd>
                 </dl>
-
-                <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
 
                 <h3 id="external-coordination">External Organizations</h3>
                 <dl>
+                    <dt><a href="http://www.midi.org/">MIDI Manufacturers Association</a></dt>
+                    <dd>Coordinate on the relationship between the audio API and the Musical Instrument Digital Interface protocol</dd>
+                    <!--
                     <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
                     <dd><i class="todo">[specific nature of liaison]</i></dd>
+                    -->
                 </dl>
 
 
@@ -336,18 +340,17 @@
         </h2>
             <p id="public">
                 Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/2015/Process-20150901/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for
-                public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository,
-                and may permit direct public contribution requests. The meetings themselves are not open to public participation, however.
+                public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a <a href="https://github.com/WebAudio">public GitHub repository</a>,
+                and permit direct public contribution requests. The meetings themselves are not open to public participation, however.
             </p>
             <p>
-                Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">[name]</i> Working Group home page.</a>
+                Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/2011/audio/wiki/Main_Page">Audio Working Group wiki.</a>
             </p>
             <p>
-                Most <i class="todo">[name]</i> Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+                Most Audio Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
             </p>
             <p>
-                This group primarily conducts its technical work <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a>                (<a class="todo" href="http://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
-                <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
+                This group primarily conducts its technical work on <a class="todo" id="public-github" href="https://github.com/WebAudio">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
             </p>
             <p>
                 The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
@@ -489,7 +492,7 @@
 
     <footer>
         <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+        <a href="mailto:chris@w3.org">Chris Lilley</a>
       </address>
 
         <p class="copyright">
