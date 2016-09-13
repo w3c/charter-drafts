@@ -146,35 +146,27 @@
       <section id="scope" class="scope">
         <h2>Scope</h2>
   
-        <p>The SVG WG develops the following technologies, all of which are in scope for the SVG Working Group:</p>
-        <ul>
+        <p>The SVG WG develops the core SVG language and related modules, consisting of:</p>
 
-           <li><strong>Markup syntaxes</strong>, compatible with XML and HTML5 parsing, for describing shapes, text, and painting effects, including gradients, filters, and other graphical effects, through a set of elements and attributes.  This includes semantics for navigation, declarative animation, and interactivity.</li>
-           <li>An <strong>API</strong>, compatible with DOM (Document Object Model), for using script to view, add, remove, or change the elements and attributes of the DOM tree, to handle interactivity, and to provide special functionality, through a set of events and methods.</li>
-           <li>A set of <strong>style properties</strong>, compatible with CSS, and expressible as presentation attributes, for affecting the appearance and behavior of graphical elements.</li>
+        <ul>
+          <li><strong>Markup syntaxes</strong>, compatible with XML and HTML5 parsing, for describing shapes, text, and painting effects, including gradients, filters, and other graphical effects, through a set of elements and attributes.  This includes semantics for navigation, declarative animation, and interactivity.</li>
+          <li>An <strong>API</strong>, compatible with DOM (Document Object Model), for using script to view, add, remove, or change the elements and attributes of the DOM tree, to handle interactivity, and to provide special functionality, through a set of events and methods.</li>
+          <li>A set of <strong>style properties</strong>, compatible with CSS, and expressible as presentation attributes, for affecting the appearance and behavior of graphical elements.</li>
         </ul>
 
-        <p>Scalable Vector Graphics has matured into a widely-implemented specification for interactive graphics, used in viewers, authoring tools, and in other standards.  The SVG Working Group will build upon this solid foundation by adding new graphical and behavioral features to make it even easier for content creators to make compelling and effective graphical content.  This includes syntactic sugar and canned effects for some of its more powerful features such as advanced gradients, filters and animation.</p>
-          
-        <p>Since SVG is also used as part of a platform for rich Web applications, both alone and in combination with other technologies such as HTML, the SVG Working Group must address the needs of web application developers.  In particular, the SVG Working Group will work with implementers and other experts to redesign the SVG DOM APIs and certain syntactic conventions. Besides improving interoperability and adding clarifications where necessary, the aims are also to make them simpler and more performant, and to integrate SVG more closely with other web languages, to improve use in gaming, multimedia experiences, and interactive data visualization.  The group will also work with accessibility groups to define more precise measures for accessible info-graphics.</p>
-                
-        <p>Many features of SVG were successful enough to be adopted by CSS, such as gradients, filter effects, and animations. To ensure interoperability, the SVG Working Group is working closely with the CSS Working Group to co-develop those features, to provide a consistent model for authors and implementers. The FX taskforce is the venue for this <a href="#joint">joint work</a>.</p>
-        
-        <p>Many authors integrate SVG and HTML content, and this group works with the HTML Working Group to improve that integration. This group also works to ensure that the graphical and API capabilities of SVG and of Canvas are, where practicable, in alignment.</p>
-        
-        <p>For backwards compatibility with existing implementations and content, the group will provide a clear upgrade path from SVG 1.1 and SVG Tiny 1.2 to SVG2.  Some of the new functionality of SVG2 may be defined in stand-alone modules which can be incrementally added to implementations of those earlier specifications.  A modular approach is aimed at promoting quick review and progress toward implementations and Recommendation status.</p>
-        
-        <p>In order to meet the specific needs of content creators using SVG for mapping applications, the SVG WG intends to form an SVG Mapping Task Force, to focus on use case and requirements, and to work on map-targeted modules such as the Tiling and Layering module. In addition, some of this functionality will benefit non-mapping applications such as high resolution photographic or medical imagery, so has been placed in the main SVG2 specification.</p>
-        
-        <p>For all new work, the SVG Working Group intends to gather and publish use cases and requirements, primers to illustrate the purpose and use of specifications, test suites to ensure interoperable implementations, and where possible, script libraries to prototype features and allow for early experimentation and adoption by authors.</p>
-        
-        <p>In addition, the SVG Working Group will continue to maintain existing SVG specifications, publish errata and new revisions where required, update test suites, and provide current implementation reports.</p>
+        <p>Scalable Vector Graphics has matured into a widely-implemented specification for interactive graphics, used in viewers, authoring tools, and in other standards.  The SVG Working Group will build upon this solid foundation by adding new graphical and behavioral features to make it even easier for content creators to make compelling and effective graphical content, interactive data visualization, and web applications.  This includes syntactic sugar and canned effects for some of its more powerful features such as advanced gradients, filters, and animation.</p>
+
+        <p>The SVG WG collaborates with the <a href="#css-wg">CSS WG</a> in the FX Task Force for features that transitioned from SVG to CSS, and with the <a href="#aria-wg">ARIA WG</a> in the SVG Accessibility Task Force for making graphics and data visualizations accessible to users of Accessibility Technology. Joint deliverables with these groups are denoted in the <a href="#deliverables">Deliverables</a> section.</p>
+
+        <p>This group develops specifications which are backwards-compatible and which reflect the current state of interoperability between existing implementations, for ease of authoring. Some new functionality may be defined in module specifications to promote quick review and implementation.</p>
+
 
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
             <p>The following features are out of scope, and will not be addressed by this Working group.</p>
 
             <ul class="out-of-scope">
+              <li>New features for the SVG core language will be deferred to the next version of SVG, to be defined in a future charter.</li>
             </ul>
         </div>
 
@@ -221,7 +213,7 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">Accessible Rich Internet Applications (ARIA) WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p>
             </dd>
 
             <dt id="svg-a11y-api" class="spec"><a href="https://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API Mappings</a></dt>
@@ -232,7 +224,7 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">Accessible Rich Internet Applications (ARIA) WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p>
             </dd>
 
             <dt id="css-transforms" class="spec"><a href="http://www.w3.org/TR/css3-transforms/">CSS Transforms</a></dt>
@@ -413,7 +405,7 @@
               <dd>Coordinate on shared deliverables in the FX Task Force, and on integration of SVG features and properties into CSS</dd>
 
             <dt id="webplatform-wg"><a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
-              <dd>Coordinate on integration of SVG and HTML</dd>
+              <dd>Coordinate on integration of SVG and HTML, and on compatibility with the Canvas API specifications</dd>
 
             <dt><a class="public" href="http://www.w3.org/Fonts/WG/">WebFonts Working Group</a></dt>
               <dd>Coordinate on SVG-in-OpenType.</dd>
