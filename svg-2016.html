@@ -38,6 +38,14 @@
       .todo {
         color: red;
       }
+      
+      .warn {
+        color: red;
+      }
+
+        .warn a, .warn a:visited {
+          color: crimson;
+        }
 
       footer {
         font-size: small;
@@ -70,7 +78,9 @@
 
 
     <main>
-      <h1 id="title">Scalable Vector Graphics (SVG) Working Group Charter</h1>
+      <h1 id="title">Scalable Vector Graphics (SVG) Working Group Charter <span class="warn">DRAFT</span></h1>
+      
+      <p class="warn">This is a draft charter for discussion and has not yet been approved. It uses the <a href="https://github.com/w3c/charter-drafts">new W3C charter template</a>.</p>
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/Graphics/SVG/WG/">Scalable Vector Graphics (SVG) Working Group</a> is to continue the evolution of Scalable Vector Graphics as a format and a platform, and enhance the adoption and usability of SVG in combination with other technologies.</p>
 
@@ -225,59 +235,70 @@
               <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">Accessible Rich Internet Applications (ARIA) WWG</a></p>
             </dd>
 
-            <dt id="css-animations" class="spec"><a href="http://www.w3.org/TR/css3-animations/">CSS Animations</a></dt>
-            <dd>
-              <p>This specification defines a way for authors to animate the values of CSS properties over time, using keyframes to control their duration, number of repeats, and repeating behavior.</p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/css3-animations/">Working Draft</a></p>
-
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
-
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
-            </dd>
-
             <dt id="css-transforms" class="spec"><a href="http://www.w3.org/TR/css3-transforms/">CSS Transforms</a></dt>
             <dd>
               <p>This specification defines a way to style elements with CSS to be transformed in two-dimensional or three-dimensional space.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/css3-transforms/">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> WD / Refining</p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="filter-effects" class="spec"><a href="http://www.w3.org/TR/filter-effects-1/">Filter Effects</a></dt>
             <dd>
               <p>This specification defines a way of processing an element’s rendering to apply an effect (such as blurring, changing color intensity, or warping the image) before it is displayed in the document.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/filter-effects-1/">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> ED / Exploring</p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="css-masking" class="spec"><a href="http://www.w3.org/TR/css-masking-1/">CSS Masking</a></dt>
             <dd>
               <p>This specification defines two means for partially or fully hiding portions of visual elements: masking and clipping.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/css-masking-1/">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> CR / Testing</p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="compositing-blending" class="spec"><a href="http://www.w3.org/TR/compositing-1/">Compositing and Blending</a></dt>
             <dd>
               <p>This specification defines property changes in CSS values to occur smoothly over a specified duration.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/compositing-1/">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> CR / Testing</p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <p class="milestone"><b>Expected completion:</b> Q2 2019</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
+            </dd>
+
+            <dt id="geometry-interfaces" class="spec"><a href="http://www.w3.org/TR/geometry-1/">Geometry Interfaces Module</a></dt>
+            <dd>
+              <p>This specification defines basic geometric interfaces to represent points, rectangles, quadrilaterals, and transformation matrices that can be used by other modules or specifications.</p>
+
+              <p class="draft-status"><b>Draft state:</b> CR / Testing</p>
+
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
+
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
+            </dd>
+
+            <dt id="motion-path" class="spec"><a href="https://www.w3.org/TR/motion-1/">Motion Path</a></dt>
+            <dd>
+              <p>This specification defines motion paths tp allow authors to animate any graphical object along an author-specified path.</p>
+
+              <p class="draft-status"><b>Draft state:</b> FPWD / Exploring</p>
+
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
+
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="css-transitions" class="spec"><a href="http://www.w3.org/TR/css3-transitions/">CSS Transitions</a></dt>
@@ -288,40 +309,29 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
+            </dd>
+
+            <dt id="css-animations" class="spec"><a href="http://www.w3.org/TR/css3-animations/">CSS Animations</a></dt>
+            <dd>
+              <p>This specification defines a way for authors to animate the values of CSS properties over time, using keyframes to control their duration, number of repeats, and repeating behavior.</p>
+
+              <p class="draft-status"><b>Draft state:</b> WD / Refining</p>
+
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
+
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="web-animations" class="spec"><a href="http://www.w3.org/TR/web-animations/">Web Animations</a></dt>
             <dd>
               <p>This specification defines defines a model for synchronization and timing of changes to the presentation of a Web page, and an application programming interface for interacting with this model.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/web-animations/">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> ED / Refining</p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
-            </dd>
-
-            <dt id="geometry-interfaces" class="spec"><a href="http://www.w3.org/TR/geometry-1/">Geometry Interfaces Module</a></dt>
-            <dd>
-              <p>This specification defines basic geometric interfaces to represent points, rectangles, quadrilaterals, and transformation matrices that can be used by other modules or specifications.</p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="http://www.w3.org/TR/geometry-1/">Working Draft</a></p>
-
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
-
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
-            </dd>
-
-            <dt id="motion-path" class="spec"><a href="https://www.w3.org/TR/motion-1/">Motion Path</a></dt>
-            <dd>
-              <p>This specification defines motion paths tp allow authors to animate any graphical object along an author-specified path.</p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/motion-1/">Working Draft</a></p>
-
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
-
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WWG</a></p>
+              <p class="joint"><b>Joint Deliverable with:</b> <a href="#css-wg">CSS WG</a></p>
             </dd>
 
             <dt id="animation-elements" class="spec"><a href="https://svgwg.org/specs/animation-elements/">Animation Elements</a></dt>
@@ -330,7 +340,7 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://svgwg.org/specs/animation-elements/">Editor's Draft</a></p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
             </dd>
 
 
@@ -340,7 +350,7 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="http://dev.w3.org/SVG/modules/param/master/SVGParam.html">Editor's Draft</a></p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
             </dd>
 
 
@@ -350,7 +360,7 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="http://dev.w3.org/SVG/modules/connector/SVGConnector.html">Editor's Draft</a></p>
 
-              <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
+              <!-- <p class="milestone"><b>Expected completion:</b> Q4 2017</p> -->
             </dd>
           </dl>
         </div>
@@ -361,7 +371,7 @@
           </h3>
 
           <p>
-            The Working Group will deliver the following W3C informative specifications:
+            The Working Group will deliver the following informative specifications:
           </p>
           <dl>
             <dt id="svg-authoring-guide" class="spec"><a href="http://w3c.github.io/svgwg/specs/svg-authoring/">SVG Authoring Guide</a></dt>
@@ -397,19 +407,30 @@
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
             <dt id="aria-wg"><a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications (ARIA) Working Group</a></dt>
-            <dd>Coordinate on share deliverables in the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/">SVG-Accessibility Task Force</a></dd>
+              <dd>Coordinate on share deliverables in the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/">SVG-Accessibility Task Force</a></dd>
 
-            <dt id="css-wg"><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></dt>
-            <dd>Coordinate on shared deliverables, and on integration of SVG features and properties into CSS</dd>
+            <dt id="css-wg"><a href="https://www.w3.org/Style/CSS/">Cascading Style Sheets (CSS) Working Group</a></dt>
+              <dd>Coordinate on shared deliverables in the FX Task Force, and on integration of SVG features and properties into CSS</dd>
 
             <dt id="webplatform-wg"><a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
-            <dd>Coordinate on integration of SVG and HTML</dd>
-          </dl>
+              <dd>Coordinate on integration of SVG and HTML</dd>
 
+            <dt><a class="public" href="http://www.w3.org/Fonts/WG/">WebFonts Working Group</a></dt>
+              <dd>Coordinate on SVG-in-OpenType.</dd>
+          </dl>
+      
           <h3 id="external-coordination">External Organizations</h3>
+
+
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
+            <dt><a class="public" href="http://idpf.org/">International Digital Publishing Forum (IDPF)</a>
+              <dd>Work with <a href="http://idpf.org/">IPDF</a> and the <a href="http://www.w3.org/dpub/IG/wiki/Main_Page">Digital Publishing IG</a> on EPUB to facilitate use of SVG in digital books.</dd>
+
+            <dt><a href="http://www.khronos.org/">Khronos</a></dt>
+              <dd>Coordinate on APIs and features with OpenVG, OpenGL, and other specifications.</dd>
+
+            <dt><a href="http://wg11.sc29.org/">MPEG</a></dt>
+              <dd>Provide guidance for integration and compatible extensions of SVG. Liaise regarding SVG-in-OpenType.</dd>
           </dl>
 
 
