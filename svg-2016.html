@@ -84,6 +84,8 @@
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/Graphics/SVG/WG/">Scalable Vector Graphics (SVG) Working Group</a> is to continue the evolution of Scalable Vector Graphics as a format and a platform, and enhance the adoption and usability of SVG in combination with other technologies.</p>
 
+      <p>The exclusive goal for this charter period is to drive the SVG 2 specification to completion as a W3C Recommendation.</p>
+
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/19480/join">Join the Scalable Vector Graphics (SVG) Working Group.</a></p>
       </div>
@@ -145,34 +147,28 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
+
+        <p>The goal of this charter period is to complete the SVG 2 specification as a W3C Recommendation. To accomplish this goal, the group will create a test suite, generate an implementation report which confirms multiple interoperable implementations of each feature of the specification, and remove all features from the stable specification which do not have adequate implementation. Features removed from the specification, and new proposed features, may be published as Working Group Notes or incubated further in a Community Group or other appropriate venue.</p>
   
         <p>The SVG WG develops the core SVG language and related modules, consisting of:</p>
 
         <ul>
-          <li><strong>Markup syntaxes</strong>, compatible with XML and HTML5 parsing, for describing shapes, text, and painting effects, including gradients, filters, and other graphical effects, through a set of elements and attributes.  This includes semantics for navigation, declarative animation, and interactivity.</li>
-          <li>An <strong>API</strong>, compatible with DOM (Document Object Model), for using script to view, add, remove, or change the elements and attributes of the DOM tree, to handle interactivity, and to provide special functionality, through a set of events and methods.</li>
-          <li>A set of <strong>style properties</strong>, compatible with CSS, and expressible as presentation attributes, for affecting the appearance and behavior of graphical elements.</li>
+          <li><strong>Markup syntaxes</strong>, compatible with XML and HTML5 parsing, for describing shapes, text, and painting effects, including gradients, filters, and other graphical effects, through a set of elements and attributes.  This includes semantics for navigation and interactivity.</li>
+
+          <li>An <strong>API</strong>, compatible with DOM (Document Object Model), for using script to view, add, remove, or change the elements and attributes of the DOM tree, to handle interactivity and animation, and to provide special functionality, through a set of events and methods.</li>
+
+          <li>A set of <strong>styling characteristics</strong>, expressible as presentation attributes or CSS properties, for defining the appearance and behavior of graphical elements.</li>
         </ul>
 
-        <p>Scalable Vector Graphics has matured into a widely-implemented specification for interactive graphics, used in viewers, authoring tools, and in other standards.  The SVG Working Group will build upon this solid foundation by adding new graphical and behavioral features to make it even easier for content creators to make compelling and effective graphical content, interactive data visualization, and web applications.  This includes syntactic sugar and canned effects for some of its more powerful features such as advanced gradients, filters, and animation.</p>
+        <p>Scalable Vector Graphics has matured into a widely-implemented specification for interactive graphics, used in viewers, authoring tools, and in other standards.  The SVG Working Group builds upon this solid foundation by adding new graphical and behavioral features to make it even easier for content creators to make compelling and effective graphical content, interactive data visualization, and web applications.</p>
 
-        <p>The SVG WG collaborates with the <a href="#css-wg">CSS WG</a> for shared features, and with the <a href="#aria-wg">ARIA WG</a> in the SVG Accessibility Task Force for making graphics and data visualizations accessible to users of Accessibility Technology. Joint deliverables with these groups are denoted in the <a href="#deliverables">Deliverables</a> section.</p>
+        <p>The SVG WG collaborates with the <a href="#css-wg">CSS WG</a> for shared styling features, and with the <a href="#aria-wg">ARIA WG</a> to make data visualizations and other graphics accessible to users of Accessibility Technology.</p>
 
         <p>This charter revision removes several specifications from the scope of the SVG WG, and does not add any deliverables to the scope, though it does note the expansion of the SVG accessibility API mappings deliverable to three separate documents for organizational purposes. For details, see the <a href="#charter-2016">list of charter differences</a>.</p>
 
         <p>This group develops specifications which are backwards-compatible and which reflect the current state of interoperability between existing implementations, for ease of authoring. Some new functionality may be defined in module specifications to promote quick review and implementation.</p>
 
         <p>This charter revision removes several specifications from the scope of the SVG WG. It adds three split-out modules for the next version of SVG, and notes the expansion of the SVG accessibility API mappings deliverable to three separate documents for organizational purposes. For details, see the <a href="#charter-2016">list of charter differences</a>. In addition, discussion and coordination for a future Level of Detail specification will continue.</p>
-
-
-        <div id="section-out-of-scope">
-          <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
-
-            <ul class="out-of-scope">
-              <li>New features for the SVG core language will be deferred to the next version of SVG, to be defined in a future charter.</li>
-            </ul>
-        </div>
 
         <div>
           <h3>Success Criteria</h3>
@@ -217,7 +213,7 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p>
+              <!-- <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p> -->
             </dd>
 
             <dt id="graphics-a11y-map" class="spec"><a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a></dt>
@@ -228,7 +224,7 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p>
+              <!-- <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p> -->
             </dd>
 
             <dt id="aria-graphics" class="spec"><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a></dt>
@@ -239,7 +235,7 @@
 
               <p class="milestone"><b>Expected completion:</b> Q4 2017</p>
 
-              <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p>
+              <!-- <p class="joint"><b>Joint Deliverable with:</b> <a href="#aria-wg">ARIA WG</a></p> -->
             </dd>
 
           </dl>
@@ -287,18 +283,17 @@
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
             <dt id="aria-wg"><a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications (ARIA) Working Group</a></dt>
-              <dd>Coordinate on shared deliverables in the <a href="https://www.w3.org/WAI/PF/svg-a11y-tf/">SVG-Accessibility Task Force</a></dd>
+              <dd>Coordinate on accessibility deliverables.</dd>
 
             <dt id="css-wg"><a href="https://www.w3.org/Style/CSS/">Cascading Style Sheets (CSS) Working Group</a></dt>
-              <dd>Coordinate on integration of SVG features and properties into CSS</dd>
+              <dd>Coordinate on integration of SVG features and properties into CSS.</dd>
 
             <dt id="webplatform-wg"><a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
-              <dd>Coordinate on integration of SVG and HTML, and on compatibility with the Canvas API specifications</dd>
+              <dd>Coordinate on integration of SVG and HTML, and on compatibility with the Canvas API specifications.</dd>
 
           </dl>
       
           <h3 id="external-coordination">External Organizations</h3>
-
 
           <dl>
             <dt><a class="public" href="http://idpf.org/">International Digital Publishing Forum (IDPF)</a>
@@ -310,7 +305,6 @@
             <dt><a href="http://wg11.sc29.org/">MPEG</a></dt>
               <dd>Provide guidance for integration and compatible extensions of SVG. Liaise regarding SVG-in-OpenType.</dd>
           </dl>
-
 
         </div>
       </section>
@@ -612,7 +606,7 @@
                   20 October 2017
                 </td>
                 <td>
-                  <p>Changed chair to Nikos Andronikos (Canon). Changed team contact to Doug Schepers. Updated deliverable timelines. Added modules for next version of SVG: <a href="#svg-paths">SVG Paths</a>; <a href="#svg-strokes">SVG Strokes</a>; <a href="#svg-markers">SVG Markers</a>. Clarified specific deliverables with the WAI PF WG in the SVG Accessibility Task Force: <a href="#svg-a11y-map">SVG Accessibility API Mappings</a>; <a href="#graphics-a11y-map">Graphics Accessibility API Mappings</a>; and <a href="#aria-graphics">WAI-ARIA Graphics Module</a>. Dropped the following deliverables: Zoom media feature for level of detail; Lazyload for tiling and level of detail; Resource Hints; SVG Integration; SVG Streaming; SVG Parameters; SVG Connectors; SVG Paths; SVG Strokes; SVG Markers. Closed FX Task Force, and deferred control of these joint deliverables to the CSS WG: Animation Elements; Compositing and Blending; CSS Animations; CSS Masking; CSS Transforms; CSS Transitions; Filter Effects; Geometry Interfaces Module; Motion Path; Web Animations.</p>
+                  <p>Changed chair to Nikos Andronikos (Canon). Changed team contact to Doug Schepers. Updated deliverable timelines. Added modules for next version of SVG: <a href="#svg-paths">SVG Paths</a>; <a href="#svg-strokes">SVG Strokes</a>; <a href="#svg-markers">SVG Markers</a>. Clarified specific deliverables with the WAI PF WG in the SVG Accessibility Task Force, and changed the status to solely be deliverables of the SVG WG: <a href="#svg-a11y-map">SVG Accessibility API Mappings</a>; <a href="#graphics-a11y-map">Graphics Accessibility API Mappings</a>; and <a href="#aria-graphics">WAI-ARIA Graphics Module</a>. Dropped the following deliverables: Zoom media feature for level of detail; Lazyload for tiling and level of detail; Resource Hints; SVG Integration; SVG Streaming; SVG Parameters; SVG Connectors; SVG Paths; SVG Strokes; SVG Markers. Closed FX Task Force, and deferred control of these joint deliverables to the CSS WG: Animation Elements; Compositing and Blending; CSS Animations; CSS Masking; CSS Transforms; CSS Transitions; Filter Effects; Geometry Interfaces Module; Motion Path; Web Animations.</p>
                 </td>
               </tr>
             </tbody>
