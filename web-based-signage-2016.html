@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Web-based Signage Working Group Charter</title>
+    <title>[Draft] Web-based Signage Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css" />
@@ -69,9 +69,9 @@
 
 
     <main>
-      <h1 id="title">Web-based Signage Working Group Charter</h1>
+      <h1 id="title"><i>[Draft]</i> Web-based Signage Working Group Charter</h1>
 
-      <p class="mission">The <strong>mission</strong> of the <a href="">Web-based Signage Working Group</a> is to provide methods to user agents embedded in digital signage terminal devices.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="">Web-based Signage Working Group</a>  is to provide APIs that enable a web application to get the device information and to control the device via a user agent in a digital signage terminal device.</p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Web-based Signage Working Group.</a></p>
@@ -125,46 +125,37 @@
         </table>
       </section>
 
-
-
       <section id="scope" class="scope">
         <h2>Scope</h2>
-	<p>The group will develop APIs for user agents (“UA”s hereafter) embedded in digital signage terminal devices (“devices” hereafter).</p>
+	<p>This Working Group will define APIs for user agents ("UA"s hereafter) embedded in digital signage terminal devices ("devices" hereafter).</p>
 
-	<p>Two types of users exist. Device operators who remotely operate devices and Audiences who watch the devices. Device operators have access to UAs of devices. These operators typically do not have access to the devices physically. On the contrary, audiences, who are anonymous and in the general public, do not have control over devices.</p>
+	<p>Web-based signage is a digital signage using web technologies. Web-based signage terminal functions are performed by a web application loaded on a UA. The web application is called a Web-based Signage Player (“player” hereafter), which shows digital signage contents in accordance with the order provided by the digital signage server. The player also should have terminal management functions such as terminal configuration, logging, and reporting as well as content management. Usually, once a player is loaded on a UA, it works automatically.</p>
+	
+	<p>Two types of users exist for UAs of the devices. They are a device operator who remotely operates devices and audiences who watch the devices. The device operator, not always a human being but a server function, has access to UAs of devices. The operator typically does not have access to the devices physically but wants to control the devices beyond the network. On the contrary, audiences, who are anonymous and in the general public, do not have control over devices.</p>
 
-	<p>The signage UA should provide Remote Management API to be controlled by device operators.</p>
+	<p>The signage UA should provide API for the player to be used by a device operator.</p>
 
-	<p>The operators want to manage the signage UA via their web console of the controlling device. Operators want to use the following functions:
+	<p>The Working Group will define the prior required APIs for the operator to manage the signage UA via web console of the controlling device. Basically, the APIs are classified to the following functions:</p>
 	  <ul>
-	    <li>Start/Stop the UA</li>
-	    <li>Open/Close a page</li>
-	    <li>Reboot the UA</li>
-	    <li>Accept/Reject when the UA prompts for a user confirmation reuquired for security reasons</li>
+	    <li>Get the device information</li>
+	    <li>Control the device</li>
 	  </ul>
 	</p>
 
 	<p>These operations require protection mechanism to prevent unauthorized accesses.</p>
 
-	<p>In addition to above functions, the WG will develop functions which enable web applications to access a set of functions in the underlying operating system, such as:
-	  <ul>
-	    <li>Reboot the terminal device at operating system level</li>
-	  </ul>
-	</p>
-
-	<p>Because,  rebooting at the operating system level is useful for some trouble or emergency cases.</p>
-
-	<p>The specifications produced by this Working Group will address security and privacy considerations based on a security model different from the traditional browser security model, because the device UAs controlled by the device operators rather than the audiences watching the devices. The considerations need to address the combination of both the UAs and the controlling device.</p>
+	<p>The specifications produced by this Working Group will address security and privacy considerations because the device UAs controlled by the device operator rather than the audiences watching the devices. The considerations need to address the combination of both the UAs and the controlling device.</p>
 
 	<p>Members of the Working Group should review other working groups' deliverables that identified as being relevant to the Working Group's mission.</p>
 
-
         <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this working group.</p>
+            <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
 
             <ul class="out-of-scope">
-	      <li>This Working Group will not define or mandate hardware specification of digital signage terminal devices.</li>
+	      <li>This Working Group will not define or mandate hardware specification of devices.</li>
+	      <li>This Working Group will not define the APIs for generic UAs but them for embedded UAs in devices.</li>
+	      <li>This Working Group will not also define the security configuration because it depends on the device hardware configuration.</li>
             </ul>
         </div>
 
@@ -191,29 +182,19 @@
           <p>
             The working group will deliver the following W3C normative specifications:
           </p>
-          <dl>
-            <dt id="web-foo" class="spec">Web Remote Management API</dt>
-            <dd>
-              <p>Remote Management API consists of following functions:</p>
-
-	      <dl>
-		<dt id="web-rmapi-power-management" class="spec">Power Management</dt>
-		<dd><p>This function enables web applications to access the signage terminal device’s power management system. Restarting the underlying web runtime or rebooting the underlying operating system is useful for some use cases. Restarting the underlying operating system and rebooting the device can be used for the basic trouble shootings. By studying the use cases, the function will be consulted for enhancement. The protocol and data format for controlling the terminal would also be considered for the further discussion.<p></dd>
-
-		<dt id="web-rmapi-remote-prompting" class="spec">Remote Prompting</dt>
-		<dd><p>In a case of malfunctions or other signage terminal prompts requiring user interaction, an API needs to define to where the prompt needs to be shown because audiences of the signage terminal device cannot answer for the dialog. This function will be consulted with use case discussion.</p></dd>
-
-		<dt id="web-rmapi-other-contextual" class="spec">Other Contextual Information</dt>
-		<dd><p>The other functions besides the above are needed to enable web applications to get system-wide information of the digital signage terminal, such as screen state (power, brightness, colorimetry, color temperature) and memory information (RAM usage). Moreover, it is useful for web applications to prepare such functions as service workers which can interact with any windows (context/domains) or context with a privilege to access any windows and origins. These functions will be considered in further discussion with use cases.</p></dd>
-
-	      </dl>
-
-              <p class="draft-status"><b>Draft state:</b> [No draft]</p>
-
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
-            </dd>
-          </dl>
-        </div>
+	    <dl>
+	      <dt id="web-rmapi-power-management" class="spec">Power Status Management</dt>
+	      <dd>
+		  <p>This function consists of Power Status Control and Power Status Scheduling. This enables web applications to access the device’s power management system. Consulting the power status mode of the device, there are stand-by mode (display off and UA stopped) and display-off mode (only display off) in addition to running mode (display on and UA running). Power Status Control provides the function of changing the power status mode of the device to such modes for saving power.  Resuming from stand-by mode, it needs a scheduled return, which is provided by Power Status Scheduling. By studying the use cases, the function will be consulted for enhancement.</p>
+		  <p class="draft-status"><b>Draft state:</b>[No draft]</p>
+	      </dd>
+		  <dt id="web-rmapi-other-contextual" class="spec">Contextual Information</dt>
+	      <dd>
+		  <p>The function consists of Signage Operational Information and Signage Functional Information. The information provided by this function is used for the device management and the content management for signage services. Signage Operational Information provides the unique information of the device such as hardware information (serial number, manufacture name, or model name), which is used for the device identification. Signage Functional Information allows us to get the functional information of the device such as resolution and size of display used for fitting the contents to display. The information obtained for the remote management may be enriched by use case discussion.</p>
+		  <p class="draft-status"><b>Draft state:</b><a href="http://rawgit.com/futomi/W3C_Web-based_Signage_BG/master/device_infomation_api.html">Adopted from Web-based Signage Business Group</a></p>
+	      </dd>
+	    </dl>
+	    </div>
 
         <div id="ig-other-deliverables">
           <h3>
@@ -221,7 +202,7 @@
           </h3>
 	  <dl>
 	    <dt>Use cases and requirements:</dt>
-	    <dd><p>The Working Group is strongly encouraging the participants to create and maintain use cases and requirements document for each specification.</dd>
+	    <dd><p>The Working Group is strongly encouraging the participants to create and maintain use cases and requirements document for each specification. In addition, use cases regarding the web-based signage service are expected to be discussed in Web-based Signage Business Group.</dd>
 	    <dt>Implementation guidelines:</dt>
 	    <dd><p>The group may provide informative guidelines for implementers to encourage its implementation.</dd>
 	  </dl>
@@ -230,7 +211,6 @@
           </p>
           <ul>
 	    <li>Primers</li>
-	    <li>Non-normative schema for language formats</li>
 	    <li>Non-normative group notes</li>
           </ul>
         </div>
@@ -253,10 +233,10 @@
             <tbody>
               <tr>
                 <th>Remote Management API</th>
-                <td>Q2 2016</td>
-                <td>Q4 2016</td>
-                <td>Q2 2017</td>
-                <td>Q4 2017</td>
+                <td>Q1 2017</td>
+                <td>Q3 2017</td>
+                <td>Q1 2018</td>
+                <td>Q3 2018</td>
               </tr>
             </tbody>
           </table>
@@ -276,23 +256,20 @@
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
 	  <dl>
-	    <dt><a href="http://www.w3.org/2002/mmi/">Multimodal Interaction Working Group</a></dt>
-            <dd><p>The Multimodal Interaction Working Group develops open standards that extend the Web to allow multiple modes of interaction which might be used by the Web-based Signage Working Group.</p></dd>
-
 	    <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
-            <dd><p>The Web-based Signage Working Group intends to have its deliverables reviewed by the Web and TV Interest Group from the perspective of using TV as a Web-based signage terminal.</p></dd>
+            <dd><p>The Web-based Signage Working Group intends to have its deliverables reviewed by the Web and TV Interest Group from the perspective of using a TV set as a device of Web-based signage.</p></dd>
 
 	    <dt><a href="http://www.w3.org/WoT/IG/">Web of Things Interest Group</a></dt>
-            <dd><p>The goal of the Web of Things Interest Group is to accelerate the development of open markets of applications and services based on the role of Web technologies for a combination of the Internet of Things (IoT) with the Web of data.</p></dd>
+            <dd><p>The goal of the Web of Things Interest Group is to accelerate the development of open markets of applications and services based on the role of Web technologies for a combination of the Internet of Things (IoT) with the Web of data. The Web-based Signage Working Group intends to collaborate with Web of Things Interest Group to create standard in the view point of a device as one of Things for remote management.</p></dd>
 
 	    <dt><a href="https://www.w3.org/community/websignage/">Web-based Signage Business Group</a></dt>
-            <dd><p>The Web-based Signage Business Group studies profiles for web-based signage player as well as use cases and requirements of web-based signage.</p></dd>
+            <dd><p>The Web-based Signage Business Group studies profiles for the player as well as use cases and requirements of web-based signage services.</p></dd>
 	  </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
             <dt><a href="http://www.itu.int/en/ITU-T/studygroups/2013-2016/16/Pages/default.aspx">ITU-T SG16 Q14 (Q14/16)</a></dt>
-            <dd><p>ITU-T Q14/16 studies digital signage systems and services, and currently including the web-based architecture of digital signage.</p><dd>
+            <dd><p>ITU-T Q14/16 studies digital signage systems and services, currently including the web-based architecture of digital signage.</p><dd>
 
             <dt><a href="http://http://digital-signage.jp/">Digital Signage Consortium (DSC)</a></dt>
             <dd><p>Digital Signage Consortium studies and develops the digital signage services and systems with its member companies including location owners (buildings, railways), content and service providers, and system integrators.</p><dd>
@@ -309,7 +286,7 @@
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 10 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 10 or more active participants for its duration, including representatives from the key implementers of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group. There is no minimum requirement for other Participants.
         </p>
         <p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
@@ -385,7 +362,7 @@
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a>> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a> for all its deliverables.</p>
       </section>
 
 
@@ -404,7 +381,7 @@
 
     <footer>
       <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+        <i class="todo"><a href="mailto:shigeya@w3c.org">Shigeya Suzuki</a></i>
       </address>
 
       <p class="copyright">
@@ -421,7 +398,7 @@
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
       </p>
       <p>
-        <!-- $Date: 2015/04/30 16:53:49 $ -->
+        <!-- $Date: 2016/12/09 10:44:00 $ -->
       </p>
     </footer>
 
