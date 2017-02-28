@@ -3,7 +3,7 @@ Definitions related to the state of in-progress work adopted in a charter (per [
 Adopted Draft
 =================
 
-*Adopted Draft* is the draft from which the WG will start work. It will usually be the latest document of its shortname in /TR. Once a draft is "Adopted" any changes against it must be resolved through the WG's decision process once the group is chartered.
+*Adopted Draft* is the draft from which the WG will start work. It will usually be the latest document of its shortname in /TR. Once a draft is "Adopted," any changes against it must be resolved through the WG's decision process once the group is chartered.
 
 Reference Draft
 =================
