@@ -6,4 +6,4 @@ can create a draft charter here for public discussion. If you’d like to have
 push access to add a draft charter to the repo,
 [file an issue requesting access](https://github.com/w3c/charter-drafts/issues) or fork this repo to make a pull request.
 
-The template: http://w3c.github.io/charter-drafts/charter-template.html
+See [the template](https://w3c.github.io/charter-drafts/charter-template.html)
