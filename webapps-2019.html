@@ -144,49 +144,41 @@ Meeting Schedule
 
 <p>The WebApps Working Group was a predecessor to the Web Platform Working Group (which remains active to work on specifications that are pertinent to the discussions relating to a collaboration agreement between the W3C and the WHATWG). The remaining specifications have been transferred from the Web Platform Working Group to the WebApps Working Group, so that progress can continue to be made on those specifications while the W3C and WHATWG negotiations are ongoing.</p>
 
-<p>In addition, specifications that have been successfully incubated in the Web Platform Incubator Community Group have been transferred to the WebApps Working Group.</p>
+<p>In addition, specifications that have been successfully incubated in the <a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group (WICG)</a> have been transferred to the WebApps Working Group.</p>
 </section>
 
 <section id="scope" class="scope">
 <h2>Scope</h2>
 <p>The WebApps Working Group will produce specifications for client-side web application development, that are interoperable with target formats including HTML, CSS, and SVG.</p>
 
-<div id="section-out-of-scope">
-<h3 id="out-of-scope">Out of Scope</h3>
-<p>The following features are out of scope, and will not be addressed by this <i class="todo">(Working|Interest)</i> group.</p>
-
-<ul class="out-of-scope">
-</ul>
-</div>
+<p>Specifications produced by the WebApps Working Group will enable developers to create web applications that work across a wide range of platforms and devices, and for a broad diversity of users, by addressing matters of accessibility, device independence, internationalisation, privacy, and security.</p>
 
 <div>
 <h3>Success Criteria</h3>
-<p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
 
-<p>Each specification should contain a section detailing any known security or privacy implications for implementers, Web authors, and end users.</p>
+<p>Each specification will contain a section detailing any known security or privacy implications for implementors, developers, and users.</p>
 
 <p>Each specification will contain a section on accessibility that describes any benefits and impacts, including ways specification features can be used to address them, and
 recommendations for maximising accessibility in implementations.</p>
 
-<p>Each specification will have a testing plan developed in parallel, that will be completed when the specification reaches Candidate Recommendation.</p>
+<p>Each specification will have a testing plan developed in parallel, that will be completed when the specification reaches <a href="https://www.w3.org/Consortium/Process#last-call">Candidate Recommendation</a>.</p>
+
+<p>Each specification will have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a>, in order to progress to <a href="https://www.w3.org/Consortium/Process/#RecsPR">Proposed Recommendation</a>.</p>
+
+<p><i class="todo">If participants from fewer than three distinct browser-engine projects are participating in the group, its charter should be re-examined by the W3C.</i></p>
 </div>
 </section>
 
 <section id="deliverables">
 <h2>Deliverables</h2>
-<p class="issue"><b>Issue:</b> I've removed the milestones table, which is always wildly inaccurate, and included the milestones as projected completion dates in the description template for each deliverable. Up-to-date milestones tables should be maintained on the group page and linked to from this charter.</p>
 
-<p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/[groupname]/PubStatus">group publication status page</a>.</p>
-
-<p><span class='todo'>Consider adopting a healthy testing policy, such as:</span> To promote interoperability, all changes made to specifications should have <a href='https://github.com/w3c/testing-how-to/#test-as-you-commit-pointer-event-whatwg-webperf'>tests</a>.</p>
-
-<p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+<p>More information about WebApps Working Group specifications can be found in the <a><i class="todo">Github repository</i></a>.</p>
 
 <div id="normative">
 <h3>Normative Specifications</h3>
 <p>The WebApps Working Group will deliver the following W3C normative specifications:</p>
 
-<h3>API specifications</h3>
+<h4>API specifications</h4>
 
 <dl>
 <dt class="spec">File API</dt>
@@ -211,14 +203,14 @@ recommendations for maximising accessibility in implementations.</p>
 <p>This specification defines API for a database of records holding simple values and hierarchical objects.</p>
 <ul>
 <li><a href="https://w3c.github.io/IndexedDB/" aria-label="Indexed Database API Editor's Draft">Editor's Draft</a></li>
-<li>https://www.w3.org/TR/IndexedDB-3/" aria-label="Indexed Database API 3.0 Working Draft">Working Draft</a></li>
+<li><a href="https://www.w3.org/TR/IndexedDB-3/" aria-label="Indexed Database API 3.0 Working Draft">Working Draft</a></li>
 </ul></dd>
 
 <dt class="spec">Intersection Observer</dt>
 <p>This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root").</p> 
 <ul>
-<li><a href="https://w3c.github.io/IntersectionObserver/" aria-label="Interesection Observer Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/intersection-observer/" aria-label="Interesection Observer Working Draft">Working Draft</a></li>
+<li><a href="https://w3c.github.io/IntersectionObserver/" aria-label="Intersection Observer Editor's Draft">Editor's Draft</a></li>
+<li><a href="https://www.w3.org/TR/intersection-observer/" aria-label="Intersection Observer Working Draft">Working Draft</a></li>
 </ul></dd>
 
 <dt class="spec">Pointer Lock 2.0</dt>
@@ -234,7 +226,7 @@ recommendations for maximising accessibility in implementations.</p>
 <dd>
 <p>This specification defines an API for sending push message to a web application, via a push service.</p>
 <ul>
-<li><a hef="http://w3c.github.io/push-api/" aria-label="Push API Editor's Draft">Editor's Draft</a></li>
+<li><a href="http://w3c.github.io/push-api/" aria-label="Push API Editor's Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/push-api/" aria-label="Push API Working Draft">Working Draft</a></li>
 </ul></dd>
 
@@ -253,77 +245,14 @@ This specification defines an API for reading screen orientation, being informed
 <li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Editor's Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Working Draft">Working Draft</a></li>
 </ul></dd>
-
-
-<dt class="spec">File API</dt>
-<dd>
-<p>This specification provides an API for representing file objects in web applications, as well as programatically selecting them and accessing their data.</p>
-<ul>
-<li><a href="https://w3c.github.io/FileAPI/" aria-label="File API Editors' Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/FileAPI/" aria-label="File API Working Draft">Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Gamepad</dd>
-<dd>
-<p>This specification defines a low-level interface that represents gamepad devices, and enables web applications to act upon gamepad data.</p>
-<ul>
-<li><a href="https://w3c.github.io/gamepad/" aria-label="Gamepad Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/gamepad/" aria-label="Gamepad Working Draft">Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Indexed Database API 3.0</dt>
-<dd>
-<p>This specification defines API for a database of records holding simple values and hierarchical objects.</p>
-<ul>
-<li><a href="https://w3c.github.io/IndexedDB/" aria-label="Indexed Database API Editor's Draft">Editor's Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Intersection Observer</dt>
-<p>This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root").</p> 
-<ul>
-<li><a href="https://w3c.github.io/IntersectionObserver/" aria-label="Interesection Observer Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/intersection-observer/" aria-label="Intersection Observer First Public Working Draft">First Public Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Pointer Lock 2.0</dt>
-<dd>
-<p>This specification defines an API that provides scripted access to raw mouse movement data while locking the target of mouse events to a single element and removing the cursor from view.</p>
-<ul>
-<li><a href="https://w3c.github.io/pointerlock/" aria-label="Pointer Lock 2.0 Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/pointerlock-2/" aria-label="Pointer Lock 2.0 Working Draft">Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Push API</dt>
-<dd>
-<p>This specification defines an API for sending push message to a web application, via a push service.</p>
-<ul>
-<li><a href="http://w3c.github.io/push-api/" aria-label="Push API Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/push-api/" aria-label="Push API Working Draft">Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Screen Orientation API</dt>
-<dd>
-<p>This specification defines an API for reading screen orientation, being informed of screen orientation changes, and locking screen orientation to a specific state.</p>
-<ul>
-<li><a href="https://w3c.github.io/screen-orientation/" aria-label="Screen Orientation API Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/screen-orientation/" aria-label="Screen Orientation API Working Draft">Working Draft</a></li>
-</ul></dd>
-
-<dt class="spec">Web App Manifest</dt>
-<dd>
-<p>This specification defines a JSON-based manifest file that provides developers with a centralized place to put metadata associated with a web application.</p>
-<ul>
-<li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Editor's Draft">Editor's Draft</a></li>
-<li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Working Draft">Working Draft</a></li>
-</ul></dd>
 </dl>
 
-<h3>Editing specifications</h3>
 
+<h4>Editing specifications</h4>
 <dl>
 <dt class="spec">Clipboard API and Events</dt>
 <dd>
-<p>This specification defines API for accessing data on the system clipboard.</p>
+<p>This specification defines an API for accessing data on the system clipboard.</p>
 <ul>
 <li><a href="https://w3c.github.io/clipboard-apis/" aria-label="Clipboard API and Events Editor's Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/clipboard-apis/" aria-label="Clipboard API and Events Working Draft">Working Draft</a></li>
@@ -365,12 +294,12 @@ This specification defines an API for reading screen orientation, being informed
 <dd>
 <p>This specification defines APIs for selection, which allows users and authors to select a portion of a document or specify a point of interest for copy, paste, and other editing operations.</p>
 <ul>
-<li><a href="http://w3c.github.io/selection-api/" aria-label="Slection API Editor's Draft">Editor's Draft</a></li>
+<li><a href="http://w3c.github.io/selection-api/" aria-label="Selection API Editor's Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/selection-api/" aria-label="Selection API Working Draft">Working Draft</a></li>
 </ul></dd>
 </dl>
 
-<h3>UI Events specifications</h3>
+<h4>UI Events specifications</h4>
 
 <dl>
 <dt class="spec">UI Events</dt>
@@ -397,27 +326,10 @@ This specification defines an API for reading screen orientation, being informed
 <li><a href="http://www.w3.org/TR/uievents-key/" aria-label="UI Events KeyboardEvent Key Values Candidate Recommendation">Candidate Recommendation</a></li>
 </ul></dd>
 </dl>
-
-</dl>
-
-
-
-<dl><dt>
-<p class="todo">Per <a href="https://www.w3.org/Consortium/Process/#WGCharter">5.2.6</a>, for every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter (including a predecessor group of the same name), for which there is an existing Reference Draft or Candidate Recommendation: </p>
-<p><b>Adopted Working Draft:</b> The <span class="todo">title, stable URL, and publication date of the <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/draft-states.md#adopted-draft">Adopted Working Draft</a></span> which will serve as the basis for work on the deliverable.
-<p><b>Reference Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://github.com/w3c/charter-drafts/blob/gh-pages/draft-states.md#reference-draft'>Reference Draft</a> or Candidate Recommendation</span> which triggered an Exclusion Opportunity per the Patent Process.
-<span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=32061">charter assistant</a> helps in producing the list</a>. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
-<p>Produced under <b>Working Group Charter:</b> The  <span class="todo">stable URL of the Working Group charter</span> under which the most recent Reference Draft or Candidate Recommendation was published.
-</dd>
-</dl></dl>
-
-
 </div>
 
 <div id="ig-other-deliverables">
-<h3>
-Other Deliverables
-</h3>
+<h3>Other Deliverables</h3>
 <p>
 Other non-normative documents may be created such as:
 </p>
@@ -430,19 +342,10 @@ Other non-normative documents may be created such as:
 
 <div id="timeline">
 <h3>Timeline</h3>
-<p class="todo">Put here a timeline view of all deliverables.</p>
-<ul class="todo">
-<li>Month YYYY: First teleconference</li>
-<li>Month YYYY: First face-to-face meeting</li>
-<li>Month YYYY: Requirements and Use Cases for FooML</li>
-<li>Month YYYY: FPWD for FooML</li>
-<li>Month YYYY: Requirements and Use Cases for BarML</li>
-<li>Month YYYY: FPWD FooML Primer</li>
-</ul>
+
+<p>All specifications produced by the WebApps Working Group are expected to progress during this charter period. The charter does not include a timeline for each specification, because such information is speculative and easily becomes inaccurate.</p>
 </div>
 </section>
-
-
 
 <section id="coordination">
 <h2>Coordination</h2>
