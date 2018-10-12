@@ -49,7 +49,7 @@ font-size: small;
 <header id="header">
 <aside>
 <ul id="navbar">
-<li.><a href="#background">Background</a></li>
+<li><a href="#background">Background</a></li>
 <li><a href="#scope">Scope</a></li>
 <li><a href="#deliverables">Deliverables</a></li>
 <li><a href="#coordination">Coordination</a></li>
@@ -70,7 +70,7 @@ font-size: small;
 <main>
 <h1 id="title">[Draft] Web Applications Working Group Charter</h1>
 
-<p class="mission">The <strong>mission</strong> of the <a href="">Web Applications (WebApps) Working Group</a> is to produce specifications for client-side web application development. This includes Application Programming Interfaces (API) and markup vocabularies for describing and controlling client-side web application behaviour.</p>
+<p id="mission">The <strong>mission</strong> of the <a href="">Web Applications Working Group</a> (WebApps WG) is to produce specifications for client-side application development. This includes Application Programming Interfaces (API) and markup vocabularies for describing and controlling client-side application behavior.</p>
 
 <div class="noprint">
 <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the <i class="todo">WebApps Working Group</i></a></p>
@@ -129,22 +129,24 @@ Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues
 <section id="scope" class="scope">
 <h2>Scope</h2>
 
-<p>The WebApps Working Group will produce specifications for client-side web application development, that are interoperable with target formats including HTML, CSS, and SVG.</p>
+<p>The WebApps Working Group will produce specifications for client-side web application development.</p>
 
-<p>Specifications produced by the WebApps Working Group will enable developers to create web applications that work across a wide range of platforms and devices, and for a broad diversity of users, by addressing matters of accessibility, device independence, internationalisation, privacy, and security.</p>
+<p>Specifications produced by the WebApps Working Group will enable developers to create web applications that work across a wide range of platforms and devices, and for a broad diversity of users, by addressing matters of accessibility, device independence, internationalization, privacy, and security.</p>
 
-<div>
+<section>
 <h3>Success Criteria</h3>
-
-<p>Each specification will contain a section detailing any known security or privacy implications for implementors, developers, and users.</p>
-
-<p>Each specification will contain a section on accessibility that describes any benefits and impacts, including ways specification features can be used to address them, and
-recommendations for maximising accessibility in implementations.</p>
-
-<p>Each specification will have a testing plan developed in parallel, that will be completed when the specification reaches <a href="https://www.w3.org/Consortium/Process#last-call">Candidate Recommendation</a>.</p>
-
-<p>Each specification will have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a>, in order to progress to <a href="https://www.w3.org/Consortium/Process/#RecsPR">Proposed Recommendation</a>.</p>
-</div>
+<p>All specification must have least two implementors willing to commit to collaborating on the specification. If there is only a single implementer willing to implement the specification for a prolonged period (e.g., 6 months), the specification shall be moved to the WICG for incubation. If the specification  gains traction with multiple implementors, it can be moved back into the working group.</p>
+<p>Each specification must have a publicly accessible test suite and, during the <a href="https://www.w3.org/Consortium/Process#last-call">Candidate Recommendation</a> phase, an implementation report. The test suite should be developed in parallel to the specification and must be fully and demonstratively completed before the specification can progress pass the <a href="https://www.w3.org/Consortium/Process#last-call">Candidate Recommendation</a> phase.</p>
+<p>Each specification must have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> in web browsers in order to progress to <a href="https://www.w3.org/Consortium/Process/#RecsPR">Proposed Recommendation</a>.</p>
+</section>
+<section>
+<h3>Specification requirements</h3>
+<p>Each specification shall describe, either inline or preferably as a section in the specification:</p>
+<ul>
+<li>Any known security or privacy implications for implementors, developers, and users. Please refer to the <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a>.</li>
+<li>Any benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</li>
+</ul>
+</section>
 </section>
 
 <section id="deliverables">
@@ -154,7 +156,6 @@ recommendations for maximising accessibility in implementations.</p>
 
 <div id="normative">
 <h3>Normative Specifications</h3>
-
 <p>The WebApps Working Group will deliver the following W3C normative specifications:</p>
 
 <h4>API specifications</h4>
@@ -162,7 +163,7 @@ recommendations for maximising accessibility in implementations.</p>
 <dl>
 <dt class="spec">File API</dt>
 <dd>
-<p>This specification provides an API for representing file objects in web applications, as well as programatically selecting them and accessing their data.</p>
+<p>This specification provides an API for representing file objects in web applications, as well as programmatically selecting them and accessing their data.</p>
 <ul>
 <li><a href="https://w3c.github.io/FileAPI/" aria-label="File API Editors' Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/FileAPI/" aria-label="File API Working Draft">Latest Edition</a></li>
@@ -176,7 +177,6 @@ recommendations for maximising accessibility in implementations.</p>
 <li><a href="https://www.w3.org/TR/gamepad/" aria-label="Gamepad Working Draft">Working Draft</a></li>
 </ul></dd>
 
-
 <dt class="spec">Indexed Database API 3.0</dt>
 <dd>
 <p>This specification defines API for a database of records holding simple values and hierarchical objects.</p>
@@ -186,6 +186,7 @@ recommendations for maximising accessibility in implementations.</p>
 </ul></dd>
 
 <dt class="spec">Intersection Observer</dt>
+<dd>
 <p>This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root").</p>
 <ul>
 <li><a href="https://w3c.github.io/IntersectionObserver/" aria-label="Intersection Observer Editor's Draft">Editor's Draft</a></li>
@@ -209,7 +210,7 @@ recommendations for maximising accessibility in implementations.</p>
 <li><a href="https://www.w3.org/TR/push-api/" aria-label="Push API Working Draft">Working Draft</a></li>
 </ul></dd>
 
-<dt slass="spec">Screen Orientation API</dt>
+<dt class="spec">Screen Orientation API</dt>
 <dd>
 This specification defines an API for reading screen orientation, being informed of screen orientation changes, and locking screen orientation to a specific state.</p>
 <ul>
@@ -221,7 +222,7 @@ This specification defines an API for reading screen orientation, being informed
 <dd>
 <p>This specification defines a JSON-based manifest file that provides developers with a centralized place to put metadata associated with a web application.</p>
 <ul>
-<li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Editor's Draft">Editor's Draft</a></li>
+<li><a href="https://w3c.github.io/manifest/" aria-label="Web App Manifest Editor's Draft">Editor's Draft</a></li>
 <li><a href="https://www.w3.org/TR/appmanifest/" aria-label="Web App Manifest Working Draft">Working Draft</a></li>
 </ul></dd>
 </dl>
@@ -238,7 +239,7 @@ This specification defines an API for reading screen orientation, being informed
 
 <dt class="spec">ContentEditable</dt>
 <dd>
-<p>This specification defines allowed values and expected behaviours for the <code>contenteditable</code> attribute.</p>
+<p>This specification defines allowed values and expected behaviors for the <code>contenteditable</code> attribute.</p>
 <ul>
 <li><a href="http://w3c.github.io/editing/contentEditable" aria-label="ContentEditable Editor's Draft">Editor's Draft</a></li>
 </ul></dd>
