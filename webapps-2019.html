@@ -206,20 +206,6 @@
             "https://www.w3.org/Consortium/Process/#implementation-experience">W3C
             Process</a>).
           </p>
-          <p>
-            Each specification must have an accompanying test suite, which is
-            ideally developed in parallel to the specification. The test suite
-            will be used to produce an implementation report before the
-            specification transitions to <a href=
-            "https://www.w3.org/2018/Process-20180201/#rec-pr">Proposed
-            Recommendation</a>.
-          </p>
-          <p>
-            Where there are implications for implementors, developers, or
-            users, with regard to accessibility, internationalisation, privacy,
-            and security, each specification must have a section that describes
-            relevant benefits, limitations, and best practice solutions.
-          </p>
         </section>
       </section>
       <section id="deliverables">
@@ -230,17 +216,25 @@
           More information about WebApps Working Group specifications can be
           found in the <a><i class="todo">Github repository</i></a>.
         </p>
-        <div id="normative">
+        <section id="normative">
           <h3>
             Normative Specifications
           </h3>
           <p>
-            The WebApps Working Group will deliver the following W3C normative
-            specifications:
+            The WebApps Working Group will deliver the following normative
+            specifications. Each specification must have an accompanying test
+            suite, which is ideally developed in parallel to the specification.
+            The test suite will be used to produce an implementation report
+            before the specification transitions to <a href=
+            "https://www.w3.org/2018/Process-20180201/#rec-pr">Proposed
+            Recommendation</a>.
           </p>
-          <h4>
-            API specifications
-          </h4>
+          <p>
+            Where there are implications for implementors, developers, or
+            users, with regard to accessibility, internationalization, privacy,
+            and security, each specification must have a section that describes
+            relevant benefits, limitations, and best practice solutions.
+          </p>
           <table>
             <tr>
               <th>
@@ -265,14 +259,14 @@
                 <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a>
               </td>
               <td>
-                A low-level interface that represents gamepad devices, and
-                enables web applications to act upon gamepad data.
+                An API that represents gamepad devices, and enables web
+                applications to act upon gamepad data.
               </td>
             </tr>
             <tr>
               <td>
-                <a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database
-                API 3.0</a>
+                <a href="https://www.w3.org/TR/IndexedDB/">Indexed Database
+                API</a>
               </td>
               <td>
                 An API for a database of records holding simple values and
@@ -293,8 +287,7 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock
-                2.0</a>
+                <a href="https://www.w3.org/TR/pointerlock/">Pointer Lock</a>
               </td>
               <td>
                 An API that provides scripted access to raw mouse movement data
@@ -333,19 +326,6 @@
                 application.
               </td>
             </tr>
-          </table>
-          <h4>
-            Editing specifications
-          </h4>
-          <table>
-            <tr>
-              <th>
-                Specification
-              </th>
-              <th>
-                Description
-              </th>
-            </tr>
             <tr>
               <td>
                 <a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API
@@ -364,7 +344,9 @@
                 Additions to events for text and related input to allow for the
                 monitoring and manipulation of default browser behavior in the
                 context of text editor applications and other applications that
-                deal with text input and text formatting.
+                deal with text input and text formatting. Level 1 gives the JS
+                editor information about proposed changes from the user, but it
+                makes the related DOM change be non-cancelable in many cases.
               </td>
             </tr>
             <tr>
@@ -373,10 +355,9 @@
                 Level 2</a>
               </td>
               <td>
-                Additions to events for text and related input to allow for the
-                monitoring and manipulation of default browser behavior in the
-                context of text editor applications and other applications that
-                deal with text input and text formatting.
+                Level 2 gives the JS editor information information about the
+                proposed changes from the user and let's the JS author cancel
+                the changes the browser otherwise would have done.
               </td>
             </tr>
             <tr>
@@ -402,29 +383,6 @@
             </tr>
             <tr>
               <td>
-                <a href=
-                "https://w3c.github.io/editing/execCommand">ExecCommand</a>
-              </td>
-              <td>
-                The behavior of the editing commands that can be executed with
-                execCommand.
-              </td>
-            </tr>
-          </table>
-          <h4>
-            Mapping specifications
-          </h4>
-          <table>
-            <tr>
-              <th>
-                Specification
-              </th>
-              <th>
-                Description
-              </th>
-            </tr>
-            <tr>
-              <td>
                 <a href="https://www.w3.org/TR/html-aam/">HTML Accessibility
                 API Mappings (AAM)</a>
               </td>
@@ -441,19 +399,6 @@
                 Defines the web developer rules (author conformance
                 requirements) for ARIA attributes on HTML elements.
               </td>
-            </tr>
-          </table>
-          <h4>
-            UI Events specifications
-          </h4>
-          <table>
-            <tr>
-              <th>
-                Specification
-              </th>
-              <th>
-                Description
-              </th>
             </tr>
             <tr>
               <td>
@@ -485,8 +430,8 @@
               </td>
             </tr>
           </table>
-        </div>
-        <div id="ig-other-deliverables">
+        </section>
+        <section id="ig-other-deliverables">
           <h3>
             Other Deliverables
           </h3>
@@ -495,8 +440,8 @@
             requirements documents, implementation reports, best Practice
             documents, to support web developers when designing applications.
           </p>
-        </div>
-        <div id="timeline">
+        </section>
+        <section id="timeline">
           <h3>
             Timeline
           </h3>
@@ -506,7 +451,7 @@
             not include a timeline for each specification because such
             information is speculative and easily becomes inaccurate.
           </p>
-        </div>
+        </section>
       </section>
       <section id="coordination">
         <h2>
