@@ -78,7 +78,7 @@
       </div>
 
          <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/svg-2018.html">GitHub</a>.
+      on <i><a href="https://github.com/w3c/charter-drafts/svg-2018.html">GitHub</a>.
 
     Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
           </p>
@@ -102,7 +102,7 @@
             </td>
           </tr>
 
-          <tr class="todo">
+          <t>
             <th>Charter extension</th>
             <td>See <a href="#history">Change History</a>.
             </td>
@@ -173,7 +173,7 @@
 
         <!-- <div id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this <i class="todo">(Working|Interest)</i> group.</p>
+            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
 
             <ul class="out-of-scope">
             </ul>
@@ -305,8 +305,8 @@
 
         <div id="timeline">
           <h3>Timeline</h3>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
+            <p>Put here a timeline view of all deliverables.</p>
+            <ul>
               <li>Jan 2019: First teleconference</li>
               <li>Feb 2019: Test coverage analysis for SVG2</li>
               <li>Apr 2019: CR of SVG-AAM</li>
@@ -320,31 +320,65 @@
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this <i class="todo">(Working|Interest)</i> Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
-        <p class="issue"><b>Issue:</b> The paragraph above replaces line-item liaisons and dependencies with individual horizontal groups. There's been a suggestion to name and individually link the specific horizontal groups inline, instead of pointing to a page that lists them.</p>
-        <p class="issue"><b>Issue:</b> The requirement for an invitation to review after FPWD and before CR may seem a bit overly restrictive, but it only requires an invitation, not a review, a commitment to review, or even a response from the horizontal group. This compromise offers early notification without introducing a bottleneck.</p>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
 
-      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
+
 
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
+            <dt id="css-wg"><a href="http://www.w3.org/Style/CSS/members">CSS
+                Working Group</a></dt>
+            <dd>Coordinate on integration of SVG features and properties into
+              CSS.</dd>
+            <dt id="aria-wg"><a href="https://www.w3.org/WAI/ARIA/">Accessible
+                Rich Internet Applications (ARIA) Working Group</a></dt>
+            <dd>
+              <p>Coordinate on SVG and graphics-related ARIA deliverables. In
+                particular, members of the SVG WG are strongly encouraged to
+                also join the ARIA WG to enable timely progress on the following
+                ARIA deliverables related to SVG:</p>
+              <dl>
+                <dt><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA
+                    Graphics Module</a></dt>
+                <dd>This specification defines semantic roles specific to web
+                  graphics, for use with WAI-ARIA.</dd>
+                <dt><a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics
+                    Accessibility API Mappings</a></dt>
+                <dd>This specification defines the mapping between the WAI-ARIA
+                  Graphics Module and OS platform accessibility application
+                  programming interfaces.</dd>
+                <!--
+              <dt><a href="https://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API Mappings</a></dt>              <dd>This specification defines the mapping between (non-ARIA) SVG features and OS platform accessibility application programming interfaces.</dd>
+              -->
+              </dl>
+            </dd>
+            <dt id="apa-wg"><a href="https://www.w3.org/WAI/APA/">Accessible
+                Platform Architectures Working Group</a></dt>
+            <dd> Coordinate on accessible SVG. </dd>
+            <dt id="sdw-wg"><a href="https://www.w3.org/2015/spatial/wiki/Main_Page">Spatial
+                Data on the Web Working Group</a></dt>
+            <dd>Coordinate on SVG used for geographic and spatial data, such as
+              maps.</dd>
+            <dt><a href="https://www.w3.org/2011/webappsec/">Web Application
+                Security Working Group</a></dt>
+            <dd>Coordinate on security of SVG.</dd>
+            <dt id="webplatform-wg"><a href="https://www.w3.org/WebPlatform/WG/">Web
+                Platform Working Group</a></dt>
+            <dd>Coordinate on integration of SVG and HTML, and on compatibility
+              with the Canvas API specifications.</dd>
+            <dt id="publishing-wg"><a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing
+                Working Group</a></dt>
+            <dd>Coordinate on reading system and publisher support for SVG. </dd>
           </dl>
-
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
-
+          <!--
           <h3 id="external-coordination">External Organizations</h3>
-          <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
-          </dl>
-
-
-        </div>
+          <dl>            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+            <dd><i class="todo">[specific nature of liaison]</i></dd>          </dl>
+--> </div>
       </section>
 
 
@@ -354,7 +388,7 @@
           Participation
         </h2>
         <p>
-          To be successful, this <i class="todo">(Working|Interest)</i> Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the (Working|Interest) Group. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the (Working|Interest) Group. There is no minimum requirement for other Participants.
         </p>
         <p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
@@ -371,20 +405,21 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this <i class="todo">(Working|Interest)</i> Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
         The meetings themselves are not open to public participation, however.
         </p>
-        <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">[name]</i> (Working|Interest) Group home page.</a>
-        </p>
-        <p>
-          Most <i class="todo">[name]</i> (Working|Interest) Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
-        </p>
-        <p>
-          This group primarily conducts its technical work  <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
-          <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>.
-          The public is invited to review, discuss and contribute to this work.
-        </p>
+        <p> Information about the group (including details about deliverables,
+          issues, actions, status, participants, and meetings) will be available
+          from the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page">SVG
+            Working Group home page.</a> </p>
+
+        <p> Most SVG Working Group teleconferences will focus on discussion of
+          particular specifications, and will be conducted on an as-needed
+          basis. </p>
+
+        <p> This group primarily conducts its technical work on <a id="github-issues" href="https://github.com/w3c/svgwg/issues">GitHub
+            issues</a>. The public is invited to review, discuss and contribute
+          to this work. </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
         </p>
@@ -406,7 +441,7 @@
 
           A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
 
-          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the <i class="todo">(Working|Interest)</i> Group.
+          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
@@ -419,7 +454,6 @@
 
 
       <section id="patentpolicy">
-      <p><i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i></p>
 
         <h2>
           Patent Policy
@@ -430,27 +464,13 @@
           For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
         </p>
 
-        <h2>Patent Disclosures </h2>
-        <p>The Interest Group provides an opportunity to
-          share perspectives on the topic addressed by this charter. W3C reminds
-          Interest Group participants of their obligation to comply with patent
-          disclosure obligations as set out in <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
-            6</a> of the W3C Patent Policy. While the Interest Group does not
-          produce Recommendation-track documents, when Interest Group
-          participants review Recommendation-track specifications from Working
-          Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this group,
-          please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C
-            Patent Policy Implementation</a>.</p>
-      </section>
-
 
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This <i class="todo">(Working|Interest)</i> Group will use the <i class="todo">[pick a license, one of:]</i>  <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a> | <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C
+            Software and Document license</a> for all its deliverables.</p>
       </section>
-
-
 
       <section id="about">
         <h2>
@@ -461,70 +481,138 @@
         </p>
 
         <section id="history">
-          <h3>
-            Charter History
-          </h3>
-          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/Charter#extension">Charter Guidebook (section 4)</a>.</p>
-
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
-
+          <h3> Charter History </h3>
+          <p>The following table lists details of all changes from the initial
+            charter, per the <a href="https://www.w3.org/2017/Process-20170301/#CharterReview">W3C
+              Process Document (section 5.2.3)</a>:</p>
           <table class="history">
             <tbody>
               <tr>
-                <th>
-                  Charter Period
-                </th>
-                <th>
-                  Start Date
-                </th>
-                <th>
-                  End Date
-                </th>
-                <th>
-                  Changes
-                </th>
+                <th> Charter Period </th>
+                <th> Start Date </th>
+                <th> End Date </th>
+                <th> Changes </th>
               </tr>
               <tr>
-                <th>
-                  <a class="todo" href="">Initial Charter</a>
+                <th> <a href="https://www.w3.org/Graphics/SVG/Group/SVGcharter">Initial
+                    Charter</a> </th>
+                <td> 1998-07-24 </td>
+                <td> 2001-05-31 </td>
+                <td> none </td>
+              </tr>
+              <tr>
+                <th> <a href="https://www.w3.org/Graphics/SVG/Group/SVGcharter2">Rechartered</a>
                 </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">none</i>
+                <td>2001-06-10 </td>
+                <td>2003-06-30 </td>
+                <td> none </td>
+              </tr>
+              <tr>
+                <th> <a href="http://www.w3.org/2003/07/svgwg-charter.html">Rechartered</a>
+                </th>
+                <td>2003-10-07 </td>
+                <td>2004-03-31 </td>
+                <td> Switched to W3C Current Patent Practice </td>
+              </tr>
+              <tr>
+                <th> <a href="http://www.w3.org/2004/10/svg-charter.html">Rechartered</a>
+                </th>
+                <td>2004-12-20 </td>
+                <td>2006-09-30 </td>
+                <td> Switched to W3C Patent Policy </td>
+              </tr>
+              <tr>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2006JulSep/0043">Charter
+                    Extension</a> </th>
+                <td>2006-09-21 </td>
+                <td>2007-10-01 </td>
+                <td> <br>
                 </td>
               </tr>
               <tr>
-                <th>
-                  <a class="todo" href="">Charter Extension</a>
-                </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">none</i>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2007OctDec/0041">Charter
+                    Extension</a> </th>
+                <td>2007-11-26 </td>
+                <td>2008-01-31 </td>
+                <td> <br>
                 </td>
               </tr>
               <tr>
-                <th>
-                  <a class="todo" href="">Rechartered</a>
+                <th> <a href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter">Rechartered</a>
                 </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                <td>2008-04-16 </td>
+                <td>2010-04-30 </td>
+                <td> continue to develop SVG 1.2 and to maintain SVG 1.1 </td>
+              </tr>
+              <tr>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2010AprJun/0024.html">Charter
+                    Extension</a> </th>
+                <td>2010-04-28 </td>
+                <td>2010-07-30 </td>
+                <td> <br>
                 </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+              </tr>
+              <tr>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2010OctDec/0003.html">Charter
+                    Extension</a> </th>
+                <td>2010-10-04 </td>
+                <td>2011-01-31 </td>
+                <td> <br>
                 </td>
-                <td>
-                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+              </tr>
+              <tr>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2011AprJun/0050.html">Charter
+                    Extension</a> </th>
+                <td>2011-06-01 </td>
+                <td>2011-07-31 </td>
+                <td> <br>
                 </td>
+              </tr>
+              <tr>
+                <th> <a href="http://www.w3.org/Graphics/SVG/2012/charter">Rechartered</a>
+                </th>
+                <td>2012-03-20 </td>
+                <td>2014-03-31 </td>
+                <td> Contains new deliverables... </td>
+              </tr>
+              <tr>
+                <th> <a href="http://www.w3.org/Graphics/SVG/2014/new-charter">Rechartered</a>
+                </th>
+                <td>2014-10-23 </td>
+                <td>2016-10-31 </td>
+                <td> zoom media feature, Motion Path, Accessibility and Web
+                  Performance joint work. removes the Graphics API and Tiles and
+                  Layering </td>
+              </tr>
+              <tr>
+                <th> <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2016OctDec/0027.html">Charter
+                    Extension</a> </th>
+                <td>2016-11-02 </td>
+                <td>2017-01-31 </td>
+                <td> <br>
+                </td>
+              </tr>
+              <tr>
+                <th> <a href="https://www.w3.org/2017/04/svg-2017.html">Rechartered</a>
+                </th>
+                <td>2017-08-02 </td>
+                <td>2018-06-30 </td>
+                <td> Restricted to Core SVG 2 and SVG Accessibility API
+                  Mappings. New features only after. </td>
+              </tr>
+              <tr>
+                <th> <a href="@@">Charter
+                    Extension</a> </th>
+                <td>2018-07-01 </td>
+                <td>2018-11-30 </td>
+                <td> <br>
+                </td>
+              </tr>
+              <tr>
+                <th>  <i class="todo">Rechartered (this charter)</i> </th>
+                <td><i class="todo">date</i></td>
+                <td><i class="todo">date</i></td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -535,13 +623,11 @@
     <hr />
 
     <footer>
-      <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
-      </address>
+      <address> <a href="mailto:chris@w3.org">Chris Lilley</a> </address>
 
       <p class="copyright">
         <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        <i class="todo">[yyyy]</i>
+        2018
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
