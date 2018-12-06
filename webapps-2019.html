@@ -263,17 +263,14 @@
                 <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a>
               </td>
               <td>
-                An API that represents gamepad devices, and enables web
-                applications to act upon gamepad data.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Gamepad API Level 2
-              </td>
-              <td>
-                Future revision of the API that represents gamepad devices, and
-                enables web applications to act upon gamepad data.
+                <p>
+                  Level 1 of the API that represents gamepad devices, and
+                  enables web applications to act upon gamepad data.
+                </p>
+                <p>
+                  Level 2 aims support the capabilities of next generation
+                  gamepads.
+                </p>
               </td>
             </tr>
             <tr>
@@ -283,7 +280,10 @@
               </td>
               <td>
                 An API for a database of records holding simple values and
-                hierarchical objects.
+                hierarchical objects. The <a href=
+                "https://w3c.github.io/IndexedDB/">third edition</a> adds new
+                capabilities and developer ergonomic improvements by using
+                promises.
               </td>
             </tr>
             <tr>
@@ -350,27 +350,25 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.w3.org/TR/input-events-1/">Input Events
-                Level 1</a>
+                <a href="https://www.w3.org/TR/input-events/">Input Events</a>
               </td>
               <td>
-                Additions to events for text and related input to allow for the
-                monitoring and manipulation of default browser behavior in the
-                context of text editor applications and other applications that
-                deal with text input and text formatting. Level 1 gives the JS
-                editor information about proposed changes from the user, but it
-                makes the related DOM change be non-cancelable in many cases.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://www.w3.org/TR/input-events-2/">Input Events
-                Level 2</a>
-              </td>
-              <td>
-                Level 2 gives the JS editor information information about the
-                proposed changes from the user and let's the JS author cancel
-                the changes the browser otherwise would have done.
+                <p>
+                  Additions to events for text and related input to allow for
+                  the monitoring and manipulation of default browser behavior
+                  in the context of text editor applications and other
+                  applications that deal with text input and text formatting.
+                  <a href="https://www.w3.org/TR/input-events/">Level 1</a>
+                  gives the JS editor information about proposed changes from
+                  the user, but it makes the related DOM change be
+                  non-cancelable in many cases.
+                </p>
+                <p>
+                  <a href="https://www.w3.org/TR/input-events-2/">Level 2</a>
+                  gives the JS editor information information about the
+                  proposed changes from the user and let's the JS author cancel
+                  the changes the browser otherwise would have done.
+                </p>
               </td>
             </tr>
             <tr>
@@ -440,6 +438,67 @@
               <td>
                 The values for the <code>key</code> attribute defined in the UI
                 Events specification.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h3>
+            WICG specifications
+          </h3>
+          <p>
+            Depending on the WICG progress, the Group may also produce W3C
+            Recommendations for the following documents:
+          </p>
+          <table>
+            <tr>
+              <th>
+                Specification
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://wicg.github.io/cookie-store/">Cookie Store</a>
+              </td>
+              <td>
+                An asynchronous Javascript cookies API for documents and
+                workers.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://wicg.github.io/web-share/">Web Share API</a>
+              </td>
+              <td>
+                An API for sharing text, links and other content to an
+                arbitrary destination of the user's choice.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://wicg.github.io/web-share-target/">Web Share
+                Target</a>
+              </td>
+              <td>
+                An API that allows websites to declare themselves as web share
+                targets, which can receive shared content from either the Web
+                Share API, or system events (e.g., shares from native apps).
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://wicg.github.io/badging/">Badging</a>
+              </td>
+              <td>
+                An API allowing web applications to set an application-wide
+                badge, shown in an operating-system-specific place associated
+                with the application (such as the shelf or home screen), for
+                the purpose of notifying the user when the state of the
+                application has changed (e.g., when new messages have arrived),
+                without showing a more heavyweight notification.
               </td>
             </tr>
           </table>
