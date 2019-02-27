@@ -80,12 +80,8 @@
             <a href="#about">About this Charter</a>
           </li>
           <li>
-            <a href="#background">History of this WG</a>
-	  </li>
-	  <li>
-	  <a href="#deliverablesfull">Detailed list of
-    Deliverables</a>
-	  </li>
+            <a href="#deliverablesfull">Detailed list of Deliverables</a>
+          </li>
         </ul>
       </aside>
       <p>
@@ -98,7 +94,7 @@
         [Draft] Web Applications Working Group Charter
       </h1>
       <p id="mission">
-        The <strong>mission</strong> of the <a href="">Web Applications Working
+        The <strong>mission</strong> of the <a href="https://www.w3.org/@@@">Web Applications Working
         Group</a> (WebApps WG) is to produce specifications that facilitate the
         development of client-side web applications.
       </p>
@@ -116,7 +112,7 @@
             </th>
             <td>
               <i class="todo">[<abbr title="To Be Confirmed">TBC</abbr>] 1
-              January 2019</i>
+              April 2019</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -124,8 +120,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[<abbr title="To Be Confirmed">TBC</abbr>] 31
-              December 2021</i>
+              31 March 2022
             </td>
           </tr><!-- <tr class="todo">
 <th>Charter extension</th>
@@ -144,8 +139,8 @@
               Team Contacts
             </th>
             <td>
-              <span class="todo"><a href="mailto:">[team contact
-              name]</a></span> <i class="todo">(0.2 <abbr title=
+              <a href="mailto:ylafon@w3.org">Yves Lafon</a> (0.3 <abbr title=
+              "Full-Time Equivalent">FTE</abbr>), <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a> (0.2 <abbr title=
               "Full-Time Equivalent">FTE</abbr>)</i>
             </td>
           </tr>
@@ -204,6 +199,9 @@
           <h3>
             Success Criteria
           </h3>
+          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
+            each specification must have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> in wide use.</p>
+
           <p>
             Each specification must have an accompanying test suite, which is
             ideally developed in parallel to the specification. The test suite
@@ -213,16 +211,11 @@
             Recommendation</a>.
           </p>
           <p>
-            Each specification must have at least two independent,
-            interoperable implementations in wide use (per the <a href=
-            "https://www.w3.org/Consortium/Process/#implementation-experience">W3C
-            Process</a>).
-          </p>
-          <p>
             Where there are implications for implementors, developers, or
-            users, with regard to accessibility, internationalization, privacy,
-            and security, each specification must have a section that describes
-            relevant benefits, limitations, and best practice solutions.
+            users, in the areas of accessibility, internationalization,
+            privacy, and security, each specification must have a section that
+            describes relevant benefits, limitations, and best practice
+            solutions for that particular area.
           </p>
         </section>
       </section>
@@ -232,7 +225,7 @@
         </h2>
         <p>
           More information about WebApps Working Group specifications can be
-          found in the <a><i class="todo">Github repository</i></a>.
+          found in the <a><i class="todo">GitHub repository</i></a>.
         </p>
         <section id="normative">
           <h3>
@@ -271,29 +264,26 @@
                   enables web applications to act upon gamepad data.
                 </p>
                 <p>
-                  Level 2 aims support the capabilities of next generation
+                  Level 2 aims to support the capabilities of next generation
                   gamepads.
                 </p>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="#1321">Indexed Database
-                API</a>
+                <a href="#1321">Indexed Database API</a>
               </td>
               <td>
                 An API for a database of records holding simple values and
                 hierarchical objects. The <a href=
                 "https://w3c.github.io/IndexedDB/">third edition</a> adds new
-                capabilities and developer ergonomic improvements by using
+                capabilities and improves developer ergonomics by using
                 promises.
               </td>
             </tr>
             <tr>
               <td>
-                <a href=
-                "#1376">Intersection
-                Observer</a>
+                <a href="#1376">Intersection Observer</a>
               </td>
               <td>
                 An API that can be used to understand the visibility and
@@ -316,7 +306,7 @@
                 <a href="#1000">Push API</a>
               </td>
               <td>
-                An API for sending push message to a web application, via a
+                An API for sending push messages to a web application, via a
                 push service.
               </td>
             </tr>
@@ -332,8 +322,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#1138">Web App
-                Manifest</a>
+                <a href="#1138">Web App Manifest</a>
               </td>
               <td>
                 A JSON-based manifest file that provides developers with a
@@ -343,8 +332,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#551">Clipboard API
-                and Events</a>
+                <a href="#551">Clipboard API and Events</a>
               </td>
               <td>
                 An API for accessing data on the system clipboard.
@@ -360,26 +348,24 @@
                   the monitoring and manipulation of default browser behavior
                   in the context of text editor applications and other
                   applications that deal with text input and text formatting.
-                  <a href="#1323">Level 1</a>
-                  gives the JS editor information about proposed changes from
-                  the user, but it makes the related DOM change be
-                  non-cancelable in many cases.
+                  <a href="#1323">Level 1</a> gives the JS editor information
+                  about proposed changes from the user, but it makes the
+                  related DOM change be non-cancelable in many cases.
                 </p>
                 <p>
-                  <a href="#1421">Level 2</a>
-                  gives the JS editor information information about the
-                  proposed changes from the user and let's the JS author cancel
-                  the changes the browser otherwise would have done.
+                  <a href="#1421">Level 2</a> gives the JS editor information
+                  information about the proposed changes from the user and lets
+                  the JS author cancel the changes the browser otherwise would
+                  have done.
                 </p>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="#1195">Selection
-                API</a>
+                <a href="#1195">Selection API</a>
               </td>
               <td>
-                APIs for selection, which allows users and authors to select a
+                APIs for selection, which allow users and authors to select a
                 portion of a document or specify a point of interest for copy,
                 paste, and other editing operations.
               </td>
@@ -396,12 +382,11 @@
             </tr>
             <tr>
               <td>
-                <a href="#1228">HTML Accessibility
-                API Mappings (AAM)</a>
+                <a href="#1228">HTML Accessibility API Mappings (AAM)</a>
               </td>
               <td>
                 Defines how user agents map HTML elements and attributes to
-                platform accessibility API.
+                platform accessibility APIs.
               </td>
             </tr>
             <tr>
@@ -424,8 +409,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#1180">UI Events
-                KeyboardEvent code values</a>
+                <a href="#1180">UI Events KeyboardEvent code values</a>
               </td>
               <td>
                 The values for the <code>KeyboardEvent.code</code> attribute,
@@ -434,8 +418,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#1181">UI Events
-                KeyboardEvent key Values</a>
+                <a href="#1181">UI Events KeyboardEvent key Values</a>
               </td>
               <td>
                 The values for the <code>key</code> attribute defined in the UI
@@ -444,12 +427,12 @@
             </tr>
           </table>
         </section>
-        <section>
+        <section id="wicgspecs">
           <h3>
             WICG specifications
           </h3>
           <p>
-            Depending on the WICG progress, the Group may also produce W3C
+            Depending on the <a href="https://www.w3.org/community/wicg/">WICG</a> progress, the Group may also produce W3C
             Recommendations for the following documents:
           </p>
           <table>
@@ -511,7 +494,7 @@
           </h3>
           <p>
             Other non-normative documents may be created such as, use case and
-            requirements documents, implementation reports, and best Practice
+            requirements documents, implementation reports, and Best Practices
             documents, to support web developers when designing applications.
           </p>
         </section>
@@ -522,8 +505,16 @@
           <p>
             All specifications produced by the WebApps Working Group are
             expected to progress during this charter period. The charter does
-            not include a timeline for each specification because such
-            information is speculative and easily becomes inaccurate.
+            not include a detailed timeline for each specification because such
+            information is speculative and easily becomes inaccurate. However,
+            a rough estimation of completion is available in the <a href=
+            "#deliverablesfull">detailed list of Deliverables</a> when
+            possible.
+          </p>
+          <p>The Working Group <i class="todo">home page</i> will link to a more comprehensive page with detailed status and estimated completion time for each specification.</p>
+          <p>
+            Note that the <a href="#wicgspecs">WICG Specifications</a>, if
+            adopted, have an estimated time of completion of 2 years.
           </p>
         </section>
       </section>
@@ -531,11 +522,10 @@
         <h2>
           Coordination
         </h2>
-        <p>
-          For all specifications, the WebApps Group will seek <a href=
-          "https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal
-          review</a> with the following Working and Interest Groups:
-        </p>
+        <p>For all specifications, this <i class="todo">(Working|Interest)</i> Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+
+        <p>For all specifications, technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
         <dl>
           <dt>
             <a href="https://www.w3.org/WAI/APA/">Accessible Platform
@@ -629,7 +619,7 @@
                 For co-ordination on topics relating to internet protocols.
               </dd>
               <dt>
-                <a href="https://whatwg.org/">Web HyperText Working Group
+                <a href="https://whatwg.org/">Web Hypertext Application Technology Working Group
                 (WHATWG)</a>
               </dt>
               <dd>
@@ -676,7 +666,7 @@
           the meeting minutes from teleconference and face-to-face meetings
           will be archived for public review, and technical discussions and
           issue tracking will be conducted in a manner that can be both read
-          and written to by the general public. Working Drafts and Editor's
+          and contributed to by the general public. Working Drafts and Editor's
           Drafts of specifications will be developed on public repositories,
           and may permit direct public contribution requests.
         </p>
@@ -692,7 +682,7 @@
           Group</i> home page.</a>
         </p>
         <p>
-          This group primarily conducts its technical work on Github. The
+          This group primarily conducts its technical work on GitHub. The
           public is invited to review, discuss and contribute to this work.
         </p>
         <p>
@@ -792,12 +782,6 @@
           <h3>
             Charter History
           </h3>
-          <p class="issue">
-            <b>Note:</b>Display this table and update it when appropriate.
-            Requirements for charter extension history are documented in the
-            <a href="https://www.w3.org/Guide/Charter#extension">Charter
-            Guidebook (section 4)</a>.
-          </p>
           <p>
             The following table lists details of all changes from the initial
             charter, per the <a href=
@@ -822,18 +806,19 @@
               </tr>
               <tr>
                 <th>
-                  <a class="todo" href="">Initial Charter</a>
+                  <a href="">Initial Charter</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  ??
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  31 March 2022
                 </td>
                 <td>
-                  <i class="todo">none</i>
+                  <i>none</i>
                 </td>
               </tr>
+              <!--
               <tr>
                 <th>
                   <a class="todo" href="">Charter Extension</a>
@@ -867,14 +852,14 @@
                   </p>
                 </td>
               </tr>
+              -->
             </tbody>
           </table>
         </section>
-      </section>
       <section id="background">
-        <h2>
+        <h3>
           History of this WG
-        </h2>
+        </h3>
         <p>
           The WebApps Working Group was a predecessor to the <a href=
           "https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a>
@@ -891,198 +876,341 @@
           Incubator Community Group (WICG)</a> have been transferred to the
           WebApps Working Group.
         </p>
-	  </section>
-	  <section id="deliverablesfull">
-	  <h2>Detailed list of Deliverables</h2>
-	  <dl>
-	    <dt id=751 class='spec'><a href='https://www.w3.org/TR/FileAPI/' rel='versionof'>File API</a>
-	      <br>Latest publication: <a
-	      href='https://www.w3.org/TR/2018/WD-FileAPI-20181106/'>06 November
-	      2018</a></dt>
-	    <dd>Reference Draft:
-		<a href='https://www.w3.org/TR/2015/WD-FileAPI-20150421/'>https://www.w3.org/TR/2015/WD-FileAPI-20150421/</a><br></dd>
-		
-	    <dt id=979 class='spec'><a href='https://www.w3.org/TR/gamepad/' rel='versionof'>Gamepad</a>
-	      <br>Latest publication: <a
-	      href='https://www.w3.org/TR/2018/WD-gamepad-20181109/'>09 November
-	      2018</a></dt>
-	    <dd>Reference Draft:
-	      <a
-	      href='https://www.w3.org/TR/2015/WD-gamepad-20151215/'>https://www.w3.org/TR/2015/WD-gamepad-20151215/</a><br>
-	      associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2012May/0010.html'> Call for
-	      Exclusion</a> on 29 May 2012
-	      ended on 26 October 2012<br>Produced under
-	      <a href="https://www.w3.org/2010/webapps/charter/">Web Applications
-	      Working Group charter</a></dd>
+      </section>
+    </section>
+    <section id="deliverablesfull">
+        <h2>
+          Detailed list of Deliverables
+        </h2>
+        <dl>
+          <dt id="751" class='spec'>
+            <a href='https://www.w3.org/TR/FileAPI/' rel='versionof'>File
+            API</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-FileAPI-20181106/'>06 November
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-FileAPI-20150421/'>https://www.w3.org/TR/2015/WD-FileAPI-20150421/</a><br>
+          </dd>
+          <dt id="979" class='spec'>
+            <a href='https://www.w3.org/TR/gamepad/' rel=
+            'versionof'>Gamepad</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-gamepad-20181214/'>12 December 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-gamepad-20151215/'>https://www.w3.org/TR/2015/WD-gamepad-20151215/</a><br>
 
-	    <dt id=1321 class='spec'><a href='https://www.w3.org/TR/IndexedDB-2/' rel='versionof'>Indexed Database API 2.0</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/'>30
-		January 2018</a></dt>
-	    <dd>Editor's Draft: <a href="https://w3c.github.io/IndexedDB/">https://w3c.github.io/IndexedDB/</a></dd>
-            <dd>Reference Draft: 
-		<a href='https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/'>https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/</a><br>
-		associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Aug/0005.html'> Call for Exclusion</a> on 10 August 2017
-		ended on 09 October 2017<br>Produced under Working
- Group Charter: https://www.w3.org/2016/11/webplatform-charter.html</dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2012May/0010.html'>
+            Call for Exclusion</a> on 29 May 2012 ended on 26 October 2012<br>
+            Produced under <a href=
+            "https://www.w3.org/2010/webapps/charter/">Web Applications Working
+            Group charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 1 year
+          </dd>
+          <dt id="1321" class='spec'>
+            <a href='https://w3c.github.io/IndexedDB/' rel=
+            'versionof'>Indexed Database API 3.0</a><br>
+            Status: <a href='https://w3c.github.io/IndexedDB/'>Editor's Draft</a>
+          </dt>
+          <dd>
+            Editor's Draft: <a href=
+            "https://w3c.github.io/IndexedDB/">https://w3c.github.io/IndexedDB/</a>
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="1376" class='spec'>
+            <a href='https://www.w3.org/TR/intersection-observer/' rel=
+            'versionof'>Intersection Observer</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-intersection-observer-20181106/'>06
+            November 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2017/WD-intersection-observer-20170914/'>https://www.w3.org/TR/2017/WD-intersection-observer-20170914/</a><br>
 
-            <dt id=1376 class='spec'><a href='https://www.w3.org/TR/intersection-observer/' rel='versionof'>Intersection Observer</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2018/WD-intersection-observer-20181106/'>06 November 2018</a></dt>
-            <dd>Reference Draft: 
-<a href='https://www.w3.org/TR/2017/WD-intersection-observer-20170914/'>https://www.w3.org/TR/2017/WD-intersection-observer-20170914/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Dec/0005.html'> Call for Exclusion</a> on 14 December 2017
- ended on 11 February 2018<br>Produced under Working Group Charter:
-	      https://www.w3.org/2016/11/webplatform-charter.html</dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2017Dec/0005.html'>
+            Call for Exclusion</a> on 14 December 2017 ended on 11 February
+            2018<br>
+            Produced under Working Group Charter:
+            https://www.w3.org/2016/11/webplatform-charter.html
+          </dd>
+          <dd>
+            Estimated Completion: 1 year
+          </dd>
+          <dt id="1345" class='spec'>
+            <a href='https://www.w3.org/TR/pointerlock-2/' rel=
+            'versionof'>Pointer Lock 2.0</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/'>06 November
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/'>https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/</a><br>
 
-	      <dt id=1345 class='spec'><a href='https://www.w3.org/TR/pointerlock-2/' rel='versionof'>Pointer Lock 2.0</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/'>06 November 2018</a></dt>
-<dd>Reference Draft: 
-<a href='https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/'>https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Nov/0010.html'> Call for Exclusion</a> on 22 November 2016
- ended on 21 April 2017<br>Produced under Working Group Charter:
-  https://www.w3.org/2016/11/webplatform-charter.html</dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2016Nov/0010.html'>
+            Call for Exclusion</a> on 22 November 2016 ended on 21 April
+            2017<br>
+            Produced under Working Group Charter:
+            https://www.w3.org/2016/11/webplatform-charter.html
+          </dd>
+          <dt id="1000" class='spec'>
+            <a href='https://www.w3.org/TR/push-api/' rel='versionof'>Push
+            API</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-push-api-20181026/'>26 October
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-push-api-20151215/'>https://www.w3.org/TR/2015/WD-push-api-20151215/</a><br>
 
-          <dt id=1000 class='spec'><a href='https://www.w3.org/TR/push-api/' rel='versionof'>Push API</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-push-api-20181026/'>26 October
-	    2018</a></dt>
-	    <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-push-api-20151215/'>https://www.w3.org/TR/2015/WD-push-api-20151215/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-webapps/2012OctDec/0007.html'> Call
-for Exclusion</a> on 18 October 2012
- ended on 17 March 2013<br>Produced under
- <a href="https://www.w3.org/2012/webapps/charter/">Web Applications Working Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-webapps/2012OctDec/0007.html'>
+            Call for Exclusion</a> on 18 October 2012 ended on 17 March
+            2013<br>
+            Produced under <a href=
+            "https://www.w3.org/2012/webapps/charter/">Web Applications Working
+            Group charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="1003" class='spec'>
+            <a href='https://www.w3.org/TR/screen-orientation/' rel=
+            'versionof'>The Screen Orientation API</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2019/WD-screen-orientation-20190129/'>29 January 2019</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-screen-orientation-20151215/'>https://www.w3.org/TR/2015/WD-screen-orientation-20151215/</a><br>
 
-<dt id=1003 class='spec'><a href='https://www.w3.org/TR/screen-orientation/' rel='versionof'>The Screen Orientation API</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-screen-orientation-20181012/'>12
- October 2018</a></dt>
- <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-screen-orientation-20151215/'>https://www.w3.org/TR/2015/WD-screen-orientation-20151215/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-webapps/2012AprJun/0003.html'> Call
-for Exclusion</a> on 22 May 2012
- ended on 19 October 2012<br>Produced under
- <a href="https://www.w3.org/2010/webapps/charter/">Web Applications
- Working Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-webapps/2012AprJun/0003.html'>
+            Call for Exclusion</a> on 22 May 2012 ended on 19 October 2012<br>
+            Produced under <a href=
+            "https://www.w3.org/2010/webapps/charter/">Web Applications Working
+            Group charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 1 year
+          </dd>
+          <dt id="1138" class='spec'>
+            <a href='https://www.w3.org/TR/appmanifest/' rel='versionof'>Web
+            App Manifest</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-appmanifest-20181212/'>12 December 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-appmanifest-20151124/'>https://www.w3.org/TR/2015/WD-appmanifest-20151124/</a><br>
 
-<dt id=1138 class='spec'><a href='https://www.w3.org/TR/appmanifest/' rel='versionof'>Web App Manifest</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-appmanifest-20181113/'>13
-  November 2018</a></dt>
-  <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-appmanifest-20151124/'>https://www.w3.org/TR/2015/WD-appmanifest-20151124/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Dec/0004.html'> Call for
-Exclusion</a> on 17 December 2013
- ended on 16 May 2014<br>Produced under
- <a href="https://www.w3.org/2012/webapps/charter/">Web Applications
-    Working Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2013Dec/0004.html'>
+            Call for Exclusion</a> on 17 December 2013 ended on 16 May 2014<br>
+            Produced under <a href=
+            "https://www.w3.org/2012/webapps/charter/">Web Applications Working
+            Group charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="551" class='spec'>
+            <a href='https://www.w3.org/TR/clipboard-apis/' rel=
+            'versionof'>Clipboard API and events</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/'>08
+            November 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/'>https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/</a><br>
 
-    <dt id=551 class='spec'><a href='https://www.w3.org/TR/clipboard-apis/' rel='versionof'>Clipboard API and events</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/'>08
-      November 2018</a></dt>
-      <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/'>https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-webapi/2006Nov/0009.html'> Call for
-Exclusion</a> on 16 November 2006
- ended on 14 April 2007<br>Produced under
- <a href="https://www.w3.org/2006/webapi/admin/charter">Web API
-	Working Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-webapi/2006Nov/0009.html'>
+            Call for Exclusion</a> on 16 November 2006 ended on 14 April
+            2007<br>
+            Produced under <a href=
+            "https://www.w3.org/2006/webapi/admin/charter">Web API Working
+            Group charter</a>
+          </dd>
+          <dt id="1323" class='spec'>
+            <a href='https://www.w3.org/TR/input-events-1/' rel=
+            'versionof'>Input Events Level 1</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-input-events-1-20181109/'>09
+            November 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2016/WD-input-events-20160830/'>https://www.w3.org/TR/2016/WD-input-events-20160830/</a><br>
 
-	<dt id=1323 class='spec'><a href='https://www.w3.org/TR/input-events-1/' rel='versionof'>Input Events Level 1</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2018/WD-input-events-1-20181109/'>09 November 2018</a></dt>
-<dd>Reference Draft: 
-<a href='https://www.w3.org/TR/2016/WD-input-events-20160830/'>https://www.w3.org/TR/2016/WD-input-events-20160830/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Aug/0006.html'> Call for Exclusion</a> on 30 August 2016
- ended on 27 January 2017<br>Produced under Working Group Charter: https://www.w3.org/2015/10/webplatform-charter.html</dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2016Aug/0006.html'>
+            Call for Exclusion</a> on 30 August 2016 ended on 27 January
+            2017<br>
+            Produced under Working Group Charter:
+            https://www.w3.org/2015/10/webplatform-charter.html
+          </dd>
+          <dt id="1421" class='spec'>
+            <a href='https://www.w3.org/TR/input-events-2/' rel=
+            'versionof'>Input Events Level 2</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-input-events-2-20181108/'>08
+            November 2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            "https://www.w3.org/TR/2017/WD-input-events-2-20170321/">https://www.w3.org/TR/2017/WD-input-events-2-20170321/</a><br>
+          </dd>
+          <dt id="1195" class='spec'>
+            <a href='https://www.w3.org/TR/selection-api/' rel=
+            'versionof'>Selection API</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-selection-api-20181018/'>18 October
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-selection-api-20151124/'>https://www.w3.org/TR/2015/WD-selection-api-20151124/</a><br>
 
-<dt id=1421 class='spec'><a href='https://www.w3.org/TR/input-events-2/' rel='versionof'>Input Events Level 2</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2018/WD-input-events-2-20181108/'>08 November 2018</a></dt>
-<dd>Reference Draft:
-		<a href="https://www.w3.org/TR/2017/WD-input-events-2-20170321/">https://www.w3.org/TR/2017/WD-input-events-2-20170321/</a><br></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0002.html'>
+            Call for Exclusion</a> on 07 October 2014 ended on 06 March
+            2015<br>
+            Produced under <a href=
+            "https://www.w3.org/2014/06/webapps-charter.html">Web Applications
+            Working Group charter</a>
+          </dd>
+          <dt id="1228" class='spec'>
+            <a href='https://www.w3.org/TR/html-aam-1.0/' rel='versionof'>HTML
+            Accessibility API Mappings 1.0</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2019/WD-html-aam-1.0-20190131/'>31 January 2019</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/'>https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/</a><br>
 
-		<dt id=1195 class='spec'><a href='https://www.w3.org/TR/selection-api/' rel='versionof'>Selection API</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-selection-api-20181018/'>18
-		  October 2018</a></dt>
-		  <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-selection-api-20151124/'>https://www.w3.org/TR/2015/WD-selection-api-20151124/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014Oct/0002.html'> Call for
-Exclusion</a> on 07 October 2014
- ended on 06 March 2015<br>Produced under
- <a href="https://www.w3.org/2014/06/webapps-charter.html">Web
-		    Applications Working Group charter</a></dd>
-		    
-<dt id=1228 class='spec'><a href='https://www.w3.org/TR/html-aam-1.0/' rel='versionof'>HTML Accessibility API Mappings 1.0</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-html-aam-1.0-20181025/'>25
-  October 2018</a></dt>
-  <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/'>https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0000.html'> Call for
-Exclusion</a> on 09 April 2015
- ended on 04 September 2015<br>Produced under
- <a href="https://www.w3.org/WAI/PF/charter201006">WAI PF Working
-    Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0000.html'>
+            Call for Exclusion</a> on 09 April 2015 ended on 04 September
+            2015<br>
+            Produced under <a href=
+            "https://www.w3.org/WAI/PF/charter201006">WAI PF Working Group
+            charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 1 year
+          </dd>
+          <dt id="1233" class='spec'>
+            <a href='https://www.w3.org/TR/html-aria/' rel='versionof'>ARIA in
+            HTML</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-html-aria-20181214/'>14 December
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2015/WD-html-aria-20150414/'>https://www.w3.org/TR/2015/WD-html-aria-20150414/</a><br>
 
-    <dt id=1233 class='spec'><a href='https://www.w3.org/TR/html-aria/' rel='versionof'>ARIA in HTML</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-html-aria-20181018/'>18 October
-      2018</a></dt>
-      <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2015/WD-html-aria-20150414/'>https://www.w3.org/TR/2015/WD-html-aria-20150414/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0005.html'> Call for
-Exclusion</a> on 14 April 2015
- ended on 11 September 2015<br>Produced under
- <a href="https://www.w3.org/2013/09/html-charter">HTML Working Group
-	charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0005.html'>
+            Call for Exclusion</a> on 14 April 2015 ended on 11 September
+            2015<br>
+            Produced under <a href=
+            "https://www.w3.org/2013/09/html-charter">HTML Working Group
+            charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 1 year
+          </dd>
+          <dt id="194" class='spec'>
+            <a href='https://www.w3.org/TR/uievents/' rel='versionof'>UI
+            Events</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2018/WD-uievents-20181108/'>08 November
+            2018</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2013/WD-uievents-20130725/'>https://www.w3.org/TR/2013/WD-uievents-20130725/</a><br>
 
-<dt id=194 class='spec'><a href='https://www.w3.org/TR/uievents/' rel='versionof'>UI Events</a>
- <br>Latest publication: <a
- href='https://www.w3.org/TR/2018/WD-uievents-20181108/'>08 November
-  2018</a></dt>
-  <dd>Reference Draft:
-<a
-href='https://www.w3.org/TR/2013/WD-uievents-20130725/'>https://www.w3.org/TR/2013/WD-uievents-20130725/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Jul/0008.html'> Call for
-Exclusion</a> on 25 July 2013
- ended on 22 December 2013<br>Produced under
- <a href="https://www.w3.org/2012/webapps/charter/">Web Applications Working Group charter</a></dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2013Jul/0008.html'>
+            Call for Exclusion</a> on 25 July 2013 ended on 22 December
+            2013<br>
+            Produced under <a href=
+            "https://www.w3.org/2012/webapps/charter/">Web Applications Working
+            Group charter</a>
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="1180" class='spec'>
+            <a href='https://www.w3.org/TR/uievents-code/' rel='versionof'>UI
+            Events KeyboardEvent code Values</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2017/CR-uievents-code-20170601/'>01 June
+            2017</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2017/CR-uievents-code-20170601/'>https://www.w3.org/TR/2017/CR-uievents-code-20170601/</a><br>
 
- <dt id=1180 class='spec'><a href='https://www.w3.org/TR/uievents-code/' rel='versionof'>UI Events KeyboardEvent code Values</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2017/CR-uievents-code-20170601/'>01 June 2017</a></dt>
-<dd>Reference Draft: 
-<a href='https://www.w3.org/TR/2017/CR-uievents-code-20170601/'>https://www.w3.org/TR/2017/CR-uievents-code-20170601/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0002.html'> Call for Exclusion</a> on 01 June 2017
- ended on 31 July 2017<br>Produced under Working Group Charter:
-  http://www.w3.org/2016/11/webplatform-charter.html</dd>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0002.html'>
+            Call for Exclusion</a> on 01 June 2017 ended on 31 July 2017<br>
+            Produced under Working Group Charter:
+            http://www.w3.org/2016/11/webplatform-charter.html
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+          <dt id="1181" class='spec'>
+            <a href='https://www.w3.org/TR/uievents-key/' rel='versionof'>UI
+            Events KeyboardEvent key Values</a><br>
+            Latest publication: <a href=
+            'https://www.w3.org/TR/2017/CR-uievents-key-20170601/'>01 June
+            2017</a>
+          </dt>
+          <dd>
+            Reference Draft: <a href=
+            'https://www.w3.org/TR/2017/CR-uievents-key-20170601/'>https://www.w3.org/TR/2017/CR-uievents-key-20170601/</a><br>
 
-  <dt id=1181 class='spec'><a href='https://www.w3.org/TR/uievents-key/' rel='versionof'>UI Events KeyboardEvent key Values</a>
- <br>Latest publication: <a href='https://www.w3.org/TR/2017/CR-uievents-key-20170601/'>01 June 2017</a></dt>
-<dd>Reference Draft: 
-<a href='https://www.w3.org/TR/2017/CR-uievents-key-20170601/'>https://www.w3.org/TR/2017/CR-uievents-key-20170601/</a><br>
-associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0002.html'> Call for Exclusion</a> on 01 June 2017
- ended on 31 July 2017<br>Produced under Working Group Charter: http://www.w3.org/2016/11/webplatform-charter.html</dd>
-
-</dl>
-	  </section>
+            associated <a href=
+            'https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0002.html'>
+            Call for Exclusion</a> on 01 June 2017 ended on 31 July 2017<br>
+            Produced under Working Group Charter:
+            http://www.w3.org/2016/11/webplatform-charter.html
+          </dd>
+          <dd>
+            Estimated Completion: 2 years
+          </dd>
+        </dl>
+      </section>
     </main>
     <hr>
     <footer>
       <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+        <a href="mailto:ylafon@w3.org">Yves Lafon</a>, <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a>
       </address>
       <p class="copyright">
         <a href=
         "https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-        © <i class="todo">[yyyy]</i> <a href="https://www.w3.org/"><abbr title=
+        © 2019 <a href="https://www.w3.org/"><abbr title=
         "World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href=
         "https://www.csail.mit.edu/"><abbr title=
         "Massachusetts Institute of Technology">MIT</abbr></a>, <a href=
