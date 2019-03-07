@@ -55,111 +55,263 @@
     </style>
   </head>
   <body>
-    <p class="remove">
-      {TBD: This is a draft template that Community or Business Groups MAY
-      choose to use for their Group Charter. You may edit your charter to
-      remove or change the text provided here. Community Groups SHOULD have
-      charters as a way to build shared understanding within a group about
-      activities, and to attract new participants who appreciate a clear
-      description of the group's scope and deliverables.}
-    </p>
-    <p class="remove">
-      {TBD: The charter sections below include notes (marked with ï¿½{TBDï¿½) on
-      what to include and recommended text. Please remember to remove the notes
-      in your specific charter.}
-    </p>
     <h1>
-      [DRAFT] <span class="remove">SVG</span> Community Group Charter
+      [DRAFT] SVG Community Group Charter
     </h1>
-    <p>
-      <span class="remove">{TBD: remove next sentence before submitting for
-      approval}</span> This Charter is work in progress. To submit feedback,
-      please use <span class="remove">{TBD:GitHub repository URL}</span> Issues
-      where Charter is being developed.
-    </p>
+    <aside class="note">
+      <p>
+      This Charter is a work in progress.
+      It is adapted from a
+      <a href="http://w3c.github.io/cg-charter/CGCharter.html">template for all W3C community groups</a>.
+      </p>
+      <p>
+      To submit feedback, please
+      <a href="https://github.com/w3c/charter-drafts/issues/new?title=[svgcg-2019]">file an issue</a> in the W3C "charter-drafts" repository on GitHub,
+      starting your issue title with the label <code>[svgcg-2019]</code>.
+      </p>
+    </aside>
     <ul>
-      <li>This Charter: <span class="remove">{TBD: URI}</span>
+      <li>Community Group Website:
+        <a href="https://www.w3.org/community/svgcg/">https://www.w3.org/community/svgcg/</a>
       </li>
+      <li>This Charter:
+        <a href="https://w3c.github.io/charter-drafts/svg-2019.html">https://w3c.github.io/charter-drafts/svg-2019.html</a>
+      </li>
+      <!--
       <li>Previous Charter: <span class="remove">{TBD: URI}</span>
       </li>
+      -->
       <li>Start Date: <span class="remove">{TBD: date the charter takes effect,
       estimate if not known. Update this if the charter is revised and include
       a link to the previous version of the charter.}</span>
       </li>
-      <li>Last Modifed: <span class="remove">{TBD: If the system does not
-      automatically provide information about the date of the last
-      modification, it can be useful to include that in the charter.}</span>
+      <li>Last Modified:
+        <a href="https://github.com/w3c/charter-drafts/commits/gh-pages/svgcg-2019.html">See GitHub history</a>
       </li>
     </ul>
     <h2 id="goals">
       Goals
     </h2>
     <p>
-      <span class="remove">{TBD: describe the mission and goals of the
-      Community Group. This should be a brief description describing the reason
-      the group has been formed.}</span>
+      A group to gather and incubate new features and requirements for SVG —
+      making it easier for software developers and content creators in the SVG community
+      to engage with the SVG standardization process.
+    </p>
+    <p>
+      This group will complement the SVG working group,
+      and covers the same scope of technologies.
+      Draft proposals for new SVG features, developed in the community group,
+      may transition to recommendation-track specifications in the working group.
     </p>
     <h2 id="scope-of-work">
       Scope of Work
     </h2>
-    <p class="remove">
-      {TBD: Describe topics that are in scope. For specifications that the CLA
-      patent section applies to, it is helpful to describe the scope in a way
-      that it is clear what types of technologies will be defined in
-      specifications, as opposed to adoption by reference or underlying
-      technology not defined in the proposed spec. Key use cases are often
-      helpful in describing scope. If no specifications will be defined in the
-      group that the CLA patent section applies to, the charter should clearly
-      state that. A clear scope is particularly important where patent
-      licensing obligations may apply.}
+    <p>
+      The community group will support
+      the standardization and adoption of Scalable Vector Graphics (SVG)
+      through two types of work:
     </p>
+    <ul>
+      <li>Incubating proposed specifications for extensions and integrations to SVG.
+      </li>
+      <li>Hosting projects for developing SVG-related software
+        and non-normative reports,
+        as described in <a href="#deliverables">Deliverables</a>, below.
+      </li>
+    </ul>
+    <p>
+      SVG is a set of interelated technologies used to create vector graphics.
+      The scope of SVG for the community group is as defined in the
+      <a href="https://w3c.github.io/charter-drafts/svg-2019.html">SVG working group charter</a>,
+      including its
+      markup syntax, styling characteristics, rendering model, and object model.
+    </p>
+    <p>
+      Incubate, in the context of a proposed specification, means to:
+    </p>
+    <ul>
+      <li>Connect interested stakeholders,
+        including content creators and software implementers
+      </li>
+      <li>Collect use cases, requirements, and related information
+        for defining the scope and purpose of potential features
+      </li>
+      <li>Identify any implementation concerns,
+        including security, privacy, accessibility, and internationalization impacts
+      </li>
+      <li>Draft and refine specification text
+      </li>
+      <li>Gather feedback and track issues and suggestions
+      </li>
+      <li>Develop test cases and other examples
+        of how the specification should be implemented
+      </li>
+      <li>Optionally, build experimental implementations
+        and related software to demonstrate the proposal's potential
+      </li>
+    </ul>
+    <p>
+      After successful incubation,
+      a proposed specification would be ready for transition
+      to the <a href="https://www.w3.org/2019/Process-20190301/#Reports">W3C technical report process</a>
+      (AKA, the “recommendation track”).
+    </p>
+    <aside class="issue">
+      <p>
+      Does a standard definition of “incubation” for a specification already exist?
+      I couldn't find one, but would prefer to link by reference instead of defining this here.
+      Especially with respect to the boundary between incubation and the recommendation-track.
+      —ABR
+      </p>
+    </aside>
+
     <h3 id="out-of-scope">
       Out of Scope
     </h3>
-    <p class="remove">
-      {TBD: Identify topics known in advance to be out of scope}
+    <p>
+      Any normative specification being actively developed
+      by the SVG working group,
+      or other recommendation-track group,
+      is out of scope for the community group.
     </p>
+    <p>
+      A feature proposal is not in scope for community group
+      if that feature has multiple independent, non-experimental implementations
+      shipping in consumer-oriented software
+      (that is, not including preview or “Nightly” versions of the software,
+      or implementations requiring special opt-in to the feature).
+      If new implementations make a feature become out-of-scope,
+      any proposed specification for that feature
+      <em>should</em> be transitioned to a recommendation-track process
+      as soon as possible.
+    </p>
+    <p>
+      However, inactive proposals from the working group
+      <em>are</em> in scope for incubation in the community group.
+      For example:
+    </p>
+    <ul>
+      <li>
+        Draft specifications that have been dropped
+        from the working group's charter deliverables
+      </li>
+      <li>
+        Features that were previously described in a recommendation-track specification,
+        but which have been removed or deferred
+        (for example, because there were not two interoperable implementations)
+      </li>
+    </ul>
     <h2 id="deliverables">
       Deliverables
     </h2>
     <h3 id="specifications">
       Specifications
     </h3>
-    <p class="remove">
-      {TBD: Provide a brief description of each specification the group plans
-      to produce. Where an estimate is possible, it can be useful to provide an
-      estimated schedule for key deliverables. As described below, the group
-      may later modify the charter deliverables. if no specifications, include:
-      "No Specifications will be produced under the current charter."}
+    <p>
+      Because the community group is designed to provide a forum
+      to discuss new proposals for SVG,
+      this charter cannot exhaustively list all possible specifications
+      which could be incubated.
+      However, the following draft specifications and features
+      have previously been developed by the SVG working group,
+      but are not currently in its charter scope,
+      and are therefore available for incubation in the community group:
+    </p>
+    <ul>
+      <li><a href="http://dev.w3.org/SVG/modules/param/master/SVGParam.html">SVG Parameters</a>
+      </li>
+      <li><a href="http://dev.w3.org/SVG/modules/connector/SVGConnector.html">SVG
+          Connectors</a>
+        </li>
+      <li><a href="https://svgwg.org/specs/streaming/">SVG Streaming</a>
+      </li>
+      <li><a href="https://svgwg.org/specs/animation-elements/">Animation Elements</a>
+        and <a href="https://svgwg.org/specs/animations/">SVG Animations</a>
+      </li>
+      <li><a href="https://svgwg.org/specs/transform/"><code>svg:transform</code> for Mapping</a>
+      </li>
+      <li><a href="https://svgwg.org/specs/markers/">SVG Markers</a>
+      </li>
+      <li><a href="https://svgwg.org/specs/paths/">SVG Paths</a> (API and advanced commands)
+      </li>
+      <li><a href="https://svgwg.org/specs/strokes/">SVG Strokes</a>,
+        other than those features being standardized through
+        the <a href="https://drafts.fxtf.org/fill-stroke-3/">CSS Fill and Stroke Module Level 3</a>
+      </li>
+      <li><a href="https://svgwg.org/svg-next/painting.html#SpecifyingPaint">The <code>child</code> syntax for defining references to graphical elements.</a>
+      </li>
+      <li><a href="https://svgwg.org/svg-next/pservers.html#MeshGradients">Mesh gradients</a>
+      </li>
+      <li><a href="https://svgwg.org/svg-next/pservers.html#Hatches">Hatches</a>
+      </li>
+      <li><a href="https://svgwg.org/svg-next/render.html#ZIndexProperty"><code>z-index</code> for SVG rendering</a>
+      </li>
+      <li><a href="https://svgwg.org/svg-next/embedded.html#HTMLElements">HTML canvas and media elements within SVG</a>
+      </li>
+    </ul>
+    <p>
+      There are no specific timelines for any of these projects,
+      as of the date this charter was drafted.
     </p>
     <h3 id="non-normative-reports">
       Non-Normative Reports
     </h3>
     <p>
-      The group may produce other Community Group Reports within the scope of
-      this charter but that are not Specifications, for instance use cases,
-      requirements, or white papers.
+      The group may produce other Community Group Reports,
+      that are within the scope of this charter but that are not Specifications,
+      for instance use cases, requirements, white papers, or best-practices guides.
+    </p>
+    <p>
+      In particular,
+      the draft <a href="https://w3c.github.io/svgwg/specs/svg-authoring/">SVG Authoring Guide</a>
+      could be completed under the scope of the community group.
     </p>
     <h3 id="test-suites">
       Test Suites and Other Software
     </h3>
-    <p class="remove">
-      {TBD: If there are no plans to create a test suite or other software,
-      please state that and remove the following paragraph. If Github is not
-      being used, then indicate where the license information is. If GitHub is
-      being used link to your LICENSE.md file in the next paragraph.}
+    <p>
+      Participants developing draft specifications in the community group
+      <em>should</em> include matching test suites.
+      For organizational purposes,
+      the test suite is considered part of the same project
+      as the proposed specification.
     </p>
     <p>
-      The group MAY produce test suites to support the Specifications. Please
-      see the GitHub LICENSE file for test suite contribution licensing
-      information.
+      The group <em>may</em> host other open-source software projects that support SVG standardization,
+      including:
     </p>
+    <ul>
+      <li>
+        Polyfills (<a href="https://remysharp.com/2010/10/08/what-is-a-polyfill">definition</a>),
+        preprocessors, and other software
+        for adapting SVG code that uses new or proposed features
+        to work in current or historical user agents.
+      </li>
+      <li>
+        Debugging and authoring tools
+        (stand-alone or extensions to existing software)
+        to make it easier for content creators to use new SVG features,
+        or to experiment with feature proposals.
+      </li>
+      <li>
+        Examples, demonstrations, and educational content
+        about SVG features (existing or proposed).
+      </li>
+      <li>
+        Tools to support the development of the specifications,
+        test suites,
+        and other software
+        of the community group and the SVG working group.
+      </li>
+    </ul>
     <h2 id="liaisons">
       Dependencies or Liaisons
     </h2>
-    <p class="remove">
-      {TBD: List any significant dependencies on other groups (inside or
-      outside W3C) or materials. }
+    <p>
+      This community group is tightly affilliated with
+      the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page">SVG Working Group</a>.
+      Its work may intersect with the work of any of the other groups
+      mentioned in the “Coordination” section of the SVG working group's charter.
     </p>
     <h2 id="process">
       Community and Business Group Process
@@ -194,13 +346,68 @@
       Work Limited to Charter Scope
     </h2>
     <p>
-      The group will not publish Specifications on topics other than those
-      listed under <a href="#specifications">Specifications</a> above. See
-      below for <a href="#charter-change">how to modify the charter</a>.
+      The group will not publish Specifications on topics outside the scope
+      defined in <a href="#scope-of-work">Scope of Work</a> above.
+      See below for <a href="#charter-change">how to modify the charter</a>.
     </p>
+
     <h2 id="contrib">
       Contribution Mechanics
     </h2>
+
+    <h3 id="organization">Organization</h3>
+
+    <p>
+      Technical work of the community group
+      will be divided into individual projects,
+      where a project may be one of the following types
+      of <a href="#deliverables">deliverables</a>:
+    </p>
+    <ul>
+      <li>a proposed specification,
+        along with its test suite
+        and any use-cases/requirements
+        or other non-normative reports to support the specification proposal
+      </li>
+      <li>a non-normative report</li>
+      <li>a software project</li>
+    </ul>
+    <p>
+      Each active group project —
+      meaning, a project where work is ongoing
+      and contributions are accepted —
+      <em>must</em> have clearly identified project lead(s)
+      who are responsible for that project's process and deliverables.
+      If the project is a proposed specification,
+      the project leads include the specification editors.
+      If at any time an active project no longer has a lead,
+      then the community group chair(s) take over that role
+      until a new project lead can be identified.
+    </p>
+    <p>
+      Project leads <em>may</em> maintain lists
+      of project team members or contributors
+      who may participate in the project decision process,
+      so long as the process of identifying team members
+      is documented, fair, and consistent with
+      the <a href="https://www.w3.org/community/about/agreements/#cgroups">Community and Business Group Process</a>.
+      In the absence of an explicit project team list,
+      the project team consists of any community group members
+      who choose to participate in the project's discussions.
+    </p>
+    <p>
+      The community group chair(s) will work to
+      coordinate communication,
+      support project leads,
+      resolve disputes within project teams,
+      and to liase with the SVG working group,
+      other working groups,
+      and W3C management.
+      The chairs may delegate any of these tasks
+      to other group members.
+    </p>
+
+    <h3 id="licensing">Licensing and Intellectual Property</h3>
     <p>
       Substantive Contributions to Specifications can only be made by Community
       Group Participants who have agreed to the <a href=
@@ -210,17 +417,23 @@
     <p>
       Specifications created in the Community Group must use the <a href=
       "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
-      W3C Software and Document License</a>. All other documents produced by
-      the group should use that License where possible.
+      W3C Software and Document License</a>.
+      All other documents produced by the group should use that License where possible.
     </p>
-    <p class="remove">
-      {TBD: if CG doesn't use GitHub replace the remaining paragraphs in this
-      section with: "All Contributions are made on the groups public mail list
-      or public contrib list"}
+    <p>
+      All test suite contributions <em>must</em> be released
+      under the <a href="https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html">W3C 3-clause BSD License</a>,
+      so they can be readily integrated in the Web Platform Tests project
+      if and when a specification is adopted.
+    </p>
+    <p>
+      All other software projects hosted by the group
+      <em>must</em> include an open-source licence
+      compatible with the <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">W3C Software and Document Notice and License</a>.
     </p>
     <p>
       Community Group participants agree to make all contributions in the
-      GitHub repo the group is using for the particular document. This may be
+      GitHub repo the group is using for the particular project. This may be
       in the form of a pull request (preferred), by raising an issue, or by
       adding a comment to an existing issue.
     </p>
@@ -230,68 +443,315 @@
       "https://github.com/w3c/licenses/blob/master/CG-CONTRIBUTING.md">CONTRIBUTING</a>
       and <a href=
       "https://github.com/w3c/licenses/blob/master/CG-LICENSE.md">LICENSE</a>
-      files.
+      files
+      (or a suitable alternative licence file,
+      if the W3C Software and Document License file isn't being used).
     </p>
+
+    <h3 id="communication">Communication</h3>
+    
+    <p>
+      Each project hosted by the community group
+      will have a dedicated GitHub repository,
+      which <em>must</em> be used to track contributions
+      and technical discussion and decisions.
+    </p>
+    <p>
+      The community group <a href="https://www.w3.org/community/svgcg/">website</a>
+      and <a href="https://lists.w3.org/Archives/Public/public-svgcg/">mailing list</a>
+      <em>should</em> be used primarily for
+      administrative matters,
+      announcements,
+      introductions,
+      procedural guidance,
+      and other non-technical discussion.
+    </p>
+    <p>
+      The group's IRC channel (<a href="irc://irc.w3.org:6667/#svgcg">#svgcg</a>)
+      <em>may</em> be used by group members
+      for informal real-time collaboration,
+      provided that all technical contributions and decisions
+      are recorded in the relevant GitHub commits or issue tracker.
+    </p>
+    <p>
+      Other methods of communication
+      (for example, social media accounts)
+      may be used by the chair(s) or their delegates
+      to increase awareness of the community group's activities.
+    </p>
+    <p>
+      The community group <em>may</em> hold annual face-to-face meetings
+      as part of W3C's TPAC.
+      In addition,
+      project teams <em>may</em> choose to arrange meetings
+      (teleconference, videoconference, or face-to-face)
+      as needed,
+      so long as they meet the requirements of the
+      <a href="https://www.w3.org/community/about/agreements/#cgroups">Community Group Meeting Policies</a>
+      regarding advance notice and published minutes.
+      An <a href="https://lists.w3.org/Archives/Member/internal-svgcg/">internal mailing list</a>
+      is available to coordinate meeting logistics
+      (but notice and agendas must be made on a public forum).
+    </p>
+    <p>
+      Any decisions reached at any meeting are tentative and should be recorded
+      in a GitHub Issue (for technical matters)
+      or otherwise on the group's public mail list
+      (for administrative and procedural matters not associated with a particular repository).
+      Any group participant may object to a decision reached
+      at an online or in-person meeting within 7 days of publication of the decision,
+      provided that they include clear technical reasons for their objection.
+      The Chairs will facilitate discussion to try to resolve the
+      objection according to the <a href="#decision">decision process</a>.
+    </p>
+
+    <h3 id="projects-leads">Projects and Project Leads</h3>
+
+    <p>
+      Any group members may propose a new project.
+      The chair(s) will maintain a forum
+      for discussing project proposals
+      and seeking collaborators.
+    </p>
+    <p class="note">
+      This will probably be a dedicated GitHub repository issue tracker,
+      but may be a separate forum such as Discourse.
+    </p>
+    <p>
+      The chair(s) or other group members delegated by the chair(s)
+      <em>must</em> create a new project repository
+      in response to a request in this forum,
+      if the following conditions are met:
+    </p>
+    <ul>
+      <li>The project proposal contains a clear description
+        of its intended deliverables,
+        including whether any reports would be proposals for normative specifications.
+      </li>
+      <li>The project description is <a href="#scope">in scope</a> for the community group.
+      </li>
+      <li>The people proposing the project
+        are community group members who have made the required licensing agreements.
+      </li>
+      <li>
+        None of the people involved in the project
+        have a history of contravening the
+        <a href="https://www.w3.org/Consortium/cepc/">W3C Code of Ethics and Professional Conduct</a>.
+      </li>
+    </ul>
+    <p>
+      The initial project leads are the people who made the project request,
+      or as otherwise identified in the discussion for the proposal.
+      Thereafter, project teams may select new leads
+      by consensus or through the <a href="#decision">decision process</a>.
+    </p>
+    <p>
+      Project leads <em>must</em> ensure that:
+    </p>
+    <ul>
+      <li>
+        All project deliverables meet the requirements
+        of the <a href="https://www.w3.org/community/about/agreements/#cgroups">Community and Business Group Process</a>.
+      </li>
+      <li>Substantive contributions are only accepted from people
+        who have made the relevant <a href="#licensing">licensing agreements</a>.
+      </li>
+      <li>Any technical discussions,
+        decisions,
+        or contributions
+        made through non-GitHub communication channels
+        (for example, IRC chat, the mailing list, or teleconferences)
+        are copied over to GitHub with correct attribution.
+      </li>
+      <li>All discussion and activity related to the project
+        is consistent with
+        the <a href="https://www.w3.org/Consortium/cepc/">W3C Code of Ethics and Professional Conduct</a>,
+        and any conduct violations are addressed following
+        <a href="http://www.w3.org/Consortium/pwe/#Procedures">the specified procedures</a>.
+      </li>
+      <li>
+        If any community group member objects
+        (in writing, using the project's issue tracker)
+        to any change to the project deliverables,
+        team membership,
+        or process,
+        a formal decision from the project team
+        is sought using the <a href="#decision">decision process</a>.
+      </li>
+      <li>If implementations of a proposed feature
+        mean that all or part of a project will no longer be in
+        in <a href="#out-of-scope">scope for the community group</a>,
+        the chair(s) are informed
+        and an <a href="https://wicg.github.io/admin/intent-to-migrate.html">intent to migrate</a> request is prepared.
+      </li>
+      <li>If they cannot fulfil the responsibilities of project lead,
+        they inform the chair(s) and start a process of selecting a new lead.
+      </li>
+    </ul>
+    <p>
+      The chair(s) may appoint new project leads at any time
+      if the current project leads fail to fulfill these obligations.
+    </p>
+    <p>
+      Any project may become inactive
+      if the project team or leads decide that it has completed its work,
+      or that further work is no longer desired.
+      The project lead(s) or chair(s) <em>must</em> ensure that
+      Inactive projects are clearly identified as such
+      in the project repository,
+      and <em>must not</em> accept new contributions
+      other than errata.
+    </p>
+    <p>
+      Project leads <em>may</em> request at any time
+      to publish a document for the project as a draft report of the community group.
+      If the document meets the requirements
+      for <a href="https://www.w3.org/community/about/agreements/#cgroups">Community Group Deliverables</a>,
+      the chair(s) must request a community-group decision
+      on whether to adopt the draft.
+    </p>
+    <p>
+      When project leads believe that
+      a specification proposal project has completed incubation,
+      they <em>should</em> prepare
+      an <a href="https://wicg.github.io/admin/intent-to-migrate.html">intent to migrate</a> request
+      (published within the project repository).
+      After receiving notification of the request,
+      the chair(s) <em>must</em> request a community-group decision
+      on whether to adopt the proposal as a final report.
+      In addition, the chair(s) <em>should</em> work with the project leads
+      to transition the proposed specification
+      to the SVG working group or other standards group.
+    </p>
+    <p>
+      The chair(s) <em>should</em> ensure that new projects,
+      project reports,
+      and changes to project status (completed or inactive)
+      are announced to the all community group members.
+    </p>
+
     <h2 id="transparency">
       Transparency
     </h2>
     <p>
-      The group will conduct all of its technical work in public. If the group
-      uses GitHub, all technical work will occur in its GitHub repositories
-      (and not in mailing list discussions). This is to ensure contributions
+      The group will conduct all of its technical work in public.
+      All technical work will occur in, or be recorded in,
+      its GitHub repositories.
+      This is to ensure contributions
       can be tracked through a software tool.
     </p>
     <p>
       Meetings may be restricted to Community Group participants, but a public
-      summary or minutes must be posted to the group's public mailing list, or
-      to a GitHub issue if the group uses GitHub.
+      summary or minutes must be posted to the group's public mailing list
+      (for administrative discussion),
+      or to a GitHub issue (for technical discussion).
     </p>
+
     <h2 id="decision">
       Decision Process
     </h2>
     <p>
-      This group will seek to make decisions where there is consensus. Groups
-      are free to decide how to make decisions (e.g. Participants who have
-      earned Committer status for a history of useful contributions assess
-      consensus, or the Chair assesses consensus, or where consensus isn't
-      clear there is a Call for Consensus [CfC] to allow multi-day online
-      feedback for a proposed course of action). It is expected that
-      participants can earn Committer status through a history of valuable
-      contributions as is common in open source projects. After discussion and
-      due consideration of different opinions, a decision should be publicly
-      recorded (where GitHub is used as the resolution of an Issue).
+      This group — as a whole and for individual projects —
+      will seek to make decisions where there is consensus.
+      The following process is to be used to make decisions
+      in any of these situations:
+    </p>
+    <ul>
+      <li>Consensus cannot be reached after a reasonable amount of discussion.</li>
+      <li>Any group member formally objects to a decision or action.</li>
+      <li>Another section of this charter requires a formal decision of the group.</li>
+    </ul>
+    <p>
+      A decision process <em>should</em> be managed either by a project lead
+      (for a project technical decision),
+      or by a chair
+      (for any decision).
     </p>
     <p>
-      If substantial disagreement remains (e.g. the group is divided) and the
-      group needs to decide an Issue in order to continue to make progress, the
-      Committers will choose an alternative that had substantial support (with
-      a vote of Committers if necessary). Individuals who disagree with the
-      choice are strongly encouraged to take ownership of their objection by
-      taking ownership of an alternative fork. This is explicitly allowed (and
+      The decision process,
+      and any formal objections or other requests for a decision,
+      <em>must</em> be carried out in writing in the following locations:
+    </p>
+    <ul>
+      <li>For technical matters related to a project, 
+        in the relevant project's GitHub issue tracker.
+      </li>
+      <li>For administrative or process matters
+          in the community group's mailing list
+          or in administrative forums or repositories set up for this purpose.
+      </li>
+    </ul>
+    <p>
+      For a project technical decision,
+      the decision process participants are project team members.
+      For an administrative or procedural decision,
+      including any debate on who should qualify as a project team member,
+      the decision process participants are any community group member
+      as of the time the decision process is initiated.
+    </p>
+    <p>
+      The chair or project lead managing the decision process
+      <em>should</em> start by publishing a proposed resolution
+      with a Call for Consensus (CfC).
+      Alternatively, if there is no clear proposed resolution,
+      the chair or project lead <em>may</em> issue a Call for Proposals (CfP),
+      asking for suggested courses of action to resolve the issue.
+    </p>
+    <p>
+      The Call for Consensus or Call for Proposals
+      <em>must</em> include an explicit end date,
+      at least 7 days from publication of the call.
+      During that period,
+      decision process participants
+      may respond with an objection (to a CfC)
+      and an alternative proposal.
+    </p>
+    <p>
+      If no objections to a proposed resolution are received by the end date of the CfC,
+      or if only one proposed resolution is received for a CfP,
+      then that proposal is accepted as a decision.
+    </p>
+    <p>
+      If, however, the CfC/CfP period ends with more than one proposed action,
+      the chair or project lead managing the decision process
+      <em>must</em> call for a vote.
+      A vote may use an online poll/form,
+      or may be conducted by written replies,
+      so long as vote participants are identifiable.
+      The call for a vote <em>must</em> include a new end date
+      (at least another 7 days in the future).
+      Decision process participants <em>should</em>
+      then respond to indicate their preferred course of action
+      (possibly ranked, if there are many alternatives).
+      At the end of the voting period,
+      the chair or project lead managing the decision process
+      <em>must</em> select an alternative with substantial support
+      and publish it in the same forum as the original call for a decision.
+    </p>
+    <p>
+      If any group members still disagree with a decision about a project,
+      they <em>may</em> request to start a new project
+      that is a fork of the original one.
+      This is explicitly allowed (and
       preferred to blocking progress) with a goal of letting implementation
       experience inform which spec is ultimately chosen by the group to move
       ahead with.
-    </p>
-    <p>
-      Any decisions reached at any meeting are tentative and should be recorded
-      in a GitHub Issue for groups that use GitHub and otherwise on the group's
-      public mail list. Any group participant may object to a decision reached
-      at an online or in-person meeting within 7 days of publication of the
-      decision provided that they include clear technical reasons for their
-      objection. The Chairs will facilitate discussion to try to resolve the
-      objection according to the <a href="#decision">decision process</a>.
     </p>
     <p>
       It is the Chairs' responsibility to ensure that the decision process is
       fair, respects the consensus of the CG, and does not unreasonably favour
       or discriminate against any group participant or their employer.
     </p>
+
     <h2 id="chairs">
       Chair Selection
     </h2>
     <p>
       Participants in this group choose their Chair(s) and can replace their
-      Chair(s) at any time using whatever means they prefer. However, if 5
+      Chair(s) by consensus or by following the <a href="#decision">decision process</a>.
+    </p>
+    <p>
+      However, if 5
       participants, no two from the same organisation, call for an election,
       the group must use the following process to replace any current Chair(s)
       with a new Chair, consulting the Community Development Lead on election
