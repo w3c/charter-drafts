@@ -6,21 +6,48 @@
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="//www.w3.org/StyleSheets/TR/base">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/base">
     <style>
       body {
         max-width: 60em;
-        margin: auto;;
+        margin: auto;
+        scroll-behavior: smooth;
       }
       *:target {
-        background-color: yellow;
+        background-color: lightCyan;
+      }
+      h2 {
+        border-bottom: 2px solid;
       }
       li {
         margin-bottom: 9pt;
       }
-      .note {
-        background-color: yellow;
-        padding: 10px;
+      code {
+        font: 100% "Courier New", monospace;
+      }
+      .note, .issue {
+        border: darkSlateBlue 2px solid;
+        background-color: lightYellow;
+        padding: 1.5em 0.5em 0.5em;
+        position: relative;
+      }
+      .note::before, .issue::before {
+        position: absolute;
+        top: 0; left: 0;
+        color: lightYellow;
+        background-color: darkSlateBlue;
+        text-transform: uppercase;
+        padding: 0 0.5em 2px;
+      }
+      .note::before {
+        content: "Note";
+      }
+      .issue {
+        border-color: darkRed;
+      }
+      .issue::before {
+        content: "Issue";
+        background-color: darkRed;
       }
       .remove {
         background-color: yellow;
