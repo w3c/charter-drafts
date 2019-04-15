@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/base">
     <style>
       body {
-        max-width: 60em;
+        max-width: 50em;
         margin: auto;
         scroll-behavior: smooth;
       }
@@ -52,6 +52,13 @@
       .remove {
         background-color: yellow;
       }
+      a.permalink {
+        float: right;
+        color: inherit;
+      }
+      a.permalink:not(:hover):not(:focus) {
+        opacity: 0.7;
+      }
     </style>
   </head>
   <body>
@@ -75,7 +82,39 @@
         <a href="https://github.com/w3c/charter-drafts/commits/gh-pages/svgcg-2019.html">See GitHub history</a>
       </li>
     </ul>
-    <h2 id="goals">
+    <nav id="toc">
+      <details>
+        <summary>Contents</summary>
+        <ul class="toc">
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#scope-of-work">Scope of Work</a>
+              <ul>
+                <li><a href="#out-of-scope">Out of Scope</a></li>
+              </ul>
+            <li><a href="#deliverables">Deliverables</a>
+              <ul>
+                <li><a href="#specifications">Specifications</a></li>
+                <li><a href="#non-normative-reports">Non-Normative Reports</a></li>
+                <li><a href="#test-suites">Test Suites and Other Software</a></li>
+              </ul>
+            <li><a href="#liaisons">Dependencies or Liaisons</a></li>
+            <li><a href="#process">Community and Business Group Process</a></li>
+            <li><a href="#worklimit">Work Limited to Charter Scope</a></li>
+            <li><a href="#contrib">Contribution Mechanics</a>
+              <ul>
+                <li><a href="#organization">Organization</a></li>
+                <li><a href="#licensing">Licensing and Intellectual Property</a></li>
+                <li><a href="#communication">Communication</a></li>
+                <li><a href="#projects-leads">Projects and Project Leads</a></li>
+              </ul>
+            <li><a href="#transparency">Transparency</a></li>
+            <li><a href="#decision">Decision Process</a></li>
+            <li><a href="#chairs">Chair Selection</a></li>
+            <li><a href="#charter-change">Amendments to this Charter</a></li>
+            </ul>
+      </details>
+    </nav>
+    <h2 id="goals"><a class="permalink" href="#goals">§</a>
       Goals
     </h2>
     <p>
@@ -89,7 +128,7 @@
       Draft proposals for new SVG features, developed in the community group,
       may transition to recommendation-track specifications in the working group.
     </p>
-    <h2 id="scope-of-work">
+    <h2 id="scope-of-work"><a class="permalink" href="#scope-of-work">§</a>
       Scope of Work
     </h2>
     <p>
@@ -147,7 +186,7 @@
       See <a href="#deliverables">Deliverables</a> for examples of in-scope work.
     </p>
 
-    <h3 id="out-of-scope">
+    <h3 id="out-of-scope"><a class="permalink" href="#out-of-scope">§</a>
       Out of Scope
     </h3>
     <p>
@@ -183,10 +222,10 @@
         (for example, because there were not two interoperable implementations)
       </li>
     </ul>
-    <h2 id="deliverables">
+    <h2 id="deliverables"><a class="permalink" href="#deliverables">§</a>
       Deliverables
     </h2>
-    <h3 id="specifications">
+    <h3 id="specifications"><a class="permalink" href="#specifications">§</a>
       Specifications
     </h3>
     <p>
@@ -235,7 +274,7 @@
       There are no specific timelines for any of these projects,
       as of the date this charter was drafted.
     </p>
-    <h3 id="non-normative-reports">
+    <h3 id="non-normative-reports"><a class="permalink" href="#non-normative-reports">§</a>
       Non-Normative Reports
     </h3>
     <p>
@@ -253,7 +292,7 @@
       how SVG and other vector graphics languages are being used,
       separate from any specification proposal.
     </p>
-    <h3 id="test-suites">
+    <h3 id="test-suites"><a class="permalink" href="#test-suites">§</a>
       Test Suites and Other Software
     </h3>
     <p>
@@ -293,7 +332,7 @@
         of the community group and the SVG working group.
       </li>
     </ul>
-    <h2 id="liaisons">
+    <h2 id="liaisons"><a class="permalink" href="#liaisons">§</a>
       Dependencies or Liaisons
     </h2>
     <p>
@@ -317,7 +356,7 @@
       <li><a href="https://www.w3.org/2001/tag/">Technical Architecture Group</a> (for technical architecture
           principles)</li>
       </ul>
-    <h2 id="process">
+    <h2 id="process"><a class="permalink" href="#process">§</a>
       Community and Business Group Process
     </h2>
     <p>
@@ -346,7 +385,7 @@
       this group.
     </p>
 
-    <h2 id="worklimit">
+    <h2 id="worklimit"><a class="permalink" href="#worklimit">§</a>
       Work Limited to Charter Scope
     </h2>
     <p>
@@ -355,11 +394,12 @@
       See below for <a href="#charter-change">how to modify the charter</a>.
     </p>
 
-    <h2 id="contrib">
+    <h2 id="contrib"><a class="permalink" href="#contrib">§</a>
       Contribution Mechanics
     </h2>
 
-    <h3 id="organization">Organization</h3>
+    <h3 id="organization"><a class="permalink" href="#organization">§</a>
+      Organization</h3>
 
     <p>
       Technical work of the community group
@@ -411,7 +451,8 @@
       to other group members.
     </p>
 
-    <h3 id="licensing">Licensing and Intellectual Property</h3>
+    <h3 id="licensing"><a class="permalink" href="#licensing">§</a>
+      Licensing and Intellectual Property</h3>
     <p>
       Substantive Contributions to Specifications can only be made by Community
       Group Participants who have agreed to the <a href=
@@ -452,7 +493,8 @@
       if the W3C Software and Document License file isn't being used).
     </p>
 
-    <h3 id="communication">Communication</h3>
+    <h3 id="communication"><a class="permalink" href="#communication">§</a>
+      Communication</h3>
     
     <p>
       Each project hosted by the community group
@@ -509,7 +551,8 @@
       objection according to the <a href="#decision">decision process</a>.
     </p>
 
-    <h3 id="projects-leads">Projects and Project Leads</h3>
+    <h3 id="projects-leads"><a class="permalink" href="#projects-leads">§</a>
+      Projects and Project Leads</h3>
 
     <p>
       Any group members may propose a new project.
@@ -641,7 +684,7 @@
       are announced to the all community group members.
     </p>
 
-    <h2 id="transparency">
+    <h2 id="transparency"><a class="permalink" href="#transparency">§</a>
       Transparency
     </h2>
     <p>
@@ -658,7 +701,7 @@
       or to a GitHub issue (for technical discussion).
     </p>
 
-    <h2 id="decision">
+    <h2 id="decision"><a class="permalink" href="#decision">§</a>
       Decision Process
     </h2>
     <p>
@@ -754,7 +797,7 @@
       or discriminate against any group participant or their employer.
     </p>
 
-    <h2 id="chairs">
+    <h2 id="chairs"><a class="permalink" href="#chairs">§</a>
       Chair Selection
     </h2>
     <p>
@@ -788,7 +831,7 @@
       Community Development Lead to intervene. The Community Development Lead,
       after evaluating the election, may take any action including no action.
     </p>
-    <h2 id="charter-change">
+    <h2 id="charter-change"><a class="permalink" href="#charter-change">§</a>
       Amendments to this Charter
     </h2>
     <p>
