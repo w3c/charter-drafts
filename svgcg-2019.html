@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/base">
     <style>
       body {
-        max-width: 60em;
+        max-width: 50em;
         margin: auto;
         scroll-behavior: smooth;
       }
@@ -52,44 +52,69 @@
       .remove {
         background-color: yellow;
       }
+      a.permalink {
+        float: right;
+        color: inherit;
+      }
+      a.permalink:not(:hover):not(:focus) {
+        opacity: 0.7;
+      }
     </style>
   </head>
   <body>
     <h1>
-      [DRAFT] SVG Community Group Charter
+      SVG Community Group Charter
     </h1>
-    <aside class="note">
-      <p>
-      This Charter is a work in progress.
-      It is adapted from a
-      <a href="http://w3c.github.io/cg-charter/CGCharter.html">template for all W3C community groups</a>.
-      </p>
-      <p>
-      To submit feedback, please
-      <a href="https://github.com/w3c/charter-drafts/issues/new?title=[svgcg-2019]">file an issue</a> in the W3C "charter-drafts" repository on GitHub,
-      starting your issue title with the label <code>[svgcg-2019]</code>.
-      </p>
-    </aside>
     <ul>
       <li>Community Group Website:
         <a href="https://www.w3.org/community/svgcg/">https://www.w3.org/community/svgcg/</a>
       </li>
       <li>This Charter:
-        <a href="https://w3c.github.io/charter-drafts/svg-2019.html">https://w3c.github.io/charter-drafts/svg-2019.html</a>
+        <a href="https://w3c.github.io/charter-drafts/svgcg-2019.html">https://w3c.github.io/charter-drafts/svgcg-2019.html</a>
       </li>
       <!--
       <li>Previous Charter: <span class="remove">{TBD: URI}</span>
       </li>
       -->
-      <li>Start Date: <span class="remove">{TBD: date the charter takes effect,
-      estimate if not known. Update this if the charter is revised and include
-      a link to the previous version of the charter.}</span>
+      <li>Start Date: <time datetime="2019-04-25">25 April 2019</time>
       </li>
       <li>Last Modified:
         <a href="https://github.com/w3c/charter-drafts/commits/gh-pages/svgcg-2019.html">See GitHub history</a>
       </li>
     </ul>
-    <h2 id="goals">
+    <nav id="toc">
+      <details>
+        <summary>Contents</summary>
+        <ul class="toc">
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#scope-of-work">Scope of Work</a>
+              <ul>
+                <li><a href="#out-of-scope">Out of Scope</a></li>
+              </ul>
+            <li><a href="#deliverables">Deliverables</a>
+              <ul>
+                <li><a href="#specifications">Specifications</a></li>
+                <li><a href="#non-normative-reports">Non-Normative Reports</a></li>
+                <li><a href="#test-suites">Test Suites and Other Software</a></li>
+              </ul>
+            <li><a href="#liaisons">Dependencies or Liaisons</a></li>
+            <li><a href="#process">Community and Business Group Process</a></li>
+            <li><a href="#worklimit">Work Limited to Charter Scope</a></li>
+            <li><a href="#contrib">Contribution Mechanics</a>
+              <ul>
+                <li><a href="#organization">Organization</a></li>
+                <li><a href="#licensing">Licensing and Intellectual Property</a></li>
+                <li><a href="#communication">Communication</a></li>
+                <li><a href="#projects-leads">Projects and Project Leads</a></li>
+              </ul>
+            <li><a href="#transparency">Transparency</a></li>
+            <li><a href="#decision">Decision Process</a></li>
+            <li><a href="#chairs">Chair Selection</a></li>
+            <li><a href="#charter-change">Amendments to this Charter</a></li>
+            </ul>
+      </details>
+    </nav>
+    <h2 id="goals"><a class="permalink" href="#goals">§</a>
       Goals
     </h2>
     <p>
@@ -103,26 +128,27 @@
       Draft proposals for new SVG features, developed in the community group,
       may transition to recommendation-track specifications in the working group.
     </p>
-    <h2 id="scope-of-work">
+    <h2 id="scope-of-work"><a class="permalink" href="#scope-of-work">§</a>
       Scope of Work
     </h2>
     <p>
       The community group will support
       the standardization and adoption of Scalable Vector Graphics (SVG)
-      through two types of work:
+      through three types of work:
     </p>
     <ul>
       <li>Incubating proposed specifications for extensions and integrations to SVG.
       </li>
-      <li>Hosting projects for developing SVG-related software
-        and non-normative reports,
-        as described in <a href="#deliverables">Deliverables</a>, below.
+      <li>Compiling non-normative reports
+        about current and potential uses of SVG and vector graphics.
+      </li>
+      <li>Hosting projects for developing SVG-related software.
       </li>
     </ul>
     <p>
       SVG is a set of interelated technologies used to create vector graphics.
       The scope of SVG for the community group is as defined in the
-      <a href="https://w3c.github.io/charter-drafts/svg-2019.html">SVG working group charter</a>,
+      <a href="https://www.w3.org/Graphics/SVG/svg-2019.html#scope">SVG working group charter</a>,
       including its
       markup syntax, styling characteristics, rendering model, and object model.
     </p>
@@ -156,16 +182,11 @@
       to the <a href="https://www.w3.org/2019/Process-20190301/#Reports">W3C technical report process</a>
       (AKA, the “recommendation track”).
     </p>
-    <aside class="issue">
-      <p>
-      Does a standard definition of “incubation” for a specification already exist?
-      I couldn't find one, but would prefer to link by reference instead of defining this here.
-      Especially with respect to the boundary between incubation and the recommendation-track.
-      —ABR
-      </p>
-    </aside>
+    <p>
+      See <a href="#deliverables">Deliverables</a> for examples of in-scope work.
+    </p>
 
-    <h3 id="out-of-scope">
+    <h3 id="out-of-scope"><a class="permalink" href="#out-of-scope">§</a>
       Out of Scope
     </h3>
     <p>
@@ -201,10 +222,10 @@
         (for example, because there were not two interoperable implementations)
       </li>
     </ul>
-    <h2 id="deliverables">
+    <h2 id="deliverables"><a class="permalink" href="#deliverables">§</a>
       Deliverables
     </h2>
-    <h3 id="specifications">
+    <h3 id="specifications"><a class="permalink" href="#specifications">§</a>
       Specifications
     </h3>
     <p>
@@ -253,7 +274,7 @@
       There are no specific timelines for any of these projects,
       as of the date this charter was drafted.
     </p>
-    <h3 id="non-normative-reports">
+    <h3 id="non-normative-reports"><a class="permalink" href="#non-normative-reports">§</a>
       Non-Normative Reports
     </h3>
     <p>
@@ -265,8 +286,13 @@
       In particular,
       the draft <a href="https://w3c.github.io/svgwg/specs/svg-authoring/">SVG Authoring Guide</a>
       could be completed under the scope of the community group.
+      Separate best practice guides could provide guidance for SVG authoring tools
+      and other software that exports or manipulates SVG files.
+      Use-case and requirements reports could review
+      how SVG and other vector graphics languages are being used,
+      separate from any specification proposal.
     </p>
-    <h3 id="test-suites">
+    <h3 id="test-suites"><a class="permalink" href="#test-suites">§</a>
       Test Suites and Other Software
     </h3>
     <p>
@@ -289,9 +315,11 @@
       </li>
       <li>
         Debugging and authoring tools
-        (stand-alone or extensions to existing software)
-        to make it easier for content creators to use new SVG features,
-        or to experiment with feature proposals.
+        (stand-alone or as extensions to existing software)
+        to make it easier for content creators to use SVG,
+        including tools that promote best practices with existing SVG technologies,
+        tools to support the adoption of new features,
+        and tools for experimenting with feature proposals.
       </li>
       <li>
         Examples, demonstrations, and educational content
@@ -304,16 +332,31 @@
         of the community group and the SVG working group.
       </li>
     </ul>
-    <h2 id="liaisons">
+    <h2 id="liaisons"><a class="permalink" href="#liaisons">§</a>
       Dependencies or Liaisons
     </h2>
     <p>
       This community group is tightly affilliated with
       the <a href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page">SVG Working Group</a>.
       Its work may intersect with the work of any of the other groups
-      mentioned in the “Coordination” section of the SVG working group's charter.
+      mentioned in the <a href="https://www.w3.org/Graphics/SVG/svg-2019.html#coordination">“Coordination” section</a>
+      of the SVG working group's charter.
     </p>
-    <h2 id="process">
+    <p>
+      In particular, many projects will need to be coordinated with
+      the <a href="https://www.w3.org/Style/CSS/">CSS Working Group</a>.
+      All projects will need to consider guidelines
+      produced by the W3C's horizontal review groups:
+    </p>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/APA/">WAI Accessible Platform Architectures (APA) Working Group</a> (for accessibility)</li>
+      <li><a href="https://www.w3.org/International/review-request">Internationalization Working Group</a></li>
+      <li><a href="https://www.w3.org/Security/wiki/IG">Security Interest Group</a> (for security)</li>
+      <li><a href="https://www.w3.org/Privacy/">Privacy Interest Group</a> (for privacy)</li>
+      <li><a href="https://www.w3.org/2001/tag/">Technical Architecture Group</a> (for technical architecture
+          principles)</li>
+      </ul>
+    <h2 id="process"><a class="permalink" href="#process">§</a>
       Community and Business Group Process
     </h2>
     <p>
@@ -342,7 +385,7 @@
       this group.
     </p>
 
-    <h2 id="worklimit">
+    <h2 id="worklimit"><a class="permalink" href="#worklimit">§</a>
       Work Limited to Charter Scope
     </h2>
     <p>
@@ -351,11 +394,12 @@
       See below for <a href="#charter-change">how to modify the charter</a>.
     </p>
 
-    <h2 id="contrib">
+    <h2 id="contrib"><a class="permalink" href="#contrib">§</a>
       Contribution Mechanics
     </h2>
 
-    <h3 id="organization">Organization</h3>
+    <h3 id="organization"><a class="permalink" href="#organization">§</a>
+      Organization</h3>
 
     <p>
       Technical work of the community group
@@ -407,7 +451,8 @@
       to other group members.
     </p>
 
-    <h3 id="licensing">Licensing and Intellectual Property</h3>
+    <h3 id="licensing"><a class="permalink" href="#licensing">§</a>
+      Licensing and Intellectual Property</h3>
     <p>
       Substantive Contributions to Specifications can only be made by Community
       Group Participants who have agreed to the <a href=
@@ -448,7 +493,8 @@
       if the W3C Software and Document License file isn't being used).
     </p>
 
-    <h3 id="communication">Communication</h3>
+    <h3 id="communication"><a class="permalink" href="#communication">§</a>
+      Communication</h3>
     
     <p>
       Each project hosted by the community group
@@ -505,17 +551,14 @@
       objection according to the <a href="#decision">decision process</a>.
     </p>
 
-    <h3 id="projects-leads">Projects and Project Leads</h3>
+    <h3 id="projects-leads"><a class="permalink" href="#projects-leads">§</a>
+      Projects and Project Leads</h3>
 
     <p>
       Any group members may propose a new project.
       The chair(s) will maintain a forum
       for discussing project proposals
       and seeking collaborators.
-    </p>
-    <p class="note">
-      This will probably be a dedicated GitHub repository issue tracker,
-      but may be a separate forum such as Discourse.
     </p>
     <p>
       The chair(s) or other group members delegated by the chair(s)
@@ -529,6 +572,12 @@
         including whether any reports would be proposals for normative specifications.
       </li>
       <li>The project description is <a href="#scope">in scope</a> for the community group.
+      </li>
+      <li>The project proposal contains an initial statement
+        of how it may impact the W3C <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> areas:
+        privacy, security, accessibility, internationalization,
+        and the technical architecture of the web platform
+        (collectively, the <dfn id="dfn-horizontal-impacts">horizontal impacts statement</dfn>).
       </li>
       <li>The people proposing the project
         are community group members who have made the required licensing agreements.
@@ -555,6 +604,11 @@
       </li>
       <li>Substantive contributions are only accepted from people
         who have made the relevant <a href="#licensing">licensing agreements</a>.
+      </li>
+      <li>The project <a href="#dfn-horizontal-impacts">horizontal impacts statement</a>
+        is kept up to date as the project progresses,
+        and is available in the project repository
+        (either as a stand-alone document or as a section in a draft report or project ReadMe file).
       </li>
       <li>Any technical discussions,
         decisions,
@@ -630,7 +684,7 @@
       are announced to the all community group members.
     </p>
 
-    <h2 id="transparency">
+    <h2 id="transparency"><a class="permalink" href="#transparency">§</a>
       Transparency
     </h2>
     <p>
@@ -647,7 +701,7 @@
       or to a GitHub issue (for technical discussion).
     </p>
 
-    <h2 id="decision">
+    <h2 id="decision"><a class="permalink" href="#decision">§</a>
       Decision Process
     </h2>
     <p>
@@ -743,7 +797,7 @@
       or discriminate against any group participant or their employer.
     </p>
 
-    <h2 id="chairs">
+    <h2 id="chairs"><a class="permalink" href="#chairs">§</a>
       Chair Selection
     </h2>
     <p>
@@ -777,7 +831,7 @@
       Community Development Lead to intervene. The Community Development Lead,
       after evaluating the election, may take any action including no action.
     </p>
-    <h2 id="charter-change">
+    <h2 id="charter-change"><a class="permalink" href="#charter-change">§</a>
       Amendments to this Charter
     </h2>
     <p>
