@@ -1,6 +1,6 @@
 # Code of Ethics and Professional Conduct
 
-WebAssembly operates under the W3C's
+W3C Charter development operates under the W3C's
 [Code of Ethics and Professional Conduct][]:
 
 > W3C is a growing and global community where participants choose to work
