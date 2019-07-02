@@ -43,6 +43,14 @@
         font-size: small;
       }
 
+      dl > dt.spec {
+        margin-top: 1em;
+      }
+
+      dl dl {
+        margin-bottom: 1em;
+      }
+
     </style>
   </head>
   <body>
@@ -96,11 +104,11 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i>
+              <i class="todo">[3 years after start]</i>
             </td>
           </tr>
 
-          <tr class="todo">
+          <tr>
             <th>Charter extension</th>
             <td>See <a href="#history">Change History</a>.
             </td>
@@ -254,11 +262,11 @@
 
                 <p class="milestone"><b>Expected completion:</b> Q1 2022</p>
 
-                <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api/labels/Feature%20Request%2FMissing%20Feature">issues list</a></p>
+                <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api/milestone/2">issues list</a></p>
 
             </dd>
 
-            <dt id="web-midi" class="spec"><a href="http://webaudio.github.io/web-midi-api/">Web MIDI</a></dt>
+            <dt id="web-midi" class="spec"><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></dt>
             <dd>
                 <p>This specification defines an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music
                     MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.</p>
@@ -333,18 +341,27 @@
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
-          </dl>
+              <dt><a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a></dt>
+              <dd>Supply use cases, requirements, and review of specifications related to audio, including microphone access and speaker output</dd>
 
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
+              <dt><a href="https://www.w3.org/2019/html/">HTML Working Group</a></dt>
+              <dd>Ensure that the audio APIs are compatible with the relevant HTML elements</dd>
+
+              <dt><a href="https://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
+    <dd>This Group may review existing work
+      and identify requirements and potential solutions to
+      with a view to improving audio on the Web for TVs. </dd>
+          </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
+              <dt><a href="http://www.midi.org/">MIDI Manufacturers Association</a></dt>
+              <dd>Coordinate on the relationship between the audio API and the Musical Instrument Digital Interface protocol</dd>
+              <!--
+              <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+              <dd><i class="todo">[specific nature of liaison]</i></dd>
+              -->
           </dl>
-
 
         </div>
       </section>
