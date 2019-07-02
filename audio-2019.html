@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>DRAFT Audio Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      ul#navbar {
+        font-size: small;
+      }
+
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title">Audio Working Group Charter <span class="todo">DRAFT!</span></h1>
+      <p class="mission">The <strong>mission</strong> of the <a href="http://www.w3.org/2011/audio/">Audio
+        Working Group</a> is to add advanced sound and music synthesis capabilities to the Open Web Platform.</p>
+
+        <div class="noprint">
+          <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/46884/join">Join the Audio Working Group.</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/@@">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/@@/issues">issues</a></i>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i>
+            </td>
+          </tr>
+
+          <tr class="todo">
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Raymond Toy (Google)<br/> Matt Paradis (BBC)<br/>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:chris@w3.org">Chris Lilley</a></span> (0.2 <abbr title="Full-Time Equivalent">FTE</abbr>)<br/>
+</td>
+</tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> 1-hour calls will be held weekly
+              <br />
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+            <p>Building upon and expanding the basic functionalities brought by HTML5's <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> media elements and <code>MediaStream</code> object, the Audio Working Group defines client-side script APIs
+                which support the features required by rich interactive applications including the ability to process and synthesize audio streams directly in script, as well as giving access to musical instruments through a bridge with existing system-level
+                MIDI APIs.</p>
+
+            <p>The audio API provides methods to read audio samples, write audio data, create sounds, and perform client-side audio processing and synthesis with minimal latency. It also adds programmatic access to the PCM audio stream for low-level manipulation
+                directly in script. This API can be used for interactive applications, games, 3D environments, musical applications, educational applications, and for the purposes of accessibility. It includes the ability to synchronize, visualize, or
+                enhance sound information when used in conjunction with graphics APIs. Sound synthesis can be used to enhance user interfaces, or produce music. The addition of advanced audio capabilities to user agents presents new options to Web developers
+                and designers, and has many accessibility opportunities and challenges that this working group will continue to keep in mind.</p>
+
+            <p>In addition to an audio processing API, this group has received feedback from the audio and music community and industry, who wish to Web-enable their MIDI-capable devices. <abbr title="Musical Instrument Digital Interface">MIDI</abbr> is
+                an electronic device interface, developed by the musical instrument industry, that includes communication protocols for two-way connection and control of a wide variety of devices, including digital musical instruments, digital audio workstations,
+                lighting sytems, game controllers, and many other systems. The MIDI specification has wide adoption and interoperable deployment across devices and computer operating systems, and to extend this existing infrastructure, the Audio Working
+                Group is also developing a specification to create a bridge between the browser and existing system-level MIDI APIs, to make musical instruments first-class citizens of the Web.</p>
+
+            <p>The scope of this working group includes:</p>
+            <ul>
+                <li>Developing a client-side script API for processing and synthesizing PCM audio streams, including direct scripted solutions.</li>
+                <li>Access to audio devices, such as for microphones or other audio inputs, and multi-channel speakers or other audio outputs.</li>
+                <li>APIs and advanced functionality regarding audio cache management and audio capability information.</li>
+                <li>Defining a client-side script API for accessing and manipulating MIDI-capable devices available on the users' systems.</li>
+            </ul>
+
+            <p>This working group will take into account common work-flows for sound creators, including considerations for common audio formats. This group will also liaise with other groups for direct connection to audio inputs, such as microphones and
+                speakers.
+            </p>
+
+        <div id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+            <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
+
+            <ul class="out-of-scope">
+              <li>
+                  <p>This group will not work on audio representation markup during this charter period; discussions of music notation formats happens in the
+                  <a href="https://www.w3.org/community/music-notation/">Music Notation Community Group</a>.</p>
+              </li>
+
+              <li>
+                  <p>The audio API is intended to operate on local and remote sources including synthesis, files, and sound-capture sources. APIs for implementing interactive audio streaming directly between users is not in scope. </p>
+              </li>
+              <li>
+                  <p>Specific functionality for speech synthesis is out of the direct scope of this group, though discussions and collaborations may occur with groups chartered to do such work, for the best compatibility.</p>
+              </li>
+              <li>
+                  <p>Audio codec selection and support is out of scope.</p>
+              </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Success Criteria</h3>
+          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
+          <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+          <p>
+            Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+            recommendations for maximising accessibility in implementations.</p>
+          <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+
+        </div>
+      </section>
+
+
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/2011/audio/wiki/PubStatus">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
+        <div id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+          <!--
+            from https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=46884
+          -->
+
+          <!--
+            retire https://www.w3.org/TR/audioproc/
+          -->
+          <dl>
+            <dt id="web-audio" class="spec"><a href="https://webaudio.github.io/web-audio-api/">Web Audio API 1.0</a></dt>
+            <dd>
+                <p>This specification describes a high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to
+                    define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported.
+                </p>
+
+                <p class="draft-status"><b>Draft state:</b> <a href=https://www.w3.org/TR/2018/CR-webaudio-20180918/'>Candidate Recommendation</a> <span class="todo">update after new CR</span></p>
+
+                <p class="milestone"><b>Expected completion:</b> Q1 2020</p>
+
+                <dl>
+                  <dt id=926 class='spec'><a href='https://www.w3.org/TR/webaudio/' rel='versionof'>Web Audio API</a>
+                    <br>Latest publication: <a href='https://www.w3.org/TR/2018/CR-webaudio-20180918/'>18 September 2018</a></dt>
+                   <dd>Reference Draft:
+                   <a href='https://www.w3.org/TR/2018/CR-webaudio-20180918/'>https://www.w3.org/TR/2018/CR-webaudio-20180918/</a><br>
+                   associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Sep/0001.html'> Call for Exclusion</a> on 19 September 2018
+                    ended on 17 November 2018<br>Produced under Working Group Charter: https://www.w3.org/2011/audio/charter/audio-2016.html</dd>
+                </dl>
+            </dd>
+
+            <dt id="web-audio-2" class="spec new">Web Audio API 2.0</dt>
+            <dd>
+                <p>This specification builds on Web Audio API 1.0, adding features which were requested by users or implementors but which were deferred to the next version of Web Audio API.
+                Incubation is happening in the <a href="https://www.w3.org/community/audio-comgp/">Audio CG</a>.
+                </p>
+
+                <p class="milestone"><b>Expected completion:</b> Q1 2022</p>
+
+                <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api/labels/Feature%20Request%2FMissing%20Feature">issues list</a></p>
+
+            </dd>
+
+            <dt id="web-midi" class="spec"><a href="http://webaudio.github.io/web-midi-api/">Web MIDI</a></dt>
+            <dd>
+                <p>This specification defines an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music
+                    MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.</p>
+
+                <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webmidi/">Working Draft</a></p>
+
+                <p class="milestone"><b>Expected completion:</b> Q2 2018</p>
+
+                <dl>
+                  <dt id=1017 class='spec'><a href='http://www.w3.org/TR/webmidi/' rel='versionof'>Web MIDI API</a>
+                  <br>Latest publication: <a href='http://www.w3.org/TR/2015/WD-webmidi-20150317/'>17 March 2015</a></dt>
+                 <dd>Reference Draft:
+                 <a href='http://www.w3.org/TR/2012/WD-webmidi-20121025/'>http://www.w3.org/TR/2012/WD-webmidi-20121025/</a><br>
+                 associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2012Nov/0002.html'> Call for Exclusion</a> on 01 November 2012
+                  ended on 24 March 2013<br>Produced under Working Group Charter: http://www.w3.org/2011/audio/charter/2011/</dd>
+                </dl>
+            </dd>
+            <dt id="adc" class="spec"><a href="https://github.com/WebAudio/web-audio-cg/blob/master/audio-device-client/explainer.md">Audio Device Client</a></dt>
+            <dd>
+              <p>This functions as an intermediate layer between Web Audio API and actual audio devices used by the browser. It exposes various low-level properties that have been completely hidden or unavailable to developers.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/WebAudio/web-audio-cg/tree/master/audio-device-client">Adopted from Audio CG</a></p>
+
+              <!-- should that be "adopted from" or "no draft"? -->
+
+              <p class="milestone"><b>Expected completion:</b> Q1 2022</p>
+            </dd>
+        </dl>
+        </dl>
+
+
+        </div>
+
+        <div id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+          <ul>
+            <li>Use case and requirement documents;</li>
+            <li>Test suite and implementation report for the specification;</li>
+            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+          </ul>
+        </div>
+
+        <div id="timeline">
+          <h3>Timeline</h3>
+            <p class="todo">Put here a timeline view of all deliverables.</p>
+            <ul class="todo">
+              <li>Month YYYY: First teleconference</li>
+              <li>Month YYYY: First face-to-face meeting</li>
+              <li>Month YYYY: Requirements and Use Cases for FooML</li>
+              <li>Month YYYY: FPWD for FooML</li>
+              <li>Month YYYY: Requirements and Use Cases for BarML</li>
+              <li>Month YYYY: FPWD FooML Primer</li>
+            </ul>
+        </div>
+      </section>
+
+
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
+
+        <div>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+            <dd><i class="todo">[specific nature of liaison]</i></dd>
+          </dl>
+
+          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
+
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+            <dd><i class="todo">[specific nature of liaison]</i></dd>
+          </dl>
+
+
+        </div>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the (Working|Interest) Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">[name]</i> (Working|Interest) Group home page.</a>
+        </p>
+        <p>
+          Most <i class="todo">[name]</i> (Working|Interest) Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work  <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
+          <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 5 February 2004 updated 1 August 2017). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+        </p>
+
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Initial Charter</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        <i class="todo">[yyyy]</i>
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="http://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+      <hr>
+      <p><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</p>
+    </footer>
+
+  </body>
+</html>
