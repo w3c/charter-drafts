@@ -1,4 +1,4 @@
-Definitions related to the state of in-progress work adopted in a charter (per [https://www.w3.org/Consortium/Process/#WGharterProcess 5.2.6]):
+Definitions related to the state of in-progress work adopted in a charter (per [§ 5.2.6 Working Group and Interest Group Charters](https://www.w3.org/Consortium/Process/#WGCharter)):
 
 Adopted Draft
 =================
