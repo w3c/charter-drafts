@@ -1469,24 +1469,13 @@
           <p>
               The CSS Working Group's work is considered a success if there are multiple, independent, interoperable implementations of its modules that are widely used.
             </p>
-          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each module is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
+          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each module is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of the features it defines, and to provide evidence for this claim based on tests. The Working Group is therefore expected to proactively work on writing, reviewing, and maintaining tests. Doing so concurrently with its work on specification text is recommended; among other benefits, it helps minimize accidental divergence between implementations and specifications, test results may also inform discussions on specifications, and failing test mail stimulate implementers to update their implementations accordingly. Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
           <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
-          <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
           <p>
             Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
             recommendations for maximising accessibility in implementations.</p>
-          <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>:</p>
-          <section id="test-as-you-commit">
-            <ul>
-              <li><p>All normative spec changes are generally expected to have a corresponding pull request in <a href="https://github.com/web-platform-tests/wpt">web-platform-tests</a>, either in the form of new tests or modifications to existing tests, or must include the rationale for why test updates are not required for the proposed update.</p></li>
 
-              <li><p>Typically, both pull requests (spec updates and tests) will be merged at the same time. If a pull request for the specification is approved but the other needs more work, add the '<a href="https://w3c.github.io/spec-labels.html" rel="nofollow">needs tests</a>' label or, in web-platform-tests, the '<a href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Astatus%3Aneeds-spec-decision%20">status:needs-spec-decision</a>' label. Note that a test change that contradicts the specification should not be merged before the corresponding specification change.</p></li>
-
-              <li><p>If testing is not practical due to web-platforms-tests limitations, please explain why and if appropriate file an issue with the '<a href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Atype%3Auntestable%20">type:untestable</a>' label to follow up later.</p></li>
-            </ul>
-          </section>
-
-          <p>
+            <p>
               Modules that reach <a href="https://www.w3.org/Consortium/Process/#rec-publication" title="Recommendation">W3C Recommendation</a>, are considered successful when all of the following are present:
             </p>
             <p>
