@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>MathML Working Group Charter</title>
+    <title>Math Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
@@ -72,13 +72,13 @@
 
 
     <main>
-      <h1 id="title">PROPOSED MathML Working Group Charter</h1>
+      <h1 id="title">PROPOSED Math Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
-      <p class="mission">The <strong>mission</strong> of the <a href="">MathML Working Group</a> is to promote the inclusion of mathematics on the Web so that it is a first class citizen of the web that displays well, is accessibility and is searchable.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="">Math Working Group</a> is to promote the inclusion of mathematics on the Web so that it is a first class citizen of the web that displays well, is accessible, and is searchable.</p>
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the MathML Working Group.</a></p>
+        <p class="join todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Math Working Group.</a></p>
       </div>
 
          <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
@@ -166,7 +166,7 @@ and has had wide adoption by the tools used to generate and consume math, browse
 
 
 <p>
-The MathML Refresh Community Group (CG) was formed to revise MathML to address perceived deficiencies in the spec. The MathML Working Group will advance, refine, and clarify the work begun by the MathML Community Group and ensure MathML&rsquo;s relevance continues to evolve, grow and improve. In particular, there are three goals the group hopes to advance:
+The MathML Refresh Community Group (CG) was formed to revise MathML to address perceived deficiencies in the spec. The Math Working Group will advance, refine, and clarify the work begun by the MathML Community Group and ensure MathML&rsquo;s relevance continues to evolve, grow and improve. In particular, there are three goals the group hopes to advance:
 </p>
 <ul>
 <li>
@@ -191,7 +191,7 @@ The Working Group will take up new work, such as problems the CG identified as r
 The Working Group will also overhaul MathML 3 building upon these fundamentals and experience with needs for accessibility and with many years of practical experience and use (or lack thereof), to create a path forward as MathML 4.
 </p>
 <p>
-The scope of the MathML Working Group includes the following:
+The scope of the Math Working Group includes the following:
 </p>
 <ul>
 <li>
@@ -261,7 +261,7 @@ Adding new elements for use exclusively outside the platform
 
 
               <p class="draft-status"><b>Draft state:</b>  <a href="https://mathml-refresh.github.io/mathml-core/">Final Community Group Editor's Draft</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+              <p class="milestone"><b>Expected completion:</b> Q1 2021</p>
     </dd>
 
 
@@ -275,18 +275,19 @@ accessibility mappings of elements and attributes.
 
 
               <p class="draft-status"><b>Draft state:</b> No draft </p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
   </dd>
 
 
             <dt id="mathml4" class="spec"><a href="#">MathML 4</a></dt>
             <dd>
-<p>This specification will attempt to overhaul the existing MathML 3 specification, rebasing it on MathML Core Level 1. It will deprecate, obsolete, or drop features that are not used and likely will not be used. 
+<p>This specification will overhaul the existing MathML 3 specification, rebasing it on MathML Core Level 1. It will deprecate, obsolete, or drop features that are not used and likely will not be used. 
 It will add attributes that allow specification of mathematical intent on Presentation MathML elements to enhance accessibility and searchability of math.</p>
 
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://mathml-refresh.github.io/mathml/">Community Group's Initial Revision of MathML 3</a></p>
               <p class="milestone"><b>Expected completion:</b> Q4 2022</p>
+
+              <p><b>Adopt Draft:</b> <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language (MathML) Version 3.0 2nd Edition</a></p>
     </dd>
 
 	  </dl>
@@ -305,7 +306,8 @@ It will add attributes that allow specification of mathematical intent on Presen
 <li>MathML Accessibility Techniques</li>
 <li>Guides on annotating Presentation MathML for accessibility and search</li>
 <li>A living catalog for annotations beyond those defined in a MathML 4 recommendation.</li>
-<li>Sample code that employs heuristics to adds accessibility/searchability annotations to Presentation MathML that lacks those annotations.</li>
+<li>Sample code that converts default "intent" values to explict "intent" values in Presentation MathML.</li>
+<li>At least one TeX-to-MathML converter that incorporates accessibility/searchability annotations in its MathML output.
 <li>Code to convert Content MathML to Presentation MathML with accessibility and searchability annotations.</li>
 <li>Sample code for conversion of annotated Presentation MathML to an external form such as speech and/or Content MathML</li>
 </ul>
@@ -315,14 +317,21 @@ It will add attributes that allow specification of mathematical intent on Presen
         <section id="timeline">
           <h3>Timeline</h3>
 	  <p>These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.</p>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
-              <li>Month YYYY: First teleconference</li>
-              <li>Month YYYY: First face-to-face meeting</li>
-              <li>Month YYYY: Requirements and Use Cases for FooML</li>
-              <li>Month YYYY: FPWD for FooML</li>
-              <li>Month YYYY: Requirements and Use Cases for BarML</li>
-              <li>Month YYYY: FPWD FooML Primer</li>
+            <ul>
+              <li>January 2021: First teleconference</li>
+              <li>October 2021: First face-to-face meeting (TPAC)</li>
+              <li>February 2021: FPWD, MathML Core Level 1 </li>
+              <li>May 2021: FPWD, MathML 4 </li>
+              <li>October 2021: MathML Core Test Suites</li>
+              <li>October 2021: Implementation Report</li>
+              <li>October 2021: Candidate Recommendation, MathML Core Level 1 </li>
+              <li>December 2021: Sample code that adds annotations making defaults explicit</li>
+              <li>January 2022: Code that converts Content MathML to annotated Presentation MathML</li>
+              <li>February 2022: FPWD, MathML Core Level 2</li>
+              <li>April 2022: Sample code that uses annotated Presentation MathML to create Speech and/or Content MathML</li>
+              <li>May 2022: Prototype TeX-to-annotated MathML implementation</li>
+              <li>September 2022: Living catalog established for extended Presentation annotations </li>
+              <li>October 2022: Candidate Recommendation, MathML 4</li>
             </ul>
         </section>
       </section>
@@ -330,7 +339,7 @@ It will add attributes that allow specification of mathematical intent on Presen
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
 
-<p>The MathML Working Group&rsquo;s work is considered a success if:</p>
+<p>The Math Working Group&rsquo;s work is considered a success if:</p>
 <ul>
 <li>There are independent, interoperable native implementations of MathML Core Level 1 that are widely used</li>
 <li>The larger Web Platform ecosystem shows signs of movement toward creating and using new MathML content, including direct use of core features aimed at improving accessibility by authoring tools/MathML converters.</li>
@@ -357,13 +366,11 @@ It will add attributes that allow specification of mathematical intent on Presen
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
 
-      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
-
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
 	    <dt><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></dt>
-	    <dd>The MathML Working Group will contribute to and coordinate work with the CSS Working Group related to aligning the development and testing of new and existing CSS functionalities that are of interest to the MathML community. The group will designate liaisons to work with the CSS Working Group on issues as needed. Liaisons will ideally be participants of both groups.</dd>
+	    <dd>The Math Working Group will contribute to and coordinate work with the CSS Working Group related to aligning the development and testing of new and existing CSS functionalities that are of interest to the MathML community. The group will designate liaisons to work with the CSS Working Group on issues as needed. Liaisons will ideally be participants of both groups.</dd>
 	    <dt><a href="https://www.w3.org/community/wicg/">Web Incubator Community Group (WICG)</a></dt>
 	    <dd>The Web Platform Incubator Community Group
 	      (<a href="https://www.w3.org/community/wicg/">WICG</a>)
@@ -395,7 +402,7 @@ and continue to improve the accessibility of that which is part of MathML.
 <a href="https://www.w3.org/TR/SVG11/">SVG</a>.
 While largely non-overlapping technically, the two share similar origin stories and are both unique in their integration with the HTML Parser specification and integration as
 <a href="https://html.spec.whatwg.org/multipage/dom.html%23embedded-content-category">embedded content</a>.
-As such they have many similar challenges and efforts to align with the larger Web Platform and share common interests in proving common developer experiences and expectations. The MathML Working Group will make attempts to coordinate furthering these efforts together with the SVG Working Group (and the
+As such they have many similar challenges and efforts to align with the larger Web Platform and share common interests in proving common developer experiences and expectations. The Math Working Group will make attempts to coordinate furthering these efforts together with the SVG Working Group (and the
 <a href="https://www.w3.org/community/svgcg/">SVG CG</a>).
 	    </dd>
 
@@ -403,9 +410,6 @@ As such they have many similar challenges and efforts to align with the larger W
 	    <dd>Chemical Formulas make use of mathematical notations. The Chem CG is concerned about the accessibility challenges of using math notations and having them spoken and brailled appropriately. The Math CG has worked with the Chem CG to ensure appropriate access to chemical formulas and the MathML WG will continue this effort.</dd>
           </dl>
 
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
-          <p class="issue"><b>Note:</b> Do not bury normative text inside the liaison section.
-            Instead, put it in the scope section.</p>
         </section>
 
         <section>
@@ -455,10 +459,10 @@ This may have an influence on the future evolution of MathML. Efforts to align M
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/Math">MathML Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/Math">Math Working Group home page.</a>
         </p>
         <p>
-          Most MathML Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most Math Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
           This group primarily conducts its technical work  on <a id="public-github" href="https://github.com/mathml-refresh/mathml/issues">GitHub issues</a>.
@@ -569,7 +573,7 @@ This may have an influence on the future evolution of MathML. Efforts to align M
               </tr>
               <tr>
                 <th>
-                  <a class="todo" href="">Initial Charter</a>
+                  <a>Initial Charter</a>
                 </th>
                 <td>
                   4 January, 2021
@@ -624,8 +628,7 @@ This may have an influence on the future evolution of MathML. Efforts to align M
       </address>
 
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        <i class="todo">[yyyy]</i>
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2020
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
