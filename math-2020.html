@@ -160,6 +160,44 @@ has much success with making math accessible
 and has had wide adoption in the tools used to generate and consume math, browser adoption is not universal. The MathML 3 specification does not match some current Web realities; 
 it does not contain precise enough requirements for interoperability with the now changed Web Platform; indeed, some features are either incompatible with, or subsumed by, new features added to the Web Platform outside MathML.
 </p>
+<section id=i18n>
+  <h4>MathML Internationalization</h4>
+
+  <p>Math worldwide largely follows standard notations, at least at
+  college level and higher. There are historic forms, but they are out
+  of scope for this charter.</p>
+
+  <p>There are certainly differences among countries with
+  left-to-right scripts, and there are more differences for countries
+  that don't use left-to-right writing systems. MathML&nbsp;3 did
+  considerable work in this regard. It introduced RTL directionality
+  into MathML. In addition, the MathML&nbsp;3 WG outreach resulted in a few
+  other internationalizations:</p>
+
+  <ol>
+    <li>Russian math often breaks large expressions across lines by
+      putting the operators at the break at <em>both</em> the end of
+      the line and the start of the next line.</li>
+
+    <li>Long division looks very different around the world. MathML 3
+      introduced 10 different styles.</li>
+
+    <li>Even in the US, some parts of the country place borrows and
+      carries in 2D elementary math above the digit and other parts of
+      the country place them to the NW of the digit. That was part of
+      the support for elementary math introduced in MathML 3.</li>
+  </ol>
+
+  <p>Around the world, there are many other notational differences,
+    some big, some small. MathML is probably able to express them, at
+    least for horizontal, left-to-right scripts.</p>
+
+  <p>The MathML Refresh CG also looked at vertical writing, but more
+    research is needed.</p>
+
+  <p>The previous Math WG helped greatly expand the number of Unicode
+    glyphs for math.</p>
+</section>
 </section>
 
       <section id="scope-inscope" class="scope">
@@ -191,7 +229,7 @@ The Working Group will begin by providing a thorough review and refinement of Ma
 The Working Group will take up new work, such as problems the CG identified as requiring better solutions in order to move MathML in the Web Platform forward, in proposing a MathML Core Level 2.
 </p>
 <p>
-The Working Group will also overhaul MathML 3 by building upon these fundamentals and experience with needs for accessibility, and on many years of practical experience and use (or lack thereof), to create a path forward to a MathML 4.
+The Working Group will also overhaul MathML 3 by building upon these fundamentals and experience with needs for accessibility, and on many years of practical experience and use (or lack thereof), to create MathML 4.
 </p>
 <p>
 The scope of the Math Working Group includes the following:
