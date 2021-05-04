@@ -144,17 +144,14 @@
 
       </section>
 
-
-
-      <section id="scope" class="scope">
-        <h2>Scope</h2>
+      <section class="background">
+        <h2>Background</h2>
         <!-- <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p> -->
         <p>
           The Portable Network Graphics (PNG) raster image format
           was <a href="http://www.libpng.org/pub/png/pnghist.html">first developed</a> in 1994
            by an informal group outside W3C,
-           in response to patent claims which affected the
-           LZW compression used by
+           as an improvement to
            the existing GIF and TIFF raster image formats.
            Following widespread adoption,
            it was published in October 1996 as a
@@ -182,6 +179,7 @@
           is being maintained which incorporates these errata
           and updates referenced specifications
           to the latest versions.
+          Correct resolution of some errata require further discussion.
         </p>
         <p>
           In addition, some new features have been proposed.
@@ -196,15 +194,31 @@
         </p>
         <p>
           Also, a means for
-          <a href="https://github.com/w3c/ColorWeb-CG/blob/master/hdr-in-png-requirements.md">Adding support for HDR imagery to the PNG format</a> has been proposed by the W3C
+          <a href="https://github.com/w3c/ColorWeb-CG/blob/master/hdr-in-png-requirements.md">Adding support for HDR imagery to the PNG format</a> has been incubated in the W3C
           <a href="https://github.com/w3c/ColorWeb-CG">Color on the Web Community Group</a>. This re-uses the existing ITU H.273
           controlled vocabulary for the parameterization of color space information.
         </p>
+      </section>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+
+        <p>Maintain the PNG specification, folding in solutions to reported errata.</p>
+
+        <p>Add selected new features which will be broadly useful,
+          are demanded by users,
+          and have significant implementer interest.
+        </p>
+
         <p>
           When developing any new features,
           the stability and interoperability with existing image files
-          and software
+          and image creation and consuming software
           will be a primary consideration.
+        </p>
+
+        <p>Work to ensure the PNG specification is well tested
+          and widely adopted.
         </p>
 
         <section id="section-out-of-scope">
