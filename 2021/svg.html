@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Scalable Vector Graphics (SVG) Working Group Charter
+    </title>
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type=
+    "text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href=
+    "https://www.w3.org/Guide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href=
+    "https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      ul#navbar {
+        font-size: small;
+      }
+
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li>
+            <a href="#scope">Scope</a>
+          </li>
+          <li>
+            <a href="#deliverables">Deliverables</a>
+          </li>
+          <li>
+            <a href="#coordination">Coordination</a>
+          </li>
+          <li>
+            <a href="#participation">Participation</a>
+          </li>
+          <li>
+            <a href="#communication">Communication</a>
+          </li>
+          <li>
+            <a href="#decisions">Decision Policy</a>
+          </li>
+          <li>
+            <a href="#patentpolicy">Patent Policy</a>
+          </li>
+          <li>
+            <a href="#licensing">Licensing</a>
+          </li>
+          <li>
+            <a href="#about">About this Charter</a>
+          </li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src=
+        "https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+    <main>
+      <h1 id="title">
+        <em class="todo">PROPOSED</em> Scalable Vector Graphics (SVG) Working
+        Group Charter
+      </h1>
+      <p id="mission">
+        The <dfn>mission</dfn> of the <a href=
+        "https://www.w3.org/Graphics/SVG/WG/">Scalable Vector Graphics (SVG)
+        Working Group</a> is to maintain the group's normative specifications.
+      </p>
+      <p class="join">
+        <a href="https://www.w3.org/2004/01/pp-impl/19480/join">Join the SVG
+        Working Group.</a>
+      </p>
+      <p>
+        This proposed charter is available on <a href=
+        "https://w3c.github.io/charter-drafts/2021/svg.html">GitHub</a>. Feel
+        free to raise <a href=
+        "https://github.com/w3c/charter-drafts/issues">issues</a>.
+      </p>
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for
+              Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[two years]</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Charter extension
+            </th>
+            <td>
+              See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Dirk Schulze, Adobe
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:chris@w3.org">Chris Lilley</a> (0.1 <abbr title=
+              "Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <dfn>Teleconferences:</dfn> topic-specific calls may be held as
+              needed.<br>
+              <dfn>Face-to-face:</dfn> we will meet during the W3C's annual
+              Technical Plenary week; additional face-to-face meetings may be
+              scheduled by consent of the participants.
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section id="scope" class="scope">
+        <h2>
+          Scope
+        </h2>
+        <p>
+          Scalable Vector Graphics (SVG) describes graphics in a way that is
+          scalable to different device resolutions in a manner that is
+          accessible, stylable, and scriptable.
+        </p>
+        <p>
+          The SVG WG maintains the deliverables listed in this charter. They
+          consist of the following technologies, all of which are in scope for
+          the SVG Working Group:
+        </p>
+        <ul>
+          <li>A <dfn>syntax</dfn> for retained-model structured graphics. Both
+          XML and HTML syntaxes are supported and CSS is used for styling.
+          </li>
+          <li>A <dfn>rendering model</dfn> which describes how SVG elements are
+          rendered.
+          </li>
+          <li>An <dfn>object model</dfn> and set of APIs, to support scripting
+          and user interaction.
+          </li>
+        </ul>
+        <p>
+          The SVG WG's focus in this charter period is on <em>maintenance</em>
+          and <em>interoperability testing</em> of the core SVG 2
+          specification.
+        </p>
+        <p>
+          As a secondary focus, the group may address modules for new graphical
+          features for SVG, once there is broad consensus on adding each such
+          feature to the Web Platform. The SVG Community Group (and also any
+          other fora, such as WICG) will incubate new proposals. Once an
+          incubated proposal is implemented and available (in nightly or
+          testing builds) in at least one major browser, and has support from
+          other SVG implementers, it may be adopted by the SVG Working Group. A
+          requirements document will be used to collect together these
+          features.
+        </p>
+        <section>
+          <h3>
+            Success Criteria
+          </h3>
+          <p>
+            To be successful, the WG shall continue to work with the
+            W3C/Developer Community to actively address open issues with
+            group's deliverables.
+          </p>
+          <p>
+            The W3C Process Document governs the progression of the normative
+            specifications along the W3C's Recommendation Track, including
+            adequate implementation experience requirements. Specifications
+            that reach <a href=
+            "https://www.w3.org/Consortium/Process/#RecsW3C">W3C
+            Recommendation</a>, are considered successful when all of the
+            following are present:
+          </p>
+          <ul>
+            <li>Production of stable documents addressing the work items listed
+            in the Deliverables section.
+            </li>
+            <li>Test suites for each module with conformance criteria.
+            </li>
+            <li>Availability of multiple, independent, interoperable
+            implementations of each feature with conformance criteria in each
+            deliverable; as demonstrated by an implementation report
+            (summarizing implementation status against the relevant test suite)
+            for each testable class of product, including user agents.
+            </li>
+            <li>Deployment on multiple types of platform.
+            </li>
+            <li>User community and industry adoption of the group deliverables.
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+        <p>
+          Each normative specification should contain a section detailing all
+          known security and privacy implications for implementers, authors,
+          and end users.
+        </p>
+        <p>
+          Each normative specification should contain a section on
+          accessibility that describes the benefits and impacts, including ways
+          specification features can be used to address them, and
+          recommendations for maximizing accessibility in implementations.
+        </p>
+        <p>
+          There should be testing plans for each normative specification,
+          starting from the earliest drafts. The SVG WG will follow a <a href=
+          "https://www.w3.org/2019/02/testing-policy.html">test as you
+          commit</a> approach to specification development.
+        </p>
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will maintain the following specifications:
+          </p>
+          <dl>
+            <dt id="SVG2" class="spec">
+              <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics
+              (SVG) 2</a>
+            </dt>
+            <dd>
+              <p>
+                This specification defines the features and syntax for Scalable
+                Vector Graphics (SVG) Version 2. SVG is a language based on XML
+                for describing two-dimensional vector and mixed vector/raster
+                graphics. SVG content is stylable, scalable to different
+                display resolutions, and can be viewed stand-alone, mixed with
+                HTML content, or embedded using XML namespaces within other XML
+                languages. SVG also supports dynamic changes; script can be
+                used to create interactive documents, and animations can be
+                performed using declarative animation features or by using
+                script.
+              </p>
+            </dd>
+          </dl>
+          <dl>
+            <dt id="SVGAAM" class="spec">
+              <a href="https://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility
+              API Mappings</a>
+            </dt>
+            <dd>
+              <p>
+                This specification allows SVG authors to create accessible rich
+                internet applications, including charts, graphs, and other
+                drawings by extending the "Core Accessibility API Mappings 1.1"
+                and the "Accessible Name and Description: Computation and API
+                Mappings 1.1" specifications.
+              </p>
+            </dd><!-- dt id="web-foo" class="spec">
+              Native SVG
+            </dt>
+            <dd>
+              <p>
+                This specification defines Native SVG, for rendering
+                environments which need a vector image format without
+                interactivity or scripting. It originated as a subset of
+                SVG for use within OpenType fonts; the expressiveness of
+                the language is limited and simplified to be appropriate
+                for environments in which font processing and text layout
+                occurs.
+              </p>
+              <p class="draft-status">
+                <b>Draft state:</b> <a href=
+                "https://docs.microsoft.com/en-us/typography/opentype/spec/svg">
+                Adopted from ISO/IEC SC29 WG11</a>
+              </p>
+            </dd -->
+          </dl>
+        </section>
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Test suite and implementation reports. Other non-normative
+            documents and materials may be created, subject to available time, such as:
+          </p>
+          <ul>
+            <li>Use case and requirement documents.
+            </li>
+            <li>Best-Practice guides.
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="coordination">
+        <h2>
+          Coordination
+        </h2>
+        <p>
+          As required by the W3C Process, for all specifications the Working
+          Group will seek <a href=
+          "https://www.w3.org/2020/Process-20200915/#wide-review">wide
+          review</a> for accessibility, internationalization, performance,
+          privacy, security, and architecture.
+        </p>
+        <p>
+          Additional technical coordination with the following Groups will be
+          made:
+        </p>
+        <section>
+          <h3 id="w3c-coordination">
+            W3C Groups
+          </h3>
+          <dl>
+            <dt id="css-wg">
+              <a href="https://www.w3.org/Style/CSS/members">CSS Working
+              Group</a>
+            </dt>
+            <dd>
+              Coordinate on integration of CSS features and properties into
+              SVG, and vice versa.
+            </dd>
+            <dt id="aria-wg">
+              <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet
+              Applications (ARIA) Working Group</a>
+            </dt>
+            <dd>
+              <p>
+                Coordinate on SVG and graphics-related ARIA deliverables. In
+                particular, members of the SVG WG are strongly encouraged to
+                also join the ARIA WG to enable timely progress on the
+                following ARIA deliverables related to SVG:
+              </p>
+              <dl>
+                <dt>
+                  <a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA
+                  Graphics Module</a>
+                </dt>
+                <dd>
+                  This specification defines semantic roles specific to web
+                  graphics, for use with WAI-ARIA.
+                </dd>
+                <dt>
+                  <a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics
+                  Accessibility API Mappings</a>
+                </dt>
+                <dd>
+                  This specification defines the mapping between the WAI-ARIA
+                  Graphics Module and OS platform accessibility application
+                  programming interfaces.
+                </dd>
+              </dl>
+            </dd>
+            <dt id="apa-wg">
+              <a href="https://www.w3.org/WAI/APA/">Accessible Platform
+              Architectures Working Group</a>
+            </dt>
+            <dd>
+              Coordinate on accessible SVG.
+            </dd>
+            <dt id="sdw-wg">
+              <a href="https://www.w3.org/2015/spatial/wiki/Main_Page">Spatial
+              Data on the Web Working Group</a>
+            </dt>
+            <dd>
+              Coordinate on SVG used for geographic and spatial data, such as
+              maps.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/2011/webappsec/">Web Application
+              Security Working Group</a>
+            </dt>
+            <dd>
+              Coordinate on security of SVG.
+            </dd>
+            <dt id="publishing-wg">
+              <a href=
+              "https://www.w3.org/publishing/groups/publ-wg/">Publishing
+              Working Group</a>
+            </dt>
+            <dd>
+              Coordinate on reading system and publisher support for SVG.
+            </dd>
+            <dt id="svgcg">
+              <a href="https://www.w3.org/community/svgcg/">SVG Community
+              Group</a>
+            </dt>
+            <dd>
+              This group provides a lightweight venue for proposing, incubating
+              and discussing new SVG features.
+            </dd>
+          </dl>
+          <h3 id="external-coordination">
+            External Organizations
+          </h3>
+          <dl>
+            <dt>
+              <a href="https://whatwg.org/">Web HyperText Working Group
+              (WHATWG)</a>
+            </dt>
+            <dd>
+              Coordinate on integration of SVG and HTML, and on compatibility
+              with the Canvas API specifications.
+            </dd>
+            <dt>
+              <a href="https://www.iso.org/committee/45316.html">ISO/IEC SC29
+              WG11</a>
+            </dt>
+            <dd>
+              For coordination on Core SVG, which originated with the OFF
+              <em>SVG</em> table.
+            </dd>
+          </dl>
+        </section>
+      </section>
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more
+          active participants for its duration, including representatives from
+          the key implementors of this specification, and active Editors and
+          Test Leads for each specification. The Chairs, specification Editors,
+          and Test Leads are expected to contribute half of a working day per
+          week towards the Working Group. There is no minimum requirement for
+          other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public
+          mailing lists and document repositories, as described in <a href=
+          "#communication">Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical
+          submissions for consideration upon their agreement to the terms of
+          the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+          Policy</a>.
+        </p>
+      </section>
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p>
+          This group primarily conducts its technical work on <a id=
+          "github-issues" href="https://github.com/w3c/svgwg/issues">GitHub
+          issues</a>. The public is invited to review, discuss and contribute
+          to this work.
+        </p>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in
+          <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">
+          public</a>: the meeting minutes from teleconference and face-to-face
+          meetings will be archived for public review, and technical
+          discussions and issue tracking will be conducted in a manner that can
+          be both read and written to by the general public. Working Drafts and
+          Editor's Drafts of specifications will be developed on a public
+          repository and may permit direct public contribution requests. The
+          meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables,
+          issues, actions, status, participants, and meetings) will be
+          available from the <a href=
+          "https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page">SVG Working Group
+          home page.</a>
+        </p>
+        <p>
+          Most SVG Working Group teleconferences will focus on discussion of
+          particular specifications, and will be conducted on an as-needed
+          basis.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for
+          administrative purposes and, at the discretion of the Chairs and
+          members of the group, for member-only discussions in special cases
+          when a participant requests such a discussion.
+        </p>
+      </section>
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due
+          process, per the <a href="https://www.w3.org/Consortium/Process/">W3C
+          Process Document</a>. Typically, an editor or other participant makes
+          an initial proposal, which is then refined in discussion with members
+          of the group and other reviewers, and consensus emerges with little
+          formal voting being required.
+        </p>
+        <p>
+          However, if a decision is necessary for timely progress and consensus
+          is not achieved after careful consideration of the range of views
+          presented, the Chairs may call for a group vote and record a decision
+          along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any
+          resolution (including publication decisions) taken in a face-to-face
+          meeting or teleconference will be considered provisional. A call for
+          consensus (CfC) will be issued for all resolutions (for example, via
+          email and/or web-based survey), with a response period from one week
+          to 10 working days, depending on the chair's evaluation of the group
+          consensus on the issue. If no objections are raised on the mailing
+          list by the end of the response period, the resolution will be
+          considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless
+          and until new information becomes available or unless reopened at the
+          discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the W3C Process Document
+          and includes no <a href=
+          "https://www.w3.org/Consortium/Process/policies#Votes">voting
+          procedures</a> beyond what the Process Document requires.
+        </p>
+      </section>
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href=
+          "https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>
+          (Version of 5 February 2004 updated 1 August 2017). To promote the
+          widest adoption of Web standards, W3C seeks to issue Recommendations
+          that can be implemented, according to this policy, on a Royalty-Free
+          basis. For more information about disclosure obligations for this
+          group, please see the <a href=
+          "https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy
+          Implementation</a>.
+        </p>
+        <section id="licensing">
+          <h2>
+            Licensing
+          </h2>
+          <p>
+            This Working Group will use the <a href=
+            "https://www.w3.org/Consortium/Legal/copyright-software">W3C
+            Software and Document license</a> for all its deliverables.
+          </p>
+        </section>
+        <section id="about">
+          <h2>
+            About this Charter
+          </h2>
+          <p>
+            This charter has been created according to the <a href=
+            "https://www.w3.org/Consortium/Process/#WG-and-IG">Working Groups
+            and Interest Groups</a> of the <a href=
+            "https://www.w3.org/Consortium/Process/">Process Document</a>. In
+            the event of a conflict between this document or the provisions of
+            any charter and the W3C Process, the W3C Process takes precedence.
+          </p>
+          <section id="history">
+            <h3>
+              Charter History
+            </h3>
+            <p>
+              The following table lists details of all changes from the initial
+              charter, per the <a href=
+              "https://www.w3.org/2017/Process-20170301/#CharterReview">W3C
+              Process Document (section 5.2.3)</a>:
+            </p>
+            <table class="history">
+              <tbody>
+                <tr>
+                  <th>
+                    Charter Period
+                  </th>
+                  <th>
+                    Start Date
+                  </th>
+                  <th>
+                    End Date
+                  </th>
+                  <th>
+                    Changes
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://www.w3.org/Graphics/SVG/Group/SVGcharter">Initial
+                    Charter</a>
+                  </th>
+                  <td>
+                    1998-07-24
+                  </td>
+                  <td>
+                    2001-05-31
+                  </td>
+                  <td>
+                    none
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://www.w3.org/Graphics/SVG/Group/SVGcharter2">Rechartered</a>
+                  </th>
+                  <td>
+                    2001-06-10
+                  </td>
+                  <td>
+                    2003-06-30
+                  </td>
+                  <td>
+                    none
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "http://www.w3.org/2003/07/svgwg-charter.html">Rechartered</a>
+                  </th>
+                  <td>
+                    2003-10-07
+                  </td>
+                  <td>
+                    2004-03-31
+                  </td>
+                  <td>
+                    Switched to W3C Current Patent Practice
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "http://www.w3.org/2004/10/svg-charter.html">Rechartered</a>
+                  </th>
+                  <td>
+                    2004-12-20
+                  </td>
+                  <td>
+                    2006-09-30
+                  </td>
+                  <td>
+                    Switched to W3C Patent Policy
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2006JulSep/0043">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2006-09-21
+                  </td>
+                  <td>
+                    2007-10-01
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2007OctDec/0041">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2007-11-26
+                  </td>
+                  <td>
+                    2008-01-31
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter">
+                    Rechartered</a>
+                  </th>
+                  <td>
+                    2008-04-16
+                  </td>
+                  <td>
+                    2010-04-30
+                  </td>
+                  <td>
+                    continue to develop SVG 1.2 and to maintain SVG 1.1
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2010AprJun/0024.html">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2010-04-28
+                  </td>
+                  <td>
+                    2010-07-30
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2010OctDec/0003.html">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2010-10-04
+                  </td>
+                  <td>
+                    2011-01-31
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2011AprJun/0050.html">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2011-06-01
+                  </td>
+                  <td>
+                    2011-07-31
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "http://www.w3.org/Graphics/SVG/2012/charter">Rechartered</a>
+                  </th>
+                  <td>
+                    2012-03-20
+                  </td>
+                  <td>
+                    2014-03-31
+                  </td>
+                  <td>
+                    Contains new deliverables...
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "http://www.w3.org/Graphics/SVG/2014/new-charter">Rechartered</a>
+                  </th>
+                  <td>
+                    2014-10-23
+                  </td>
+                  <td>
+                    2016-10-31
+                  </td>
+                  <td>
+                    zoom media feature, Motion Path, Accessibility and Web
+                    Performance joint work. removes the Graphics API and Tiles
+                    and Layering
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2016OctDec/0027.html">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2016-11-02
+                  </td>
+                  <td>
+                    2017-01-31
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://www.w3.org/2017/04/svg-2017.html">Rechartered</a>
+                  </th>
+                  <td>
+                    2017-08-02
+                  </td>
+                  <td>
+                    2018-06-30
+                  </td>
+                  <td>
+                    Restricted to Core SVG 2 and SVG Accessibility API
+                    Mappings. New features only after.
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href=
+                    "https://lists.w3.org/Archives/Member/w3c-ac-members/2018JulSep/0020.html">
+                    Charter Extension</a>
+                  </th>
+                  <td>
+                    2018-07-01
+                  </td>
+                  <td>
+                    2018-11-30
+                  </td>
+                  <td>
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <i class="todo">Rechartered (this charter)</i>
+                  </th>
+                  <td>
+                    <i class="todo">date</i>
+                  </td>
+                  <td>
+                    <i class="todo">date</i>
+                  </td>
+                  <td>
+                    Add Core SVG deliverable, focus on SVG2 testing and
+                    consider incubated new features.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <address>
+        <a href="mailto:chris@w3.org">Chris Lilley</a>
+      </address>
+      <p class="copyright">
+        <a href=
+        "https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+        © 2021 <a href="https://www.w3.org/"><abbr title=
+        "World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href=
+        "https://www.csail.mit.edu/"><abbr title=
+        "Massachusetts Institute of Technology">MIT</abbr></a>, <a href=
+        "https://www.ercim.eu/"><abbr title=
+        "European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>, <a href=
+        "http://ev.buaa.edu.cn/">Beihang</a> ), All Rights Reserved.
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href=
+        "https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href=
+        "https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
+        and <a href=
+        "https://www.w3.org/Consortium/Legal/copyright-documents">document
+        use</a> rules apply.
+      </p>
+      <hr>
+      <p>
+        <a href="https://github.com/w3c/charter-drafts">Yes, it's on
+        GitHub!</a>.
+      </p>
+    </footer>
+  </body>
+</html>
