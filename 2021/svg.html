@@ -95,6 +95,9 @@
         The <dfn>mission</dfn> of the <a href=
         "https://www.w3.org/Graphics/SVG/WG/">Scalable Vector Graphics (SVG)
         Working Group</a> is to maintain the group's normative specifications.
+        Maintenance primarily constitutes fixing issues in the specifications,
+        but may also include creating conformance tests and filing bugs against
+        browser engines.
       </p>
       <p class="join">
         <a href="https://www.w3.org/2004/01/pp-impl/19480/join">Join the SVG
@@ -146,7 +149,7 @@
               Team Contacts
             </th>
             <td>
-              <a href="mailto:chris@w3.org">Chris Lilley</a> (0.1 <abbr title=
+              <a href="">TBD</a> (0.1 <abbr title=
               "Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
@@ -157,7 +160,7 @@
             <td>
               <dfn>Teleconferences:</dfn> topic-specific calls may be held as
               needed.<br>
-              <dfn>Face-to-face:</dfn> we will meet during the W3C's annual
+              <dfn>Face-to-face:</dfn> we may meet during the W3C's annual
               Technical Plenary week; additional face-to-face meetings may be
               scheduled by consent of the participants.
             </td>
@@ -303,25 +306,23 @@
                 and the "Accessible Name and Description: Computation and API
                 Mappings 1.1" specifications.
               </p>
-            </dd><!-- dt id="web-foo" class="spec">
-              Native SVG
+            </dd><!--dt id="web-foo" class="spec">
+              <a href="https://svgwg.org/specs/svg-native/">SVG Native</a>
             </dt>
             <dd>
               <p>
-                This specification defines Native SVG, for rendering
-                environments which need a vector image format without
-                interactivity or scripting. It originated as a subset of
-                SVG for use within OpenType fonts; the expressiveness of
-                the language is limited and simplified to be appropriate
-                for environments in which font processing and text layout
-                occurs.
+                SVG Native is a profile of SVG 1.1 designed for
+                interoperability with native apps and system libraries that
+                execute outside the Web environment, and thus cannot rely on
+                features such as linking, interactivity, animation, or the Web
+                security model.
               </p>
               <p class="draft-status">
                 <b>Draft state:</b> <a href=
                 "https://docs.microsoft.com/en-us/typography/opentype/spec/svg">
                 Adopted from ISO/IEC SC29 WG11</a>
               </p>
-            </dd -->
+            </dd-->
           </dl>
         </section>
         <section id="ig-other-deliverables">
@@ -330,7 +331,8 @@
           </h3>
           <p>
             Test suite and implementation reports. Other non-normative
-            documents and materials may be created, subject to available time, such as:
+            documents and materials may be created, subject to available time,
+            such as:
           </p>
           <ul>
             <li>Use case and requirement documents.
@@ -466,13 +468,20 @@
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 6 or more
-          active participants for its duration, including representatives from
-          the key implementors of this specification, and active Editors and
-          Test Leads for each specification. The Chairs, specification Editors,
-          and Test Leads are expected to contribute half of a working day per
-          week towards the Working Group. There is no minimum requirement for
-          other Participants.
+          The Working Group is expected to have a Chair and member and
+          non-member contributors acting as maintainers for the specifications.
+          The Chair is expected to guide contributors on how to make changes to
+          the specifications, and, where appropriate, to make sure fixes to the
+          specification have an accompanying web platform test.
+        </p>
+        <p>
+          Support from two or more web platform implementers is required before
+          a substantive change can be made to a specification. This is enforced
+          by a pull request template on GitHub, which Editors must fill out as
+          a public record before a substantive contribution can be merged. The
+          template will require implementers to give public support for a
+          change and, where possible, provide a link to a public bug tracker
+          for an implementation.
         </p>
         <p>
           The group encourages questions, comments and issues on its public
@@ -515,9 +524,8 @@
           home page.</a>
         </p>
         <p>
-          Most SVG Working Group teleconferences will focus on discussion of
-          particular specifications, and will be conducted on an as-needed
-          basis.
+          Teleconferences are not expected, but can be conducted on an
+          as-needed basis.
         </p>
         <p>
           The group may use a Member-confidential mailing list for
@@ -891,19 +899,19 @@
     <hr>
     <footer>
       <address>
-        <a href="mailto:chris@w3.org">Chris Lilley</a>
+        <i class="todo"><a href="mailto:">[team contact name]</a></i>
       </address>
       <p class="copyright">
         <a href=
         "https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-        © 2021 <a href="https://www.w3.org/"><abbr title=
+        © <i class="todo">[yyyy]</i> <a href="https://www.w3.org/"><abbr title=
         "World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href=
         "https://www.csail.mit.edu/"><abbr title=
         "Massachusetts Institute of Technology">MIT</abbr></a>, <a href=
         "https://www.ercim.eu/"><abbr title=
         "European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
         <a href="https://www.keio.ac.jp/">Keio</a>, <a href=
-        "http://ev.buaa.edu.cn/">Beihang</a> ), All Rights Reserved.
+        "https://ev.buaa.edu.cn/">Beihang</a> ), All Rights Reserved.
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href=
         "https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
         <a href=
@@ -914,8 +922,8 @@
       </p>
       <hr>
       <p>
-        <a href="https://github.com/w3c/charter-drafts">Yes, it's on
-        GitHub!</a>.
+        <span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes,
+        it's on GitHub!</a>.</span>
       </p>
     </footer>
   </body>
