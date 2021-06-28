@@ -155,7 +155,17 @@
             <p>
       The Working Group will determine use cases that the API needs to support and use these to derive requirements. Success will be determined by the implementation of API features as defined in this section of the charter.
     </p><p>
-      API Features in scope are: (1) Requesting generation of multiple asymmetric key pairs within a specific scope (e.g., an origin) with crypto agility and crypto parameter selection; (2) Proving that the browser has possession of a specific private key, where the proof can only be done within the scope of the key pair. In other words, authentication should obey the same origin policy; (3) Remote desktop (lights out operations) ability; (4) Ability to allow a modal UI; (5) Binding of ambient credentials; (6) Re-authentication from the discretion of the replying party; and (6) Dynamic Linking of authentication credentials.
+      API Features in scope are: 
+		  <ol>
+		  <li> Requesting generation of multiple asymmetric key pairs within a specific scope (e.g., an origin) with crypto (signature and curve) agility and crypto parameter selection; 
+		  <li> Proving that the browser has possession of a specific private key, where the proof can only be done within the scope of the key pair. In other words, authentication should obey the same origin policy; 
+		  <li> Remote desktop (unattended operation) ability; 
+		  <li> Ability to allow a non-modal UI; 
+		  <li> Binding of ambient credentials; 
+		  <li> Re-authentication from the discretion of the relying party; 
+		  <li> Dynamic linking of authentication credentials; 
+		  <li> Storing of private key(s); 
+		  <li> Account recovery and/or credential backup options.
     </p><p>
     Dependencies may exist on
     the <a href="https://www.w3.org/TR/credential-management-1/">Credential
@@ -204,7 +214,7 @@
           <dl>
             <dt id="webauthn-3" class="spec"><a href="#">Web Authentication API Level 3</a></dt>
             <dd>
-              <p>This specification makes secure authentication available to Web application developers via a standardized API. This new version will incorporate errata of the earlier Web Authentication Specification and any additional authenticator selection criteria use cases.</p>
+              <p>This specification makes secure authentication available to Web application developers via a standardized API. This new version will incorporate errata of the earlier Web Authentication Specifications and any additional authenticator selection criteria use cases.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="#">Adopted from Web Authentication WG, Level 2</a></p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
@@ -284,6 +294,8 @@ other standards bodies working on particular authenticators as needed.</p>
         <dd>Coordination to review accessibility requirements for APIs and for any direct user interfaces that may be specified.
     <dt><a href='https://www.w3.org/2019/did-wg/'>Decentralized Identifier Working Group</a></dt>
 <dd>To liaison over issues related to strong authentication and proof of ownership of decentralized identifiers.</dd>
+	      <dt><a href="https://www.w3.org/community/webauthn-adoption/">WebAuthn Adoption Community Group</a></dt>
+	      <dd>This group helps coordinate research and actions to help with broader adoption of the Web Authentication ecosystem.</dd>
       </dl>
 
 
