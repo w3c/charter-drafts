@@ -215,8 +215,8 @@
         </p>
         <p>
           <i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. The Working
-          Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does
-          not intend to advance their documents to Recommendation, unless the level of participation increases.
+          Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots). SVG2 progress to further
+          stages on the Recommendation track is dependent on increased participation level in the group.
         </p>
         <section id="normative">
           <h3>
@@ -350,6 +350,12 @@
           All new features should be supported by at least two intents to implement before being incorporated in the
           specification.
         </p>
+        <p>
+          Support from two or more web platform implementers is required before a substantive change can be made to a
+          specification. This is enforced by a pull request template on GitHub, which Editors must fill out as a public
+          record before a substantive contribution can be merged. The template will require implementers to give public
+          support for a change and, where possible, provide a link to a public bug tracker for an implementation.
+        </p>
       </section>
       <section id="coordination">
         <h2>
@@ -390,19 +396,21 @@
               Coordinate on SVG and graphics-related ARIA deliverables. In particular, members of the SVG WG are
               strongly encouraged to also join the ARIA WG to enable timely progress on the following ARIA deliverables
               related to SVG:
-            </dd>
-            <dt>
-              <a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a>
-            </dt>
-            <dd>
-              This specification defines semantic roles specific to web graphics, for use with WAI-ARIA.
-            </dd>
-            <dt>
-              <a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a>
-            </dt>
-            <dd>
-              This specification defines the mapping between the WAI-ARIA Graphics Module and OS platform accessibility
-              application programming interfaces.
+              <dl>
+                <dt>
+                  <a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a>
+                </dt>
+                <dd>
+                  This specification defines semantic roles specific to web graphics, for use with WAI-ARIA.
+                </dd>
+                <dt>
+                  <a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a>
+                </dt>
+                <dd>
+                  This specification defines the mapping between the WAI-ARIA Graphics Module and OS platform accessibility
+                  application programming interfaces.
+                </dd>
+              </dl>
             </dd>
             <dt id="apa-wg">
               <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a>
@@ -410,20 +418,14 @@
             <dd>
               Coordinate on accessible SVG.
             </dd>
-            <dt id="sdw-wg">
-              <a href="https://www.w3.org/2015/spatial/wiki/Main_Page">Spatial Data on the Web Working Group</a>
-            </dt>
-            <dd>
-              Coordinate on SVG used for geographic and spatial data, such as maps.
-            </dd>
             <dt>
               <a href="https://www.w3.org/2011/webappsec/">Web Application Security Working Group</a>
             </dt>
             <dd>
               Coordinate on security of SVG.
             </dd>
-            <dt id="publishing-wg">
-              <a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing Working Group</a>
+            <dt id="epub-wg">
+              <a href="https://www.w3.org/publishing/groups/epub-wg/">EPub3 Working Group</a>
             </dt>
             <dd>
               Coordinate on reading system and publisher support for SVG.
@@ -442,7 +444,7 @@
           </h3>
           <dl>
             <dt>
-              <a href="https://whatwg.org/">Web HyperText Working Group (WHATWG)</a>
+              <a href="https://whatwg.org/">WHATWG</a>
             </dt>
             <dd>
               Coordinate on integration of SVG and HTML, and on compatibility with the Canvas API specifications.
@@ -461,16 +463,10 @@
           Participation
         </h2>
         <p>
-          The Working Group is expected to have a Chair and member and non-member contributors acting as maintainers
+          The Working Group is expected to have a Chair and participating contributors acting as maintainers
           for the specifications. The Chair is expected to guide contributors on how to make changes to the
           specifications, and, where appropriate, to make sure fixes to the specification have an accompanying web
           platform test.
-        </p>
-        <p>
-          Support from two or more web platform implementers is required before a substantive change can be made to a
-          specification. This is enforced by a pull request template on GitHub, which Editors must fill out as a public
-          record before a substantive contribution can be merged. The template will require implementers to give public
-          support for a change and, where possible, provide a link to a public bug tracker for an implementation.
         </p>
         <p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as
