@@ -26,14 +26,6 @@
         background: yellow;
       }
 
-      ul.out-of-scope > li {
-        font-weight: bold;
-      }
-
-      ul.out-of-scope > li > ul > li{
-        font-weight: normal;
-      }
-
       .issue {
         background: cornsilk;
         font-style: italic;
@@ -177,7 +169,7 @@
         <h2>Scope</h2>
         <ul>
           <li>Developing a client-side script API for processing and synthesizing PCM audio streams, including direct scripted solutions.</li>
-          <li>Access to audio devices, such as for microphones or other audio inputs, and multi-channel speakers or other audio outputs.</li>
+          <li>Access to audio devices, such as microphones or other audio inputs, and multi-channel speakers or other audio outputs.</li>
           <li>APIs and advanced functionality regarding audio cache management and audio capability information.</li>
           <li>Defining a client-side script API for accessing and manipulating MIDI-capable devices available on the users' systems.</li>
       </ul>
@@ -233,7 +225,7 @@
             <dd>
               <p>This specification defines a high-level JavaScript API for processing and synthesizing audio in web applications. The primary paradigm is of an audio routing graph, where a number of AudioNode objects are connected together to define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="#">W3C Recommendation</a></p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2021/REC-webaudio-20210617/">W3C Recommendation</a></p>
               <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
 
 
@@ -241,7 +233,7 @@
             <dd>
               <p>This specification defines an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages. It is intended to enable non-music MIDI applications as well as music ones, by providing low-level access to the MIDI devices available on the users' systems.</p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="#">Working Draft</a></p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2015/WD-webmidi-20150317/">Working Draft</a></p>
               <p class="milestone"><b>Expected completion:</b> Q3 2024</p>
    <dl><dt>
 
