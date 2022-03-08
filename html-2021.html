@@ -148,6 +148,9 @@
         workstreams,
         and to bring WHATWG HTML and DOM Review Drafts to Recommendation. The Working Group also has the ability
         to bring the Fetch review drafts to Recommendation.
+        The Working Group may also work on extension specifications for HTML features
+        in <a href='https://github.com/w3c/whatwg-coord/issues'>coordination with
+        the WHATWG Steering Group</a>.
       </p>
       <p>
         The community (including users, implementers, and developers) and horizontal review groups are encouraged to
@@ -180,7 +183,7 @@
             Normative Specifications
           </h3>
           <p>
-            The Working Group will deliver the following W3C normative specifications:
+            The Working Group will deliver the following W3C normative specifications based on WHATWG Living Standards:
           </p>
           <dl>
 
@@ -221,14 +224,46 @@
               <p class="draft-status"><b>Draft state:</b> <a href="https://fetch.spec.whatwg.org/">WHATWG Living
                   Standard</a></p>
             </dd>
+          </dl>
 
-       </dl>
+          <p>
+            The Working Group will work on the following extension specifications on the <a href="https://www.w3.org/Consortium/Process/#rec-track">Recommendation Track</a>:
+          </p>
 
-       <p>
-        The Working Group may also work on extension specifications for HTML features
-        after <a href='https://github.com/w3c/whatwg-coord/issues'>coordination with
-        the WHATWG Steering Group</a>.
-       </p>
+          <dl>
+            <dt id="ruby" class="spec"><a href="https://www.w3.org/TR/html-ruby-extensions/">W3C HTML Ruby Markup Extensions</a></dt>
+            <dd>
+              <p>
+              This specification extends and refines the facilities provided by HTML to support “Ruby”,
+              which is a form of interlinear annotations commonly used in East Asia,
+              primarily (but not exclusively) for phonetic assistance.
+              The minimal ruby markup model currently described in the HTML Living Standard
+              is insufficient to satisfy known ruby use cases and accessibility requirements.
+              This extension specification
+              (which may be split into multiple “levels” based on feature implementation status)
+              will describe a more complete model
+              based on prior work by the W3C HTML, i18n, and CSS Working Groups,
+              and consultation with the accessibility community in East Asia.
+              See <a href="https://github.com/whatwg/sg/issues/184">https://github.com/whatwg/sg/issues/184</a> for the rationale
+              leading to developing this as an extension specification.
+              </p>
+
+              <p><b>WHATWG coordination:</b> <a href="https://www.w3.org/2022/02/ruby-agreement">Agreement on HTML Ruby Markup</a></p>
+              <p class="draft-status"><b>Draft state:</b>
+              <a href="https://www.w3.org/TR/2014/NOTE-html-ruby-extensions-20140204/">W3C Working Group Note</a>
+              (See also related content in:
+              <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element">WHATWG Living Standard</a>,
+              <a href="https://github.com/whatwg/html/pull/6478">Pull Request</a>)</p>
+
+              <p class="draft-status"><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/">https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/</a></p>
+              <p class="draft-status"><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/">https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/</a>
+              <br>
+              Exclusion period began <a href="https://lists.w3.org/Archives/Member/member-cfe/2013Oct/0004.html">22 October 2013</a>; exclusion period ended 21 March 2014.
+              </p>
+              <p class="draft-status"><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2007/03/HTML-WG-charter.html">https://www.w3.org/2007/03/HTML-WG-charter.html</a></p>
+            </dd>
+          </dl>
+
         </section>
 
         <section id="timeline">
@@ -294,6 +329,18 @@
           <p>The HTML Working Group is expected to endorse a WHATWG HTML or DOM Review Draft to Candidate Recommendation
             at least once per 12 month period.</p>
 
+          <p>
+            For extension specifications,
+            while coordination <a href="https://github.com/w3c/whatwg-coord/">as agreed with the WHATWG</a> is also expected,
+            the Working Group will follow the more standard approach
+            to <a href="https://www.w3.org/Consortium/Process/#Reports">technical report</a> development and publication:
+            the Working Group will appoint its own editors,
+            develop its own drafts,
+            accept and process feedback,
+            and progress the documents along the <a href="https://www.w3.org/Consortium/Process/#rec-track">Recommendation Track</a>
+            on the basis of its own consensus.
+          </p>
+
       </section>
 
 	<section id="success-criteria">
@@ -302,16 +349,21 @@
       The Working Group will bring one or more WHATWG Review Drafts from W3C Candidate Recommendation to Proposed
       Recommendation.
     </p>
-    <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsCR"
+    <p>In order to advance WHATWG Review Drafts to <a href="https://www.w3.org/Consortium/Process/#RecsCR"
         title="Candidate Recommendation">Candidate Recommendation (CR)</a>, each feature is expected to be marked
       with its implementation status. The CR will indicate that all features with fewer than two implementations are
       at-risk.
     </p>
     <p>The <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed
         Recommendation (PR)</a> and <a href="https://www.w3.org/Consortium/Process/#RecsW3C"
-        title="Recommendation">Recommendation (REC)</a> endorsement will indicate that all features which do not
+        title="Recommendation">Recommendation (REC)</a> endorsement of WHATWG Review Drafts will indicate that all features which do not
       have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent
         implementations</a> are considered informative, not normative, for W3C purposes. </p>
+    <p>
+      In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
+      each extension specification
+      is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.
+    </p>
     <p>Each specification is encouraged to contain or point to considerations detailing all known security and
       privacy implications for implementers, Web authors, and end users.</p>
     <p>
@@ -426,6 +478,12 @@
             href="https://github.com/whatwg/">WHATWG GitHub repositories</a>. It may also use
           the public mailing list <a id="public-name" href="mailto:public-html@w3.org">public-html@w3.org</a> (<a
             href="https://lists.w3.org/Archives/Public/public-html/">archive</a>).
+        </p>
+        <p>
+          For extension specifications,
+          this group primarily conducts its technical work
+          through its own <a id="public-github-ext" href="https://github.com/w3c/htmlwg/">GitHub repositories</a>.
+          The public is invited to review, discuss and contribute to this work.
         </p>
       </section>
 
@@ -603,7 +661,7 @@
                   @@ + 2 years
                 </td>
                 <td>
-                  <p>Update to the WHATWG MOU. Added Fetch.</p>
+                  <p>Update to the WHATWG MOU. Added Fetch and Ruby Markup Extensions.</p>
                 </td>
               </tr>
             </tbody>
