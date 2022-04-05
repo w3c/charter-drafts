@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Math Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#patentpolicy">Patent Disclosures</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title">PROPOSED Math Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the <a href="">Math Working Group</a> is to promote the inclusion of mathematics on the Web so that it is a first class citizen of the web that displays well, is accessible, and is searchable.</p>
+
+      <div class="noprint">
+        <p class="join todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Math Working Group.</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              2021-01-04
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              2023-02-28
+            </td>
+          </tr>
+	  <!--
+	  <tr class="todo">
+	     <th>Charter extension</th>
+											     <td>See <a href="#history">Change History</a>.
+											     </td>
+											  </tr>
+	  -->
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Neil Soiffer (Talking Cat Software)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:bert@w3.org">[Bert Bos]</a> <i class="todo">(0.05 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> two 1-hour calls working on different aspects of MathML to be held weekly to resolve issues as needed. 
+              <br>
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than one additional meeting per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+
+	<section id="background">
+	  <h3>Background and Motivation</h3>
+<p>
+<a href="https://www.w3.org/Math/">MathML </a>
+is a markup language for encoding and communicating mathematics.The need for 
+mathematical rendering on the web was evident from the
+<a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html">earliest days of the Web at CERN</a>,
+and MathML was among the first specifications taken up and developed by the W3C in the mid to late 1990&#39;s XML/XHTML era. It received much attention and has created a vibrant ecosystem of implementations and integration outside of web browsers. It advanced on the Web itself becoming integrated, along with SVG, into the HTML Parser and the HTML Specification in the mid 2000&#39;s. Since then, much has happened. While MathML 
+has much success with making math accessible
+and has had wide adoption in the tools used to generate and consume math, browser adoption is not universal. The MathML 3 specification does not match some current Web realities; 
+it does not contain precise enough requirements for interoperability with the now changed Web Platform; indeed, some features are either incompatible with, or subsumed by, new features added to the Web Platform outside MathML.
+</p>
+</section>
+
+      <section id="scope-inscope" class="scope">
+        <h3>Scope</h3>
+
+<p>
+The MathML Refresh Community Group (CG) was formed to begin revision of MathML to address perceived difficulties in the MathML 3 spec. The Math Working Group will advance, refine, and clarify the work begun by the MathML Refresh Community Group and ensure MathML&rsquo;s relevance continues to evolve, grow and improve. In particular, there are three 
+goals the Math WG will work toward:
+</p>
+<ul>
+<li>
+Wide adoption by browsers of a core set of presentational elements so that authors can be assured that mathematics will be displayed similarly in all browsers, without having to rely on external libraries to do the display.
+</li>
+<li>
+Increased accessibility of Presentation MathML for both
+mathematics and chemical formulas achieved by allowing a means 
+of specifying relevant mathematical intent, as well as by 
+providing guidelines for interpreting Presentation MathML in the 
+absence of additional information.
+</li>
+<li>
+Ensuring that mathematical formulations are better searchable.
+</li>
+</ul>
+<p>
+The Working Group will begin by providing a thorough review and refinement of MathML Core Level 1, a restricted form of MathML created by the MathML Refresh Community Group, which has done the initial hard work of largely aligning with features of the current Web platform and precisely defining MathML&#39;s rendering, including integration with current CSS and basic DOM, and providing tests and opening bugs.
+</p>
+<p>
+The Working Group will take up new work, such as problems the CG identified as requiring better solutions in order to move MathML in the Web Platform forward, in proposing a MathML Core Level 2.
+</p>
+<p>
+The Working Group will also overhaul MathML 3 by building upon these fundamentals and experience with needs for accessibility, and on many years of practical experience and use (or lack thereof), to create a path forward to a MathML 4.
+</p>
+<p>
+The scope of the Math Working Group includes the following:
+</p>
+<ul>
+<li>
+Development of Recommendations as outlined above.
+</li>
+<li>
+Development of a test suite to check conformance of implementations.
+</li>
+<li>
+Clarifications to the current use of Web Platform technologies, such as supported JavaScript APIs and CSS modules.
+</li>
+<li>
+Enhancements and improvements to internationalization.
+</li>
+<li>
+Continued integration of errata and bug fixes.
+</li>
+<li>
+Integration of new and existing Web Platform technologies, including, but not limited to:
+<ul>
+<li>Hyperlinks</li>
+<li>DOM APIs</li>
+<li>Shadow DOM and Custom Elements</li>
+<li>CSS</li>
+</ul>
+</li>
+<li>Integration with tools above and beyond browsers.</li>
+<li>Improvements to the MathML markup and processing model to enhance accessibility and searchability.</li>
+<li>Identification of normative requirements needed to ensure accessibility.</li>
+<li>Removing elements and attributes from MathML that have had minimal adoption.</li>
+</ul>
+</section>
+<section id="section-out-of-scope">
+  <h3 id="out-of-scope">Out of Scope</h3>
+
+<ul>
+<li>
+Adding new elements for use exclusively outside the Web Platform
+</li>
+<li>Changes that would cause legacy MathML that has significant usage to stop working on the Web Platform or elsewhere.</li>
+<li>Significant changes to Content MathML. These will be considered at a later time after gaining experience and feedback from proposed additions to enhance accessibility and searchability in Presentation MathML.</li>
+</ul>
+</section>
+
+</section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/MathML/PubStatus">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+          <dl>
+            <dt id="mathml-core1" class="spec"><a href="#">MathML Core Level 1</a></dt>
+            <dd>
+<p>This specification provides an initial integration into the Web Platform with increased implementation details, focusing on a subset of MathML 3 which has had wide implementation and fits well with the platform. It details and relies on automated Web Platform tests to improve MathML interoperability. It provides the core layer of MathML support upon which MathML 4 can build. Authors can implement remaining features, or more generally extend MathML Core, using modern web technologies (e.g., by polyfills).</p>
+
+
+              <p class="draft-status"><b>Draft state:</b>  <a href="https://mathml-refresh.github.io/mathml-core/">Final Community Group Editors' Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q1 2021</p>
+    </dd>
+
+
+
+
+            <dt id="mathml-core2" class="spec"><a href="#">MathML Core Level 2</a></dt>
+            <dd>
+<p>This specification will address some features left out of Level 1 due to time and implementation constraints. It will provide guidance on improving MathML within the evolving Web Platform and enhancing the descriptions of generally polyfilling or extending MathML, using technologies such as a Shadow DOM, Custom Elements, the CSS Layout API or other Houdini APIs. It will also address questions such as linking and accessibility through suggested accessibility mappings of elements and attributes.
+</p>
+
+<p>The MathML Core specifications are intended to define only those parts of MathML that are, or will be, implemented by all major browser engines.</p>
+
+
+              <p class="draft-status"><b>Draft state:</b> No draft </p>
+  </dd>
+
+
+            <dt id="mathml4" class="spec"><a href="#">MathML 4</a></dt>
+            <dd>
+<p>This specification will overhaul the existing MathML 3 specification, rebasing it on MathML Core Level 1. It will deprecate, make obsolete, or drop features that are not used and likely will not be used. 
+It will add attributes that allow specification of mathematical intent on Presentation MathML elements to enhance accessibility and searchability of math.</p>
+
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://mathml-refresh.github.io/mathml/">Community Group's Initial Revision of MathML 3</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2022</p>
+
+              <p><b>Adopt Draft:</b> <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language (MathML) Version 3.0 2nd Edition</a></p>
+    </dd>
+
+	  </dl>
+
+        </section>
+
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+<ul>
+<li>Test suites and implementation reports for the specification.</li>
+<li>Analysis of mathematical notation usage in world-wide writing systems,  including but not limited to non-LTR writing systems.</li>
+<li>MathML Accessibility Technique Notes.</li>
+<li>Guides on annotating Presentation MathML for accessibility and search.</li>
+<li>A living catalog for annotations beyond those defined in a MathML 4 recommendation.</li>
+<li>Sample code that converts default "intent" values to explicit "intent" values in Presentation MathML.</li>
+<li>At least one TeX-to-MathML converter that incorporates accessibility/searchability annotations in its MathML output.
+<li>Code to convert Content MathML to Presentation MathML with accessibility and searchability annotations.</li>
+<li>Sample code for conversion of annotated Presentation MathML to an external form such as speech and/or Content MathML</li>
+</ul>
+
+        </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+	  <p>These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.</p>
+            <ul>
+              <li>January 2021: First teleconference</li>
+              <li>October 2021: First face-to-face meeting (TPAC)</li>
+              <li>February 2021: FPWD, MathML Core Level 1 </li>
+              <li>May 2021: FPWD, MathML 4 </li>
+              <li>October 2021: MathML Core Test Suites</li>
+              <li>October 2021: Implementation Report</li>
+              <li>October 2021: Candidate Recommendation, MathML Core Level 1 </li>
+              <li>December 2021: Sample code that adds annotations making defaults explicit</li>
+              <li>January 2022: Code that converts Content MathML to annotated Presentation MathML</li>
+              <li>February 2022: FPWD, MathML Core Level 2</li>
+              <li>April 2022: Sample code that uses annotated Presentation MathML to create Speech and/or Content MathML</li>
+              <li>May 2022: Prototype TeX-to-annotated MathML implementation</li>
+              <li>September 2022: Living catalog established for extended Presentation annotations </li>
+              <li>October 2022: Candidate Recommendation, MathML 4</li>
+            </ul>
+        </section>
+      </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+
+<p>The Math Working Group&rsquo;s work is considered a success if:</p>
+<ul>
+<li>There are independent, interoperable native implementations of MathML Core Level 1 that are widely used.</li>
+<li>The larger Web Platform ecosystem shows signs of movement toward creating and using new MathML content, including direct use of core features aimed at improving accessibility by authoring tools and MathML converters.</li>
+<li>There is proven advancement and interest by implementers in MathML Core Level 2, exploring linking, better alignment with how the larger Web Platform evolves (Shadow DOM, Custom Elements, CSS).</li>
+<li>A MathML Full (MathML 4) specification, based on Core.</li>
+<li>Each specification contains a section detailing all known security and privacy implications for implementers, Web authors, and end users.</li>
+<li>There are significant testing plans, and all testable changes have tests.</li>
+<li>There is an AAM (Accessibility API Mapping) for MathML Core and there are considerations of the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</li>
+</ul>
+
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+	    <dt><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></dt>
+	    <dd>The Math Working Group will contribute to and coordinate work with the CSS Working Group related to aligning the development and testing of new and existing CSS functionalities that are of interest to the MathML community. The group will designate liaisons to work with the CSS Working Group on issues as needed. Liaisons will ideally be participants of both groups.</dd>
+	    <dt><a href="https://www.w3.org/community/wicg/">Web Incubator Community Group (WICG)</a></dt>
+	    <dd>The Web Platform Incubator Community Group
+	      (<a href="https://www.w3.org/community/wicg/">WICG</a>)
+	      provides a lightweight venue for proposing and
+	      discussing new web platform features, like new HTML
+	      features or Web Platform APIs. Also, new technical
+	      features arising during the development of MathML may
+	      have relevance for the Web Platform in general, or ideas
+	      developing for the Web Platform in general might be
+	      developing in
+<a href="https://www.w3.org/community/wicg">WICG</a>
+which could be relevant to MathML.  The MathML WG will make an effort to make sure these are explored further together within incubations in the Web Platform Incubator Community Group where appropriate.
+	    </dd>
+
+	    <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
+	    <dd>The APA WG provides horizontal review of potential accessibility issues in the architecture, including knowledge domains for STEM accessibility, as well as of the accessibility impact of a specification. The MathML WG will request reviews and coordinate, and may nominate liaisons to ensure that these groups are aligned and working in concert toward accessible mathematics.</dd>
+
+	    <dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
+	    <dd>The ARIA Working Group is responsible for the development of ARIA and related Accessibility Mappings. The MathML WG will appoint a liaison and coordinate with the ARIA Working Group to provide the
+<a href="">MathML AAM</a>
+and continue to improve the accessibility of that which is part of MathML.
+</dd>
+
+	    <dt><a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB Working Group</a></dt>
+	    <dd>MathML is used in EPUB documents for the display of math. Accessibility of all of the contents of an EPUB document is a priority of the group, and math accessibility has been a challenge for them due to uneven support of MathML in various reading systems. The MathML WG will work with the EPUB WG to ensure their needs are met with updates to the MathML recommendations.</dd>
+
+	    <dt><a href="https://www.w3.org/Graphics/SVG/">SVG Working Group</a></dt>
+	    <dd>The SVG Working Group is responsible for the development of
+<a href="https://www.w3.org/TR/SVG11/">SVG</a>.
+While largely non-overlapping technically, SVG and MathML share similar origin stories and are both special in their integration with the HTML Parser specification and integration as
+<a href="https://html.spec.whatwg.org/multipage/dom.html%23embedded-content-category">embedded content</a>.
+As such they have many similar challenges and efforts to align with the larger Web Platform and share common interests in providing common developer experiences and expectations. The Math Working Group will attempt to coordinate furthering these efforts with the SVG Working Group (and the
+<a href="https://www.w3.org/community/svgcg/">SVG CG</a>).
+	    </dd>
+
+	    <dt><a href="https://www.w3.org/community/chem-web-pub/">Chemistry for the Web and Publishing Community Group</a> (Chem CG)</dt>
+	    <dd>Chemical Formulas make use of mathematical notations. The Chem CG is concerned about the accessibility challenges of using math notations and having them spoken and brailed appropriately. The MathML Refresh CG has worked with the Chem CG to ensure appropriate access to chemical formulas and the Math WG will continue this effort.</dd>
+	    <dt><a href="https://www.w3.org/community/publishingcg/">Publishing Community Group</a></dt>
+	    <dd>The Publishing Community Group is an incubation zone for digital publishing ideas. MathML has been a topic of discussion for them. Working with this group may lead to inclusion of support for new ideas in MathML.</dd>
+          </dl>
+
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="https://whatwg.org/">WHATWG</a></dt>
+            <dd>The
+<a href="https://whatwg.org/">WHATWG</a>
+is responsible for the development of
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a>
+and
+<a href="https://dom.spec.whatwg.org/">DOM</a>.
+This may have an influence on the future evolution of MathML. Efforts to align MathML Core with the Web Platform may lead to alignment requirements (issues might arise from a new IDL, focusability, support for ideas like Shadow DOM, support for attributes, etc.), in which case these should be explored further together with the WHATWG (and the
+<a href="https://www.w3.org/community/wicg/">WICG</a>).
+</dd>
+          </dl>
+        </section>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted using documents that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/Math">Math Working Group home page.</a>
+        </p>
+        <p>
+          Most Math Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work on <a id="public-github" href="https://github.com/mathml-refresh/mathml/issues">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from 10 to 20 working days, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+	This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the  <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a>Initial Charter</a>
+                </th>
+                <td>
+                  4 January, 2021
+                </td>
+                <td>
+                  28 February, 2023
+                </td>
+                <td>
+                </td>
+              </tr>
+	      <!--
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+	      -->
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <i class="todo"><a href="mailto:bert@w3.org">[Bert Bos]</a></i>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2020
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+      <hr>
+      <p><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</p>
+    </footer>
+
+  </body>
+</html>

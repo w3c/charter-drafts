@@ -9,10 +9,14 @@
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
     <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
       ul#navbar {
         font-size: small;
       }
-
 
       dt.spec {
         font-weight: bold;
@@ -42,13 +46,13 @@
       footer {
         font-size: small;
       }
-
     </style>
   </head>
   <body>
     <header id="header">
       <aside>
         <ul id="navbar">
+          <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
 		  <li><a href="#success-criteria">Success Criteria</a></li>
@@ -74,9 +78,10 @@
       <!-- delete PROPOSED after AC review completed -->
 
       <p class="mission">The <strong>mission</strong> of the <a href=""><i class="todo">[name]</i> (Working|Interest) Group</a> is to <i class="todo">[do something cool and specific on the Web]</i>.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the <i class="todo">[name]</i> (Working|Interest) Group.</a></p>
+        <p class="join"><a href="https://www.w3.org/groups/wg/[shortname]/join">Join the <i class="todo">[name]</i> (Working|Interest) Group.</a></p>
       </div>
 
          <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
@@ -87,6 +92,14 @@
 
       <section id="details">
         <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              <i class="todo">See the <a href="https://www.w3.org/groups/wg/[shortname]/charters">group status page</A> and <a href="#history">detailed change history</a>.</i>
+            </td>
+          </tr>		
           <tr id="Duration">
             <th>
               Start date
@@ -100,16 +113,9 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i>
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
             </td>
           </tr>
-
-          <tr class="todo">
-            <th>Charter extension</th>
-            <td>See <a href="#history">Change History</a>.
-            </td>
-          </tr>
-
           <tr>
             <th>
               Chairs
@@ -141,11 +147,14 @@
         <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has been moved from the essentials table to the <a href="#public">communication section</a>.</p>
       </section>
 
-
+      <section id="background" class="background">
+        <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
+      </section>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
+        <p><i class="todo">What exactly is in scope, and out of scope.
+          For legal review. Be brief.</i></p>
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -162,9 +171,10 @@
           Deliverables
         </h2>
 
-        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/wiki/[groupname]/PubStatus">group publication status page</a>.</p>
+        <p><i class="todo">Updated document status is available on the <a href="https://www.w3.org/groups/wg/[shortname]/publications">group publication status page</a>. [or link to a page this group prefers to use]</i></p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+          <span class='todo'>The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
 
         <section id="normative">
           <h3>
@@ -181,11 +191,11 @@
               <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">Member Submission</a> | <a href="#">Adopted from WG/CG Foo</a> | <a href="#">Working Draft</a>]</i></p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
    <dl><dt>
-    <p class="todo">Per <a href="https://www.w3.org/Consortium/Process/#WGCharter">5.2.6</a>, for every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter (including a predecessor group of the same name), for which there is an existing Reference Draft or Candidate Recommendation: </p>
-      <p><b>Adopted Working Draft:</b> The <span class="todo">title, stable URL, and publication date of the <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/draft-states.md#adopted-draft">Adopted Working Draft</a></span> which will serve as the basis for work on the deliverable.
-      <p><b>Reference Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://github.com/w3c/charter-drafts/blob/gh-pages/draft-states.md#reference-draft'>Reference Draft</a> or Candidate Recommendation</span> which triggered an Exclusion Opportunity per the Patent Process.
+    <p class="todo">Per <a href="https://www.w3.org/Consortium/Process/#WGCharter">5.2.6</a>, for every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter (including a predecessor group of the same name), for which there is an existing <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a>: </p>
+      <p><b>Adopted Draft:</b> The <span class="todo">title, stable URL, and publication date of the <a href="https://www.w3.org/Consortium/Process/#adopted-draft">Adopted Draft</a></span> which will serve as the basis for work on the deliverable.
+      <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
         <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=32061">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
-      <p>Produced under <b>Working Group Charter:</b> The  <span class="todo">stable URL of the Working Group charter</span> under which the most recent Reference Draft or Candidate Recommendation was published.
+      <p><b>Exclusion Draft Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
     </dd>
               </dl></dl>
 
@@ -222,18 +232,19 @@
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-	  <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
-	  <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+	  <p><span class='todo'>Remove this clause if the Group does not intend to move to REC:</span> In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
 	  <p><i class="todo">For specifications of technologies that directly impact user experience, such as content technologies, as well as protocols and APIs which impact content: </i>
 		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
 		recommendations for maximising accessibility in implementations.</p>
 	  <p><span class='todo'>Consider adopting a healthy testing policy, such as:</span> To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+	  <p><span class='todo'>Consider adding this clause if the Group does not intend to move to REC:</span> All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
 	</section>
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this <i class="todo">(Working|Interest)</i> Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for
+        <p>For all specifications, this <i class="todo">(Working|Interest)</i> Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
           accessibility, internationalization, performance, privacy, and security with the relevant Working and
           Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
           Invitation for review must be issued during each major standards-track document transition, including
@@ -294,7 +305,7 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this <i class="todo">(Working|Interest)</i> Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+          Technical discussions for this <i class="todo">(Working|Interest)</i> Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
@@ -320,22 +331,22 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
            However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
         <p>
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from <span id='cfc'><i class="todo">[pick a duration within:] one week to 10 working days</i></span>, depending on the chair's evaluation of the group consensus on the issue.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'><i class="todo">[pick a duration within:] one week to 10 working days</i></span>, depending on the chair's evaluation of the group consensus on the issue.
 
-          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the <i class="todo">(Working|Interest)</i> Group.
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the <i class="todo">(Working|Interest)</i> Group.
         </p>
         <p>
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -348,9 +359,9 @@
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 5 February 2004 updated 1 August 2017). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/[shortname]/ipr">licensing information</a>.
         </p>
 
         <h2>Patent Disclosures </h2>
@@ -362,8 +373,7 @@
           produce Recommendation-track documents, when Interest Group
           participants review Recommendation-track specifications from Working
           Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this group,
-          please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C
-            Patent Policy Implementation</a>.</p>
+          please see the <a href="https://www.w3.org/groups/ig/[shortname]/ipr">licensing information</a>.</p>
       </section>
 
 
@@ -380,7 +390,7 @@
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
@@ -389,7 +399,7 @@
           </h3>
           <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
           <table class="history">
             <tbody>
@@ -452,6 +462,19 @@
             </tbody>
           </table>
         </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
       </section>
     </main>
 
@@ -476,7 +499,7 @@
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
       </p>
       <hr>
-      <p><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</p>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
     </footer>
 
   </body>

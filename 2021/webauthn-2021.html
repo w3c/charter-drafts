@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>PROPOSED Web Authentication Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">PROPOSED</i> Web Authentication Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The mission of the <a href="https://www.w3.org/Webauthn/">Web Authentication Working Group</a>, in the Security Activity is to define a client-side API providing strong authentication functionality to Web Applications.</p></section>
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/87227/join">Join the Web Authentication Working Group.</a></p>
+              </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              Start date + 2 years
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i>
+            </td>
+          </tr>
+
+          <tr class="todo">
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              John Fontana, Yubico<br>
+              Anthony Nadalin, W3C Invited Expert
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              Wendy Seltzer (0.05 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> 1-hour calls will be held weekly.
+              <br />
+              <strong>Face-to-face:</strong> We will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, no more than 3 per year.
+              </td>
+          </tr>
+        </table>
+
+     
+
+        <section id="goals">
+          <h2>Goals</h2>
+          <p>The Web Authentication Working Group will develop recommendation-track specifications defining  an API, as well as signature and attestation formats which provide an asymmetric and symmetric cryptography-based foundation for  authentication of users to Web Applications.</p><p>
+          
+          Overall goals include obviating the use of shared secrets, i.e. passwords, as authentication credentials, facilitating multi-factor authentication support as well as hardware-based key storage while respecting the Same Origin Policy (SOP) by default and allowing for explicit, constrained SOP relaxation.
+          </p>
+          
+          </section>
+          <section id="scope" class="scope">
+            <h2>Scope</h2>
+            <p>
+      The Working Group will determine use cases that the API needs to support and use these to derive requirements. Success will be determined by the implementation of API features as defined in this section of the charter.
+    </p><p>
+      API Features in scope are: 
+		  <ol>
+		  <li> Requesting generation of multiple asymmetric key pairs within a specific scope (e.g., an origin) with crypto (signature and curve) agility and crypto parameter selection; 
+		  <li> Proving that the browser has possession of a specific private key, where the proof can only be done within the scope of the key pair. In other words, authentication should obey the same origin policy; 
+		  <li> Remote desktop (unattended operation) ability; 
+		  <li> Ability to allow a non-modal UI; 
+		  <li> Binding of ambient credentials; 
+		  <li> Re-authentication from the discretion of the relying party; 
+		  <li> Dynamic linking of authentication credentials; 
+		  <li> Storing of private key(s); 
+		  <li> Account recovery and/or credential backup options;
+		  <li> Facilitate relying party adoption through additional API enhancements such as returning transport indications in assertions, a credential &ldquo;durability&rdquo; signal, and credential status feedback signaling from relying parties.
+		  </ol>
+    </p><p>
+    Dependencies may exist on
+    the <a href="https://www.w3.org/TR/credential-management-1/">Credential
+    Management API</a> in
+    the <a href="https://www.w3.org/2011/webappsec/">W3C Web Application
+    Security Working Group</a> along with the <a href="https://fidoalliance.org/specs/fido-v2.0-rd-20161004/fido-client-to-authenticator-protocol-v2.0-rd-20161004.html">Client To Authenticator
+    Protocol specification</a> in FIDO.
+    </p><p>
+    Note that the details of any user experience (such as prompts) will not be normatively specified, although they may be informatively specified for certain function calls.
+    </p><p>
+    The Web Authentication Working Group should aim to produce specifications that have wide deployment and should adopt, refine and when needed, extend, existing practices and community-driven draft specifications when possible. The APIs should integrate well with Web Applications and so should be developed in concert with Web Application developers and reviewed by the <a href="https://www.w3.org/2011/webappsec/">Web Application Security</a> and <a href="https://www.w3.org/WebPlatform/WG/">Web Applications</a> Working Groups.
+    </p><p>
+    Comprehensive test suites should be developed for the specification to ensure interoperability. User-centric privacy considerations of device management and credentials should be taken into account. The Working Group may produce protocol standards as needed by the API.
+       </p>
+       <div id="section-out-of-scope">
+        <h3 id="out-of-scope">Out of Scope</h3>
+          <p>The folllowing items are out of scope:</p>
+          <ul>
+            <li>federated identity,</li>
+            <li>multi-origin credentials,</li>
+            <li>low-level access to cryptographic operations or key material.</li>
+          </ul>
+
+          <ul class="out-of-scope">
+          </ul>
+      </div>
+
+      <div>
+        <h3>Success Criteria</h3>
+        <p>In order to advance to  <a href="https://www.w3.org/Consortium/Process/#rec-pr" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have at least two independent implementations of each feature defined in the specification. The extensions listed in the specification are tested at extension framework level for correctness, the functionality of each extension is tested independently.</p>
+      </div>
+    </section>
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>Current deliverable status is available on the <a href="https://www.w3.org/groups/wg/webauthn/publications">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver at least the following W3C normative specification:
+          </p>
+          <dl>
+            <dt id="webauthn-3" class="spec"><a href="https://www.w3.org/TR/webauthn-3/">Web Authentication API Level 3</a></dt>
+            <dd>
+              <p>This specification makes secure authentication available to Web application developers via a standardized API. This new version will incorporate errata of the earlier Web Authentication Specifications and any additional authenticator selection criteria use cases.</p>
+
+              <p class="draft-status"><b>Draft state:</b> Adopted from Web Authentication WG, Level 3 First Public Working Draft</p>
+             
+   <dl><dt>
+       <p><b>Adopted Draft:</b>  <a href='https://www.w3.org/TR/2021/WD-webauthn-3-20210427/'> Web Authentication: An API for accessing Public Key Credentials - Level 3, 2021-04-27</a>
+	   <p><b>Exclusion Draft:</b>
+                            <a href='https://www.w3.org/TR/2021/WD-webauthn-3-20210427/'>https://www.w3.org/TR/2021/WD-webauthn-3-20210427/</a>
+		   <br>Associated <a href='https://www.w3.org/mid/cfe-7990-828fd502f08fac5ac62fa65f28b8a2286b2c961a@w3.org'> Call for Exclusion</a> on 2021-04-27
+                                                    <br>Exclusion opportunity ends on 2021-09-24.
+                                                
+       
+<p>Produced under Working Group Charter: <a href='https://www.w3.org/2019/10/webauthn-wg-charter.html'>https://www.w3.org/2019/10/webauthn-wg-charter.html</a>
+    </dd>
+              </dl></dl>
+     
+
+        </section>
+
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+The working group will produce a test suite and implementation report for its specification(s).          </p>
+<p>Other non-normative documents may be created such as:</p>
+          <ul>
+            <li>Use case and requirement documents, including use cases as needed to inform user requirements across horizontal areas,</li>
+            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+            <li>Protocol design overview documents or flow diagrams.</li>
+          </ul>
+        </section>
+
+<!--       <section id="timeline">
+          <h3>Timeline</h3>
+            <p class="todo">Put here a timeline view of all deliverables.</p>
+            <ul class="todo">
+              <li>Month YYYY: First teleconference</li>
+              <li>Month YYYY: First face-to-face meeting</li>
+              <li>Month YYYY: Requirements and Use Cases for FooML</li>
+              <li>Month YYYY: FPWD for FooML</li>
+              <li>Month YYYY: Requirements and Use Cases for BarML</li>
+              <li>Month YYYY: FPWD FooML Primer</li>
+            </ul>
+        </section>
+
+      -->
+          </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+	  <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+	</section>
+
+  <section id="coordination">
+    <h2>Coordination</h2>
+<p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+	  
+<p>This API should work with a wide variety of authenticators and should not require non-standardized vendor-specific infrastructure. We will establish liaisons with the
+other standards bodies working on particular authenticators as needed.</p>
+
+    <p>Additional technical coordination with the following Working Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+    <div>
+      <h3 id="w3c-coordination">W3C Groups</h3>
+      <dl>
+        <dt><a href="https://www.w3.org/2011/webappsec/">Web Application Security Working Group</a></dt>
+        <dd>Coordination with Credential Management API and application security.
+        <dt><a href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a></dt>
+        <dd>Coordination on API design.
+        <dt><a href="https://www.w3.org/Payments/WG/">Web Payments Working Group</a></dt>
+        <dd>To liaison over issues related to strong authentication for payments and tokenization.
+    <dt><a href="https://www.w3.org/securepay/">Web Payments Security Interest Group</a></dt>
+    <dd>To liaison over issues related to strong authentication for payments and tokenization with FIDO, W3C and EMVCo.</dd>
+        <dt><a href="https://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
+        <dd>Coordination on privacy implications.
+
+        <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures (APA) Working Group</a></dt>
+        <dd>Coordination to review accessibility requirements for APIs and for any direct user interfaces that may be specified.
+    <dt><a href='https://www.w3.org/2019/did-wg/'>Decentralized Identifier Working Group</a></dt>
+<dd>To liaison over issues related to strong authentication and proof of ownership of decentralized identifiers.</dd>
+	      <dt><a href="https://www.w3.org/community/webauthn-adoption/">WebAuthn Adoption Community Group</a></dt>
+	      <dd>This group helps coordinate research and actions to help with broader adoption of the Web Authentication ecosystem.</dd>
+      </dl>
+
+
+      <h3 id="external-coordination">External Organizations</h3>
+      <dl>
+        <dt><a href="https://datatracker.ietf.org/group/secdir/about/">IETF Security Area Directorate</a></dt>
+        <dd>The IETF Security Area Directorate consists of the Working Group Chairs of the Security Area and selected
+          individuals chosen for their technical knowledge in security.</dd>
+  <dt>FIDO 2.0 Working Group</dt>
+    <dd>Coordination on <a href="https://fidoalliance.org/specs/fido-v2.0-rd-20161004/fido-client-to-authenticator-protocol-v2.0-rd-20161004.html">Client to Authenticator Protocol</a>.</dd>
+      </dl>
+    </div>
+  </section>
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/Webauthn">Web Authentication Working Group home page.</a>
+        </p>
+        <p>
+          Most Web Authentication Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work through a <a href="https://github.com/w3c/webauthn">GitHub repository</a> and on the public mailing list <a id="public-name" href="mailto:public-webauthn@w3.org">public-webauthn@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webauthn/">archive</a>). The public is invited to raise issues on GitHub.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webauthn/ipr">licensing information</a>.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/2015/Process-20150901/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2015/12/web-authentication-charter.html">Initial Charter</a>
+                </th>
+                <td>
+                  8 February 2016
+                </td>
+                <td>
+                  8 February 2017
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2017/03/web-authentication-charter.html">Charter Extension</a>
+                  <a href="https://lists.w3.org/Archives/Public/public-webauthn/2016Dec/0079.html">(Announcement)</a>
+                </th>
+                <td>
+                  8 February 2017
+                </td>
+                <td>
+                  8 August 2017
+                </td>
+                <td>
+                  Samuel Weiler added as team contact.  Harry Halpin stepped down as team contact.
+                </td>
+              </tr>
+              <tr>
+                <th>
+		  New co-chair
+                  <a href="https://lists.w3.org/Archives/Public/public-webauthn/2017Jun/0197.html">(Announcement)</a>
+                </th>
+                <td>
+                  no change
+                </td>
+                <td>
+                  no change
+                </td>
+                <td>
+                  John Fontana appointed as chair, 21 June 2017.  Richard Barnes stepped down as chair, 22 March 2017.
+                </td>
+              </tr>
+              <tr>
+		<th>
+		  <a href="https://www.w3.org/2017/03/web-authentication-charter.html">Charter Extension</a>
+		  <a href="https://lists.w3.org/Archives/Public/public-webauthn/2017Aug/0102.html">(Announcement)</a>
+		</th>
+		<td>
+		  8 February 2017
+		</td>
+		<td>
+		  31 October 2017
+		</td>
+		<td>
+		  Charter extended
+		</td>
+	      </tr>
+              <tr>
+                <th>
+                  Rechartered
+                  (<a href="https://lists.w3.org/Archives/Public/public-webauthn/2017Oct/0138.html">Announcement</a>)
+                </th>
+                <td>
+                  11 October 2017
+                </td>
+                <td>
+                  15 September 2019
+                </td>
+                <td>
+                  <p>Rechartered to include a version 2.
+		  </p>
+              </td></tr><tr>
+		<th>Recharter</th>
+		<td>
+                  15 October 2021
+                </td>
+                <td>
+                  30 December 2021
+                </td>
+                <td>
+                  <p>Charter extended.
+		  </p>
+                </td>
+              </tr>
+              <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2020JulSep/0019.html">Chair Update</a></th>
+		<td>
+                  no change
+                </td>
+                <td>no change
+                </td>
+                <td><p>Anthony Nadalin re-appointed as group chair, 7 August 2020.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a href="mailto:wseltzer@w3.org">Wendy Seltzer</a>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2021
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>

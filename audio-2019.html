@@ -104,7 +104,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[3 years after start]</i>
+              <i class="todo">[2 years after start]</i>
             </td>
           </tr>
 
@@ -242,7 +242,7 @@
                     define the overall audio rendering. The actual processing will primarily take place in the underlying implementation (typically optimized Assembly / C / C++ code), but direct JavaScript processing and synthesis is also supported.
                 </p>
 
-                <p class="draft-status"><b>Draft state:</b> <a href=https://www.w3.org/TR/2018/CR-webaudio-20180918/'>Candidate Recommendation</a> <span class="todo">update after new CR</span></p>
+                <p class="draft-status"><b>Draft state:</b> <a href=https://www.w3.org/TR/2018/CR-webaudio-20180918/'>Candidate Recommendation</a></p>
 
                 <p class="milestone"><b>Expected completion:</b> Q3 2020</p>
 
@@ -264,7 +264,7 @@
 
                 <p class="milestone"><b>Expected completion:</b> Q1 2022</p>
 
-                <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api/milestone/2">issues list</a></p>
+                <p class="draft-status"><b>Draft state:</b> No draft, see <a href="https://github.com/WebAudio/web-audio-api-v2/projects/1">issues list</a></p>
 
             </dd>
 
@@ -284,14 +284,15 @@
                   ended on 24 March 2013<br>Produced under Working Group Charter: https://www.w3.org/2011/audio/charter/2011/</dd>
                 </dl>
             </dd>
-            <dt id="adc" class="spec"><a href="https://github.com/WebAudio/web-audio-cg/blob/master/audio-device-client/explainer.md">Audio Device Client</a></dt>
+            <dt id="ella" class="spec">A specification for efficient low-level audio hardware device access</a></dt>
             <dd>
-              <p>This functions as an intermediate layer between Web Audio API and actual audio devices used by the browser. It exposes various low-level properties that have been completely hidden or unavailable to developers.</p>
-              <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/WebAudio/web-audio-cg/tree/master/audio-device-client">Adopted from Audio CG</a></p>
+              <p>Examine solutions to provide efficient, low-level audio processing and
+                device access. This will aid the porting of existing audio code bases, free
+                developers from the constraints of a fixed audio quantum size, and give
+                access to properties of the audio system such as I/O device selection,
+                multi-channel I/O support, and configurable sample rates.</p>
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
 
-              <!-- should that be "adopted from" or "no draft"? -->
-
-              <p class="milestone"><b>Expected completion:</b> Q1 2022</p>
             </dd>
         </dl>
         </dl>
@@ -318,7 +319,6 @@
             <ul>
               <li>Q3 2020: Web Audio API 1.0 completed</li>
               <li>Q1 2022: Web Audio API 2.0 completed</li>
-              <li>Q1 2020: Audio Device Client completed</li>
             </ul>
         </div>
       </section>
@@ -342,18 +342,21 @@
         <div>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-              <dt><a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a></dt>
+              <dt><a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></dt>
               <dd>Supply use cases, requirements, and review of specifications related to audio, including microphone access and speaker output</dd>
 
-              <dt><a href="https://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
+              <dt><a href="https://www.w3.org/2011/webtv/">Media and Entertainment Interest Group</a></dt>
             <dd>This Group may review existing work
               and identify requirements and potential solutions to
-              with a view to improving audio on the Web for TVs. </dd>
+              with a view to improving media related features on the web across all devices. </dd>
 
             <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures (APA) Working Group</a></dt>
             <dd>Ensure that audio streams from speech synthesis
               are not adversely impacted by
               audio streams from Web Audio.</dd>
+
+            <dt><a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing Working Group</a></dt>
+            <dd>Coordinate on use of Web Audio API in <a href="https://www.w3.org/TR/audiobooks/">AudioBooks</a> and <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a></dd>
           </dl>
 
           <h3 id="external-coordination">External Organizations</h3>
@@ -543,7 +546,7 @@
 
                   <tr>
                       <th>
-                          <a href="#">Rechartered</a>
+                          <a href="https://www.w3.org/2011/audio/charter/audio-2016.html">Rechartered</a>
                       </th>
 
     <td> <i>22 December 2016</i> </td>
@@ -611,9 +614,9 @@
 
   <td class='todo'> <i>TBD</i> </td>
 
-  <td class='todo'> <i>TBD + 3 years</i> </td>
+  <td class='todo'> <i>TBD + 2 years</i> </td>
                     <td>
-                      <i>Added Audio Device Client deliverable</i>
+                      <i>Added new deliverable</i>
                     </td>
                   </tr>
 
@@ -645,7 +648,7 @@
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
       </p>
       <hr>
-      <p><a href="https://github.com/w3c/charter-drafts/audio-2019">Yes, it's on GitHub!</a>.</p>
+      <p><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/audio-2019.html">Yes, it's on GitHub!</a>.</p>
     </footer>
 
   </body>

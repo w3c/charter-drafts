@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>DRAFT Decentralized Web Interest Group Charter</title>
+
+  <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+  <style>
+    ul#navbar {
+      font-size: small;
+    }
+
+    dt.spec {
+      font-weight: bold;
+    }
+
+    dt.spec new {
+      background: yellow;
+    }
+
+    ul.out-of-scope>li {
+      font-weight: bold;
+    }
+
+    ul.out-of-scope>li>ul>li {
+      font-weight: normal;
+    }
+
+    .issue {
+      background: cornsilk;
+      font-style: italic;
+    }
+
+    .todo {
+      color: #900;
+    }
+
+    footer {
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <aside>
+      <ul id="navbar">
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#patentpolicy">Patent Disclosures</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+    </aside>
+    <p>
+      <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+    </p>
+  </header>
+
+  <main>
+    <h1 id="title">DRAFT Decentralized Web Interest Group Charter</h1>
+    <p>
+    <p class="mission">The <strong>mission</strong> of the Decentralized Web Interest Group is to evolve recommendations
+      to further the W3C’s One Web purpose by identifying, balancing and mitigating the unintended impacts of proposals
+      early in the process, encouraging uniform change, and promoting
+      <a href="https://open-stand.org/about-us/principles/">OpenStand</a> principles.</p>
+    <div class="noprint">
+      <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Decentralized Web Interest
+          Group.</a></p>
+    </div>
+
+    <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/decentralized-charter.html">GitHub</a>.
+        Feel free to <a href="https://github.com/w3c/charter-drafts/issues/new?title=[decentralized]">raise issues with [decentralized] in the title</a>.
+    </p>
+
+    <section id="details">
+      <table class="summary-table">
+        <tr id="Duration">
+          <th>
+            Start date
+          </th>
+          <td>
+            <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+          </td>
+        </tr>
+        <tr id="CharterEnd">
+          <th>
+            End date
+          </th>
+          <td>
+            <i class="todo">[dd monthname yyyy]</i>
+          </td>
+        </tr>
+        <tr class="todo">
+          <th>Charter extension</th>
+          <td>See <a href="#history">Change History</a>.
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Chairs
+          </th>
+          <td>
+            <i class="todo">[chair name] (affiliation)</i>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Team Contacts
+          </th>
+          <td>
+            <span class="todo"><a href="mailto:">[team contact name]</a></span> <i class="todo">(0.1 <abbr
+                title="Full-Time Equivalent">FTE</abbr>)</i>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Meeting Schedule
+          </th>
+          <td>
+            <strong>Teleconferences:</strong> <i class="todo">topic-specific calls may be held</i> or <i
+              class="todo">somthing else</i>
+            <br>
+            <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional
+            face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+          </td>
+        </tr>
+      </table>
+
+      <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process
+          Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it
+        does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has
+        been moved from the essentials table to the <a href="#public">communication section</a>.</p>
+    </section>
+
+    <section id="scope" class="scope">
+      <h2>Scope</h2>
+      <p>The web is the primary method of accessing information and services for over 4,000,000,000 people. The
+        decentralized nature of the web has given individuals and organizations a platform to communicate and operate
+        businesses around the world.</p>
+      <p>For a decentralized system to properly function, each system component must interact and function in a
+        consistent, reliable, and stable fashion. Standards enable these decentralized components to interact and
+        function as if they were an integrated, centralized system. Without the proper assessment, changes to web
+        standards can thus have significant impacts on people, industries and societies that are challenging for any one
+        individual or group to foresee.</p>
+      <p>Where changes to web standards impact stakeholder groups that are underrepresented within the W3C these
+        unintended consequences are often missed or discovered late in the process.</p>
+      <p>To address this challenge, DWIG develops guidelines to assist specification authors in identifying, balancing
+        and mitigating unintended consequences early in the specification development process. This input enables
+        proposal authors to address those concerns that might otherwise be raised later as issues or objections, thus
+        reducing the overall time from proposal to consensus.</p>
+      <p>DWIG may provide input on request to other W3C groups developing web standards to help identify early impacts
+        on the broader web community beyond the focus of their specification.</p>
+      <p>DWIG provides short commentary on matters presented to the AC for consideration where there is a risk the
+        matter will impact on the stability or decentralized nature of the web.</p>
+      <p>DWIG aims to include members with diverse skillsets and backgrounds to ensure its work benefits from
+        disciplines such as business, economics, law, policy and product, whose broad experience are often
+        underrepresented in other specific interest, incubation and working groups.</p>
+      <p>The web must be a stable and sustainable place for all to operate if the W3C are to continue to advance its
+        mission.</p>
+      <section id="section-out-of-scope">
+        <h3 id="out-of-scope">Out of Scope</h3>
+        <p>The following features are out of scope, and will not be addressed by this Interest group.</p>
+        <ul class="out-of-scope">
+          <li>DWIG does not incubate standards or specifications work to avoid overlap with other incubation, interest
+            and working groups.</li>
+          <li>DWIG does not define policy decisions related to what are “good” or “bad” changes, but instead provides
+            guidance to proposal authors and reviewers to ensure they consider potential impacts to stability and
+            decentralized nature of the web beyond the scope of their group.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="deliverables">
+      <h2>
+        Deliverables
+      </h2>
+      <p>DWIG maintains a Self-Review Questionnaire for concerns of Decentralization, Choice, Auditability, and
+        Accountability that contribute to the decentralized, stable One Web.</p>
+      <p>DWIG will maintain an introductory document to help proposal authors better understand foreseeable impacts of
+        their work by summarising and linking to external documents and bodies of work related to relevant topics.</p>
+      <p>DWIG may publish other documents consistent with the above scope.</p>
+      <p>Note: drafts of <a href="https://github.com/w3c/web-advertising/blob/master/success-criteria.md">success
+          criteria</a> and the <a
+          href="https://github.com/w3c/web-advertising/blob/master/interoperability-choice-accessibility-accountability-questionairre.md">questionnaire</a>
+        have been produced within the Improving Web Advertising
+        Business Group.</p>
+
+      <p>More detailed milestones and updated publication schedules are available on the <a
+          href="https://www.w3.org/wiki/[groupname]/PubStatus">group publication status page</a>.</p>
+
+      <section id="timeline">
+        <h3>Timeline</h3>
+        <p>Put here a timeline view of all deliverables.</p>
+        <ul>
+          <li>October 2020: First teleconference</li>
+          <li>October 2020: Draft of Self-review Questionnaire</li>
+          <li>November 2020: Finalize first draft of Self-review Questionnaire</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="success-criteria">
+      <h2>Success Criteria</h2>
+      <ul>
+        <li>Reduce the time associated with the specification development process by helping proposal authors consider a
+          wider range of issues during the inception of their specifications.</li>
+        <li>Foreseeable impacts associated with Web standards are mitigated and avoided early in the specification
+          development process.</li>
+        <li>Wider adoption of changes in a manner that supports the decentralized, stable One Web.</li>
+      </ul>
+    </section>
+
+    <section id="coordination">
+      <h2>Coordination</h2>
+      <p>For all specifications, this Interest Group will seek <a
+          href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for
+        accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest
+        Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including <a
+          href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least
+        3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>,
+        and should be issued when major changes occur in a specification.</p>
+      <p class="issue"><b>Issue:</b> The paragraph above replaces line-item liaisons and dependencies with individual
+        horizontal groups. There's been a suggestion to name and individually link the specific horizontal groups
+        inline, instead of pointing to a page that lists them.</p>
+      <p class="issue"><b>Issue:</b> The requirement for an invitation to review after FPWD and before CR may seem a bit
+        overly restrictive, but it only requires an invitation, not a review, a commitment to review, or even a response
+        from the horizontal group. This compromise offers early notification without introducing a bottleneck.</p>
+      <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+      <p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility
+        review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible
+          Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific
+        information about concrete review issues is needed in the list below.</p>
+      <section>
+        <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+          <dd><i class="todo">[specific nature of liaison]</i></dd>
+        </dl>
+        <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
+      </section>
+      <section>
+        <h3 id="external-coordination">External Organizations</h3>
+        <dl>
+          <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+          <dd><i class="todo">[specific nature of liaison]</i></dd>
+        </dl>
+      </section>
+    </section>
+
+    <section class="participation">
+      <h2 id="participation">
+        Participation
+      </h2>
+      <p>Participation in DWIG is open to the public. Participants who do not represent a W3C Member should join as
+        Invited Experts. <a href="https://www.w3.org/2004/08/invexp.html">Invited Experts</a> in this group are not
+        granted access to Member-only information.</p>
+      <p>Anyone may subscribe to the group's public mailing list and engage in discussion. Those who intend to
+        contribute to deliverables will be asked to join the group. </p>
+      <p>The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+        described in Communication.</p>
+      <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the W3C <a
+          href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+    </section>
+
+    <section id="communication">
+      <h2>
+        Communication
+      </h2>
+      <p id="public">
+        Technical discussions for this Interest Group are conducted in <a
+          href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from
+        teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue
+        tracking will be conducted in a manner that can be both read and written to by the general public. Working
+        Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct
+        public contribution requests. The meetings themselves are not open to public participation, however.
+      </p>
+      <p>
+        Information about the group (including details about deliverables, issues, actions, status, participants, and
+        meetings) will be available from the Decentralized Web Interest Group home page.</a>
+      </p>
+      <p>
+        Most Decentralized Web Interest Group teleconferences will focus on discussion of particular specifications, and
+        will be conducted on an as-needed basis.
+      </p>
+      <p>
+        This group primarily conducts its technical work on <a id="public-github" href="[link to Github repo]">GitHub
+          issues</a>.
+        The public is invited to review, discuss and contribute to this work.
+      </p>
+      <p>
+        The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+        Chairs and members of the group, for member-only discussions in special cases when a participant requests such a
+        discussion.
+      </p>
+    </section>
+
+    <section id="decisions">
+      <h2>
+        Decision Policy
+      </h2>
+      <p>
+        This group will seek to make decisions through consensus and due process, per the <a
+          href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an
+        editor or other participant makes an initial proposal, which is then refined in discussion with members of the
+        group and other reviewers, and consensus emerges with little formal voting being required.</p>
+      <p>
+        However, if a decision is necessary for timely progress and consensus is not achieved after careful
+        consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+        with any objections.
+      </p>
+      <p>
+        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+        A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey),
+        with a response period from one week to 10 working days, depending on the chair's evaluation of the group
+        consensus on the issue.
+
+        If no objections are raised on the mailing list by the end of the response period, the resolution will be
+        considered to have consensus as a resolution of the Interest Group.
+      </p>
+      <p>
+        All decisions made by the group should be considered resolved unless and until new information becomes available
+        or unless reopened at the discretion of the Chairs or the Director.
+      </p>
+      <p>
+        This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C
+          Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document
+        requires.
+      </p>
+    </section>
+
+    <section id="patentpolicy">
+      <h2>Patent Disclosures </h2>
+      <p>The Interest Group provides an opportunity to
+        share perspectives on the topic addressed by this charter. W3C reminds
+        Interest Group participants of their obligation to comply with patent
+        disclosure obligations as set out in <a
+          href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
+          6</a> of the W3C Patent Policy. While the Interest Group does not
+        produce Recommendation-track documents, when Interest Group
+        participants review Recommendation-track specifications from Working
+        Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this
+        group,
+        please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C
+          Patent Policy Implementation</a>.</p>
+    </section>
+
+    <section id="licensing">
+      <h2>Licensing</h2>
+      <p>This Interest Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document
+          license</a> for all its deliverables.</p>
+    </section>
+
+    <section id="about">
+      <h2>
+        About this Charter
+      </h2>
+      <p>
+        This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section
+          5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a
+        conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take
+        precedence.
+      </p>
+
+      <section id="history">
+        <h3>
+          Charter History
+        </h3>
+        <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter
+          extension history are documented in the <a
+            href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
+
+        <p>The following table lists details of all changes from the initial charter, per the <a
+            href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+        <table class="history">
+          <tbody>
+            <tr>
+              <th>
+                Charter Period
+              </th>
+              <th>
+                Start Date
+              </th>
+              <th>
+                End Date
+              </th>
+              <th>
+                Changes
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <a class="todo" href="">Initial Charter</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">none</i>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="todo" href="">Charter Extension</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">none</i>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="todo" href="">Rechartered</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <p class="todo">[description of change to charter, with link to new deliverable item in charter]
+                  <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <address>
+      <i class="todo"><a href="mailto:">[team contact name]</a></i>
+    </address>
+
+    <p class="copyright">
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+      <i class="todo">[yyyy]</i>
+      <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+      (
+      <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+      <a href="https://www.ercim.eu/"><abbr
+          title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+      <a href="https://www.keio.ac.jp/">Keio</a>,
+      <a href="https://ev.buaa.edu.cn/">Beihang</a>
+      ), All Rights Reserved.
+
+      <abbr title="World Wide Web Consortium">W3C</abbr> <a
+        href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+        href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a
+        href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+    </p>
+    <hr>
+    <p><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</p>
+  </footer>
+</body>
+
+</html>
