@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>PROPOSED Audio Working Group Charter</title>
+    <title>Audio Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
@@ -64,8 +64,7 @@
 
 
     <main>
-      <h1 id="title"><i class="todo">PROPOSED</i> Audio Working Group Charter</h1>
-      <!-- delete PROPOSED after AC review completed -->
+      <h1 id="title">Audio Working Group Charter</h1>
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/audio">Audio Working Group</a> is to add advanced sound and music synthesis capabilities to the Open Web Platform.</p>
 
@@ -73,11 +72,13 @@
         <p class="join"><a href="https://www.w3.org/groups/wg/audio/join">Join the Audio Working Group.</a></p>
       </div>
 
-         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <a href="https://github.com/w3c/charter-drafts/2022/">GitHub</a>.
 
-    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.
-          </p>
+      <p style="padding: 0.5ex; border: 1px solid green"> This charter is available
+      on <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2022/audio-2022.html">GitHub</a>.
+
+      Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.
+      </p>
+
 
       <section id="details">
         <table class="summary-table">
@@ -94,7 +95,7 @@
               Start date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              14 June 2022
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -102,7 +103,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+              14 June 2024
             </td>
           </tr>
           <tr>
@@ -153,10 +154,26 @@
         </p>
 
         <p>
+          The Web Audio API, which became a W3C Recommendation in June 2021,
+          will be maintained both by continuous refinement based on implementation
+          experience and also by adding new features, based on user demand,
+          practicality, ease of writing a polyfil/prototyping and utility.
+          Prioritisation of new features is informed by the
+          <a href="/2011/audio/2021_Web_Audio_API_Survey.pdf ">2021 Web Audio Developer
+          survey results</a>. The Working Group maintains a
+          <a href="https://github.com/WebAudio/web-audio-api/issues?q=is%3Aopen%20is%3Aissue%20project%3Awebaudio%2Fweb-audio-api%2F5">prioritized list of potential new features</a> on GitHub.
+        </p>
+
+        <p>
           In addition to an audio processing API, this group has received feedback from the audio and music community and industry, who wish to Web-enable their MIDI-capable devices. <abbr title="Musical Instrument Digital Interface">MIDI</abbr> is
           an electronic device interface, developed by the musical instrument industry, that includes communication protocols for two-way connection and control of a wide variety of devices, including digital musical instruments, digital audio workstations,
           lighting sytems, game controllers, and many other systems. The MIDI specification has wide adoption and interoperable deployment across devices and computer operating systems, and to extend this existing infrastructure, the Audio Working
           Group is also developing a specification to create a bridge between the browser and existing system-level MIDI APIs, to make musical instruments first-class citizens of the Web.
+        </p>
+
+        <p>
+          The Web MIDI API, which now has a second in-browser implementation,
+          is expected to progress to Candidate Recommendation during this charter period.
         </p>
 
         <p>
@@ -333,6 +350,10 @@
 
               <dt><a href="https://www.midi.org/">MIDI Manufacturers Association</a></dt>
               <dd>Coordinate on the relationship between the audio API and the Musical Instrument Digital Interface protocol</dd>
+
+              <dt><a href="https://www.web3d.org/">Web3D Consortium</a></dt>
+              <dd>Coordinate on the use of spatial audio in
+                <a href="https://www.web3d.org/standards">standards for real-time 3D communication</a> </dd>
               <!--
               <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
               <dd><i class="todo">[specific nature of liaison]</i></dd>
@@ -598,9 +619,9 @@
                 </tr>
 
              <tr>
-               <th>This proposed charter</th>
-               <td></td>
-               <td></td>
+               <th>This charter</th>
+               <td>14 June 2022</td>
+               <td>14 June 2024</td>
                <td>Rather than creating a v2.0, Web Audio API will be maintained by updating the Recommendation.</td>
              </tr>
 
@@ -644,7 +665,7 @@
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
       </p>
       <hr>
-      <p><a href="https://github.com/w3c/charter-drafts/2022/audio-2022.html">Yes, it's on GitHub!</a>.</p>
+      <p><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2022/audio-2022.html">Yes, it's on GitHub!</a>.</p>
     </footer>
 
   </body>
