@@ -21,3 +21,5 @@ The scope section serves a key function: to guide the WG chairs, participants, a
 Before proposing a charter for review to the Advisory Committee, mark the charter "PROPOSED" and copy the PROPOSED charter to w3.org date-space (leaving a pointer to the github repo for continued issue-raising). That way, we can update the draft in response to AC review comments, without changing what's being reviewed.
 
 You are encouraged to give a pointer in the call for review to previous issue discussion, e.g. the charter-drafts github repo.
+
+Older drafts may be found in the /archive/ folder.
