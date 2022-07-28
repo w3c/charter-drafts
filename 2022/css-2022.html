@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>CSS Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      ul#navbar {
+        font-size: small;
+      }
+
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">PROPOSED</i> CSS Working Group Charter</h1>
+
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/Style/CSS/members">
+        Cascading Style Sheets (CSS) Working Group</a> is to develop and maintain <a href="https://www.w3.org/Style/CSS/">CSS</a>.</p>
+
+          <div class="noprint">
+            <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/32061/join">Join the CSS Working Group.</a></p>
+
+            <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+                on <i class="todo"><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2022/css-2022.html">GitHub</a>.
+
+              Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+                    </p>
+          </div>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+                <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+                <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+              </td>
+          </tr>
+
+          <tr>
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Alan Stearns (Adobe), Rossen Atanassov (Microsoft)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:chris@w3.org">Chris Lilley</a> (0.50 <abbr title="Full-Time Equivalent">FTE</abbr>); <br/>
+              <a href="mailto:xfq@w3.org">Fuqiao Xue</a> (0.30 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> 1-hour calls will be held weekly.
+              <br />
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week;
+			  additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+
+
+  <p>Cascading Style Sheets (CSS) is a style sheet language that allows
+    authors and users to attach style (e.g., from fonts and spacing to
+    filter effects and style animations) to structured documents and
+    Web applications. By separating the presentation style
+    from the content, CSS simplifies Web authoring
+    and site maintenance. It supports media-specific style so that authors
+    may tailor the presentation to different devices and capabilities.
+
+    </p><p>The CSS WG develops a single deliverable, the CSS specification. It consists of the following, somewhat independent
+    technologies, all of which are in scope for the CSS Working Group:
+
+  </p><ul>
+    <li>A <strong>syntax</strong> for associating information
+      with elements in a structured resource, in particular HTML
+      and SVG documents. The main part of the syntax consists of
+      rules that associate properties + values with selectors
+      where the selectors are expressions that match elements in
+      the structured document, based on their position in the
+      document or based on other information about the elements
+      (their type, what the user has done with them, etc.)
+
+    </li><li>A <strong>processing model,</strong> referred to as
+      “cascading and inheritance,” that ensures that, given
+      one or more style sheets and a structured document, each
+      element in the document is associated with the full set of
+      properties and values, no matter how short the style sheets
+      or how long the document.
+
+    </li><li>A <strong>rendering model,</strong> part of which is a
+      model of typography, i.e., a layout model for text
+      documents, possibly with embedded other objects and
+      possibly involving several documents simultaneously.
+      The model describes blocks and lines of text, characters,
+      columns, colors, dynamic effects, etc.  It also
+      includes the presentation and behavior of UI widgets. CSS's
+      influence over UI controls is limited to defining the look of controls in various states during
+      interaction (valid/invalid, required, inactive, etc.),
+      hiding/unhiding, and other local behaviors, but CSS does
+      not itself change the state of elements and does not define
+      how (form) elements interact with a server. (The general
+      principle is that CSS can enhance the user's interaction
+      with a document, but the document should ideally be
+      functional without it.)
+
+    </li><li>The <strong>CSS Object Model,</strong> a set of standard
+      APIs, to which libraries can be written for manipulating
+      style sheets and documents with associated style
+      information.
+  </li></ul>
+
+
+  <p>
+    The CSS WG not only develops CSS, but also checks that
+    properties needed by other working groups and which could
+    occur in a style sheet together with CSS properties, are
+    compatible with CSS in general and consistent in their naming
+    schemes. This affects properties such as those of SVG and
+    Device Independence (such as media features).
+  </p>
+  <p>
+    Part of the work of the working group is also to develop
+    test suites for the various specifications it publishes.
+  </p>
+  <p>
+    Another part is to maintain errata and, when needed, publish
+    revised versions of the various specifications.
+  </p>
+
+
+    <!-- <div id="section-out-of-scope">
+      <h3 id="out-of-scope">Out of Scope</h3>
+        <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
+
+        <ul class="out-of-scope">
+        </ul>
+    </div> -->
+
+
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>There is a single deliverable, the CSS specification. The CSS specification is large, and is divided into a series of modules.</p>
+
+
+        <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/Style/CSS/current-work.en.html">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation within this charter period. Deliverables without expected completion dates are not projected to become Recommendation within this charter period.</p>
+
+        <p>This list of modules is not exclusive: The WG may also create new CSS modules, within its scope. Also, it may split or merge CSS modules. If no participant in the group believes a proposed module is out of scope, and the group has consensus to add it, the group may add a new module. If the participants who object sustain their objection after discussion, a re-charter to clarify the scope may be needed.</p>
+
+        <div id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+
+          <ul>
+            <li id='2532' class='spec'>
+<a href='https://www.w3.org/TR/css3-3d-transforms/' rel='versionof'>CSS 3D Transforms Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2009/WD-css3-3d-transforms-20090320/'>2009-03-20</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2009/WD-css3-3d-transforms-20090320/'>https://www.w3.org/TR/2009/WD-css3-3d-transforms-20090320/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2009JanMar/0199.html'> Call for Exclusion</a>
+on 2009-03-23
+                                    ended on 2009-08-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='3156' class='spec'>
+<a href='https://www.w3.org/TR/css3-2d-transforms/' rel='versionof'>CSS 2D Transforms</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2011/WD-css3-2d-transforms-20111215/'>2011-12-15</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320'>https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2009JanMar/0199.html'> Call for Exclusion</a>
+on 2009-03-23
+                                    ended on 2009-08-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='4373' class='spec'>
+<a href='https://www.w3.org/TR/css-shapes-1/' rel='versionof'>CSS Shapes Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2014/CR-css-shapes-1-20140320/'>2014-03-20</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-shapes-1-20140211/'>https://www.w3.org/TR/2014/WD-css-shapes-1-20140211/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014Feb/0009.html'> Call for Exclusion</a>
+on 2014-02-12
+                                    ended on 2014-04-13
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='4385' class='spec'>
+<a href='https://www.w3.org/TR/css-scoping-1/' rel='versionof'>CSS Scoping Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2014/WD-css-scoping-1-20140403/'>2014-04-03</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-scoping-1-20140403/'>https://www.w3.org/TR/2014/WD-css-scoping-1-20140403/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014Apr/0000.html'> Call for Exclusion</a>
+on 2014-04-03
+                                    ended on 2014-08-31
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='4445' class='spec'>
+<a href='https://www.w3.org/TR/css-font-loading-3/' rel='versionof'>CSS Font Loading Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/'>2014-05-22</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/'>https://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014May/0014.html'> Call for Exclusion</a>
+on 2014-05-22
+                                    ended on 2014-07-21
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='4528' class='spec'>
+<a href='https://www.w3.org/TR/css-line-grid-1/' rel='versionof'>CSS Line Grid Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/'>2014-09-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/'>https://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014Apr/0000.html'> Call for Exclusion</a>
+on 2014-04-03
+                                    ended on 2014-08-31
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='4559' class='spec'>
+<a href='https://www.w3.org/TR/css-regions-1/' rel='versionof'>CSS Regions Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2014/WD-css-regions-1-20141009/'>2014-10-09</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-css3-regions-20110609/'>https://www.w3.org/TR/2011/WD-css3-regions-20110609/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/member-cfe/2011Jun/0003.html'> Call for Exclusion</a>
+on 2011-06-09
+                                    ended on 2011-11-06
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='4638' class='spec'>
+<a href='https://www.w3.org/TR/compositing-1/' rel='versionof'>Compositing and Blending Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2015/CR-compositing-1-20150113/'>2015-01-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/CR-compositing-1-20150113/'>https://www.w3.org/TR/2015/CR-compositing-1-20150113/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Jan/0003.html'> Call for Exclusion</a>
+on 2015-01-14
+                                    ended on 2015-03-15
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='4641' class='spec'>
+<a href='https://www.w3.org/TR/css3-exclusions/' rel='versionof'>CSS Exclusions Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/'>2015-01-15</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-css3-exclusions-20111213/'>https://www.w3.org/TR/2011/WD-css3-exclusions-20111213/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2011Dec/0015.html'> Call for Exclusion</a>
+on 2011-12-13
+                                    ended on 2012-05-11
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='4949' class='spec'>
+<a href='https://www.w3.org/TR/css-page-floats-3/' rel='versionof'>CSS Page Floats</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/'>2015-09-15</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/'>https://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Sep/0004.html'> Call for Exclusion</a>
+on 2015-09-16
+                                    ended on 2016-02-13
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='5279' class='spec'>
+<a href='https://www.w3.org/TR/cssom-view-1/' rel='versionof'>CSSOM View Module</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2016/WD-cssom-view-1-20160317/'>2016-03-17</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2008/WD-cssom-view-20080222/'>https://www.w3.org/TR/2008/WD-cssom-view-20080222/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2008JanMar/0090.html'> Call for Exclusion</a>
+on 2008-02-28
+                                    ended on 2008-07-27
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2004/css-charter-long'>http://www.w3.org/Style/2004/css-charter-long</a>                                                            </li>
+</ul>
+            <li id='5299' class='spec'>
+<a href='https://www.w3.org/TR/css-device-adapt-1/' rel='versionof'>CSS Device Adaptation Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/'>2016-03-29</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/'>https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2011JulSep/0273.html'> Call for Exclusion</a>
+on 2011-09-15
+                                    ended on 2012-02-12
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='5319' class='spec'>
+<a href='https://www.w3.org/TR/CSS22/' rel='versionof'>Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2016/WD-CSS22-20160412/'>2016-04-12</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2016/WD-CSS22-20160412/'>https://www.w3.org/TR/2016/WD-CSS22-20160412/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Apr/0003.html'> Call for Exclusion</a>
+on 2016-04-12
+                                    ended on 2016-09-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='5825' class='spec'>
+<a href='https://www.w3.org/TR/css-round-display-1/' rel='versionof'>CSS Round Display Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/'>2016-12-22</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-css-round-display-1-20150922/'>https://www.w3.org/TR/2015/WD-css-round-display-1-20150922/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Sep/0007.html'> Call for Exclusion</a>
+on 2015-09-23
+                                    ended on 2016-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='5991' class='spec'>
+<a href='https://www.w3.org/TR/css-rhythm-1/' rel='versionof'>CSS Rhythmic Sizing</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/'>2017-03-02</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/'>https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Mar/0001.html'> Call for Exclusion</a>
+on 2017-03-02
+                                    ended on 2017-07-30
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6061' class='spec'>
+<a href='https://www.w3.org/TR/fill-stroke-3/' rel='versionof'>CSS Fill and Stroke Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/'>2017-04-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/'>https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Apr/0003.html'> Call for Exclusion</a>
+on 2017-04-13
+                                    ended on 2017-09-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6066' class='spec'>
+<a href='https://www.w3.org/TR/css-images-4/' rel='versionof'>CSS Image Values and Replaced Content Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2017/WD-css-images-4-20170413/'>2017-04-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2012/WD-css4-images-20120911/'>https://www.w3.org/TR/2012/WD-css4-images-20120911/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2012Sep/0001.html'> Call for Exclusion</a>
+on 2012-09-11
+                                    ended on 2013-02-08
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='6161' class='spec'>
+<a href='https://www.w3.org/TR/css-overflow-4/' rel='versionof'>CSS Overflow Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/'>2017-06-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/'>https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0005.html'> Call for Exclusion</a>
+on 2017-06-13
+                                    ended on 2017-11-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6579' class='spec'>
+<a href='https://www.w3.org/TR/css-typed-om-1/' rel='versionof'>CSS Typed OM Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/'>2018-04-10</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/'>https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Jun/0000.html'> Call for Exclusion</a>
+on 2016-06-07
+                                    ended on 2016-11-04
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='6580' class='spec'>
+<a href='https://www.w3.org/TR/css-layout-api-1/' rel='versionof'>CSS Layout API Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/'>2018-04-12</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/'>https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Apr/0001.html'> Call for Exclusion</a>
+on 2018-04-12
+                                    ended on 2018-09-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6712' class='spec'>
+<a href='https://www.w3.org/TR/css-logical-1/' rel='versionof'>CSS Logical Properties and Values Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-logical-1-20180827/'>2018-08-27</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2017/WD-css-logical-1-20170518/'>https://www.w3.org/TR/2017/WD-css-logical-1-20170518/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017May/0006.html'> Call for Exclusion</a>
+on 2017-05-18
+                                    ended on 2017-10-15
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6775' class='spec'>
+<a href='https://www.w3.org/TR/css-animations-1/' rel='versionof'>CSS Animations Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-animations-1-20181011/'>2018-10-11</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2009/WD-css3-animations-20090320/'>https://www.w3.org/TR/2009/WD-css3-animations-20090320/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2009JanMar/0199.html'> Call for Exclusion</a>
+on 2009-03-23
+                                    ended on 2009-08-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='6776' class='spec'>
+<a href='https://www.w3.org/TR/css-transitions-1/' rel='versionof'>CSS Transitions</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/'>2018-10-11</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2009/WD-css3-transitions-20090320'>https://www.w3.org/TR/2009/WD-css3-transitions-20090320</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2009JanMar/0199.html'> Call for Exclusion</a>
+on 2009-03-23
+                                    ended on 2009-08-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='6837' class='spec'>
+<a href='https://www.w3.org/TR/css-shadow-parts-1/' rel='versionof'>CSS Shadow Parts</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/'>2018-11-15</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/'>https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Nov/0004.html'> Call for Exclusion</a>
+on 2018-11-15
+                                    ended on 2019-04-14
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6839' class='spec'>
+<a href='https://www.w3.org/TR/css-flexbox-1/' rel='versionof'>CSS Flexible Box Layout Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/'>2018-11-19</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/CR-css-flexbox-1-20181108/'>https://www.w3.org/TR/2018/CR-css-flexbox-1-20181108/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Nov/0002.html'> Call for Exclusion</a>
+on 2018-11-08
+                                    ended on 2019-01-07
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6851' class='spec'>
+<a href='https://www.w3.org/TR/geometry-1/' rel='versionof'>Geometry Interfaces Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/CR-geometry-1-20181204/'>2018-12-04</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/CR-geometry-1-20181204/'>https://www.w3.org/TR/2018/CR-geometry-1-20181204/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Dec/0000.html'> Call for Exclusion</a>
+on 2018-12-04
+                                    ended on 2019-02-02
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6852' class='spec'>
+<a href='https://www.w3.org/TR/css-break-3/' rel='versionof'>CSS Fragmentation Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/CR-css-break-3-20181204/'>2018-12-04</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/CR-css-break-3-20181204/'>https://www.w3.org/TR/2018/CR-css-break-3-20181204/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Dec/0001.html'> Call for Exclusion</a>
+on 2018-12-04
+                                    ended on 2019-02-02
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6874' class='spec'>
+<a href='https://www.w3.org/TR/filter-effects-1/' rel='versionof'>Filter Effects Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/'>2018-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2012/WD-filter-effects-20121025/'>https://www.w3.org/TR/2012/WD-filter-effects-20121025/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2012Oct/0016.html'> Call for Exclusion</a>
+on 2012-10-25
+                                    ended on 2013-03-24
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='6875' class='spec'>
+<a href='https://www.w3.org/TR/motion-1/' rel='versionof'>Motion Path Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-motion-1-20181218/'>2018-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-motion-1-20150409/'>https://www.w3.org/TR/2015/WD-motion-1-20150409/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0002.html'> Call for Exclusion</a>
+on 2015-04-09
+                                    ended on 2015-09-06
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='6876' class='spec'>
+<a href='https://www.w3.org/TR/css-break-4/' rel='versionof'>CSS Fragmentation Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2018/WD-css-break-4-20181218/'>2018-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/WD-css-break-4-20181218/'>https://www.w3.org/TR/2018/WD-css-break-4-20181218/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-6876-22d19b291e31502e46e84a5da829ce8dca5fe4a3@w3.org'> Call for Exclusion</a>
+on 2018-12-18
+                                    ended on 2019-05-17
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='6915' class='spec'>
+<a href='https://www.w3.org/TR/css-transforms-1/' rel='versionof'>CSS Transforms Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/'>2019-02-14</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/'>https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-6915-02777ae2aecb6fa88482ec8a3235878edc0aaa96@w3.org'> Call for Exclusion</a>
+on 2019-02-14
+                                    ended on 2019-04-15
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7038' class='spec'>
+<a href='https://www.w3.org/TR/css-overscroll-1/' rel='versionof'>CSS Overscroll Behavior Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/WD-css-overscroll-1-20190606/'>2019-06-06</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/WD-css-overscroll-1-20190606/'>https://www.w3.org/TR/2019/WD-css-overscroll-1-20190606/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7038-05d75591f1cb359af21605084bd37ecf25e6e08e@w3.org'> Call for Exclusion</a>
+on 2019-06-06
+                                    ended on 2019-11-03
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7039' class='spec'>
+<a href='https://www.w3.org/TR/css-values-3/' rel='versionof'>CSS Values and Units Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/CR-css-values-3-20190606/'>2019-06-06</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-values-3-20190606/'>https://www.w3.org/TR/2019/CR-css-values-3-20190606/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7039-18d86301cbee30ca2a52c2fea1fa2d7c37b1e18f@w3.org'> Call for Exclusion</a>
+on 2019-06-06
+                                    ended on 2019-08-05
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7049' class='spec'>
+<a href='https://www.w3.org/TR/css-animation-worklet-1/' rel='versionof'>CSS Animation Worklet API</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/'>2019-06-25</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/'>https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7049-cd4583cb7eb994d283f2af1335c7c97a49304682@w3.org'> Call for Exclusion</a>
+on 2019-06-25
+                                    ended on 2019-11-22
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7101' class='spec'>
+<a href='https://www.w3.org/TR/css-tables-3/' rel='versionof'>CSS Table Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/WD-css-tables-3-20190727/'>2019-07-27</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2016/WD-css-tables-3-20161025/'>https://www.w3.org/TR/2016/WD-css-tables-3-20161025/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Oct/0009.html'> Call for Exclusion</a>
+on 2016-10-25
+                                    ended on 2017-03-24
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7106' class='spec'>
+<a href='https://www.w3.org/TR/css-writing-modes-4/' rel='versionof'>CSS Writing Modes Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/'>2019-07-30</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/'>https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7106-c1b5bfd3f038708e587ec0bbf3cdce1f5618adf5@w3.org'> Call for Exclusion</a>
+on 2019-07-30
+                                    ended on 2019-09-28
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7256' class='spec'>
+<a href='https://www.w3.org/TR/css-nav-1/' rel='versionof'>CSS Spatial Navigation Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2019/WD-css-nav-1-20191126/'>2019-11-26</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/WD-css-nav-1-20190423/'>https://www.w3.org/TR/2019/WD-css-nav-1-20190423/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-6980-c98357d3c9547af671ec518d389362dcf25d5cea@w3.org'> Call for Exclusion</a>
+on 2019-04-23
+                                    ended on 2019-09-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='7331' class='spec'>
+<a href='https://www.w3.org/TR/resize-observer-1/' rel='versionof'>Resize Observer</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/'>2020-02-11</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/'>https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7331-97395098496b658097596ff5726438331ab2fa8b@w3.org'> Call for Exclusion</a>
+on 2020-02-11
+                                    ended on 2020-07-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7354' class='spec'>
+<a href='https://www.w3.org/TR/css-speech-1/' rel='versionof'>CSS Speech Module</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/CR-css-speech-1-20200310/'>2020-03-10</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-speech-1-20200310/'>https://www.w3.org/TR/2020/CR-css-speech-1-20200310/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7354-f147f931277b1b19ef35fc18a0e73c3088a303f8@w3.org'> Call for Exclusion</a>
+on 2020-03-10
+                                    ended on 2020-05-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7396' class='spec'>
+<a href='https://www.w3.org/TR/css-box-4/' rel='versionof'>CSS Box Model Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-box-4-20200421/'>2020-04-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-box-4-20200421/'>https://www.w3.org/TR/2020/WD-css-box-4-20200421/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7396-dc770d2b8fd8d7d729bb8feb6e7b0c4024a3dafb@w3.org'> Call for Exclusion</a>
+on 2020-04-21
+                                    ended on 2020-09-18
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7567' class='spec'>
+<a href='https://www.w3.org/TR/css-inline-3/' rel='versionof'>CSS Inline Layout Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-inline-3-20200827/'>2020-08-27</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-inline-3-20141218/'>https://www.w3.org/TR/2014/WD-css-inline-3-20141218/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014Dec/0006.html'> Call for Exclusion</a>
+on 2014-12-19
+                                    ended on 2015-05-18
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='7610' class='spec'>
+<a href='https://www.w3.org/TR/css-properties-values-api-1/' rel='versionof'>CSS Properties and Values API Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-properties-values-api-1-20201013/'>2020-10-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/'>https://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2016Jun/0000.html'> Call for Exclusion</a>
+on 2016-06-07
+                                    ended on 2016-11-04
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='7663' class='spec'>
+<a href='https://www.w3.org/TR/css-scroll-anchoring-1/' rel='versionof'>CSS Scroll Anchoring Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20201111/'>2020-11-11</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/'>https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7332-90567aa90f59ba42480787938b44a4a2b5c5f0b5@w3.org'> Call for Exclusion</a>
+on 2020-02-11
+                                    ended on 2020-07-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7712' class='spec'>
+<a href='https://www.w3.org/TR/css-contain-2/' rel='versionof'>CSS Containment Module Level 2</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-contain-2-20201216/'>2020-12-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/WD-css-contain-2-20191015/'>https://www.w3.org/TR/2019/WD-css-contain-2-20191015/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7200-0e5edef0d130011e94239332e1a05c29c4b2ec0d@w3.org'> Call for Exclusion</a>
+on 2019-10-15
+                                    ended on 2020-03-13
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7713' class='spec'>
+<a href='https://www.w3.org/TR/css-images-3/' rel='versionof'>CSS Images Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/CRD-css-images-3-20201217/'>2020-12-17</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-images-3-20191010/'>https://www.w3.org/TR/2019/CR-css-images-3-20191010/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7191-d1e65b5672ec6c08d8a2d7182df38e57a8646f0d@w3.org'> Call for Exclusion</a>
+on 2019-10-10
+                                    ended on 2019-12-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7718' class='spec'>
+<a href='https://www.w3.org/TR/css-grid-1/' rel='versionof'>CSS Grid Layout Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/CRD-css-grid-1-20201218/'>2020-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-grid-1-20200818/'>https://www.w3.org/TR/2020/CR-css-grid-1-20200818/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7559-d0cd0b04bee4075339292c0d64a517beb5746e6f@w3.org'> Call for Exclusion</a>
+on 2020-08-18
+                                    ended on 2020-10-17
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7719' class='spec'>
+<a href='https://www.w3.org/TR/css-grid-2/' rel='versionof'>CSS Grid Layout Module Level 2</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/CRD-css-grid-2-20201218/'>2020-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-grid-2-20200818/'>https://www.w3.org/TR/2020/CR-css-grid-2-20200818/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7558-4a457796a420396b9ab7180b6169325e67957a31@w3.org'> Call for Exclusion</a>
+on 2020-08-18
+                                    ended on 2020-10-17
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7731' class='spec'>
+<a href='https://www.w3.org/TR/css-box-3/' rel='versionof'>CSS Box Model Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/CR-css-box-3-20201222/'>2020-12-22</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-box-3-20201222/'>https://www.w3.org/TR/2020/CR-css-box-3-20201222/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7731-19f832e19ba7ec0b194ca094c1763a05684045d0@w3.org'> Call for Exclusion</a>
+on 2020-12-22
+                                    ended on 2021-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7734' class='spec'>
+<a href='https://www.w3.org/TR/css-pseudo-4/' rel='versionof'>CSS Pseudo-Elements Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2020/WD-css-pseudo-4-20201231/'>2020-12-31</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-css-pseudo-4-20150115/'>https://www.w3.org/TR/2015/WD-css-pseudo-4-20150115/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Jan/0004.html'> Call for Exclusion</a>
+on 2015-01-16
+                                    ended on 2015-06-15
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='7908' class='spec'>
+<a href='https://www.w3.org/TR/css-scroll-snap-1/' rel='versionof'>CSS Scroll Snap Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CR-css-scroll-snap-1-20210311/'>2021-03-11</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/CR-css-scroll-snap-1-20210311/'>https://www.w3.org/TR/2021/CR-css-scroll-snap-1-20210311/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7908-9618c21276683afd90fcdb361d44826dbdc1a4f3@w3.org'> Call for Exclusion</a>
+on 2021-03-11
+                                    ended on 2021-05-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='7922' class='spec'>
+<a href='https://www.w3.org/TR/css-ui-4/' rel='versionof'>CSS Basic User Interface Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-ui-4-20210316/'>2021-03-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-css-ui-4-20150922/'>https://www.w3.org/TR/2015/WD-css-ui-4-20150922/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Sep/0007.html'> Call for Exclusion</a>
+on 2015-09-23
+                                    ended on 2016-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='7963' class='spec'>
+<a href='https://www.w3.org/TR/css-easing-1/' rel='versionof'>CSS Easing Functions Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-easing-1-20210401/'>2021-04-01</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-easing-1-20190430/'>https://www.w3.org/TR/2019/CR-css-easing-1-20190430/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-6988-9819d23ded1ccb0110b098a315a332f877cf0aa9@w3.org'> Call for Exclusion</a>
+on 2019-04-30
+                                    ended on 2019-06-29
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='8039' class='spec'>
+<a href='https://www.w3.org/TR/web-animations-1/' rel='versionof'>Web Animations</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-web-animations-1-20210518/'>2021-05-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2013/WD-web-animations-20130625/'>https://www.w3.org/TR/2013/WD-web-animations-20130625/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Jun/0008.html'> Call for Exclusion</a>
+on 2013-06-25
+                                    ended on 2013-11-22
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='8050' class='spec'>
+<a href='https://www.w3.org/TR/css-sizing-4/' rel='versionof'>CSS Box Sizing Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-sizing-4-20210520/'>2021-05-20</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-sizing-4-20200526/'>https://www.w3.org/TR/2020/WD-css-sizing-4-20200526/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7424-c307a36137b145039111e9442be1b3ca4e758d2c@w3.org'> Call for Exclusion</a>
+on 2020-05-26
+                                    ended on 2020-10-23
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8357' class='spec'>
+<a href='https://www.w3.org/TR/css-backgrounds-3/' rel='versionof'>CSS Backgrounds and Borders Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-backgrounds-3-20210726/'>2021-07-26</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-backgrounds-3-20201222/'>https://www.w3.org/TR/2020/CR-css-backgrounds-3-20201222/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7732-b43696e19db20e092e83c585d2e51e5db1a198ab@w3.org'> Call for Exclusion</a>
+on 2020-12-22
+                                    ended on 2021-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8362' class='spec'>
+<a href='https://www.w3.org/TR/css-counter-styles-3/' rel='versionof'>CSS Counter Styles Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/'>2021-07-27</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/'>https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-8362-95cb2ab54e86b74157c959bf18cfc22115d2234a@w3.org'> Call for Exclusion</a>
+on 2021-07-27
+                                    ended on 2021-09-25
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8393' class='spec'>
+<a href='https://www.w3.org/TR/css-masking-1/' rel='versionof'>CSS Masking Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-masking-1-20210805/'>2021-08-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2014/WD-css-masking-1-20140522/'>https://www.w3.org/TR/2014/WD-css-masking-1-20140522/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2014May/0012.html'> Call for Exclusion</a>
+on 2014-05-22
+                                    ended on 2014-07-21
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='8500' class='spec'>
+<a href='https://www.w3.org/TR/cssom-1/' rel='versionof'>CSS Object Model (CSSOM)</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-cssom-1-20210826/'>2021-08-26</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-cssom-20110712/'>https://www.w3.org/TR/2011/WD-cssom-20110712/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2011JulSep/0264.html'> Call for Exclusion</a>
+on 2011-09-12
+                                    ended on 2012-02-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='8517' class='spec'>
+<a href='https://www.w3.org/TR/css-nesting-1/' rel='versionof'>CSS Nesting Module</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-nesting-1-20210831/'>2021-08-31</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/WD-css-nesting-1-20210831/'>https://www.w3.org/TR/2021/WD-css-nesting-1-20210831/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-8517-2d66090f6fc88bc690650efb769b840a0e4c4f43@w3.org'> Call for Exclusion</a>
+on 2021-08-31
+                                    ended on 2022-01-28
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8549' class='spec'>
+<a href='https://www.w3.org/TR/css-display-3/' rel='versionof'>CSS Display Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-display-3-20210903/'>2021-09-03</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-display-3-20190711/'>https://www.w3.org/TR/2019/CR-css-display-3-20190711/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7074-02540ac201d631625cbd37b776309650627c7dae@w3.org'> Call for Exclusion</a>
+on 2019-07-11
+                                    ended on 2019-09-09
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='8717' class='spec'>
+<a href='https://www.w3.org/TR/css-multicol-1/' rel='versionof'>CSS Multi-column Layout Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CR-css-multicol-1-20211012/'>2021-10-12</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/CR-css-multicol-1-20211012/'>https://www.w3.org/TR/2021/CR-css-multicol-1-20211012/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-8717-6fef0d7363ccb50d271d147fd94e18ad2f5beef1@w3.org'> Call for Exclusion</a>
+on 2021-10-12
+                                    ended on 2021-12-11
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8831' class='spec'>
+<a href='https://www.w3.org/TR/css-transforms-2/' rel='versionof'>CSS Transforms Module Level 2</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-transforms-2-20211109/'>2021-11-09</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/'>https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7347-d083bb40ffa4af45bace116b4c00c086291917d6@w3.org'> Call for Exclusion</a>
+on 2020-03-03
+                                    ended on 2020-07-31
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='8930' class='spec'>
+<a href='https://www.w3.org/TR/css-ruby-1/' rel='versionof'>CSS Ruby Annotation Layout Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-ruby-1-20211202/'>2021-12-02</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-css3-ruby-20110630/'>https://www.w3.org/TR/2011/WD-css3-ruby-20110630/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/w3c-css-wg/2011JulSep/0274.html'> Call for Exclusion</a>
+on 2011-09-19
+                                    ended on 2012-02-16
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2008/css-charter'>http://www.w3.org/Style/2008/css-charter</a>                                                            </li>
+</ul>
+            <li id='8991' class='spec'>
+<a href='https://www.w3.org/TR/css-scrollbars-1/' rel='versionof'>CSS Scrollbars Styling Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CR-css-scrollbars-1-20211209/'>2021-12-09</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/CR-css-scrollbars-1-20211209/'>https://www.w3.org/TR/2021/CR-css-scrollbars-1-20211209/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-8991-9329cfea9da5af5255452a8882a5aa5e240a3966@w3.org'> Call for Exclusion</a>
+on 2021-12-09
+                                    ended on 2022-02-07
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9005' class='spec'>
+<a href='https://www.w3.org/TR/css-highlight-api-1/' rel='versionof'>CSS Custom Highlight API Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-highlight-api-1-20211215/'>2021-12-15</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-highlight-api-1-20201022/'>https://www.w3.org/TR/2020/WD-css-highlight-api-1-20201022/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7622-b6642f3cf488d75a37dbe1d137bec0e7d431ce85@w3.org'> Call for Exclusion</a>
+on 2020-10-22
+                                    ended on 2021-03-21
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9035' class='spec'>
+<a href='https://www.w3.org/TR/css-paint-api-1/' rel='versionof'>CSS Painting API Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-paint-api-1-20211216/'>2021-12-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/'>https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Aug/0004.html'> Call for Exclusion</a>
+on 2018-08-09
+                                    ended on 2018-10-08
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9036' class='spec'>
+<a href='https://www.w3.org/TR/css-values-4/' rel='versionof'>CSS Values and Units Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-values-4-20211216/'>2021-12-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/WD-css-values-4-20180814/'>https://www.w3.org/TR/2018/WD-css-values-4-20180814/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Aug/0006.html'> Call for Exclusion</a>
+on 2018-08-14
+                                    ended on 2019-01-11
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9037' class='spec'>
+<a href='https://www.w3.org/TR/css-position-3/' rel='versionof'>CSS Positioned Layout Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-position-3-20211216/'>2021-12-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2012/WD-css3-positioning-20120207/'>https://www.w3.org/TR/2012/WD-css3-positioning-20120207/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/w3c-css-wg/2012JanMar/0132.html'> Call for Exclusion</a>
+on 2012-02-08
+                                    ended on 2012-07-07
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='9038' class='spec'>
+<a href='https://www.w3.org/TR/css-sizing-3/' rel='versionof'>CSS Box Sizing Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-sizing-3-20211217/'>2021-12-17</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2012/WD-css3-sizing-20120927/'>https://www.w3.org/TR/2012/WD-css3-sizing-20120927/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/w3c-css-wg/2012JulSep/0392.html'> Call for Exclusion</a>
+on 2012-09-27
+                                    ended on 2013-02-24
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='9039' class='spec'>
+<a href='https://www.w3.org/TR/mediaqueries-5/' rel='versionof'>Media Queries Level 5</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-mediaqueries-5-20211218/'>2021-12-18</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-mediaqueries-5-20200303/'>https://www.w3.org/TR/2020/WD-mediaqueries-5-20200303/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7346-afd159d396d589a0a773bdfe69b5f052a6acba8b@w3.org'> Call for Exclusion</a>
+on 2020-03-03
+                                    ended on 2020-07-31
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9044' class='spec'>
+<a href='https://www.w3.org/TR/css-contain-3/' rel='versionof'>CSS Containment Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-contain-3-20211221/'>2021-12-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/WD-css-contain-3-20211221/'>https://www.w3.org/TR/2021/WD-css-contain-3-20211221/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9044-65d47421e527fd017efa18283f6dd43bcdfd1a0e@w3.org'> Call for Exclusion</a>
+on 2021-12-21
+                                    ended on 2022-05-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9045' class='spec'>
+<a href='https://www.w3.org/TR/css-cascade-6/' rel='versionof'>CSS Cascading and Inheritance Level 6</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-cascade-6-20211221/'>2021-12-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/WD-css-cascade-6-20211221/'>https://www.w3.org/TR/2021/WD-css-cascade-6-20211221/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9045-eb2a06de432e05d523062c41e713ffce3562544c@w3.org'> Call for Exclusion</a>
+on 2021-12-21
+                                    ended on 2022-05-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9046' class='spec'>
+<a href='https://www.w3.org/TR/css-conditional-5/' rel='versionof'>CSS Conditional Rules Module Level 5</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/'>2021-12-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/'>https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9046-2c8a1f52d70a44d30ac334a32a80c5285f4f17bf@w3.org'> Call for Exclusion</a>
+on 2021-12-21
+                                    ended on 2022-05-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9049' class='spec'>
+<a href='https://www.w3.org/TR/css-fonts-5/' rel='versionof'>CSS Fonts Module Level 5</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-fonts-5-20211221/'>2021-12-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/'>https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-8265-60dbfc7121106893dac4cf76cb0ef7fef6f07bfd@w3.org'> Call for Exclusion</a>
+on 2021-06-29
+                                    ended on 2021-11-26
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9050' class='spec'>
+<a href='https://www.w3.org/TR/css-fonts-4/' rel='versionof'>CSS Fonts Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-fonts-4-20211221/'>2021-12-21</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/'>https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Jul/0001.html'> Call for Exclusion</a>
+on 2017-07-11
+                                    ended on 2017-12-08
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9057' class='spec'>
+<a href='https://www.w3.org/TR/css-overflow-3/' rel='versionof'>CSS Overflow Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-overflow-3-20211223/'>2021-12-23</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2013/WD-css-overflow-3-20130418/'>https://www.w3.org/TR/2013/WD-css-overflow-3-20130418/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2013Apr/0005.html'> Call for Exclusion</a>
+on 2013-04-18
+                                    ended on 2013-09-15
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='9068' class='spec'>
+<a href='https://www.w3.org/TR/css-align-3/' rel='versionof'>CSS Box Alignment Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/WD-css-align-3-20211224/'>2021-12-24</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2012/WD-css3-align-20120612/'>https://www.w3.org/TR/2012/WD-css3-align-20120612/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/w3c-css-wg/2012AprJun/0321.html'> Call for Exclusion</a>
+on 2012-06-13
+                                    ended on 2012-11-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/2010/09/CSSWG/charter'>http://www.w3.org/2010/09/CSSWG/charter</a>                                                            </li>
+</ul>
+            <li id='9069' class='spec'>
+<a href='https://www.w3.org/TR/css-syntax-3/' rel='versionof'>CSS Syntax Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-css-syntax-3-20211224/'>2021-12-24</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/'>https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7088-48bb0f5196b50d76943b1380bcb06ffefb7adee7@w3.org'> Call for Exclusion</a>
+on 2019-07-16
+                                    ended on 2019-09-14
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9071' class='spec'>
+<a href='https://www.w3.org/TR/mediaqueries-4/' rel='versionof'>Media Queries Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2021/CRD-mediaqueries-4-20211225/'>2021-12-25</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-mediaqueries-4-20200721/'>https://www.w3.org/TR/2020/CR-mediaqueries-4-20200721/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7529-fd3c9a550763f8a6a142d674a75f1c28a3b4cf65@w3.org'> Call for Exclusion</a>
+on 2020-07-21
+                                    ended on 2020-09-19
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9112' class='spec'>
+<a href='https://www.w3.org/TR/css-conditional-3/' rel='versionof'>CSS Conditional Rules Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-conditional-3-20220113/'>2022-01-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-conditional-3-20220113/'>https://www.w3.org/TR/2022/CR-css-conditional-3-20220113/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9112-4fcd93e3d0c715ff20b087911cae1132bb5d94cd@w3.org'> Call for Exclusion</a>
+on 2022-01-13
+                                    ended on 2022-03-14
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9113' class='spec'>
+<a href='https://www.w3.org/TR/css-cascade-4/' rel='versionof'>CSS Cascading and Inheritance Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-cascade-4-20220113/'>2022-01-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-cascade-4-20220113/'>https://www.w3.org/TR/2022/CR-css-cascade-4-20220113/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9113-01202ff3af67ce188635d8a40d4ccbc37f0a3b96@w3.org'> Call for Exclusion</a>
+on 2022-01-13
+                                    ended on 2022-03-14
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9114' class='spec'>
+<a href='https://www.w3.org/TR/css-cascade-5/' rel='versionof'>CSS Cascading and Inheritance Level 5</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-cascade-5-20220113/'>2022-01-13</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-cascade-5-20220113/'>https://www.w3.org/TR/2022/CR-css-cascade-5-20220113/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9114-dcbee53ea9e51b7e1b58b2fce714507a2bd8be1c@w3.org'> Call for Exclusion</a>
+on 2022-01-13
+                                    ended on 2022-03-14
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9307' class='spec'>
+<a href='https://www.w3.org/TR/css-conditional-4/' rel='versionof'>CSS Conditional Rules Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-conditional-4-20220217/'>2022-02-17</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-conditional-4-20220217/'>https://www.w3.org/TR/2022/CR-css-conditional-4-20220217/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9307-fd103eeded8859778d98c1f035f8d17e024d8f7f@w3.org'> Call for Exclusion</a>
+on 2022-02-17
+                                    ended on 2022-04-18
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9704' class='spec'>
+<a href='https://www.w3.org/TR/css-text-decor-4/' rel='versionof'>CSS Text Decoration Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/WD-css-text-decor-4-20220504/'>2022-05-04</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/'>https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2018Mar/0004.html'> Call for Exclusion</a>
+on 2018-03-13
+                                    ended on 2018-08-10
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9709' class='spec'>
+<a href='https://www.w3.org/TR/css-text-3/' rel='versionof'>CSS Text Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CRD-css-text-3-20220505/'>2022-05-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/CR-css-text-3-20201222/'>https://www.w3.org/TR/2020/CR-css-text-3-20201222/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7729-273ef23afe08ee26a4649e7929a11152a8dfb5fa@w3.org'> Call for Exclusion</a>
+on 2020-12-22
+                                    ended on 2021-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9710' class='spec'>
+<a href='https://www.w3.org/TR/css-text-decor-3/' rel='versionof'>CSS Text Decoration Module Level 3</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CRD-css-text-decor-3-20220505/'>2022-05-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/'>https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7117-2eeb504d06a3bacd88e8f956bb717dc1fed908d9@w3.org'> Call for Exclusion</a>
+on 2019-08-13
+                                    ended on 2019-10-12
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/Style/2016/css-2016.html'>https://www.w3.org/Style/2016/css-2016.html</a>                                                            </li>
+</ul>
+            <li id='9711' class='spec'>
+<a href='https://www.w3.org/TR/css-text-4/' rel='versionof'>CSS Text Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/WD-css-text-4-20220505/'>2022-05-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/WD-css-text-4-20150922/'>https://www.w3.org/TR/2015/WD-css-text-4-20150922/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Sep/0007.html'> Call for Exclusion</a>
+on 2015-09-23
+                                    ended on 2016-02-20
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='9712' class='spec'>
+<a href='https://www.w3.org/TR/css-will-change-1/' rel='versionof'>CSS Will Change Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CRD-css-will-change-1-20220505/'>2022-05-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2015/CR-css-will-change-1-20151203/'>https://www.w3.org/TR/2015/CR-css-will-change-1-20151203/</a></li>
+<li>associated <a href='https://lists.w3.org/Archives/Member/member-cfe/2015Dec/0002.html'> Call for Exclusion</a>
+on 2015-12-04
+                                    ended on 2016-02-02
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='http://www.w3.org/Style/2014/css-charter'>http://www.w3.org/Style/2014/css-charter</a>                                                            </li>
+</ul>
+            <li id='9719' class='spec'>
+<a href='https://www.w3.org/TR/selectors-4/' rel='versionof'>Selectors Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/WD-selectors-4-20220507/'>2022-05-07</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2011/WD-selectors4-20110929/'>https://www.w3.org/TR/2011/WD-selectors4-20110929/</a></li>
+<li>associated <a href='http://lists.w3.org/Archives/Member/w3c-css-wg/2011JulSep/0349.html'> Call for Exclusion</a>
+on 2011-09-29
+                                    ended on 2012-02-26
+                            </li>
+<li>Produced under Working Group Charter:
+                            </li>
+</ul>
+            <li id='9913' class='spec'>
+<a href='https://www.w3.org/TR/css-color-adjust-1/' rel='versionof'>CSS Color Adjustment Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CRD-css-color-adjust-1-20220614/'>2022-06-14</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-color-adjust-1-20220210/'>https://www.w3.org/TR/2022/CR-css-color-adjust-1-20220210/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9265-d808e6c5eb5046e8850cf2dfbd31fa54520c02dc@w3.org'> Call for Exclusion</a>
+on 2022-02-10
+                                    ended on 2022-04-11
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9918' class='spec'>
+<a href='https://www.w3.org/TR/css-variables-1/' rel='versionof'>CSS Custom Properties for Cascading Variables Module Level 1</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-variables-1-20220616/'>2022-06-16</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-variables-1-20220616/'>https://www.w3.org/TR/2022/CR-css-variables-1-20220616/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9918-5b32305a878228e8a101e05d6ba93dd5bc5601aa@w3.org'> Call for Exclusion</a>
+on 2022-06-16
+                                    <br><i>Exclusion opportunity will end
+    on 2022-08-15</i>
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9955' class='spec'>
+<a href='https://www.w3.org/TR/css-color-5/' rel='versionof'>CSS Color Module Level 5</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/WD-css-color-5-20220628/'>2022-06-28</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2020/WD-css-color-5-20200303/'>https://www.w3.org/TR/2020/WD-css-color-5-20200303/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-7345-ca13158d7d88d24c7a289db39ae9c8438212136b@w3.org'> Call for Exclusion</a>
+on 2020-03-03
+                                    ended on 2020-07-31
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2019/10/css-wg-charter.html'>https://www.w3.org/2019/10/css-wg-charter.html</a>                                                            </li>
+</ul>
+            <li id='9980' class='spec'>
+<a href='https://www.w3.org/TR/css-color-4/' rel='versionof'>CSS Color Module Level 4</a></li>
+<ul>
+<li>Latest publication: <a href='https://www.w3.org/TR/2022/CR-css-color-4-20220705/'>2022-07-05</a></li>
+<li>Exclusion Draft:
+<a href='https://www.w3.org/TR/2022/CR-css-color-4-20220705/'>https://www.w3.org/TR/2022/CR-css-color-4-20220705/</a></li>
+<li>associated <a href='https://www.w3.org/mid/cfe-9980-2e182ec79115a64fbf6769408cc493002e986e5c@w3.org'> Call for Exclusion</a>
+on 2022-07-05
+                                    <br><i>Exclusion opportunity will end
+    on 2022-09-03</i>
+                            </li>
+<li>Produced under Working Group Charter:
+                                    <a href='https://www.w3.org/2020/12/css-wg-charter.html'>https://www.w3.org/2020/12/css-wg-charter.html</a>                                                            </li>
+</ul>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+<p>Maintenance of existing <a href="https://www.w3.org/TR/?tag=css&status=rec">CSS Recommendations</a> (gathering of errata, publication of new editions incorporating errata) is also in scope.</p>
+
+        </div>
+
+        <div id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+
+          <dl>
+
+            <dt class="spec">css-2022
+            </dt>
+            <dd>
+              <p>This document collects together into one definition all the specs that together form the current state
+                of Cascading Style Sheets (CSS) as of 2022. The primary audience is CSS implementers, not CSS authors,
+                as this definition includes modules by specification stability, not Web browser adoption rate.</p>
+
+              <p class="draft-status"><b>Draft state:</b> No draft, published annually.</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2022</p>
+            </dd>
+
+            <dt class="spec">css-2023
+            </dt>
+            <dd>
+              <p>This document collects together into one definition all the specs that together form the current state
+                of Cascading Style Sheets (CSS) as of 2023. The primary audience is CSS implementers, not CSS authors,
+                as this definition includes modules by specification stability, not Web browser adoption rate.</p>
+
+              <p class="draft-status"><b>Draft state:</b> No draft, published annually.</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2023</p>
+            </dd>
+
+            <dt class="spec">css-2024
+            </dt>
+            <dd>
+              <p>This document collects together into one definition all the specs that together form the current state
+                of Cascading Style Sheets (CSS) as of 2024. The primary audience is CSS implementers, not CSS authors,
+                as this definition includes modules by specification stability, not Web browser adoption rate.</p>
+
+              <p class="draft-status"><b>Draft state:</b> No draft, published annually.</p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
+            </dd>
+
+          </dl>
+
+
+        </div>
+
+        <div id="timeline">
+          <h3>Timeline</h3>
+          <ul>
+<!-- <li>Q4 2019: REC for CSS Containment Module Level 1</li> -->
+<!-- <li>Q4 2019: REC for CSS Writing Modes Level 3</li> -->
+<li>Q2 2023: REC for CSS Values and Units Module Level 3</li>
+<li>Q2 2023: REC for CSS Custom Properties for Cascading Variables Module Level 1</li>
+<li>Q2 2023: REC for CSS Flexible Box Layout Module Level 1</li>
+<!-- <li>Q3 2020: REC for CSS Cascading and Inheritance Level 3</li> -->
+<li>Q3 2024: REC for Compositing and Blending Level 1</li>
+<li>Q4 2024: REC for CSS Conditional Rules Module Level 3</li>
+<li>Q2 2025: REC for CSS Backgrounds and Borders Module Level 3</li>
+<li>Q1 2025: REC for CSS Cascading and Inheritance Level 4</li>
+<li>Q2 2025: REC for CSS Image Values and Replaced Content Module Level 3</li>
+<li>Q2 2026: REC for Media Queries Level 4</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- new location of sucess criteria section -->
+      <div id="success-criteria">
+        <h2>Success Criteria</h2>
+        <p>
+              The CSS Working Group's work is considered a success if there are multiple, independent, interoperable implementations of its modules that are widely used.
+        </p>
+        <p>
+            In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.
+        </p>
+	    <p>
+            Each specification should contain sections detailing all known security and privacy implications for implementers, Web authors, and end users.
+        </p>
+	    <p>
+        There should be testing plans for each specification, starting from the earliest drafts.
+        </p>
+	    <p>
+		    Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+		    recommendations for maximising accessibility in implementations.
+        </p>
+	    <p>
+            To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.  Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.
+        </p>
+
+        <p>
+              Modules that reach <a href="https://www.w3.org/Consortium/Process/#rec-publication" title="Recommendation">W3C Recommendation</a>, are considered successful when all of the following are present:
+        </p>
+         <p>
+            <ul>
+            <li>Production of stable documents addressing the work items listed in the Deliverables section.</li>
+            <li>Test suites for each module with conformance criteria.</li>
+            <li>Availability of multiple, independent, interoperable implementations of each feature with conformance criteria in each deliverable; as demonstrated by an implementation report (summarizing implementation status against the relevant test suite) for each testable class of product, including user agents.</li>
+            <li>Deployment on multiple types of platform (traditional computers, phones, tablets, accessibility aids, print formatters, and so on).</li>
+            <li>User community and industry adoption of the group deliverables.</li>
+            </ul>
+        </p>
+        </div>
+      </section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before
+          first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+        <p>In addition to the above catch-all reference to horizontal review which includes accessibility review, this Working Group will work with the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to work on accessible navigation which needs to be addressed coherently across multiple specifications, address accessibility issues related to the features of individual specifications, and develop new CSS specifications to address accessibility use cases where appropriate.</p>
+        <!--
+            Some of this work may be carried out in the joint <a href="https://www.w3.org/WAI/APA/task-forces/css-a11y/">CSS Accessibility Task Force</a>.</p> -->
+
+        <!--
+            Accessibility task force looks defunct. Almost empty email archive
+            https://lists.w3.org/Archives/Public/public-css-a11y/
+
+            no minutes posted since 2017
+         -  https://www.w3.org/WAI/APA/task-forces/css-a11y/minutes
+
+            Ah! It is marked as closed
+            https://www.w3.org/groups/tf/css-a11y
+        -->
+
+        <div>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <!-- dead -->
+              <!-- <dt><a class="public" href="https://www.w3.org/Graphics/SVG/WG/wiki/Main_Page">Scalable
+                Vector Graphics (SVG) Working Group</a>
+
+              </dt><dd>The Group coordinates closely with the SVG WG on common
+                features (such as the CSS Animations, <a href="https://www.w3.org/TR/css-fonts-3/">CSS Fonts,</a> CSS Object
+                Model, CSS 2D and 3D Transformations, and CSS Transitions
+                Modules) to meet the needs of HTML/CSS, SVG, and mixed
+                HTML/CSS/SVG content, and to ensure compatibility at the
+                functionality level for ease of implementation and
+                authoring.
+
+                </dd><dd>The CSS WG is aware of normative references to CSS specifications from
+  SVG and will endeavor to maintain their stability, for example by
+  avoiding breaking changes to the referenced portions.
+              </dd> -->
+
+              <dt><a class="public" href="https://www.w3.org/Fonts/WG/">WebFonts Working
+                Group</a>
+
+              </dt><dd>The Group coordinates with the WebFonts WG to enable
+                high quality Web typography with downloadable fonts, in
+                particular WOFF and WOFF2.
+              </dd>
+
+              <dt><a class="public" href="https://www.w3.org/groups/wg/publishing">Audiobooks Working Group
+              </a>
+
+              </dt><dd>The group coordinates closely with the Audiobooks WG on requirements for
+  various aspects of CSS in all types of digital publishing.
+
+              </dd><dt><a class="public" href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a>
+
+              </dt><dd>The Group reviews the Selectors API specification,
+                being developed by the Web Applications Working Group.</dd>
+
+              <dt><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></dt>
+              <dd>The CSS WG may adopt promising CSS work incubated in the WICG, provided that RF patent
+                commitments are in place for such work. WICG participants working on CSS-related proposals are
+                expected to coordinate with the CSS WG to ensure timely reviews of their work.
+                Note: No restriction of the CSS WG's ability to adopt proposals developed elsewhere is implied.
+              </dd>
+
+              <dt><a href="https://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
+              <dd>The group coordinates with the TAG on architectural review of CSS specifications and to develop an extensible CSS architecture. The Houdini task force is the primary venue for this work, and those specifications are published jointly.
+              </dd></dl>
+
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a class="public" href="https://whatwg.org/">WHATWG</a>
+
+            </dt><dd>The group coordinates with the WHATWG to ensure that
+              HTML only contains constructs that can be rendered with
+              CSS.</dd>
+
+              <dd>The CSS WG is aware of normative references to CSS specifications from
+            HTML and will endeavor to maintain their stability, for example by
+            avoiding breaking changes to the referenced portions.
+
+            </dd>
+          </dl>
+
+
+        </div>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+
+        <p>
+            Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+            W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.
+        </p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/Style/CSS/members">CSS Working Group home page.</a>
+        </p>
+        <p>
+          Most CSS Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+            This group primarily conducts its technical work via the
+            <a href="https://github.com/w3c/csswg-drafts/issues">GitHub issues list</a>, with
+            more general discussion on the public mailing list
+            <a id="www-style" href="mailto:www-style@w3.org">www-style@w3.org</a>
+            (<a href="https://lists.w3.org/Archives/Public/www-style/">archive</a>). The public is
+            invited to review and discuss issues, and to post messages to this list.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          Decisions are made by consensus of the Working Group. In addition to decisions made on teleconferences or face to face meetings, decisions may also be made by a call for consensus on the public mailing list; consensus to be determined by the chairs after some reasonable interval for objections.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web Specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/css/ipr">licensing information</a>.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/Group/charter">Initial Charter</a>
+                </th>
+                <td>
+                  28 February 1997
+                </td>
+                <td>
+                  28 February 1999
+                </td>
+                <td>
+
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/Group/1999/03/css-charter-19990311.html">Rechartered</a>
+                </th>
+                <td>
+                  22 March 1999
+                </td>
+                <td>
+                  31 March 2000
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/Group/2001/css-charter">Rechartered</a>
+                </th>
+                <td>
+                  31 July 2001
+                </td>
+                <td>
+                  31 July 2002
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/2002/css-charter.html">Rechartered</a>
+                </th>
+                <td>
+                  15 October 2002
+                </td>
+                <td>
+                  31 August 2004
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2004JulSep/0038">Charter Extension</a>
+                </th>
+                <td>
+                  22 September 2004
+                </td>
+                <td>
+                  31 March 2005
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/2004/css-charter-long">Rechartered</a>
+                </th>
+                <td>
+                  28 June 2006
+                </td>
+                <td>
+                  31 July 2008
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2008JulSep/0064.html">Charter Extension</a>
+                </th>
+                <td>
+                  26 September 2008
+                </td>
+                <td>
+                  31 December 2008
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/2008/css-charter">Rechartered</a>
+                </th>
+                <td>
+                  12 December 2008
+                </td>
+                <td>
+                  30 November 2010
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2010OctDec/0043.html">Charter Extension</a>
+                </th>
+                <td>
+                  19 November 2010
+                </td>
+                <td>
+                  31 March 2011
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2011JulSep/0007.html">Charter Extension</a>
+                </th>
+                <td>
+                  12 July 2011
+                </td>
+                <td>
+                  30 August 2011
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2010/09/CSSWG/charter">Rechartered</a>
+                </th>
+                <td>
+                  14 December 2011
+                </td>
+                <td>
+                  30 September 2013
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/2014/css-charter">Rechartered</a>
+                </th>
+                <td>
+                  01 July 2014
+                </td>
+                <td>
+                  15 June 2016
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2016JulSep/0006.html">Charter Extension</a>
+                </th>
+                <td>
+                  11 July 2016
+                </td>
+                <td>
+                  30 September 2016
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/Style/2016/css-2016.html">Rechartered</a>
+                </th>
+                <td>
+                  16 September 2016
+                </td>
+                <td>
+                  14 September 2019
+                </td>
+                <td>
+                  <!-- <p>Bert Bos stepped down as team contact, and added Fuqiao Xue and Thierry Michel as team contacts. Daniel Glazman and Peter Linss stepped down as co-chairs, and added Alan Stearns and Rossen Atanassov as co-chairs.</p> -->
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2019/10/css-wg-charter.html">Rechartered</a>
+                </th>
+                <td>
+                  3 October 2019
+                </td>
+                <td>
+                  30 September 2022
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>Rechartered</th>
+                <td>15 December 2020</td>
+                <td>30 September 2022</td>
+                <td>New Patent Policy</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        Editors: <a href="mailto:chris@w3.org">Chris Lilley</a>, <a href="mailto:xfq@w3.org">Fuqiao Xue</a>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2022
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>
