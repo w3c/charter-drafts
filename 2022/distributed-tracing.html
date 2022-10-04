@@ -213,6 +213,29 @@
             The Working Group will deliver the following W3C normative specifications:
           </p>
           <dl>
+            <dt id='trace-context' class='spec'><a href='https://www.w3.org/TR/trace-context/' rel='versionof'>Trace Context</a></dt>
+            <dd>
+              <p>This specification is the update of <a href="https://www.w3.org/TR/trace-context-1/">Trace Context 1</a> which
+                defines headers and a value format to propagate context information that enables distributed tracing scenarios.
+                The new revision will include a mechanism to carry context information in protocol <em>responses</em>, including HTTP, thus
+                context information to be accessed within Web applications and carried over between cloud services.
+                The revision must define mechanisms that mitigate both <a href="https://www.w3.org/TR/fingerprinting-guidance/">fingerprinting</a>
+                and other <a href="https://www.w3.org/TR/security-privacy-questionnaire/">privacy risks</a> exposed by
+                Trace Context. If the mitigations include explicit or implicit user consent, as anticipated, the WG will define any
+                necessary protocol elements for seeking that consent and formulate mechanisms for constraining the requests and resultant
+                consent to the least-invasive possible form (e.g. listing specific domains or even hosts, as well as temporally limiting
+                the permission consistent with the use case).
+
+                This update is intended to include a mechanism to carry context information in protocol responses, thus allowing context information to be accessed in Web browsers.
+              </p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2022/WD-trace-context-2-20220929/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> Q2 2023</p>
+            <p><b>Adopted Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>2022-09-29</a></li>
+            <p><b>Exclusion Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>https://www.w3.org/TR/2022/WD-trace-context-2-20220929/</a>,
+            associated <a href='https://www.w3.org/mid/cfe-10516-7be30be50df34d2d757f90ac32c4d6894b7904da@w3.org'>Call for Exclusion</a>
+on 2022-09-29, ending on 2023-02-26</i></p>
+   <p><b>Exclusion Draft Charter:</b> <a href='https://www.w3.org/2020/08/distributed-tracing-wg-charter.html'>https://www.w3.org/2020/08/distributed-tracing-wg-charter.html</a>                                                            </li>
+</dd>
             <dt id='baggage' class='spec'><a href='https://www.w3.org/TR/baggage/' rel='versionof'>Propagation format for distributed context: Baggage</a></dt>
               <dd>
                 <p>This specification defines  standard for representing and propagating a set of application-defined properties associated with a distributed request or workflow execution.</p>
@@ -224,17 +247,6 @@
 on 2020-10-20, ended on 2021-03-19.</p>
                 <p><b>Exclusion Draft Charter:</b> <a href='https://www.w3.org/2020/08/distributed-tracing-wg-charter.html'>https://www.w3.org/2020/08/distributed-tracing-wg-charter.html</a>                                                            </li>
             </dd>
-            <dt id='trace-context' class='spec'><a href='https://www.w3.org/TR/trace-context/' rel='versionof'>Trace Context</a></dt>
-            <dd>
-              <p>This is an extension document for the Trace Context specification. It defines the mapping of Trace Context fields to the binary formats.</p>
-            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2022/WD-trace-context-2-20220929/">Working Draft</a></p>
-            <p class="milestone"><b>Expected completion:</b> Q2 2023</p>
-            <p><b>Adopted Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>2022-09-29</a></li>
-            <p><b>Exclusion Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>https://www.w3.org/TR/2022/WD-trace-context-2-20220929/</a>,
-            associated <a href='https://www.w3.org/mid/cfe-10516-7be30be50df34d2d757f90ac32c4d6894b7904da@w3.org'>Call for Exclusion</a>
-on 2022-09-29, ending on 2023-02-26</i></p>
-   <p><b>Exclusion Draft Charter:</b> <a href='https://www.w3.org/2020/08/distributed-tracing-wg-charter.html'>https://www.w3.org/2020/08/distributed-tracing-wg-charter.html</a>                                                            </li>
-</dd>
 <dt class="spec">
   <i>Trace Interchange Format</i>
 </dt>
@@ -506,10 +518,10 @@ on 2022-09-29, ending on 2023-02-26</i></p>
                   <a href=".">Proposed</a>
                 </th>
                 <td>
-                  TDB
+                  TBD
                 </td>
                 <td>
-                 TDB + 2 years
+                 TBD + 2 years
                 </td>
                 <td>
                   <p>New Patent Policy.</p>
