@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>WebAssembly Working Group Charter</title>
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">PROPOSED</i> WebAssembly Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the <a href="/groups/wg/wasmto">WebAssembly Working Group</a> is to standardize a size- and load-time-efficient format and execution environment, allowing compilation to the web with consistent behavior across a variety of implementations.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/wg/wasm/join">Join the WebAssembly Working Group.</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+           on GitHub (<a href="https://github.com/w3c/charter-drafts/blob/gh-pages/wasm-2022.html">source</a>, <a href="https://w3c.github.io/charter-drafts/wasm-2022.html">rendered</a>).
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              <i class="todo">See the <a href="https://www.w3.org/groups/wg/wasm/charters">group status page</A> and <a href="#history">detailed change history</a>.</i>
+            </td>
+          </tr>		
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              <ul>
+                <li>Derek Schuff (Google)</li>
+                <li>Luke Wagner (Fastly)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:">Eric Prud&apos;hommeaux</a> (0.15 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> We will meet by teleconference
+              approximately once per month.
+              <br>
+              <strong>Face-to-face:</strong> we will meet during the W3C&apos;s annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+      <section id="background" class="background">
+          <p>
+          Since the inception of the Web, various technologies have been
+          developed to allow “native” applications on the Web.
+          Techniques such as user consent with digital signatures and
+          Virtual Machines with different capabilities than JavaScript
+          failed to be robust in the face of increasingly high security
+          requirements.
+
+          Later efforts like
+          <a href="https://developer.chrome.com/native-client">Native Client</a>,
+          which featured robust security, failed to achieve cross-browser
+          adoption.
+
+          Cross-compilation to JavaScript using
+          <a href="http://emscripten.org">Emscripten</a>,
+          especially using the machine-optimization subset called
+          <a href="http://asmjs.org/spec/latest/">asm.js</a>,
+          achieved some degree of success. However, consistent cross-browser
+          performance, shared memory threads, and other machine features have
+          proved elusive.
+        </p>
+          <p>
+          The WebAssembly format and execution environment address
+          the shortcomings of those previous efforts.
+        </p>
+			<!-- <li>Reference types</li> -->
+			<!-- <li>Multiple return values</li> -->
+
+      </section>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+        <p>
+          The scope of the WebAssembly Working Group comprises addressing the need
+          for native-performance code on the Web in applications ranging from 3D
+          games to speech recognition to codecs—and in any other contexts in which
+          a common mechanism for enabling high-performance code is relevant—by
+          providing a standardized portable, size-, and load-time-efficient format
+          and execution environment that
+          attempts to maximize performance and interoperate gracefully with
+          JavaScript and the Web, while ensuring security and consistent behavior
+          across a variety of implementations.
+        </p>
+
+        <p>
+		Revisions to the WebAssembly Recommendation will be proposed periodically, capturing changes that have been incrementally adopted by the Working Group.
+		Each successive version will incrementally incorporate improvements to support more machine level operations, increase performance, or to better inter-operate with embedding platforms, including features such as:
+		<ul>
+			<li>Multiple memories + tables</li>
+			<li>Threads + shared memory</li>
+			<li>improvements to SIMD</li>
+			<li>Exception handling</li>
+			<li>Garbage collected object support</li>
+			<li>Component Model</li>
+                        <li>64 bit memory addressing</li>
+                        <li>Content Security Policy for WebAssembly modules</li>
+                        <li>Tail call</li>
+                        <li>ECMAScript Module integration</li>
+                        <li>JS Promise integration</li>
+                        <li>Stack switching</li>
+	</ul>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p><i>Updated document status is available on the <a href="https://www.w3.org/groups/wg/wasm/publications">group publication status page</a>. In-flight featuers are listed on the <a href="https://github.com/WebAssembly/proposals">WebAssembly proposals page</a></i></p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. 
+          The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation.</p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver new revisions of the following W3C normative specifications:
+          </p>
+          <dl>
+            <!-- core -->
+            <dt id="webassembly-core" class="spec"><a href="https://www.w3.org/TR/wasm-core/" rel="versionof">WebAssembly Core Specification</a></dt>
+            <dd>
+              <p>This document describes the core WebAssembly standard, a safe, portable, low-level code format designed for efficient execution and compact representation.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/wasm-core/">Editor&apos;s Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> continuous developement with evergreen publication</p>
+   <dl><dt>
+       <p><b>Adopted Draft:</b> WebAssembly Specification, &lt;<a href="https://webassembly.github.io/spec/core/">https://webassembly.github.io/spec/core/</a>&gt;, 2022-04-05.
+      <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
+        <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=101196">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
+      <p><b>Exclusion Draft Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
+    </dd>
+              </dl>
+
+            <!-- js-api -->
+            <dt id="webassembly-js-api" class="spec"><a href="https://www.w3.org/TR/wasm-js-api/" rel="versionof">WebAssembly JavaScript Interface</a></dt>
+            <dd>
+              <p>This document describes the integration of WebAssembly with the broader web platform.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/wasm-js-api/">Editor&apos;s Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> continuous developement with evergreen publication</p>
+   <dl><dt>
+       <p><b>Adopted Draft:</b> WebAssembly Specification, &lt;<a href="https://webassembly.github.io/spec/js-api/">https://webassembly.github.io/spec/js-api/</a>&gt;, 2022-04-05.
+      <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
+        <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=101196">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
+      <p><b>Exclusion Draft Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
+    </dd>
+              </dl>
+
+            <!-- web-api -->
+            <dt id="webassembly-web-api" class="spec"><a href="https://www.w3.org/TR/wasm-web-api/" rel="versionof">WebAssembly Web API</a></dt>
+            <dd>
+              <p>This document provides an explicit JavaScript API for interacting with WebAssembly.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/wasm-web-api/">Editor&apos;s Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> continuous developement with evergreen publication</p>
+   <dl><dt>
+       <p><b>Adopted Draft:</b> WebAssembly Specification, &lt;<a href="https://webassembly.github.io/spec/web-api/">https://webassembly.github.io/spec/web-api/</a>&gt;, 2022-04-05.
+      <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
+        <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=101196">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
+      <p><b>Exclusion Draft Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
+    </dd>
+              </dl>
+
+          </dl>
+
+
+        </section>
+
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created or maintained such as:
+          </p>
+          <ul>
+            <li>An OCaml reference interpreter</li>
+            <li>Use case and requirement documents;</li>
+            <li>Test suite and implementation report for the specification;</li>
+            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+          </ul>
+        </section>
+      </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+	  <p>
+		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+		recommendations for maximising accessibility in implementations.</p>
+	  <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+	  <p>All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <dt><a href="https://www.w3.org/community/webassembly/">WebAssembly Community Group</a></dt>
+            <dd>Coordination on seed specification to begin the standards process.</dd>
+            <dt><a href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a></dt>
+            <dd>Coordination on WebAssembly-specific bindings to existing Web APIs (or interpreting existing WebIDL as it relates to WebAssembly).</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt>
+                <a href="https://www.ecma-international.org/memento/tc39.htm">TC39 - ECMAScript Standards Body</a></dt>
+            <dd>Coordination on integration with JavaScript, particularly on
+                <a href="https://tc39.github.io/ecmascript_sharedmem/shmem.html">SharedArrayBuffer</a>
+                 and its memory model</dd>
+            <dt><a href="https://www.khronos.org/">Khronos Group</a></dt>
+            <dd>Coordination on WebAssembly-specific bindings to
+              <a href="https://www.khronos.org/webgl/wiki">WebGL</a>.</dd>
+            <dt><a href="https://www.w3.org/community/gpu/">WebGPU Community Group</a></dt>
+            <dd>Coordinate on WebAssembly interoperability, performance, and ergonomics.</dd>
+          </dl>
+        </section>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">WebAssembly Working Group home page.</a>
+        </p>
+        <p>
+          Most WebAssembly Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work  on <a id="public-github" href="https://github.com/WebAssembly/spec">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>one week</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/wasm/ipr">licensing information</a>.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="../../2017/08/wasm-charter">Initial Charter</a>
+                </th>
+                <td>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2017JulSep/0021.html">2017-08-03</a>
+                </td>
+                <td>
+                  2019-07-31
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2019OctDec/0000.html">Charter Extension</a>
+                </th>
+                <td>
+                  2019-08-01
+                </td>
+                <td>
+                 2019-12-31 (extended until end of February 2020)
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a  href="https://www.w3.org/2020/03/webassembly-wg-charter.html">Approved</a>
+                </th>
+                <td>
+                  9 March 2020
+                </td>
+                <td>
+                  28 February 2022
+                </td>
+                <td>
+                  <p>The WebAssembly spec has been split into 3 parts.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a  href="https://www.w3.org/2020/03/webassembly-wg-charter.html">...</a>
+                </th>
+                <td>
+                  ...
+                </td>
+                <td>
+                  ...
+                </td>
+                <td>
+                  <p>Switch to 2020 Patent Policy.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a href="mailto:eric@w3.org">Eric Prud&apos;hommeaux</a>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2022
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+    </footer>
+
+  </body>
+</html>

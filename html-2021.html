@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i>PROPOSED</i> HTML Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/htmlwg">HTML Working Group</a> is to give input to and bring the WHATWG HTML and DOM Review Drafts to W3C Recommendations.</p>
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/wg/htmlwg/join">Join the HTML Working Group.</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <a href="https://github.com/w3c/charter-drafts">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/@@/issues">issues</a></i>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">start date + 2 years</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Theresa O'Connor (Apple, Inc.), Léonie Watson (TetraLogical)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <a href="mailto:mike@w3.org">Michael Smith</a> (0.05 <abbr title="Full-Time Equivalent">FTE</abbr>),
+            <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a> (0.05 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> The HTML Working Group expects to work mostly asynchronously. The chairs
+              may call regular or topic-specific teleconferences.
+              <br />
+              <strong>Face-to-face:</strong> may be scheduled by consent of the participants.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+        <p>In accordance with the <a href="https://www.w3.org/2019/04/WHATWG-W3C-MOU.html">WHATWG-W3C
+          Memorandum of Understanding</a> and <a
+          href="https://www.w3.org/2021/06/WHATWG-W3C-MOU_2021_update.html">2021
+          Relationship Update</a>, this group is chartered to
+        assist the W3C community in raising issues and proposing solutions in the WHATWG <a
+          href='https://github.com/whatwg/html/'>HTML</a> and <a href='https://github.com/whatwg/dom/'>DOM</a>
+        workstreams,
+        and to bring WHATWG HTML and DOM Review Drafts to Recommendation. The Working Group also has the ability
+        to bring the Fetch review drafts to Recommendation.
+        The Working Group may also work on extension specifications for HTML features
+        in <a href='https://github.com/w3c/whatwg-coord/issues'>coordination with
+        the WHATWG Steering Group</a>.
+      </p>
+      <p>
+        The community (including users, implementers, and developers) and horizontal review groups are encouraged to
+        contribute directly to
+        the WHATWG <a href='https://github.com/whatwg/html/'>HTML</a>, <a
+          href='https://github.com/whatwg/dom/'>DOM</a>, and <a
+          href='https://github.com/whatwg/fetch/'>Fetch</a> repositories; raising issues, proposing solutions, commenting on
+        proposed solutions, and
+        indicating support or otherwise for proposals. In the event that a person raising an issue feels that the issue
+        has not been fairly resolved by WHATWG, the HTML Working Group may help to explain the resolution and attempts
+        to work with
+        the person and the WHATWG editors to achieve consensus, as detailed in the Group <a href='#workmode'>work
+          mode</a>.
+      </p>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/htmlwg/publications">group publication status page</a>.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+        </p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications based on WHATWG Living Standards:
+          </p>
+          <dl>
+
+            <dt id="html" class="spec"><a href="https://html.spec.whatwg.org/">HTML</a></dt>
+            <dd>
+              <p>Along with defining the HTML markup language, this specification also defines many of the core
+                requirements that form the basis of the Web runtime.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://html.spec.whatwg.org/">WHATWG Living
+                  Standard</a></p>
+              <p class="milestone"><b>Expected W3C Recommendation:</b> yearly basis</p>
+            </dd>
+            <dt id="dom" class="spec"><a href="https://dom.spec.whatwg.org/">DOM</a></dt>
+            <dd>
+              <p>This specification defines a platform-neutral model for events, aborting activities, and node trees.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://dom.spec.whatwg.org/">WHATWG Living
+                  Standard</a></p>
+              <p class="milestone"><b>Expected W3C Recommendation:</b> yearly basis</p>
+              <ul>
+                <li>Latest publication: <a href='https://www.w3.org/TR/2021/CR-dom-20210608/'>2021-06-08</a></li>
+                <li>Exclusion Draft:
+                    <a href='https://www.w3.org/TR/2021/CR-dom-20210608/'>https://www.w3.org/TR/2021/CR-dom-20210608/</a></li>
+                <li>associated <a href='https://www.w3.org/mid/cfe-8176-61f6f421ef32670498c220ee8ee339df076a5ad9@w3.org'> Call for Exclusion</a> on 2021-06-08
+                                            <br><i>Exclusion opportunity will end on 2021-08-07</i>
+                                        </li>
+                <li>Exclusion Draft Charter:
+                                                    <a href='https://www.w3.org/2020/12/html-wg-charter.html'>https://www.w3.org/2020/12/html-wg-charter.html</a>
+                                            </li>
+            </ul>
+            </dd>
+            <dt id="fetch" class="spec"><a href="https://fetch.spec.whatwg.org/">Fetch</a></dt>
+            <dd>
+              <p>This specification defines requests, responses, and the process that binds them: fetching.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://fetch.spec.whatwg.org/">WHATWG Living
+                  Standard</a></p>
+            </dd>
+          </dl>
+
+          <p>
+            The Working Group will work on the following extension specifications on the <a href="https://www.w3.org/Consortium/Process/#rec-track">Recommendation Track</a>:
+          </p>
+
+          <dl>
+            <dt id="ruby" class="spec"><a href="https://www.w3.org/TR/html-ruby-extensions/">W3C HTML Ruby Markup Extensions</a></dt>
+            <dd>
+              <p>
+              This specification extends and refines the facilities provided by HTML to support “Ruby”,
+              which is a form of interlinear annotations commonly used in East Asia,
+              primarily (but not exclusively) for phonetic assistance.
+              The minimal ruby markup model currently described in the HTML Living Standard
+              is insufficient to satisfy known ruby use cases and accessibility requirements.
+              This extension specification
+              (which may be split into multiple “levels” based on feature implementation status)
+              will describe a more complete model
+              based on prior work by the W3C HTML, i18n, and CSS Working Groups,
+              and consultation with the accessibility community in East Asia.
+              See <a href="https://github.com/whatwg/sg/issues/184">https://github.com/whatwg/sg/issues/184</a> for the rationale
+              leading to developing this as an extension specification.
+              </p>
+
+              <p><b>WHATWG coordination:</b> <a href="https://www.w3.org/2022/02/ruby-agreement">Agreement on HTML Ruby Markup</a></p>
+              <p class="draft-status"><b>Draft state:</b>
+              <a href="https://www.w3.org/TR/2014/NOTE-html-ruby-extensions-20140204/">W3C Working Group Note</a>
+              (See also related content in:
+              <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element">WHATWG Living Standard</a>,
+              <a href="https://github.com/whatwg/html/pull/6478">Pull Request</a>)</p>
+
+              <p class="draft-status"><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/">https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/</a></p>
+              <p class="draft-status"><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/">https://www.w3.org/TR/2013/WD-html-ruby-extensions-20131022/</a>
+              <br>
+              Exclusion period began <a href="https://lists.w3.org/Archives/Member/member-cfe/2013Oct/0004.html">22 October 2013</a>; exclusion period ended 21 March 2014.
+              </p>
+              <p class="draft-status"><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2007/03/HTML-WG-charter.html">https://www.w3.org/2007/03/HTML-WG-charter.html</a></p>
+            </dd>
+          </dl>
+
+        </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+          <p>This is the annual timeline of the Working Group.</p>
+          <ul>
+              <li>January: REC for DOM</li>
+              <li>February: Wide review for HTML</li>
+              <li>May: CR for HTML</li>
+              <li>July: PR for HTML</li>
+              <li>July: Wide review for DOM</li>
+              <li>August: REC for HTML</li>
+              <li>October: CR for DOM</li>
+              <li>December: PR for DOM</li>
+            </ul>
+        </section>
+      </section>
+
+      <section id="workmode">
+        <h2>Work Mode</h2>
+        <p>When WHATWG publishes a Review Draft of its HTML or DOM Living Standards, the HTML Working Group may request
+          endorsement
+          of this Review Draft as a CR, PR, and/or REC. The Working Group works to demonstrate to the Director that the
+          contents of the
+          WHATWG Review Draft have had wide review,
+          issues have been addressed, and the contents have sufficient CR exit criteria as defined by W3C Process.
+          The Working Group will look for a consensus of its participants to advance each Review Draft as a CR and will
+          have worked to engage the community to make this consensus achievable.</p>
+        <p>
+          When there is an unresolved objection, the Working Group will make substantial effort to resolve the conflict so
+          that W3C can
+          publish a REC with no normative differences from the WHATWG Review Draft of an HTML or DOM specification.
+          If the Working Group cannot reach consensus to bring a desired Review Draft forward on the REC track, it must
+          ensure that
+          appropriate issues are raised or encourage the WHATWG editors to re-open issues in the WHATWG repository.
+        </p>
+        <p>
+          If unresolved differences remain, the Working Group will take the following escalation steps,
+          each step to be reached only once the preceding
+          steps have been given good faith efforts to reach consensus:
+          <ol>
+            <li>The Working Group shall attempt to resolve the objection, working to explain its members’ concerns
+              to the WHATWG editors and other Workstream participants (through the WHATWG GitHub repository) and to
+              explain the decision of the WHATWG to those raising the concerns;</li>
+            <li>The Working Group shall escalate the disagreement to the WHATWG Steering Group to help resolve the issue;
+            </li>
+            <li>The Working Group shall explore techniques other than having a HTML or DOM specification with
+              normative differences such as an extension specification; or as non-normative advice;</li>
+            <li>The Working Group may request technical advice
+              from the TAG. The TAG may consult other experts, including for expertise not currently available on the TAG.
+              The TAG may be able to find some consensus or explain to one side or the other any negative impacts
+              of their position;
+            <li>The issue shall go to the W3C Director, who examines the arguments using the record of the tracked
+              issue, the Working Group analysis, and the TAG analysis.
+              <ol type='A'>
+                <li>If the Director overrules the objections, then W3C continues its process to publish
+                  the HTML or DOM Review Draft as a REC;</li>
+                <li>If the Director sustains the objection, the Director and/or the TAG may choose to re-open
+                  the appeal to the WHATWG Steering Group with any new data or rationale;</li>
+              </ol>
+            </li>
+          </ol>
+          <p>The HTML Working Group is expected to endorse a WHATWG HTML or DOM Review Draft to Candidate Recommendation
+            at least once per 12 month period.</p>
+
+          <p>
+            For extension specifications,
+            while coordination <a href="https://github.com/w3c/whatwg-coord/">as agreed with the WHATWG</a> is also expected,
+            the Working Group will follow the more standard approach
+            to <a href="https://www.w3.org/Consortium/Process/#Reports">technical report</a> development and publication:
+            the Working Group will appoint its own editors,
+            develop its own drafts,
+            accept and process feedback,
+            and progress the documents along the <a href="https://www.w3.org/Consortium/Process/#rec-track">Recommendation Track</a>
+            on the basis of its own consensus.
+          </p>
+
+      </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+    <p>
+      The Working Group will bring one or more WHATWG Review Drafts from W3C Candidate Recommendation to Proposed
+      Recommendation.
+    </p>
+    <p>In order to advance WHATWG Review Drafts to <a href="https://www.w3.org/Consortium/Process/#RecsCR"
+        title="Candidate Recommendation">Candidate Recommendation (CR)</a>, each feature is expected to be marked
+      with its implementation status. The CR will indicate that all features with fewer than two implementations are
+      at-risk.
+    </p>
+    <p>The <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed
+        Recommendation (PR)</a> and <a href="https://www.w3.org/Consortium/Process/#RecsW3C"
+        title="Recommendation">Recommendation (REC)</a> endorsement of WHATWG Review Drafts will indicate that all features which do not
+      have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent
+        implementations</a> are considered informative, not normative, for W3C purposes. </p>
+    <p>
+      In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
+      each extension specification
+      is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.
+    </p>
+    <p>Each specification is encouraged to contain or point to considerations detailing all known security and
+      privacy implications for implementers, Web authors, and end users.</p>
+    <p>
+      Each specification is encouraged to contain or point to information describing
+      accessibility implications for implementers, Web authors, and end
+      users; and point to guidance on how specification features can be
+      used to maximize accessibility in implementations.
+    </p>	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/aria">Accessible Rich Internet
+                Applications (ARIA) Working Group</a>
+            </dt>
+            <dd>
+              To collaborate on enhancing the accessibility of web content through the
+              development of supplemental attributes, that can be applied to native
+              host language elements and exposed via platform accessibility APIs.
+            </dd>
+            <dt>
+              <a href="hhttps://www.w3.org/groups/wg/apa">Accessible Platform
+                Architectures Working Group</a>
+            </dt>
+            <dd>
+              For accessibility horizontal review, and to collaborate on accessibility related topics.
+            </dd>
+            <dt><a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a></dt>
+            <dd>
+              For the mapping of HTML elements and attributes to platform accessibility APIs, as well as the
+              the author conformance requirements for setting ARIA attributes.
+            </dd>
+            <dt><a href="https://www.w3.org/groups/wg/webperf">Web Performance</a></dt>
+            <dd>
+              For its work on page visibility, cooperative scheduling of background Tasks, preloading, and resource hints.
+            </dd>
+            <dt><a href="https://www.w3.org/groups/wg/media">Media Working Group</a></dt>
+            <dd>This Working Group  extends the HTMLMediaElement interface defined in HTML to allow JavaScript to generate media streams for playback, such as Media Source Extensions.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/webappsec">Web Application Security Working Group</a></dt>
+            <dd>
+              Specifications such as CSP provide inputs into the algorithms defined by the Fetch specification.
+            </dd>
+          </dl>
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="https://whatwg.org/">WHATWG</a></dt>
+            <dd>The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in
+                evolving the web through standards and tests.
+                HTML and DOM are developed principally in the WHATWG, in the WHATWG <a
+                  href='https://github.com/whatwg/html/'>HTML</a> and <a href='https://github.com/whatwg/dom/'>DOM</a>
+                workstreams.
+              </dd>
+          </dl>
+        </section>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">HTML Working Group home page.</a>
+        </p>
+        <p>
+          Most HTML Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work in <a id="public-github"
+            href="https://github.com/whatwg/">WHATWG GitHub repositories</a>. It may also use
+          the public mailing list <a id="public-name" href="mailto:public-html@w3.org">public-html@w3.org</a> (<a
+            href="https://lists.w3.org/Archives/Public/public-html/">archive</a>).
+        </p>
+        <p>
+          For extension specifications,
+          this group primarily conducts its technical work
+          through its own <a id="public-github-ext" href="https://github.com/w3c/htmlwg/">GitHub repositories</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          For the purpose of following its <a href='#workmode'>work mode</a>, this group will seek to make decisions
+          through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C
+            Process Document (section 3.3</a>). Typically, a participant makes an initial proposal, which is then refined
+          in discussion with members of the group and other reviewers, and consensus emerges with little formal voting
+          being required.</p>
+        <p>
+          However, if a decision is necessary for timely progress and consensus is not achieved after careful
+          consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+          with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+          decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey),
+          with a response period from one week to 10 working days, depending on the chair's evaluation of the group
+          consensus on the issue.
+
+          If no objections are raised on the mailing list by the end of the response period, the resolution will be
+          considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available
+          or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a
+            href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a> and
+          includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+        </p>
+        <p>
+          Contributions to the WHATWG <a href='https://github.com/whatwg/html/'>HTML</a> and <a
+            href='https://github.com/whatwg/dom/'>DOM</a> workstreams are covered by the
+          WHATWG Intellectual Property Rights Policy.
+          W3C will rely on that policy for assurance when advancing Review Drafts
+          to Recommendations.
+        </p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the CC-BY license, and follow the terms of
+        <a href="https://www.w3.org/2019/04/WHATWG-W3C-MOU.html">WHATWG-W3C
+          Memorandum of Understanding</a> and <a
+          href="https://www.w3.org/2021/06/WHATWG-W3C-MOU_2021_update.html">2021
+          Relationship Update</a></p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <ul class="list-no-bullets pl-0">
+            <li class="mb-2">
+            <b>            <a href="https://www.w3.org/2020/12/html-wg-charter.html">Chartered</a>
+                under the <a href="https://www.w3.org/Consortium/Patent-Policy-20200915/">Patent Policy 2020</a>                from <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2020OctDec/0039.html">2020-12-15                                        until 2021-06-01
+                                    </a>
+
+                                    <b>(active)</b>
+                            </b>            <ul class="list-no-bullets">
+                    <li>Extended until
+                            <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021AprJun/0039.html">2021-09-01</a>
+                        </li>
+                                    </ul>
+                    </li>
+            <li class="mb-2">
+                        <a href="https://www.w3.org/2019/06/htmlwg-charter.html">Chartered</a>
+                under the <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/">Patent Policy 2017</a>                from <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2019AprJun/0046.html">2019-06-06                                        until 2020-12-14
+                                    </a>
+
+                                                </li>
+        </ul>
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2019/06/htmlwg-charter.html">Initial Charter</a>
+                </th>
+                <td>
+                  6 June 2019
+                </td>
+                <td>
+                  14 December 2020
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2020/12/html-wg-charter.html">Rechartered</a>
+                </th>
+                <td>
+                  15 December 2020
+                </td>
+                <td>
+                  1 June 2021
+                </td>
+                <td>
+                  <p>Switched to Patent Policy 2020</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021AprJun/0039.html">Charter Extension</a>
+                </th>
+                <td>
+                  1 June 2021
+                </td>
+                <td>
+                  1 September 2021
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="@@">Rechartered</a>
+                </th>
+                <td>
+                  @@
+                </td>
+                <td>
+                  @@ + 2 years
+                </td>
+                <td>
+                  <p>Update to the WHATWG MOU. Added Fetch and Ruby Markup Extensions.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a href="mailto:mike@w3.org">Michael Smith</a>,
+            <a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2021
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+    </footer>
+
+  </body>
+</html>

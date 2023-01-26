@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>PNG Working Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">PROPOSED</i> PNG Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the
+        <a href="https://www.w3.org/Graphics/PNG/WG">PNG Working Group</a>
+        is to maintain and develop the
+        Portable Network Graphics (PNG) specification.</p>
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the PNG Working Group.</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+          </p>
+
+      <section id="details">
+        <table class="summary-table">
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i>
+            </td>
+          </tr>
+
+          <tr class="todo">
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              <i>Chris Blume (Google)</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contact
+            </th>
+            <td>
+              <a href="mailto:">Chris Lilley</a> <i>(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> topic-specific calls may be held as needed.
+              <br>
+              <strong>Face-to-face:</strong> we may meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+      <section class="background">
+        <h2>Background</h2>
+        <!-- <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p> -->
+        <p>
+          The Portable Network Graphics (PNG) raster image format
+          was <a href="http://www.libpng.org/pub/png/pnghist.html">first developed</a> in 1994
+           by an informal group outside W3C,
+           as an improvement to
+           the existing GIF and TIFF raster image formats.
+           Following widespread adoption,
+           it was published in October 1996 as a
+          <a href="https://www.w3.org/TR/REC-png-961001">W3C Recommendation</a>
+          and in March 1997 as
+          <a href="https://datatracker.ietf.org/doc/html/rfc2083">Informational RFC 2083</a>.
+        </p>
+        <p>
+          A second edition,
+          incorporating all known errata and substantial clarifications,
+          was jointly published by W3C, as
+          <a href="http://www.w3.org/TR/2003/REC-PNG-20031110">Portable Network Graphics (PNG) Specification (Second Edition)</a>,
+          and by ISO, as
+          <i>Information technology — Computer graphics and image processing — Portable Network Graphics (PNG): Functional specification. ISO/IEC 15948:2003 (E)</i>.
+          This specification is widely implemented;
+          most implementations rely on a standard library,
+          <a href="https://libpng.sourceforge.io/index.html">libpng</a>.
+        </p>
+        <p>
+          Since that time, <a href="http://www.w3.org/2003/11/REC-PNG-20031110-errata">errata</a> have accumulated
+          which require incorporation into a new edition.
+          These are <a href="https://github.com/w3c/PNG-spec/issues">tracked
+          on GitHub</a> and
+          an <a href="https://w3c.github.io/PNG-spec/">Editors Draft</a>
+          is being maintained which incorporates these errata
+          and updates referenced specifications
+          to the latest versions.
+          Correct resolution of some errata require further discussion.
+        </p>
+        <p>
+          In addition, some new features have been proposed.
+          Notably, an
+          <a href="https://wiki.mozilla.org/APNG_Specification">animation extension (APNG)</a>
+          is now <em>widely deployed</em> but,
+          because it is not part of the official standard,
+          is typically implemented as a patch or extension to libpng
+          (for example, <a href="https://github.com/onevcat/APNGKit">APNGKit</a>).
+          There is thus a need for a standardized specification which incorporates this already-deployed extension.
+          This will allow it to be supported directly in libpng.
+        </p>
+        <p>
+          Also, a means for
+          <a href="https://github.com/w3c/ColorWeb-CG/blob/master/hdr-in-png-requirements.md">Adding support for HDR imagery to the PNG format</a> has been incubated in the W3C
+          <a href="https://github.com/w3c/ColorWeb-CG">Color on the Web Community Group</a>. This re-uses the existing ITU H.273
+          controlled vocabulary for the parameterization of color space information.
+        </p>
+      </section>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+
+        <p>Maintain the PNG specification, folding in solutions to reported errata.</p>
+
+        <p>Add selected new features which will be broadly useful,
+          are demanded by users,
+          and have significant implementer interest.
+        </p>
+
+        <p>
+          When developing any new features,
+          the stability and interoperability with existing image files
+          and image creation and consuming software
+          will be a primary consideration.
+        </p>
+
+        <p>Work to ensure the PNG specification is well tested
+          and widely adopted.
+        </p>
+
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
+
+            <ul class="out-of-scope">
+              Changes that will invalidate existing files, editors, or viewers that conform to Portable Network Graphics (PNG) Specification (Second Edition).
+            </ul>
+        </section>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>Updated document status is available on the <!--a href="https://www.w3.org/groups/wg/png/publications"-->group publication status page<!--/a-->.</p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.
+           <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+        </p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+          <dl>
+            <dt id="PNG-speco" class="spec"><!--<a href="https://w3c.github.io/PNG-spec/"-->Portable Network Graphics (PNG) Specification (Third Edition)<!--</a--></dt>
+            <dd>
+              <p>Derived from the 2003
+                <a href="https://www.w3.org/TR/2003/REC-PNG-20031110/">
+                Portable Network Graphics (PNG) Specification (Second Edition)</a>,
+                which is a W3C Recommendation and ISO Standard,
+                this third edition will fold in errata,
+                update references,
+                and add carefully selected new features
+                which have substantial implementer interest
+                and good backwards compatibility.
+              </p>
+
+              <p class="draft-status"><b>Draft state:</b>
+                 <a href="https://w3c.github.io/PNG-spec/">Editor's Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">[two years after chartering]</i></p>
+   <!-- <dl><dt>
+    <p class="todo">Per <a href="https://www.w3.org/Consortium/Process/#WGCharter">5.2.6</a>, for every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter (including a predecessor group of the same name), for which there is an existing <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a>: </p>
+      <p><b>Adopted Draft:</b> The <span class="todo">title, stable URL, and publication date of the <a href="https://www.w3.org/Consortium/Process/#adopted-draft">Adopted Draft</a></span> which will serve as the basis for work on the deliverable.-->
+      <!-- this will be the Second Edition Recommendation from 2003 -->
+      <!-- <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
+        <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=32061">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
+        <!-- there was no exclusion opportunity -->
+      <!-- <p><b>Other Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published. -->
+        <!-- there was no W3C Working Group -->
+    <!-- </dd>
+              </dl> -->
+
+            </dl>
+
+
+        </section>
+
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+          <ul>
+            <li>Use case and requirement documents;</li>
+            <li>Test suite and implementation report for the specification;</li>
+            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+          </ul>
+        </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+            <ul>
+              <li>Sep 2021: First teleconference</li>
+              <li>Oct 2021: First virtual face-to-face meeting (TPAC)</li>
+              <li>Mar 2022: FPWD for PNG Third Edition</li>
+              <li>Jul 2022: WPT tests for new features in PNG Third Edition</li>
+              <li>Oct 2022: TPAC</li>
+              <li>Nov 2022: CR for PNG Third Edition</li>
+              <li>Sep 2023: REC for PNG Third Edition</li>
+            </ul>
+        </section>
+      </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+	  <p>
+      In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+	  <p>
+		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+		recommendations for maximising accessibility in implementations.</p>
+	  <p>
+      To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+      	<!-- <p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
+
+        See https://github.com/w3c/strategy/issues/268
+
+        -->
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <dt><a href="https://github.com/w3c/ColorWeb-CG">Color on the Web Community Group</a></dt>
+            <dd>Ensure that PNG meets the needs for Wide Color Gamut (WCG)
+              and High Dynamic Range (HDR) lossless raster imagery.
+            </dd>
+          </dl>
+
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="https://sourceforge.net/projects/libpng/">Libpng maintainers</a></dt>
+            <dd>Development will be undertaken in close cooperation
+              with the maintainers of the libpng library,
+              particularly regarding implementability,
+              backwards compatibility,
+              stability and security.
+            </dd>
+            <dt><a href="https://www.w3.org/TR/2003/REC-PNG-20031110/#F-Relationship">Original PNG specification authors</a></dt>
+            <dd>The PNG Working Group will encourage involvement by
+              any original authors who are still interested in PNG specification maintenance and development,
+              for example by granting Invited Expert status.
+            </dd>
+            <dt><a href="https://wiki.mozilla.org/APNG_Specification">APNG specification authors</a></dt>
+            <dd>The PNG Working Group will encourage involvement by
+              any APNG authors who are still interested in PNG specification maintenance and development,
+              for example by granting Invited Expert status.
+            </dd>
+            <dt>
+              <a href="https://www.iso.org/committee/45252.html">ISO/IEC JTC 1/SC 24</a>
+              <dd>If the PNG specification still falls within the scope of work of SC24,
+                explore the possibility of updating the PNG ISO Standard.
+              </dd>
+            </dt>
+          </dl>
+        </section>
+      </section>
+
+
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its
+
+          <!-- public mailing lists and  -->
+
+          document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <!--a href="https://www.w3.org/Graphics/PNG/WG"-->PNG Working Group home page.<!--/a-->
+        </p>
+        <p>
+          Most PNG Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work
+           on <a id="public-github" href="https://github.com/w3c/PNG-spec">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <!-- <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p> -->
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period of <span id='cfc'>one week</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+        </p>
+
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <!-- <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Initial Charter</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section> -->
+
+
+      </section>
+
+      <section id="changelog">
+        <h3>Change log</h3>
+
+        <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+        <p>Changes to this document are documented in this section.</p>
+        <!--
+        <dl id='changes'>
+          <dt>YYYY-MM-DD</dt>
+          <dd>[changes]]</dd>
+        </dl>
+        -->
+      </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a href="mailto:chris@w3.org">Chris Lilley</a>
+      </address>
+
+      <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2021
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (
+        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>,
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
+        ), All Rights Reserved.
+
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+      </p>
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>
