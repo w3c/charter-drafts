@@ -94,7 +94,7 @@
               Start date
             </th>
             <td>
-              2021-04-01
+              2023-06-01
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -102,7 +102,7 @@
               End date
             </th>
             <td>
-              2023-05-31
+              2025-05-31
             </td>
           </tr>
 	  <!--
@@ -166,32 +166,28 @@ it does not contain precise enough requirements for interoperability with the no
         <h3>Scope</h3>
 
 <p>
-The MathML Refresh Community Group (CG) was formed to begin revision of MathML to address perceived difficulties in the MathML 3 spec. The Math Working Group will advance, refine, and clarify the work begun by the MathML Refresh Community Group and ensure MathML&rsquo;s relevance continues to evolve, grow and improve. In particular, there are three 
-goals the Math WG will work toward:
+The existing WG has moved MathML Core and MathML 4 to CR. The continuation of this group will move
+these and the XML entities to recommendation status.
+The goals of these recommendations are:
 </p>
 <ul>
 <li>
 Wide adoption by browsers of a core set of presentational elements so that authors can be assured that mathematics will be displayed similarly in all browsers, without having to rely on external libraries to do the display.
 </li>
 <li>
-Increased accessibility of Presentation MathML for both
-mathematics and chemical formulas achieved by allowing a means 
+Increased accessibility of Presentation MathML for
+mathematical notation achieved by allowing a means 
 of specifying relevant mathematical intent, as well as by 
 providing guidelines for interpreting Presentation MathML in the 
 absence of additional information.
 </li>
-<li>
-Ensuring that mathematical formulations are better searchable.
-</li>
 </ul>
 <p>
-The Working Group will begin by providing a thorough review and refinement of MathML Core Level 1, a restricted form of MathML created by the MathML Refresh Community Group, which has done the initial hard work of largely aligning with features of the current Web platform and precisely defining MathML&#39;s rendering, including integration with current CSS and basic DOM, and providing tests and opening bugs.
+The Working Group will begin by providing a thorough review and refinement of MathML Core Level 1;s
+rendering, including integration with current CSS and basic DOM, and providing tests and opening bugs.
 </p>
 <p>
 The Working Group will take up new work, such as problems the CG identified as requiring better solutions in order to move MathML in the Web Platform forward, in proposing a MathML Core Level 2.
-</p>
-<p>
-The Working Group will also overhaul MathML 3 by building upon these fundamentals and experience with needs for accessibility, and on many years of practical experience and use (or lack thereof), to create a path forward to a MathML 4.
 </p>
 <p>
 The scope of the Math Working Group includes the following:
@@ -207,7 +203,7 @@ Development of a test suite to check conformance of implementations.
 Clarifications to the current use of Web Platform technologies, such as supported JavaScript APIs and CSS modules.
 </li>
 <li>
-Enhancements and improvements to internationalization.
+Enhancements and improvements to internationalization/localization in consultation with a broad international community.
 </li>
 <li>
 Continued integration of errata and bug fixes.
@@ -222,9 +218,8 @@ Integration of new and existing Web Platform technologies, including, but not li
 </ul>
 </li>
 <li>Integration with tools above and beyond browsers.</li>
-<li>Improvements to the MathML markup and processing model to enhance accessibility and searchability.</li>
-<li>Identification of normative requirements needed to ensure accessibility.</li>
-<li>Removing elements and attributes from MathML that have had minimal adoption.</li>
+<li>Refinements to the MathML markup and processing model that enhance accessibility.</li>
+<li>Depreciating elements and attributes from MathML that have had minimal adoption.</li>
 </ul>
 </section>
 <section id="section-out-of-scope">
@@ -232,7 +227,8 @@ Integration of new and existing Web Platform technologies, including, but not li
 
 <ul>
 <li>Changes that would cause legacy MathML that has significant usage to stop working on the Web Platform or elsewhere.</li>
-<li>Significant changes to Content MathML. These will be considered at a later time after gaining experience and feedback from proposed additions to enhance accessibility and searchability in Presentation MathML.</li>
+<li>Significant changes in MathML 4 to Content MathML beyond those useful for accessibility.
+Larger changes will be considered for MathML 5 after gaining experience and feedback from proposed additions to Presentation MathML.</li>
 </ul>
 </section>
 
@@ -260,8 +256,8 @@ Integration of new and existing Web Platform technologies, including, but not li
 <p>This specification provides an initial integration into the Web Platform with increased implementation details, focusing on a subset of MathML 3 which has had wide implementation and fits well with the platform. It details and relies on automated Web Platform tests to improve MathML interoperability. It provides the core layer of MathML support upon which MathML 4 can build. Authors can implement remaining features, or more generally extend MathML Core, using modern web technologies (e.g., by polyfills).</p>
 
 
-              <p class="draft-status"><b>Draft state:</b>  <a href="https://mathml-refresh.github.io/mathml-core/">Final Community Group Editors' Draft</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q2 2021</p>
+              <p class="draft-status"><b>Candidate Recomentation:</b>  <a href="https://mathml-refresh.github.io/mathml-core/">Final Community Group Editors' Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q1 2024</p>
     </dd>
 
 
@@ -276,19 +272,26 @@ Integration of new and existing Web Platform technologies, including, but not li
 
 
               <p class="draft-status"><b>Draft state:</b> No draft </p>
-  </dd>
+              <p class="milestone"><b>Expected completion:</b> Q2 2025</p>
+            </dd>
 
 
             <dt id="mathml4" class="spec"><a href="#">MathML 4</a></dt>
             <dd>
-<p>This specification will overhaul the existing MathML 3 specification, rebasing it on MathML Core Level 1. It will deprecate, make obsolete, or drop features that are not used and likely will not be used. 
-It will add attributes that allow specification of mathematical intent on Presentation MathML elements to enhance accessibility and searchability of math.</p>
+<p>This specification overhauls the existing MathML 3 specification, rebasing it on MathML Core Level 1. It deprecates, make obsoletes, and drop features that are not used and likely will not be used. 
+It adds attributes allows specification of mathematical intent on Presentation MathML elements to enhance accessibility and searchability of math.</p>
 
 
-              <p class="draft-status"><b>Draft state:</b> <a href="https://mathml-refresh.github.io/mathml/">Community Group's Initial Revision of MathML 3</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://mathml-refresh.github.io/mathml/">Candidate Recomentation</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2024</p>
+    </dd>
+            <dt id="mathml5" class="spec"><a href="#">MathML 5</a></dt>
+            <dd>
+<p>Collect requirements for MathML 5 based on deferred issues.
+  This includes potential work around content MathML which was excluded from the previous charter.</p>
 
-              <p><b>Adopt Draft:</b> <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language (MathML) Version 3.0 2nd Edition</a></p>
+
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
     </dd>
 
 	  </dl>
@@ -320,10 +323,10 @@ It will add attributes that allow specification of mathematical intent on Presen
           <h3>Timeline</h3>
 	  <p>These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.</p>
             <ul>
-              <li>April 2021: First teleconference</li>
-              <li>October 2021: First face-to-face meeting (TPAC)</li>
+              <li>June 2023: First teleconference</li>
+              <li>Sept 2023: First face-to-face meeting (TPAC)</li>
               <li>May 2021: FPWD, MathML Core Level 1 </li>
-              <li>August 2021: FPWD, MathML 4 </li>
+              <li>Mar 2024: PR, MathML 4 </li>
               <li>January 2022: MathML Core Test Suites</li>
               <li>January 2022: Implementation Report</li>
               <li>January 2022: Candidate Recommendation, MathML Core Level 1 </li>
