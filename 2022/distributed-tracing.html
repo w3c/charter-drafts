@@ -190,6 +190,7 @@
 
           <ul class="out-of-scope">
             <li>definition of (programming) language specific APIs for performance data collection; </li>
+            <li>browsers' built-in implementation of trace headers propagation; </li>
             <li>performance data analysis techniques or algorithms.</li>
           </ul>
         </section>
@@ -217,7 +218,8 @@
             <dd>
               <p>This specification is the update of <a href="https://www.w3.org/TR/trace-context-1/">Trace Context 1</a> which
                 defines headers and a value format to propagate context information that enables distributed tracing scenarios.
-                The new revision will include a mechanism to carry context information in protocol <em>responses</em>, including HTTP, thus
+                The new revisions will include an improved semantic of the header to use for scenarios requiring the randomness of identifiers alongside their uniqueness.
+                Future versions of the specification will also include mechanism to carry context information in protocol <em>responses</em>, including HTTP, thus
                 context information to be accessed within Web applications and carried over between cloud services.
                 The revision must define mechanisms that mitigate both <a href="https://www.w3.org/TR/fingerprinting-guidance/">fingerprinting</a>
                 and other <a href="https://www.w3.org/TR/security-privacy-questionnaire/">privacy risks</a> exposed by
@@ -228,12 +230,12 @@
 
                 This update is intended to include a mechanism to carry context information in protocol responses, thus allowing context information to be accessed in Web browsers.
               </p>
-            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2022/WD-trace-context-2-20220929/">Working Draft</a></p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2023/CR-trace-context-2-20230418/">Working Draft</a></p>
             <p class="milestone"><b>Expected completion:</b> Q4 2023</p>
-            <p><b>Adopted Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>2022-09-29</a></li>
-            <p><b>Exclusion Draft:</b> <a href='https://www.w3.org/TR/2022/WD-trace-context-2-20220929/'>https://www.w3.org/TR/2022/WD-trace-context-2-20220929/</a>,
+            <p><b>Adopted Draft:</b> <a href='https://www.w3.org/TR/2023/CR-trace-context-2-20230418/'>2023-04-18</a></li>
+            <p><b>Exclusion Draft:</b> <a href='https://www.w3.org/TR/2023/CR-trace-context-2-20230418/'>https://www.w3.org/TR/2023/CR-trace-context-2-20230418/</a>,
             associated <a href='https://www.w3.org/mid/cfe-10516-7be30be50df34d2d757f90ac32c4d6894b7904da@w3.org'>Call for Exclusion</a>
-on 2022-09-29, ending on 2023-02-26</i></p>
+on 2023-04-18, ending on 2023-TODO</i></p>
    <p><b>Exclusion Draft Charter:</b> <a href='https://www.w3.org/2020/08/distributed-tracing-wg-charter.html'>https://www.w3.org/2020/08/distributed-tracing-wg-charter.html</a>                                                            </li>
 </dd>
             <dt id='baggage' class='spec'><a href='https://www.w3.org/TR/baggage/' rel='versionof'>Propagation format for distributed context: Baggage</a></dt>
@@ -247,18 +249,6 @@ on 2022-09-29, ending on 2023-02-26</i></p>
 on 2020-10-20, ended on 2021-03-19.</p>
                 <p><b>Exclusion Draft Charter:</b> <a href='https://www.w3.org/2020/08/distributed-tracing-wg-charter.html'>https://www.w3.org/2020/08/distributed-tracing-wg-charter.html</a>                                                            </li>
             </dd>
-<dt class="spec">
-  <i>Trace Interchange Format</i>
-</dt>
-<dd>
-<p>This specification defines a standardized format to exchange trace data across multiple platforms.
-  <p class="draft-status">
-    <b>Draft state:</b>
-    <i>
-      Requirements Definition
-    </i>
-  </p>
-</dd>
 <dt class="spec">Trace Context: AMQP protocol</dt>
 <dd>
 <p>This is an extension document for the Trace Context specification. It defines the mapping of Trace Context fields to the AMQP protocol and specifics of AMQP implementation.</p>
@@ -310,7 +300,7 @@ on 2020-10-20, ended on 2021-03-19.</p>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-    <p>n order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites, and two or more implementations interoperating with each other. In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
+    <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites, and two or more implementations interoperating with each other. In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
 	  <p>Each specification should contain sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
 	  <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
@@ -338,7 +328,8 @@ on 2020-10-20, ended on 2021-03-19.</p>
             </dt>
             <dd>The trace context standard relates to work around Server Timing done within the Web Performance group. Going forward
                 it will make sense to define how trace context headers - specifically response headers - are related to the server timing header.
-                The trace interchange format also can be used to represent server timing data.
+                The Working Group should coordinate with the Web Performance Working Group to ensure that the two specifications are
+                aligned. Server timing headers may be used by applications to carry the trace context information as well as the baggage data.
             </dd>
           </dl>
         </section>
