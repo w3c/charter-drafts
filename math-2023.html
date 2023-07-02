@@ -60,7 +60,6 @@
           <li><a href="#communication">Communication</a></li>
           <li><a href="#decisions">Decision Policy</a></li>
           <li><a href="#patentpolicy">Patent Policy</a></li>
-          <li><a href="#patentpolicy">Patent Disclosures</a></li>
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
@@ -94,7 +93,7 @@
               Start date
             </th>
             <td>
-              2023-06-01
+              2023-08-21
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -102,23 +101,16 @@
               End date
             </th>
             <td>
-              2025-05-31
+              2025-07-30
             </td>
           </tr>
-	  <!--
-	  <tr class="todo">
-	     <th>Charter extension</th>
-											     <td>See <a href="#history">Change History</a>.
-											     </td>
-											  </tr>
-	  -->
 
           <tr>
             <th>
               Chairs
             </th>
             <td>
-              Brain Kardell (Igalia), Neil Soiffer (Talking Cat Software)
+              Brian Kardell (Igalia), Neil Soiffer (Talking Cat Software)
             </td>
           </tr>
           <tr>
@@ -134,7 +126,7 @@
               Meeting Schedule
             </th>
             <td>
-              <strong>Teleconferences:</strong> two 1-hour calls working on different aspects of MathML to be held weekly to resolve issues as needed. 
+              <strong>Teleconferences:</strong> two 1-hour calls working on different aspects of MathML to be held weekly to monthly to resolve issues as needed. 
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than one additional meeting per year.
             </td>
@@ -144,30 +136,25 @@
       </section>
 
 
-
-      <section id="scope" class="scope">
-        <h2>Scope</h2>
-
-	<section id="background">
-	  <h3>Background and Motivation</h3>
-<p>
-<a href="https://www.w3.org/Math/">MathML </a>
-is a markup language for encoding and communicating mathematics.The need for 
-mathematical rendering on the web was evident from the
-<a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html">earliest days of the Web at CERN</a>,
-and MathML was among the first specifications taken up and developed by the W3C in the mid to late 1990&#39;s XML/XHTML era.
-It received much attention and has created a vibrant ecosystem of implementations and integration outside of web browsers.
-At the start of 2023, Chromium support of MathML Core was enabled by default so that all major browsers now support MathML without the need of third party libraries.
-MathML Core is a subset of the full MathML recommendation. Additional work is needed to expand MathML Core to encompass more features used in mathematical layout and to resolve some open issues which were put off to a future time such as links in MathML.
-</p>
+<section id="background">
+  <h2>Background and Motivation</h2>
+  <p>
+  <a href="https://www.w3.org/Math/">MathML </a>
+  is a markup language for encoding and communicating mathematics.The need for 
+  mathematical rendering on the web was evident from the
+  <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html">earliest days of the Web at CERN</a>,
+  and MathML was among the first specifications taken up and developed by the W3C in the mid to late 1990&#39;s XML/XHTML era.
+  It received much attention and has created a vibrant ecosystem of implementations and integration outside of web browsers.
+  At the start of 2023, Chromium support of MathML Core was enabled by default so that all major browsers now support MathML without the need of third party libraries.
+  MathML Core is a subset of the full MathML recommendation. Additional work is needed to expand MathML Core to encompass more features used in mathematical layout and to resolve some open issues which were put off to a future time such as links in MathML.
+  </p>
 </section>
-
-      <section id="scope-inscope" class="scope">
-        <h3>Scope</h3>
+    
+<section id="scope" class="scope">
+  <h2>Scope</h2>
 
 <p>
-The existing WG has moved MathML Core to CR and expects to move MathML 4 to CR soon. The continuation of this group will move
-these and the XML entities to recommendation status.
+The existing WG plans to move MathML Core to CR in the very near future and expects to move MathML 4 in the fall. The continuation of this group will move these and the XML entities to recommendation status.
 The goals of these recommendations are:
 </p>
 <ul>
@@ -221,7 +208,6 @@ Integration of new and existing Web Platform technologies, including, but not li
 <li>Refinements to the MathML markup and processing model that enhance accessibility.</li>
 <li>Depreciating elements and attributes from MathML that have had minimal adoption.</li>
 </ul>
-</section>
 <section id="section-out-of-scope">
   <h3 id="out-of-scope">Out of Scope</h3>
 
@@ -256,8 +242,8 @@ Larger changes will be considered for MathML 5 after gaining experience and feed
 <p>This specification provides an initial integration into the Web Platform with increased implementation details, focusing on a subset of MathML 3 which has had wide implementation and fits well with the platform. It details and relies on automated Web Platform tests to improve MathML interoperability. It provides the core layer of MathML support upon which MathML 4 can build. Authors can implement remaining features, or more generally extend MathML Core, using modern web technologies (e.g., by polyfills).</p>
 
 
-              <p class="draft-status"><b>Candidate Recomentation:</b>  <a href="https://www.w3.org/TR/mathml-core/">
-                 Candidate Recommendation</a></p>
+              <p class="draft-status"><b>Working Draft:</b>  <a href="https://www.w3.org/TR/mathml-core/">
+                Working Draft</a></p>
               <p class="milestone"><b>Expected completion:</b> Q1 2024</p>
     </dd>
 
@@ -273,7 +259,7 @@ Larger changes will be considered for MathML 5 after gaining experience and feed
 
 
               <p class="draft-status"><b>Draft state:</b> No draft </p>
-              <p class="milestone"><b>First Working Draft:</b> Q3 2024</p>
+              <p class="milestone"><b>Working Draft:</b> Q3 2024</p>
             </dd>
 
 
@@ -340,7 +326,7 @@ It adds attributes allows specification of mathematical intent on Presentation M
 
 <p>The Math Working Group&rsquo;s work is considered a success if:</p>
 <ul>
-<li>There are independent, interoperable native implementations of MathML Core Level 1 that are widely used.</li>
+<li>There are at least two independent, interoperable native implementations of MathML Core Level 1 that are widely used.</li>
 <li>The larger Web Platform ecosystem shows signs of movement toward creating and using new MathML content, including direct use of core features aimed at improving accessibility by authoring tools and MathML converters.</li>
 <li>There is proven advancement and interest by implementers in MathML Core Level 2, exploring linking, better alignment with how the larger Web Platform evolves (Shadow DOM, Custom Elements, CSS).</li>
 <li>A MathML Full (MathML 4) specification, based on Core is published.</li>
@@ -348,6 +334,7 @@ It adds attributes allows specification of mathematical intent on Presentation M
 <li>There are significant testing plans, and all testable changes have tests.</li>
 <li>There is an AAM (Accessibility API Mapping) for MathML Core and there are considerations of the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</li>
 </ul>
+<p>The Math Working Group expects to follow the TAG Web Platform Design Principles.</p>
 
 	</section>
 
@@ -507,10 +494,9 @@ This may have an influence on the future evolution of MathML. Efforts to align M
           Patent Policy
         </h2>
         <p>
-	This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
-        </p>
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/[shortname]/ipr">licensing information</a>.       </p>
       </section>
 
 
@@ -527,15 +513,19 @@ This may have an influence on the future evolution of MathML. Efforts to align M
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
           <h3>
             Charter History
           </h3>
+          <p> The Math Working group was first chartered in 1998 and has produced three versions of MathML since then.
+              After the MathML 3 spec was released, the Working Group decided that a pause was needed and the group's charter
+              ended in 2016. The <a href="https://www.w3.org/community/mathml4/">MathML refresh community group</a> was formed form in 2019 to consider ideas for how to expand browser implementation of MathML and modernize the recommendation to be more in align with current the web platform. This eventually lead to the charter history shown below.
+          </p>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
           <table class="history">
             <tbody>
@@ -566,40 +556,32 @@ This may have an influence on the future evolution of MathML. Efforts to align M
                 <td>
                 </td>
               </tr>
-	      <!--
               <tr>
                 <th>
-                  <a class="todo" href="">Charter Extension</a>
+                  <a>Charter Extension</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  1 June, 2023
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  21 August, 2023
                 </td>
                 <td>
-                  <i class="todo">none</i>
                 </td>
               </tr>
-              <tr>
-                <th>
-                  <a class="todo" href="">Rechartered</a>
-                </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
-                </td>
-              </tr>
-	      -->
             </tbody>
           </table>
         </section>
-      </section>
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <p>Changes to this document are documented in this section.</p>
+          <dl id='changes'>
+            <dt>2021-05-20</dt>
+            <dd>Brian Kardell appointed as group co-chair</dd>
+          </dl>
+        </section>
+               </section>
     </main>
 
     <hr>
@@ -610,7 +592,7 @@ This may have an influence on the future evolution of MathML. Efforts to align M
       </address>
 
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2020
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2023
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
