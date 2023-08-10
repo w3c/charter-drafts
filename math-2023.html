@@ -93,7 +93,7 @@
               Start date
             </th>
             <td>
-              2023-08-21
+              TBD
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -101,7 +101,7 @@
               End date
             </th>
             <td>
-              2025-07-30
+              TBD + 2 years
             </td>
           </tr>
 
@@ -244,7 +244,7 @@ Larger changes will be considered for MathML 5 after gaining experience and feed
 
               <p class="draft-status"><b>Working Draft:</b>  <a href="https://www.w3.org/TR/mathml-core/">
                 Working Draft</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q1 2024</p>
+              <p class="milestone"><b>Expected completion:</b> TBD + 9 months</p>
     </dd>
 
 
@@ -259,7 +259,7 @@ Larger changes will be considered for MathML 5 after gaining experience and feed
 
 
               <p class="draft-status"><b>Draft state:</b> No draft </p>
-              <p class="milestone"><b>Working Draft:</b> Q3 2024</p>
+              <p class="milestone"><b>Working Draft:</b> TBD + 18 months</p>
             </dd>
 
 
@@ -269,8 +269,8 @@ Larger changes will be considered for MathML 5 after gaining experience and feed
 It adds attributes allows specification of mathematical intent on Presentation MathML elements to enhance accessibility of math.</p>
 
 
-              <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/mathml//">Working Draft (moving to CR soon)</a></p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2024</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/mathml//">Working Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> TBD + 20 months</p>
     </dd>
             <dt id="mathml5" class="spec"><a href="#">MathML 5</a></dt>
             <dd>
@@ -279,6 +279,7 @@ It adds attributes allows specification of mathematical intent on Presentation M
 
 
               <p class="draft-status"><b>Draft state:</b> No draft</p>
+              <p class="milestone"><b>Working Draft:</b> TBD + 24 months</p>
     </dd>
 
 	  </dl>
@@ -309,31 +310,59 @@ It adds attributes allows specification of mathematical intent on Presentation M
           <h3>Timeline</h3>
 	  <p>These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.</p>
             <ul>
-              <li>June 2023: First teleconference</li>
-              <li>August 2023: Candidate Recommendation, MathML 4</li>
-              <li>August 2023: Implementation of MathML-to-speech/braille that makes use of accessibility annotations</li>
-              <li>Sept 2023: First face-to-face meeting (TPAC)</li>
-              <li>Mar 2024: PR, MathML Core</li>
-              <li>Sept 2024: Second face-to-face meeting (TPAC)</li>
-              <li>Sept 2024: FPWD, MathML Core Level 2</li>
-              <li>June 2024: PR MathML 4</li>
+              <li>TBD: First teleconference</li>
+              <li>TBD + 3 months: Candidate Recommendation, MathML Core</li>
+              <li>TBD + 5 months: Candidate Recommendation, MathML 4</li>
+              <li>TBD + 5 months: An implementation of MathML-to-speech/braille that makes use of accessibility annotations</li>
+              <li>TBD + 9 months: Proposed Recommendation, MathML Core</li>
+              <li>Sept 2024: First face-to-face meeting (TPAC)</li>
+              <li>TBD + 18 months: First Public Working Draft, MathML Core Level 2</li>
+              <li>TBD + 20 months: Proposed Recommendation MathML 4</li>
+              <li>Sept 2025: Second face-to-face meeting (TPAC)</li>
+              <li>TBD + 24 months: First Public Working Draft, MathM 5</li>
             </ul>
         </section>
       </section>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
+    <p>In order to advance to 
+    <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have 
+    <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable
+      implementations</a> of every feature defined in the specification, where
+interoperability can be verified by passing open test suites, and two or
+more implementations interoperating with each other. In order to advance to
+Proposed Recommendation, each normative specification must have an open
+test suite of every feature defined in the specification.</p>
+<p>The larger Web Platform ecosystem shows signs of movement toward creating and using new MathML content,
+  including direct use of core features and direct use of new accessibility features by authoring tools that create MathML content.
+  Additionally, at least two assistive technology products make use of the accessibility features when they are present in MathML content.
+</p>
+<p>There is proven advancement and interest by implementers in MathML Core Level 2, exploring linking,
+  better alignment with how the larger Web Platform evolves (Shadow DOM, Custom Elements, CSS).
+</p>
+  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+  <p>To promote interoperability, all changes made to specifications 
+    in Candidate Recommendation 
+    or to features that have deployed implementations
+    should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.  
+    Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
 
-<p>The Math Working Group&rsquo;s work is considered a success if:</p>
-<ul>
-<li>There are at least two independent, interoperable native implementations of MathML Core Level 1 that are widely used.</li>
-<li>The larger Web Platform ecosystem shows signs of movement toward creating and using new MathML content, including direct use of core features aimed at improving accessibility by authoring tools and MathML converters.</li>
-<li>There is proven advancement and interest by implementers in MathML Core Level 2, exploring linking, better alignment with how the larger Web Platform evolves (Shadow DOM, Custom Elements, CSS).</li>
-<li>A MathML Full (MathML 4) specification, based on Core is published.</li>
-<li>Each specification contains a section detailing all known security and privacy implications for implementers, Web authors, and end users.</li>
-<li>There are significant testing plans, and all testable changes have tests.</li>
-<li>There is an AAM (Accessibility API Mapping) for MathML Core and there are considerations of the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</li>
-</ul>
+  <!-- Horizontal review -->
+
+  <p>Each specification should contain sections detailing 
+  security and privacy implications for implementers, 
+  Web authors, and end users, 
+  as well as recommendations for mitigations.
+  There should be a clear description of the residual risk 
+  to the user or operator of that protocol 
+  after threat mitigation has been deployed.</p>
+
+  <p>Each specification should contain a section on accessibility that describes the benefits and impacts,
+    including ways specification features can be used to address them, and
+  recommendations for maximizing accessibility in implementations.</p>
+
+
 <p>The Math Working Group expects to follow the TAG Web Platform Design Principles.</p>
 
 	</section>
