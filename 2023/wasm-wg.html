@@ -193,8 +193,9 @@
 			<li>Exception handling</li>
 			<li>Garbage-collected object support</li>
 			<li>Stack switching</li>
-			<li>Component Model</li>
+			<li>Cross-language/-toolchain interoperability</li>
 	</ul>
+     Incorporation of these features into the normative specifications mentioned below depends on a feature proposal following the WebAssembly Community Group's <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md">phase-advancement process</a> and successfully reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>.
 
         <section id="normative">
           <h3>
@@ -212,10 +213,10 @@
                <dd>This document provides an explicit JavaScript API for interacting with WebAssembly.</dd>
           </dl>
           <p>
-            The Working Group will also deliver the following new specifications:
+            Contingent on the <a href="https://github.com/WebAssembly/component-model">Component Model proposal</a> reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>, the Working Group also aims to deliver the following new specification:
           <dl>
               <dt class="spec">Component Model</dt>
-               <dd>This document will define what a WebAssembly “component” is, and will define the embedding of components into native JavaScript runtimes.</dd>
+               <dd>This document will define a standard, portable, lightweight, finely-sandboxed, cross-language, compositional module called a “component”, layered on top of the WebAssembly Core Specification. Like Core WebAssembly, the Component Model adds no new capabilities to the Web Platform and can be faithfully implemented by translation to JavaScript. See the <a href="https://github.com/WebAssembly/component-model">proposal repository</a> for high-level concepts, goals and use cases along with a low-level detailed walkthrough.</dd>
           </dl>
         </section>
 
