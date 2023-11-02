@@ -2,9 +2,11 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+
     <title>
       [DRAFT] Devices and Sensors Working Group Charter
     </title>
+
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
@@ -46,6 +48,8 @@
       footer {
         font-size: small;
       }
+
+      /* custom */
       #navbar
       {
         font-size: small;
@@ -63,43 +67,27 @@
     </style>
   </head>
   <body>
-    <div id="template">
+    <header id="header">
+      <aside>
       <ul id="navbar">
-        <li>
-          <a href="#goals">Goals</a>
-        </li>
-        <li>
-          <a href="#scope">Scope</a>
-        </li>
-        <li>
-          <a href="#success-criteria">Success Criteria</a>
-        </li>
-        <li>
-          <a href="#deliverables">Deliverables</a>
-        </li>
-        <li>
-          <a href="#coordination">Dependencies</a>
-        </li>
-        <li>
-          <a href="#participation">Participation</a>
-        </li>
-        <li>
-          <a href="#communication">Communication</a>
-        </li>
-        <li>
-          <a href="#decisions">Decision Policy</a>
-        </li>
-        <li>
-          <a href="#patentpolicy">Patent Policy</a>
-        </li>
-        <li>
-          <a href="#about">About this Charter</a>
-        </li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
       </ul>
+      </aside>
       <p>
         <a href="https://www.w3.org/"><img alt="W3C" src=
         "https://www.w3.org/Icons/w3c_home.png" height="48" width="72"></a>
       </p>
+    </header>
+    <main>
       <h1 id="title">
         [DRAFT] Devices and Sensors Working Group Charter
       </h1>
@@ -117,12 +105,23 @@
         enable the development of web applications that interact with device
         capabilities.
       </p>
-      <p>
+      <div class="noprint">
+      <p class="join">
         <a href="https://www.w3.org/groups/wg/das/join">Join the
         Devices and Sensors Working Group</a>.
       </p>
+      </div>
+      <div id="details">
       <table class="summary-table">
         <tbody>
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a href="https://www.w3.org/groups/wg/das/charters">group status page</A> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>		
           <tr id="Duration">
             <th>
               Start date
@@ -165,8 +164,9 @@
           </tr>
         </tbody>
       </table>
-      <div class="scope">
-        <h2 id="scope">
+      </div>
+      <section id="scope" class="scope">
+        <h2>
           Scope
         </h2>
         <p>
@@ -180,15 +180,14 @@
           </li>
           <li>preventing the screen or system from turning off
           </li>
-          <li>monitoring the presence of nearby objects without physical
-          contact
+          <li>accessing nearby devices without physical contact
           </li>
-          <li>monitoring the ambient light level of the device’s environment
+          <li>responding to ambient light levels of the device’s environment
           </li>
-          <li>monitoring changes in motion and orientation of the hosting
+          <li>reacting to changes in motion or orientation of the hosting
           device
           </li>
-          <li>obtaining and monitoring the location of the hosting device
+          <li>providing location information, either of the hosting device or of a location of interest
           </li>
         </ul>
         <p>
@@ -232,11 +231,12 @@
             Hardware security services are out of scope for this WG.
           </p>
         </div>
-      </div>
-      <div class="deliverables">
-        <h2 id="deliverables">
+      </section>
+      <section id="deliverables" class="deliverables">
+        <h2>
           Deliverables
         </h2>
+        <section id="normative">
         <h3 id="rec-track">
           Normative Specifications
         </h3>
@@ -618,7 +618,9 @@
             </p>
           </dd>
         </dl>
-        <h3 id="tentative">
+        </section>
+        <section id="tentative">
+        <h3>
           Tentative Deliverables
         </h3>
         <p>
@@ -665,6 +667,8 @@
             </p>
           </dd>
         </dl>
+        </section>
+        <section id="deliverables-maintenance">
         <h3>
           Maintenance
         </h3>
@@ -690,7 +694,9 @@
           href="https://www.w3.org/2019/04/WHATWG-W3C-MOU.html">Memorandum of
           Understanding Between W3C and WHATWG</a>.
         </p>
-        <h3 id="add-new">
+        </section>
+        <section id="add-new">
+        <h3>
           Adding new Recommendation-track deliverables
         </h3>
         <p>
@@ -704,7 +710,9 @@
           Platform Incubator Community Group</a> or another similar incubation
           phase.
         </p>
-        <h3 id="other-deliverables">
+        </section>
+        <section id="other-deliverables">
+        <h3>
           Other Deliverables
         </h3>
         <p>
@@ -718,6 +726,8 @@
           concrete best practices, design patterns, and mitigation strategies
           that cater to web developers to raise awareness.
         </p>
+        </section>
+        <section id="timeline">
         <h3>
           Timeline
         </h3>
@@ -1058,14 +1068,15 @@
           on the <a href="https://www.w3.org/das/roadmap">group home
           page</a></em>.
         </p>
-      </div>
-      <div class="success-criteria">
-        <h2 id="success-criteria">
+        </section>
+      </section>
+      <section id="success-criteria" class="success-criteria">
+        <h2>
           Success Criteria
         </h2>
         <p>
-          To advance to Proposed Recommendation, each specification must have
-          two independent implementations of all defined features, at least one
+          To advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification must have
+          <a href="https://www.w3.org/Consortium/Process/#implementation-experience">two independent implementations</a> of all defined features, at least one
           of which is on a mobile device.
         </p>
         <p>
@@ -1131,18 +1142,15 @@
               label to follow up later.
             </p>
           </blockquote>
-      </div>
-      <div class="dependencies">
-        <h2 id="coordination">
+      </section>
+      <section id="coordination" class="dependencies">
+        <h2>
           Coordination
         </h2>
-        <h3>
-          W3C Groups
-        </h3>
         <p>
           For all specifications, this Working Group will seek <a href=
           "https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal
-          review</a> for accessibility, internationalization, performance,
+          review</a> for accessibility, internationalization, 
           privacy, and security with the relevant Working and Interest Groups,
           and with the <a href="https://www.w3.org/2001/tag/" title=
           "Technical Architecture Group">TAG</a>. Invitation for review must be
@@ -1163,6 +1171,8 @@
           "https://www.w3.org/Consortium/Process/#WGCharter">W3C Process
           Document</a>:
         </p>
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
         <dl>
           <dt>
             <a href="https://www.w3.org/groups/wg/webappsec">Web Application
@@ -1190,7 +1200,12 @@
           <dd>
             This group defines relevant specifications including the <a href=
             "https://www.w3.org/TR/FileAPI/">File API</a> and <a href=
-            "https://www.w3.org/TR/appmanifest/">Web App Manifest</a>.
+            "https://www.w3.org/TR/appmanifest/">Web App Manifest</a>.<br>
+            The <a href="https://www.w3.org/TR/wake-lock/">Screen Wake Lock API</a>, 
+            the <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event specification</a>, 
+            the <a href="https://www.w3.org/TR/contact-picker/">Contact Picker API</a>, 
+            and the <a href="https://www.w3.org/TR/2022/REC-geolocation-20220901/">Geolocation API</a>
+            are joint deliverables with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
           </dd>
           <dt>
             <a href="https://www.w3.org/groups/wg/webrtc">Web Real Time Communications Working
@@ -1219,10 +1234,9 @@
             Coordinate on accessibility of user interface features implied by the APIs.
           </dd>
         </dl>
-        <div>
-          <h3>
-            External Groups
-          </h3>
+        </section>
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
           <p>
             The following is a tentative list of external bodies the Working
             Group should collaborate with:
@@ -1252,10 +1266,10 @@
               specifications in this WG’s scope extend.
             </dd>
           </dl>
-        </div>
-      </div>
-      <div class="participation">
-        <h2 id="participation">
+        </section>
+      </section>
+      <section id="participation" class="participation">
+        <h2>
           Participation
         </h2>
         <p>
@@ -1296,12 +1310,12 @@
           "https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional
           Conduct</a>.
         </p>
-      </div>
-      <div class="communication">
+      </section>
+      <section class="communication">
         <h2 id="communication">
           Communication
         </h2>
-        <p>
+        <p id="public">
           Technical discussions for this Working Group are conducted in
           <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">
           public</a>: the meeting minutes from teleconference and face-to-face
@@ -1334,16 +1348,14 @@
           group, for Member-only discussions in special cases when a particular
           participant requests such a discussion.
         </p>
-      </div>
-      <div class="decisions">
+      </section>
+      <section class="decisions">
         <h2 id="decisions">
           Decision Policy
         </h2>
         <p>
           This group will seek to make decisions through consensus and due
-          process, per the <a href=
-          "https://www.w3.org/Consortium/Process/#Consensus">W3C Process
-          Document (section 3.3)</a>. Typically, an editor or other participant
+          process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant
           makes an initial proposal, which is then refined in discussion with
           members of the group and other reviewers, and consensus emerges with
           little formal voting being required.
@@ -1368,63 +1380,48 @@
         <p>
           All decisions made by the group should be considered resolved unless
           and until new information becomes available, or unless reopened at
-          the discretion of the Chairs or the Director.
+          the discretion of the Chairs.
         </p>
         <p>
-          This charter is written in accordance with the <a href=
-          "https://www.w3.org/Consortium/Process/policies#Votes">W3C Process
-          Document (Section 3.4, Votes)</a>, and includes no voting procedures
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a>, and includes no voting procedures
           beyond what the Process Document requires.
         </p>
-      </div>
-      <div class="patent">
-        <h2 id="patentpolicy">
+      </section>
+      <section id="patentpolicy" class="patent">
+        <h2>
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href=
-          "https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>
-          (15 September 2020). To promote the
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the
           widest adoption of Web standards, W3C seeks to issue Recommendations
           that can be implemented, according to this policy, on a Royalty-Free
           basis. For more information about disclosure obligations for this
-          group, please see the <a href=
-          "https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy
-          Implementation</a>.
+          group, please see the <a href="https://www.w3.org/groups/wg/das/ipr">licensing information</a>.
         </p>
-      </div>
-      <div class="licensing">
-        <h2 id="licensing">
+      </section>
+      <section id="licensing" class="licensing">
+        <h2>
           Licensing
         </h2>
         <p>
-          This Working Group will use the <a href=
-          'https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document.html'>
-          W3C Software and Document license</a> for all its deliverables.
+          This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.
         </p>
-      </div>
-      <div class="patent">
-        <h2 id="about">
+      </section>
+      <section id="about">
+        <h2>
           About this Charter
         </h2>
         <p>
-          This charter for this Working Group has been created according to
-          <a href=
-          "https://www.w3.org/Consortium/Process/groups#GAGeneral">section
-          5.2</a> of the <a href=
-          "https://www.w3.org/Consortium/Process">Process Document</a>. In the
-          event of a conflict between this document or the provisions of any
-          charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
-        <h3 id="history">
+
+        <section id="history">
+        <h3>
           Charter history
         </h3>
-        <p>
-          The following table lists details of all changes from the initial
-          charter, per the <a href=
-          "https://www.w3.org/Consortium/Process/#CharterReview">W3C Process
-          Document (section 5.2.3)</a>:
-        </p>
+
+        <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
         <table class="history">
           <tbody>
             <tr>
@@ -1607,6 +1604,22 @@
             </tr>
           </tbody>
         </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
 
         <hr>
 
