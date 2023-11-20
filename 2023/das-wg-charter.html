@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      [DRAFT] Devices and Sensors Working Group Charter
+    </title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+
+      /* custom */
+      #navbar
+      {
+        font-size: small;
+      }
+      .complete
+      {
+        font-weight: bold;
+      }
+      .roadmap { width: 80%;}
+      .roadmap tr td:nth-child(2) { background: #FED }
+      .roadmap tr td:nth-child(3) { background: #FCB }
+      .roadmap tr td:nth-child(4) { background: #FA9 }
+      .roadmap tr td:nth-child(5) { background: #F87 }
+      .roadmap tr td:nth-child(6) { background: #F60 }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+      <ul id="navbar">
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" src=
+        "https://www.w3.org/Icons/w3c_home.png" height="48" width="72"></a>
+      </p>
+    </header>
+    <main>
+      <h1 id="title">
+        [DRAFT] Devices and Sensors Working Group Charter
+      </h1>
+      <p>
+        <em>This is a draft revised Devices and Sensors Working Group charter
+        for discussion. It has no standing. See also the <a href=
+        "https://www.w3.org/2022/11/das-wg-charter.html">charter
+        under which the Devices and Sensors Working Group</a> currently
+        operates.</em>
+      </p>
+      <p class="mission">
+        The <strong>mission</strong> of the <a href=
+        "https://www.w3.org/groups/wg/das">Devices and Sensors Working Group</a> (DAS
+        WG) is to create secure and privacy-preserving client-side APIs that
+        enable the development of web applications that interact with device
+        capabilities.
+      </p>
+      <div class="noprint">
+      <p class="join">
+        <a href="https://www.w3.org/groups/wg/das/join">Join the
+        Devices and Sensors Working Group</a>.
+      </p>
+      </div>
+      <div id="details">
+      <table class="summary-table">
+        <tbody>
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a href="https://www.w3.org/groups/wg/das/charters">group status page</A> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>		
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td><i class="todo">TBD</i></td>
+          </tr>
+          <tr id="CharterEnd">
+            <th rowspan="1" colspan="1">
+              End date
+            </th>
+            <td rowspan="1" colspan="1">
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">
+              Chairs
+            </th>
+            <td rowspan="1" colspan="1">
+              Anssi Kostiainen (Intel), Reilly Grant (Google)
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">
+              Team Contact<br>
+              (FTE %: 10)
+            </th>
+            <td rowspan="1" colspan="1">
+              Atsushi Shimono
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">
+              Usual Meeting Schedule
+            </th>
+            <td rowspan="1" colspan="1">
+              Teleconferences: topic-specific calls may be held<br>
+              Face-to-face: 1 or 2 per year (only as needed)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <section id="scope" class="scope">
+        <h2>
+          Scope
+        </h2>
+        <p>
+          The Devices and Sensors WG defines client-side APIs that allow web
+          applications to make use of widely available device capabilities that
+          enable modern, context-aware, and interactive application
+          experiences. These capabilities include:
+        </p>
+        <ul>
+          <li>reacting to device power status
+          </li>
+          <li>preventing the screen or system from turning off
+          </li>
+          <li>accessing nearby devices without physical contact
+          </li>
+          <li>responding to ambient light levels of the device’s environment
+          </li>
+          <li>reacting to changes in motion or orientation of the hosting
+          device
+          </li>
+          <li>providing location information, either of the hosting device or of a location of interest
+          </li>
+        </ul>
+        <p>
+          To fulfill its mission and to encourage broader engagement from
+          implementers and web developers alike, this WG is committed to
+          <strong>security and privacy focused</strong> and <strong>use
+          case-driven</strong> specification development.
+        </p>
+        <p>
+          As per the commitment to <strong>secure and
+          privacy-preserving</strong> specifications, APIs in scope that expose
+          sensitive data will define normative mitigations to address any
+          known security and privacy threats. These mitigations are developed
+          and reviewed together with the security and privacy community and
+          incorporated normatively into the respective specifications. In
+          addition, the WG produces non-normative security and privacy
+          explainers that describe concrete best practices, design patterns,
+          and mitigation strategies that cater to web developers to raise
+          awareness.
+        </p>
+        <p>
+          The group will document <strong>use cases and requirements</strong>
+          that inform the scope of the technical work to ensure the APIs limit
+          their functionality and data exposure to the minimum required to
+          implement real-world use cases adhering to the principles of data
+          minimization. Applicability of mitigation strategies such as data
+          quantization and permissions grants will be assessed on a use-case
+          basis considering the requirements derived from real-world use cases.
+        </p>
+        <p>
+          The WG will reuse existing security and privacy-focused web features
+          and APIs developed in other groups where applicable. If the existing
+          solutions do not provide the level of protection required, the WG
+          will explore innovative new security and privacy mechanisms.
+        </p>
+        <div id="section-out-of-scope">
+          <h3 id="out-of-scope">
+            Out of Scope
+          </h3>
+          <p>
+            Hardware security services are out of scope for this WG.
+          </p>
+        </div>
+      </section>
+      <section id="deliverables" class="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+        <section id="normative">
+        <h3 id="rec-track">
+          Normative Specifications
+        </h3>
+        <p>
+          The Working Group will deliver the following W3C normative
+          specifications:
+        </p>
+        <dl>
+          <dt id="battery">
+            <a href="https://www.w3.org/TR/battery-status/">Battery Status
+            API</a>
+          </dt>
+          <dd>
+            <p>
+              An API to react to a device power status
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2022/WD-battery-status-20220203/">https://www.w3.org/TR/2022/WD-battery-status-20220203/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "http://www.w3.org/TR/2016/CR-battery-status-20160707/">http://www.w3.org/TR/2016/CR-battery-status-20160707/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/wake-lock/">Screen Wake Lock API</a>
+          </dt>
+          <dd>
+            <p>
+              An API to prevent the screen from turning off
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-screen-wake-lock-20230719/">https://www.w3.org/TR/2023/WD-screen-wake-lock-20230719/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2017/CR-wake-lock-20171214/">https://www.w3.org/TR/2017/CR-wake-lock-20171214/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+            <p class="issue">
+              <b>Note:</b> This work is a joint deliverable with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
+            </p>
+        </dd>
+          <dt>
+            System Wake Lock API
+          </dt>
+          <dd>
+            <p>
+              An API to prevent the CPU from entering a deep power state
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> ED
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2017/CR-wake-lock-20171214/">https://www.w3.org/TR/2017/CR-wake-lock-20171214/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2017/CR-wake-lock-20171214/">https://www.w3.org/TR/2017/CR-wake-lock-20171214/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/generic-sensor/">Generic Sensor
+            API</a>
+          </dt>
+          <dd>
+            <p>
+              An API that serves as a basis for APIs that retrieve data from
+              sensors
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Candidate Recommendation
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/CRD-generic-sensor-20230810/">https://www.w3.org/TR/2023/CRD-generic-sensor-20230810/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/">https://www.w3.org/TR/2019/CR-generic-sensor-20191212/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2019/03/devices-sensors-wg-charter.html">https://www.w3.org/2019/03/devices-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/proximity/">Proximity Sensor</a>
+          </dt>
+          <dd>
+            <p>
+              An API to monitor the presence of nearby objects without physical
+              contact
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-proximity-20230130/">https://www.w3.org/TR/2023/WD-proximity-20230130/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "http://www.w3.org/TR/2012/WD-proximity-20121206/">http://www.w3.org/TR/2012/WD-proximity-20121206/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "http://www.w3.org/2011/07/DeviceAPICharter.html">http://www.w3.org/2011/07/DeviceAPICharter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/ambient-light/">Ambient Light
+            Sensor</a>
+          </dt>
+          <dd>
+            <p>
+              An API to monitor the ambient light level of the device’s
+              environment
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-ambient-light-20230721/">https://www.w3.org/TR/2023/WD-ambient-light-20230721/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2018/CR-ambient-light-20180320/">https://www.w3.org/TR/2018/CR-ambient-light-20180320/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/accelerometer/">Accelerometer</a>
+          </dt>
+          <dd>
+            <p>
+              An API to monitor acceleration in the device's three
+              primary axes
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Candidate Recommendation
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/CRD-accelerometer-20230130/">https://www.w3.org/TR/2023/CRD-accelerometer-20230130/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2019/CR-accelerometer-20191212/">https://www.w3.org/TR/2019/CR-accelerometer-20191212/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2019/03/devices-sensors-wg-charter.html">https://www.w3.org/2019/03/devices-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/gyroscope/">Gyroscope</a>
+          </dt>
+          <dd>
+            <p>
+              An API to monitor the rate of rotation around the device’s three
+              primary axes
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Candidate Recommendation
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/CRD-gyroscope-20230130/">https://www.w3.org/TR/2023/CRD-gyroscope-20230130/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2019/CR-gyroscope-20191212/">https://www.w3.org/TR/2019/CR-gyroscope-20191212/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2019/03/devices-sensors-wg-charter.html">https://www.w3.org/2019/03/devices-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/magnetometer/">Magnetometer</a>
+          </dt>
+          <dd>
+            <p>
+              An API to measure the magnetic field around the device’s three
+              primary axes
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Candidate Recommendation
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-magnetometer-20230130/">https://www.w3.org/TR/2023/WD-magnetometer-20230130/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2018/CR-magnetometer-20180320/">https://www.w3.org/TR/2018/CR-magnetometer-20180320/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/orientation-sensor/">Orientation
+            Sensor</a>
+          </dt>
+          <dd>
+            <p>
+              An API to monitor the device’s physical orientation in relation
+              to a stationary three dimensional Cartesian coordinate system
+            </p>
+            <p class="draft-status">
+              <b>Draft state:</b> Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-orientation-sensor-20230801/">https://www.w3.org/TR/2023/WD-orientation-sensor-20230801/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/">https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2019/03/devices-sensors-wg-charter.html">https://www.w3.org/2019/03/devices-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href=
+            "https://www.w3.org/TR/orientation-event/">DeviceOrientation Event
+            specification</a>
+          </dt>
+          <dd>
+            <p>
+              An event-based API that provides information about the physical
+              orientation and motion of a hosting device
+            </p>
+            <p>
+              <b>Draft state</b>: Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-orientation-event-20230421/">https://www.w3.org/TR/2023/WD-orientation-event-20230421/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2016/CR-orientation-event-20160818/">https://www.w3.org/TR/2016/CR-orientation-event-20160818/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2016/03/device-sensors-wg-charter.html">https://www.w3.org/2016/03/device-sensors-wg-charter.html</a>
+            </p>
+            <p class="issue">
+              <b>Note:</b> This work is a joint deliverable with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/geolocation-sensor/">Geolocation
+            Sensor</a>
+          </dt>
+          <dd>
+            <p>
+              An API for obtaining geolocation reading from the hosting device,
+              based on the Generic Sensor API
+            </p>
+            <p>
+              <b>Draft state</b>: Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2022/WD-geolocation-sensor-20220316/">https://www.w3.org/TR/2022/WD-geolocation-sensor-20220316/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2018/WD-geolocation-sensor-20180821/">https://www.w3.org/TR/2018/WD-geolocation-sensor-20180821/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2018/06/devices-sensors-wg-charter.html">https://www.w3.org/2018/06/devices-sensors-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/device-posture/">Device Posture API</a>
+          </dt>
+          <dd>
+            <p>
+              An API that allows web applications to request and be notified of changes of the posture of a foldable device. (Formerly the Fold Angle Sensor API.)
+            </p>
+            <p>
+              <b>Draft state</b>: Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-device-posture-20230404/">https://www.w3.org/TR/2023/WD-device-posture-20230404/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2020/WD-screen-fold-20201217/">https://www.w3.org/TR/2020/WD-screen-fold-20201217/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2020/11/das-wg-charter.html">https://www.w3.org/2020/11/das-wg-charter.html</a>
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/contact-picker/">Contact Picker API
+            </a>
+          </dt>
+          <dd>
+            <p>
+              An API to give one-off access to a user’s contact information with full control over the shared data
+            </p>
+            <p>
+              <b>Draft state</b>: Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-contact-picker-20230308/">https://www.w3.org/TR/2023/WD-contact-picker-20230308/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2022/WD-contact-picker-1-20221220/">https://www.w3.org/TR/2022/WD-contact-picker-1-20221220/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2022/11/das-wg-charter.html">https://www.w3.org/2022/11/das-wg-charter.html</a>
+            </p>
+            <p class="issue">
+              <b>Note:</b> This work is a joint deliverable with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
+            </p>
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/TR/compute-pressure/">Compute Pressure
+            </a>
+          </dt>
+          <dd>
+            <p>
+              An API that conveys the utilization of CPU resources on the user's device
+            </p>
+            <p>
+              <b>Draft state</b>: Working Draft
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://www.w3.org/TR/2023/WD-compute-pressure-20230831/">https://www.w3.org/TR/2023/WD-compute-pressure-20230831/</a>
+            </p>
+            <p>
+              <b>Reference Draft</b>: <a href=
+              "https://www.w3.org/TR/2022/WD-compute-pressure-20221220/">https://www.w3.org/TR/2022/WD-compute-pressure-20221220/</a>
+            </p>
+            <p>
+              Produced under <b>Working Group Charter:</b> <a href=
+              "https://www.w3.org/2022/11/das-wg-charter.html">https://www.w3.org/2022/11/das-wg-charter.html</a>
+            </p>
+          </dd>
+        </dl>
+        </section>
+        <section id="tentative">
+        <h3>
+          Tentative Deliverables
+        </h3>
+        <p>
+          Depending on the progress, including consideration for adequate implementation experience, the Group may also produce W3C Recommendations for the following documents:
+        </p>
+        <dl>
+          <dt>
+            <a href="https://wicg.github.io/netinfo/">Network Information
+            API</a>
+          </dt>
+          <dd>
+            <p>
+              An API to discover the current network characteristics
+            </p>
+            <p>
+              Note: the group will determine in collaboration with the WICG
+              whether the existing implementations of this API on mobile
+              warrant restarting the standardization process
+            </p>
+            <p>
+              <b>Draft state</b>: Draft Community Group Report
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://wicg.github.io/netinfo/">Adopted from WICG</a> (see also
+              <a href="https://www.w3.org/TR/netinfo-api/">Working Group
+              Note</a> that predates the WICG Draft Report)
+            </p>
+          </dd>
+          <dt>
+            <a href="https://wicg.github.io/idle-detection/">Idle Detection API
+            </a>
+          </dt>
+          <dd>
+            <p>
+              An API for observing system-wide user presence signals
+            </p>
+            <p>
+              <b>Draft state</b>: Draft Community Group Report
+            </p>
+            <p>
+              <b>Adopted Draft</b>: <a href=
+              "https://wicg.github.io/idle-detection/">Adopted from WICG</a>
+            </p>
+          </dd>
+        </dl>
+        </section>
+        <section id="deliverables-maintenance">
+        <h3>
+          Maintenance
+        </h3>
+        <p>
+          The Working Group will maintain errata and new editions, as
+          necessary, for the <a href=
+          "https://www.w3.org/TR/2022/REC-geolocation-20220901/">Geolocation
+          API</a>, <a href=
+          "https://www.w3.org/TR/2016/REC-vibration-20161018/">Vibration
+          API</a>, and <a href=
+          "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML
+          Media Capture</a> W3C Recommendations.
+        </p>
+        <p class="issue">
+          <b>Note:</b> The Geolocation API is a joint deliverable with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
+        </p>
+        <p>
+          Since HTML Media Capture extends the <a
+          href="https://html.spec.whatwg.org/multipage/">HTML Living
+          Standard</a>, the Working Group may propose to W3C to upstream the
+          spec, to the WHATWG HTML LS for maintenance, as
+          anticipated by Section 10.2 of the <a
+          href="https://www.w3.org/2019/04/WHATWG-W3C-MOU.html">Memorandum of
+          Understanding Between W3C and WHATWG</a>.
+        </p>
+        </section>
+        <section id="add-new">
+        <h3>
+          Adding new Recommendation-track deliverables
+        </h3>
+        <p>
+          If additional in-scope Recommendation-track deliverables need to be
+          added to the Charter before the Charter expires, the Working Group
+          will prepare an updated Charter that differs only in deliverables.
+        </p>
+        <p>
+          The Working Group will not adopt new proposals until they have
+          matured through the <a href="https://www.w3.org/community/wicg/">Web
+          Platform Incubator Community Group</a> or another similar incubation
+          phase.
+        </p>
+        </section>
+        <section id="other-deliverables">
+        <h3>
+          Other Deliverables
+        </h3>
+        <p>
+          <strong>Use cases and requirements</strong> that inform the scope of
+          the technical work to ensure the APIs limit their functionality and
+          data exposure to the minimum required to implement real-world use
+          cases adhering to the principles of data minimization.
+        </p>
+        <p>
+          <strong>Security and privacy explainers</strong> that describe
+          concrete best practices, design patterns, and mitigation strategies
+          that cater to web developers to raise awareness.
+        </p>
+        </section>
+        <section id="timeline">
+        <h3>
+          Timeline
+        </h3>
+        <table class="roadmap">
+          <caption>
+            Milestones
+          </caption>
+          <thead>
+            <tr>
+              <th>
+                Specification
+              </th>
+              <th>
+                <abbr title="First Working Draft">FPWD</abbr>
+              </th>
+              <th>
+                <abbr title="Candidate Recommendation">CR</abbr>
+              </th>
+              <th>
+                <abbr title="Proposed Recommendation">PR</abbr>
+              </th>
+              <th>
+                <abbr title="Recommendation">Rec</abbr>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                Battery Status API
+              </th>
+              <td>
+                <a href=
+                "http://www.w3.org/TR/2011/WD-battery-status-20110426/">26 Apr
+                2011</a>
+              </td>
+              <td>
+                <a href=
+                "http://www.w3.org/TR/2016/CR-battery-status-20160707/">7 Jul
+                2016</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Screen Wake Lock API
+              </th>
+              <td>
+                <a href="http://www.w3.org/TR/2015/WD-wake-lock-20150212/">12
+                Feb 2015</a>
+              </td>
+              <td>
+                <a href="https://www.w3.org/TR/2017/CR-wake-lock-20171214/">14
+                Dec 2017</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                System Wake Lock API
+              </th>
+              <td>
+                <a href="http://www.w3.org/TR/2015/WD-wake-lock-20150212/">12
+                Feb 2015</a>
+              </td>
+              <td>
+                <a href="https://www.w3.org/TR/2017/CR-wake-lock-20171214/">14
+                Dec 2017</a>
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Generic Sensor API
+              </th>
+              <td>
+                <a href=
+                "http://www.w3.org/TR/2015/WD-generic-sensor-20151015/">15 Oct
+                2015</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/">12 Dec
+                2019</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Proximity Sensor
+              </th>
+              <td>
+                <a href="https://www.w3.org/TR/2012/WD-proximity-20120712/">12
+                July 2012</a>
+              </td>
+              <td>
+                <a href="https://www.w3.org/TR/2013/CR-proximity-20131001/">01
+                October 2013</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Ambient Light Sensor
+              </th>
+              <td>
+                <a href=
+                "http://www.w3.org/TR/2012/WD-ambient-light-20120802/">2 Aug
+                2012</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2018/CR-ambient-light-20180320/">20 Mar
+                2018</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Accelerometer
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2016/WD-accelerometer-20160913/">13
+                September 2016</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2019/CR-accelerometer-20191212/">12 Dec
+                2019</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Gyroscope
+              </th>
+              <td>
+                <a href="https://www.w3.org/TR/2016/WD-gyroscope-20160913/">13
+                September 2016</a>
+              </td>
+              <td>
+                <a href="https://www.w3.org/TR/2019/CR-gyroscope-20191212/">12
+                Dec 2019</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Magnetometer
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2016/WD-magnetometer-20160913/">13
+                September 2016</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2018/CR-magnetometer-20180320/">20 Mar
+                2018</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Orientation Sensor
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2017/WD-orientation-sensor-20170511/">11
+                May 2017</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/">12
+                Dec 2019</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Device Posture API
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2020/WD-screen-fold-20201217/">17 December 2020
+              </a>
+              </td>
+              <td>
+                Q2 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>
+                DeviceOrientation Event specification
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2011/WD-orientation-event-20110628/">28
+                June 2011</a>
+              </td>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2016/CR-orientation-event-20160818/">18
+                August 2016</a>
+              </td>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Geolocation Sensor
+              </th>
+              <td>
+                <a href=
+                "https://www.w3.org/TR/2018/WD-geolocation-sensor-20180821/">21
+                August 2018</a>
+              </td>
+              <td>
+                Q2 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>
+                Network Information API
+              </th>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>
+                Contact Picker API
+              </th>
+              <td>
+                <a href="https://www.w3.org/TR/2022/WD-contact-picker-1-20221220/">20 December 2022</a>
+              </td>
+              <td>
+                Q4 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>
+                Idle Detection API
+              </th>
+              <td>
+                Q3 2024
+              </td>
+              <td>
+                Q4 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>
+                Compute Pressure
+              </th>
+              <td>
+                <a href="https://www.w3.org/TR/2022/WD-compute-pressure-20221220/">20 December 2022</a>
+              </td>
+              <td>
+                Q4 2024
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <em>Note: The actual production of some of the deliverables may
+          follow a different timeline. The group documents any schedule changes
+          on the <a href="https://www.w3.org/das/roadmap">group home
+          page</a></em>.
+        </p>
+        </section>
+      </section>
+      <section id="success-criteria" class="success-criteria">
+        <h2>
+          Success Criteria
+        </h2>
+        <p>
+          To advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification must have
+          <a href="https://www.w3.org/Consortium/Process/#implementation-experience">two independent implementations</a> of all defined features, at least one
+          of which is on a mobile device.
+        </p>
+        <p>
+          Comprehensive test suites will be developed for each specification to
+          ensure interoperability, and the group will create interoperability
+          reports. The group will also maintain errata as required for the
+          continued relevance and usefulness of the specifications it produces.
+        </p>
+        <p>
+          Each specification must contain a section on accessibility that
+          describes the benefits and impacts, including ways specification
+          features can be used to address them, and recommendations for
+          maximising accessibility in implementations.
+        </p>
+        <p>
+          Each specification must detail all known security and privacy
+          implications for implementers, Web authors, and end users.
+        </p>
+        <p>
+          APIs that cannot be demonstrated to be implementable securely within
+          the default browser context will not be released.
+        </p>
+        <p>
+          The specifications produced by this WG must mitigate disclosure of
+          data when possible and seek meaningful user consent in other cases.
+          If the WG decides that one or more of its specifications cannot be
+          usefully implemented while simultaneously allowing users to
+          meaningfully consent to the use of sensitive data, it should not
+          advance those specifications.
+        </p>
+
+          <p>
+            The Devices and Sensors WG will follow a <a href=
+            "https://www.w3.org/2019/02/testing-policy.html">test as you
+            commit</a> approach to specification development, for
+            specifications in CR or above.
+          </p>
+          <blockquote cite="https://www.w3.org/2019/02/testing-policy.html">
+            <p>
+              All normative spec changes are generally expected to have a
+              corresponding pull request in <a href=
+              "https://github.com/web-platform-tests/wpt">web-platform-tests</a>,
+              either in the form of new tests or modifications to existing
+              tests, or must include the rationale for why test updates are not
+              required for the proposed update.
+            </p>
+            <p>
+              Typically, both pull requests (spec updates and tests) will be
+              merged at the same time. If a pull request for the specification
+              is approved but the other needs more work, add the '<a href=
+              "https://w3c.github.io/issue-metadata.html" rel="nofollow">needs
+              tests</a>' label or, in web-platform-tests, the '<a href=
+              "https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Astatus%3Aneeds-spec-decision%20">status:needs-spec-decision</a>'
+              label. Note that a test change that contradicts the specification
+              should not be merged before the corresponding specification
+              change.
+            </p>
+            <p>
+              If testing is not practical due to web-platform-tests
+              limitations, please explain why and if appropriate file an issue
+              with the '<a href=
+              "https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Atype%3Auntestable%20">type:untestable</a>'
+              label to follow up later.
+            </p>
+          </blockquote>
+      </section>
+      <section id="coordination" class="dependencies">
+        <h2>
+          Coordination
+        </h2>
+        <p>
+          For all specifications, this Working Group will seek <a href=
+          "https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal
+          review</a> for accessibility, internationalization, 
+          privacy, and security with the relevant Working and Interest Groups,
+          and with the <a href="https://www.w3.org/2001/tag/" title=
+          "Technical Architecture Group">TAG</a>. Invitation for review must be
+          issued during each major standards-track document transition,
+          including <a href="https://www.w3.org/Consortium/Process/#RecsWD"
+          title="First Public Working Draft">FPWD</a>. The Working Group is
+          encouraged to engage collaboratively with the horizontal review
+          groups throughout development of each specification. The Working
+          Group is advised to seek a review at least 3 months before first
+          entering <a href="https://www.w3.org/Consortium/Process/#RecsCR"
+          title="Candidate Recommendation">CR</a> and is encouraged to
+          proactively notify the horizontal review groups when major changes
+          occur in a specification following a review.
+        </p>
+        <p>
+          Additional technical coordination with the following Groups will be
+          made, per the <a href=
+          "https://www.w3.org/Consortium/Process/#WGCharter">W3C Process
+          Document</a>:
+        </p>
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/webappsec">Web Application
+            Security Working Group</a>
+          </dt>
+          <dd>
+            The Web Application Security Working Group is developing guidance
+            on APIs that expose sensitive information, and an API to manage
+            permissions, both of which matter to several of this group’s
+            specifications.
+          </dd>
+          <dt>
+            <a href="https://privacycg.github.io/">Privacy Community Group</a>
+          </dt>
+          <dd>
+            Both the Devices and Sensors WG and Privacy CG are committed to
+            privacy-focused web features and APIs. This WG may reuse proposals
+            developed in the Privacy CG to improve user privacy through
+            enhanced browser behavior.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working
+            Group</a>
+          </dt>
+          <dd>
+            This group defines relevant specifications including the <a href=
+            "https://www.w3.org/TR/FileAPI/">File API</a> and <a href=
+            "https://www.w3.org/TR/appmanifest/">Web App Manifest</a>.<br>
+            The <a href="https://www.w3.org/TR/wake-lock/">Screen Wake Lock API</a>, 
+            the <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event specification</a>, 
+            the <a href="https://www.w3.org/TR/contact-picker/">Contact Picker API</a>, 
+            and the <a href="https://www.w3.org/TR/2022/REC-geolocation-20220901/">Geolocation API</a>
+            are joint deliverables with the <a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/webrtc">Web Real Time Communications Working
+            Group</a>
+          </dt>
+          <dd>
+            Both the Devices and Sensors and WebRTC Working Groups develop
+            capture-related APIs.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a>
+          </dt>
+          <dd>
+            The WoT group defines a Web-based abstract architecture and a data model based on JSON-LD for IoT interoperability. Coordination on terminology and vocabulary of sensor data, e.g., geolocation information, is expected.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/css">Cascading Style Sheets (CSS) Working Group</a>
+          </dt>
+          <dd>
+            The CSS Working Group develops media queries for the authors to query and respond to changes in the user environment, which may be related to the sensors on the user's device and the APIs developed in this group.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/groups/wg/apa">Accessible Platform Architectures (APA) Working Group</a>
+          </dt>
+          <dd>
+            Coordinate on accessibility of user interface features implied by the APIs.
+          </dd>
+        </dl>
+        </section>
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <p>
+            The following is a tentative list of external bodies the Working
+            Group should collaborate with:
+          </p>
+          <dl>
+            <dt>
+              <a href="https://www.ecma-international.org/memento/tc39.htm" id=
+              "tc39">Ecma International Technical Committee 39 (TC39)</a>
+            </dt>
+            <dd>
+              This is the group responsible for EcmaScript standardization, and
+              related EcmaScript features. As this Working Group is developing
+              EcmaScript APIs, it should collaborate with TC39.
+            </dd>
+            <dt>
+              <a href="https://www.ietf.org" id="ietf">IETF</a>
+            </dt>
+            <dd>
+              The IETF has created specifications that are related to some of
+              the APIs in this WG’s scope.
+            </dd>
+            <dt>
+              <a href="https://whatwg.org" id="whatwg">WHATWG</a>
+            </dt>
+            <dd>
+              The WHATWG maintains the HTML Living Standard, which some of the
+              specifications in this WG’s scope extend.
+            </dd>
+          </dl>
+        </section>
+      </section>
+      <section id="participation" class="participation">
+        <h2>
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more
+          active participants for its duration, and to have the participation
+          of the industry leaders in fields relevant to the specifications it
+          produces.
+        </p>
+        <p>
+          The Chair(s) and specification Editors are expected to contribute one
+          to two days per week towards the Working Group. There is no minimum
+          requirement for other participants.
+        </p>
+        <p>
+          Based on the input from the group participants, the Chairs may also
+          decide to create task forces that allow more focused discussions for
+          topics that require specific expertise.
+        </p>
+        <p>
+          This Working Group will also allocate the necessary resources for
+          building Test Suites for each specification.
+        </p>
+        <p>
+          The group encourages questions and comments on its public mailing
+          lists and document repositories, as described in <a href=
+          "#communication">Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical
+          submissions for consideration upon their agreement to the terms of
+          the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+          Policy</a>.
+        </p>
+        <p>
+          Participants in the group are required (by the <a href=
+          "https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C
+          Process</a>) to follow the W3C <a href=
+          "https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional
+          Conduct</a>.
+        </p>
+      </section>
+      <section class="communication">
+        <h2 id="communication">
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in
+          <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">
+          public</a>: the meeting minutes from teleconference and face-to-face
+          meetings will be archived for public review, and technical
+          discussions and issue tracking will be conducted in a manner that can
+          be both read and written to by the general public. Working Drafts and
+          Editor's Drafts of specifications will be developed on a public
+          repository, and may permit direct public contribution requests. The
+          meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (for example, details about deliverables,
+          issues, actions, status, participants) is available from the <a href=
+          "https://www.w3.org/das/">Devices and Sensors Working Group home
+          page</a>.
+        </p>
+        <p>
+          The Working Group’s Teleconferences focus on discussion of particular
+          specifications, and are conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work on the <a href=
+          "https://lists.w3.org/Archives/Public/public-device-apis/">public-device-apis@w3.org</a>
+          and on Github issues. The public is invited to review, discuss and
+          contribute to this work.
+        </p>
+        <p>
+          The group uses a Member-confidential mailing list for administrative
+          purposes and, at the discretion of the Chairs and participants of the
+          group, for Member-only discussions in special cases when a particular
+          participant requests such a discussion.
+        </p>
+      </section>
+      <section class="decisions">
+        <h2 id="decisions">
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due
+          process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant
+          makes an initial proposal, which is then refined in discussion with
+          members of the group and other reviewers, and consensus emerges with
+          little formal voting being required.
+        </p>
+        <p>
+          However, if a decision is necessary for timely progress, but
+          consensus is not achieved after careful consideration of the range of
+          views presented, the Chairs may call for a group vote, and record a
+          decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any
+          resolution (including publication decisions) taken in a face-to-face
+          meeting or teleconference will be considered provisional. A call for
+          consensus (CfC) will be issued for all resolutions (for example, via
+          email and/or web-based survey), with a response period from 5 to 10
+          working days, depending on the chair's evaluation of the group
+          consensus on the issue. If no objections are raised on the mailing
+          list by the end of the response period, the resolution will be
+          considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless
+          and until new information becomes available, or unless reopened at
+          the discretion of the Chairs.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a>, and includes no voting procedures
+          beyond what the Process Document requires.
+        </p>
+      </section>
+      <section id="patentpolicy" class="patent">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the
+          widest adoption of Web standards, W3C seeks to issue Recommendations
+          that can be implemented, according to this policy, on a Royalty-Free
+          basis. For more information about disclosure obligations for this
+          group, please see the <a href="https://www.w3.org/groups/wg/das/ipr">licensing information</a>.
+        </p>
+      </section>
+      <section id="licensing" class="licensing">
+        <h2>
+          Licensing
+        </h2>
+        <p>
+          This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.
+        </p>
+      </section>
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+        <h3>
+          Charter history
+        </h3>
+
+        <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+        <table class="history">
+          <tbody>
+            <tr>
+              <th>
+                Charter Period
+              </th>
+              <th>
+                Start Date
+              </th>
+              <th>
+                End Date
+              </th>
+              <th>
+                Changes
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2009/05/DeviceAPICharter">Initial
+                Charter</a>
+              </th>
+              <td>
+                3 July 2009
+              </td>
+              <td>
+                31 July 2011
+              </td>
+              <td>
+                N/A
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href=
+                "https://www.w3.org/2011/07/DeviceAPICharter.html">Rechartered</a>
+              </th>
+              <td>
+                19 August 2011
+              </td>
+              <td>
+                March 31 2016
+              </td>
+              <td>
+                Rechartered under the name "Device APIs Working Group". Thomas
+                Roessler stepped down as team contact. Robin Berjon stepped
+                down as co-chair in September 2012.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href=
+                "https://www.w3.org/2016/03/device-sensors-wg-charter.html">Rechartered</a>
+              </th>
+              <td>
+                31 March 2016
+              </td>
+              <td>
+                30 June 2018
+              </td>
+              <td>
+                Rechartered under the name "Device and Sensors Working Group".
+                Added Fuqiao Xue as team contact in September 2017. Chair
+                changed from Frederick Hirsch to Anssi Kostiainen in September
+                2017.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href=
+                "https://www.w3.org/2018/06/devices-sensors-wg-charter.html">Rechartered</a>
+              </th>
+              <td>
+                30 June 2018
+              </td>
+              <td>
+                30 June 2020
+              </td>
+              <td>
+                Rechartered under the name "Devices and Sensors Working Group".
+                Dominique Hazael-Massieux stepped down as team contact. Added
+                Reilly Grant as co-chair. Added gyroscope, magnetometer,
+                DeviceOrientation Event, and geolocation APIs to the group's
+                deliverables. Removed media capture, address books, messaging
+                applications, and similar non-sensor APIs from the group's
+                scope of work. Reduced team support from 0.2 FTE to 0.1 FTE.
+                Added a requirement to mitigate disclosures and/or get user
+                consent.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href=
+                "https://www.w3.org/2019/03/devices-sensors-wg-charter.html">Rechartered</a>
+              </th>
+              <td>
+                15 March 2019
+              </td>
+              <td>
+                30 June 2020
+              </td>
+              <td>
+                Added Geolocation API for maintenance.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Charter Extension
+              </th>
+              <td>
+                30 June 2020
+              </td>
+              <td>
+                31 October 2020
+              </td>
+              <td>
+                none
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Charter Extension
+              </th>
+              <td>
+                31 October 2020
+              </td>
+              <td>
+                30 November 2020
+              </td>
+              <td>
+                none
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2020/11/das-wg-charter.html">Rechartered</a>
+              </th>
+              <td>
+                1 December 2020
+              </td>
+              <td>
+                30 November 2022
+              </td>
+              <td>
+                Updated Scope to describe the WG's security and privacy focused
+                and use case-driven specification development model. Split Wake
+                Lock API into Screen Wake Lock API and System Wake Lock API,
+                and added Fold Angle Sensor deliverable. Noted HTML Media Capture
+                may be upstreamed to WHATWG HTML Living Standard for maintenance.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2022/11/das-wg-charter.html">Rechartered</a>
+              </th>
+              <td>
+                1 December 2022
+              </td>
+              <td>
+                30 November 2024
+              </td>
+              <td>
+                Added Contact Picker API, Idle Detection API, and Compute Pressure to the group's tentative deliverables.  Changed the Fold Angle Sensor API from a tentative to a normative deliverable, renaming it as the Device Posture API.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="">Rechartered</a>
+              </th>
+              <td>
+                <i class="todo">[YYYY-MM-DD]</i>
+              </td>
+              <td>
+                <i class="todo">[YYYY-MM-DD]</i>
+              </td>
+              <td>
+                Marked Screen Wake Lock API, DeviceOrientation Event specification, Contact Picker API, and Geolocation API as
+                joint deliverables with the Web Applications Working Group. 
+                <i class="issue">Note: Contact Picker API was published as a joint deliverables already under the 2022-12-01 charter, following an agreement with Web Applications Working Group.</i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+        <hr>
+
+        <footer>
+          <address>
+            <a href="mailto:atsushi@w3.org">Atsushi Shimono</a>,
+            based on the <a href="https://www.w3.org/2022/11/das-wg-charter.html">previous Devices and Sensors (then called Device APIs) Working Group’s charter</a>
+          </address>
+          <p class="copyright">Copyright © 2023 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+            <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+            <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+            <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+            <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+          <hr>
+          <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+        </footer>
+</body>
+</html>
