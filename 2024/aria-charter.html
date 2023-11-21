@@ -165,6 +165,18 @@
       <h2>Motivation and Background</h2>
       <p><i class="todo">Background of landscape, technology, and relationship to the Web, users, developers,
           implementers, and industry.</i></p>
+          <p>The Accessible Rich Internet Application suite has consistently provided mechanisms to make rich internet applications and other complex web user interfaces accessible to people with disabilities.</p>
+          <p>The suite consists of:</p>
+          <ul>
+            <li>Accessible Rich Internet Applications &mdash; Provides an ontology of roles, states, and properties that can be used to complement and extend accessibility of host languages such as HTML, ePub, MathML, and others.</li>
+            <li>Accessibility API mappings &mdash; Describe how accessibility APIs should expose existing ARIA roles, states, and properties</li>
+          </ul>
+          <p>The Working Group plans to continue developing these technical specifications to:</p>
+          <ul>
+            <li>provide more acurate guidance for user agents to more consistently and reliably impleement ARIA features</li>
+            <li>provide additional guidance and support for assistive technologgy developers on how they could support ARIA</li>
+            <li>improve interoperability of ARIA features among different operating systems and assistive technologies.</li>
+          </ul>
     </div>
 
     <section id="scope" class="scope">
@@ -186,6 +198,7 @@
       <section id="section-out-of-scope">
         <h3 id="out-of-scope">Out of Scope</h3>
         <p>The following features are out of scope, and will not be addressed by this Working group.
+
         </p>
 
         <ul class="out-of-scope">
@@ -206,7 +219,7 @@
           class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to
         become a Recommendation, or otherwise reach a stable state
         <span class='todo'>For deliverables marked as "Living Standard", the Working Group intends to publish the latest state of their work as Candidate
-          Recommendation (with Snapshots) and does not intend to advance such documents to Recommendation</span>.
+          Recommendation (with Snapshots) and does not intend to advance such documents to Recommendation, except for the WAI-ARIA specification which the Working Group intetns to publish as a W3C Recommendation by the time this Charter period ends.</span>
       </p>
 
       <section id="normative">
@@ -218,15 +231,87 @@
         </p>
         <dl>
           <dt class="spec" id="7556"><a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings</a> (living standard) </dt>
+          <dd>
+            <p>
+              This specification defines how <a class="termref informative" data-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map <abbr title="HyperText Markup Language">HTML</abbr> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>] elements and attributes to platform <a class="termref informative" data-lt="accessibility API" data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>. It leverages and extends the <cite><a data-matched-text="[[[core-aam-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite> and the <cite><a data-matched-text="[[[accname-aam-1.1]]]" href="https://www.w3.org/TR/accname-1.1/">Accessible Name and Description Computation 1.1</a></cite> for use with the <abbr title="HyperText Markup Language">HTML</abbr> host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events implemented by accessibility <abbr title="Application Programming Interfaces">APIs</abbr> and helps to ensure that this information appears in a manner consistent with author intent.
+            </p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/html-aam-1.0/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/html-aam-1.0/">https://www.w3.org/TR/html-aam-1.0/</a> @@ @@ 2023</p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/">https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/</a></a>
+            Exclusion period <b>began</b> 2015-04-09; Exclusion period <b>ended</b> 2015-09-06.</p>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2013/09/html-charter">https://www.w3.org/2013/09/html-charter</a></p>
+          </dd>
           <dt class="spec" id="8499"><a href="https://www.w3.org/TR/dpub-aria-1.1/">Digital Publishing WAI-ARIA Module 1.1</a></dt>
-          <dt><a href="https://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API Mappings 1.0</a></dt>
-          <dt class="spec"><a href="https://www.w3.org/TR/dpub-aam-1.1/">Digital Publishing Accessibility API Mappings 1.1</a> (living standard)</dt>
+          <dd>
+            <p>This specification is a modular extension of WAI-ARIA designed for the digital publishing industry.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/dpub-aria-1.1/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/dpub-aria-1.1/">https://www.w3.org/TR/dpub-aria-1.1/</a></p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-dpub-aria-1.1-20210826/">https://www.w3.org/TR/2021/WD-dpub-aria-1.1-20210826/</a></p>
+            Exclusion period <b>began</b> 2021-08-26; Exclusion period <b>ended</b> 2022-01-23
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2018/11/aria-charter.html">https://www.w3.org/2018/11/aria-charter.html</a></p>
+          </dd>
+       
+          <dt class="spec" id="@@@@"><a href="https://www.w3.org/TR/dpub-aam-1.1/">Digital Publishing Accessibility API Mappings 1.1</a> (living standard)</dt>
+          <dd>
+            <p>This specification enables authors to produce more accessible
+              e-books, by conveying structural book constructs used by the digital publishing industry to assistive
+              technologies. It does this by extending the <cite><a href="https://www.w3.org/TR/core-aam-1.1/">Core
+                  Accessibility <abbr title="application programming interface">API</abbr> Mappings 1.1</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>] and the <cite><a href="https://www.w3.org/TR/accname-1.2/">Accessible Name and Description: Computation
+                1.2</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-accname-1.2" title="Accessible Name and Description Computation 1.2">ACCNAME-1.2</a></cite>] specifications for user agents. It provides Accessibility <abbr title="application programming interface">API</abbr> Mapping
+              guidance for the roles defined in the Digital Publish <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Module.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/dpub-aam-1.1/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b><a href="https://www.w3.org/TR/dpub-aam-1.1/">https://www.w3.org/TR/dpub-aam-1.1/</a></p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-dpub-aam-1.1-20211130/, 2021-11-30">https://www.w3.org/TR/2021/WD-dpub-aam-1.1-20211130/, 2021-11-30</a></p>
+            Exclusion period <b>began</b> 2021-11-30 ; Exclusion period <b>ended</b> 2022-04-29.</span>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2018/11/aria-charter.html">https://www.w3.org/2018/11/aria-charter.html</a></p>
+          </dd>
           <dt class="spec" id="7887"><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA)</a></dt>
           <dt class="spec" id="7298"><a href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings</a> (living standard)</dt>
+          <dd>
+            <p>This specification defines how WAI-ARIA roles, states, and properties are expected to be exposed by user agents via platform accessibility APIs. </p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/core-aam-1.2/">Candidate Recommendation Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>"</p>
+            <p><b>Exclusion Draft:</b><a href="https://www.w3.org/TR/2022/CR-core-aam-1.2-20221122/">https://www.w3.org/TR/2022/CR-core-aam-1.2-20221122/</a></p>
+            Exclusion period <b>began</b> 2022-11-22 ; Exclusion period <b>ended</b> 2023-01-21.</p>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/02/aria-charter">https://www.w3.org/2022/02/aria-charter</a></p>
+          </dd>
           <dt class="spec" id="7075"><a href="https://www.w3.org/TR/accname-1.2/">Accessible Name and Description Computation 1.2</a> (living standard)</dt>
-          <dt class="spec" id=""><a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a></dt>
-          <dt class="spec" id=""><a href="https://www.w3.org/TR/graphics-aria-1.0/"></a>WAI-ARIA Graphics Module</a></dt>
-          <dt class="spec" id=""><a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a></dt>
+          <dd>
+            <p>This document describes how user agents determine the names and descriptions of accessible objects from web content languages.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/accname-1.2/">Working Draft</a>]</i></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/accname-1.2/">https://www.w3.org/TR/accname-1.2/</a></p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2019/WD-accname-1.2-20190711/">https://www.w3.org/TR/2019/WD-accname-1.2-20190711/</a>
+            Exclusion period <b>began</b> 2019-07-11; Exclusion period <b>ended</b> 2019-12-08.</p>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2018/11/aria-charter.html">https://www.w3.org/2018/11/aria-charter.html</a></p>
+          </dd>
+        
+          <dt class="spec" id="@@@@"><a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a></dt>
+          <dd>
+            <p>
+              This specification defines the authoring rules (author conformance requirements) for the use
+              of <cite><a data-matched-text="[[[wai-aria-1.2]]]" href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></cite> and <cite><a data-matched-text="[[[dpub-aria-1.0]]]" href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></cite> attributes on [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>] elements.
+            </p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="#">Adopted from WG Web Applications</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2023/REC-html-aria-20231103/"">https://www.w3.org/TR/2023/REC-html-aria-20231103/</a></p>
+            <p><b>Exclusion Draft:</b> <a href="@@@">@@@</a>
+            Exclusion period <b>began</b> @@@@; Exclusion period <b>ended @@@</b>.
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/04/webapps-wg-charter.html">https://www.w3.org/2022/04/webapps-wg-charter.html</a></p>
+          </dd>
+        
+          <!-- <dt><a href="https://www.w3.org/TR/svg-aam-1.0/">SVG Accessibility API Mappings 1.0</a></dt> -->
+          <!-- <dt class="spec" id=""><a href="https://www.w3.org/TR/graphics-aria-1.0/"></a>WAI-ARIA Graphics Module</a></dt> -->
+          <!-- <dt class="spec" id=""><a href="https://www.w3.org/TR/graphics-aam-1.0/">Graphics Accessibility API Mappings</a></dt> -->
         </dl>
 
       </section>
