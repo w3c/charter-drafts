@@ -78,10 +78,9 @@
       <p class="mission">
 The <strong>mission</strong> of the
 <a href="https://www.w3.org/2019/did-wg/">Decentralized Identifier Working Group</a>
-is to maintain the <a href="https://www.w3.org/TR/did-core/">Decentralized Identifiers (DIDs)</a>
-specification and related Working Group Notes. The WG will also seek consensus
-around the best way to achieve effective interoperability, possibly through the
-specification of DID Resolution and/or DID methods.
+is two-fold. First, it will maintain the <a href="https://www.w3.org/TR/did-core/">Decentralized Identifiers (DIDs)</a>
+specification and related Working Group Notes.
+Second, it will define common requirements, algorithms, architectural options, and various considerations for the DID resolution and DID URL dereferencing processes.
       </p>
 
       <div class="noprint">
@@ -117,7 +116,7 @@ specification of DID Resolution and/or DID methods.
               Chairs
             </th>
             <td>
-              Brent Zundel (Gen), Dan Burnett (Invited Expert)
+              Brent Zundel (Invited Expert), Dan Burnett (Invited Expert)
             </td>
           </tr>
           <tr>
@@ -151,12 +150,10 @@ decentralized digital identity. This includes possible
 level changes on the Recommendation.
         </p>
         <p>
-The Working Group will also seek consensus around DID Method specifications, and
-may produce related documents.
+The Working Group will also take over the work started by the Credentials Community Group around <a href="https://w3c-ccg.github.io/did-resolution/">DID Resolution</a>, to define common requirements, algorithms including their inputs and results, architectural options, and various considerations for the DID resolution and DID URL dereferencing processes.
         </p>
         <p>
-The Working Group will begin working toward a specification for DID Resolution
-and DID URL Dereferencing.
+It is expected that these two goals will be taken by distinct task forces in the WG.
         </p>
       </section>
 
@@ -182,10 +179,7 @@ and DID URL Dereferencing.
         </ul>
 
         <p>
-The Working Group may also publish new Working Group Notes, Editors Drafts, or
-Working Drafts for DID Resolution or DID URL Dereferencing, or of DID Method
-Specifications. Any new documents intended for Recommendation will be
-limited to the Working Draft maturity level.
+The Working Group may also publish new Working Group Notes.
         </p>
 
         <section id="section-out-of-scope">
@@ -224,7 +218,7 @@ limited to the Working Draft maturity level.
             The Working Group will maintain the following W3C normative specification:
           </p>
 
-          <dl>
+          <dl id="deliverable-did-core">
             <dt class="spec"><a href="https://www.w3.org/TR/did-core/">Decentralized Identifiers (DIDs) v1.0</a></dt>
             <dd>
               <p>This specification defines new type of identifier that enables verifiable, decentralized digital identity.
@@ -240,26 +234,10 @@ limited to the Working Draft maturity level.
                   <b>Exclusion Draft Charter</b>: <a href="https://www.w3.org/2020/12/did-wg-charter.html">https://www.w3.org/2020/12/did-wg-charter.html</a>.  
               </p>
             </dd>
-          </dl>
-          <p>
-            The Working Group may begin work on the following W3C normative specifications:
-          </p>
-
-          <dl>
-            <dt class="spec">Decentralized Identifier (DID) Method Specification</dt>
-           <dd>
-             <p>
-             DID Method Specifications may be produced by the working group.
-             </p>
-             <p class="milestone">
-              <b>Expected Completion:</b> It is not intended that any DID Method Specification developed by the working group will advance beyond <a href="https://www.w3.org/Consortium/Process/#RecsWD">Working Draft status</a>.
-             </p>
-             <p>
-             <b>Adopted Draft:</b> The <a href="https://www.w3.org/TR/did-spec-registries/#did-methods">DID Specification Registries</a> contains many links to examples of DID Method Specifications, some of which may be selected by the working group for development into a Recommendation. The group might also choose a similar starting document not listed in the Registry.
-             </p>
-           </dd>
+           </dl>
+           <dl id="deliverable-did-resolution">
             <dt class="spec">Decentralized Identifier (DID) Resolution and DID URL Dereferencing v1.0</dt>
-           <dd>
+            <dd>
              <p>
              This document specifies the algorithms and guidelines for resolving DIDs and dereferencing DID URLs.
              </p>
@@ -267,7 +245,7 @@ limited to the Working Draft maturity level.
               <b>Draft State:</b> Draft Community Group Report
              </p>
              <p class="milestone"><b>Expected completion:</b>
-             It is not intended that DID Resolution and DID URL Dereferencing will advance beyond <a href="https://www.w3.org/Consortium/Process/#RecsWD">Working Draft status</a>.
+             <i class="todo">START+24M</i>.
              </p>
              <p><b>Adopted Draft:</b>
               DID Resolution v0.3, <a href="https://w3c-ccg.github.io/did-resolution/">https://w3c-ccg.github.io/did-resolution/</a>, published 2023-01-18, may serve as a starting point.
@@ -337,13 +315,17 @@ interoperability can be verified by passing open test suites, and two or
 more implementations interoperating with each other. In order to advance to
 Proposed Recommendation, each normative specification must have an open
 test suite of every feature defined in the specification.</p>
+
+    <p>In order for <a href="#deliverable-did-resolution">DID Resolution</a> to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, it is expected that each of the independant implementations mentioned above support at least two DID methods with an open specification (i.e. a specification that is accessible to all for implementation and deployment). It is also expected that each pair of the independant implementations mentioned above support at least one common DID method with an open specification.</p>
+    </ul>
+
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
 
     <p>To promote interoperability, all changes made to specifications
       in Candidate Recommendation
       or to features that have deployed implementations
       should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.
-      Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
+    </p>
 
     <!-- Horizontal review -->
 
@@ -360,9 +342,6 @@ test suite of every feature defined in the specification.</p>
     TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
     </p>
 	
-    <!-- Relevance and momentum -->
-	  <p>All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
-
 	</section>
 
       <section id="coordination">
