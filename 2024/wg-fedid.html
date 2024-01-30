@@ -77,10 +77,10 @@
     <h1 id="title">PROPOSED Federated Identity Working Group Charter</h1>
     <!-- delete PROPOSED after AC review completed -->
 
-    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to will
-      develop specifications to allow websites to request a federated identity
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to
+      develop specifications to allow a website to request a federated identity
       credential or assertion with the purpose of authenticating a user and/or requesting a set of claims in a
-      compatible way OIDC or SAML.</p>
+      compatible way to OIDC or SAML.</p>
     <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
     <div class="noprint">
@@ -155,11 +155,11 @@
     <div id="background" class="background">
       <h2>Motivation and Background</h2>
       <p>
-        With changes to the underlying <a href='https://www.w3.org/TR/privacy-principles/'>privacy principles</a>, 
+        With changes to the support for underlying <a href='https://www.w3.org/TR/privacy-principles/'>privacy principles</a>, 
         fundamental assumptions of the web platform are being redefined or removed. While overall good for the web, the
         <a href='https://www.w3.org/2001/tag/doc/web-without-3p-cookies/'>third-party cookie deprecation</a>
-        removes a fundamental building block used by certain designs of federated
-        identity. This Group aims to start by bridging the gap for the federated identity designs which relied
+        removes a building block used by certain designs of federated
+        identity. This Group aims to bridge the gap for the federated identity designs which relied
         on third-party cookies.
       </p>
     </div>
@@ -168,20 +168,20 @@
       <h2>Scope</h2>
       <p>The Working Group will specify new web platform features intended to be implemented in browsers or similar user
         agents. The purpose of these features is to support authentication and authorization flows without compromising
-        security principles for Identity Providers (IdPs), Relying Parties (RPs), and User Agents as well as user
+        security principles for Identity Providers (IdPs), Relying Parties (RPs), and User Agents as well as protecting user
         privacy. Here "privacy" minimally refers to the appropriate processing of personal information. The result of
         this work is the development of new mechanisms that define how information is passed by the browser between the
         RP, the IdP, and authentication intermediaries to facilitate federated authentication; these mechanisms are not
         an authentication method.</p>
 
-      <p>If any of the mechanisms developed to support authentication and authorization flows look like they will result
-        in breaking changes for existing protocols, work on that mechanism must include a well-documented transition
+      <p>If any of the mechanisms developed to support authentication and authorization flows would cause
+        breaking changes for existing protocols, work on that mechanism must include a well-documented transition
         period.</p>
 
       <section id="section-out-of-scope">
         <h3 id="out-of-scope">Out of Scope</h3>
-        <p>The identity space is much larger than federated authentication. While there are several topics related to
-          identity that may be of interest, they are out of scope for our work.</p>
+        <p>The identity space is much larger than federated authentication. While several topics related to
+          identity may be of interest, they are out of scope for our work.</p>
 
         <p>Specific topics out of scope:</p>
         <ul class="out-of-scope">
@@ -224,7 +224,7 @@
           </dt>
           <dd>
             <p>This specification defines an API that allows users to login to websites with their federated accounts in a
-              privacy preserving manner.</p>
+              privacy-preserving manner.</p>
 
             <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/fedidcg/FedCM">Adopted from the
                 Federated Identity Community Group</a>
@@ -361,7 +361,7 @@ security-related capabilities and a source of expertise on web privacy.</dd>
 working group is expected to regularly coordinate with the Privacy CG to
 ensure that the work of the two groups is not in conflict.</dd>
 <dt><a href="https://www.w3.org/groups/wg/webauthn/" rel="nofollow">Web Authentication (WebAuthn) Working Group</a></dt>
-<dd>While we are not developing an authentication mechanism, it still must work in conjunction with existing authentication mechanisms. The WebAuthn Working Group may provide input and guidance for this requirement.</dd>
+<dd>While we are not developing an authentication mechanism, this work must operate in conjunction with existing authentication mechanisms. The WebAuthn Working Group may provide input and guidance for this requirement.</dd>
 <dt><a href="https://www.w3.org/WAI/APA/" rel="nofollow">Accessible Platform Architectures (APA) WG</a></dt>
 <dd>The APA WG seeks to ensure that accessibility is kept front of mind, as authentication timing and the reliance on short term memory are known and thorny topics for people with disabilities. APA WG can represent these issues that have been raised in the Cognitive Accessibility (COGA) TF, and Accessibility Guidelines (AG) WG.</p>
 </dl>
