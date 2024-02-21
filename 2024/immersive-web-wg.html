@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Immersive Web Working Group Charter</title>
+
+  <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+  <style>
+    main {
+      max-width: 60em;
+      margin: 0 auto;
+    }
+
+    ul#navbar {
+      font-size: small;
+    }
+
+    dt.spec {
+      font-weight: bold;
+    }
+
+    dt.spec new {
+      background: yellow;
+    }
+
+    ul.out-of-scope > li {
+      font-weight: bold;
+    }
+
+    ul.out-of-scope > li > ul > li{
+      font-weight: normal;
+    }
+
+    .issue {
+      background: cornsilk;
+      font-style: italic;
+    }
+
+    .todo {
+      color: #900;
+    }
+
+    footer {
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <aside>
+      <ul id="navbar">
+        <li><a href="#background">Background</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+    </aside>
+    <p>
+      <a href="https://www.w3.org/" target="_blank"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home"
+          width="72"></a>
+    </p>
+  </header>
+
+
+  <main>
+    <h1 id="title">Immersive Web Working Group Charter</h1>
+    <!-- delete PROPOSED after AC review completed -->
+
+    <p class="mission">
+      The <strong>mission</strong> of the <a href="https://www.w3.org/immersive-web/" target="_blank">Immersive Web
+        Working Group</a> is
+      to help bring high-performance Virtual Reality (VR) and Augmented Reality (AR) (collectively known as XR) to the
+      open Web via APIs to interact with XR devices and sensors in browsers.
+    </p>
+    <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+    <div class="noprint">
+      <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/109735/join" target="_blank">Join the Immersive Web
+          Working Group.</a>
+      </p>
+    </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/@@">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/@@/issues">issues</a></i>.
+          </p>
+
+    <section id="details">
+      <table class="summary-table">
+        <tr id="Status">
+          <th>
+            Charter Status
+          </th>
+          <td>
+            See the <a href="https://www.w3.org/groups/wg/immersive-web/charters" target="_blank">group status page</A>
+            and <a href="#history">detailed change history</a>.
+          </td>
+        </tr>
+        <tr id="Duration">
+          <th>
+            Start date
+          </th>
+          <td>
+            <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+          </td>
+        </tr>
+        <tr id="CharterEnd">
+          <th>
+            End date
+          </th>
+          <td>
+            <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Chairs
+          </th>
+          <td>
+            Ada Rose Cannon (Samsung), Chris Wilson (Google), Ayşegül Yönet (Microsoft)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Team Contacts
+          </th>
+          <td>
+            <a href="mailto:atsushi@w3.org" target="_blank">Atsushi Shimono</a> (0.15 <abbr
+              title="Full-Time Equivalent">FTE</abbr>)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Meeting Schedule
+          </th>
+          <td>
+            <strong>Teleconferences:</strong> topic-specific calls may be held
+            <br>
+            <strong>Face-to-face:</strong> we will meet during the W3C's
+            annual Technical Plenary week; additional face-to-face meetings
+            may be scheduled by consent of the participants, usually no more
+            than 3 per year.
+          </td>
+        </tr>
+      </table>
+
+    </section>
+
+    <section id="background" class="background">
+    </section>
+
+    <section id="scope" class="scope">
+      <h2>Scope</h2>
+      <div>
+        <p>
+          The Immersive Web Working Group will develop standardized APIs to provide
+          access to input and output capabilities commonly associated with
+          XR hardware such as tethered headsets and sensors as well as mobile handheld devices and standalone
+          headsets.
+          The group will also investigate compatibility with non head-worn, multi-view displays. Examples include Looking Glass or zSpace displays.
+          The group will develop APIs to enable the creation of XR web experiences
+          that are embeddable in the Web of today, enabling progressive enhancement
+          of existing sites.
+        </p>
+        <p>
+          A new generation of head-mounted displays and environment sensing capabilities on mobile devices are enabling
+          augmented
+          and virtual reality (collectively known as XR) to emerge as a critical field of evolution for human-machine
+          interactions. Due to its inherent low friction and support for ephemeral experiences, the Web provides a
+          promising
+          ecosystem for the creation, distribution, and experiencing of XR content, applications, and services. </p>
+        <p>
+          The <strong>scope</strong> of the Immersive Web Working Group charter is to
+          define APIs which:
+        </p>
+        <ul>
+          <li>Detect the UA's capability to render XR scenes and report XR sensor values, including the device's
+            position and
+            orientation over time.</li>
+          <li>Query the ability to support specific capabilities.</li>
+          <li>Present imagery to the device at the device's native frame rate, using the device’s position and
+            orientation over time to provide an immersive experience.
+          </li>
+          <li>Provide information about XR-specific input, including tracked controller state and hand gesture.
+          </li>
+          <li>Provide information needed to allow virtual imagery to feel like a natural part of the real-world display
+            on devices
+            which support augmenting reality, such as surface, lighting, and object tracking data.
+          </li>
+          <li>Better integrate immersive functionality into the web platform, for example enabling declarative
+            integration of 3D
+            models.
+          </li>
+          <li>Enable navigation between XR experiences.</li>
+        </ul>
+      </div>
+      <section id="section-out-of-scope">
+        <h3 id="out-of-scope">Out of Scope</h3>
+        <p>The following features are out of scope, and will not be addressed by this Working group.</p>
+
+        <ul class="out-of-scope">
+          <li>Defining browser user experience inside virtual or augmented reality, aside from navigating between XR
+            sites.</li>
+          <li>Defining mechanisms for global-scale AR browsing.</li>
+        </ul>
+      </section>
+
+    </section>
+
+    <section id="deliverables">
+      <h2>
+        Deliverables
+      </h2>
+
+      <p>More detailed milestones and updated publication schedules are available on the <a
+          href="https://www.w3.org/groups/wg/immersive-web/publications" target="_blank">group publication status page</a>.
+      </p>
+
+      <p class="todo">
+        <i>text for keeping CR/CRS</i>
+        The group will advance its other documents to Candidate Recommendation (with Snapshots) and, 
+        when they are sufficiently mature, to Recommendation. 
+        As noted below, some documents (<i>XXXX</i>) have particular milestones for being published as Candidate Recommendations.
+      </p>
+
+      <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected
+          completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a
+        stable state.</p>
+
+      <section id="normative">
+        <h3>
+          Normative Specifications
+        </h3>
+        <p>
+          The Working Group will deliver the following W3C normative specifications:
+        </p>
+        <dl>
+
+          <dt id="webxr-device-api-1" class="spec"><a href="https://immersive-web.github.io/webxr/"
+              target="_blank">WebXR Device
+              API</a></dt>
+          <dd>
+            <p>We will continue to maintain the core WebXR Device API but we don’t intend to add new features or make
+              substantial
+              changes.</p>
+            <p>This specification defines support for accessing virtual reality (VR) and augmented reality (AR) devices,
+              including sensors and head-mounted displays, on the Web.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr/"
+                target="_blank">Candidate Recommendation</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q3 2023</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2022/CR-webxr-20220331/"
+                target="_blank">WebXR Device API</a> (31 March 2022)</p>
+            <p>Produced under <b>Working Group Charter:</b> <a
+                href="https://www.w3.org/2020/05/immersive-Web-wg-charter.html" target="_blank">Previous charter period
+                of the Immersive
+                Web Working Group</a></p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2022/CR-webxr-20220331/'>https://www.w3.org/TR/2022/CR-webxr-20220331/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-9496-27901e8bd54a2a676efc007a2965c637bf272615@w3.org'> Call for Exclusion</a> on 2022-03-31, opportunity until 2022-05-30</p>
+          </dd>
+
+          <dt id="webxr-gamepads-module-1" class="spec"><a href="https://immersive-web.github.io/webxr-gamepads-module/"
+              target="_blank">WebXR
+              Gamepads Module - Level 1</a></dt>
+          <dd>
+            <p>We will continue to maintain the WebXR Gamepads Module but we don’t intend to add new features or make
+              substantial
+              changes.</p>
+            <p>This specification defines support for accessing button, trigger, thumbstick, and touchpad data
+              associated with virtual reality (VR) and augmented reality (AR) devices on the Web.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-gamepads-module-1/"
+              target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2023</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxr-gamepads-module-1-20210824/"
+                target="_blank">WebXR Gamepads
+                Module - Level 1</a> (24 August 2021)</p>
+            <p>Produced under <b>Working Group Charter:</b> <a
+                href="https://www.w3.org/2020/05/immersive-Web-wg-charter.html" target="_blank">Previous charter period
+                of the Immersive
+                Web Working Group</a></p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/'>https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-7193-cf587ae1c2ebc13c54392174876cc8922874016e@w3.org'> Call for Exclusion</a> on 2019-10-10 ended on 2020-03-08</p>
+          </dd>
+
+          <dt id="webxr-ar-module-1" class="spec"><a href="https://immersive-web.github.io/webxr-ar-module/"
+              target="_blank">WebXR Augmented
+              Reality Module - Level 1</a></dt>
+          <dd>
+            <p>We will continue to maintain the WebXR Augmented Reality Module but we don’t intend to add new features
+              or make
+              substantial changes.</p>
+            <p>This specification defines an expansion module of the WebXR Device API with the functionality available
+              on AR hardware.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-ar-module-1/"
+              target="_blank">Candidate Recommendation</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q2 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxr-ar-module-1-20210824/"
+                target="_blank">WebXR
+                Augmented Reality
+                Module - Level 1</a> (24 August 2021)</p>
+            <p>Produced under <b>Working Group Charter:</b> <a
+                href="https://www.w3.org/2020/05/immersive-Web-wg-charter.html">Previous charter period of the Immersive
+                Web Working Group</a></p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2022/CR-webxr-ar-module-1-20221101/'>https://www.w3.org/TR/2022/CR-webxr-ar-module-1-20221101/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-10755-052e03bf87b1bc6b5e30c3a2050d3b1ee57a5923@w3.org'> Call for Exclusion</a> on 2019-10-10 ended on 2020-03-08</p>
+          </dd>
+
+          <dt id="webxr-hit-test" class="spec"><a href="https://immersive-web.github.io/hit-test/" target="_blank">WebXR
+              Hit Test Module</a></dt>
+          <dd>
+            <p>We will continue to maintain the WebXR Hit Test Module but we don’t intend to add new features or make
+              substantial
+              changes.</p>
+            <p>This specification defines a method for performing hit tests against real world geometry to be used with
+              the WebXR Device API.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-hit-test-1/"
+              target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q3 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxr-hit-test-1-20210831/"
+                target="_blank">WebXR
+                Hit Test
+                Module</a> (31 August 2021)</p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2021/WD-webxr-hit-test-1-20210831/'>https://www.w3.org/TR/2021/WD-webxr-hit-test-1-20210831/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-8519-04be7f101f94882ce9ad5bbb5fbcd94ee7315b1c@w3.org'> Call for Exclusion</a> on 2021-08-31 ended on 2022-01-28</p>
+          </dd>
+
+        </dl>
+        <dl>
+
+          <dt id="webxr-dom-overlays" class="spec"><a href="https://immersive-web.github.io/dom-overlays/"
+              target="_blank">WebXR DOM Overlays Module</a></dt>
+          <dd>
+            <p>This specification defines a mechanism for showing interactive 2D web content during an immersive WebXR
+              session.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-dom-overlays-1/"
+              target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/"
+                target="_blank">WebXR DOM Overlays
+                Module</a> (31 August 2021)</p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/'>https://www.w3.org/TR/2021/WD-webxr-dom-overlays-1-20210831/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-8520-c287850e7931cbfa0340f98bf88914a3e09eb696@w3.org'> Call for Exclusion</a> on 2021-08-31 ended on 2022-01-28</p>
+          </dd>
+
+          <dt id="webxr-lighting-estimation" class="spec"><a href="https://immersive-web.github.io/lighting-estimation/"
+              target="_blank">WebXR Lighting Estimation API Level 1</a></dt>
+          <dd>
+            <p>This specification enables developers to render augmented reality content that reacts to real world
+              lighting with the WebXR Device API and the WebXR AR Module.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-lighting-estimation-1/" target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a
+                href="https://www.w3.org/TR/2021/WD-webxr-lighting-estimation-1-20210909/" target="_blank">WebXR Lighting Estimation API Level 1</a> (9 September 2021)</p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2021/WD-webxr-lighting-estimation-1-20210909/'>https://www.w3.org/TR/2021/WD-webxr-lighting-estimation-1-20210909/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-8571-aa44fe0b1d0076df4a491deb7d06b0049d243f3f@w3.org'> Call for Exclusion</a> on 2021-09-09 ended on 2022-02-06</i></p>
+          </dd>
+
+          <dt id="webxr-hand-input" class="spec"><a href="https://immersive-web.github.io/webxr-hand-input/"
+              target="_blank">WebXR Hand Input Module - Level 1</a></dt>
+          <dd>
+            <p>This specification defines a method for enabling hand input to be used with the WebXR Device API.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-hand-input-1/"
+              target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxr-hand-input-1-20210824/"
+                target="_blank">WebXR Hand Input Module - Level 1</a> (24 August 2021)</p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2020/WD-webxr-hand-input-1-20201022/'>https://www.w3.org/TR/2020/WD-webxr-hand-input-1-20201022/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-7623-ef016e129bceabf9aa2b7558bda7d0ce303bde86@w3.org'> Call for Exclusion</a> on 2020-10-22 ended on 2021-03-21</p>
+          </dd>
+
+          <dt id="webxr-anchors" class="spec"><a href="https://immersive-web.github.io/anchors/">WebXR Anchors
+              Module</a></dt>
+          <dd>
+            <p>We will continue to maintain the WebXR Anchors Module but we don’t intend to add new features or make
+              substantial
+              changes.</p>
+            <p>This specification enables users of the WebXR Device API to specify poses in local coordinate systems
+              that need to be updated to correctly reflect the evolving understanding of the world, such that the poses
+              remain aligned with the same place in the physical world. These poses will persist inside sessions, but
+              not across sessions.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://immersive-web.github.io/anchors/">Editor's Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> Adopted from <a href="https://www.w3.org/community/immersive-web/">the
+                Immersive Web CG</a></p>
+          </dd>
+
+          <dt id="webxr-anchors-2" class="spec"><a href="https://immersive-web.github.io/anchors/">WebXR Anchors
+              Module - Level 2</a></dt>
+          <dd>
+            <p>This specification enables users of the WebXR Device API Anchors to have persistent Anchors between sessions.</p>
+            <p class="draft-status"><b>Draft state:</b> No Draft</p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+          </dd>
+
+          <dt id="webxr-hit-test" class="spec"><a href="https://immersive-web.github.io/layers/" target="_blank">WebXR Layers API Level 1</a></dt>
+          <dd>
+            <p>This specification defines methods for manipulating composition layers used with the WebXR Device API.
+            </p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxrlayers-1/"
+              target="_blank">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q2 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webxrlayers-1-20211207/"
+                target="_blank">WebXR Layers API Level 1</a> (7 December 2021)
+            </p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/'>https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-7696-f109199ec21e8eb19e4554ea36ee617b07e5f00d@w3.org'> Call for Exclusion</a> on 2020-12-03 ended on 2021-05-02</p>
+          </dd>
+        </dl>
+
+        <dl>
+          <dt id="raw-camera-access" class="spec"><a href="https://immersive-web.github.io/raw-camera-access/">WebXR Raw Camera Access Module</a></dt>
+          <dd>
+            <p>This feature would enable predictable access to camera frame data for AR devices.</p>
+            <p class="draft-status"><b>Draft state:</b> Adopted from <a href="https://www.w3.org/community/immersive-web/">the Immersive Web CG</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2023</i></p>
+            <p><b>Adopted Working Draft:</b> Adopted from <a
+                href="https://immersive-web.github.io/raw-camera-access/">the
+                Immersive Web CG</a></p>
+          </dd>
+
+          <dt id="depth-occlusion" class="spec"><a href="https://immersive-web.github.io/depth-sensing/">Depth/Occlusion
+              API</a></dt>
+          <dd>
+            <p>This feature would provide depth and occlusion data on AR devices.</p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webxr-depth-sensing-1/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a
+                href="https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/">WebXR Depth Sensing Module</a> (31 August 2021)</p>
+            <p>Exclusion Draft:
+              <a href='https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/'>https://www.w3.org/TR/2021/WD-webxr-depth-sensing-1-20210831/</a><br>
+              associated <a href='https://www.w3.org/mid/cfe-8518-b1a8b62d07dce7e017068baaa2fb901082738934@w3.org'> Call for Exclusion</a> on 2021-08-31 ended on 2022-01-28</p>
+          </dd>
+
+          <dt id="spec-navigation" class="spec"><a href="https://github.com/immersive-web/navigation">Navigation</a>
+          </dt>
+          <dd>
+            <p>This feature would enable better control of experiences when users navigate from one XR experience to
+              another.</p>
+            <p class="draft-status"><b>Draft state:</b> Adopted from <a href="https://www.w3.org/community/immersive-web/">the Immersive Web CG</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> Adopted from <a href="https://github.com/immersive-web/navigation">the Immersive Web CG</a></p>
+          </dd>
+
+          <dt id="spec-navigation" class="spec"><a href="https://github.com/immersive-web/model-element">Model Element</a>
+          </dt>
+          <dd>
+            <p>This feature is to add a new HTML element to handle displaying 3D</p>
+            <p>This may become a recommendation to the WhatWG rather than being published under the Immersive Web Working Group</p>
+            <p class="draft-status"><b>Draft state:</b> No draft yet</p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+          </dd>
+        </dl>
+
+          <p>
+            The Working Group also intends to work on the following Recommendation-Track deliverables, although it
+            recognizes these
+            Recommendations may not be completed before the end of this charter period. All work is expected to be
+            incubated in the
+            Immersive Web Community Group first. These deliverables are in rough priority order as of the start of the
+            charter
+            period, although the Chairs may reprioritize based on the consensus of the Working Group during the
+            charter period.</p>
+
+        <dl>
+          <dt id="webxr-real-world-geometry" class="spec"><a
+              href="https://immersive-web.github.io/real-world-geometry/plane-detection.html">WebXR Real World Geometry
+              Module</a></dt>
+          <dd>
+            <p>This specification enables access to real world geometry like planes and meshes to be used with the WebXR
+              AR Module. It is possible this module will be split into multiple deliverables.</p>
+            <p class="draft-status"><b>Draft state:</b> Adopted from <a
+                href="https://www.w3.org/community/immersive-web/">the
+                Immersive Web CG</a></p>
+            <p class="milestone"><b>Expected completion:</b> <i>Q4 2024</i></p>
+            <p><b>Adopted Working Draft:</b> <a href="https://github.com/immersive-web/real-world-geometry"
+                target="_blank">WebXR
+                Real
+                World Geometry Proposal</a></p>
+          </dd>
+        </dl>
+
+          <p>
+            The Working Group also may choose to deliver normative specifications for the following features, if there
+            is consensus
+            in the Working Group that they are ready to move to the Recommendation track after sufficient incubation in
+            <a href="https://www.w3.org/community/immersive-web/">the
+              Immersive Web CG</a>.
+
+          </p>
+
+        <dl>
+          <dt id="xr-capture" class="spec"><a href="https://github.com/immersive-web/proposals/issues/68">XR Capture
+              Module</a></dt>
+          <dd>
+            <p>This feature would enable users to record their AR session directly to the device in a way that is opaque
+              to the web
+              site.</p>
+          </dd>
+
+          <dt id="image-detection" class="spec">Image Detection</dt>
+          <dd>
+            <p>This feature would enable access to image detection support on AR devices.</p>
+          </dd>
+
+          <dt id="marker-detection" class="spec"><a href="https://immersive-web.github.io/marker-tracking/">Marker Detection</a></dt>
+          <dd>
+            <p>This feature would enable access to QR code marker detection support on AR devices.</p>
+          </dd>
+
+          <dt id="face-detection" class="spec">Face Detection</dt>
+          <dd>
+            <p>This feature would enable access to face detection support on AR devices.</p>
+          </dd>
+          <dt id="gaze-tracking" class="spec">Gaze Tracking</dt>
+          <dd>
+            <p>This feature would provide data tracking the user's gaze, for example to provide foveal-rendering
+              improvement features.</p>
+          </dd>
+          <dt id="geo-alignment" class="spec"><a href="https://github.com/immersive-web/geo-alignment">Geo-alignment</a></dt>
+          <dd>
+            <p>This feature would facilitate geo-spatial AR data in the context of immersive web, to utilize geo alignment using coordinate system with geospatial orientation.</p>
+          </dd>
+
+        </dl>
+
+      </section>
+
+      <section id="ig-other-deliverables">
+        <h3>
+          Other Deliverables
+        </h3>
+        <p>
+          Other non-normative documents may be created such as:
+        </p>
+        <ul>
+          <li>A <a href="https://github.com/immersive-web/webxr-input-profiles" target="_blank">registry of WebXR
+              Gamepad assets, source
+              library and schema</a>.</li>
+          <li>A <a href="https://github.com/immersive-web/webxr-test-api" target="_blank">common backend functionality
+              simulation to
+              enable Web Platform Tests.</a>.</li>
+          <li>A <a href="https://github.com/immersive-web/webxr-polyfill" target="_blank">polyfill of WebXR Device API
+              VR functionality
+              and WebXR Gamepad Module for browsers than support WebVR 1.1, or mobile devices with no WebVR/WebXR
+              support.</a>.</li>
+          <li>Use case and requirement documents;</li>
+          <li>Test suite and implementation report for the specification;</li>
+          <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+        </ul>
+      </section>
+
+    </section>
+
+    <section id="success-criteria">
+      <h2>Success Criteria</h2>
+      <p class="todo">
+        <i>possible alternate text for keeping CR/CRS</i>
+        In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">Candidate Recommendation</a> 
+        and to add features after reaching Candidate Recommendation, 
+        each feature is expected to be supported by <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a>,
+        which may be judged by factors including existing implementations, expressions of interest, and lack of opposition. 
+      </p>
+      <p>
+        In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites, and two or more implementations interoperating with each other.
+        <i>[delate this sentence? dup to others]</i>
+        In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.
+      </p>
+
+    <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+
+    <p>
+      To promote interoperability, all changes made to specifications 
+      in Candidate Recommendation 
+      or to features that have deployed implementations
+      should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.  
+      Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
+
+    <!-- Horizontal review -->
+
+      <p>Each specification should contain sections detailing all known security and privacy implications for
+        implementers, Web authors, and end users.</p>
+
+      <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including
+        ways specification features can be used to address them, and
+        recommendations for maximising accessibility in implementations.</p>
+
+    <!-- Design principles -->
+    <p>This Working Group expects to follow the
+    TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+    </p>
+  
+    <!-- Relevance and momentum -->
+    <p>All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
+  </section>
+
+      <p>
+        <i>[dup to new test section?]</i>
+        To promote interoperability, all changes made to specifications should have <a
+          href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+    </section>
+
+    <section id="coordination">
+      <h2>Coordination</h2>
+      <p>For all specifications, this Working Group will seek <a
+          href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+        accessibility, internationalization, privacy, and security with the relevant Working and
+        Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group"
+          target="_blank">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including
+        <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft"
+          target="_blank">FPWD</a>. The
+        Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development
+        of
+        each specification. The Working Group is advised to seek a review at least 3 months before first entering
+        <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation" target="_blank">CR</a>
+        and is
+        encouraged
+        to proactively notify the horizontal review groups when major changes occur in a specification following a
+        review.
+      </p>
+
+      <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+      <section>
+        <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt>
+            <a href="https://www.w3.org/community/immersive-web/" target="_blank">Immersive Web Community
+              Group</a>
+          </dt>
+          <dd>
+            The Immersive Web Community Group will provide the WebXR Device API seed specification to begin the
+            standards process. In addition, the Immersive Web Working Group plans to partner closely with the IWCG to
+            incubate new features - in particular, incubation of features that are out of current scope for the Immersive Web Working
+            Group will happen in the Community Group, and then be followed by future Immersive Web Working Group rechartering to include them in
+            scope.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/2009/dap/" target="_blank">Devices and Sensors Working Group</a>
+          </dt>
+          <dd>
+            The Devices and Sensors Working Group develops the Generic Sensor
+            framework, which may provide valuable integration point with
+            sensors that integrate with XR devices.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/2011/webappsec/" target="_blank">Web Application
+              Security Working Group</a>
+          </dt>
+          <dd>
+            The Web Application Security Working Group develops the
+            Permissions API as well as guidance on the definition of powerful
+            features, both of which might apply to the features provided by
+            the WebXR Device API.
+          </dd>
+          <dt>
+            <a href="https://www.w3.org/WAI/APA/" target="_blank">Accessible Platform
+              Architectures (APA) Working Group</a>
+          </dt>
+          <dd>
+            The APA Working Group will review deliverables for accessibility
+            implications and help develop solutions, noting the following <a href="https://www.w3.org/TR/xaur/">XR Accessibility User Requirements</a> resource.
+          </dd>
+          <dt><a href="https://www.w3.org/2011/audio/" target="_blank">Audio Working Group</a></dt>
+          <dd>The Audio Working group develops the <a href="https://www.w3.org/TR/webaudio/" target="_blank">Web Audio
+              API</a>, which
+            enables 3D audio spatialization. We expect users of the WebXR Device API to want to spatialize audio, and
+            the two groups will work together to ensure this works for developers as well as examine how to better
+            support this in the future.</dd>
+
+          <dt><a href="https://www.w3.org/2020/gpu/" target="_blank">GPU For The Web Working Group</a></dt>
+          <dd>
+            The GPU for the Web Working Group develops the <a href="https://www.w3.org/TR/webgpu/">WebGPU</a> 
+            Specification and the <a href="https://www.w3.org/TR/WGSL/">WebGPU Shading Language</a> Specification,
+            both of which might apply to the features provided by the WebXR
+            Device API and modules.
+          </dd>
+          <dt><a href="https://www.w3.org/community/wicg/" target="_blank">Web Platform Incubator Community Group</a></dt>
+          <dd>
+            The Web Platform Incubator Community Group provides a lightweight venue for proposing, incubating, 
+            and discussing new web platform features. 
+            The Immersive Web Working Group will incubate and work on new model element proposal that are within 
+            scope of WICG. 
+          </dd>
+        </dl>
+
+      </section>
+
+      <section>
+        <h3 id="external-coordination">External Organizations</h3>
+        <dl>
+          <dt>
+            <a href="https://khronos.org/" target="_blank">Khronos Group</a>
+          </dt>
+          <dd>
+            The Khronos Group is in charge of the WebGL specification on
+            which the WebXR Device API heavily relies for its operations. The Immersive Web Working Group
+            will coordinate its roadmap with planned evolutions of WebGL. The
+            Immersive Web Working Group will also track and coordinate with <a href="https://www.khronos.org/openxr" target="_blank">Khronos
+              OpenXR standard
+              initiative</a>.
+          </dd>
+          <dt>
+            <a href="https://www.web3d.org/" target="_blank">Web3D Consortium</a>
+          </dt>
+          <dd>
+            The Web3D Consortium is in charge of the Extensible 3D (X3D) Graphics specification.
+            X3D version 4 (X3D4) supports close integration with HTML5,
+            and version 4.1 will add Mixed Augmented Reality capabilities for diverse
+            virtual and augmented reality devices.
+          </dd>
+          <dt><a href="https://www.ogc.org/projects/groups/geoposeswg" target="_blank">Open Geospatial Consortium</a></dt>
+          <dd>
+            The Open Geospatial Consortium creates free, publicly available geospatial standards that enable new technologies. OGC also manages an agile and collaborative research and development process that anticipates and solves real-world geospatial challenges experienced by its members. One of the OGC working groups that is most relevant for Immersive Web focuses on development of GeoPose, an encoding specification to seamlessly express, record, and share the geographically-anchored position and 6 DOF orientation of objects in an entirely consistent manner across different applications, users, devices, services, and platforms which adopt the standard or are able to translate/exchange the GeoPose into another CRS. The Immersive Web Working Group will coordinate its roadmap with planned evolutions of relevant OGC standards, including but not limited to GeoPose.
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section class="participation">
+      <h2 id="participation">
+        Participation
+      </h2>
+      <p>
+        To be successful, this Working Group is expected to have 6 or more active participants for its duration,
+        including representatives from the key implementers of this specification, and active Editors and Test Leads for
+        each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a
+        working day per week towards the Working Group. There is no minimum requirement for other
+        Participants.
+      </p>
+      <p>
+        The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+        described in <a href='#communication'>Communication</a>.
+      </p>
+      <p>
+        The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement
+        to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/" target="_blank">W3C Patent Policy</a>.
+      </p>
+      <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+        W3C <a href="https://www.w3.org/Consortium/cepc/" target="_blank">Code of Ethics and Professional Conduct</a>.
+      </p>
+    </section>
+
+    <section id="communication">
+      <h2>
+        Communication
+      </h2>
+      <p id="public">
+        Technical discussions for this Working Group are conducted in <a
+          href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from
+        teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue
+        tracking will be conducted in a manner that can be both read and written to by the general public. Working
+        Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct
+        public contribution requests.
+        The meetings themselves are not open to public participation, however.
+      </p>
+      <p>
+        Information about the group (including details about deliverables, issues, actions, status, participants, and
+        meetings) will be available from the <a href="https://www.w3.org/immersive-web/" target="_blank">Immersive Web
+          Working Group
+          home page.</a>
+      </p>
+      <p>
+        Most Immersive Web Working Group teleconferences will focus on discussion of particular specifications, and will
+        be conducted on an as-needed basis.
+      </p>
+      <p>
+        This group primarily conducts its technical work
+        in <a id="public-github" href="https://github.com/immersive-web/webxr/issues" target="_blank">GitHub issues</a>
+        and
+        on the public mailing list <a href="mailto:public-immersive-web-wg@w3.org">public-immersive-web-wg@w3.org</a>
+        (<a href="https://lists.w3.org/Archives/Public/public-immersive-web-wg/" target="_blank">archive</a>).
+        The public is invited to review, discuss and contribute to this work.
+      </p>
+      <p>
+        The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+        Chairs and members of the group, for member-only discussions in special cases when a participant requests such a
+        discussion.
+      </p>
+    </section>
+
+
+
+    <section id="decisions">
+      <h2>
+        Decision Policy
+      </h2>
+      <p>
+        This group will seek to make decisions through consensus and due process, per the <a
+          href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 5.2.1, Consensus3</a>). Typically, an
+        editor or other participant makes an initial proposal, which is then refined in discussion with members of the
+        group and other reviewers, and consensus emerges with little formal voting being required.</p>
+      <p>
+        However, if a decision is necessary for timely progress and consensus is not achieved after careful
+        consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+        with any objections.
+      </p>
+      <p>
+        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+        A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based
+        survey), with a response period from <span id='cfc'>one week to 10 working days</span>, depending on the chair's
+        evaluation of the group consensus on the issue.
+
+        If no objections are raised by the end of the response period, the resolution will be considered to have
+        consensus as a resolution of the Working Group.
+      </p>
+      <p>
+        All decisions made by the group should be considered resolved unless and until new information becomes available
+        or unless reopened at the discretion of the Chairs.
+      </p>
+      <p>
+        This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes"
+          target="_blank">W3C
+          Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document
+        requires.
+      </p>
+    </section>
+
+
+
+    <section id="patentpolicy">
+
+      <h2>
+        Patent Policy
+      </h2>
+      <p>
+        This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/" target="_blank">W3C
+          Patent
+          Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue
+        Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+        For more information about disclosure obligations for this group, please see the <a
+          href="https://www.w3.org/groups/wg/immersive-web/ipr">licensing information</a>.
+      </p>
+
+    <section id="licensing">
+      <h2>Licensing</h2>
+      <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software"
+          target="_blank">W3C Software
+          and Document license</a> for all its deliverables.</p>
+    </section>
+
+
+
+    <section id="about">
+      <h2>
+        About this Charter
+      </h2>
+      <p>
+        This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG"
+          target="_blank">section
+          3.4</a> of the <a href="https://www.w3.org/Consortium/Process/" target="_blank">Process Document</a>. In the
+        event of a
+        conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take
+        precedence.
+      </p>
+
+      <section id="history">
+        <h3>
+          Charter History
+        </h3>
+        <table class="history">
+          <tbody>
+            <tr>
+              <th>
+                Charter Period
+              </th>
+              <th>
+                Start Date
+              </th>
+              <th>
+                End Date
+              </th>
+              <th>
+                Changes
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2018/09/immersive-web-wg-charter.html" target="_blank">Initial Charter</a>
+              </th>
+              <td>
+                24 September 2018
+              </td>
+              <td>
+                1 March 2020
+              </td>
+              <td>
+                none
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Mar/0001.html"
+                  target="_blank">Charter
+                  Extension</a>
+              </th>
+              <td>
+                9 March 2020
+              </td>
+              <td>
+                30 April 2020
+              </td>
+              <td>
+                none
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2020/05/immersive-Web-wg-charter.html" target="_blank">Rechartered</a>
+              </th>
+              <td>
+                12 May 2020
+              </td>
+              <td>
+                1 June 2022
+              </td>
+              <td>
+                <p>Added: WebXR Gamepads Module, WebXR Augmented Reality Module, WebXR Hit Test Module, WebXR DOM Overlays
+                  Module, WebXR Lighting Estimation Module, WebXR Hand Input Module, WebXR Real World Geometry Module,
+                  WebXR Anchors Module, WebXR Layers</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0036.html"
+                  target="_blank">Charter
+                  Extension</a>
+              </th>
+              <td>
+                1 June 2022
+              </td>
+              <td>
+                1 September 2022
+              </td>
+              <td>
+                none
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="https://www.w3.org/2022/07/immersive-Web-wg-charter.html" target="_blank">Rechartered</a>
+              </th>
+              <td>
+                8 July 2022
+              </td>
+              <td>
+                7 July 2024
+              </td>
+              <td>
+                <p>Added: Raw Camera Access, Depth/Occlusion API, Navigation, WebXR Anchors Proposal Module - Level 2, Model Element<br>
+                Expanded Scope with new type of devices, handling of 3D models, and navigation to follow emering industrial needs.</p>
+              </td>
+            </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="changelog">
+        <h3>Change log</h3>
+
+        <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+        <p>Changes to this document are documented in this section.</p>
+        <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+      </section>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <address>
+      <a href="mailto:atsushi@w3.org">Atsushi Shimono</a>
+    </address>
+
+<p class="copyright">Copyright © <i class="todo">[yyyy]</i> <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+</body>
+
+</html>
