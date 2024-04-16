@@ -109,6 +109,11 @@
           href="https://www.w3.org/groups/wg/sdw/join">join the
           Spatial Data on the Web Working Group</a>; OGC Members
           should contact the Chairs or Staff Contact to join the group.
+
+        <p><i class=todo>OGC Members should join the <a
+          href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=292&amp;tab=0"
+          >Observations, Measurements and Samples Standards Working
+          Group</a>.</i>
       </div>
 <!-- delete the GH link after AC review completed -->
       <p style="padding: 0.5ex; border: 1px solid green">This proposed
@@ -146,6 +151,8 @@
               <th> Chairs
 
               <td> <i class=todo>[chair name] (affiliation)</i>
+                <!-- Kathi Schleidt, Datacove<br>
+		     Glenn Laughlin, Pelagis -->
 
             <tr>
               <th> Team Contacts
@@ -162,6 +169,11 @@
                 the W3C's annual Technical Plenary week; additional
                 face-to-face meetings may be scheduled by consent of
                 the participants, usually no more than 3 per year.</i>
+                <br>
+                <i class=todo>the WG will meet in conjunction with the
+                <a
+                href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=292&amp;tab=0"
+                >OMS SWG</a> during OGC's Member Meetings.</i>
         </table>
       </div>
 
@@ -179,9 +191,15 @@
         <p>The Spatial Data on the Web WG will:
 
         <ul>
-          <li>Create and maintain geospatial Web standards and
-            geospatial profiles of more general standards as enumerated
-            in deliverables.
+          <li>Maintain and update the SSN Ontology, including the SOSA
+            vocabulary.
+
+          <li>Support the development of resources required to support
+            the adoption of the SSN ontology.
+
+          <li>Maintain geospatial Web standards and geospatial
+            profiles of more general standards as enumerated in
+            deliverables.
 
           <li>Coordinate among incubation groups, by providing a forum
             where early ideas for geospatial Web standards can be
@@ -209,14 +227,9 @@
         <section id=section-out-of-scope>
           <h3 id=out-of-scope>Out of Scope</h3>
 
-          <p>The following features are out of scope, and will not be
-            addressed by this Working group.
-
-          <ul class=out-of-scope>
-            <li>The Spatial Data on the Web Working Group will only
-              produce deliverables where it is in the interests of both
-              OGC and W3C to collaborate.
-          </ul>
+          <p>The Spatial Data on the Web Working Group will only
+            produce deliverables where it is in the interests of both
+            OGC and W3C to collaborate.
         </section>
       </section>
 
@@ -239,8 +252,45 @@
           <p>The Working Group will deliver the following W3C
             normative specifications:
 
-          <p class=todo>Consider making a second list for existing
-            specifications that the group will maintain.
+          <ul>
+            <li class=spec id=6379> <a
+              href="https://www.w3.org/TR/vocab-ssn/" rel=versionof
+              >Semantic Sensor Network Ontology</a> – new edition
+              <ul>
+                <li class=draft-status>Draft state: Adopted
+
+                <li class=milestone>Expected completion: <i class=todo
+                  >Q4 2024</i>
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
+                  >2017-10-19</a>
+
+                <li>Abstract:
+                  <p>The Semantic Sensor Network (SSN) ontology is an
+                    RDFS/OWL ontology for describing observations made
+                    by sensors implementing specified procedures, the
+                    studied features of interest and the observed
+                    properties, along with samples used in the
+                    observations and the sampling activities that
+                    created them, as well as actuations which follow a
+                    similar semantics and data structure.
+
+                  <p>The SOSA vocabulary (Sensors, Observations,
+                    Samples and Actuations) contains the core terms and
+                    definitions from SSN, packaged for use in general
+                    applications.
+
+                  <p>Some extension modules are included in the
+                    recommendation.
+
+                  <p>Alignments with some related ontologies and data
+                    models are included in the recommendation.
+              </ul>
+          </ul>
+
+          <p>The Working Group will maintain the following existing
+            specifications:
 
           <ul>
             <li class=spec id=10810> <a
@@ -269,40 +319,8 @@
                 <li>Produced under Working Group Charter: <a
                   href="https://www.w3.org/2015/spatial/charter"
                   >http://www.w3.org/2015/spatial/charter</a>
-
-                <li>Abstract: OWL-Time is an OWL-2 DL ontology of
-                  temporal concepts, for describing the temporal
-                  properties of resources in the world or described in
-                  Web pages. The ontology provides a vocabulary for
-                  expressing facts about topological (ordering)
-                  relations among instants and intervals, together with
-                  information about durations, and about temporal
-                  position including date-time information. Time
-                  positions and durations may be expressed using either
-                  the conventional (Gregorian) calendar and clock, or
-                  using another temporal reference system such as
-                  Unix-time, geologic time, or different calendars.
               </ul>
 
-            <li class=spec id=6379> <a
-              href="https://www.w3.org/TR/vocab-ssn/" rel=versionof
-              >Semantic Sensor Network Ontology</a>
-              <ul>
-                <li class=draft-status>Draft state: Adopted
-
-                <li class=milestone>Expected completion: N/A
-
-                <li>Latest publication: <a
-                  href="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
-                  >2017-10-19</a>
-              </ul>
-          </ul>
-        </section>
-
-        <section id=ig-other-deliverables>
-          <h3>Other Deliverables</h3>
-
-          <ul>
             <li class=spec id=5693> <a
               href="https://www.w3.org/TR/sdw-ucr/" rel=versionof
               >Spatial Data on the Web Use Cases &amp; Requirements</a
@@ -390,17 +408,28 @@
                   >2023-09-19</a>
               </ul>
           </ul>
+        </section>
+
+        <section id=ig-other-deliverables>
+          <h3>Other Deliverables</h3>
 
           <p>Other non-normative documents may be created such as:
 
           <ul>
-            <li>Use case and requirement documents;
+            <li>RDF artefacts including testing and validation tools
+              (e.g. JSON-Schema, SHACL Shapes)
 
             <li>Test suite and implementation report for the
-              specification;
+              specifications
 
             <li>Primer or Best Practice documents to support web
-              developers when designing applications.
+              developers when designing applications
+
+            <li>OGC Discussion Papers
+
+            <li>OGC Technical Papers
+
+            <li>W3C Notes
           </ul>
         </section>
 
@@ -484,9 +513,9 @@
           internationalization, privacy, and security with the relevant
           Working and Interest Groups, and with the <a
           href="https://www.w3.org/2001/tag/"
-          title="Technical           Architecture Group">TAG</a>.
-          Invitation for review must be issued during each major
-          standards-track document transition, including <a
+          title="Technical Architecture Group">TAG</a>. Invitation
+          for review must be issued during each major standards-track
+          document transition, including <a
           href="https://www.w3.org/Consortium/Process/#RecsWD"
           title="First Public Working Draft">FPWD</a>. The Working
           Group is encouraged to engage collaboratively with the
@@ -514,17 +543,7 @@
         <section>
           <h3 id=w3c-coordination>W3C Groups</h3>
 
-          <p class=todo>Check this list
-
           <dl>
-            <dt>Web of Things <a href="https://www.w3.org/WoT/IG/"
-              >Interest Group</a> and <a
-              href="https://www.w3.org/WoT/WG/">Working Group</a>
-
-            <dd>The Web of Things is heavily dependent on location
-              data. Cooperation and interoperability of specifications
-              is essential.
-
             <dt><a href="https://www.w3.org/2017/dxwg/">Dataset
               Exchange Working Group</a>
 
@@ -532,83 +551,10 @@
               such as coordinate reference system, granularity. These
               must be taken into account by the DXWG.
 
-            <dt><a href="https://www.w3.org/community/semstats/"
-              >Semantic Statistics Community Group</a>
+            <dt><a href="https://www.w3.org/groups/wg/das/">Devices
+              and Sensors Working Group</a>
 
-            <dd>The Statistical Data on the Web Best Practices
-              deliverable will not be restricted to geospatial
-              statistics data. The Spatial Data on the Web Working
-              Group expects to maintain a close liaison with the
-              Semantic Statistics Community Group to gather feedback
-              and contributions from organizations publishing open data
-              such as National Statistics Offices.
-
-            <dt><a href="https://www.w3.org/community/lbd/">Linked
-              Building Data Community Group</a>
-
-            <dd>The Linked Building Data Community Group brings
-              together experts in the area of building information
-              modelling (BIM) and Web of Data technologies to define
-              existing and future use cases and requirements for linked
-              data based applications and corresponding ontologies
-              across the life cycle of buildings.
-
-            <dt><a href="https://www.w3.org/community/lda/">Linked
-              Data for Accessibility Community Group</a>
-
-            <dd>The Linked Data for Accessibility Community Group’s
-              mission is to make accessibility information about
-              buildings, services and routes easier to find —
-              everywhere where people need it.
-
-            <dt><a
-              href="https://www.w3.org/community/autowebplatform/"
-              >Automotive and Transportation Business Group</a>
-
-            <dd>The Automotive and Transportation Business Group, soon
-              to be renamed and relaunched as the Automotive and
-              Transportation Business Group has been exploring the use
-              cases and challenge of off-boarding vehicle information
-              to the cloud and how this information fits within the
-              broader transportation sector. It is taking a data
-              centric focus and working on an ontology for vehicle
-              signals and coordinating effort with OGC, SDWWG, ISO
-              SmartCities, ISO Intelligent Transportation Systems and
-              others on transportation related ontologies.
-
-            <dt><a href="https://www.w3.org/community/maps4html/"
-              >Maps For HTML Community Group</a>
-
-            <dd>The Maps For HTML Community Group seeks to establish
-              maps as a first class object on the web similar to the
-              Media and Entertainment activity did for video, allowing
-              for layering and customizing data on a scale not
-              currently possible with proprietary online map offerings.
-
-            <dt><a href="https://www.w3.org/community/ar/">Augmented
-              Reality Community Group</a>
-
-            <dd>The Augmented Reality Community Group is an open forum
-              for collaborative discussions about the intersection of
-              Augmented Reality and the Web.
-
-            <dt>Immersive Web <a
-              href="https://www.w3.org/immersive-web/">Working
-              Group</a> and <a
-              href="https://www.w3.org/community/immersive-web/"
-              >Community Group</a>
-
-            <dd>These groups helps bring high-performance Virtual
-              Reality (VR) and Augmented Reality (AR) (collectively
-              known as XR) to the open Web.
-
-            <dt><a href="https://www.w3.org/2011/webtv/">Media and
-              Entertainment Interest Group</a>
-
-            <dd>The Media and Entertainment Interest Group provides a
-              forum for media-related technical discussions and
-              includes the Media Timed Events Task Force, which is
-              relevant for WebVMT coordination.
+            <dd>Sensor and system descriptions.
           </dl>
         </section>
 
@@ -626,23 +572,23 @@
 
           <dl>
             <dt><a
-              href="https://www.opengeospatial.org/projects/groups/geoposeswg"
-              >GeoPose <abbr title="Standards Working Group">SWG</abbr
-              ></a>
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=50"
+              >Geosemantics <abbr title="Domain Working Group"
+              >DWG</abbr></a>
 
-            <dd>Linking the W3C and OGC work on virtual, augmented and
-              mixed reality.
-
-            <dt><a
-              href="http://www.opengeospatial.org/projects/groups/metadatadwg"
-              >Metadata <abbr title="Domain Working Group">DWG</abbr
-              ></a> (DCAT sub-group)
-
-            <dd>Linking the W3C and OGC work on dataset description
-              and profiles.
+            <dd>Umbrella group in OGC for geospatial semantics
+              applications
 
             <dt><a
-              href="http://www.opengeospatial.org/projects/groups/sensorthings"
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=286"
+              >Connected Systems <abbr title="Standards Working Group"
+              >SWG</abbr></a>
+
+            <dd>Linking work on SSN in W3C with the open interfaces
+              for sensor web applications developed at OGC.
+
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=408s"
               >SensorThings <abbr title="Standards Working Group"
               >SWG</abbr></a>
 
@@ -650,44 +596,20 @@
               API.
 
             <dt><a
-              href="http://www.opengeospatial.org/projects/groups/sensorwebdwg"
-              >Sensor Web Enablement (SWE) <abbr
-              title="Domain Working           Group">DWG</abbr></a>
+              href="https://portal.ogc.org/?m=projects&a=view&project_id=713"
+              >GeoDCAT <abbr title="Standards Working Group">SWG</abbr
+              ></a>
 
-            <dd>Linking work on SSN in W3C with the open interfaces
-              for sensor web applications developed at OGC.
-
-            <dt><a
-              href="https://www.opengeospatial.org/projects/groups/om2.0swg"
-              >Observations and Measurements v2 <abbr
-              title="Standards           Working Group">SWG</abbr></a
-              >
-
-            <dd>Linking work on SSN in W3C with the data model for
-              Observations and Measurements at OGC.
-
-            <dt><a href="https://ogcapi.ogc.org/">OGC API Standards
-              Working Groups </a>
-
-            <dd>These Working Groups develop the OGC API suite of
-              Standards that will likely be discussed within the
-              Spatial Data on the Web Working Group.
+            <dd>Linking the W3C and OGC work on dataset description
+              and profiles.
 
             <dt><a
-              href="https://www.opengeospatial.org/projects/groups/mlsdwg"
-              >Mobile Location Services <abbr
-              title="Domain Working Group">DWG</abbr></a>
+              href="https://portal.ogc.org/?m=projects&a=view&project_id=629"
+              >GeoPose <abbr title="Standards Working Group">SWG</abbr
+              ></a>
 
-            <dd>Linking the W3C and OGC work on location-aware mobile
-              services.
-
-            <dt><a
-              href="https://www.opengeospatial.org/projects/groups/semantics"
-              >GeoSemantics <abbr title="Domain Working Group"
-              >DWG</abbr></a>
-
-            <dd>Linking the W3C and OGC work on semantics and linked
-              data.
+            <dd>Direction alongside location for sensors, systems and
+              platforms
           </dl>
         </section>
 
