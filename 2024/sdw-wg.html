@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html lang=en-US>
+  <head>
+    <meta charset=utf-8>
+    <title>PROPOSED Spatial Data on the Web Working Group Charter</title
+    >
+<!-- delete PROPOSED after AC review completed -->
+
+    <link href="https://www.w3.org/2005/10/w3cdoc.css" media=screen
+      rel=stylesheet type="text/css">
+    <link href="https://www.w3.org/OldGuide/pubrules-style.css"
+      rel=stylesheet type="text/css">
+    <link href="https://www.w3.org/2006/02/charter-style.css"
+      rel=stylesheet type="text/css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+
+  <body>
+    <header id=header>
+      <aside>
+        <ul id=navbar>
+          <li><a href="#background">Background</a>
+
+          <li><a href="#scope">Scope</a>
+
+          <li><a href="#deliverables">Deliverables</a>
+
+          <li><a href="#success-criteria">Success Criteria</a>
+
+          <li><a href="#coordination">Coordination</a>
+
+          <li><a href="#participation">Participation</a>
+
+          <li><a href="#communication">Communication</a>
+
+          <li><a href="#decisions">Decision Policy</a>
+
+          <li><a href="#patentpolicy">Patent Policy</a>
+
+          <li><a href="#licensing">Licensing</a>
+
+          <li><a href="#about">About this Charter</a>
+        </ul>
+      </aside>
+
+      <p> <a href="https://www.w3.org/"><img alt=W3C height=48
+        src="https://www.w3.org/Icons/w3c_home" width=72></a>
+    </header>
+
+    <main>
+      <h1 id=title>PROPOSED Spatial Data on the Web Working Group
+        Charter</h1>
+<!-- delete PROPOSED after AC review completed -->
+      <p class=mission>The <strong>mission</strong> of the <a
+        href="https://www.w3.org/2021/sdw/">Spatial Data on the Web
+        Working Group</a> is to:
+
+      <ul>
+        <li>develop and maintain vocabularies and best practices that
+          encourage better sharing of spatial data on the Web;
+
+        <li>identify areas where standards should be developed <strong
+          >jointly</strong> by both W3C and the <a
+          href="https://www.ogc.org">Open Geospatial Consortium</a>
+          (OGC).
+      </ul>
+<!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class=noprint>
+        <p class=join>W3C Members <a
+          href="https://www.w3.org/groups/wg/sdw/join">join the
+          Spatial Data on the Web Working Group</a>; OGC Members
+          should contact the Chairs or Staff Contact to join the group.
+
+        <p><i class=todo>OGC Members should join the <a
+          href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=292&amp;tab=0"
+          >Observations, Measurements and Samples Standards Working
+          Group</a>.</i>
+      </div>
+<!-- delete the GH link after AC review completed -->
+      <p style="padding: 0.5ex; border: 1px solid green">This proposed
+        charter is available on <a
+        href="https://github.com/w3c/charter-drafts/blob/gh-pages/2024/sdw-wg.html"
+        >GitHub</a>. Feel free to raise <a
+        href="https://github.com/w3c/charter-drafts/issues">issues</a
+        >.
+
+      <div id=details>
+        <table class=summary-table>
+          <tbody>
+            <tr id=Status>
+              <th> Charter Status
+
+              <td> See the <a
+                href="https://www.w3.org/groups/wg/sdw/charters">group
+                status page</a> and <a href="#history">detailed
+                change history</a>.
+
+            <tr id=Duration>
+              <th> Start date
+
+              <td> <i class=todo>[dd monthname yyyy] (date of the
+                "Call for Participation", when the charter is
+                approved)</i>
+
+            <tr id=CharterEnd>
+              <th> End date
+
+              <td> <i class=todo>[dd monthname yyyy]</i> (Start date
+                + 2 years)
+
+            <tr>
+              <th> Chairs
+
+              <td> <i class=todo>[chair name] (affiliation)</i>
+                <!-- Kathi Schleidt, Datacove<br>
+		     Glenn Laughlin, Pelagis -->
+
+            <tr>
+              <th> Team Contacts
+
+              <td> <a href="mailto:bert@w3.org">Bert Bos</a>
+                (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
+
+            <tr>
+              <th> Meeting Schedule
+
+              <td> <strong>Teleconferences:</strong> <i class=todo
+                >weekly?</i> <br>
+                <strong>Face-to-face:</strong> <i class=todo>during
+                the W3C's annual Technical Plenary week; additional
+                face-to-face meetings may be scheduled by consent of
+                the participants, usually no more than 3 per year.</i>
+                <br>
+                <i class=todo>the WG will meet in conjunction with the
+                <a
+                href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=292&amp;tab=0"
+                >OMS SWG</a> during OGC's Member Meetings.</i>
+        </table>
+      </div>
+
+      <div class=background id=background>
+        <h2>Motivation and Background</h2>
+
+        <p><i class=todo>Background of landscape, technology, and
+          relationship to the Web, users, developers, implementers, and
+          industry.</i>
+      </div>
+
+      <section class=scope id=scope>
+        <h2>Scope</h2>
+
+        <p>The Spatial Data on the Web WG will:
+
+        <ul>
+          <li>Maintain and update the SSN Ontology, including the SOSA
+            vocabulary.
+
+          <li>Support the development of resources required to support
+            the adoption of the SSN ontology.
+
+          <li>Maintain geospatial Web standards and geospatial
+            profiles of more general standards as enumerated in
+            deliverables.
+
+          <li>Coordinate among incubation groups, by providing a forum
+            where early ideas for geospatial Web standards can be
+            shared, identifying ideas for further standardisation by
+            W3C and/or OGC, and making recommendations about these
+            incubations to the relevant standards body or bodies.
+            Related incubation will generally happen in W3C Community
+            Groups and OGC Innovation Program initiatives.
+
+          <li>Respond to requests from OGC Architecture Board (OAB)
+            and W3C Technical Architecture Group (TAG) to review
+            materials relating to Geospatial Web standards, and
+            proactively bring relevant matters to the attention of the
+            OAB and TAG.
+
+          <li>Periodically review and amend the OGC Technology Trends,
+            <a href="https://github.com/opengeospatial/ideas/issues"
+            >OGC Innovation Program</a> ideas issue tracker and <a
+            href="https://github.com/w3c/strategy/labels/Geospatial"
+            >W3C strategic incubation pipeline ("funnel")</a> to
+            identify, prioritise and track important ideas relating to
+            geospatial Web standards.
+        </ul>
+
+        <section id=section-out-of-scope>
+          <h3 id=out-of-scope>Out of Scope</h3>
+
+          <p>The Spatial Data on the Web Working Group will only
+            produce deliverables where it is in the interests of both
+            OGC and W3C to collaborate.
+        </section>
+      </section>
+
+      <section id=deliverables>
+        <h2>Deliverables</h2>
+
+        <p>Updated document status is available on the <a
+          href="https://www.w3.org/groups/wg/sdw/publications">group
+          publication status page</a>.
+
+        <p><i>Draft state</i> indicates the state of the deliverable
+          at the time of the charter approval. <i>Expected
+          completion</i> indicates when the deliverable is projected
+          to become a Recommendation, or otherwise reach a stable
+          state.
+
+        <section id=normative>
+          <h3>Normative Specifications</h3>
+
+          <p>The Working Group will deliver the following W3C
+            normative specifications:
+
+          <ul>
+            <li class=spec id=6379> <a
+              href="https://www.w3.org/TR/vocab-ssn/" rel=versionof
+              >Semantic Sensor Network Ontology</a> – new edition
+              <ul>
+                <li class=draft-status>Draft state: Adopted
+
+                <li class=milestone>Expected completion: Q4 2024
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
+                  >2017-10-19</a>
+
+                <li>Abstract:
+                  <p>The Semantic Sensor Network (SSN) ontology is an
+                    RDFS/OWL ontology for describing observations made
+                    by sensors implementing specified procedures, the
+                    studied features of interest and the observed
+                    properties, along with samples used in the
+                    observations and the sampling activities that
+                    created them, as well as actuations which follow a
+                    similar semantics and data structure.
+
+                  <p>The SOSA vocabulary (Sensors, Observations,
+                    Samples and Actuations) contains the core terms and
+                    definitions from SSN, packaged for use in general
+                    applications.
+
+                  <p>Some extension modules are included in the
+                    recommendation.
+
+                  <p>Alignments with some related ontologies and data
+                    models are included in the recommendation.
+              </ul>
+          </ul>
+
+          <p>The Working Group will maintain the following existing
+            specifications:
+
+          <ul>
+            <li class=spec id=10810> <a
+              href="https://www.w3.org/TR/owl-time/" rel=versionof
+              >Time Ontology in OWL</a>
+              <ul>
+                <li class=draft-status>Draft state: Adopted
+
+                <li>Latest Publication: <a
+                  href="https://www.w3.org/TR/2022/CRD-owl-time-20221115/"
+                  >2022-11-15</a>
+
+                <li>Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2017/CR-owl-time-20170606/"
+                  >https://www.w3.org/TR/2017/CR-owl-time-20170606/</a
+                  >
+
+                <li>Associated <a
+                  href="https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0003.html"
+                  >Call for Exclusion</a> on 2017-06-06 ended on
+                  2017-08-05
+
+                <li>Produced under Working Group Charter: <a
+                  href="https://www.w3.org/2015/spatial/charter"
+                  >http://www.w3.org/2015/spatial/charter</a>
+              </ul>
+
+            <li class=spec id=5693> <a
+              href="https://www.w3.org/TR/sdw-ucr/" rel=versionof
+              >Spatial Data on the Web Use Cases &amp; Requirements</a
+              >
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2016/NOTE-sdw-ucr-20161025/"
+                  >2016-10-25</a>
+              </ul>
+
+            <li class=spec id=6198> <a
+              href="https://www.w3.org/TR/covjson-overview/"
+              rel=versionof>Overview of the CoverageJSON format</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2017/NOTE-covjson-overview-20170711/"
+                  >2017-07-11</a>
+              </ul>
+
+            <li class=spec id=6347> <a
+              href="https://www.w3.org/TR/qb4st/" rel=versionof>QB4ST:
+              RDF Data Cube extensions for spatio-temporal
+              components</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2017/NOTE-qb4st-20170928/"
+                  >2017-09-28</a>
+              </ul>
+
+            <li class=spec id=6348> <a
+              href="https://www.w3.org/TR/eo-qb/" rel=versionof
+              >Publishing and Using Earth Observation Data with the RDF
+              Data Cube and the Discrete Global Grid System</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2017/NOTE-eo-qb-20170928/"
+                  >2017-09-28</a>
+              </ul>
+
+            <li class=spec id=12390> <a
+              href="https://www.w3.org/TR/sdw-bp/" rel=versionof
+              >Spatial Data on the Web Best Practices</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2023/DNOTE-sdw-bp-20230919/"
+                  >2023-09-19</a>
+              </ul>
+
+            <li class=spec id=12391> <a
+              href="https://www.w3.org/TR/webvmt/" rel=versionof
+              >WebVMT: The Web Video Map Tracks Format</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a
+                  href="https://www.w3.org/TR/2023/NOTE-webvmt-20230919/"
+                  >2023-09-19</a>
+              </ul>
+          </ul>
+        </section>
+
+        <section id=ig-other-deliverables>
+          <h3>Other Deliverables</h3>
+
+          <p>Other non-normative documents may be created such as:
+
+          <ul>
+            <li>RDF artefacts including testing and validation tools
+              (e.g. JSON-Schema, SHACL Shapes)
+
+            <li>Test suite and implementation report for the
+              specifications
+
+            <li>Primer or Best Practice documents to support web
+              developers when designing applications
+
+            <li>OGC Discussion Papers
+
+            <li>OGC Technical Papers
+
+            <li>W3C Notes
+          </ul>
+        </section>
+
+        <section id=timeline>
+          <h3>Timeline</h3>
+
+          <p class=todo>Put here a timeline view of all deliverables.
+
+          <ul class=todo>
+            <li>Month YYYY: First teleconference
+
+            <li>Month YYYY: First face-to-face meeting
+
+            <li>Month YYYY: Requirements and Use Cases for FooML
+
+            <li>Month YYYY: FPWD for FooML
+
+            <li>Month YYYY: Requirements and Use Cases for BarML
+
+            <li>Month YYYY: FPWD FooML Primer
+          </ul>
+        </section>
+      </section>
+
+      <section id=success-criteria>
+        <h2>Success Criteria</h2>
+<!-- Testing and interop -->
+        <p>In order to advance to <a
+          href="https://www.w3.org/Consortium/Process/#RecsPR"
+          title="Proposed Recommendation">Proposed Recommendation</a
+          >, each normative specification is expected to have <a
+          href="https://www.w3.org/Consortium/Process/#implementation-experience"
+          >at least two independent interoperable implementations</a>
+          of every feature defined in the specification, where
+          interoperability can be verified by passing open test suites,
+          and two or more implementations interoperating with each
+          other.
+
+        <p>There should be testing plans for each specification,
+          starting from the earliest drafts.
+
+        <p><span class=todo>Consider adopting a healthy testing
+          policy, such as:</span> To promote interoperability, all
+          changes made to specifications in Candidate Recommendation or
+          to features that have deployed implementations should have <a
+          href="https://www.w3.org/2019/02/testing-policy.html"
+          >tests</a>. Testing efforts should be conducted via the <a
+          href="https://github.com/web-platform-tests/wpt">Web
+          Platform Tests</a> project.</p>
+<!-- Horizontal review -->
+        <p>Each specification should contain sections detailing all
+          known security and privacy implications for implementers, Web
+          authors, and end users.
+
+        <p><i class=todo>For specifications of technologies that
+          directly impact user experience, such as content
+          technologies, as well as protocols and APIs which impact
+          content: </i> Each specification should contain a section on
+          accessibility that describes the benefits and impacts,
+          including ways specification features can be used to address
+          them, and recommendations for maximising accessibility in
+          implementations.</p>
+<!-- Design principles -->
+        <p>This Working Group expects to follow the TAG <a
+          href="https://www.w3.org/TR/design-principles/">Web Platform
+          Design Principles</a>.</p>
+<!-- Relevance and momentum -->
+        <p><span class=todo>Consider adding this clause if the Group
+          does not intend to move to REC:</span> All new features
+          should have expressions of interest from at least two
+          potential implementors before being incorporated in the
+          specification.
+      </section>
+
+      <section id=coordination>
+        <h2>Coordination</h2>
+
+        <p>For all specifications, this Working Group will seek <a
+          href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review"
+          >horizontal review</a> for accessibility,
+          internationalization, privacy, and security with the relevant
+          Working and Interest Groups, and with the <a
+          href="https://www.w3.org/2001/tag/"
+          title="Technical Architecture Group">TAG</a>. Invitation
+          for review must be issued during each major standards-track
+          document transition, including <a
+          href="https://www.w3.org/Consortium/Process/#RecsWD"
+          title="First Public Working Draft">FPWD</a>. The Working
+          Group is encouraged to engage collaboratively with the
+          horizontal review groups throughout development of each
+          specification. The Working Group is advised to seek a review
+          at least 3 months before first entering <a
+          href="https://www.w3.org/Consortium/Process/#RecsCR"
+          title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major
+          changes occur in a specification following a review.
+
+        <p>Additional technical coordination with the following Groups
+          will be made, per the <a
+          href="https://www.w3.org/Consortium/Process/#WGCharter">W3C
+          Process Document</a>:
+
+        <p class=todo>In addition to the above catch-all reference to
+          horizontal review which includes accessibility review, please
+          check with chairs and staff contacts of the <a
+          href="https://www.w3.org/WAI/APA/">Accessible Platform
+          Architectures Working Group</a> to determine if an
+          additional liaison statement with more specific information
+          about concrete review issues is needed in the list below.
+
+        <section>
+          <h3 id=w3c-coordination>W3C Groups</h3>
+
+          <dl>
+            <dt><a href="https://www.w3.org/2017/dxwg/">Dataset
+              Exchange Working Group</a>
+
+            <dd>Spatial Data has specific needs for data description,
+              such as coordinate reference system, granularity. These
+              must be taken into account by the DXWG.
+
+            <dt><a href="https://www.w3.org/groups/wg/das/">Devices
+              and Sensors Working Group</a>
+
+            <dd>Sensor and system descriptions.
+          </dl>
+        </section>
+
+        <section>
+          <h3 id=ogc-coordination>OGC Groups</h3>
+
+          <p>Most working groups operating at OGC have a scope that
+            may intersect with topics of interest discussed in the
+            Spatial Data on the Web Working Group. The OGC Architecture
+            Board (OAB), comparable to the W3C Technical Advisory Group
+            (TAG) will provide high level guidance to the Spatial Data
+            on the Web Working Group. The Working Group expects to
+            liaise with OGC groups as needed, and more specifically
+            with:
+
+          <dl>
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=50"
+              >Geosemantics <abbr title="Domain Working Group"
+              >DWG</abbr></a>
+
+            <dd>Umbrella group in OGC for geospatial semantics
+              applications
+
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=286"
+              >Connected Systems <abbr title="Standards Working Group"
+              >SWG</abbr></a>
+
+            <dd>Linking work on SSN in W3C with the open interfaces
+              for sensor web applications developed at OGC.
+
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=408s"
+              >SensorThings <abbr title="Standards Working Group"
+              >SWG</abbr></a>
+
+            <dd>Linking work on SSN in W3C with the OGC SensorThings
+              API.
+
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&a=view&project_id=713"
+              >GeoDCAT <abbr title="Standards Working Group">SWG</abbr
+              ></a>
+
+            <dd>Linking the W3C and OGC work on dataset description
+              and profiles.
+
+            <dt><a
+              href="https://portal.ogc.org/?m=projects&a=view&project_id=629"
+              >GeoPose <abbr title="Standards Working Group">SWG</abbr
+              ></a>
+
+            <dd>Direction alongside location for sensors, systems and
+              platforms
+          </dl>
+        </section>
+
+        <section>
+          <h3 id=external-coordination>External Organizations</h3>
+
+          <dl>
+            <dt><a href=""><i class=todo>[other name]</i> Working
+              Group</a>
+
+            <dd><i class=todo>[specific nature of liaison]</i>
+          </dl>
+        </section>
+      </section>
+
+      <section class=participation>
+        <h2 id=participation> Participation</h2>
+
+        <p>To be successful, this Working) Group is expected to have 6
+          or more active participants for its duration, including
+          representatives from the key implementors of this
+          specification, and active Editors and Test Leads for each
+          specification. The Chairs, specification Editors, and Test
+          Leads are expected to contribute half of a working day per
+          week towards the Working Group. There is no minimum
+          requirement for other Participants.
+
+        <p>The group encourages questions, comments and issues on its
+          public mailing lists and document repositories, as described
+          in <a href="#communication">Communication</a>.
+
+        <p>The group also welcomes non-Members to contribute technical
+          submissions for consideration upon their agreement to the
+          terms of the <a
+          href="https://www.w3.org/Consortium/Patent-Policy/">W3C
+          Patent Policy</a>.
+
+        <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/Consortium/Process/#ParticipationCriteria"
+          >W3C Process</a>) to follow the W3C <a
+          href="https://www.w3.org/Consortium/cepc/">Code of Ethics
+          and Professional Conduct</a>.
+      </section>
+
+      <section id=communication>
+        <h2> Communication</h2>
+
+        <p id=public> Technical discussions for this Working Group are
+          conducted in <a
+          href="https://www.w3.org/Consortium/Process/#confidentiality-levels"
+          >public</a>: the meeting minutes from teleconference and
+          face-to-face meetings will be archived for public review, and
+          technical discussions and issue tracking will be conducted in
+          a manner that can be both read and written to by the general
+          public. Working Drafts and Editor's Drafts of specifications
+          will be developed in public repositories and may permit
+          direct public contribution requests. The meetings themselves
+          are not open to public participation, however.
+
+        <p>Information about the group (including details about
+          deliverables, issues, actions, status, participants, and
+          meetings) will be available from the <a
+          href="https://www.w3.org/2021/sdw/">Spatial Data on the Web
+          Working Group home page.</a>
+
+        <p>Most Spatial Data on the Web Working Group teleconferences
+          will focus on discussion of particular specifications, and
+          will be conducted on an as-needed basis.
+
+        <p>This group primarily conducts its technical work <i
+          class=todo>pick one, or both, as appropriate:</i> on the
+          public mailing list <a class=todo
+          href="mailto:public-sdw-wg@w3.org" id=public-name
+          >public-sdw-wg@w3.org</a> (<a class=todo
+          href="https://lists.w3.org/Archives/Public/public-sdw-wg/"
+          >archive</a>) <i class=todo>or</i> on <a class=todo
+          href="https://github.com/w3c/sdw/issues" id=public-github
+          >GitHub issues</a>. The public is invited to review, discuss
+          and contribute to this work.
+
+        <p>The group may use a Member-confidential mailing list for
+          administrative purposes and, at the discretion of the Chairs
+          and members of the group, for member-only discussions in
+          special cases when a participant requests such a discussion.
+      </section>
+
+      <section id=decisions>
+        <h2> Decision Policy</h2>
+
+        <p> This group will seek to make decisions through consensus
+          and due process, per the <a
+          href="https://www.w3.org/Consortium/Process/#Consensus">W3C
+          Process Document (section 5.2.1, Consensus)</a>. Typically,
+          an editor or other participant makes an initial proposal,
+          which is then refined in discussion with members of the group
+          and other reviewers, and consensus emerges with little formal
+          voting being required.
+
+        <p> However, if a decision is necessary for timely progress
+          and consensus is not achieved after careful consideration of
+          the range of views presented, the Chairs may call for a group
+          vote and record a decision along with any objections.
+
+        <p> To afford asynchronous decisions and organizational
+          deliberation, any resolution (including publication
+          decisions) taken in a face-to-face meeting or teleconference
+          will be considered provisional. A call for consensus (CfC)
+          will be issued for all resolutions (for example, via email,
+          GitHub issue or web-based survey), with a response period
+          from one week to 10 working days, depending on the chair's
+          evaluation of the group consensus on the issue. If no
+          objections are raised by the end of the response period, the
+          resolution will be considered to have consensus as a
+          resolution of the Working Group.
+
+        <p>All decisions made by the group should be considered
+          resolved unless and until new information becomes available
+          or unless reopened at the discretion of the Chairs.
+
+        <p>This charter is written in accordance with the <a
+          href="https://www.w3.org/Consortium/Process/#Votes">W3C
+          Process Document (Section 5.2.3, Deciding by Vote)</a> and
+          includes no voting procedures beyond what the Process
+          Document requires.
+      </section>
+
+      <section id=patentpolicy>
+        <h2>Patent Policy</h2>
+
+        <p>This Working Group operates under the <a
+          href="https://www.w3.org/Consortium/Patent-Policy/">W3C
+          Patent Policy</a> (Version of 15 September 2020). To promote
+          the widest adoption of Web standards, W3C seeks to issue Web
+          specifications that can be implemented, according to this
+          policy, on a Royalty-Free basis. For more information about
+          disclosure obligations for this group, please see the <a
+          href="https://www.w3.org/groups/wg/sdw/ipr">licensing
+          information</a>.
+      </section>
+
+      <section id=licensing>
+        <h2>Licensing</h2>
+
+        <p>This Working Group will use the <a
+          href="https://www.w3.org/Consortium/Legal/copyright-software"
+          >W3C Software and Document license</a> for all its
+          deliverables, with copyright held by OGC and W3C. Published
+          documents will be clearly marked as joint deliverables.
+      </section>
+
+      <section id=about>
+        <h2> About this Charter</h2>
+
+        <p> This charter has been created according to <a
+          href="https://www.w3.org/Consortium/Process/#GAGeneral"
+          >section 3.4</a> of the <a
+          href="https://www.w3.org/Consortium/Process/">Process
+          Document</a>. In the event of a conflict between this
+          document or the provisions of any charter and the W3C
+          Process, the W3C Process shall take precedence.
+
+        <section id=history>
+          <h3> Charter History</h3>
+
+          <p class=issue><b>Note:</b>Display this table and update
+            it when appropriate. Requirements for charter extension
+            history are documented in the <a
+            href="https://www.w3.org/Guide/process/charter.html#extension"
+            >Charter Guidebook (section 4)</a>.
+
+          <p>The following table lists details of all changes from the
+            initial charter, per the <a
+            href="https://www.w3.org/Consortium/Process/#CharterReview"
+            >W3C Process Document (section 4.3, Advisory Committee
+            Review of a Charter)</a>:
+
+          <table class=history>
+            <thead>
+              <tr>
+                <th> Charter Period
+
+                <th> Start Date
+
+                <th> End Date
+
+                <th> Changes
+
+            <tbody>
+              <tr>
+                <th> <a
+                  href="https://www.w3.org/2021/10/sdw-charter.html"
+                  >Initial charter</a>
+
+                <td> 19 October 2021
+
+                <td> 04 October 2023
+
+                <td>
+
+              <tr>
+                <th> Extension
+
+                <td> 04 October 2023
+
+                <td> 04 April 2024
+
+                <td>
+
+              <tr>
+                <th> <a class=todo href="">Rechartered</a>
+
+                <td> <i class=todo>[dd monthname yyyy]</i>
+
+                <td> <i class=todo>[dd monthname yyyy]</i>
+
+                <td>
+                  <p class=todo>[description of change to charter,
+                    with link to new deliverable item in charter] <b
+                    >Note:</b> use the class <code>new</code> for
+                    all new deliverables, for ease of recognition.
+          </table>
+        </section>
+
+        <section id=changelog>
+          <h3>Change log</h3>
+<!-- Use this section for changes _after_ the charter was
+          approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p
+          >
+<!--
+          <dl id=changes>
+            <dt>YYYY-MM-DD
+
+            <dd>[changes]]
+          </dl>
+          --></section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address> <a href="mailto:bert@w3.org">Bert Bos</a></address>
+
+      <p class=copyright>Copyright © 2024 <a
+        href="https://www.w3.org/">World Wide Web Consortium</a>.<br
+        >
+        <abbr title="World Wide Web Consortium">W3C</abbr><sup
+        >®</sup> <a
+        href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
+        >liability</a>, <a
+        href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
+        >trademark</a> and <a
+        href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+        rel=license
+        title="W3C Software and Document Notice and License"
+        >permissive document license</a> rules apply.
+    </footer>

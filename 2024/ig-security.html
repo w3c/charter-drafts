@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title><i class="todo">Security</i> Interest Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+	  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#patentpolicy">Patent Disclosures</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">PROPOSED Security</i> Interest Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the <a href="">Security Interest Group</a> is to is to improve Security on the Web by advising groups developing standards on how to avoid and mitigate security issues with their technologies. Security Interest Group also suggests changes to existing standards and technologies to improve the security of existing systems.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/ig/@@/join">Join the <i class="todo">Security</i> Interest Group.</a></p>
+      </div>
+
+      <!-- delete the GH link after AC review completed -->
+      <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2024/ig-security.html">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues/new?title=%5Big/security%5D">issues</a></i>.
+          </p>
+
+      <div id="details">
+        <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              <i class="todo">See the <a href="https://www.w3.org/groups/ig/@@/charters">group status page</A> and <a href="#history">detailed change history</a>.</i>
+            </td>
+          </tr>		
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              <i class="todo">[chair name] (affiliation)</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <span class="todo"><a href="mailto:simone@w3.org">Simone Onofri</a></span> <i class="todo">(0.25 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> typically 1-2 per month, or as needed.
+              <br>
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+        <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has been moved from the essentials table to the <a href="#public">communication section</a>.</p>
+      </div>
+
+      <div id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>The W3C’s mission is to make the Web work based on the principles of accessibility, internationalization, privacy, and security.</p>
+        <p>The last two principles, Privacy and Security, are integral to <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" alt="Article 3: Everyone has the right to life, liberty and security of person.">human rights</a> and <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights" title="Article 9: Everyone has the right to liberty and security of person">civil liberties</a> and have always been of the Consortium's concern.</p>
+        <p>Also, in the Ethical Web Principles, there are several principles related to security both as a societal impact <a href="https://www.w3.org/TR/ethical-web-principles/#noharm">The web does not cause harm to society</a> and in terms of people's security <a href="https://www.w3.org/TR/ethical-web-principles/#privacy">The web is secure, and respects peoples' privacy</a>, where the goal is to create technology that creates as few threats as possible, or mitigates those threats</p>
+        <p>Several working groups deal with security issues, such as <a href="https://www.w3.org/groups/wg/webappsec/">develop mechanisms and best practices which improve the security of Web Applications</a>, develop <a href="https://www.w3.org/groups/wg/webauthn/">strong authentication functionality to Web Applications</a>, and <a href="https://www.w3.org/groups/ig/securepay/">enhance the security and interoperability of various Web payments technologies</a>.</p>
+        <p>Security is also a horizontal topic that often touches other groups and standards. Security can impact any protocol or API, which can have security implications. W3C Process mandates <a href="https://www.w3.org/2023/Process-20231103/#wide-review">Wide Reviews</a>, which is one of the Interest Group’s main scope.</p>
+    </div>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+        <p>The Security Interest Group (SING) develops and documents guidelines, patterns, processes, and best practices for addressing security considerations in Web standards.</p>
+        <p>SING provides "<a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a>" -  offering groups developing web standards on-request guidance on security issues and mitigations specific to their technologies. SING aims to offer this review as early in the technology development lifecycle as requested, observing that early feedback is often more helpful. SING may also seek out technologies that benefit from earlier security reviews and conduct such reviews on its initiative.</p>
+        <p>SING incubates standards work on security issues by collecting requirements, prototyping, and/or initiating the work within the IG and recommending that the W3C move the work into other groups when appropriate.</p>
+        <p>SING may recommend mitigations for security issues in existing features of the Web platform, up to and including their deprecation.</p>
+        <p>SING may provide input to the W3C Process Community Group on process changes that will improve security in Web standards, e.g., by establishing particular requirements for identifying and mitigating security issues in W3C Recommendations.</p>
+        <p>SING may recommend to the W3C Advisory Committee and the W3C TAG regarding the security impact of proposed standards.</p>
+
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+            <p>The following features are out of scope, and will not be addressed by this <i class="todo">Interest</i> group.</p>
+            <p>The technical development of standards is not in the scope of the Interest Group. Identified Recommendation Track opportunities will be handed over to appropriate W3C groups if such a group exists or within a dedicated Community Group or Business Group when incubation is needed.</p>
+            <ul class="out-of-scope">
+            </ul>
+        </section>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p><i class="todo">Updated document status is available on the <a href="https://www.w3.org/groups/ig/@@/publications">group publication status page</a>.</i></p>
+
+        <p>In conjunction with W3C's <a href="https://www.w3.org/2001/tag/">Technical Architecture Group (TAG)</a> and <a href="https://www.w3.org/groups/ig/privacy/">PING</a>, SING maintains a <a href="https://w3ctag.github.io/security-questionnaire/">Self-Review Questionnaire for Security and Privacy</a>.</p>
+        <p>SING may publish other documents consistent with the above scope, such as analyses of security issues, prototype specifications, and guidelines for user interface design and future standards.</p>
+
+        </section>
+
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+          <ul>
+            <li>Use case and requirement documents;</li>
+            <li>Test suite and implementation report for the specification;</li>
+            <li>Primer or Best Practice documents to support web security when designing standards and applications.</li>
+          </ul>
+        </section>
+ 
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+        <ul>
+            <li>Feedback to other W3C groups, upon request, regarding security issues in their specifications.</li>
+            <li>Systematizing the security review of Web standards.</li>
+        </ul>
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>SING will seek a horizontal review of its deliverables for accessibility, internationalization, performance, and privacy with the relevant Working and Interest Groups and with the TAG.</p>
+        <p>SING should collaborate with the WICG and TAG to coordinate security review of specifications early in their development lifecycle.</p>
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <p>W3C needs to coordinate with other security groups, alliances, and standards development organizations to improve the Web's security. The following list provides examples of organizations:</p>
+          <dl>
+            <dt><a href="">IETF</a></dt><dd></dd>
+            <dt><a href="">OpenSSF</a></dt><dd></dd>
+            <dt><a href="">OWASP</a></dt><dd></dd>
+            <dt><a href="">OpenJS Foundation</a></dt><dd></dd>
+            <dt><a href="">ISECOM</a></dt><dd></dd>
+            <dt><a href="">...</a></dt><dd></dd>
+          </dl>
+        </section>
+      </section>
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>Participation in SING is open to the public. Participants who do not represent a W3C Member should join as <a href="https://www.w3.org/invited-experts/">Invited Experts</a>. Invited Experts in this group are not granted access to Member-only information.</p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+      </section>
+
+
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this <i class="todo">Interest</i> Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">Security</i> Interest Group home page.</a>
+        </p>
+        <p>
+          Most <i class="todo">Security</i> Interest Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work  <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
+          <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'><i class="todo">[pick a duration within:] one week to 10 working days</i></span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the <i class="todo">Interest</i> Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+
+        <h2>Patent Disclosures </h2>
+        <p>The Interest Group provides an opportunity to
+          share perspectives on the topic addressed by this charter. W3C reminds
+          Interest Group participants of their obligation to comply with patent
+          disclosure obligations as set out in <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
+            6</a> of the W3C Patent Policy. While the Interest Group does not
+          produce Recommendation-track documents, when Interest Group
+          participants review Recommendation-track specifications from Working
+          Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this group,
+          please see the <a href="https://www.w3.org/groups/ig/@@/ipr">licensing information</a>.</p>
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This <i class="todo">Interest</i> Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Initial Charter</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <i class="todo"><a href="mailto:simone@w3.org">Simone Onofri</a></i>
+      </address>
+
+<p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts/security-ig.html">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>
