@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title><i class="todo">WebTransport</i> Working Group Charter</title>
+    <title>WebTransport Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
@@ -52,6 +52,7 @@
     <header id="header">
       <aside>
         <ul id="navbar">
+          <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
 		  <li><a href="#success-criteria">Success Criteria</a></li>
@@ -59,7 +60,9 @@
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
           <li><a href="#decisions">Decision Policy</a></li>
+          <i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i>
           <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#patentpolicy">Patent Disclosures</a></li>
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
@@ -71,17 +74,18 @@
 
 
     <main>
-      <h1 id="title"><i class="todo">PROPOSED</i> WebTransport Working Group Charter</h1>
+      <h1 id="title"><i class="todo">PROPOSED [name]</i> WebTransport Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webtransport">WebTransport Working Group</a> is to develop APIs that enable data transfer between browsers and servers with support for multiple data flows, unidirectional data flows, out-of-order delivery, variable reliability and pluggable protocols.</p>
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/groups/wg/webtransport/join">Join the WebTransport Working Group.</a></p>
+        <p class="join"><a href="https://www.w3.org/groups/wg/webtransport/join/">Join the WebTransport Working Group.</a></p>
       </div>
 
-         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/charter-drafts">GitHub</a>.
+      <!-- delete the GH link after AC review completed -->
+      <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/">GitHub</a>.
 
     Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
           </p>
@@ -109,7 +113,7 @@
               End date
             </th>
             <td>
-              31 December 2025
+              <i class="todo">31 December 2025</i> 
             </td>
           </tr>
           <tr>
@@ -117,7 +121,7 @@
               Chairs
             </th>
             <td>
-                Will Law (Akamai), Jan-Ivar Bruaroey (Mozilla)
+              Will Law (Akamai), Jan-Ivar Bruaroey (Mozilla)
             </td>
           </tr>
           <tr>
@@ -125,7 +129,7 @@
               Team Contacts
             </th>
             <td>
-                <a href="mailto:ylafon@w3.org">Yves Lafon</a> (0.15 <abbr title="Full-Time Equivalent">FTE</abbr>)
+              <a href="mailto:ylafon@w3.org">Yves Lafon</a> (0.15 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -133,31 +137,44 @@
               Meeting Schedule
             </th>
             <td>
-               <strong>Teleconferences:</strong> approximately 1 per month
+              <strong>Teleconferences:</strong> approximately 1 per month
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
             </td>
           </tr>
         </table>
+      </div>
 
+      <div id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>The deployment of the QUIC protocol standardized in IETF (e.g. in the context of HTTP3) is expected to make QUIC support widely available, opening up the possibility to establish new types of network connections in Web applications for client-server data transfer (e.g. unreliable, unordered).</p>
       </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>The deployment of the QUIC protocol standardized in IETF (e.g. in the context of HTTP3) is expected to make QUIC support widely available, opening up the possibility to establish new types of network connections in Web applications for client-server data transfer (e.g. unreliable, unordered).</p>
         <p>The WebTransport Working Group, in collaboration with the <a href="https://datatracker.ietf.org/wg/webtrans/about/">IETF WebTransport Working Group</a> develops APIs that enable Web developers to make use of these new network capabilities, including possible fallback mechanisms to handle scenarios when a QUIC connection cannot be established.</p>
         <p>These capabilities are expected to be useful in a wide variety of contexts where network performance has perceivable impacts on user experience, such as media streaming or cloud gaming.</p>
+
       </section>
 
       <section id="deliverables">
         <h2>
-            Deliverables
-          </h2>
-  
+          Deliverables
+        </h2>
+
+        <p><i class="todo">Updated document status is available on the <a href="https://www.w3.org/groups/wg/[shortname]/publications/">group publication status page</a>. [or link to a page this group prefers to use]</i></p>
+
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+          <span class='todo'>The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
           <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/groups/wg/webtransport/publications">group home page</a>.</p>
-  
+
           <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
-  
+
           <section id="normative">
             <h3>
               Normative Specifications
@@ -169,14 +186,16 @@
               <dt id="web-transport" class="spec">WebTransport API</dt>
               <dd>
                 <p>This specification defines a set of ECMAScript APIs to allow data to be sent and received between a browser and server, implementing pluggable protocols underneath with common APIs on top.</p>
-  
                 <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webtransport/">W3C Working Draft</a></p>
-                <p class="milestone"><b>Expected completion:</b> Q3 2023</p>
-                <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2022/WD-webtransport-20220623/">https://www.w3.org/TR/2022/WD-webtransport-20220623/</a>, 2022-06-23</p>
+                <p class="milestone"><b>Expected completion:</b> Q2 2025</p>
+                <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2023/WD-webtransport-20231220/">https://www.w3.org/TR/2023/WD-webtransport-20231220/</a>, 2023-12-20</p>
                 <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/WD-webtransport-20210504/">https://www.w3.org/TR/2021/WD-webtransport-20210504/</a>, 2021-05-04</p>
                 <p>Exclusion period began 2021-05-04; Exclusion period ended 2021-10-01.</p>
                 <p><b>Exclusion Draft Charter:</b></p> <a href="https://www.w3.org/2020/12/webtransport-wg-charter.html">https://www.w3.org/2020/12/webtransport-wg-charter.html</a>
-        </dl>
+            </dd>
+          </dl>
+
+
         </section>
 
         <section id="ig-other-deliverables">
@@ -198,32 +217,61 @@
             <ul>
               <li>September 2020: First teleconference</li>
               <li>January 2021: FPWD for WebTransport</li>
-              <li>Q4 2022: CR for WebTransport</li>
-            </ul>            
+              <li>Q4 2024: CR for WebTransport</li>
+            </ul>  
         </section>
+
       </section>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-    <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each feature defined in the specification.</p>
-    <p>Each specification should contain a section detailing any <a href='https://www.w3.org/TR/security-privacy-questionnaire/'>known security and privacy implications</a>, and suggested mitigation strategies for implementers, web authors, and end users. The group should not publish a specification if acceptable mitigation strategies cannot be found.</p>
-		<p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-	  <p>To promote interoperability, all changes made to specifications after implementations emerge should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+
+    <!-- Testing and interop -->
+	  <p>In order to advance to 
+		  <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have 
+		  <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable
+			  implementations</a> of every feature defined in the specification, where
+interoperability can be verified by passing open test suites, and two or
+more implementations interoperating with each other.</p>
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+    <p>
+      To promote interoperability, all changes made to specifications 
+      in Candidate Recommendation 
+      or to features that have deployed implementations
+      should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.  
+      Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
+
+    <!-- Horizontal review -->
+
+    <p>Each specification should contain sections detailing all known security and
+      privacy implications for implementers, Web authors, and end users.</p>
+
+	  <p>
+		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+		recommendations for maximising accessibility in implementations.</p>
+
+    <!-- Design principles -->
+    <p>This Working Group expects to follow the
+    TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+    </p>
+	
 	</section>
 
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for
-          accessibility, internationalization, performance, privacy, and security with the relevant Working and
-          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+        <p>For all specifications, this <i class="todo">(Working|Interest)</i> Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>.
           Invitation for review must be issued during each major standards-track document transition, including
           <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
-          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
-          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <i class="todo">(Working|Interest)</i> Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The <i class="todo">(Working|Interest)</i> Group is advised to seek a review at least 3 months before first entering
           <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
           to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/groups/wg/apa/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
 
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
@@ -240,8 +288,7 @@
             <dd>The Web & Networks Interest Group is looking at how evolutions of network technologies impact Web applications, of which the WebTransport API is a key recent element.</dd>
            <dt><a href="https://www.w3.org/groups/wg/webappsec">Web Application Security Working Group</a></dt>
             <dd>The mission of the Web Application Security Working Group is to develop security and policy mechanisms to improve the security of Web Applications, and enable secure cross-origin communication.</dd>
-
-          </dl>         
+          </dl>
         </section>
 
         <section>
@@ -273,7 +320,7 @@
           The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
-          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
       </section>
 
 
@@ -294,7 +341,7 @@
         </p>
         <p>
           This group primarily conducts its technical work on its <a id="public-github" href="https://github.com/w3c/webtransport">repositories' GitHub issues</a> and its public mailing list <a href="mailto:public-webtransport@w3.org">public-webtransport@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webtransport/">archive</a>).
-          The public is invited to review, discuss and contribute to this work.          
+          The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
@@ -320,7 +367,7 @@
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
-          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
         </p>
         <p>
           This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
@@ -330,13 +377,14 @@
 
 
       <section id="patentpolicy">
+
         <h2>
           Patent Policy
         </h2>
         <p>
           This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webtransport/ipr">licensing information</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webtransport/ipr/">licensing information</a>.
         </p>
 
       </section>
@@ -345,7 +393,7 @@
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
 
 
@@ -362,11 +410,10 @@
           <h3>
             Charter History
           </h3>
-          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
 
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
-          <table class="history">
+<table class="history">
             <tbody>
               <tr>
                 <th>
@@ -412,16 +459,30 @@
               </tr>
               <tr>
                 <th>
-                  <a class="todo" href="">Rechartered</a>
+                  <a href="https://www.w3.org/2023/01/webtransport-wg-charter.html">Rechartered</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  18 January 2023
                 </td>
                 <td>
                   31 December 2023
                 </td>
                 <td>
                   Charter Extension
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024JanMar/0012.html">Chartered Extension</a>
+                </th>
+                <td>
+                  24 January 2024
+                </td>
+                <td>
+                  31 May 2024
+                </td>
+                <td>
+                  Current charter extended. The group plans to work on a new charter during the extension. See the <a href="https://w3c.github.io/charter-drafts/wt-2024.html">draft charter</a> and raise comments via <a href="https://github.com/w3c/charter-drafts/">GitHub issues</a>. 
                 </td>
               </tr>
             </tbody>
@@ -450,19 +511,12 @@
         <a href="mailto:ylafon@w3.org">Yves Lafon</a>
       </address>
 
-      <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
-        2022
-        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
-        (
-        <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
-        <a href="https://www.keio.ac.jp/">Keio</a>,
-        <a href="https://ev.buaa.edu.cn/">Beihang</a>
-        ), All Rights Reserved.
+<p class="copyright">Copyright © 2024</i> <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+  <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
 
-        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
-      </p>
       <hr>
       <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
     </footer>
