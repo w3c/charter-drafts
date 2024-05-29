@@ -74,7 +74,7 @@
     <main>
       <h1 id="title"><i class=todo>PROPOSED</i> JSON-LD Working Group Charter</h1>
 
-      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/json-ld">JSON-LD Working Group</a> is to maintain the <a href="https://www.w3.org/groups/wg/json-ld/publications">family of JSON-LD 1.1 Recommendations</a> and related Working Group Notes.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/json-ld">JSON-LD Working Group</a> is to maintain and extend the <a href="https://www.w3.org/groups/wg/json-ld/publications">family of JSON-LD 1.1 Recommendations</a> and related Working Group Notes.</p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/groups/wg/json-ld/join">Join the JSON-LD Working Group.</a></p>
@@ -155,6 +155,10 @@
 					The Working Group will maintain the JSON-LD specifications (i.e., <a href="https://www.w3.org/TR/json-ld11/">JSON-LD 1.1</a>, <a href="https://www.w3.org/TR/json-ld11-api/">JSON-LD 1.1 API</a>, <a href="https://www.w3.org/TR/json-ld11-framing/">JSON-LD 1.1 Framing</a>) that together provide a JSON format for Linked Open Data to interoperate at web-scale, in a method which is familiar to and usable by web-focused software engineers.
 					<!-- Note that the JSON-LD APIs are not browser specific; while appropriate for use within browsers, they are not limited to such use, and there is no requirement for browsers to implement them natively. -->
 				</p>
+        <p>
+          It will also develop new Recommendation Track deliverables, based on work incubated by the <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a>,
+          specifying the use of JSON-LD algorithms with similar formats (YAML, CBOR, and more).
+        </p>
         <p>The Working group is expected to coordinate with the <a href='https://www.w3.org/community/json-ld/'>JSON for Linking Data Community Group</a> on consensus-based proposals related to content changes for the JSON-LD Working Group Deliverables. The Chairs of this group may choose to reject proposals that are incompatible with this Charter.</p>
 
         <section id="section-out-of-scope">
@@ -211,6 +215,34 @@
                   Produced under Working Group Charter: <a href="https://www.w3.org/2018/03/jsonld-wg-charter.html">https://www.w3.org/2018/03/jsonld-wg-charter.html</a>
               </dd>
           </dl>
+          <p>
+            The Working Group will also deliver the following W3C normative specifications:
+          </p>
+          <dl>
+              <dt><strong>CBOR-LD</strong></dt>
+              <dd>
+                  <p>CBOR is a compact binary data serialization and messaging format. This specification defines CBOR-LD, a CBOR-based format to serialize Linked Data. The encoding is designed to leverage the existing JSON-LD ecosystem, to provide a compact serialization format for those seeking efficient encoding schemes for Linked Data.</p>
+                  <p>
+                  <div><b>Input documents:</b>
+                    <ul>
+                      <li><a href="https://json-ld.github.io/cbor-ld-spec/">CBOR-LD</a>,
+                      <i class=todo>Final Community Group Report</i> (<i class=todo>2024-xx-xx</i>), adopted from the JSON for Linking Data Community Group
+                      <li><a href="https://w3c.github.io/json-ld-cbor/">JSON-LD 1.1. in CBOR</a>,
+                      Editor's Draft (2022-12-06), adopted from previous JSON-LD Working Group
+                    </ul>
+                  </div>
+                  <p><b>Expected completion:</b> CR in Q4 2024</p>
+              </dd>
+              <dt><strong>YAML-LD</strong></dt>
+              <dd>
+                  <p>This document defines YAML-LD, a set of conventions built on top of YAML, which outlines how to serialize Linked Data as YAML based on JSON-LD syntax, semantics, and APIs.</p>
+                  <p><b>Input document:</b>
+                    <a href="https://www.w3.org/community/reports/json-ld/CG-FINAL-yaml-ld-20231206/">YAML-LD</a>,
+                    Final Community Group Report (2023-12-06), adopted from the JSON for Linking Data Community Group
+                  </p>
+                  <p><b>Expected completion:</b> CR in Q4 2024</p>
+             </dd>
+          </dl>
 
 
         </section>
@@ -225,10 +257,35 @@
             <ul>
               <li>Application profile of JSON-LD to enable efficient streaming parsers.</li>
               <li>Test suites and implementation reports for the specifications.</li>
-              <li>JSON-LD 1.1 specified in other serializations like YAML or CBOR.</li>
               <li>Best practices for use and implementation of JSON-LD 1.1.</li>
             </ul>
         </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+            <ul>
+              <li>September 2022: First teleconference</li>
+              <li>Q2 2024
+                <ul>
+                  <li>FPWD of CBOR-LD</li>
+                  <li>FPWD of YAML-LD</li>
+                </ul>
+              </li>
+              <li>Q4 2024
+                <ul>
+                  <li>Candidate Recommendation of CBOR-LD</li>
+                  <li>Candidate Recommendation of YAML-LD</li>
+                </ul>
+              </li>
+              <li>Q1 2025
+                <ul>
+                  <li>Recommendation of CBOR-LD</li>
+                  <li>Recommendation of YAML-LD</li>
+                </ul>
+              </li>
+            </ul>
+        </section>
+
       </section>
 
 	<section id="success-criteria">
