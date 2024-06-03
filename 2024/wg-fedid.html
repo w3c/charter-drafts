@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Federated Identity Working Group Charter</title>
+
+  <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+  <style>
+    main {
+      max-width: 60em;
+      margin: 0 auto;
+    }
+
+    ul#navbar {
+      font-size: small;
+    }
+
+    dt.spec {
+      font-weight: bold;
+    }
+
+    dt.spec new {
+      background: yellow;
+    }
+
+    ul.out-of-scope>li {
+      font-weight: bold;
+    }
+
+    ul.out-of-scope>li>ul>li {
+      font-weight: normal;
+    }
+
+    .issue {
+      background: cornsilk;
+      font-style: italic;
+    }
+
+    .todo {
+      color: #900;
+    }
+
+    footer {
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <aside>
+      <ul id="navbar">
+        <li><a href="#background">Background</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+    </aside>
+    <p>
+      <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+    </p>
+  </header>
+
+
+  <main>    <h1 id="title">DRAFT Federated Identity Working Group Charter</h1>
+
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to develop specifications that allow a website to request an identity credential from an Identity Provider or a Credential Container (i.e., a wallet) to authenticate a user and request a set of claims in a way that is compatible with other protocols (e.g., OIDC, SAML, and OpenID4VC).</p>
+    <div class="noprint">
+      <p class="join"><a href="https://www.w3.org/groups/wg/fedid/join">Join the Federated Identity Working
+          Group.</a></p>
+    </div>
+
+    <!-- delete the GH link after AC review completed -->
+    <p style="padding: 0.5ex; border: 1px solid green">
+      This draft charter is available on <a href="https://github.com/w3c/charter-drafts/" rel="nofollow">GitHub</a>.
+      Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues/new?title=%5Bwg/fedid%5D" rel="nofollow">issues</a> or see the ones that <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue+is%3Aopen+%5Bwg%2Ffedid%5D" rel="nofollow">are open</a>.
+    </p>
+
+
+    <div id="details">
+      <table class="summary-table">
+        <tr id="Status">
+          <th>
+            Charter Status
+          </th>
+          <td>
+            See the <a href="https://www.w3.org/groups/wg/fedid/charters">group status page</a>
+              and <a href="#history">detailed change history</a>.
+          </td>
+        </tr>
+        <tr id="Duration">
+          <th>
+            Start date
+          </th>
+          <td>
+            TBD
+          </td>
+        </tr>
+        <tr id="CharterEnd">
+          <th>
+            End date
+          </th>
+          <td>
+            TBD + 2 years
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Chairs
+          </th>
+          <td>
+            Heather Flanagan (Spherical Cow Consulting)
+            <br>Wendy Seltzer (Invited Expert)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Team Contacts
+          </th>
+          <td>
+            <a href="mailto:simone@w3.org">Simone Onofri</a> (0.25 <abbr
+                title="Full-Time Equivalent">FTE</abbr>)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Meeting Schedule
+          </th>
+          <td>
+            <strong>Teleconferences:</strong> topic-specific calls may be held
+            <br>
+            <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional
+            face-to-face meetings may be scheduled by consent of the participants, usually no more than 1 per year.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="background" class="background">
+      <h2>Motivation and Background</h2>
+      <p>
+        Identity on the Web is critical to online interaction, with many privacy and security implications. 
+      <p>
+      <p>
+        The W3C fosters an ecosystem that addresses privacy, security, and user sovereignty.
+      </p>
+      <p>
+        This includes developing new mechanisms that allow individuals to select identity information relevant to a given interaction, such as assertions, specific credentials, or specific attributes, supporting an open ecosystem.
+      <p>
+      <p>
+        These mechanisms must also be viable for issuers, identity providers, verifiers, and relying parties to exchange information securely and as privately as possible.
+      </p>
+      <p>
+        The user agent is the mediator of these transactions.
+      </p>
+      <p>
+        Thus, while protocols and formats are being developed elsewhere (e.g., ISO, IETF, OIDF, and other W3C Groups), the Web platform layer must also be standardized to provide a secure and privacy-preserving API framework that is protocol-and-format-agnostic and compatible with identity request/response protocols and different formats.
+      </p>
+    </div>
+
+    <section id="scope" class="scope">
+      <h2>Scope</h2>
+      <p>
+        The Federated Identity Working Group defines Web Platform features that enable user agents to support secure and privacy-preserving interactions related to digital identities or digital credentials. 
+      </p>  
+      <p>
+        These features are intended to support different interaction flows (e.g., authentication, authorization, requesting identities or credentials, and issuance) in a 'traditional' federated identity model - with Identity Providers (IdPs) or Relying Parties (RPs) - and in a digital wallet 'decentralized' model - with Issuers, Holders, and Verifiers.
+      <p>
+        If any mechanisms developed to support authentication and authorization flows would cause breaking changes for existing protocols, work on that mechanism must include a well-documented transition period.
+      </p>
+      <p>
+        Here, 'privacy' minimally refers to the appropriate processing of personal information and preventing third parties from unnecessarily learning anything about the end-user's environment (e.g., which wallets are available, their brand, and their capabilities). 
+      </p>
+      <p>
+        This group develops new mechanisms that define how information is passed by the user agent between the different entities to facilitate federated and digital identities:
+      </p>
+      <ul>
+        <li>Enabling a Federated Identity Model while adhering to <a href="https://www.w3.org/TR/privacy-principles/" rel="nofollow">privacy principles</a> despite the <a href="https://www.w3.org/2001/tag/doc/web-without-3p-cookies/" rel="nofollow">deprecation of third-party cookies</a>, a cornerstone of such operations.<li>
+        <li>Enabling a Decentralized Identity Model by invoking a wallet without <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md" rel="nofollow">custom schemes</a>, since they have <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#can-wallets-reliably-determine-their-invoker" rel="nofollow">security</a>, <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#what-are-the-privacy-implications-of-a-wallet-accepting-custom-schemes" rel="nofollow">privacy</a>, and <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#user-experience-concerns" rel="nofollow">user experience implications</a> and cannot work in cross-device scenarios.</li>
+      </ul>
+      <p>
+        These mechanisms are not authentication methods, but if any mechanisms developed would cause breaking changes for existing protocols, work on that mechanism must include a well-documented transition period.
+      </p>
+
+        <p>Specific topics out of scope:</p>
+        <ul class="out-of-scope">
+          <li>Designing new authentication methods.</li>
+          <li>Designing individual credential and assertion formats</li>
+          <li>Performing any security or confidence assessment (e.g. checking signatures,
+            audience, encoding, etc) of the <a
+            href="https://fedidcg.github.io/FedCM/#dom-identityprovidertoken-token">token</a> that
+            encodes the <a href="https://fedidcg.github.io/FedCM/#fetch-identity-assertion">identity
+            assertions</a>.</li>
+          <li>Ad-tech tools or APIs specifically focused on advertising as opposed to authentication.</li>
+        </ul>
+    </section>
+    <section id="deliverables">
+      <h2>
+        Deliverables
+      </h2>
+
+      <p>The updated document status is available on the <a href="https://www.w3.org/groups/wg/fedid/publications">group
+          publication status page</a>.</p>
+
+      <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.
+        Expected completion indicates when the deliverable is projected to become a Recommendation,
+        or otherwise reach a stable state.
+      </p>
+
+      <section id="normative">
+        <h3>
+          Normative Specifications
+        </h3>
+        <p>
+          The Working Group will deliver the following W3C normative specifications:
+        </p>
+
+        <dl>
+          <dt id="fedcm" class="spec"><a href="https://fedidcg.github.io/FedCM/">Federated Credential Management (FedCM) API</a>
+          </dt>
+          <dd>
+            <p>This specification defines an API that allows users to login to websites with their federated accounts in a
+              privacy-preserving manner.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/fedidcg/FedCM">Adopted from the
+                Federated Identity Community Group</a>
+            </p>
+            <p class="milestone"><b>Expected completion:</b> CR in Q2 2025</p>
+          </dd>
+          <dt id="bapi" class="spec"><a href="https://fedidcg.github.io/FedCM/#browser-api-login-status">Login Status API</a>
+          </dt>
+          <dd>
+            <p>This specification defines an API to inform the Web Application of their user's
+              login status, so that other Web APIs can operate with this additional signal. Currently, it is a separate
+            chapter in the <a href="#fedcm">FedCM specification</a>, and the goal is to publish it as a separate deliverable to be used by
+            <abbr title="Federated Credential Management">FedCM</abbr>.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/fedidcg/FedCM">Adopted from the
+                Federated Identity Community Group</a>
+            </p>
+            <p class="milestone"><b>Expected completion:</b> CR in Q2 2025</p>
+          </dd>
+        </dl>
+        <h3>Tentative Deliverables</h3>
+        <p>Depending on the incubation progress, interest from multiple implementers, and the consensus of the Group participants, the Group may also produce Recommendation-track specifications for the following document:</p>  
+        <dl>
+        <dt id="digid" class="spec"><a href="https://wicg.github.io/digital-identities/">Digital Credentials API</a></dt>
+        <dd>
+            <p>This specification defines an API that enables user agents to mediate access to and presentation of Digital Credentials in a format-agnostic and protocol-agnostic fashion (e.g., supporting W3C Verifiable Credentials, ISO mDoc, etc.), enabling different use cases such as - but not limited to -  government-issued documents, digital academic credentials, IoT and Supply Chain related identities.</p>
+
+            <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/digital-identities/">Draft in the
+                Web Incubator Community Group</a>
+            </p>
+          </dd>
+      </dl>
+      </section>
+
+      <section id="ig-other-deliverables">
+        <h3>
+          Other Deliverables
+        </h3>
+        <p>Other non-normative documents will be created, such as:</p>
+        <ul>
+          <li>A test suite, available from <a
+          href="https://github.com/web-platform-tests/wpt">web-platform-tests</a> as possible, must
+          be created.</li>
+        <li>A deliverable (or set of deliverables) considering the threats and mitigations of Digital Credentials-related technologies concerning human rights, harm, security, and privacy. These findings will be used as input for our deliverables. This will be developed in collaboration with W3C's Technical Architecture Group (TAG), Privacy Interest Group (PING), and other relevant groups.</li>
+        </ul>
+        <p>
+          Other non-normative documents may be created such as:
+        </p>
+        <ul>
+          <li>Use case and requirement documents.</li>
+          <li>Implementation report for the specification.</li>
+          <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+        </ul>
+      </section>
+
+      <section id="timeline">
+        <h3>Timeline</h3>
+        <ul>
+          <li>Q4 2024: FPWD for Federated Credential Management API</li>
+          <li>Q1 2025: CR for Federated Credential Management API</li>
+          
+        </ul>
+      </section>
+    </section>
+
+    <section id="success-criteria">
+      <h2>Success Criteria</h2>
+
+      <!-- Testing and interop -->
+      <p>In order to advance
+        to
+        <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed
+          Recommendation</a>, each normative specification is expected to have
+        <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent
+          interoperable
+          implementations</a> of every feature defined in the specification, where
+        interoperability can be verified by passing open test suites, and two or
+        more implementations (distinct browser engines) interoperating with each other.
+        </p>
+      <p>
+        In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.
+      </p>
+      <p>
+        In order to advance to Proposed Recommendation, the Digital Credential API must demonstrate support for at least two formats (e.g., W3C Verifiable Credentials, ISO mDoc). 
+      </p>
+      <p>
+        Each specification should have testing plans, starting from the earliest drafts.
+      </p>
+      <p>
+        To promote interoperability, all changes made to specifications
+        in Candidate Recommendation
+        or to features that have deployed implementations
+        should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.
+        Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform
+          Tests</a> project.</p>
+
+      <!-- Horizontal review -->
+
+      <p>
+        Each specification will contain a Security Considerations section -  that includes a Threat Model with threats, attacks, mitigations, and residual risks - and a Privacy Consideration section - that must contain an analysis of privacy aspects such as Unlinkability, Data Minimization and Tracking -  as specified in <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a> and <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, detailing all known security and privacy implications for implementers, Web authors, and end users.
+      </p>
+
+      <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including
+        ways specification features can be used to address them and
+        recommendations for maximizing accessibility in implementations.</p>
+
+      <!-- Principles -->
+      <p>
+        This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>, <a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>, and <a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>.
+      </p>
+
+    </section>
+
+    <section id="coordination">
+      <h2>Coordination</h2>
+
+      <p>For all specifications, this Working Group will seek <a
+          href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+        accessibility, internationalization, privacy, and security with the relevant Working and
+        Interest Groups, and with the <a href="https://www.w3.org/2001/tag/"
+          title="Technical Architecture Group">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including
+        <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>. The
+        Working Group is encouraged to engage collaboratively with the horizontal review groups
+        throughout development of
+        each specification. The Working Group is advised to seek a review at least 3 months before
+        first entering
+        <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is
+        encouraged
+        to proactively notify the horizontal review groups when major changes occur in a specification following a
+        review.
+      </p>
+
+      <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+      <section>
+        <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt><a href="https://www.w3.org/WAI/APA/" rel="nofollow">Accessible Platform Architectures Working Group</a></dt>
+          <dd>The Accessible Platform Architectures Working Group seeks to ensure that accessibility is kept front of mind, as authentication timing and the reliance on short term memory are known and thorny topics for people with disabilities. Our group is expected to regularly coordinate with them for accessibility-related issues.</dd>
+          <dt><a href="https://www.w3.org/2019/did-wg/" rel="nofollow">Decentralized Identifier Working Group</a></dt>
+          <dd>The Decentralized Identifier Working Group is the maintainer of Decentralized Identifiers, one of the core building blocks of Digital Identities. Our group is expected to communicate with them for Digital Identities related issues.</dd>
+          <dt><a href="https://www.w3.org/groups/cg/fed-id" rel="nofollow">Federated Identity Community Group</a></dt>
+          <dd>The Federated Identity Community Group is to provide a forum focused on incubating web features that will both support federated identity and prevent untransparent, uncontrollable tracking of users across the web. Our group is expected to regularly coordinate with them to put in the standardization track incubated proposals.</dd>
+          <dt><a href="https://privacycg.github.io/" rel="nofollow">Privacy Community Group</a></dt>
+          <dd>The Privacy Community Group is to incubate privacy-focused web features and APIs to improve user privacy on the web through enhanced browser behavior. Our group is expected to regularly coordinate with them for privacy-related issues.</dd>
+          <dt><a href="https://www.w3.org/Privacy/IG/" rel="nofollow">Privacy Interest Group</a></dt>
+          <dd>The Privacy Community Interest Group monitors ongoing privacy issues that affect the Web, investigates potential areas for new privacy work, and provides guidelines and advice for addressing privacy in standards development, including privacy considerations in specifications. Our group is expected to coordinate with them regularly on privacy-related issues.
+          </dd>
+          <dt><a href="https://www.w3.org/2011/webappsec/" rel="nofollow">Web Application Security Working Group</a></dt>
+          <dd>The Web Application Security Working Group develops mechanisms and best practices that improve the security of Web Applications. Our group is expected to coordinate with them for security-related issues.</dd>
+          <dt><a href="https://www.w3.org/groups/wg/vc/" rel="nofollow">Verifiable Credentials Working Group</a></dt>
+          <dd>The Verifiable Credentials Working Group is the venue for standardizing the Data Model for Verifiable Credentials. Our group is expected to coordinate with them for format and protocol-related issues.
+          </dd>
+          <dt><a href="https://www.w3.org/groups/wg/webauthn/" rel="nofollow">Web Authentication Working Group</a></dt>
+          <dd>The Web Authentication Working Group is to define a client-side API that provides strong authentication functionality to web applications. While we are not developing an authentication mechanism, our group is expected to coordinate with them to provide feedback on authentication-related issues.
+          </dd>
+        </dl>
+      </section>
+      <section>
+        <h3 id="external-coordination">External Organizations</h3>
+        <dl>
+          <dt><a href="https://www.ietf.org" rel="nofollow">IETF</a></dt>
+          <dd>Coordinate with the IETF research groups and working groups, such as OAuth, for protocol components on which authentication and authorization features depend.</dd>
+          <dt><a href="https://openid.net" rel="nofollow">OIDF</a></dt>
+          <dd>Coordinate with the OpenID Foundation (OIDF) for authorization and credentials flows (i.e., OIDC, OpenID4VC).</dd>
+          <dt><a href="https://oasis-open.org" rel="nofollow">OASIS</a></dt>
+          <dd>Coordinate with OASIS for authentication flows (i.e., SAML).</dd>
+          <dt><a href="https://refeds.org" rel="nofollow">REFEDS</a></dt>
+          <dd>Coordinate with REFEDS for multi-lateral federation best practices and a representative of the complex use cases of the research and education communities worldwide.</dd>
+          <dt><a href="https://www.etsi.org/committee/esi">European Telecommunications Standards Institute - Electronic Signatures and Infrastructure Technical Committee</a> </dt>
+          <dd>Coordinate with ETSI for <a href="https://digital-strategy.ec.europa.eu/en/policies/discover-eidas" rel="nofollow">eIDAS</a>, which can use the deliverables of the Group.</dd>
+          <dt><a href="https://www.nist.gov/" rel="nofollow"> National Institute of Standards and Technology, U.S. Department of Commerce </a></dt>
+          <dd>Coordinate with NIST for their guidelines on digital identity and implementations.</dd>
+          <dt><a href="https://www.iso.org/committee/45144.html" rel="nofollow">ISO/IEC JTC 1 SC17 WG4 and WG10</a></dt>
+          <dd>Coordinate with ISO for their work on interfaces and protocols for security devices, vehicle driver licenses, and related digital identities (i.e., mdoc).</dd>
+          <dt><a href="https://openwallet.foundation/" rel="nofollow">OpenWallet Foundation</a></dt>
+          <dd>Coordinate with OpenWallet Foundation for their work on the Open Wallet Ecosystem..</dd>
+        </dl>
+      </section>
+    </section>
+      
+    <section class="participation">
+      <h2 id="participation">
+        Participation
+      </h2>
+      <p>
+        To be successful, this Working Group  should have participation from large-scale Identity
+        Provider (IdP) operators, large-scale Relying Parties (RPs), federation operators, and
+        browser vendors. In addition, there must be active Editors and Test Leads for each
+        specification. 
+        
+        The Chairs, specification Editors, and Test Leads are expected to contribute
+        half of a working day per week towards the Working Group. There is no minimum requirement
+        for other Participants.
+      </p>
+      <p>
+        The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+        described in <a href='#communication'>Communication</a>.
+      </p>
+      <p>
+        The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement
+        to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+      </p>
+      <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+        W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+    </section>
+
+
+
+    <section id="communication">
+      <h2>
+        Communication
+      </h2>
+      <p id="public">
+        Technical discussions for this Working Group are conducted in <a
+          href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from
+        teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue
+        tracking will be conducted in a manner that can be both read and written to by the general public. Working
+        Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct
+        public contribution requests.
+        The meetings themselves are not open to public participation, however.
+      </p>
+      <p>
+        Information about the group (including details about deliverables, issues, actions, status, participants, and
+        meetings) will be available from the <a href="">Federated Identity Working Group home page.</a>
+      </p>
+      <p>
+        Most Federated Identity Working Group teleconferences will focus on discussion of particular specifications, and
+        will be conducted on an as-needed basis.
+      </p>
+      <p>
+        This group primarily conducts its technical work on <a class="todo" id="public-github" href="https://www.w3.org/groups/wg/fedid/tools">GitHub issues</a>.
+        The public is invited to review, discuss and contribute to this work.
+      </p>
+      <p>
+        The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+        Chairs and members of the group, for member-only discussions in special cases when a participant requests such a
+        discussion.
+      </p>
+    </section>
+
+
+
+    <section id="decisions">
+      <h2>
+        Decision Policy
+      </h2>
+      <p>
+        This group will seek to make decisions through consensus and due process, per the <a
+          href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>.
+        Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with
+        members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+      <p>
+        However, if a decision is necessary for timely progress and consensus is not achieved after careful
+        consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+        with any objections.
+      </p>
+      <p>
+        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+        A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based
+        survey), with a response period from <span id='cfc'>one week to 10
+            working days</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+        If no objections are raised by the end of the response period, the resolution will be considered to have
+        consensus as a resolution of the Working Group.
+      </p>
+      <p>
+        All decisions made by the group should be considered resolved unless and until new information becomes available
+        or unless reopened at the discretion of the Chairs.
+      </p>
+      <p>
+        This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C
+          Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the
+        Process Document requires.
+      </p>
+    </section>
+
+
+
+    <section id="patentpolicy">
+      <h2>
+        Patent Policy
+      </h2>
+      <p>
+        This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+          Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue
+        Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+        For more information about disclosure obligations for this group, please see the <a
+          href="https://www.w3.org/groups/wg/fedid/ipr">licensing information</a>.
+      </p>
+
+    </section>
+
+
+
+    <section id="licensing">
+      <h2>Licensing</h2>
+      <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software
+          and Document license</a> for all
+        its deliverables.</p>
+    </section>
+
+
+
+    <section id="about">
+      <h2>
+        About this Charter
+      </h2>
+      <p>
+        This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section
+          3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a
+        conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take
+        precedence.
+      </p>
+
+      <section id="history">
+        <h3>
+          Charter History
+        </h3>
+
+        <p>The following table lists details of all changes from the initial charter, per the <a
+            href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory
+            Committee Review of a Charter)</a>:</p>
+
+        <table class="history">
+          <tbody>
+            <tr>
+              <th>
+                Charter Period
+              </th>
+              <th>
+                Start Date
+              </th>
+              <th>
+                End Date
+              </th>
+              <th>
+                Changes
+              </th>
+            </tr>
+            <tr>
+              <th>
+               Initial Charter
+              </th>
+              <td>
+                28 March 2024
+              </td>
+              <td>
+                28 March 2026
+              </td>
+              <td>
+                (initial)
+              </td>
+            </tr>
+            <tr>
+                <th>
+                  <a href="">Rechartered</a>
+                </th>
+                <td>
+                  TBD
+                </td>
+                <td>
+                  &nbsp;
+                </td>
+                <td>
+                    <p>Revised</p>
+                    <p>movitation/scope/success-criteria</p>
+                    <p>added deliverables: Digital Credentials API, harm model</p>    
+                </td>
+              </tr>
+<!--            <tr>
+              <th>
+                <a class="todo" href="">Charter Extension</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">none</i>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="todo" href="">Rechartered</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <p class="todo">[description of change to charter, with link to new deliverable item in charter]
+                  <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.
+                </p>
+              </td>
+            </tr>
+          -->
+        </tbody>
+        </table>
+      </section>
+
+      <section id="changelog">
+        <h3>Change log</h3>
+
+        <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+        <p>Changes to this document are documented in this section.</p>
+        <!--
+                                                                                        <dl id='changes'>
+                                                                                          <dt>YYYY-MM-DD</dt>
+                                                                                          <dd>[changes]]</dd>
+                                                                                        </dl>
+                                                                                      -->
+      </section>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <address>
+      <a href="mailto:simone@w3.org">Simone Onofri</a>
+    </address>
+
+    <p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web
+        Consortium</a>.<br>
+      <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+        title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+    </p>
+    
+  </footer>
+
+</body>
+
+</html>

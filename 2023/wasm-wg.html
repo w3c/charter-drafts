@@ -113,7 +113,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i> (Start date + 3 years)
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
             </td>
           </tr>
           <tr>
@@ -208,15 +208,15 @@
               <dt id="1393" class="spec"><a href="https://www.w3.org/TR/wasm-core/" rel="versionof">WebAssembly Core Specification</a></dt>
                <dd>This document describes the core WebAssembly standard, a safe, portable, low-level code format designed for efficient execution and compact representation.</dd>
                <dt id="1394" class="spec"><a href="https://www.w3.org/TR/wasm-js-api-1/" rel="versionof">WebAssembly JavaScript Interface</a></dt>
-               <dd>This document describes the integration of WebAssembly with the broader web platform.</dd>
-               <dt id="1395" class="spec"><a href="https://www.w3.org/TR/wasm-web-api-1/" rel="versionof">WebAssembly Web API</a></dt>
                <dd>This document provides an explicit JavaScript API for interacting with WebAssembly.</dd>
+               <dt id="1395" class="spec"><a href="https://www.w3.org/TR/wasm-web-api-1/" rel="versionof">WebAssembly Web API</a></dt>
+               <dd>This document describes the integration of WebAssembly with the broader web platform.</dd>
           </dl>
           <p>
-            Contingent on the <a href="https://github.com/WebAssembly/component-model">Component Model proposal</a> reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>, the Working Group also aims to deliver the following new specification:
+            Contingent on the <a href="https://github.com/WebAssembly/component-model">WebAssembly Component Model proposal</a> reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>, the Working Group also aims to deliver the following new specification:
           <dl>
-              <dt class="spec">Component Model</dt>
-               <dd>This document will define a standard, portable, lightweight, finely-sandboxed, cross-language, compositional module called a “component”, layered on top of the WebAssembly Core Specification. Like Core WebAssembly, the Component Model adds no new capabilities to the Web Platform and can be faithfully implemented by translation to JavaScript. See the <a href="https://github.com/WebAssembly/component-model">proposal repository</a> for high-level concepts, goals and use cases along with a low-level detailed walkthrough.</dd>
+              <dt class="spec">WebAssembly Component Model</dt>
+              <dd>This document will define a standard, portable, lightweight, finely-sandboxed, cross-language, compositional module called a “component”, layered on top of the WebAssembly Core Specification. Like Core WebAssembly, the WebAssembly Component Model adds no new capabilities to the Web Platform and can be faithfully implemented by translation to JavaScript. See the <a href="https://github.com/WebAssembly/component-model">proposal repository</a> for high-level concepts, goals and use cases along with a low-level detailed walkthrough.</dd>
           </dl>
         </section>
 
@@ -275,12 +275,13 @@
           <dl>
             <dt>
                 <a href="https://www.ecma-international.org/memento/tc39.htm">TC39 - ECMAScript Standards Body</a></dt>
-            <dd>Coordination on integration with JavaScript, particularly on
-                <a href="https://tc39.github.io/ecmascript_sharedmem/shmem.html">SharedArrayBuffer</a>
-                 and its memory model</dd>
-            <dt><a href="https://www.khronos.org/">Khronos Group</a></dt>
-            <dd>Coordination on WebAssembly-specific bindings to
-              <a href="https://www.khronos.org/webgl/wiki">WebGL</a>.</dd>
+            <dd>Coordination on integration with JavaScript, particularly on:
+              <ul>
+                <li><a href="https://tc39.github.io/ecmascript_sharedmem/shmem.html">SharedArrayBuffer</a> and its memory model</li>
+                <li>the ongoing Modules work in TC39</li>
+                <li>providing integration points for the WebAssembly Component Model.</li>
+              </ul>
+            </dd>
             <dt><a href="https://www.w3.org/community/gpu/">WebGPU Community Group</a></dt>
             <dd>Coordinate on WebAssembly interoperability, performance, and ergonomics.</dd>
           </dl>
