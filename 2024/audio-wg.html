@@ -83,7 +83,7 @@
 
       <!-- delete the GH link after AC review completed -->
       <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/tree/gh-pages/2022">GitHub</a>.
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/tree/gh-pages/2024/audio-wg.html">GitHub</a>.
 
     Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
           </p>
@@ -95,7 +95,7 @@
               Charter Status
             </th>
             <td>
-              <i class="todo">See the <a href="https://www.w3.org/groups/wg/ audio/charters">group status page</A> and <a href="#history">detailed change history</a>.</i>
+              See the <a href="https://www.w3.org/groups/wg/audio/charters">group status page</a> and <a href="#history">detailed change history</a>.
             </td>
           </tr>		
           <tr id="Duration">
@@ -216,8 +216,7 @@
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/audio/publications">group publication status page</a>.</p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
-          <span class='todo'>The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
         <section id="normative">
           <h3>
@@ -226,9 +225,30 @@
           <p>
             The  Working Group will deliver the following W3C normative specifications:
           </p>
-          <p class="todo">Consider making a second list for existing specifications that the group will maintain.</p>
           <dl>
-            <dt id="web-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
+            <dt id="webaudio" class="spec"><a href="https://www.w3.org/TR/webaudio/">Web Audio API</a></dt>
+            <dd>
+              <p>This specification defines a high-level Web API for processing and synthesizing audio in web applications.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="#">W3C Recommendation</a></p>
+              <p class="latest"><b>Latest publication:</b> <a href="https://www.w3.org/TR/2021/REC-webaudio-20210617/">2021-06-17</a></p>
+            </dd>
+
+            <dt id="webmidi" class="spec"><a href="#">Web MIDI API</a></dt>
+            <dd>
+              <p>This specification defines  an API supporting the MIDI protocol, enabling web applications to enumerate and select MIDI input and output devices on the client system and send and receive MIDI messages.</p>
+
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2015/WD-webmidi-20150317/">Working Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q4 2025</p>
+              <p><b>Adopted Draft:</b> Web MIDI API, <a href="https://www.w3.org/TR/2015/WD-webmidi-20150317/">2015-03-17</a>
+              <p><b>Exclusion Draft:</b> Web MIDI API, <a href="https://www.w3.org/TR/2012/WD-webmidi-20121025/">2012-10-25</a>
+              Exclusion period <b>began</b> 2012-11-01; Exclusion period <b>ended</b> 2013-03-24.
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2011/audio/charter/2012/">2012</a>.
+            </dd>
+
+
+
+            <!-- <dt id="web-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
             <dd>
               <p>This specification defines <i class="todo">[concrete description]</i>.</p>
 
@@ -239,7 +259,7 @@
               <p><b>Exclusion Draft:</b> The <span class="todo">title, stable URL, and publication date of the most recent <a href='https://www.w3.org/Consortium/Process/#exclusion-draft'>Exclusion Draft</a></span>.
               <span class="todo">Exclusion period <b>began</b>; Exclusion period <b>ended</b>.</span> <span class='todo'>(this <a href="https://www.w3.org/2004/01/pp-impl/charter-assistant?wgid=32061">charter assistant</a> helps in producing the list. use the proper <a href='https://www.w3.org/2004/01/pp-impl/'>wgid</a>)</span>
               <p><b>Exclusion Draft Charter:</b> The  <span class="todo">stable URL of the <a href='https://www.w3.org/Consortium/Process/#other-charter'>Working Group charter</a></span> under which the most recent Exclusion Draft was published.
-            </dd>
+            </dd> -->
           </dl>
 
 
@@ -260,7 +280,7 @@
         </section>
 
         <section id="timeline">
-          <h3>Timeline</h3>
+          <!-- <h3>Timeline</h3>
             <p class="todo">Put here a timeline view of all deliverables.</p>
             <ul class="todo">
               <li>Month YYYY: First teleconference</li>
@@ -269,7 +289,7 @@
               <li>Month YYYY: FPWD for FooML</li>
               <li>Month YYYY: Requirements and Use Cases for BarML</li>
               <li>Month YYYY: FPWD FooML Primer</li>
-            </ul>
+            </ul> -->
         </section>
       </section>
 
@@ -277,14 +297,14 @@
 	  <h2>Success Criteria</h2>
 
     <!-- Testing and interop -->
-	  <p><span class='todo'>Remove this clause if the Group does not intend to move to REC:</span> In order to advance to 
+	  <p>In order to advance to 
 		  <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have 
 		  <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable
 			  implementations</a> of every feature defined in the specification, where
 interoperability can be verified by passing open test suites, and two or
 more implementations interoperating with each other.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-    <p><span class='todo'>Consider adopting a healthy testing policy, such as:</span> 
+    <p> 
       To promote interoperability, all changes made to specifications 
       in Candidate Recommendation 
       or to features that have deployed implementations
@@ -296,7 +316,7 @@ more implementations interoperating with each other.</p>
     <p>Each specification should contain sections detailing all known security and
       privacy implications for implementers, Web authors, and end users.</p>
 
-	  <p><i class="todo">For specifications of technologies that directly impact user experience, such as content technologies, as well as protocols and APIs which impact content: </i>
+	  <p>
 		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
 		recommendations for maximising accessibility in implementations.</p>
 
@@ -306,7 +326,6 @@ more implementations interoperating with each other.</p>
     </p>
 	
     <!-- Relevance and momentum -->
-	  <p><span class='todo'>Consider adding this clause if the Group does not intend to move to REC:</span> All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
 	</section>
 
       <section id="coordination">
@@ -322,8 +341,6 @@ more implementations interoperating with each other.</p>
           to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
-
-      	<p class="todo">In addition to the above catch-all reference to horizontal review which includes accessibility review, please check with chairs and staff contacts of the <a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a> to determine if an additional liaison statement with more specific information about concrete review issues is needed in the list below.</p>
 
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
@@ -376,14 +393,13 @@ more implementations interoperating with each other.</p>
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""> Audio Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/wg/audio/">Audio Working Group home page.</a>
         </p>
         <p>
           Most  Audio Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work  <i class="todo">pick one, or both, as appropriate:</i> on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-<i class="todo">[email-list]</i>@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-[email-list]/">archive</a>)
-          <i class="todo">or</i> on <a class="todo" id="public-github" href="[link to Github repo]">GitHub issues</a>.
+          This group primarily conducts its technical work on <a id="public-github" href="[link to Github repo]">GitHub issues</a>.
           The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
@@ -405,7 +421,7 @@ more implementations interoperating with each other.</p>
         <p>
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'><i class="todo">[pick a duration within:] one week to 10 working days</i></span>, depending on the chair's evaluation of the group consensus on the issue.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period of one week, depending on the chair's evaluation of the group consensus on the issue.
 
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the  Working Group.
         </p>
@@ -420,7 +436,6 @@ more implementations interoperating with each other.</p>
 
 
       <section id="patentpolicy">
-      <p><i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i></p>
 
         <h2>
           Patent Policy
@@ -428,19 +443,8 @@ more implementations interoperating with each other.</p>
         <p>
           This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/ audio/ipr">licensing information</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/audio/ipr">licensing information</a>.
         </p>
-
-        <h2>Patent Disclosures </h2>
-        <p>The Interest Group provides an opportunity to
-          share perspectives on the topic addressed by this charter. W3C reminds
-          Interest Group participants of their obligation to comply with patent
-          disclosure obligations as set out in <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section
-            6</a> of the W3C Patent Policy. While the Interest Group does not
-          produce Recommendation-track documents, when Interest Group
-          participants review Recommendation-track specifications from Working
-          Groups, the patent disclosure obligations do apply. For more information about disclosure obligations for this group,
-          please see the <a href="https://www.w3.org/groups/ig/ audio/ipr">licensing information</a>.</p>
       </section>
 
 
