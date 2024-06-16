@@ -345,20 +345,40 @@ more implementations interoperating with each other.</p>
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
-          </dl>
+              <dt><a href="https://www.w3.org/groups/wg/webrtc">Web Real-Time Communications Working Group</a></dt>
+              <dd>Supply use cases, requirements, and review of specifications related to audio, including microphone access and speaker output</dd>
 
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
-          <p class="issue"><b>Note:</b> Do not bury normative text inside the liaison section.
-            Instead, put it in the scope section.</p>
+              <dt><a href="https://www.w3.org/groups/ig/me">Media and Entertainment Interest Group</a></dt>
+            <dd>This Group may review existing work
+              and identify requirements and potential solutions to
+              with a view to improving media related features on the web across all devices. </dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/media">Media Working Group</a></dt>
+            <dd>This group develops and improves client-side media processing and playback features on the Web.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/apa">Accessible Platform Architectures (APA) Working Group</a></dt>
+            <dd>Ensure that audio streams from speech synthesis
+              are not adversely impacted by
+              audio streams from Web Audio.</dd>
+          </dl>
         </section>
 
         <section>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
-            <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
-            <dd><i class="todo">[specific nature of liaison]</i></dd>
+              <dt><a href="https://whatwg.org/">WHATWG</a></dt>
+              <dd>Ensure that the audio APIs are compatible with the relevant HTML elements</dd>
+
+              <dt><a href="https://www.midi.org/">MIDI Manufacturers Association</a></dt>
+              <dd>Coordinate on the relationship between the audio API and the Musical Instrument Digital Interface protocol</dd>
+
+              <dt><a href="https://www.web3d.org/">Web3D Consortium</a></dt>
+              <dd>Coordinate on the use of spatial audio in
+                <a href="https://www.web3d.org/standards">standards for real-time 3D communication</a> </dd>
+              <!--
+              <dt><a href=""><i class="todo">[other name]</i> Working Group</a></dt>
+              <dd><i class="todo">[specific nature of liaison]</i></dd>
+              -->
           </dl>
         </section>
       </section>
@@ -468,70 +488,170 @@ more implementations interoperating with each other.</p>
           <h3>
             Charter History
           </h3>
-          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
 
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
           <table class="history">
             <tbody>
-              <tr>
-                <th>
-                  Charter Period
-                </th>
-                <th>
-                  Start Date
-                </th>
-                <th>
-                  End Date
-                </th>
-                <th>
-                  Changes
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <a class="todo" href="">Initial Charter</a>
-                </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">none</i>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a class="todo" href="">Charter Extension</a>
-                </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">none</i>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a class="todo" href="">Rechartered</a>
-                </th>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <i class="todo">[dd monthname yyyy]</i>
-                </td>
-                <td>
-                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
-                </td>
-              </tr>
+                <tr>
+                    <th>
+                        Charter Period
+                    </th>
+                    <th>
+                        Start Date
+                    </th>
+                    <th>
+                        End Date
+                    </th>
+                    <th>
+                        Changes
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="https://www.w3.org/2011/audio/charter/2011/">Initial Charter</a>
+                    </th>
+                    <td>
+                        <i>25 March 2011</i>
+                    </td>
+                    <td>
+                        <i>28 February 2013 </i>
+                    </td>
+                    <td>
+                        <i>none</i>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="https://www.w3.org/2011/audio/charter/2012/">Rechartered</a>
+                    </th>
+                    <td>
+                        <i>26 September 2012</i>
+                    </td>
+                    <td>
+                        <i>01 September 2014</i>
+                    </td>
+                    <td>
+                        <p>The charter of this Working Group included two Recommendation-track deliverables, the Web Audio API specification and the Web MIDI API specification.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <a href="https://www.w3.org/2011/audio/charter/Overview-2014.html">Charter Extension</a>
+                    </th>
+                    <td>
+                        <i>11 September 2014</i>
+                    </td>
+                    <td>
+                        <i>01 September 2016</i>
+                    </td>
+                    <td>
+                        <i>none</i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <a href="https://www.w3.org/2011/audio/charter/audio-2016.html">Rechartered</a>
+                    </th>
+
+          <td> <i>22 December 2016</i> </td>
+
+          <td> <i>22 December 2018</i> </td>
+                    <td>
+                      <i>Split existing Web Audio deliverable into 1.0 and 2.0. Change of document license.</i>
+                    </td>
+                </tr>
+
+                <tr>
+                  <th>
+                    <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2018JanMar/0014.html">Chairs</a>
+                  </th>
+
+        <td> <i>23 January 2018</i> </td>
+
+        <td> <i>22 December 2018</i> </td>
+                  <td>
+                    <i>Raymond Toy appointed; Joe Berkovitz steps down. </i>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2018OctDec/0067.html">Charter Extension</a>
+                  </th>
+
+        <td> <i>22 December 2018</i> </td>
+
+        <td> <i>30 June 2019</i> </td>
+                  <td>
+                    <i>none</i>
+                  </td>
+                </tr>
+                <tr>
+                    <th>
+                      <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2019JulSep/0019.html">Charter
+                      Extension</a>
+                    </th>
+
+        <td> <i>12 August 2019</i> </td>
+
+        <td> <i>31 December 2019</i> </td>
+                    <td>
+                      <i>none</i>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                      <a href="">Charter
+                      Extension</a>
+                    </th>
+
+        <td> <i>20 December 2019</i> </td>
+
+        <td> <i>14 February 2020</i> </td>
+                    <td>
+                      <i>none</i>
+                    </td>
+                </tr>
+                <tr>
+                  <th>
+                    Rechartered
+                  </th>
+
+        <td> 04 March 2020 </td>
+
+        <td> 04 March 2022 </td>
+                  <td>
+                    <i>Added new deliverable</i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Rechartered</th>
+                  <td>15 December 2020</td>
+                  <td>04 March 2022</td>
+                  <td>New Patent Policy
+                  <ul><li><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021JulSep/0035.html">2021-08-31</a>: Hongchan Choi appointed as co-Chair of the group; Raymond Toy stepped down</li></ul></td>
+                </tr>
+
+             <tr>
+               <th>Rechartered</th>
+               <td>14 June 2022</td>
+               <td>14 June 2024</td>
+               <td>Rather than creating a v2.0, Web Audio API will be maintained by updating the Recommendation.</td>
+             </tr>
+
+             <tr>
+              <th>This Charter</th>
+              <td></td>
+              <td></td>
+              <td>(none)</td>
+             </tr>
+
             </tbody>
-          </table>
+            </table>
         </section>
 
         <section id="changelog">
@@ -553,10 +673,10 @@ more implementations interoperating with each other.</p>
 
     <footer>
       <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+        <a href="mailto:chris@w3.org">Chris Lilley</a>
       </address>
 
-<p class="copyright">Copyright © <i class="todo">[yyyy]</i> <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+<p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
   <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
   <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
   <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
