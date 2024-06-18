@@ -75,7 +75,8 @@
 
   <main>    <h1 id="title">DRAFT Federated Identity Working Group Charter</h1>
 
-    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to develop specifications that allow a website to request an identity credential from an Identity Provider or a Credential Container (i.e., a wallet) to authenticate a user and request a set of claims in a way that is compatible with other protocols (e.g., OIDC, SAML, and OpenID4VC).</p>
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to develop specifications that enable users to authenticate an identity or present a credential or set of claims, in a way that is compatible with other protocols and is supportive of user privacy and agency.
+    </p>
     <div class="noprint">
       <p class="join"><a href="https://www.w3.org/groups/wg/fedid/join">Join the Federated Identity Working
           Group.</a></p>
@@ -150,48 +151,34 @@
     <div id="background" class="background">
       <h2>Motivation and Background</h2>
       <p>
-        Identity on the Web is critical to online interaction, with many privacy and security implications. 
+        Identity on the Web is critical to online interaction, with implications for privacy, security, and user sovereignty. 
       <p>
       <p>
-        The W3C fosters an ecosystem that addresses privacy, security, and user sovereignty.
+        Safely enabling these identity-related interactions requires new mechanisms mediated by the user agent that allow individuals to select identity information relevant to a given interaction, such as assertions, credentials, or specific attributes. 
+      <p>
+      <p>
+        These mechanisms must also be viable for issuers, identity providers, verifiers, and relying parties to exchange information as securely and privately as possible, while supporting an open ecosystem.
       </p>
       <p>
-        This includes developing new mechanisms that allow individuals to select identity information relevant to a given interaction, such as assertions, specific credentials, or specific attributes, supporting an open ecosystem.
-      <p>
-      <p>
-        These mechanisms must also be viable for issuers, identity providers, verifiers, and relying parties to exchange information securely and as privately as possible.
-      </p>
-      <p>
-        The user agent is the mediator of these transactions.
-      </p>
-      <p>
-        Thus, while protocols and formats are being developed elsewhere (e.g., ISO, IETF, OIDF, and other W3C Groups), the Web platform layer must also be standardized to provide a secure and privacy-preserving API framework that is protocol-and-format-agnostic and compatible with identity request/response protocols and different formats.
+        While protocols and formats are being developed elsewhere (e.g., ISO, IETF, OIDF, and other W3C Groups), the Web platform layer must also be standardized to provide a secure and privacy-preserving API framework that is agnostic to and compatible with different identity request/response protocols and formats.
       </p>
     </div>
 
     <section id="scope" class="scope">
       <h2>Scope</h2>
       <p>
-        The Federated Identity Working Group defines Web Platform features that enable user agents to support secure and privacy-preserving interactions related to digital identities or digital credentials. 
-      </p>  
-      <p>
-        These features are intended to support different interaction flows (e.g., authentication, authorization, requesting identities or credentials, and issuance) in a 'traditional' federated identity model - with Identity Providers (IdPs) or Relying Parties (RPs) - and in a digital wallet 'decentralized' model - with Issuers, Holders, and Verifiers.
-      <p>
-        If any mechanisms developed to support authentication and authorization flows would cause breaking changes for existing protocols, work on that mechanism must include a well-documented transition period.
+        The Federated Identity Working Group defines Web Platform features that enable user agents to support secure and privacy-preserving interactions related to digital identities or digital credentials. These features will <a href="https://w3ctag.github.io/privacy-principles/#principle-identity-per-context">help users present the identity they want in each context they are in</a>.
       </p>
       <p>
-        Here, 'privacy' minimally refers to the appropriate processing of personal information and preventing third parties from unnecessarily learning anything about the end-user's environment (e.g., which wallets are available, their brand, and their capabilities). 
+        These features are intended to support different interaction flows (e.g., authentication, authorization, requesting and presenting identities or credentials, and issuance) in a 'traditional' federated identity model - with Identity Providers (IdPs) and Relying Parties (RPs) - and in a digital wallet 'decentralized' model - with Issuers, Holders, and Verifiers.
       </p>
       <p>
         This group develops new mechanisms that define how information is passed by the user agent between the different entities to facilitate federated and digital identities:
       </p>
       <ul>
         <li>Enabling a Federated Identity Model while adhering to <a href="https://www.w3.org/TR/privacy-principles/" rel="nofollow">privacy principles</a> despite the <a href="https://www.w3.org/2001/tag/doc/web-without-3p-cookies/" rel="nofollow">deprecation of third-party cookies</a>, a cornerstone of such operations.<li>
-        <li>Enabling a Decentralized Identity Model by invoking a wallet without <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md" rel="nofollow">custom schemes</a>, since they have <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#can-wallets-reliably-determine-their-invoker" rel="nofollow">security</a>, <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#what-are-the-privacy-implications-of-a-wallet-accepting-custom-schemes" rel="nofollow">privacy</a>, and <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md#user-experience-concerns" rel="nofollow">user experience implications</a> and cannot work in cross-device scenarios.</li>
+        <li>Enabling a Decentralized Identity Model by invoking a wallet, without <a href="https://github.com/WICG/digital-identities/blob/main/custom-schemes.md" rel="nofollow">custom schemes</a> or privacy-invasive alternative identity and attribute verification systems.</li>
       </ul>
-      <p>
-        These mechanisms are not authentication methods, but if any mechanisms developed would cause breaking changes for existing protocols, work on that mechanism must include a well-documented transition period.
-      </p>
 
         <p>Specific topics out of scope:</p>
         <ul class="out-of-scope">
@@ -257,7 +244,7 @@
         <dl>
         <dt id="digid" class="spec"><a href="https://wicg.github.io/digital-identities/">Digital Credentials API</a></dt>
         <dd>
-            <p>This specification defines an API that enables user agents to mediate access to and presentation of Digital Credentials in a format-agnostic and protocol-agnostic fashion (e.g., supporting W3C Verifiable Credentials, ISO mDoc, etc.), enabling different use cases such as - but not limited to -  government-issued documents, digital academic credentials, IoT and Supply Chain related identities.</p>
+            <p>This specification defines an API that enables user agents to mediate access to and presentation of Digital Credentials in a format-agnostic and protocol-agnostic fashion (e.g., supporting W3C Verifiable Credentials, ISO mDoc, etc.), enabling different use cases such as - but not limited to - government-issued documents, academic credentials, IoT and Supply Chain related identities.</p>
 
             <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/digital-identities/">Draft in the
                 Web Incubator Community Group</a>
@@ -270,12 +257,12 @@
         <h3>
           Other Deliverables
         </h3>
-        <p>Other non-normative documents will be created, such as:</p>
+        <p>Other non-normative documents will be created, including:</p>
         <ul>
           <li>A test suite, available from <a
-          href="https://github.com/web-platform-tests/wpt">web-platform-tests</a> as possible, must
-          be created.</li>
-        <li>A deliverable (or set of deliverables) considering the threats and mitigations of Digital Credentials-related technologies concerning human rights, harm, security, and privacy. These findings will be used as input for our deliverables. This will be developed in collaboration with W3C's Technical Architecture Group (TAG), Privacy Interest Group (PING), and other relevant groups.</li>
+          href="https://github.com/web-platform-tests/wpt">web-platform-tests</a>, will
+          be created for each normative specification.</li>
+          <li>A deliverable considering the threats and mitigations of Digital Credentials-related technologies concerning security, privacy, and human rights. These findings will be used as input for any of the group's Digital Credentials deliverables. This will be developed in collaboration with W3C's Technical Architecture Group (TAG), Privacy Interest Group (PING), Credentials Community Group and other relevant groups.</li>
         </ul>
         <p>
           Other non-normative documents may be created such as:
@@ -315,6 +302,9 @@
         In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.
       </p>
       <p>
+        In order for the Digital Credential API to advance to Candidate Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must also be published. In order for the Digital Credential API to advance to Proposed Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must have completed a wide review and addressed issues raised by the community.
+      </p>
+      <p>
         In order to advance to Proposed Recommendation, the Digital Credential API must demonstrate support for at least two formats (e.g., W3C Verifiable Credentials, ISO mDoc). 
       </p>
       <p>
@@ -326,12 +316,14 @@
         or to features that have deployed implementations
         should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.
         Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform
-          Tests</a> project.</p>
+          Tests</a> project.
+          If any mechanisms developed to support authentication and authorization flows would cause breaking changes for existing protocols, work on that mechanism must include a well-documented transition period.
+        </p> 
 
       <!-- Horizontal review -->
 
       <p>
-        Each specification will contain a Security Considerations section -  that includes a Threat Model with threats, attacks, mitigations, and residual risks - and a Privacy Consideration section - that must contain an analysis of privacy aspects such as Unlinkability, Data Minimization and Tracking -  as specified in <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a> and <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, detailing all known security and privacy implications for implementers, Web authors, and end users.
+        Each specification will contain a Security Considerations section -  that includes a Threat Model with threats, attacks, mitigations, and residual risks - and a Privacy Consideration section - that must contain an analysis of privacy aspects such as Unlinkability, Data Minimization and Tracking -  as specified in <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a>, <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, and <a href="https://datatracker.ietf.org/doc/html/rfc6973">RFC 6973</a>, detailing all known security and privacy implications for implementers, Web authors, and end users.
       </p>
 
       <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including
@@ -420,10 +412,10 @@
         Participation
       </h2>
       <p>
-        To be successful, this Working Group  should have participation from large-scale Identity
-        Provider (IdP) operators, large-scale Relying Parties (RPs), federation operators, and
+        To be successful, this Working Group should have participation from Identity
+        Provider (IdP) operators and issuers of digital credentials, Relying Parties (RPs) and verifiers of digital credentials, federation operators, user advocates and experts in human rights, and
         browser vendors. In addition, there must be active Editors and Test Leads for each
-        specification. 
+        specification.
         
         The Chairs, specification Editors, and Test Leads are expected to contribute
         half of a working day per week towards the Working Group. There is no minimum requirement
