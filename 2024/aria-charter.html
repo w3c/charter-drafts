@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Accessible Rich Internet Applications Working Group Charter</title>
+
+  <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+  <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+  <style>
+    main {
+      max-width: 60em;
+      margin: 0 auto;
+    }
+
+    ul#navbar {
+      font-size: small;
+    }
+
+    dt.spec {
+      font-weight: bold;
+    }
+
+    dt.spec new {
+      background: yellow;
+    }
+
+    ul.out-of-scope>li {
+      font-weight: bold;
+    }
+
+    ul.out-of-scope>li>ul>li {
+      font-weight: normal;
+    }
+
+    .issue {
+      background: cornsilk;
+      font-style: italic;
+    }
+
+    .todo {
+      color: #900;
+    }
+
+    footer {
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <aside>
+      <ul id="navbar">
+        <li><a href="#background">Background</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Coordination</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+    </aside>
+    <p>
+      <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+    </p>
+  </header>
+
+
+  <main>
+    <h1 id="title">PROPOSED Accessible Rich Internet Applications Working Group Charter</h1>
+    <!-- delete PROPOSED after AC review completed -->
+
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/aria">Accessible Rich Internet Applications Working Group</a> is to enhance the
+        accessibility of web content through the development of supplemental attributes, including roles, states, and
+        other properties, that can be applied to native host language elements and exposed via platform accessibility
+        APIs.</p>
+    <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+    <div class="noprint">
+      <p class="join"><a href="https://www.w3.org/groups/wg/aria/join">Join the Accessible Rich Internet
+            Applications Working Group.</a></p>
+    </div>
+
+    <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <a href="https://raw.githack.com/w3c/charter-drafts/aria-charter/2024/aria-charter.html">GitHub</a>.
+
+        Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.
+    </p>
+
+    <div id="details">
+      <table class="summary-table">
+        <tr id="Status">
+          <th>
+            Charter Status
+          </th>
+          <td>
+            See the <a href="https://www.w3.org/groups/wg/aria/charters">group status page</A> and <a
+                href="#history">detailed change history</a>.
+          </td>
+        </tr>
+        <tr id="Duration">
+          <th>
+            Start date
+          </th>
+          <td>
+            01 August 2024
+          </td>
+        </tr>
+        <tr id="CharterEnd">
+          <th>
+            End date
+          </th>
+          <td>
+            1 August 2026
+              (2 years)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Chairs
+          </th>
+          <td>
+            James Nurthen (Adobe),
+            Valerie Young (Igalia)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Team Contacts
+          </th>
+          <td>
+            <span><a href="mailto:dmontalvo@w3.org">Daniel Montalvo</a></span> (0.50 <abbr
+                title="Full-Time Equivalent">FTE</abbr>)
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Meeting Schedule
+          </th>
+          <td>
+            <strong>Teleconferences:</strong> The Working Group and its Task Forces generally each hold
+              weekly teleconferences, but this may vary over time according to agenda and preferences.
+            <br>
+            <strong>Face-to-face:</strong> The Working Group generally meets during the W3C's annual Technical Plenary
+            week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than
+            2 per year.
+          </td>
+        </tr>
+      </table>
+
+      <!-- <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process
+          Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it
+        does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has
+        been moved from the essentials table to the <a href="#public">communication section</a>.</p> -->
+    </div>
+
+    <div id="background" class="background">
+      <h2>Motivation and Background</h2>
+          <p>The Accessible Rich Internet Application suite has consistently provided mechanisms to make rich internet applications and other complex web user interfaces accessible to people with disabilities.</p>
+          <p>The suite consists of:</p>
+          <ul>
+            <li>Accessible Rich Internet Applications &mdash; Provides an ontology of roles, states, and properties that can be used to complement and extend accessibility of host languages such as HTML, ePub, MathML, SVG, and others.</li>
+            <li>Accessibility API mappings &mdash; Describe how accessibility APIs should expose existing ARIA roles, states, and properties</li>
+          </ul>
+          <p>The Working Group plans to continue developing these technical specifications to:</p>
+          <ul>
+            <li>Provide more accurate guidance for user agents to more consistently and reliably implement ARIA features</li>
+            <li>Provide additional guidance for assistive technology developers on how they could better support ARIA</li>
+            <li>Improve interoperability of ARIA features among different operating systems and assistive technologies</li>
+          </ul>
+    </div>
+
+    <section id="scope" class="scope">
+      <h2>Scope</h2>
+      <ul>
+        <li>Continue development of existing ARIA specifications to address needs reported by authors of accessible
+          content and to achieve parity with native host languages (markup languages such as HTML or SVG that can use
+          ARIA attributes to provide additional accessibility information), creating new ARIA specifications where
+          necessary</li>
+        <li>For each ARIA specification developed by this Working Group, create a corresponding Accessibility API
+          Mappings specification defining the correct exposure for each platform</li>
+        <li>For all attributes defined by this Working Group, document best practices for authors</li>
+        <li>Collaborate with other groups to create mapping specifications for native host language semantics, generally
+          but not always to be published by the ARIA WG</li>
+        <li>Work with developers of testing tools that can be used to verify accessibility implementations by examining
+          the mappings exposed via platform accessibility APIs</li>
+        <li>Collaborate with other groups involved in defining ARIA techniques and implementing ARIA support.</li>
+      </ul>
+      <section id="section-out-of-scope">
+        <h3 id="out-of-scope">Out of Scope</h3>
+        <p>
+            The following features are out of scope, and will not be addressed by this Working group:
+        </p>
+
+        <ul class="out-of-scope">
+          <li>Technologies for which corresponding Accessibility API Mappings do not need to be defined</li>
+        </ul>
+      </section>
+
+    </section>
+
+    <section id="deliverables">
+      <h2>
+        Deliverables
+      </h2>
+
+      <p>In order to maximize the likelihood of achieving the success criteria described below, the ARIA Working Group will follow a <a href="https://www.w3.org/WAI/ARIA/workflow">work flow</a> designed to see each feature from its <a href="https://www.w3.org/WAI/ARIA/roadmap">road map</a> through to completion, with ARIA feature development, platform accessibility API mapping, implementation, <a href="https://github.com/w3c/testing-how-to/#test-as-you-commit-pointer-event-whatwg-webperf">testing</a>, and authoring guidance taking place at the same time.</p>
+      <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to
+        become a Recommendation, or otherwise reach a stable state.
+    </p>
+    <p>
+        For deliverables marked as "Living Standard", the Working Group intends to publish a snapshot of each of the document as a W3C recommendation before the Charter period ends.
+      </p>
+
+      <section id="normative">
+        <h3>
+          Normative Specifications
+        </h3>
+        <p>
+          The Accessible Rich Internet Applications Working Group will continue to deliver the following W3C normative specifications:
+        </p>
+        <dl>
+          <dt class="spec" id="accname"><a href="https://www.w3.org/TR/accname-1.2/">Accessible Name and Description Computation 1.2</a> (living standard) </dt>
+            <dd>
+              <p>This document describes how user agents determine the names and descriptions of accessible objects from web content languages.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/accname-1.2/">Working Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q1 2025</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-accname-1.2-20240429/">https://www.w3.org/TR/2024/WD-accname-1.2-20240429/</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2019/WD-accname-1.2-20190711/">https://www.w3.org/TR/2019/WD-accname-1.2-20190711/</a>
+              Exclusion period <b>began</b> 2019-07-11; Exclusion period <b>ended</b> 2019-12-08.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2018/11/aria-charter.html">https://www.w3.org/2018/11/aria-charter.html</a></p>
+          </dd>
+          <dt class="spec" id="html-aam"><a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings</a> (living standard) </dt>
+          <dd>
+            <p>
+              This specification defines how <a class="termref informative" data-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map <abbr title="HyperText Markup Language">HTML</abbr> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>] elements and attributes to platform <a class="termref informative" data-lt="accessibility API" data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>. It leverages and extends the <cite><a data-matched-text="[[[core-aam-1.2]]]" href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings 1.2</a></cite> and the <cite><a data-matched-text="[[[accname-aam-1.1]]]" href="https://www.w3.org/TR/accname-1.1/">Accessible Name and Description Computation 1.1</a></cite> for use with the <abbr title="HyperText Markup Language">HTML</abbr> host language. Documenting these mappings promotes interoperable exposure of roles, states, properties, and events implemented by accessibility <abbr title="Application Programming Interfaces">APIs</abbr> and helps to ensure that this information appears in a manner consistent with author intent.
+            </p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/html-aam-1.0/">Working Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-html-aam-1.0-20240418/">https://www.w3.org/TR/2024/WD-html-aam-1.0-20240418/</a> 18 April 2024</p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/">https://www.w3.org/TR/2015/WD-html-aam-1.0-20150407/</a></p>
+            <p>Exclusion period <b>began</b> 2015-04-09; Exclusion period <b>ended</b> 2015-09-06.</p>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2013/09/html-charter">https://www.w3.org/2013/09/html-charter</a></p>
+          </dd>
+          <dt class="spec" id="html-aria"><a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a> (living standard) </dt>
+          <dd>
+            <p>
+              This specification defines the authoring rules (author conformance requirements) for the use
+              of <cite><a data-matched-text="[[[wai-aria-1.2]]]" href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></cite> and <cite><a data-matched-text="[[[dpub-aria-1.0]]]" href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></cite> attributes on [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>] elements.
+            </p>
+            <p class="draft-status"><b>Draft state:</b> Adopted from Web Applications WG</p>
+            <p class="milestone"><b>Expected completion:</b> Q3 2025</p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/REC-html-aria-20240507/">https://www.w3.org/TR/2024/REC-html-aria-20240507/</a></p>
+            <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2021/CR-html-aria-20210706/">https://www.w3.org/TR/2021/CR-html-aria-20210706/</a>
+            Exclusion period <b>began</b> 2021-07-06; Exclusion period <b>ended:  2021-09-0.</b>.
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2020/12/webapps-wg-charter.html">https://www.w3.org/2020/12/webapps-wg-charter.html</a></p>
+          </dd>
+          <dt class="spec" id="core-aam"><a href="https://www.w3.org/TR/core-aam-1.2/">Core Accessibility API Mappings</a> (living standard) </dt>
+          <dd>
+            <p>This specification defines how WAI-ARIA roles, states, and properties are expected to be exposed by user agents via platform accessibility APIs. </p>
+            <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/core-aam-1.2/">Candidate Recommendation Draft</a></p>
+            <p class="milestone"><b>Expected completion:</b> Q1 2026</p>
+            <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2023/CRD-core-aam-1.2-20231102/">https://www.w3.org/TR/2023/CRD-core-aam-1.2-20231102/</a></p>
+            <p><b>Exclusion Draft:</b><a href="https://www.w3.org/TR/2022/CR-core-aam-1.2-20221122/">https://www.w3.org/TR/2022/CR-core-aam-1.2-20221122/</a></p>
+            <p>Exclusion period <b>began</b> 2022-11-22; Exclusion period <b>ended</b> 2023-01-21.</p>
+            <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/02/aria-charter">https://www.w3.org/2022/02/aria-charter</a></p>
+          </dd>
+          <dt class="spec" id="wai-aria"><a href="https://www.w3.org/TR/wai-aria-1.3/">Accessible Rich Internet Applications (WAI-ARIA)</a> (living standard) </dt>
+            <dd>
+              <p>This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications.</p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/2024/WD-wai-aria-1.3-20240123/">First Public Working Draft</a></p>
+              <p class="milestone"><b>Expected completion:</b> Q3 2026</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-wai-aria-1.3-20240123/">https://www.w3.org/TR/2024/WD-wai-aria-1.3-20240123/</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2024/WD-wai-aria-1.3-20240123/">https://www.w3.org/TR/2024/WD-wai-aria-1.3-20240123/</a></p>
+              <p>Exclusion period <b>began</b>: 2024-01-23; Exclusion period <b>ends</b>: 2024-06-21.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/02/aria-charter">https://www.w3.org/2022/02/aria-charter</a></p>
+          </dd>
+        </dl>
+
+      </section>
+
+      <section id="ig-other-deliverables">
+        <h3>
+          Other Deliverables
+        </h3>
+        <p>As described above and in the <a href="https://www.w3.org/WAI/ARIA/workflow">work flow</a>, the Working Group will create a test suite and implementation report for each specification. In addition, other non-normative documents may be created such as use case and requirement documents.</p>
+        <p>The Working Group expects to collaborate with other groups which produce ARIA and/or Accessibility API Mappings specifications to ensure that all ARIA modules and Accessibility API Mappings specifications are consistent with one another regardless of the producer.</p>
+        <p>The Working Group intends to collaborate with other Working Groups and relevant stakeholders to update other ARIA modules as needed, including, but not limited to:</p>
+        <ul>
+            <li><a href="https://www.w3.org/TR/dpub-aria">DPUB-ARIA</a></li>
+            <li><a href="https://www.w3.org/TR/dpub-aam/">Dpub-AAM</a></li>
+            <li><a href="https://www.w3.org/TR/graphics-aria/">GRAPHICS-ARIA</a></li>
+            <li><a href="https://www.w3.org/TR/graphics-aam/">Graphics-AAM</a></li>
+            <li><a href="https://www.w3.org/TR/svg-aam">SVG-AAM</a></li>
+            <li>PDF-AAM</li>
+        </ul>
+        <p> The Working Group will also produce WAI-ARIA Authoring Practices, a comprehensive support resource for the WAI-ARIA suite but not published as a Technical Report itself. In further support of that guidance, the Working Group will work with developers of the <a href="https://aria-at.w3.org/">ARIA-AT application</a> to help achieve consistent implementation of the guidance across tools.</p>
+        <p>Other non-normative documents may be created such as: </p>
+        <ul>
+          <li>Use case and requirement documents</li>
+          <li>Test suite and implementation report for the specification</li>
+          <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+        </ul>
+      </section>
+
+      <section id="timeline">
+        <h3>Timeline</h3>
+        <p>The Working Group maintains a <a href="https://www.w3.org/WAI/ARIA/project">detailed project plan</a> that provides target dates, updated as needed.</p>
+      </section>
+    </section>
+
+    <section id="success-criteria">
+      <h2>Success Criteria</h2>
+      <p>The normative documents produced by this Working Group fall into two categories: ARIA specifications and
+        Accessibility API Mapping specifications.</p>
+      <ul>
+        <li>For the ARIA specifications, implementability and interoperability of every feature will be demonstrated by
+          having at least two independent browser implementations of that feature. In addition, for the Accessibility API
+          Mapping specification(s), each ARIA feature will be shown to have at least one implementation in each of:
+          ATK/AT-SPI2, MSAA+IAccessible2, AXAPI, and UIAutomation.</li>
+        <li>Every effort will be made to take member organizations' schedules into account and to ensure all platforms are
+          included. If needed, an Accessibility API Mapping specification will be split into platform-specific
+          specifications, e.g. one for ATK/AT-SPI2, one for MSAA+IAccessible2, one for AXAPI, and one for UIAutomation.
+          This will allow each platform's specification to progress along the Rec track at the timeline that best suits
+          them. For specifications which are not split apart in this fashion, no platform will be dropped out of the
+          specification without prior consultation with that platform's owners.</li>
+      </ul>
+      <p> Modules that reach <a href="https://www.w3.org/2020/Process-20200915/#rec-publication">W3C Recommendation</a> are
+        considered successful when all of the following are present:</p>
+      <ul>
+        <li>Production of stable documents addressing the work items listed in the Deliverables section</li>
+        <li>Test suites for each module with conformance criteria</li>
+        <li>Availability of multiple, independent, interoperable implementations of each feature with conformance criteria
+          in each deliverable; as demonstrated by an implementation report (summarizing implementation status against the
+          relevant test suite) for each testable class of product, including user agents</li>
+        <li>Deployment on multiple platforms</li>
+        <li>User community and industry adoption of the group deliverables</li>
+      </ul>
+      <p> In order to advance to <a href="https://www.w3.org/policies/process/#RecsPR"
+          title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a
+          href="https://www.w3.org/policies/process/#implementation-experience">at least two independent
+          implementations</a> of every feature defined in the specification.</p>
+      <p>Each specification should contain separate sections detailing all known security and privacy implications for
+        implementers, Web authors, and end users.</p>
+      <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+      <p> To promote interoperability, all changes made to specifications should have <a
+          href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.</p>
+    </section>
+    <section id="coordination">
+      <h2>Coordination</h2>
+      <p>For all specifications, this Working Group will seek <a
+          href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+        accessibility, internationalization, privacy, and security with the relevant Working and
+        Interest Groups, and with the <a href="https://www.w3.org/2001/tag/"
+          title="Technical Architecture Group">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including
+        <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>. The
+        Working Group is encouraged to engage collaboratively with the horizontal review groups
+        throughout development of
+        each specification. The Working Group is advised to seek a review at least 3 months before
+        first entering
+        <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is
+        encouraged
+        to proactively notify the horizontal review groups when major changes occur in a specification following a
+        review.
+      </p>
+
+      <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
+      <section>
+        <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt><a href="http://www.w3.org/WAI/GL/">Accessibility Guidelines (WCAG) Working Group</a></dt>
+          <dd>Work on HTML 5 and ARIA <a href="http://www.w3.org/WAI/WCAG22/Techniques/">Techniques for WCAG 2.2</a>.</dd>
+          <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
+          <dd>Collaborate on overall accessibility architectural aspects of ARIA.</dd>
+          <dt><a href="http://www.w3.org/Style/CSS">CSS Working Group</a></dt>
+          <dd>Coordinate media queries support for context awareness. Provide requirements for future WAI-ARIA support. Coordinate on general CSS accessibility topics.</dd>
+          <dt><a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB 3 Working Group</a></dt>
+          <dd>Coordinate development of digital publishing roles and EPUB Accessibility.</dd>
+          <dt><a href="https://www.w3.org/International/">Internationalization Working Group</a></dt>
+          <dd>Coordinate how to address accessibility and internationalization in W3C specs.</dd>
+          <dt><a href="https://tag.w3.org/">Technical Architecture Group</a></dt>
+          <dd>Confirm the ARIA relationship to various host languages is interoperable and forwards-compatible.</dd>
+          <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a></dt>
+          <dd>Identify and resolve privacy implications of features of the technology that capture user environment information, particularly specific assistive technology being used, in order to customize the user experience.</dd>
+          <dt><a href="http://www.w3.org/Graphics/SVG/">SVG Working Group</a></dt>
+          <dd>Coordinate on graphics role module and SVG Accessibility API Mappings.</dd>
+          <dt><a href="http://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
+          <dd>Implementation of ARIA and HTML Accessibility API Mappings, coordinate development of APIs that address accessibility use cases, and work on other joint deliverables including <a href="http://www.w3.org/TR/2dcontext2/">Canvas 2D Context</a>.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3 id="external-coordination">External Organizations</h3>
+        <dl>
+          <dt><a href="http://www.daisy.org/">DAISY Consortium</a></dt>
+          <dd>Coordinate on publishing and math accessibility API mappings.</dd>
+          <dt><a href="http://www.imsglobal.org/">IMS Global Learning Consortium</a></dt>
+          <dd>Coordinate on features that impact e-learning and testing.</dd>
+          <dt><a href="https://whatwg.org/">WHATWG</a></dt>
+          <dd>Coordinating on integration of ARIA in HTML and Web Components.</dd>
+        </dl>
+      </section>
+    </section>
+
+
+
+    <section class="participation">
+      <h2 id="participation">
+        Participation
+      </h2>
+      <p>
+        To be successful, this Working Group is expected to have 6 or more active participants for
+        its duration, including representatives from the key implementors of this specification, and active Editors and
+        Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute
+        half of a working day per week towards the Working Group. There is no minimum requirement
+        for other Participants.
+      </p>
+      <p>
+        The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+        described in <a href='#communication'>Communication</a>.
+      </p>
+      <p>
+        The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement
+        to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+      </p>
+      <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+        W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+    </section>
+
+
+
+    <section id="communication">
+      <h2>
+        Communication
+      </h2>
+      <p id="public">
+        Technical discussions for this Working Group are conducted in <a
+          href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from
+        teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue
+        tracking will be conducted in a manner that can be both read and written to by the general public. Working
+        Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct
+        public contribution requests.
+        The meetings themselves are not open to public participation, however.
+      </p>
+      <p>
+        Information about the group (including details about deliverables, issues, actions, status, participants, and
+        meetings) will be available from the <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications
+          Working Group home page.</a>
+      </p>
+      <p>
+        Most Accessible Rich Internet Applications Working Group teleconferences will focus on
+        discussion of particular specifications, and will be conducted on an as-needed basis.
+      </p>
+      <p>
+        This group primarily conducts its technical work through <a id="public-github" href="https://github.com/w3c/aria/">GitHub issues and Pull Requests</a> on the ARIA repositories.
+        It also uses the public mailing list <a id="public-name" href="mailto:public-aria@w3.org">public-aria@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-aria/">archive</a>).
+        The public is invited to review, discuss and contribute to this work.
+      </p>
+      <p>
+        The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+        Chairs and members of the group, for member-only discussions in special cases when a participant requests such a
+        discussion.
+      </p>
+    </section>
+
+
+
+    <section id="decisions">
+      <h2>
+        Decision Policy
+      </h2>
+      <p>
+        This group will seek to make decisions through consensus and due process, per the <a
+          href="https://www.w3.org/policies/process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>.
+        Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with
+        members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+      <p>
+        However, if a decision is necessary for timely progress and consensus is not achieved after careful
+        consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+        with any objections.
+      </p>
+      <p>
+        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+        A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based
+        survey), with a response period from <span id='cfc'>four working days to one week</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+        If no objections are raised by the end of the response period, the resolution will be considered to have
+        consensus as a resolution of the Working Group.
+      </p>
+      <p>
+        All decisions made by the group should be considered resolved unless and until new information becomes available
+        or unless reopened at the discretion of the Chairs.
+      </p>
+      <p>
+        This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C
+          Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the
+        Process Document requires.
+      </p>
+    </section>
+
+
+
+    <section id="patentpolicy">
+      <h2>
+        Patent Policy
+      </h2>
+      <p>
+        This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent
+          Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue
+        Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+        For more information about disclosure obligations for this group, please see the <a
+          href="https://www.w3.org/groups/wg/aria/ipr">licensing information</a>.
+      </p>
+    </section>
+
+
+    <section id="licensing">
+      <h2>Licensing</h2>
+      <p>This Working Group will use the <a
+          href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all
+        its deliverables.</p>
+    </section>
+
+
+
+    <section id="about">
+      <h2>
+        About this Charter
+      </h2>
+      <p>
+        This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section
+          3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a
+        conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take
+        precedence.
+      </p>
+
+      <section id="history">
+        <h3>
+          Charter History
+        </h3>
+        <p>The following table lists details of all changes from the initial charter, per the <a
+            href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory
+            Committee Review of a Charter)</a>:</p>
+
+            <table class="history">
+              <tbody>
+                <tr>
+                  <th>Charter Period </th>
+                  <th> Start Date </th>
+                  <th> End Date </th>
+                  <th> Changes </th>
+                </tr>
+                <tr>
+                  <th><a href="https://www.w3.org/2015/10/aria-charter">Initial Charter</a></th>
+                  <td> 22 October 2015 </td>
+                  <td> 31 July 2018 </td>
+                  <td> none </td>
+                </tr>
+                <tr>
+                  <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2018JulSep/0038.html">Charter Extension</a></th>
+                  <td>6 September 2018</td>
+                  <td>31 October 2018</td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <th><a href="https://www.w3.org/2018/11/aria-charter">Rechartered</a></th>
+                  <td> 8 November 2018 </td>
+                  <td>31 October 2021</td>
+                  <td>
+                    <ul>
+                      <li>Clarified mission to focus exclusively on WAI-ARIA and Accessibility API Mappings (AAMs);</li>
+                      <li>Clarified dependency on other groups for several ARIA modules;</li>
+                      <li>Updated Success Criteria to describe successful testing procedure for ARIA and AAMs;</li>
+                      <li>Removed User Context as a deliverable; the evolution of it, Personalization Semantics; is being transferred to the <a href="https://www.w3.org/WAI/APA/">APA Working Group</a>;</li>
+                      <li>Produced annual dot-release publications of ARIA and supporting specifications beginning Q4 2019, with features prioritized according to the <a href="https://www.w3.org/WAI/ARIA/roadmap">roadmap</a>;</li>
+                      <li>Adopted a concrete <a href="https://www.w3.org/WAI/ARIA/workflow">workflow</a> for feature acceptance to add predictability to timelines;</li>
+                      <li>Clarified participation and communication procedures;</li>
+                      <li>Added licensing section to specify the W3C Document license for Recommendation-track deliverables and the W3C Software and Document license for others; </li>
+                      <li>Staff effort increased from .25 FTE to .4 FTE to provide additional support for project management, inter-group coordination on related ARIA specifications, and publication.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021OctDec/0034.html">Charter Extension</a></th>
+                  <td>19 November 2021</td>
+                  <td>31 January 2022</td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <th><a href="https://www.w3.org/2022/02/aria-charter">Rechartered</a></th>
+                  <td>7 February 2022</td>
+                  <td>31 January 2024</td>
+                  <td>Changes from the <a href="https://www.w3.org/2018/08/apa-charter">previous charter</a> (<a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2018%2F11%2Faria-charter.html&amp;doc2=https%3A%2F%2Fwww.w3.org%2F2022%2F02%2Faria-charter.html">diff from previous charter</a>):<ul>
+                      <li>Switch to Evergreen for certain specs.</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                  <th>New co-chair</th>
+                  <td>13 April 2022</td>
+                  <td></td>
+                  <td><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0008.html">Valerie Young appointed as co-chair</a>, replacing <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021JulSep/0045.html">Joanmarie Diggs who stepped down</a> in September 2021.</td>
+                </tr>
+                <tr>
+                  <th>Rechartered</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+      </section>
+      <section id="changelog">
+        <h3>Change log</h3>
+
+        <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+        <p>Changes to this document are documented in this section.</p>
+        <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+      </section>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <address>
+      <a href="mailto:dmontalvo@w3.org">Daniel Montalvo</a>
+    </address>
+
+    <p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web
+        Consortium</a>.<br>
+      <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+        title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+    </p>
+    <hr>
+    <p><a href="https://www.w3.org/WAI/ARIA/charter">Yes, it's on GitHub!</a>.</p>
+  </footer>
+
+</body>
+
+</html>
