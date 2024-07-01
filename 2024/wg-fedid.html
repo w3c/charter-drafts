@@ -75,7 +75,7 @@
 
   <main>    <h1 id="title">DRAFT Federated Identity Working Group Charter</h1>
 
-    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to develop specifications that enable users to authenticate an identity or present a credential or set of claims, in a way that is compatible with other protocols and is supportive of user privacy and agency.
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/fedid">Federated Identity Working Group</a> is to develop specifications that enable users to authenticate an identity or present a credential or set of claims, in a way that is compatible with other protocols and is supportive of user security, privacy and agency.
     </p>
     <div class="noprint">
       <p class="join"><a href="https://www.w3.org/groups/wg/fedid/join">Join the Federated Identity Working
@@ -244,7 +244,7 @@
         <dl>
         <dt id="digid" class="spec"><a href="https://wicg.github.io/digital-identities/">Digital Credentials API</a></dt>
         <dd>
-            <p>This specification defines an API that enables user agents to mediate access to and presentation of Digital Credentials in a format-agnostic and protocol-agnostic fashion (e.g., supporting W3C Verifiable Credentials, ISO mDoc, etc.), enabling different use cases such as - but not limited to - government-issued documents, academic credentials, IoT and Supply Chain related identities.</p>
+            <p>This specification defines an API that enables user agents to mediate access to and presentation of Digital Credentials in a format-agnostic and protocol-agnostic fashion (e.g., W3C Verifiable Credentials, ISO mDoc, etc.), enabling different use cases such as - but not limited to - government-issued documents, academic credentials, IoT and Supply Chain related identities.</p>
 
             <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/digital-identities/">Draft in the
                 Web Incubator Community Group</a>
@@ -262,7 +262,7 @@
           <li>A test suite, available from <a
           href="https://github.com/web-platform-tests/wpt">web-platform-tests</a>, will
           be created for each normative specification.</li>
-          <li>A deliverable considering the threats and mitigations of Digital Credentials-related technologies concerning security, privacy, and human rights. These findings will be used as input for any of the group's Digital Credentials deliverables. This will be developed in collaboration with W3C's Technical Architecture Group (TAG), Privacy Interest Group (PING), Verifiable Credentials Working Group (VCWG) and other relevant groups.</li>
+          <li>A Threat Model of Digital Credentials-related technologies concerning security, privacy, and human rights. These findings will be used as input for any of the group's Digital Credentials deliverables. This will be developed in collaboration with W3C's Technical Architecture Group (TAG), Privacy Interest Group (PING), Verifiable Credentials Working Group (VCWG) and other relevant groups.</li>
         </ul>
         <p>
           Other non-normative documents may be created such as:
@@ -302,10 +302,11 @@
         In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.
       </p>
       <p>
-        In order for the Digital Credential API to advance to Candidate Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must also be published. In order for the Digital Credential API to advance to Proposed Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must have completed a wide review and addressed issues raised by the community.
+        In order for the Digital Credential API to advance to Candidate Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must also be published.
+        In order for the Digital Credential API to advance to Proposed Recommendation, the relevant portions of the corresponding joint deliverable on threats and mitigations must have completed a wide review and addressed issues raised by the community.
       </p>
       <p>
-        In order to advance to Proposed Recommendation, the Digital Credential API must demonstrate support for at least two formats (e.g., W3C Verifiable Credentials, ISO mDoc). 
+        In order to advance to Proposed Recommendation, the Digital Credential API must demonstrate support for at least two formats, for example those via OpenID4VP. (e.g., W3C Verifiable Credentials, ISO mDoc). 
       </p>
       <p>
         Each specification should have testing plans, starting from the earliest drafts.
@@ -323,7 +324,7 @@
       <!-- Horizontal review -->
 
       <p>
-        Each specification will contain a Security Considerations section -  that includes a Threat Model with threats, attacks, mitigations, and residual risks - and a Privacy Consideration section - that must contain an analysis of privacy aspects such as Unlinkability, Data Minimization and Tracking -  as specified in <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a>, <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, and <a href="https://datatracker.ietf.org/doc/html/rfc6973">RFC 6973</a>, detailing all known security and privacy implications for implementers, Web authors, and end users.
+        Each specification will contain a Security Considerations section -  that includes a Threat Model with threats, attacks, mitigations, and residual risks - and a Privacy Consideration section - that must contain an analysis of privacy aspects such as Unlinkability, Minimization and Tracking -  as specified in <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a>, <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, and <a href="https://datatracker.ietf.org/doc/html/rfc6973">RFC 6973</a>, detailing all known security and privacy implications for implementers, Web authors, and end users.
       </p>
 
       <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including
