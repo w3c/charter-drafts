@@ -153,23 +153,24 @@
         <h2>Motivation and Background</h2>
         <p>The W3C’s mission is to make the Web work based on the principles of accessibility, internationalization, privacy, and security.</p>
         <p>The last two principles, Privacy and Security, are integral to <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" alt="Article 3: Everyone has the right to life, liberty and security of person.">human rights</a> and <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights" title="Article 9: Everyone has the right to liberty and security of person">civil liberties</a> and have always been of the Consortium's concern.</p>
-        <p>Also, in the <a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>, there are several principles related to security both as a societal impact <a href="https://www.w3.org/TR/ethical-web-principles/#noharm">The web does not cause harm to society</a> and in terms of people's security <a href="https://www.w3.org/TR/ethical-web-principles/#privacy">The web is secure, and respects peoples' privacy</a>, where the goal is to create technology that creates as few threats as possible, or mitigates those threats</p>
+        <p>Also, in the <a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>, there are several principles related to security both as a societal impact <a href="https://www.w3.org/TR/ethical-web-principles/#noharm">The web does not cause harm to society</a> and in terms of people's security <a href="https://www.w3.org/TR/ethical-web-principles/#privacy">The web is secure, and respects peoples' privacy</a>, where the goal is to create technology that creates as few threats as possible or mitigates those threats</p>
         <p>Several working groups deal with security issues, such as <a href="https://www.w3.org/groups/wg/webappsec/">developing mechanisms and best practices which improve the security of Web Applications</a>, <a href="https://www.w3.org/groups/wg/webauthn/">develping strong authentication functionality for Web Applications</a>, <a href="https://www.w3.org/groups/wg/fedid/">developing APIs to allow a website to request an identity credential securely</a>, and <a href="https://www.w3.org/groups/ig/securepay/">enhancing the security and interoperability of various Web payments technologies</a>.</p>
         <p>Security is also a horizontal topic that often touches other groups and standards. Security can impact any protocol or API, which can have security implications. W3C Process mandates <a href="https://www.w3.org/policies/process/#wide-review">Wide Reviews</a>, which is one of the Interest Group’s main scope.</p>
     </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>The Security Interest Group (SING) develops and documents guidelines, patterns, processes, and best practices for addressing security considerations in Web standards.</p>
-        <p>SING provides "<a href="https://www.w3.org/Guide/documentreview/">horizontal review</a>", offering groups on-request guidance on security issues and mitigations specific to their technologies. SING aims to offer this review as early in the technology development lifecycle as requested, observing that early feedback is often more helpful. SING may also seek out technologies that benefit from earlier security reviews and conduct such reviews on its initiative.</p>
-        <p>SING incubates standards work on security issues by collecting requirements, prototyping, and/or initiating the work within the IG and recommending that the W3C move the work into other groups when appropriate.</p>
+        <p>The Security Interest Group (SING) develops and documents guidelines, patterns, processes, and best practices for addressing security issues in Web standards.</p>
+	<p>SING provides guidance on generic threat modeling processes, methodologies, and techniques for the Web standards and technologies to promote a structured approach to threats in standards and technologies, which will then be discussed with other groups for the specific threat types such as those related to security, privacy, and harm.</p>  
+	<p>SING provides "<a href="https://www.w3.org/Guide/documentreview/">horizontal review</a>", offering groups on-request guidance on security issues and mitigations specific to their technologies. SING aims to offer this review as early in the technology development lifecycle as requested, observing that early feedback is often more helpful. SING may also seek out technologies that benefit from earlier security reviews and conduct such reviews on its initiative.</p>
+        <p>SING incubates standards work on security issues by collecting requirements, prototyping, or initiating the work within the IG and recommending that the W3C move the work into other groups when appropriate.</p>
         <p>SING may recommend mitigations for security issues in existing features of the Web platform, up to and including their deprecation.</p>
         <p>SING may provide input to the <a href="https://www.w3.org/community/w3process/">W3C Process Community Group</a> on process changes that will improve security in Web standards, e.g., by establishing particular requirements or threat models for identifying and mitigating security issues in W3C Recommendations.</p>
         <p>SING may recommend to the <a href="https://www.w3.org/groups/other/ac/">W3C Advisory Committee</a> and the <a href="https://www.w3.org/groups/other/tag/">W3C TAG</a> regarding the security impact of proposed standards.</p>
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this Interest group.</p>
+            <p>The following features are out of scope and will not be addressed by this Interest group.</p>
             <p>The technical development of standards is not in the scope of the Interest Group. Identified Recommendation Track opportunities will be handed over to appropriate W3C groups if such a group exists or within a dedicated Community Group or Business Group when incubation is needed.</p>
         </section>
       </section>
@@ -177,11 +178,12 @@
         <h2>
           Deliverables
         </h2>
-
+	      
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/ig/@@/publications">group publication status page</a>.</p>
-
-        <p>In conjunction with W3C's <a href="https://www.w3.org/2001/tag/">Technical Architecture Group (TAG)</a> and <a href="https://www.w3.org/groups/ig/privacy/">PING</a>, SING maintains the <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire for Security and Privacy</a>.</p>
-        <p>SING may publish other documents consistent with the above scope, such as analyses of security issues, prototype specifications, security principles, threat models, and guidelines for standards.</p>
+	<p>Threat Modeling guide: in conjunction with relevant groups, on how to find potential threats, such as vulnerabilities or the absence of appropriate safeguards.</p>
+        <p><a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire for Security and Privacy</a>: in conjunction with W3C's <a href="https://www.w3.org/2001/tag/">Technical Architecture Group (TAG)</a> and <a href="https://www.w3.org/groups/ig/privacy/">PING</a>.</p>
+	<p><a href="https://github.com/w3c/security-request/issues/new/choose">Security Issue template</a>.
+        <p>SING may publish other documents consistent with the above scope, such as analyses of security issues, prototype specifications, security principles, specific threat models, and guidelines for standards.</p>
 
         </section>
 
