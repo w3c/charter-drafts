@@ -160,7 +160,8 @@
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>The Security Interest Group (SING) develops and documents guidelines, patterns, processes, and best practices for addressing security considerations in Web standards.</p>
+        <p>The Security Interest Group (SING) develops and documents guidelines, patterns, processes, and best practices for addressing security issues in Web standards.</p>
+	<p>SING supports, promotes, and structures the threat modeling for web standards and technologies. This approach can be used, along with other groups, for threats of different types such as security, privacy, and harm. Threat modeling is a joint activity with groups developing technology or other documentation and threat experts. It can be used to get an understanding of the impact of the technology and guide its development, as well as to write considerations.</p>
         <p>SING provides "<a href="https://www.w3.org/Guide/documentreview/">horizontal review</a>", offering groups on-request guidance on security issues and mitigations specific to their technologies. SING aims to offer this review as early in the technology development lifecycle as requested, observing that early feedback is often more helpful. SING may also seek out technologies that benefit from earlier security reviews and conduct such reviews on its initiative.</p>
         <p>SING incubates standards work on security issues by collecting requirements, prototyping, and/or initiating the work within the IG and recommending that the W3C move the work into other groups when appropriate.</p>
         <p>SING may recommend mitigations for security issues in existing features of the Web platform, up to and including their deprecation.</p>
@@ -169,7 +170,7 @@
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this Interest group.</p>
+            <p>The following features are out of scope and will not be addressed by this Interest group.</p>
             <p>The technical development of standards is not in the scope of the Interest Group. Identified Recommendation Track opportunities will be handed over to appropriate W3C groups if such a group exists or within a dedicated Community Group or Business Group when incubation is needed.</p>
         </section>
       </section>
@@ -179,9 +180,10 @@
         </h2>
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/ig/@@/publications">group publication status page</a>.</p>
-
-        <p>In conjunction with W3C's <a href="https://www.w3.org/2001/tag/">Technical Architecture Group (TAG)</a> and <a href="https://www.w3.org/groups/ig/privacy/">PING</a>, SING maintains the <a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire for Security and Privacy</a>.</p>
-        <p>SING may publish other documents consistent with the above scope, such as analyses of security issues, prototype specifications, security principles, threat models, and guidelines for standards.</p>
+        <p><a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire for Security and Privacy</a>: In joint with W3C's <a href="https://www.w3.org/2001/tag/">Technical Architecture Group (TAG)</a> and <a href="https://www.w3.org/groups/ig/privacy/">PING</a>, with a specific focus on Security aspect.</p>
+	<p>Threat Modeling guide: in joint with relevant groups such as TAG, PING, and the <a href="https://www.w3.org/groups/cg/tmcg/">Threat Modeling Community Group</a>, a guide that contains both generic threat modeling elements to facilitate activities along with groups creating technology, and also to understand threats of different types.</p>
+	<p><a href="https://github.com/w3c/security-request/issues/new/choose">Security Request Issue template</a>: to facilitate the request of Security Reivews.</p>
+	<p>SING may publish other documents consistent with the above scope, such as analyses of security issues, prototype specifications, security principles, threat models, and guidelines for standards.</p>
 
         </section>
 
@@ -206,11 +208,22 @@
             <li>Systematizing the security review of Web standards.</li>
         </ul>
 	</section>
-
       <section id="coordination">
-        <h2>Coordination</h2>
-        <p>SING will seek a horizontal review of its deliverables for accessibility, internationalization, and privacy with the relevant Working and Interest Groups and with the TAG.</p>
-        <p>SING should collaborate with the WICG and TAG to coordinate security review of specifications early in their development lifecycle.</p>
+         <h2>Coordination</h2>
+         <p>For its deliverables, this Interest Group will seek a horizontal review for accessibility, internationalization, and privacy with the relevant Working and Interest Groups and with the TAG.</p>
+         <p>This Interest Group should collaborate with all the groups developing specifications to coordinate threat modeling and security review in the early phase of their development lifecycle.</p>
+         <section>
+           <h3 id="w3c-coordination">W3C Groups</h3>
+           <dl>
+             <dt><a href="https://www.w3.org/groups/other/ac/">Advisory Board (AB)</a></dt><dd>This Interest Group will coordinate with the AB to improve the process for security reviews.</dd>
+             <dt><a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group (TAG)</a></dt><dd>This Interest Group will coordinate with the TAG for the Self-Review Questionnaire: Security and Privacy, for a Threat Model related the Web Platform, and to harmonize and improve horizontal reviews.</dd>
+             <dt><a href="https://www.w3.org/groups/ig/privacy/">Privacy Interest Group (PING)</a></dt><dd>This Interest Group will coordinate with PING for the Self-Review Questionnaire: Security and Privacy, for Threat Models related to Privacy and Harm, and to harmonize and improve horizontal reviews.</dd>
+             <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group (WebAppSec)</a></dt><dd>This Interest Group will coordinate with WebAppSec for developing security features and mitigations, and for Threat Models related to the Web Platform.</dd>
+             <dt><a href="https://www.w3.org/community/tmcg/">Threat Modeling Community Group (TMCG)</a></dt><dd>This Interest Group will coordinate with TMCG to work on Threat Models of different types, and creating a feedback loop on the Threat Modeling guide,</dd>
+             <dt><a href="https://www.w3.org/groups/wg/apa/">Accessible Platform Architectures (APA) Working Group</a></dt><dd>This Interest Group will coordinate with APA to harmonize and improve horizontal reviews.</dd>
+             <dt><a href="https://www.w3.org/groups/wg/i18n-core/">Internationalization (i18n) Working Group</a></dt><dd>This Interest Group will coordinate with i18n to harmonize and improve horizontal reviews.</dd>
+ 	  </dl>
+ 	</section>
         <section>
           <h3 id="external-coordination">External Organizations</h3>
           <p>W3C needs to coordinate with other security groups, alliances, and standards development organizations to improve the Web's security. The following list provides examples of organizations:</p>
@@ -228,15 +241,12 @@
         <h2 id="participation">
           Participation
         </h2>
-        <p>Participation in SING is open to the public. Participants who do not represent a W3C Member should join as <a href="https://www.w3.org/invited-experts/">Invited Experts</a>. Invited Experts in this group are not granted access to Member-only information.</p>
-        <p>
-          The group encourages questions, comments, and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
-        </p>
-        <p>
-          The group also welcomes non-members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
-        </p>
-        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
-          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+
+        <p>To be successful, this Interest Group is expected to include Security Researchers, Threat Modeling experts, Cryptographers, Cryptoanalysts, and active Editors for each deliverable. The Chairs and Editors are expected to contribute half of a working day per week. There is no minimum requirement for other Participants.</p>
+	<p>Participation in discussions via mailing lists and GitHub is free, as described in <a href="#communication">Communication</a>.</p>
+	<p>Participation in reviews, deliverable development, and meetings requires joining the group. The group welcomes and encourages all participants with proven specific expertise, even if they do not represent a W3C Member. In that case, they should join as <a href="https://www.w3.org/invited-experts/">Invited Experts</a>. Invited Experts in this group are not granted access to Member-only information.</p>
+	<p>The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.</p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
       </section>
       <section id="communication">
         <h2>
