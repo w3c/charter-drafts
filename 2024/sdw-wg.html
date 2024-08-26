@@ -225,6 +225,10 @@
         <li>Work with OGC Standard Working Groups to jointly develop, maintain and promote geospatial Web standards and geospatial
           profiles of more general Web standards.</li>
 
+        <li>Co-publish the next version of GeoSPARQL as a joint W3C/OGC standard</li>
+
+        <li>Co-publish the OGC's CRS Ontology as a joint W3C/OGC standard</li>
+
         <li>Maintain a list of OGC specifications and resources describing current practices in order to publicise these
           to the W3C audience.</li>
 
@@ -255,141 +259,170 @@
       <section id=normative>
         <h3>Normative Specifications</h3>
 
-        <p>The Working Group will deliver the following W3C
-          normative specifications:
+        <section id="included">
+          <p>The Working Group will deliver the following W3C
+            normative specifications:
 
                 <ul>
+            <!-- SSN -->
           <li class=spec id=6379> <a href="https://www.w3.org/TR/vocab-ssn/" rel=versionof>Semantic Sensor Network
-              Ontology</a> - new edition of core and extension parts.
+                Ontology</a> – new edition
             <ul>
-              <li class=draft-status>Draft state: Adopted (core)
+              <ul>
+                <li class=draft-status>Draft state: Adopted
 
-              <li class=milestone>Expected completion: Q4 2024 (core)
+                <li class=milestone>Expected completion: Q4 2024
 
-              <li>OGC SWG: <a href="https://portal.ogc.org/?m=projects&a=view&project_id=292">Observations, Measurements, and Samples SWG</a>
+                <li>OGC SWG: <a href="https://portal.ogc.org/?m=projects&a=view&project_id=292">Observations, Measurements, and Samples SWG</a>
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/">2017-10-19</a>
+                <li>Latest publication: <a href="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/">2017-10-19</a>
 
-              <li>Abstract:
-                <p>The Semantic Sensor Network (SSN) ontology is an
-                  RDFS/OWL ontology for describing observations made
-                  by sensors implementing specified procedures, the
-                  studied features of interest and the observed
-                  properties, along with samples used in the
-                  observations and the sampling activities that
-                  created them, as well as actuations which follow a
-                  similar semantics and data structure.
+                <li>Abstract:
+                  <p>The Semantic Sensor Network (SSN) ontology is an
+                    RDFS/OWL ontology for describing observations made
+                    by sensors implementing specified procedures, the
+                    studied features of interest and the observed
+                    properties, along with samples used in the
+                    observations and the sampling activities that
+                    created them, as well as actuations which follow a
+                    similar semantics and data structure.
 
-                <p>The SOSA vocabulary (Sensors, Observations,
-                  Samples and Actuations) contains the core terms and
-                  definitions from SSN, packaged for use in general
-                  applications.
+                  <p>The SOSA vocabulary (Sensors, Observations,
+                    Samples and Actuations) contains the core terms and
+                    definitions from SSN, packaged for use in general
+                    applications.
 
-                <p>Additional parts of this ontology will be published as separate recommendations.
-                At time of charter these are expected to include:
-                <ul>
-                  <li>ObservableProperties model</li>
-                  <li>JSON-LD binding for OGC API Features JSON</li>
-                </ul>
+                  <p>Some extension modules are included in the
+                    recommendation.
 
-                <p>Alignments with some related ontologies and data
-                  models are included in the recommendation.
-            </ul>
-	<li class=spec id=6379>GeoDCAT - a geospatial profile of the <a href="https://www.w3.org/TR/vocab-dcat-3/" rel=versionof>DCAT vocabulary</a>.
-            <ul>
-              <li class=draft-status>Draft state: Proposed
+                  <p>Alignments with some related ontologies and data
+                    models are included in the recommendation.
+              </ul>
+            </li>
 
-              <li class=milestone>Expected completion: Q4 2025
+            <!-- GeoSPARQL -->
+            <li class=spec id=10811> <a href="https://www.ogc.org/standard/geosparql/">OGC GeoSPARQL - A
+                Geographic Query Language for RDF Data</a>
+              <ul>
+                <li class=draft-status>Draft state: Not Approved</li>
 
-              <li>OGC SWG: <a href="https://portal.ogc.org/?m=projects&a=view&project_id=713">GeoDCAT SWG</a>
+                <li>Expected completion: Q4 2025 (v1.3)</li>
 
-              <li>Abstract:
-                <p>GeoDCAT will be a spatio-temporal profile of the W3C DCAT Recommendation [DCAT] , and provide guidance about its use and further specialization.
+                <li>OGC SWG: GeoSPARQL SWG <a href="https://portal.ogc.org/index.php?m=projects&a=view&project_id=50">Geosemantics DWG</a></li>
 
-                <p>Additional profiles further specialising GeoDCAT may be published as separate recommendations.
-            </ul>
-        </ul>
+                <li>Latest Publication: <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">2024-01-29</a> (v1.1)</li>
 
-        <p>The following existing specifications are potentially in scope for maintenance:
+                <li>Abstract:
+                  <p>GeoSPARQL contains a small spatial domain OWL ontology that allow literal representations of
+                    geometries to be associated with spatial features and for features to be associated with other
+                    features using spatial relations.</p>
 
-        <ul>
-          <li class=spec id=10810> <a href="https://www.ogc.org/standard/geosparql/" rel=versionof>OGC GeoSPARQL - A
-              Geographic Query Language for RDF Data</a>
-            <ul>
-              <li class=draft-status>Draft state: Approved
+                  <p>GeoSPARQL also contains SPARQL extension function definitions that can be used to calculate
+                    relations between spatial objects.</p>
 
-              <li>Latest Publication: <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">2024-01-29</a>
+                  <p>Several other supporting assets are also contained within GeoSPARQL such as vocabularies of
+                    Simple Feature types and data validators.</p>
+                </li>
 
-            </ul>
+              </ul>
+            </li>
 
-          <li class=spec id=10810> <a href="https://www.w3.org/TR/owl-time/" rel=versionof>Time Ontology in OWL</a>
-            <ul>
-              <li class=draft-status>Draft state: Adopted
+            <!-- CRS Ont -->
+            <li class=spec id=10812> <a href="https://github.com/opengeospatial/ontology-crs">Coordinate Reference System Ontology</a>
+              <ul>
+                <li class=draft-status>Draft state: Not Approved</li>
 
-              <li>Latest Publication: <a href="https://www.w3.org/TR/2022/CRD-owl-time-20221115/">2022-11-15</a>
+                <li>Expected completion: Q1 2025</li>
 
-              <li>Exclusion Draft: <a
-                  href="https://www.w3.org/TR/2017/CR-owl-time-20170606/">https://www.w3.org/TR/2017/CR-owl-time-20170606/</a>
+                <li>OGC SWG: GeoSPARQL SWG <a href="https://portal.ogc.org/index.php?m=projects&a=view&project_id=50">Geosemantics DWG</a></li>
 
-              <li>Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0003.html">Call for
-                  Exclusion</a> on 2017-06-06 ended on
-                2017-08-05
+                <li>Latest Publication: not yet published</li>
 
-              <li>Produced under Working Group Charter: <a
-                  href="https://www.w3.org/2015/spatial/charter">http://www.w3.org/2015/spatial/charter</a>
-            </ul>
+                <li>Abstract:
+                  <p>An ontology for coordinate reference systems (CRS)</p>
+                </li>
 
-          <li class=spec id=5693> <a href="https://www.w3.org/TR/sdw-ucr/" rel=versionof>Spatial Data on the Web Use
-              Cases &amp; Requirements</a>
-            <ul>
-              <li>Draft state: Adopted
+              </ul>
+            </li>
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2016/NOTE-sdw-ucr-20161025/">2016-10-25</a>
-            </ul>
+          </ul>
+        </section>
 
-          <li class=spec id=6198> <a href="https://www.w3.org/TR/covjson-overview/" rel=versionof>Overview of the
-              CoverageJSON format</a>
-            <ul>
-              <li>Draft state: Adopted
+        <section id="potential">
+          <p>The following existing specifications are potentially in scope for maintenance:
 
-              <li>Latest publication: <a
-                  href="https://www.w3.org/TR/2017/NOTE-covjson-overview-20170711/">2017-07-11</a>
-            </ul>
+          <ul>
+            <li class=spec id=10810> <a href="https://www.w3.org/TR/owl-time/" rel=versionof>Time Ontology in OWL</a>
+              <ul>
+                <li class=draft-status>Draft state: Adopted
 
-          <li class=spec id=6347> <a href="https://www.w3.org/TR/qb4st/" rel=versionof>QB4ST:
-              RDF Data Cube extensions for spatio-temporal
-              components</a>
-            <ul>
-              <li>Draft state: Adopted
+                <li>Latest Publication: <a href="https://www.w3.org/TR/2022/CRD-owl-time-20221115/">2022-11-15</a>
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2017/NOTE-qb4st-20170928/">2017-09-28</a>
-            </ul>
+                <li>Exclusion Draft: <a
+                    href="https://www.w3.org/TR/2017/CR-owl-time-20170606/">https://www.w3.org/TR/2017/CR-owl-time-20170606/</a>
 
-          <li class=spec id=6348> <a href="https://www.w3.org/TR/eo-qb/" rel=versionof>Publishing and Using Earth
-              Observation Data with the RDF
-              Data Cube and the Discrete Global Grid System</a>
-            <ul>
-              <li>Draft state: Adopted
+                <li>Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Jun/0003.html">Call for
+                    Exclusion</a> on 2017-06-06 ended on
+                  2017-08-05
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2017/NOTE-eo-qb-20170928/">2017-09-28</a>
-            </ul>
+                <li>Produced under Working Group Charter: <a
+                    href="https://www.w3.org/2015/spatial/charter">http://www.w3.org/2015/spatial/charter</a>
+              </ul>
 
-          <li class=spec id=12390> <a href="https://www.w3.org/TR/sdw-bp/" rel=versionof>Spatial Data on the Web Best
-              Practices</a>
-            <ul>
-              <li>Draft state: Adopted
+            <li class=spec id=5693> <a href="https://www.w3.org/TR/sdw-ucr/" rel=versionof>Spatial Data on the Web Use
+                Cases &amp; Requirements</a>
+              <ul>
+                <li>Draft state: Adopted
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2023/DNOTE-sdw-bp-20230919/">2023-09-19</a>
-            </ul>
+                <li>Latest publication: <a href="https://www.w3.org/TR/2016/NOTE-sdw-ucr-20161025/">2016-10-25</a>
+              </ul>
 
-          <li class=spec id=12391> <a href="https://www.w3.org/TR/webvmt/" rel=versionof>WebVMT: The Web Video Map
-              Tracks Format</a>
-            <ul>
-              <li>Draft state: Adopted
+            <li class=spec id=6198> <a href="https://www.w3.org/TR/covjson-overview/" rel=versionof>Overview of the
+                CoverageJSON format</a>
+              <ul>
+                <li>Draft state: Adopted
 
-              <li>Latest publication: <a href="https://www.w3.org/TR/2023/NOTE-webvmt-20230919/">2023-09-19</a>
-            </ul>
-        </ul>
+                <li>Latest publication: <a
+                    href="https://www.w3.org/TR/2017/NOTE-covjson-overview-20170711/">2017-07-11</a>
+              </ul>
+
+            <li class=spec id=6347> <a href="https://www.w3.org/TR/qb4st/" rel=versionof>QB4ST:
+                RDF Data Cube extensions for spatio-temporal
+                components</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a href="https://www.w3.org/TR/2017/NOTE-qb4st-20170928/">2017-09-28</a>
+              </ul>
+
+            <li class=spec id=6348> <a href="https://www.w3.org/TR/eo-qb/" rel=versionof>Publishing and Using Earth
+                Observation Data with the RDF
+                Data Cube and the Discrete Global Grid System</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a href="https://www.w3.org/TR/2017/NOTE-eo-qb-20170928/">2017-09-28</a>
+              </ul>
+
+            <li class=spec id=12390> <a href="https://www.w3.org/TR/sdw-bp/" rel=versionof>Spatial Data on the Web Best
+                Practices</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a href="https://www.w3.org/TR/2023/DNOTE-sdw-bp-20230919/">2023-09-19</a>
+              </ul>
+
+            <li class=spec id=12391> <a href="https://www.w3.org/TR/webvmt/" rel=versionof>WebVMT: The Web Video Map
+                Tracks Format</a>
+              <ul>
+                <li>Draft state: Adopted
+
+                <li>Latest publication: <a href="https://www.w3.org/TR/2023/NOTE-webvmt-20230919/">2023-09-19</a>
+              </ul>
+
+          </ul>
+        </section>
+
       </section>
 
       <section id=ig-other-deliverables>
