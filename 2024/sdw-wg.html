@@ -222,13 +222,13 @@
         <p>The Working Group will deliver the following W3C
           normative specifications:
 
-        <ul>
+                <ul>
           <li class=spec id=6379> <a href="https://www.w3.org/TR/vocab-ssn/" rel=versionof>Semantic Sensor Network
-              Ontology</a> – new edition
+              Ontology</a> - new edition of core and extension parts.
             <ul>
-              <li class=draft-status>Draft state: Adopted
+              <li class=draft-status>Draft state: Adopted (core)
 
-              <li class=milestone>Expected completion: Q4 2024
+              <li class=milestone>Expected completion: Q4 2024 (core)
 
               <li>OGC SWG: <a href="https://portal.ogc.org/?m=projects&a=view&project_id=292">Observations, Measurements, and Samples SWG</a>
 
@@ -249,11 +249,28 @@
                   definitions from SSN, packaged for use in general
                   applications.
 
-                <p>Some extension modules are included in the
-                  recommendation.
+                <p>Additional parts of this ontology will be published as separate recommendations.
+                At time of charter these are expected to include:
+                <ul>
+                  <li>ObservableProperties model</li>
+                  <li>JSON-LD binding for OGC API Features JSON</li>
+                </ul>
 
                 <p>Alignments with some related ontologies and data
                   models are included in the recommendation.
+            </ul>
+	<li class=spec id=6379>GeoDCAT - a geospatial profile of the <a href="https://www.w3.org/TR/vocab-dcat-3/" rel=versionof>DCAT vocabulary</a>.
+            <ul>
+              <li class=draft-status>Draft state: Proposed
+
+              <li class=milestone>Expected completion: Q4 2025
+
+              <li>OGC SWG: <a href="https://portal.ogc.org/?m=projects&a=view&project_id=713">GeoDCAT SWG</a>
+
+              <li>Abstract:
+                <p>GeoDCAT will be a spatio-temporal profile of the W3C DCAT Recommendation [DCAT] , and provide guidance about its use and further specialization.
+
+                <p>Additional profiles further specialising GeoDCAT may be published as separate recommendations.
             </ul>
         </ul>
 
@@ -500,12 +517,25 @@
 
         <dl>
           <dt><a href="https://portal.ogc.org/?m=projects&a=view&project_id=292">Observations, Measurements, and
-              Samples<abbr title="Standards Working Group">SWG</abbr></a>
+              Samples<abbr title="Standards Working Group"> SWG</abbr></a>
+
+          <dd>Standards-based exchange of observed, measured, or modeled data.
+
+          <dt><a href="https://portal.ogc.org/?m=projects&a=view&project_id=470">Timeseries Markup Language<abbr title="Standards Working Group"> SWG</abbr></a>
+
+          <dd>Timeseries profile of Observations
+
+          <dt><a href="https://portal.ogc.org/?m=projects&a=view&project_id=711">GeoDataCube<abbr title="Standards Working Group"> SWG</abbr></a>
+
+          <dd>Standards for APIs and metadata relating to multi-dimensional data collections.
+
+          <dt><a href="https://portal.ogc.org/?m=projects&a=view&project_id=292">Observations, Measurements, and
+              Samples<abbr title="Standards Working Group"> SWG</abbr></a>
 
           <dd>Standards-based exchange of observed, measured, or modeled data.
 
           <dt><a href="https://portal.ogc.org/?m=projects&a=view&project_id=352">GeoSPARQL<abbr
-                title="Standards Working Group">SWG</abbr></a>
+                title="Standards Working Group"> SWG</abbr></a>
 
           <dd>GeoSPARQL contains a small spatial domain OWL ontology that allow literal representations of geometries to
             be associated with spatial features and for features to be associated with other features using spatial
