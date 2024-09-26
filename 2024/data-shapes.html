@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Data Shapes WG Group Charter</title>
+
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title">PROPOSED Data Shapes Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
+
+      <p class="mission">The <strong>mission</strong> of the Data Shapes Working Group is to update data shapes standards in line with the versions of core Semantic Web standards that cater for RDF-star and to extend the applications of data shapes with new packaging and use specifications.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/wg/[shortname]/join/">Join the Data Shapes Working Group.</a></p>
+      </div>
+
+      <!-- delete the GH link after AC review completed -->
+      <p style="padding: 0.5ex; border: 1px solid green">
+          This proposed charter is available on <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2024/data-shapes.html">GitHub</a>.<br /><br />
+          Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.
+      </p>
+
+      <div id="details">
+        <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <span style="text-decoration:line-through;"><a href="https://www.w3.org/groups/wg/shacl/charters">group status page</a></span> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              December 2024
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              Start + 2 years
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              Nicholas Car (KurrawongAI)<br />
+              Eliana Papoutsoglou (Taxonic)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <span>TBD</span> (0.1 <abbr
+                  title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> The Working Group and its Task Forces hope to hold
+                weekly teleconferences, but this may vary over time according to agenda and preferences.
+              <br /><br />
+              <strong>Face-to-face:</strong> The Working Group generally meets during the W3C's annual Technical Plenary
+              week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than
+              2 per year.
+            </td>
+          </tr>
+        </table>
+
+        <!-- <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has been moved from the essentials table to the <a href="#public">communication section</a>.</p>-->
+      </div>
+
+      <div id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>The primary motivations for forming this working group are to:</p>
+        <ol>
+          <li>provide SHACL handling of for RDF-star and SPARQL-star</li>
+          <li>make minor updates to the SHACL core and extended specifications from 5+ years experience of their use</li>
+        </ol>
+        <p>The secondary motivation is to:</p>
+        <ol start="3">
+          <li>develop new specifications that assist with extended SHACL use</li>
+        </ol>
+        <p>For this secondary motivation, the areas of UI generation, reasoning rule definition and profiling descriptions are expected to be addressed. Others may be too, pending resourcing.</p>
+        <p>This group will maintain specifications developed by the former RDF Data Shapes WG.</p>     
+      </div>    
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
+        <p>
+          This Working Group is formed to:
+        </p>
+        <ul>
+          <li>update SHACL in line with 1.2 version updates to RDF &amp; SPARQL, the core Semantic Web standards that SHACL is built on</li>
+          <li>extend the specification of advanced use of SHACL in line with use observed since 2017 & SHACL 1.0</li>
+          <li>develop new SHACL-based specifications in the areas of:
+            <ul style="margin-top:10px;">
+              <li>auto-generation of user interfaces to RDF graphs</li>
+              <li>reasoning rules - their dependencies, ordering and packaging</li>
+              <li>profiling mechanisms - how to specify constraints on specifications &amp; models</li>
+              <li>a "compact" syntax</li>
+            </ul>
+          </li>
+        </ul>
+
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
+
+            <ul class="out-of-scope">
+              <li>specifications not based on SHACL</li>
+            </ul>
+        </section>
+
+      </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>
+          Updated document status is available on the <a href="https://www.w3.org/groups/wg/shacl/publications/">group publication status page</a>.
+        </p>
+
+        <p>
+          Status indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state. See <a href="#timeline">Timeline</a> for notes of Phase timing.
+        </p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+          <dl>
+            <dt class="spec">SHACL 1.2 Core</dt>
+            <dd>
+              <p>
+                This specification will basically be an updated and slightly extended version of the <a href="https://www.w3.org/TR/shacl/#part1">first part the SHACL 1.0 spec</a>.
+                It should fix some unfinished issues in SHACL 1.0, such as recursion.
+                A goal is maximum backwards compatibility.
+              </p>
+              <p>
+                For specific suggested issues see <a href="https://github.com/w3c/shacl/issues?q=is%3Aopen+is%3Aissue+label%3Ashacl-core">SHACL Core GitHub issues</a>.
+              </p>
+              <p>
+                There is an evolving <a href="../shacl-core/index.html">SHACL 1.2 Core draft</a>.
+              </p>
+              <p><strong>Status:</strong> <i>Draft</i></p>
+              <p><strong>Expected Completion:</strong> Phase 1</p>
+            </dd>
+            <dt class="spec">SHACL 1.2 SPARQL Extensions</dt>
+            <dd>
+              <p>
+                This specification will be an incremental update of the <a href="https://www.w3.org/TR/shacl/#part2">second part the SHACL 1.0 spec</a>.
+                It would include selected SPARQL-related features from the <a href="https://w3c.github.io/shacl/shacl-af/">SHACL Advanced Features Report</a>.
+              </p>
+              <p>
+                For specific suggested issues see <a href="https://github.com/w3c/shacl/issues?q=is%3Aopen+is%3Aissue+label%3Ashacl-sparql">SHACL-SPARQL GitHub issues</a>.
+              </p>
+              <p>
+                There is an evolving <a href="../shacl-sparql/index.html">SHACL 1.2 SPARQL Extensions draft</a>.
+              </p>
+              <p><strong>Status:</strong> <i>Draft</i></p>
+              <p><strong>Expected Completion:</strong> Phase 1</p>
+            </dd>
+            <dt class="spec">SHACL 1.2 User Interfaces</dt>
+            <dd>
+              <p>
+                This specification will define a richer vocabulary that can be queried by user interface tools to produce renderings of RDF graphs,
+                in particular for viewing and editing RDF resources on forms.
+                An example starting point is the <a href="https://datashapes.org/forms.html">DASH vocabulary</a>.
+              </p>
+              <p><strong>Status:</strong> <i>Not started</i></p>
+            </dd>
+            <dt class="spec">SHACL 1.2 Inferencing Rules</dt>
+            <p><strong>Expected Completion:</strong> Phase 2</p>
+            <dd>
+              <p>
+                This specification will define a SHACL vocabulary to represent inferencing rules that can be used to infer new RDF statements from existing statements.
+                A starting point may be the <a href="https://w3c.github.io/shacl/shacl-af/#node-expressions">Node Expressions</a> and <a href="https://w3c.github.io/shacl/shacl-af/#rules">SHACL Rules</a>
+                from the Advanced Features document.
+              </p>
+              <p><strong>Status:</strong> <i>Not started</i></p>
+              <p><strong>Expected Completion:</strong> Phase 2</p>
+            </dd>
+            <dt class="spec">SHACL 1.2 Profiling</dt>
+            <dd>
+              <p>
+                This specification will define methods for using SHACL to create formal profiles of (RDF) standards.
+              </p>
+              <p>
+                This work will likely build on the profile definitions of the W3C's <a href="https://www.w3.org/TR/dx-prof/">Profiles Vocabulary</a> which has been used extensively with SHACL constraints and the proposed <strong>SHACL 1.2 Inferencing Rules</strong>.
+              </p>
+              <p>
+                For specific suggested issues see <a href="https://github.com/w3c/shacl/labels/profiling">Profiling GitHub issues</a>.
+              </p>
+              <p><strong>Status:</strong> <i>Not started</i></p>
+              <p><strong>Expected Completion:</strong> Phase 2</p>
+            </dd>
+            <dt class="spec">SHACL 1.2 Compact Syntax</dt>
+            <dd>
+              <p>
+                This specification will define an alternative "compact" syntax that is custom-tailored for SHACL shapes.
+                A starting point is the <a href="https://w3c.github.io/shacl/shacl-compact-syntax/">SHACL Compact Syntax draft</a>.
+              </p>
+              <p>
+                For specific suggested issues see <a href="https://github.com/w3c/shacl/labels/compact%20syntax">SHACL Compact Syntax GitHub issues</a>.
+              </p>
+              <p>
+                There is an evolving <a href="../shacl-compact-syntax/index.html">SHACL 1.2 Compact Syntax draft</a>.
+              </p>
+              <p><strong>Status:</strong> <i>Draft (from previous WG work)</i></p>
+              <p><strong>Expected Completion:</strong> Phase 2</p>
+            </dd>
+          </dl>
+
+        </section>
+
+        <section id="nonnormative">
+          <h3>
+            Non-normative Documents
+          </h3>
+          <p>
+            The group may produce other Community Group Reports within the scope of
+            this charter but that are not Specifications, for instance use cases,
+            requirements, or white papers.
+          </p>
+        </section>
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+           <p>
+              This Working Group will take a phased approach to producing the individual deliverables as follows:
+            </p>
+            <ul>
+              <li><strong>Phase 1</strong>
+                <ul>
+                  <li>SHACL 1.2 Core</li>
+                  <li>SHACL 1.2 SPARQL Extensions</li>
+                </ul>
+              </li>
+              <li><strong>Phase 2</strong>
+                <ul>
+                  <li>all other proposed deliverables</li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              Timing of Phase 1 is dependent on the work of the <a href="https://www.w3.org/groups/wg/rdf-star/">RDF-star Working Group </a> (see <a href="#liaisons">Dependencies</a>, below). The time that this WG needs for the substantive work of Phase 1 is not expected to be great - single figure months - given work to date (see the <a href="#deliverables">Deliverables</a>).
+            </p>
+            <p>Phase 2 timing is unknown but is expected to take more than one year, even if the individual Deliverables are worked on in parallel, given the new material needed for some of them, in particular <strong> Inferencing Rules</strong> and <strong>Profiling</strong></p>
+        </section>
+      </section>
+
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+
+    <!-- Testing and interop -->
+	  <p>In order to advance to <a href="https://www.w3.org/policies/process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have
+ <a href="https://www.w3.org/policies/process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where
+interoperability can be verified by passing open test suites.</p>
+      <p>Already the current version of SHACL has test suites and implementations (see <a href="https://w3c.github.io/data-shapes/data-shapes-test-suite/">the current SHACL Test Suite and Implementation Report</a>). We expect to extend this work to cover all the new elements added in the Core and SPARQL Extensions specifications and to create similar Test Suites and Implementation Reports for the other normative specifications.
+      </p>
+      <p>
+        Members of the proposed WG include contributors to the following existing SHACL implementations:
+      </p>
+      <ul>
+        <li><a href="https://github.com/TopQuadrant/shacl">TopBraid SHACL API</a></li>
+        <li><a href="https://github.com/RDFLib/pySHACL">pySHACL</a></li>
+        <li><a href="https://jena.apache.org/documentation/shacl/index.html">Apache Jena SHACL</a></li>
+      </ul>
+      <p>Other implementations that will be approached are:</p>
+      <ul>
+        <li><a href="https://github.com/dotnetrdf/dotnetrdf">dotNetRDF</a></li>
+        <li><a href="https://project.inria.fr/corese/">Corese</a></li>
+        <li><a href="https://github.com/weso/shaclex">shaclex</a></li>
+        <li><a href="https://graphdb.ontotext.com/documentation/10.7/shacl-validation.html">GraphDB</a></li>
+        <li><a href="https://rdf4j.org/documentation/programming/shacl/">RDF4J</a></li>
+      </ul>
+      <p>
+        All previously known implementers will be contacted and invited to extend their implementations.
+      </p>
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <ul>
+            <li>RDF-star Working Group</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <p>None yet identified.</p>
+        </section>
+      </section>
+
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+      </section>
+
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">Data Shapes Working Group home page.</a>
+        </p>
+        <p>
+          Most Data Shapes Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work on the public mailing list <a class="todo" id="public-name" href="mailto:public-[email-list]@w3.org">public-shacl@w3.org</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-shacl/">archive</a>)
+          and via <a class="todo" id="public-github" href="https://github.com/w3c/shacl/issues">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/policies/process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+      <section id="patentpolicy">
+
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/[shortname]/ipr/">licensing information</a>.
+        </p>
+      </section>
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Initial Charter</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Charter Extension</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a class="todo" href="">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+      </address>
+
+<p class="copyright">Copyright © 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+  <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+
+      <hr>
+      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>
