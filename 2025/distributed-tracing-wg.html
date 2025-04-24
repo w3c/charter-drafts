@@ -169,14 +169,8 @@
           to as "tracing". Tracing tools, such as <a href="https://opentelemetry.io/">OpenTelemetry</a>, need data interoperability to collect, propagate, and
           modify tracing information.
         </p>
-      </div>
-
-      <section id="scope" class="scope">
-        <h2>Scope</h2>
         <p>
-          Tracing tools for collecting the individual requests information have been available for quite some time. However, these tools have not been
-          built with interoperability in mind. This leaves the developer with a number of challenges in getting an end-to-end
-          trace of complex transactions:
+          The lack of interoperability leaves the developer with a number of challenges in getting an end-to-end trace of complex transactions:
           <ul>
             <li>Traces are often broken, because trace context information is lost in a contributing tier or the trace is restarted</li>
             <li>Vendors cannot pass proprietary information across tiers instrumented with a different implementation and therefore
@@ -185,9 +179,12 @@
               by different tools, as there is no defined data format and semantics for trace data</li>
           </ul>
         </p>
+      </div>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
         <p>
-          The scope of this working group is the definition of data formats and headers enabling the propagation and correlation of
-          tracing data across different implementations.
+          The scope of this working group is the definition of data formats and headers enabling the propagation and correlation of tracing data across different implementations.
         </p>
 
         <section id="section-out-of-scope">
