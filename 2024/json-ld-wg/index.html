@@ -185,73 +185,12 @@
 
         <section id="section-feature-updates">
           <h3 id="in-scope">In Scope</h3>
-            <p>In addition to Errata and synchronization with the RDF-star Working Group, the following features tracked on the
+            <p>In addition to Errata and synchronization with the RDF-star Working Group, features tracked on the
               <a href="https://github.com/orgs/w3c/projects/84">Project Management Page</a>
-              are in-scope for updates to the core JSON-LD specifications:</p>
-
-            <ul class="scope">
-              <li>Additional updates to properly abstract serialization/deserialization based on content type
-                (PR <a href="https://github.com/w3c/json-ld-api/pull/608">w3c/json-ld-api#608</a>).</li>
-              <li>Address concerns from Verifiable Credentials
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/422">w3c/json-ld-syntax#422</a>).</li>
-              <li>Allow class-scoped framing
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/29">w3cjson-ld-framing#29</a>).</li>
-              <li>Allow custom datatypes on JSON Literals
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/425">w3c/json-ld-syntax#425</a>).</li>
-              <li>Change IANA Considerations to make the profile parameter required
-                (PR <a href="https://github.com/w3c/json-ld-framing/pull/154">w3c/json-ld-framing#154</a>).</li>
-              <li>Clarify that lexicographical order uses code point ordering
-                (PR <a href="https://github.com/w3c/json-ld-syntax/pull/417">w3c/json-ld-syntax#417</a>),
-                (PR <a href="https://github.com/w3c/json-ld-api/pull/574">w3c/json-ld-api#574</a>),
-                (PR <a href="https://github.com/w3c/json-ld-framing/pull/153">w3c/json-ld-framing#153</a>).</li>
-              <li>Compact IRI expansion support for non-trivial prefix term definitions
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/191">w3c/json-ld-syntax#191</a>).</li>
-              <li>Compacting native values
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/545">w3c/json-ld-api#545</a>).</li>
-              <li>Consider context by reference with metadata
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/108">w3c/json-ld-syntax#108</a>).</li>
-              <li>Consider <code>@prefix</code>
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/329">w3c/json-ld-syntax#329</a>).</li>
-              <li>Consistent treatment of JSON Literals
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/613">w3c/json-ld-api#613</a>),
-                (PR <a href="https://github.com/w3c/json-ld-api/pull/559">w3c/json-ld-api#599</a>).</li>
-              <li><code>@default</code> in <code>@context</code>
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/328">w3c-json-ld-syntax#328</a>).</li>
-              <li>Expansion does not take property-scoped contexts for nested properties into account
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/380">w3c/json-ld-api#380</a>).</li>
-              <li>Fix context processing for reverse terms(issue <a href=""></a>).</li>
-              <li>Fix context processing for reverse terms
-                (PR <a href="https://github.com/w3c/json-ld-api/pull/566">w3c/json-ld-api#566</a>).</li>
-              <li>Framing nexted graphs
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/150">w3c/json-ld-framing#150</a>).</li>
-              <li>Graph-aliased keywords don't work as containers
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/536">w3c/json-ld-api#536</a>).</li>
-              <li>Integer JSON value should be able to expand to IRI
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/509">w3c/json-ld-api#509</a>).</li>
-              <li>Language map with global context
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/126">w3c/json-ld-framing#126</a>).</li>
-              <li>Language-maps don't allow separate base direction
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/280">w3c/json-ld-syntax#280</a>).</li>
-              <li>Lists, sets, and multisets
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/473">w3c/json-ld-api#473</a>).</li>
-              <li>Make it easier to keep semantics of object-oriented models
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/376">w3c/json-ld-syntax#376</a>).</li>
-              <li>Nested properties and compaction
-                (issue <a href="https://github.com/w3c/json-ld-api/issues/391">w3c/json-ld-api#391</a>).</li>
-              <li>Pattern Matching
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/118">w3c/json-ld-framing#118</a>).</li>
-              <li>Reframing Relationships
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/73">w3c/json-ld-framing#73</a>).</li>
-              <li>Several frames in the same frame document
-                (issue <a href="https://github.com/w3c/json-ld-framing/issues/38">w3c/json-ld-framing#38</a>).</li>
-              <li>Specify a node type when interpreting JSON as JSON-LD
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/386">w3c/json-ld-syntax#386</a>).</li>
-              <li>Support multiple IRIs for <code>@reverse</code>
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/372">w3c/json-ld-syntax#372</a>).</li>
-              <li>Type Coercion / Node Conversion: <code>@coerce</code> keyword or similar
-                (issue <a href="https://github.com/w3c/json-ld-syntax/issues/335">w3c/json-ld-syntax#335</a>).</li>
-              <li>Miscellaneous test improvements.</li>
-              </ul>
+              are in-scope for updates to the core JSON-LD specifications.</p>
+            <p>The Working Group will also consider <a href="https://www.w3.org/2021/Process-20211102/#allow-new-features">allowing new features</a> in
+              these recommendations, according to <a href="https://www.w3.org/2021/Process-20211102/#revised-rec-features">Section 6.3.11.4 of the W3C
+              process</a>, in order to render future evolutions easier.</p>
         </section>
 
         <section id="section-out-of-scope">
