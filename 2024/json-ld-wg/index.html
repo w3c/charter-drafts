@@ -155,15 +155,25 @@
           JSON-LD's underlying Linked Data structure into other formats. YAML-LD has been created by the
           <a href="https://www.w3.org/community/json-ld/">JSON for Linking Data Community Group</a> for easing human
           authoring and providing a clearer path for using Linked Data applied to popular YAML-based documents such as
-          infrastructure as code, static site front matter, and API documentation formats. Additionally, a need has
-          arised in the Verifiable Credentials space for providing a more compressed expression of JSON-LD, and work on
-          CBOR-LD was begun in the JSON-LD CG.
+          infrastructure as code, static site front matter, and API documentation formats.
         </p>
+
+        <p>
+          For a number of application areas the size of JSON-LD content is an obstacle. Size constraints may occur
+          when storing data as a QR or in a barcode, transmitting data over low bandwidth channels, or when relying
+          on high volume data storages. These problems are not only significant for existing applications but are also
+          obstacles for enabling new application areas (e.g., in embedded systems). CBOR-LD, based on 
+          <a href="https://cbor.io/spec.html">CBOR</a> (which has a large user and tool base already), can exploit 
+          the linked data features of JSON-LD, and provide a high level, and easily reversible compression of
+          JSON-LD data. The work on CBOR-LD has already begun in the <a href="https://www.w3.org/community/json-ld/">JSON 
+          for Linking Data Community Group</a>, and will be finalized by the JSON-LD Working Group.
+        </p>
+
         <p>
           The hope of this new more inclusively focused JSON-LD WG is to meet the demand of the broader
           JSON-LD community by strengthening the foundational JSON-LD specifications and aligning it with the latest
           RDF 1.2 specifications, growing the family of JSON-LD related formats which orbit around the JSON-LD
-          processing model, and specifing improved context retrieval methods for greater clarity and stability.
+          processing model, and specifying improved context retrieval methods for greater clarity and stability.
         </p>
       </div>
 
