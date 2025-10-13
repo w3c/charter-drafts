@@ -207,27 +207,38 @@
 
         <ul>
           <li>
-            An <strong>extensions model</strong> - the basic architecture of
-            extensions and how the different pieces interrelate. This definition
-            will include a description of the trust model, the differing trust
-            between browsers and extensions and between extensions and web
-            pages.
+            <strong>User agent extensibility</strong> - user agents may provide
+            APIs and other interaction points that allow third party code (web
+            extensions) to deeply integrate with or intermediate client
+            features, concepts, capabilities, and systems that may not be
+            exposed to the open web. This includes, but is not limited to tab
+            management, bookmarks, cookies stores, and browser settings.
           </li>
           <li>
-            A <strong>permissions model</strong> - what sorts of powerful
-            features extensions may access, and how extensions may request user
-            consent to access them. The permissions model and API used by
-            extensions predates and is notably different from the Permissions
+            <strong>Extensions model</strong> - the basic architecture of
+            extensions and how the different pieces interrelate. This definition
+            will include a description of the trust model, the differing trust
+            between browsers and extensions, between extensions, and between
+            extensions and web pages.
+          </li>
+          <li>
+            <strong>Permissions model</strong> - what sorts of powerful features
+            extensions may access, and how extensions may request user consent
+            to access them. The permissions model and API used by extensions
+            predates and is notably different from the
+            <a href="https://www.w3.org/TR/permissions/">Permissions</a>
             specification.
           </li>
           <li>
-            <strong>Web Extensions APIs</strong> - the interface extensions are
-            built on.
+            <strong>Web Extensions APIs</strong> - the interfaces that
+            extensions are built on.
           </li>
           <li>
-            <strong>Resource files and formats</strong>, including a manifest
-            format and how extensions are localized. The manifest format used by
-            extensions predates and is notably different from the
+            <strong>Resource files and formats</strong> - assets created by
+            third party developers that are consumed by the user agent. Assets
+            include, but are not limited to, a manifest format and files
+            specifying how a given extension is localized localized. The
+            extension manifest format predates and is notably different from the
             <a href="https://www.w3.org/TR/appmanifest/"
               >Web Application Manifest</a
             >
@@ -239,7 +250,26 @@
             system.
           </li>
           <li>
-            <strong>WebDriver integration</strong>
+            <strong>WebDriver integration</strong> - the production of artifacts
+            necessary to enable implementors to verify their implementations
+            conform to a common test suites and extension developers to create
+            automated tests to verify extension behaviors across user agents.
+          </li>
+          <li>
+            <strong>Extension/Web interactions</strong> - concepts, systems, and
+            interfaces that allow extensions to or restrict extensions from
+            interacting with web pages. This includes both direct interactions
+            (such as modifying an open page's document object model) as well as
+            indirect interactions (such as using a WebExtensions API to clear
+            browser history).
+          </li>
+          <li>
+            <strong>Network request modification</strong> - as example of a deep
+            integration point, user agents may allow extensions to block, allow,
+            or mutate network requests initiated by other parts of the user
+            agent, such as an open web page. This capability has implications on
+            aspects of the web platform including, but not limited to,
+            authentication, identity, navigation, and session management.
           </li>
         </ul>
 
@@ -351,9 +381,13 @@
               Test suite and implementation report for the specification;
             </li>
             <li>
-              Primer or Best Practice documents to support web developers when
-              designing applications.
+              Primer or Best Practice documents to support developers when
+              building web extensions;
             </li>
+            <td>
+              Threat Model document to help implementers and developers
+              understand potential attack surfaces and mitigations.
+            </td>
           </ul>
         </section>
 
@@ -481,8 +515,8 @@
             </dt>
             <dd>
               We will collaborate with this Community Group to facilitate early
-              discussion with the community on work that may be taken on by the
-              Working Group.
+              discussion with the extension developer community on work that may
+              be taken on by the Working Group.
             </dd>
             <dt>
               <a href="https://www.w3.org/groups/wg/browser-tools-testing/"
@@ -507,6 +541,60 @@
               We will collaborate with this Working Group on the styling
               requirements of extensions and their interactions with the
               presentation of web content.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/webapps/"
+                >Web Applications Working Group</a
+              >
+            </dt>
+            <dd>
+              We will work with this group to consider how Web Applications
+              capabilities, systems, and data are responsibly exposed to Web
+              Extensions.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/webappsec/"
+                >Web Applications Security Working Group</a
+              >
+            </dt>
+            <dd>
+              We will work with this group to consider how Web Applications
+              capabilities, systems, and data are responsibly exposed to Web
+              Extensions.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/cg/tmcg/"
+                >Threat Modeling Community Group</a
+              >
+            </dt>
+            <dd>
+              We will collaborate with this group to integrate Web Extensions
+              into the
+              <a href="https://github.com/w3c/threat-model-web"
+                >Threat Model for the Web</a
+              >.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/webauthn/"
+                >Web Authentication Working Group</a
+              >
+            </dt>
+            <dd>
+              We will collaborate with this group on topics of mutual interest,
+              such as WebExtensions APIs that enable third party developers to
+              integrate with existing authentication flows or experiment with
+              novel authentication flows.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/fedid/"
+                >FedCM Working Group</a
+              >
+            </dt>
+            <dd>
+              We will collaborate with this group on topics of mutual interest,
+              such as WebExtensions APIs that enable third party developers to
+              integrate with existing federated authentication flows or
+              experiment with novel federated authentication flows.
             </dd>
           </dl>
         </section>
