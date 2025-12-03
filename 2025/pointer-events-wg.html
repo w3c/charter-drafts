@@ -157,7 +157,7 @@
           <ul>
             <li>Addition of <a href="https://www.w3.org/TR/pointerevents3/#details-of-touch-action-values">direction-specific values for <code>touch-action</code></a>, giving finer-grained control of panning touch behaviors</li>
             <li>Clarifying relationship between pointer events and other behaviors/event models, such as mouse events, pointer lock, and drag and drop</li>
-			<li>Exploration of how basic high-level gestures &mdash; such as "swipe left" or "two-finger tap" &mdash; could be exposed to web content authors</li>
+			<li>Support for simplified basic high-level gestures for common interaction, such as "swipe left" or "two-finger tap"</li>
             <li>Additional clarifications of API behavior and performance optimizations (see <a href="https://github.com/w3c/pointerevents/issues?q=is%3Aissue+is%3Aopen+label%3Av4">issues marked for future consideration in GitHub</a>)</li>
           </ul>
 
@@ -172,7 +172,7 @@
                   <li>Comparisons between time stamps of pointers to determine an action.</li>
                   <li>Comparisons between combinations of pointers and/or their time stamps to determine an action.</li>
                   <li>Determining an action based on comparison to a threshold (e.g., scroll speed based on a pressure threshold, panning based on distance threshold, press-and-hold based on a timing threshold).</li>
-                  <li>APIs or functionality processing data that is indicative of a confidence level that a pointer is associated with a gesture.</li>
+                  <li>APIs for interpreting abstract user intent that a pointer is associated with a gesture.</li>
                 </ul>
               </li>
 
