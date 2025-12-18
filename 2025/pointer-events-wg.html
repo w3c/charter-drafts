@@ -118,7 +118,7 @@
               Chairs
             </th>
             <td>
-              Patrick Lauke (TetraLogical)
+              Patrick H. Lauke (TetraLogical)
             </td>
           </tr>
           <tr>
@@ -156,8 +156,9 @@
         <p>This Working Group seeks to enhance the features delivered in the <a href="https://www.w3.org/TR/pointerevents3/">Pointer Events Recommendation</a> by exploring changes, such as:</p>
           <ul>
             <li>Addition of <a href="https://www.w3.org/TR/pointerevents3/#details-of-touch-action-values">direction-specific values for <code>touch-action</code></a>, giving finer-grained control of panning touch behaviors</li>
-            <li>Clarifying relationship between pointer events and other behaviors/event models, such as mouse events, pointer lock, and drag and drop</li>
-			<li>Support for simplified basic high-level gestures for common interaction, such as "swipe left" or "two-finger tap"</li>
+			<li>Integrating mouse events and wheel events from the abandoned <a href="https://www.w3.org/TR/uievents/">UI Events</a> specification</li>
+            <li>Clarifying relationship between pointer events and other pointer-related APIs, such as pointer lock and drag and drop</li>
+			<li>Support for simplified basic high-level gestures, such as "swipe", "scale", "rotate"</li>
             <li>Additional clarifications of API behavior and performance optimizations (see <a href="https://github.com/w3c/pointerevents/issues?q=is%3Aissue+is%3Aopen+label%3Av4">issues marked for future consideration in GitHub</a>)</li>
           </ul>
 
@@ -178,7 +179,7 @@
 
               <li>Higher level APIs used to convey user intent.
                 <ul>
-                  <li>High-level representational events.</li>
+                  <li>High-level representational events for actions (such as "undo", "back", "refresh", "delete").</li>
                 </ul>
               </li>
 
