@@ -5,43 +5,8 @@
 
     <title><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group Charter</title>
 
-    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
-    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
-    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
-    <style>
-      ul#navbar {
-        font-size: small;
-      }
-
-      dt.spec {
-        font-weight: bold;
-      }
-
-      dt.spec new {
-        background: yellow;
-      }
-
-      ul.out-of-scope > li {
-        font-weight: bold;
-      }
-
-      ul.out-of-scope > li > ul > li{
-        font-weight: normal;
-      }
-
-      .issue {
-        background: cornsilk;
-        font-style: italic;
-      }
-
-      .todo {
-        color: #900;
-      }
-
-      footer {
-        font-size: small;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
+    <script src="lib/2026.js" type="module" class="remove todo"></script>
   </head>
   <body>
     <header id="header">
@@ -50,12 +15,12 @@
           <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
-		  <li><a href="#success-criteria">Success Criteria</a></li>
+		      <li><a href="#success-criteria">Success Criteria</a></li>
           <li><a href="#coordination">Coordination</a></li>
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
           <li><a href="#decisions">Decision Policy</a></li>
-          <i class="todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i>
+          <i class="remove todo">[Keep 'Patent Policy' for a Working Group, 'Patent Disclosures' for an Interest Group]</i>
           <li><a href="#patentpolicy">Patent Policy</a></li>
           <li><a href="#patentpolicy">Patent Disclosures</a></li>
           <li><a href="#licensing">Licensing</a></li>
@@ -69,21 +34,25 @@
 
 
     <main>
-      <h1 id="title"><i class="todo">DRAFT [name]</i> <i class="todo">(Working|Interest)</i> Group Charter</h1>
+      <h1 id="title"><i class="todo">DRAFT</i> <i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group Charter</h1>
       <!-- replace DRAFT with PROPOSED when the AC review starts -->
       <!-- delete PROPOSED after AC review completed -->
 
-      <p class="mission">The <strong>mission</strong> of the <a href=""><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group</a> is to <i class="todo">[do something cool and specific on the Web]</i>.</p>
+    <p class="todo remove">
+      <b>New!</b> use the <a href="charter-assistant.html">charter assistant</a> if your group already exists in the W3C Groups database.
+    </p>
+
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/[type]/[shortname]/"><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group</a> is to <i class="todo">[do something cool and specific on the Web]</i>.</p>
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/groups/wg/[shortname]/join/">Join the <i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group.</a></p>
+        <p class="join"><a href="https://www.w3.org/groups/[type]/[shortname]/join/">Join the <i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group.</a></p>
       </div>
 
       <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
       <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
-      <!-- delete the GH link after AC review completed -->
-      <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      <!-- delete the whole paragraph after AC review completed -->
+      <p class="issue"> This proposed charter is available
       on <i class="todo"><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html?todo=@@">GitHub</a>.
 
     Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue%20state%3Aopen%20label%3Atemplate&amp;todo=@@">issues</a></i>.
@@ -96,7 +65,7 @@
               Charter Status
             </th>
             <td>
-              <i class="todo">See the <a href="https://www.w3.org/groups/wg/[shortname]/charters/">group status page</A> and <a href="#history">detailed change history</a>.</i>
+              See the <a class="todo" href="https://www.w3.org/groups/[type]/[shortname]/charters/">group status page</A> and <a href="#history">detailed change history</a>.
             </td>
           </tr>
           <tr id="Duration">
@@ -115,7 +84,7 @@
               <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
             </td>
           </tr>
-          <tr>
+          <tr id="Chairs">
             <th>
               Chairs
             </th>
@@ -123,15 +92,15 @@
               <i class="todo">[chair name] (affiliation)</i> (<i class="todo">Remember that Listing W3C-Member organizations names is a W3C Member benefit. Non-W3C-Member (co)-Chair(s) are to be affiliated as 'W3C Invited Expert'.</i>)
             </td>
           </tr>
-          <tr>
+          <tr id="TeamContacts">
             <th>
               Team Contacts
             </th>
             <td>
-              <span class="todo"><a href="mailto:">[team contact name]</a></span> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+              <i class="todo"><a href="mailto:">[team contact name]</a></i> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
             </td>
           </tr>
-          <tr>
+          <tr id="MeetingSchedule">
             <th>
               Meeting Schedule
             </th>
@@ -139,6 +108,8 @@
               <strong>Teleconferences:</strong> <i class="todo">topic-specific calls may be held</i> or <i class="todo">something else</i>
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+              <br>
+              See also this <a class='todo' href='https://www.w3.org/groups/[type]/[shortname]/calendar/'>group calendar</a>
             </td>
           </tr>
         </table>
@@ -170,9 +141,9 @@
           Deliverables
         </h2>
 
-        <p><i class="todo">Updated document status is available on the <a href="https://www.w3.org/groups/wg/[shortname]/publications/">group publication status page</a>. [or link to a page this group prefers to use]</i></p>
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/[type]/[shortname]/publications/">group publication status page</a>.</p>
 
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
           <span class='todo'>The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
 
         <section id="normative">
@@ -182,9 +153,9 @@
           <p>
             The <i class="todo">(Working|Interest)</i> Group will deliver the following W3C normative specifications:
           </p>
-          <p class="todo">Consider making a second list for existing specifications that the group will maintain.</p>
+          <p class="remove todo">Consider making a second list for existing specifications that the group will maintain.</p>
           <dl>
-            <dt id="web-foo" class="spec"><a href="#"><i class="todo">[new spec name]</i></a></dt>
+            <dt id="web-foo" class="spec new"><a href="#"><i class="todo">[new spec name]</i></a></dt>
             <dd>
               <p>This specification will define <i class="todo">[concrete description]</i>.</p>
 
@@ -194,7 +165,7 @@
               <p><b>Initial Text:</b> The <span class="todo">title, stable URL, and publication date of the existing technical report which will serve as the initial text of the deliverable.</span>
               <p class=todo>Otherwise, if there is an existing <a href='https://www.w3.org/policies/process/#exclusion-draft'>Exclusion Draft</a>, use the [current spec name] template below instead.</p>
             </dd>
-            <dt id="web-foo" class="spec"><a href="#"><i class="todo">[current spec name]</i></a></dt>
+            <dt id="web-foo" class="spec current"><a href="#"><i class="todo">[current spec name]</i></a></dt>
             <dd>
               <p>This specification defines <i class="todo">[concrete description]</i>.</p>
 
@@ -267,7 +238,7 @@
 			  implementations</a> of every feature defined in the specification, where
 interoperability can be verified by passing open test suites. In order to advance beyond Candidate Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-    <p><span class='todo'>Consider adopting a healthy testing policy, such as:</span>
+    <p><span class='remove todo'>Consider adopting a healthy testing policy, such as:</span>
       To promote interoperability, all changes made to specifications
       in Candidate Recommendation
       or to features that have deployed implementations
@@ -339,8 +310,6 @@ interoperability can be verified by passing open test suites. In order to advanc
         </section>
       </section>
 
-
-
       <section class="participation">
         <h2 id="participation">
           Participation
@@ -352,13 +321,11 @@ interoperability can be verified by passing open test suites. In order to advanc
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
         <p>
-          The Chairs should periodically look through the non-W3C-Member contributors to the <i class="todo">(Working|Interest)</i> Group <i class="todo">or the [name of an associated Community Group, if any]</i> and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/[shortname]/instructions/">apply to be an Invited Expert</a>.
+          The Chairs should periodically look through the non-W3C-Member contributors to the <i class="todo">(Working|Interest)</i> Group <i class="todo">or the [name of an associated Community Group, if any]</i> and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/[type]/[shortname]/instructions/">apply to be an Invited Expert</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
       </section>
-
-
 
       <section id="communication">
         <h2>
@@ -369,7 +336,7 @@ interoperability can be verified by passing open test suites. In order to advanc
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href=""><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/[type]/[shortname]/"><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group home page.</a>
         </p>
         <p>
           Most <i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
@@ -542,7 +509,7 @@ interoperability can be verified by passing open test suites. In order to advanc
 
     <footer>
       <address>
-        <i class="todo"><a href="mailto:">[team contact name]</a></i>
+        <a class="todo" href="mailto:">[team contact name]</a>
       </address>
 
 <p class="copyright">Copyright © <i class="todo">[yyyy]</i> <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
@@ -552,7 +519,7 @@ interoperability can be verified by passing open test suites. In order to advanc
       <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
 
       <hr>
-      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+      <p class='remove todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</p>
     </footer>
 
   </body>

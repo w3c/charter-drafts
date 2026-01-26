@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    
+    <title><i class="todo">[name]</i> <i class="todo">(Working|Interest)</i> Group Charter</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
+    <script src="lib/2026.js" type="module" class="remove todo"></script>
+</head>
+<body>
+    <h1>List of known groups</h1>
+    
+    <p>
+        This is a list of W3C Working Groups and Interest Groups that have been created
+        in the W3C Groups database. You can use this list to find existing groups
+        that you may want to draft a charter using the <a id='template' href="charter-template.html">charter template</a>.
+    </p>
+
+    <h2>Working Groups</h2>
+    <ul id="wgs">
+        <!-- Filled in by script -->
+    </ul>
+    <h2>Interest Groups</h2>
+    <ul id="igs">
+        <!-- Filled in by script -->
+    </ul>
+</body>
+<script type="module">
+    import { hal } from 'https://www.w3.org/PM/Groups/lib/hal.js';
+    
+    const templateLink = document.getElementById("template").href;
+
+    async function populate() {
+        const wgs = [];
+        const igs = [];
+        for await (const group of hal("groups", "https://api.w3.org/groups", true)) {
+            if (group.type === "working group") {            
+                wgs.push({
+                    name: group.name,
+                    html_url: templateLink + `?group=wg/${group.shortname}`
+                });
+            } else if (group.type === "interest group") {
+                igs.push({
+                    name: group.name,
+                    html_url: templateLink + `?group=ig/${group.shortname}`
+                });
+            }
+        }
+
+
+        wgs.sort((a, b) => a.name.localeCompare(b.name));
+        igs.sort((a, b) => a.name.localeCompare(b.name));
+
+        console.log(wgs);
+        wgs.forEach(v => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = v.html_url;
+            a.textContent = v.name;
+            li.appendChild(a);
+            document.getElementById("wgs").appendChild(li);
+        });
+        igs.forEach(v => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = v.html_url;
+            a.textContent = v.name;
+            li.appendChild(a);
+            document.getElementById("igs").appendChild(li);
+        });
+    }
+    populate();
+</script>
+</html>
