@@ -178,14 +178,14 @@
 		Revisions to the WebAssembly Recommendation will be proposed periodically, capturing changes that have been incrementally adopted by the Working Group.
 		Each successive version will incrementally incorporate improvements to support more machine level operations, increase performance, or to better inter-operate with embedding platforms, including features such as:
 		<ul>
-			<li>Multiple return values</li>
-			<li>Multiple memories + tables</li>
-			<li>Threads + shared memory</li>
-			<li>SIMD</li>
-			<li>Reference types</li>
-			<li>Exception handling</li>
-			<li>Garbage-collected object support</li>
+			<li>Improved Garbage-collected object and type system support</li>
 			<li>Stack switching</li>
+			<li>Improved JavaScript interoperability</li>
+			<li>Dynamic code generation</li>
+			<li>Improved Threading support</li>
+			<li>Improved management of linear memory and interoperation with host memory</li>
+			<li>Improved numerics support</li>
+			<li>Compilation hints for engines</li>
 			<li>Cross-language/-toolchain interoperability</li>
 	</ul>
      Incorporation of these features into the normative specifications mentioned below depends on a feature proposal following the WebAssembly Community Group's <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md">phase-advancement process</a> and successfully reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>.
@@ -200,13 +200,29 @@
           <dl>
               <dt id="1393" class="spec"><a href="https://www.w3.org/TR/wasm-core/" rel="versionof">WebAssembly Core Specification</a></dt>
                <dd>This document describes the core WebAssembly standard, a safe, portable, low-level code format designed for efficient execution and compact representation.</dd>
-               <dt id="1394" class="spec"><a href="https://www.w3.org/TR/wasm-js-api-1/" rel="versionof">WebAssembly JavaScript Interface</a></dt>
+               <dt id="1394" class="spec"><a href="https://www.w3.org/TR/wasm-js-api/" rel="versionof">WebAssembly JavaScript Interface</a></dt>
                <dd>This document provides an explicit JavaScript API for interacting with WebAssembly.</dd>
-               <dt id="1395" class="spec"><a href="https://www.w3.org/TR/wasm-web-api-1/" rel="versionof">WebAssembly Web API</a></dt>
+               <dt id="1395" class="spec"><a href="https://www.w3.org/TR/wasm-web-api/" rel="versionof">WebAssembly Web API</a></dt>
                <dd>This document describes the integration of WebAssembly with the broader web platform.</dd>
           </dl>
           <p>
+            The Working Group will deliver the following new W3C normative specifications:
+          </p>
+          <dl>
+              <dt class="spec">WebAssembly Code Metadata Specification</dt>
+              <dd>This document defines the format and semantics of extra information attached to a WebAssembly module.</dd>
+          </dl>
+          <dl>
+              <dt class="spec">WebAssembly Legacy Extensions Core Specification</dt>
+              <dd>This document defines extensions to the WebAssembly Core Specification that are deprecated, but may still be in use.</dd>
+          </p>
+          <dl>
+              <dt class="spec">WebAssembly Legacy Extensions JavaScript Interface</dt>
+              <dd>This document defines extensions to the WebAssembly JavaScript Interface that are deprecated, but may still be in use.</dd>
+          </p>
+          <p>
             Contingent on the <a href="https://github.com/WebAssembly/component-model">WebAssembly Component Model proposal</a> reaching <a href="https://github.com/WebAssembly/meetings/blob/main/process/phases.md#4-standardize-the-feature-working-group">Phase 4</a>, the Working Group also aims to deliver the following new specification:
+          </p>
           <dl>
               <dt class="spec">WebAssembly Component Model</dt>
               <dd>This document will define a standard, portable, lightweight, finely-sandboxed, cross-language, compositional module called a “component”, layered on top of the WebAssembly Core Specification. Like Core WebAssembly, the WebAssembly Component Model adds no new capabilities to the Web Platform and can be faithfully implemented by translation to JavaScript. See the <a href="https://github.com/WebAssembly/component-model">proposal repository</a> for high-level concepts, goals and use cases along with a low-level detailed walkthrough.</dd>
@@ -233,7 +249,7 @@
 	  <h2>Success Criteria</h2>
 
     <!-- Testing and interop -->
-          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites, and two or more implementations interoperating with each other. In order to advance to Proposed Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
+          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">Candidate Recommendation</a>, each normative specification must have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites, and two or more implementations interoperating with each other. In order to advance to Candidate Recommendation, each normative specification must have an open test suite of every feature defined in the specification.</p>
 
           <p>To promote interoperability, all changes made to specifications in Candidate Recommendation or to features that have deployed implementations will have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>. Testing efforts will be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
 
@@ -275,8 +291,10 @@
                 <li>providing integration points for the WebAssembly Component Model.</li>
               </ul>
             </dd>
+            <dt><a href="https://whatwg.org/">WHATWG - Web Hypertext Application Technology Working Group</a></dt>
+            <dd>Coordination on WebAssembly integration with HTML and related standards.</dd>
             <dt><a href="https://www.w3.org/community/gpu/">WebGPU Community Group</a></dt>
-            <dd>Coordinate on WebAssembly interoperability, performance, and ergonomics.</dd>
+            <dd>Coordination on WebAssembly interoperability, performance, and ergonomics.</dd>
           </dl>
         </section>
       </section>
