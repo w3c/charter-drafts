@@ -390,43 +390,22 @@ the server to the user agent.</p>
 	 </dd>
  </dl>
 	 
-	  <h3 id="to-transfer">
-            Past Specifications
-          </h3>
-	 <dl>
-                                            <dt id="longtasks-1" class="spec"><a href="https://www.w3.org/TR/longtasks-1/" rel='versionof'>Long Tasks API</a></dt>
-                        <dd>
-                            <p>This document defines an API that web page authors can use to detect presence of “long tasks” that monopolize the UI thread for extended periods of time and block other critical tasks from being executed - e.g. reacting to user input.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> As this is only implemented in a single browser, we plan to transition this work back to WICG</p>
-                            <p><b>Latest publication:</b> <a href='https://www.w3.org/TR/2024/WD-longtasks-1-20240524/'>2024-05-24</a></p>
-                        </dd>
-                            
-                                            <dt id="device-memory-1" class="spec"><a href="https://www.w3.org/TR/device-memory-1/" rel='versionof'>Device Memory API</a></dt>
-                        <dd>
-                            <p>This document defines a HTTP Client Hint header to surface device capability for memory i.e. device RAM, in order to enable web apps to customize content depending on device memory constraints.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> As this is only implemented in a single browser, we plan to transition the specification back to WICG.</p>
-                            <p><b>Latest publication:</b> <a href='https://www.w3.org/TR/2026/WD-device-memory-1-20260119/'>2026-01-19</a></p>
-                        </dd>
-
-	 <dt id="requestidlecallback" class="spec"><a href="https://www.w3.org/TR/requestidlecallback/" rel='versionof'>requestIdleCallback()</a></dt>
-                        <dd>
-                            <p>The requestIdleCallback method is a more appropriate way for scheduling background tasks during times when the browser would otherwise be idle.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> This work can be integrated to HTML/WHATWG</p>
-                            <p><b>Latest publication:</b> <a href='https://www.w3.org/TR/2025/WD-requestidlecallback-20250521/'>2025-05-21</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href='https://www.w3.org/TR/2017/CR-requestidlecallback-20170131/'>https://www.w3.org/TR/2017/CR-requestidlecallback-20170131/</a><br>
-                                <a href='https://lists.w3.org/Archives/Member/member-cfe/2017Feb/0000.html'>Exclusion period</a>
-                                began on 2017-02-02 and
-                                ended on 2017-04-03.
-                            </p>
-                        </dd>
-	 
-	 
-                                        </dl>
-                                                        <h3 id="standards">Standards</h3>
+	 <p>
+		 Work on three previous deliverables will be discontinued:</p>
+		 <ul>
+			 <li>
+				 <a href="https://www.w3.org/TR/longtasks-1/" rel='versionof'>Long Tasks API</a> is only implemented in a single browser, this work will transition back to WICG.
+		 	</li>
+			<li>
+				<a href="https://www.w3.org/TR/device-memory-1/" rel='versionof'>Device Memory API</a> is only implemented in a single browser, this work will transition back to WICG.
+			</li>
+			<li>
+				 <a href="https://www.w3.org/TR/requestidlecallback/" rel='versionof'>requestIdleCallback()</a> should be integrated to HTML/WHATWG.
+			</li>
+		 </ul>	 
+				
+          
+                                                        <h3 id="standards">Maintenance</h3>
                 <p>List of Standards produced and maintained by the Web Performance Working Group.</p>
 
                 <dl>
@@ -454,12 +433,12 @@ the server to the user agent.</p>
           <h3>
             Other Deliverables
           </h3>
-          <p>The Group maintains two non-normative documents:</p>
+          <p>The Group maintains a non-normative document:</p>
           <ul>
             <li>
               A <a href="https://w3c.github.io/perf-security-privacy/">Performance APIs, Security and Privacy document</a><br>
               Planned work: <a href="https://github.com/w3c/web-performance/issues/46">Reviewing and updating the content</a>, 
-              and adding a section on the principals and value of performance measurements.
+              and adding a section on the principles and value of performance measurements.
             </li>
             </ul>
           <p>Other non-normative documents may be created such as:</p>
