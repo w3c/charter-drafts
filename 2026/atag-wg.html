@@ -33,7 +33,7 @@
       <!-- replace DRAFT with PROPOSED when the AC review starts -->
       <!-- delete PROPOSED after AC review completed -->
 
-      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/atag/">Authoring Tool Accessibility Guidelines Working Group</a> (ATAG WG) is to produce guidelines for the development of authoring tools that enable authors to create content that is accessible to end users. In particular, the ATAG WG will publish updates to the Authoring Tool Accessibility Guidelines (ATAG).</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/atag/">Authoring Tool Accessibility Guidelines Working Group</a> (ATAG WG) is to produce guidelines for the development of authoring tools that are accessible to authors with disabilities and enable the creation of accessible content for end users. The group develops the Authoring Tool Accessibility Guidelines (ATAG) and support materials.</p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/groups/wg/atag/join/">Join the Authoring Tool Accessibility Guidelines Working Group.</a></p>
@@ -105,25 +105,39 @@
 
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
-        <p><i class="todo">Background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
+        <p>Web accessibility depends on several components working together. These components include content, user agents, assistive technology, authoring tools, evaluation tools, users, and developers.</p>
+
+        <p>To realize a web for all people, fundamental to <a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>, the tools used to create content must be accessible to people with disabilities.</p>
+
+        <p></p>Furthermore, when authoring tools support accessibility, content developers spend less effort to produce more accessible content. Thus, accessibility improvements in authoring tools have an exponential effect on improving content accessibility.</p>
+
+        <p>The Authoring Tool Accessibility Guidelines Working Group defined the standard <a href="https://www.w3.org/TR/ATAG10/">Authoring Tool Accessibility Guidelines (ATAG) 1.0</a> in 2000 and <a href="https://www.w3.org/TR/ATAG20/">ATAG 2.0</a> in 2015. The group closed in 2015 after completion of ATAG 2.0.</p>
+
+        <p>Since then, WCAG 2.1 and 2.2 have been published, WCAG 3 is being developed, and the landscape of authoring tools and platforms has notably changed. This includes the rise of artificial intelligence and Large Language Models (LLM) in content creation, and the increased use of API-driven, headless, and web-based platforms for content development and consumption.</p>
+
+        <p>The Accessibility Guidelines Working Group will explore these developments, and develop up-to-date specifications and support materials that assist authoring tool developers in designing authoring tools that:</p>
+        <ul>
+          <li>are accessible to authors with disabilities</li>
+          <li>support the creation of accessible content</li>
+        </ul>
       </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
         <p>The Authoring Tool Accessibility Guidelines Working Group (ATAG WG) plans to explore the following topics with the goal of developing an update to the Authoring Tool Accessibility Guidelines (ATAG):</p>
-
         <ul>
-          <li>Review ATAG 2.0 and identify areas for improvement and updating, including references to WCAG 2.2, areas needing clarification, and any outdated references.</li>
-          <li>Explore developments in authoring tools and platforms since the release of ATAG 2.0, including the rise of AI and LLMs in content creation, and the increased use of API-driven, headless, and web-based platforms for content development and consumption, and the changing needs of end users.</li>
-          <li>Identify any challenges or gaps in the current ATAG 2.0 guidance, both in the specification and accompanying documentation.</li>
-          <li>Develop requirements and guidance for accessible AI authoring tools, including both the accessibility of the tools themselves and the accessibility of the content they produce.</li>
+          <li>review ATAG 2.0 and identify areas for updating, including references to WCAG 2.2, areas needing clarification, and any outdated references and definitions</li>
+          <li>identify any challenges or gaps in implementation and guidance in ATAG 2.0 that may be addressed in future specifications or supporting documentation</li>
+          <li>explore developments in authoring tools and platforms since ATAG 2.0 was published, including the rise of AI and LLMs in content creation, the increased use of API-driven, headless, and web-based platforms for content development and consumption, and segment-specific content development requirements</li>
+          <li>assess the needs of end users and how they have changed or evolved with the development of new authoring tools and platforms</li>
+          <li>develop requirements and guidance for accessible AI- or automation-driven authoring tools, including the tools themselves and the content they produce</li>
         </ul>
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
             <p>The following features are out of scope, and will not be addressed by this Working Group:</p>
             <ul class="out-of-scope">
-              <li>Standards for the accessibility of content.</li>
+              <li>Standards for the accessibility of content</li>
             </ul>
         </section>
       </section>
@@ -142,9 +156,9 @@
             The Working Group will deliver the following W3C normative specification:
           </p>
           <dl>
-            <dt id="web-foo" class="spec new">Authoring Tool Accessibility Guidelines (ATAG) 3.0</dt>
+            <dt id="new-atag" class="spec new">Next version of the Authoring Tool Accessibility Guidelines (ATAG)</dt>
             <dd>
-              <p>This specification will define guidelines for designing content authoring tools that enable, support, and promote the production of content that is more accessible for people with disabilities.</p>
+              <p>This specification will provide updated guidelines for designing content authoring tools that enable, support, and promote the production of content that is more accessible to people with disabilities. This version will consider the new landscape for authoring tools and the role of the user in accessible production, maintenance, and consumption of content.</p>
               <p class="draft-status"><b>Draft state:</b> <i class="todo">[No draft | <a href="#">Use Cases and Requirements</a> | <a href="#">Editor's Draft</a> | <a href="#">W3C-Member Submission</a>]</i></p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
               <p class=todo>If this is a new technical report that will start as a copy of a different TR:</p>
@@ -155,9 +169,9 @@
 
           <p>The Working Group will maintain the following W3C normative specification:</p>
           <dl>
-            <dt id="web-foo" class="spec current"><a href="https://www.w3.org/TR/ATAG20/">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a></dt>
+            <dt id="atag20" class="spec current"><a href="https://www.w3.org/TR/ATAG20/">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a></dt>
             <dd>
-              <p>This specification provides guidelines for designing Web content authoring tools that are more accessible for people with disabilities. An authoring tool that conforms to these guidelines will promote accessibility by providing an accessible user interface to authors with disabilities as well as enabling, supporting, and promoting the production of accessible Web content by all authors.</p>
+              <p>This specification provides guidelines for designing web content authoring tools that are more accessible to people with disabilities. An authoring tool that conforms to these guidelines will promote accessibility by providing an accessible user interface to authors with disabilities as well as enabling, supporting, and promoting the production of accessible web content by all authors. Maintenance for ATAG 2.0 will focus on addressing any outdated references, definitions, or informative content in the specification.</p>
             </dd>
           </dl>
         </section>
@@ -239,15 +253,36 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dt><a href="https://www.w3.org/groups/wg/ag/">Accessibility Guidelines (AG) Working Group</a></dt>
             <dd>The ATAG Working Group will liaise with the AG Working Group to ensure that the guidance in ATAG is consistent with the latest developments in Web Content Accessibility Guidelines (WCAG) 2 and WCAG 3.</dd>
           </dl>
-
-          <p class="issue"><b>Note:</b> Do not list horizontal groups here, only specific WGs relevant to your work.</p>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/i18n-core/">Internationalization Working Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Internationalization Working Group to ensure guidance is consistent with the authoring requirements or best practices of different languages and scripts.</dd>
+          </dl>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/pm/">Publishing Maintenance Working Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Publishing Maintenance Working Group to ensure guidance is inclusive of use cases in the publishing ecosystem and reflects the requirements or best practices for digital publishing.</dd>
+          </dl>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/media/">Media Working Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Media Working Group to ensure guidance is inclusive of use cases in the media ecosystem and reflects the requirements or best practices for media production.</dd>
+          </dl>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/audio/">Audio Working Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Audio Working Group to ensure guidance is inclusive of use cases in the media ecosystem and reflects the requirements or best practices for media production.</dd>
+          </dl>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/wg/timed-text/">Timed Text Working Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Timed Text Working Group to ensure guidance is inclusive of use cases in the media ecosystem and reflects the requirements or best practices for media production.</dd>
+          </dl>
         </section>
 
         <section>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
             <dt><a href="https://accessible.canada.ca/">Accessibility Standards Canada (ASC)</a></dt>
-            <dd>ATAG WG will liaise with ASC on the development of accessibility standards for authoring tools.</dd>
+            <dd>
+              <p>The ATAG Working Group will liaise with ASC on the development of accessibility standards for authoring tools.</p>
+              <p><i>Note: The W3C Team is considering a memorandum of understanding (MoU) for a joint W3C-ASC standard.</i></p>
+            </dd>
           </dl>
         </section>
       </section>
