@@ -56,35 +56,37 @@ and provided PRs for 4 points.
 
 > We're concerned to see the Chromium-only Accelerometer, Gyroscope, and Orientation Sensor specifications in the charter, now that the [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec is in Baseline. It makes sense to maintain non-consensus specifications while websites switch over to equivalent consensus APIs, but the charter should commit to only adding new features to the consensus versions. If there's not enough consensus on the new features to incorporate them into the core [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec, this WG could develop an extension specification that allows websites to mostly use the Baseline feature, with a few engine-specific extensions.
 
-The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
+**Response** The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
 the WG discussed on additional change over the PR but did not reach WG consensus. 
 
-**Response** The Team decided to override this concern by [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818), 
-with adding `including for security and privacy enhancements` over a PR by the TAG 
-to enable modification of adding new feature specifically related to security and privacy enhancements. 
+**Resolution** The draft charter has been updated following TAG proposal with adding amended text 
+as `including for security and privacy enhancements`
+to enable modification of adding new feature specifically related to security and privacy enhancements, 
+at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818), 
 
 #### Involvement of multiple implementers - XXX (not Accepted, not Won't fix, ???)
 
 > We want to ensure that the other specifications fill clear user needs and are making appropriate tradeoffs between those user needs and any potential abuse of the APIs. In many WGs, we can rely on all 3 browser engines to check this, but since this WG does not currently include participation from all major browser engines, we're more concerned here. Could you add this goal to the charter for each of the specifications in that class? We see, for example, https://github.com/w3c/vibration/issues/45 to do this for Vibration, but it would be good to use the charter to ensure it gets done.
 
-The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
+**Response** The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
 the WG discussed on additional change over the PR, but did not resolved. 
 
-**Response** The Team decided to override this concern by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821), 
-with including a change suggested by Anssi to remove specifically mention to WebApps and 
-adding links to the Process for making maturity level used in text clear.
+**Resolution** The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
+to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
+by [w3c/charter-drafts PR #821]
 
 #### Vibration API council concern - XXX
 
 > The [Vibration Council recommended](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations) that "the WG document the plan [to ship in multiple major browser engines] it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable." We couldn't find such a plan in this rechartering effort, and we encourage the WG to write such plans for each single-engine specification, in order to head off this possible formal objection.
 
-The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
+**Response** The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
 to add text not limited to the Vibration specification, but even further in relateion to TAG point 1, 
 the WG did not reached a concensus to accept or reject the PR.
 
-**Response** The Team decided to override this concern by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819), 
-with adding bringing specifications into CG as incubation along with publication as Discontinued Draft, 
-for making path clearer to continue incubation but not as completed end state.
+**Resolution** The draft charter has been updated following TAG porposal 
+with adding amended text to enable bringing specifications into CG as incubation along with publication as Discontinued Draft, 
+for making path clearer to continue incubation but not as completed end state, 
+by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 
 #### Support level in status section of specification - Accepted
 
@@ -220,46 +222,110 @@ by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strate
 
 **Response** The Team decided to include all five peripheral APIs specifications to tentative deliverables.
 
-### Unresolved comment by the commenter - Rejected
+## Feedback provided to w3c/charter-drafts
 
-> @plehegar — thank you for the update.
-> 
-> Can you help me understand how this aligns with three things?
-> 
-> **1. Your own gate condition (2026-02-24):**
-> 
-> "I don't think that publishing additional explainers, use cases or demos address the comment. [...] Without such response, I don't think the charter should be sent to the AC for review."
-> 
-> The point-by-point response you required has not been provided. None of the issues listed above have received a formal response from the WG.
-> 
-> **2. [W3C Process §4.2](https://www.w3.org/policies/process/#charter-review):**
-> 
-> "All issues filed against the charter draft must be formally addressed, and their resolutions tracked in a disposition of comments highlighting any issues not resolved by consensus."
-> 
-> There is currently no disposition of comments, as far as I know. Issues [#798](https://github.com/w3c/charter-drafts/issues/798), [#799](https://github.com/w3c/charter-drafts/issues/799), [#780](https://github.com/w3c/charter-drafts/issues/780), and [#782](https://github.com/w3c/charter-drafts/issues/782) have received zero responses. The TAG's review ([design-reviews#1187](https://github.com/w3ctag/design-reviews/issues/1187)) remains open.
-> 
-> **3. Process §4.2 also requires:**
-> 
-> "When the Team initiates an Advisory Committee Review, they must include a disposition of comments received during the charter refinement process, highlighting any issues that were closed despite sustained objections."
-> 
-> The Team cannot initiate AC review without first producing this disposition. Given that multiple issues have received no WG response, what will that disposition say?
-> 
-> Can you clarify the intended path?
+### Peripheral APIs
 
-by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-4384373803)
+Before submission by Mozilla to [whatwg/sg PR #264](https://github.com/whatwg/sg/pull/264/), 
+three specifications (out of five listed in whatwg/sg PR #264) has been proposed to be included into tentative deliverables. 
 
-and 
+#### Proposals raised by Mozilla - Accepted
 
-> For the record: the TAG does have consensus on these concerns.
-> 
-> [design-reviews#1187](https://github.com/w3ctag/design-reviews/issues/1187) is a published collective review. Jeffrey re-opened it on April 8 confirming the concerns remain unresolved. At our April 7 meeting with DAS WG guests, Brian, Heather, and Jeffrey all voiced support for the signaling concern. The TAG appointed @christianliebel as deputy to work with the WG, documented in meeting minutes.
-> 
-> The decision to condition AC review on a response was the Team's (Feb 24): "Without such response, I don't think the charter should be sent to the AC for review." That was a Team decision, not a TAG request. The TAG asked for concerns to be addressed. That's our role per Process.
-> 
-> If the charter goes to AC with these concerns unresolved in the disposition, that's fine. But the disposition must accurately reflect that these are collective TAG concerns, not one individual's.
-> 
-> Also: [#798](https://github.com/w3c/charter-drafts/issues/798) and [#799](https://github.com/w3c/charter-drafts/issues/799) are W3C Member wide review concerns grounded in peer-reviewed security research, cross-engine implementation data, and WebKit's published [community positions](https://github.com/WebKit/standards-positions/issues/199). "One individual" is not an accurate characterization of concerns backed by a collective TAG review, a browser engine's community positions, and an academic paper from CISPA.
+**Resolution** The draft charter has been updated to include all three specifications proposed by issues to w3c/charter-drafts, 
+and extended to 2 additional deliverables to allow the AC to weigh in, 
+by PRs [w3c/charter-drafts PR #786](https://github.com/w3c/charter-drafts/pull/786) and 
+[w3c/charter-drafts #820](https://github.com/w3c/charter-drafts/pull/820). 
+We note disagreement from Apple on this resolution. 
 
-by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-4397542820)
+##### Web Serial API
 
-**Response** No action taken, just situation described against comments.
+> Can Web Serial be moved from “tentative deliverable” to “deliverable” given Mozilla has announced an intent to prototype which would make two implementations?
+> 
+> Here's Mozilla’s intent to prototype: https://groups.google.com/a/mozilla.org/g/dev-platform/c/EDLTASS4Zik/m/LXJRL6yFCQAJ
+> 
+> We prefer to keep the existing note in the listing of the deliverable: "Note: This work may turn into a joint deliverable with the Web Applications Working Group."
+
+by Haik Aftandilian, [w3c/charter-drafts #771](https://github.com/w3c/charter-drafts/issues/771)
+
+##### WebUSB
+
+> We (Mozilla Firefox) are considering the WebUSB API ([Firefox bug 2022432](https://bugzilla.mozilla.org/show_bug.cgi?id=2022432)) and thus request adding the WebUSB API in the DAS WG charter "Tentative Deliverables" as follows:
+> 
+> [WebUSB API](https://wicg.github.io/webusb/)
+> An API for reading and writing from a USB device through script.
+> Draft state: Draft Community Group Report
+> Adopted Draft: [Adopted from WICG](https://wicg.github.io/webusb/)
+> Note: This work may turn into a joint deliverable with the [Web Applications Working Group](https://www.w3.org/groups/wg/webapps).
+
+by Haik Aftandilian, [w3c/charter-drafts #772](https://github.com/w3c/charter-drafts/issues/772)
+
+##### Web Bluetooth
+
+> We (Mozilla Firefox) are considering the Web Bluetooth API ([Firefox bug 2022433](https://bugzilla.mozilla.org/show_bug.cgi?id=2022433)) and thus request adding the Web Bluetooth API in the DAS WG charter "Tentative Deliverables" as follows:
+> 
+> [Web Bluetooth API](https://webbluetoothcg.github.io/web-bluetooth/)
+> An API to discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).
+> Draft state: Draft Community Group Report
+> Adopted Draft: [Adopted from Web Bluetooth Community Group](https://webbluetoothcg.github.io/web-bluetooth/)
+> Note: This work may turn into a joint deliverable with the [Web Applications Working Group](https://www.w3.org/groups/wg/webapps).
+
+by Haik Aftandilian, [w3c/charter-drafts #773](https://github.com/w3c/charter-drafts/issues/773)
+
+#### Concern raised to Web Serial in tentative Deliverables - Rejected
+
+> **Context:** This issue tracks a concern raised in the TAG review of the 2026 DAS WG charter (w3ctag/design-reviews#1187).
+> 
+> The TAG review states *(charter-affecting section, verbatim)*:
+> 
+> > "We're concerned by the appearance of Web Serial in the Tentative Deliverables. At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead."
+> 
+> Issue #771 proposes moving Web Serial from Tentative Deliverable to full Deliverable based on Mozilla's intent to prototype. However, the TAG's concern is specifically about **venue** — which WG is the right home for this work — not solely about the number of implementations. Moving it to a full DAS deliverable without resolving the venue question does not address the TAG's concern; it reinforces it.
+> 
+> Before this charter proceeds to AC review, the charter should either:
+> 1. Document that the venue question has been discussed with the Web Applications WG and record the outcome, or
+> 2. Explicitly state that Web Serial will not advance to full Deliverable in DAS until the venue question is resolved, and commit to a process and timeline for making that decision.
+> 
+> Related: #770, #771, w3ctag/design-reviews#1187
+
+by Marcos Cáceres, [w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783)
+
+**Response** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
+We note this disagreement on this resolution. 
+
+#### Remove potential joint deliverables for three Peripheral APIs - Accepted
+
+> Update the notes that indicate Web Bluetooth, Web Serial, and Web USB may become joint deliverables with the WebApps WG, since WebApps is unable to accept any more specifications at this time.
+> 
+> @himorin , @anssiko, @reillyeon, @w3c/marcomm, @siusin  
+
+by Léonie Watson, [w3c/charter-drafts #810](https://github.com/w3c/charter-drafts/issues/810)
+
+**Response** The draft charter has been updated by [w3c/charter-drafts PR #812](https://github.com/w3c/charter-drafts/pull/812) to align with this comment. 
+
+### Comments related to implementation status and language
+
+#### Support level of specification in each status section - Accepted
+
+> **Context:** This issue tracks a concern raised in the TAG review of the 2026 DAS WG charter (w3ctag/design-reviews#1187).
+> 
+> The TAG review states *(charter-affecting section, verbatim)*:
+> 
+> > "We would like the WG to find a way to signal the expected support level for each specification... At a minimum, each document's support level should be in its SotD section, but ideally the WG would find a way to ensure that *developers reading a specification can tell at a glance which kind of document they're reading*."
+> 
+> PR #770 adds implementation status text to the charter itself, which is a welcome step. However, the charter currently makes no commitment to reflect that status in the specifications that developers actually read.
+> 
+> The charter should include language along the following lines *(proposed in [#770 (comment)](https://github.com/w3c/charter-drafts/pull/770#discussion_r2881370853))*:
+> 
+> > The Working Group will ensure that each specification clearly communicates both its implementation status and its intended trajectory along the W3C Recommendation Track. At a minimum, the Status of This Document section of each specification will describe the current level of implementation support and whether the specification is expected to advance toward widely implemented Recommendation status.
+> >
+> > For specifications with limited or single-engine deployment, the Working Group will ensure that the specification clearly signals its role and intended direction — for example, whether it is an experimental abstraction, a transitional design that points developers toward a consensus alternative, or work with limited deployment serving as documentation.
+> >
+> > The Working Group will review specifications with limited implementation support at least annually to evaluate their progress, relevance, and intended trajectory, and will document the outcome of those evaluations publicly.
+> 
+> Related: #770, w3ctag/design-reviews#1187
+
+by Marcos Cáceres, [issue raised as w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780)
+
+**Response** Referenced PR [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770) has been integrated into the draft charter.
+
+
