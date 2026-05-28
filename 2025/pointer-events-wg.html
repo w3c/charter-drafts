@@ -158,7 +158,6 @@
             <li>Addition of <a href="https://www.w3.org/TR/pointerevents3/#details-of-touch-action-values">direction-specific values for <code>touch-action</code></a>, giving finer-grained control of panning touch behaviors</li>
 			<li>Integrating mouse events and wheel events from the abandoned <a href="https://www.w3.org/TR/uievents/">UI Events</a> specification</li>
             <li>Clarifying relationship between pointer events and other pointer-related APIs, such as pointer lock and drag and drop</li>
-			<li>Support for basic gestures, such as "swipe", "scale", "rotate"</li>
             <li>Additional clarifications of API behavior and performance optimizations (see <a href="https://github.com/w3c/pointerevents/issues?q=is%3Aissue+is%3Aopen+label%3Av4">issues marked for future consideration in GitHub</a>)</li>
           </ul>
 
@@ -167,7 +166,7 @@
             <p>The following features are out of scope, and will not be addressed by this Working group.</p>
 
             <ul class="out-of-scope">
-              <li>How user agents determine if an interaction is intended to be a gesture. Examples include, but are not limited to, the following:
+              <li>Gestures. Examples of out-of-scope gesture functionality and APIs include, but are not limited to, the following:
                 <ul>
                   <li>Comparisons between multiple pointers to determine an action (e.g., panning for scrollable regions, pinch for zooming, press-and-hold for a mouse right-click).</li>
                   <li>Comparisons between time stamps of pointers to determine an action.</li>
@@ -225,8 +224,8 @@
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/pointerevents3/">Candidate Recommendation</a></p>
 
-              <p class="milestone"><b>Expected completion:</b> <a href="https://github.com/w3c/pointerevents/milestone/2">Q1 2026</a></p>
-              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/CR-pointerevents3-20251106/">Pointer Events (Level 3), 6 November 2025</a></p>
+              <p class="milestone"><b>Expected completion:</b> <a href="https://github.com/w3c/pointerevents/milestone/2">Q2 2026</a></p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/CRD-pointerevents3-20260213/">Pointer Events (Level 3), 13 February 2026</a></p>
       <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2025/CR-pointerevents3-20250429/">Pointer Events (Level 3), 29 April 2025</a><br>
         associated <a href='https://www.w3.org/mid/cfe-15405-a84c3942bb67e056a4c3f6552e902c1c6de812f7@w3.org'> Call for Exclusion</a> on 2025-04-29
         ended on 2025-06-28
@@ -352,10 +351,10 @@ interoperability can be verified by passing open test suites. In order to advanc
           To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
         </p>
         <p>
-          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>. The group also welcomes non-Members to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
         <p>
-          The Chairs should periodically look through the non-Members who have contributed to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/pointer-events/instructions/">apply to be an Invited Expert</a></i>.
+          The Chairs should periodically look through the non-W3C-Members contributors to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/pointer-events/instructions/">apply to be an Invited Expert</a></i>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
@@ -665,8 +664,7 @@ interoperability can be verified by passing open test suites. In order to advanc
                   TBD+2 years
                 </td>
                 <td>
-                  Make it more explicitly that mouse events are in scope.<br>
-                  Scope expanded to include simplified basic high-level gestures for common interaction
+                  Make it more explicitly that mouse events are in scope.
                 </td>
               </tr>
             </tbody>
@@ -695,7 +693,7 @@ interoperability can be verified by passing open test suites. In order to advanc
         <a href="mailto:plh@w3.org">plh@w3.org</a>
       </address>
 
-<p class="copyright">Copyright © 2025 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+<p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
   <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
   <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
   <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
