@@ -13,11 +13,12 @@ Comments were received through:
 
 
 * 9 were Accepted, and resulted in charter changes.
+* 3 were Accepted with amended text
 * 5 were Noted, without requiring charter change.
-* 4 were Deferred, to allow the AC to weigh in, or to later discussion for entire W3C strategy and investigation during specification development.
-* 4 were Rejected without change mage.
+* 3 were Deferred, to later discussion for entire W3C strategy and investigation during specification development.
+* 1 was Declined, to allow the AC to weigh in
+* 3 were Rejected without change mage.
 * 2 were Won't fix
-* 3 XXX
 
 ## Horizontal reviews
 
@@ -70,7 +71,11 @@ and provided PRs for 4 points.
 **Response** The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
 the WG discussed on additional change over the PR but did not reach WG consensus. 
 
-**Resolution** The draft charter has been updated following TAG proposal with adding amended text 
+**Resolution** 
+The Working Group has added expected progress status for these deliverables to the charter and 
+updated the "Status of this Document" section to provide clarity for developers and implementers.
+
+And the draft charter has been updated following TAG proposal with adding amended text 
 as `including for security and privacy enhancements`
 to enable modification of adding new feature specifically related to security and privacy enhancements, 
 at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818), 
@@ -82,7 +87,12 @@ at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818),
 **Response** The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
 the WG discussed on additional change over the PR, but did not resolved. 
 
-**Resolution** The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
+**Resolution**
+The Working Group is committed to making appropriate tradeoffs between use cases and risks of abuse, as demonstrated by productive collaborations with privacy and security researchers and horizontal groups. This is codified in the Motivation and Background section.
+
+The Working Group continues to engage with non-participating browser engines as appropriate per the W3C Process.
+
+The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
 to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
 by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 
@@ -94,7 +104,12 @@ by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 to add text not limited to the Vibration specification, but even further in relateion to TAG point 1, 
 the WG did not reached a concensus to accept or reject the PR.
 
-**Resolution** The draft charter has been updated following TAG porposal 
+**Resolution**
+The Working Group continues to follow the W3C Process when transitioning its deliverables from one maturity stage to another.
+
+The process changes drafted by the TAG are in the purview of the Process CG and the Advisory Board, to be discussed therein as appropriate. The Working Group does not adopt the proposed changes to the charter to ensure cohesion, separation of concerns and broad membership support for the procedures that govern the Working Groups.
+
+The draft charter has been updated following TAG porposal 
 with adding amended text to enable bringing specifications into CG as incubation along with publication as Discontinued Draft, 
 for making path clearer to continue incubation but not as completed end state, 
 by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
@@ -126,11 +141,14 @@ Christian Liebel confirmed [this point 4 has been resolved with set of PRs](http
 * https://github.com/w3c/ambient-light/pull/93
 
 
-#### Web Serial in tentative deliverables - Deferred
+#### Web Serial in tentative deliverables - Declined
 
 > We're concerned by the appearance of Web Serial in the [Tentative Deliverables](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html#tentative). At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead.
 
-**Response** Conversation held in [email thread](https://lists.w3.org/Archives/Public/www-archive/2026May/0000.html), 
+**Response** 
+The group has consensus to take up Mozilla's proposal to add Web Serial and other related specifications as a Tentative Deliverable in this Working Group. We also note that Mozilla has also started a parallel effort to create a WHATWG workstream for peripheral APIs. This may offer an alternative path for a forum that all implementers are comfortable joining.
+
+Conversation held in [email thread](https://lists.w3.org/Archives/Public/www-archive/2026May/0000.html), 
 no conclusion has made. 
 
 ### Other feedbacks on TAG review
@@ -162,7 +180,7 @@ no conclusion has made.
 > 
 > cc @reillyeon @jyasskin @anssiko @himorin
 
-by Marcos Cáceres, [w3c/charte-drafts #784](https://github.com/w3c/charter-drafts/pull/784)
+by Marcos Cáceres, [w3c/charte-drafts PR #784](https://github.com/w3c/charter-drafts/pull/784)
 
 **Resolution** Jeffrey Yasskin noted on this change that 
 `Here are my current thoughts on the proposal in this PR. This is not TAG consensus—it's just me so far. 
@@ -183,33 +201,6 @@ to come up in future design reviews for the individual specifications:
 > * Are the signals in the Battery API still the right ones to help websites help users achieve their goals? Would a "please reduce power use" signal be sufficient, with the UA in charge of deciding how the precise battery level and charging state contribute to that signal?
 
 **Response** The DAS WG noted these comments and continue onversation during further design review over each specification.
-
-#### Support level in status of specifications - Rejected
-
-> Status update: to implement the TAG's request that "each document's support level should be in its SotD section," I opened 11 PRs adding `.advisement` boxes to the SotD of each DAS WG spec. They have since been closed without discussion:
-> 
-> - [w3c/sensors#492](https://github.com/w3c/sensors/pull/492) — Generic Sensor API
-> - [w3c/accelerometer#84](https://github.com/w3c/accelerometer/pull/84)
-> - [w3c/gyroscope#65](https://github.com/w3c/gyroscope/pull/65)
-> - [w3c/magnetometer#77](https://github.com/w3c/magnetometer/pull/77)
-> - [w3c/ambient-light#92](https://github.com/w3c/ambient-light/pull/92)
-> - [w3c/orientation-sensor#86](https://github.com/w3c/orientation-sensor/pull/86)
-> - [w3c/proximity#62](https://github.com/w3c/proximity/pull/62)
-> - [w3c/compute-pressure#318](https://github.com/w3c/compute-pressure/pull/318)
-> - [w3c/battery#70](https://github.com/w3c/battery/pull/70)
-> - [w3c/device-posture#172](https://github.com/w3c/device-posture/pull/172)
-> - [w3c/vibration#57](https://github.com/w3c/vibration/pull/57)
-> 
-> For charter-level text, [charter-drafts#770](https://github.com/w3c/charter-drafts/pull/770) is in progress. [charter-drafts#784](https://github.com/w3c/charter-drafts/pull/784) proposes specific text addressing the TAG's concerns on SotD signalling, Vibration, and Generic Sensor framing, intended to land alongside #770. The remaining concerns are tracked in [#780](https://github.com/w3c/charter-drafts/issues/780), [#781](https://github.com/w3c/charter-drafts/issues/781), [#782](https://github.com/w3c/charter-drafts/issues/782), and [#783](https://github.com/w3c/charter-drafts/issues/783).
-> 
-> The TAG's concern that each document's support level should be in its SotD section remains open at the spec level, pending WG discussion.
-
-by Marcos Cáceres, in two comments ([first](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4159936835), 
-and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4163174410)) at w3ctag/design-reviews #1187.
-Also the same text has been posted by the same person to w3c/strategy #530 at 
-[first](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174) and [second](https://github.com/w3c/strategy/issues/530#issuecomment-4163144358).
-
-**Response** the DAS WG closed opened PRs without merging for ongoing discussion during continuing charter refinement phase
 
 ## Other Strategy Issue Feedback
 
