@@ -27,6 +27,10 @@ by Ruoxi Ran, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues
 
 by Simone Onofri, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-3848628218)
 
+**Response** The DAS WG appreciate the comment, and described situation in 
+[w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-4569236084), that these are 
+[captured in Generic Sensors specification](https://w3c.github.io/sensors/#security-and-privacy) for sensor API specifications.
+
 ### Privacy - Noted
 
 > No concerns when discussed among chairs
@@ -73,7 +77,7 @@ the WG discussed on additional change over the PR, but did not resolved.
 
 **Resolution** The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
 to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
-by [w3c/charter-drafts PR #821]
+by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 
 #### Vibration API council concern - XXX
 
@@ -86,7 +90,7 @@ the WG did not reached a concensus to accept or reject the PR.
 **Resolution** The draft charter has been updated following TAG porposal 
 with adding amended text to enable bringing specifications into CG as incubation along with publication as Discontinued Draft, 
 for making path clearer to continue incubation but not as completed end state, 
-by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
+by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
 
 #### Support level in status section of specification - Accepted
 
@@ -292,6 +296,90 @@ by Marcos Cáceres, [w3c/charter-drafts #783](https://github.com/w3c/charter-dra
 **Response** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
 We note this disagreement on this resolution. 
 
+#### Implementation across platform families - Deferred 
+
+> Posting as W3C Member (not TAG Member).
+> 
+> The [DAS WG 2026 charter](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html) includes a number of specifications that are not implemented on all major platforms. The charter does not address whether these specifications are expected to be portable across platform families, or what cross-engine support means when some platforms do not implement them.
+> 
+> **Existing sensor specifications and the Generic Sensor architecture**
+> 
+> Accelerometer, Gyroscope, Magnetometer, Ambient Light Sensor, Proximity Sensor, and Orientation Sensor each extend the [Generic Sensor](https://www.w3.org/TR/generic-sensor/) API. Per MDN Browser Compat Data: Accelerometer, Gyroscope, and Orientation Sensor ship in Chrome (67+) only; Magnetometer and Ambient Light Sensor are in Chrome behind a flag; Proximity Sensor has no implementation in any browser (no BCD entry exists). None are implemented in Firefox or Safari.
+> 
+> Meanwhile, [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) covers the primary orientation and motion detection use cases with multi-engine support: per BCD, DeviceOrientationEvent ships in Chrome 7+, Edge 12+, Firefox 6+, Safari 17+ (including iOS Safari 4.2+). DeviceMotionEvent ships in Chrome 31+, Edge 12+, Firefox 6+, Safari 17+ (including iOS Safari 4.2+).
+> 
+> The Generic Sensor stack provides additional capabilities beyond Device Orientation (raw sensor readings, standalone Magnetometer access, Ambient Light, Proximity), but the charter does not explain which use cases require these additional capabilities, or why both architectures need to continue receiving new features given that the higher-level API has achieved broader cross-engine adoption.
+> 
+> The TAG's review ([design-reviews#1187](https://github.com/w3ctag/design-reviews/issues/1187)) raised this concern directly:
+> 
+> > "We're concerned to see the Chromium-only Accelerometer, Gyroscope, and Orientation Sensor specifications in the charter, now that the Device Orientation and Motion spec is in Baseline."
+> 
+> **Tentative and proposed new deliverables**
+> 
+> Web Serial is a tentative deliverable. [PR #786](https://github.com/w3c/charter-drafts/pull/786) proposes adding Web Bluetooth and WebUSB as new tentative deliverables alongside Web Serial (which was already listed and is repositioned in the PR). These APIs expose raw transport protocols that are hardware-dependent by design. Per BCD, they ship only in Chromium-based browsers: Web Bluetooth (Chrome 70, Chrome Android 56), WebUSB (Chrome 61, Chrome Android 61), Web Serial (Chrome 89, Chrome Android 138), WebHID (Chrome 89, no Android support). Safari and Firefox do not implement them (Firefox BCD shows Web Serial at version 151, which is currently in beta, not yet in stable release).
+> 
+> The W3C [Ethical Web Principles](https://www.w3.org/TR/ethical-web-principles/#multi) (§2.11) state:
+> 
+> > "We will not create web technologies that encourage the creation of websites that work only in one browser, or only on particular hardware."
+> 
+> Does the charter expect these specifications to be portable across platform families? If not, how does the WG reconcile this with the principle above?
+
+by Marcos Cáceres, [w3c/charter-drafts #799](https://github.com/w3c/charter-drafts/issues/799)
+
+**Response** The DAS WG describes current implementation situation for sensor APIs, and demonstrated possibility of 
+implementation accross multiple platforms like over CPUs and SoCs.
+
+#### Potential security risk on sandbox escape via device APIs - Noted
+
+> Posting as W3C Member (not TAG Member).
+> 
+> The [DAS WG 2026 charter](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html) states the WG is committed to "security and privacy focused" specification development and that:
+> 
+> > "APIs in scope that expose sensitive data will define normative mitigations to address any known security and privacy threats."
+> 
+> ["Peripheral Instinct: How External Devices Breach Browser Sandboxes"](https://misc0110.net/web/files/peripheralinstinct_www25.pdf) (Trampert et al., CISPA Helmholtz Center for Information Security and Universität des Saarlandes; WWW '25, ACM ISBN 979-8-4007-1274-6/25/04) is a peer-reviewed paper studying WebHID, WebUSB, Web Serial, and Web MIDI. From the abstract:
+> 
+> > "we build several full-chain exploits, leading to arbitrary code execution on the victim system, circumventing the browser sandbox."
+> 
+> Of the four APIs studied, Web Serial is a tentative deliverable of this WG, and WebUSB is proposed as a tentative deliverable via [PR #786](https://github.com/w3c/charter-drafts/pull/786). WebHID and Web MIDI are not in the charter but belong to the same class of device browser APIs.
+> 
+> Findings relevant to this charter:
+> 
+> **Web Serial** (tentative deliverable): the paper identifies "several potential threats that can be exploited by a malicious actor that can control a modem via the Web Serial API" (§7). These include: dialing or sending SMS to premium-rate numbers; accessing "sensitive information such as two-factor authentication codes or passwords" contained in SMS messages which "can even be intercepted by forwarding SMS messages and calls to the attacker's number" (§7); GPS tracking ("many modems contain a GPS module that allows the modem to determine its location, which allows tracking a user's location"); and permanent SIM card lockout ("PIN and PUK are entered using AT commands, which allows an attacker to perform a permanent DoS that locks the SIM card").
+> 
+> **WebHID**: "We investigate the features of 22 devices from 15 vendors" and found "reprogrammable on-board macro functionality supported by 14 devices" (§5.1.1). Configuration of the shortest malicious payload takes as little as ~20 ms (Table 2, Logitech G500s). The researchers built full exploit chains achieving arbitrary code execution on Windows (§6.1), macOS (Appendix D.2), and Linux (Appendix D.1).
+> 
+> **WebUSB**: the researchers "flash custom firmware on peripheral devices, such as the blink(1)" (a USB RGB LED notification light), "completely overtaking and repurposing the device" (§4.1). The paper describes the general attack pattern: "a non-input device can be maliciously repurposed as a keyboard, allowing attackers to inject arbitrary keystrokes into the system."
+> 
+> **Web MIDI**: "we can flash firmware on MIDI devices to repurpose them for malicious use cases" (abstract), demonstrated on the Launchpad MK2 MIDI controller where they "successfully patch the firmware achieving arbitrary code execution on the device" (§4.1).
+> 
+> **Permission model**: the paper cites Hazhirpasand et al. (2020), who "convinced up to 95 % of users into granting permissions leveraging a browser game" (§3.3). The paper notes: "Once permitted, the site can interact with the device without further consent on future visits" and that "an attacker can leverage permissions granted to another site via a Cross-Site Scripting (XSS), website compromise, or domain re-registration" (§3.3).
+> 
+> The paper concludes:
+> 
+> > "browser security should not rely on the secure implementation of third-party hardware"
+> 
+> and notes that the API specifications:
+> 
+> > "shift the responsibility to (unprepared) device vendors"
+> 
+> These findings suggest the current mitigation approach (permission prompts and blocklists) is insufficient for the threat model these APIs create, in which the host is a potentially malicious website rather than a trusted operating system. The charter does not acknowledge this changed threat model or explain how the WG's security approach addresses the class of attacks described above.
+> 
+> For reference, WebKit's published positions on the affected APIs:
+> - WebUSB: [oppose](https://github.com/WebKit/standards-positions/issues/68) (privacy, security, device independence)
+> - Web Bluetooth: [oppose](https://github.com/WebKit/standards-positions/issues/570) (privacy, security, device independence)
+> - Web Serial: [oppose](https://github.com/WebKit/standards-positions/issues/199) (privacy, security, device independence, use cases, venue)
+> - WebHID: [no position issued](https://github.com/WebKit/standards-positions/issues/510) (venue concern noted)
+
+by Marcos Cáceres, [w3c/charter-drafts #798](https://github.com/w3c/charter-drafts/issues/798)
+
+**Response** In specifications in CG space, these attack scenarios are largely acknowledged by the 
+"Security Considerations" sections of these specifications.
+
+**Resolution** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
+We note this disagreement on this resolution. 
+
+
 #### Remove potential joint deliverables for three Peripheral APIs - Accepted
 
 > Update the notes that indicate Web Bluetooth, Web Serial, and Web USB may become joint deliverables with the WebApps WG, since WebApps is unable to accept any more specifications at this time.
@@ -303,6 +391,15 @@ by Léonie Watson, [w3c/charter-drafts #810](https://github.com/w3c/charter-draf
 **Response** The draft charter has been updated by [w3c/charter-drafts PR #812](https://github.com/w3c/charter-drafts/pull/812) to align with this comment. 
 
 ### Comments related to implementation status and language
+
+#### Revise DAS WG charter with clearer implementation status - Accepted
+
+> Each deliverable gets an "implementation status" and "expected progress" section to document the current state as of the time of chartering and the work the group will do to advance each deliverable.
+
+by Reilly Grant, [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770)
+
+**Resolution** Although this change does not satisfy concerns of the TAG, this change has been integrated into 
+the draft DAS charter for better explanation. 
 
 #### Support level of specification in each status section - Accepted
 
@@ -327,5 +424,97 @@ by Léonie Watson, [w3c/charter-drafts #810](https://github.com/w3c/charter-draf
 by Marcos Cáceres, [issue raised as w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780)
 
 **Response** Referenced PR [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770) has been integrated into the draft charter.
+
+#### Implementation report and WG plan for Vibration API - Won't fix
+
+> **Context:** This issue tracks concerns from both the W3C Council report and the TAG review of the 2026 DAS WG charter.
+> 
+? **W3C Council recommendation** (https://www.w3.org/2025/08/vibration2-council-report.html#recommendations, verbatim):
+> 
+> > "We recommend that the WG document what implementation experience the API currently has (issue 33). In the next rechartering process for the DAS WG, we anticipate that some W3C members will object to keeping a deliverable without a concrete plan and timeline for shipping in multiple major browser engines. We... recommend that the WG document the plan it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable."
+> 
+> **TAG review** (w3ctag/design-reviews#1187, charter-affecting section, verbatim):
+> 
+> > "We couldn't find such a plan in this rechartering effort, and we encourage the WG to write such plans for each single-engine specification, in order to head off this possible formal objection."
+> 
+> The current PR #770 adds the following "Expected progress" text for Vibration:
+> 
+> > "The Working Group will update the specification to modern web platform design principles and device haptics capabilities and continue to solicit feedback."
+> 
+> This does not constitute the plan the Council recommended. It contains no rationale, no criteria, and no timeline. Additionally, w3c/vibration#33 ("Update implementation report"), cited directly in the Council report, remains open as of this writing.
+> 
+> Before this charter proceeds to AC review, the charter should:
+> 1. Reference a publicly available document describing the WG's concrete plan for Vibration, with the rationale the Council requested.
+> 2. Commit to resolving w3c/vibration#33 (implementation report) before or during the charter review period.
+> 
+> *Note: The plan document itself need not appear in the charter — as discussed in PR #770, a reference to a published document is sufficient.*
+> 
+> Related: #770, w3ctag/design-reviews#1187, w3c/vibration#33
+
+by Marcos Cáceres, [issue raised as w3c/charter-drafts #781](https://github.com/w3c/charter-drafts/issues/781)
+
+**Response** Part of concern resolved by implementation report has been added by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55).
+
+### Other comments
+
+#### Wrong listing of geolocation specification - Accepted
+
+> GeoLocation is under active development, so it should be moved out of the maintenance section into the normative specs section.
+> 
+> @himorin , @anssiko, @reillyeon, @w3c/marcomm, @siusin  
+
+by Léonie Watson, [w3c/charter-drafts #811](https://github.com/w3c/charter-drafts/issues/811)
+
+**Response** Error fixed by [w3c/charter-drafts PR #813](https://github.com/w3c/charter-drafts/pull/813)
+
+#### Mentioning Haptics in DAS charter - Accepted
+
+> **Note:** This concern is raised by @marcoscaceres in his personal capacity as a W3C member, not on behalf of the TAG. The TAG review (w3ctag/design-reviews#1187) was published before PR #770 introduced this specific language.
+> 
+> PR #770 adds the following "Expected progress" text for Vibration:
+> 
+> > "The Working Group will update the specification to modern web platform design principles and **device haptics capabilities** and continue to solicit feedback."
+> 
+> The phrase "device haptics capabilities" is problematic. The current Web Applications WG 2026 charter (https://www.w3.org/2026/01/webappswg-charter-2026.html) explicitly includes in its scope:
+> 
+> > "Haptic input devices and their emitted events and/or data."
+> 
+> And lists as a WICG deliverable:
+> 
+> > "Haptics — An API allowing web applications to interface with haptic actuators, such as vibration motors found on gamepad controllers, and potentially other devices that provide haptic feedback."
+> 
+> Haptics is not listed as a joint deliverable between DAS and WebApps in either the current WebApps charter or the DAS draft charter. WebApps and the Immersive Web CG are also actively exploring related work (see https://github.com/immersive-web/proposals/issues/92).
+> 
+> The DAS charter text must either:
+> 1. Confirm that Vibration remains a minimal primitive and explicitly remove the "device haptics capabilities" language, or
+> 2. Explicitly establish a joint deliverable arrangement with the Web Applications WG for any haptics-related work, with a clear statement of scope differentiation.
+> 
+> As written, the language signals unilateral expansion into an area that is already in scope of another WG, without a coordination model.
+> 
+> Additionally, the TAG review (charter-affecting section) specifically called out Vibration for needing better documentation of user needs and tradeoffs, citing w3c/vibration#45. That issue ("Create an explainer") remains open with no progress.
+> 
+> Related: #770, w3ctag/design-reviews#1187, w3c/vibration#45, https://github.com/immersive-web/proposals/issues/92
+
+by Marcos Cáceres, [issue raised as w3c/charter-drafts #782](https://github.com/w3c/charter-drafts/issues/782)
+
+**Response** The draft DAS charter has been updated by [w3c/charter-drafts #807](https://github.com/w3c/charter-drafts/pull/807). 
+
+#### Clarify haptics scope - Rejected
+
+Adding `semantic haptic feedback` into Scope, and `Gamepad haptics are out of scope for this WG` into Out of Scope
+
+by Anssi Kostiainen, [w3c/charter-drafts PR #816](https://github.com/w3c/charter-drafts/pull/816)
+
+**Resolution** This change has not been integrated into the draft DAS charter.
+
+#### Adding Web Haptics API, Revise DAS WG charter with a new deliverable proposed by Microsoft - Deferred
+
+Adding `Web Haptics API` into tentative deliverables.
+
+by Anssi Kostiainen, [w3c/charter-drafts PR #795](https://github.com/w3c/charter-drafts/pull/795)
+
+**Resolution** [Discussion has been postponed](https://github.com/w3c/charter-drafts/pull/795#issuecomment-4502569096), and 
+this change has not been integrated into the draft DAS charter. 
+And related issue `Venue and scope: Web Haptics API` has been filed at [w3c/charter-drafts 802#](https://github.com/w3c/charter-drafts/issues/802).
 
 
