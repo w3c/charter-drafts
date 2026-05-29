@@ -128,6 +128,42 @@ no conclusion has made.
 
 ### Other feedbacks on TAG review
 
+#### Address TAG review and Council recommendation feedback - Rejected
+
+> This PR applies the charter text suggestions posted in #770 (comment), addressing outstanding TAG review and W3C Council concerns. It is intended to be merged into PR #770 or land alongside it.
+> 
+> ## Changes
+> 
+> **Success Criteria — SotD signaling commitment** (addresses TAG charter concern, w3ctag/design-reviews#1187):
+> Adds three paragraphs committing the WG to: signal implementation status and trajectory in each spec's SotD; clearly label the role of single-engine specs; and review limited-support specs at least annually with publicly documented outcomes. Closes #780.
+> 
+> **Vibration — Expected progress** (addresses TAG charter concern + Council recommendation):
+> Replaces the vague "device haptics capabilities" text with a concrete commitment to publish the Council-recommended plan before AC review, with a visible `<i class="todo">` placeholder URL that must be filled in before the charter proceeds to AC review. Also requires the updated implementation report (w3c/vibration#33) to be publicly available before AC review opens. Coordinates haptics work with the Web Applications WG. Addresses #781, #782.
+> 
+> **Generic Sensor — Expected progress**:
+> Removes "infrastructure for future sensor APIs" framing. Adds commitment not to charter new Generic Sensor-derived deliverables without first documenting the architectural rationale relative to single-layer API alternatives. HTML comment in source notes the grounding and TAG context.
+> 
+> **Ambient Light Sensor + Proximity Sensor — Expected progress**:
+> Replaces vague "collect feedback and may publish a WD" with: proactively seek published implementer positions from non-participating engines, publish a summary of responses (including non-responses), and document a trajectory decision publicly.
+> 
+> ## Tracking issues
+> 
+> - #780 — SotD signaling commitment
+> - #781 — Vibration Council plan before AC review
+> - #782 — Vibration haptics scope conflict with WebApps WG
+> - #783 — Web Serial venue (not addressed in this PR — tracked separately)
+> 
+> cc @reillyeon @jyasskin @anssiko @himorin
+
+by Marcos Cáceres, [w3c/charte-drafts #784](https://github.com/w3c/charter-drafts/pull/784)
+
+**Resolution** Jeffrey Yasskin noted on this change that 
+`Here are my current thoughts on the proposal in this PR. This is not TAG consensus—it's just me so far. 
+We'll be discussing this in a TAG breakout later today, and hopefully we can report some more-unanimous position after that.`, 
+and this change has been closed without integrating per other changes proposed by the TAG in consensus 
+([w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), [w3c/charter-drafts PR #80](https://github.com/w3c/charter-drafts/pull/808)
+and [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809)).
+
 #### Flagging design review concerens - Noted
 
 In parallel to 5 points of concerns, the TAG made a comment in the same post as:
