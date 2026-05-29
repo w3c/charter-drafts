@@ -12,6 +12,12 @@ Comments were received through:
 ## Executive summary
 
 
+* 9 were Accepted, and resulted in charter changes.
+* 5 were Noted, without requiring charter change.
+* 4 were Deferred, to allow the AC to weigh in, or to later discussion for entire W3C strategy and investigation during specification development.
+* 4 were Rejected without change mage.
+* 2 were Won't fix
+* 3 XXX
 
 ## Horizontal reviews
 
