@@ -202,64 +202,6 @@ to come up in future design reviews for the individual specifications:
 
 **Response** The DAS WG noted these comments and continue onversation during further design review over each specification.
 
-## Other Strategy Issue Feedback
-
-### Vibration API single implementation issue - Deferred, Action taken within another Accepted comment
-
-> From the Vibration Council's [recommendations](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations): 
-> 
-> > We recommend that the WG document what [implementation experience](https://www.w3.org/policies/process/#implementation-experience) the [Vibration] API currently has ([issue 33](https://github.com/w3c/vibration/issues/33)). In the next rechartering process for the DAS WG, **we anticipate that some W3C members will object to keeping a deliverable without a concrete plan and timeline for shipping in multiple major browser engines.** ... we recommend that the WG document the plan it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable.
-> 
-> I don't believe this has been done yet. If the working group wants to avoid Formal Objections to the Charter, addressing the above would be a good start. Similarly, DAS should expect Formal Objections if the TAG's feedback also goes unaddressed. 
-> 
-> If you'd like to discuss how to address the above and avoid Formal Objections, happy to chat. 
-
-by Marcos Cáceres, [comment at w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-3917515554)
-
-**Response** Action has not taken directly to this comment, but implementation report has been published in other PR and also deffered to TAG concern point 3
-
-### Vibration API implementation report - Accepted
-
-> @plehegar @tidoust @himorin — a further development to flag.
-> 
-> [w3c/vibration#55](https://github.com/w3c/vibration/pull/55) is the implementation report the W3C Council recommended in its [August 2025 report](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations):
-> 
-> "We recommend that the WG document what implementation experience the API currently has (issue 33)."
-> 
-> That PR was closed today by @anssiko without merging and without WG discussion, citing (1) EFL WebKit as additional implementation experience, and (2) the PR being "misplaced". Both are rebutted in [a comment on the closed PR](https://github.com/w3c/vibration/pull/55#issuecomment-4205989183): the ewebkit/webkit fork is a discontinued snapshot last updated July 2017 covering end-of-life hardware; w3c/test-results/vibration contains raw Chrome/Firefox data from 2014, not an implementation report.
-> 
-> As PR author I have pull-only access to w3c/vibration and cannot reopen the PR myself. The closure leaves [vibration#33](https://github.com/w3c/vibration/issues/33) open and the Council's condition unmet — which is tracked as a gate condition for this charter in [charter-drafts#781](https://github.com/w3c/charter-drafts/issues/781).
-> 
-> This follows the earlier pattern of [11 SotD PRs being closed without discussion](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174). Can W3C staff weigh in on whether closing a PR that directly fulfils a Council recommendation, without WG discussion, is consistent with the process?
-
-by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-4206018777)
-
-and
-
-> Following up on the vibration#55 closure flagged in my [previous comment](https://github.com/w3c/strategy/issues/530#issuecomment-4206018777).
-> 
-> @anssiko's most recent response directs me to regenerate the report using the [w3c/test-results toolchain](https://github.com/w3c/test-results) and submit it there instead. I've responded in [the PR](https://github.com/w3c/vibration/pull/55#issuecomment-4210563389) explaining why that wouldn't meet the Council's requirement: the generated format produces pass/fail percentages, but [W3C Process §6.3.2](https://www.w3.org/policies/process/#implementation-experience) requires a document that addresses whether implementations are independent, publicly deployed, created by non-authors, and whether difficulties have been reported. A score on a given date answers none of those questions.
-> 
-> I've also filed [w3c/test-results#232](https://github.com/w3c/test-results/issues/232) proposing that the toolchain either be updated to include §6.3.2 narrative sections, or that its README be clarified to distinguish conformance testing from REC advancement implementation reports.
-> 
-> The substantive question for the Team remains: the PR fulfils a Council recommendation verbatim ("document what implementation experience the API currently has"), and it has been closed without WG discussion. Can the W3C Team advise on the path forward?
-
-by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-4210649633)
-
-**Response** Vibration API Implementation Report has been implemented by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55) merged.
-
-### Web Bluetooth, Web Serial, WebUSB as tentative deliverables - Won't fix
-
-> Posting as W3C Member (not TAG Member).
-> 
-> Update: [PR #786](https://github.com/w3c/charter-drafts/pull/786) (adding Web Bluetooth, Web Serial, and WebUSB as tentative deliverables) was merged on May 5. The wide review concerns listed above ([#798](https://github.com/w3c/charter-drafts/issues/798), [#799](https://github.com/w3c/charter-drafts/issues/799), [#771](https://github.com/w3c/charter-drafts/issues/771), [#772](https://github.com/w3c/charter-drafts/issues/772), [#773](https://github.com/w3c/charter-drafts/issues/773)) and the TAG's open review ([design-reviews#1187](https://github.com/w3ctag/design-reviews/issues/1187)) remain unaddressed.
-> 
-> @plehegar @tidoust @himorin — can the Team clarify how these concerns will be addressed during the refinement phase?
-
-by Marcos Cáceres, [comment to w3c/strategy #530](https://github.com/w3c/strategy/issues/530#issuecomment-4380513758)
-
-**Response** The Team decided to include all five peripheral APIs specifications to tentative deliverables.
-
 ## Feedback provided to w3c/charter-drafts
 
 ### Peripheral APIs
