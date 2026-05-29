@@ -11,11 +11,17 @@ Comments were received through:
 
 ## Executive summary
 
+All comments received during the charter refinement phase of the Devices and Sensors Working Group charter 
+have been discussed, and some resulted to charter changes, some are marked as continuing discussion for 
+later discussion for entire W3C strategy or to allow the AC to weigh in discussion,  
+and some have not been rejected without change made. 
+
+Of the 19 comments (in category) received:
 
 * 5 were Accepted, and resulted in charter changes.
 * 3 were Accepted with amended text, and resulted in charter changes.
 * 6 were Noted, without requiring charter change.
-* 1 was Deferred, to later discussion for entire W3C strategy and investigation during specification development.
+* 1 was Deferred, to later discussion for entire W3C strategy.
 * 1 was Declined, to allow the AC to weigh in.
 * 2 were Rejected without change mage.
 * 1 was Won't fix.
