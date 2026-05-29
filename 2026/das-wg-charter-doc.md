@@ -12,13 +12,13 @@ Comments were received through:
 ## Executive summary
 
 
-* 9 were Accepted, and resulted in charter changes.
-* 3 were Accepted with amended text
-* 5 were Noted, without requiring charter change.
-* 3 were Deferred, to later discussion for entire W3C strategy and investigation during specification development.
-* 1 was Declined, to allow the AC to weigh in
-* 3 were Rejected without change mage.
-* 2 were Won't fix
+* 5 were Accepted, and resulted in charter changes.
+* 3 were Accepted with amended text, and resulted in charter changes.
+* 6 were Noted, without requiring charter change.
+* 1 was Deferred, to later discussion for entire W3C strategy and investigation during specification development.
+* 1 was Declined, to allow the AC to weigh in.
+* 2 were Rejected without change mage.
+* 1 was Won't fix.
 
 ## Horizontal reviews
 
@@ -133,12 +133,13 @@ by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
 > At the same time, we recognize that this is the only status the Process defines for patent protection of these kinds of specifications. At a minimum, each document's support level should be in its SotD section, but ideally the WG would find a way to ensure that _developers reading a specification can tell at a glance which kind of document they're reading_.
 
 In addition to concern raised in TAG comment, several comments to w3ctag/design0reviews and w3c/strategy 
-has been made along with PRs to the DAS WG repositories by Marcos Cáceres 
+has been made along with PRs to the DAS WG repositories by Marcos Cáceres, 
 ([first](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4159936835), 
-and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4163174410)) at w3ctag/design-reviews #1187, 
+and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4163174410) at w3ctag/design-reviews #1187, 
 and the same text posted as 
 [first](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174) and [second](https://github.com/w3c/strategy/issues/530#issuecomment-4163144358)
 at w3c/strategy #530), and PRs have been closed without merging. 
+
 In parallel, issue [w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780) has been raised by Marcos Cáceres to track this concern, 
 and the draft DAS WG charter has been edited to include inplementation status and 
 expected progress by [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770).
