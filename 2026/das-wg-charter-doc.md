@@ -68,13 +68,14 @@ and provided PRs for 4 points.
 
 > We're concerned to see the Chromium-only Accelerometer, Gyroscope, and Orientation Sensor specifications in the charter, now that the [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec is in Baseline. It makes sense to maintain non-consensus specifications while websites switch over to equivalent consensus APIs, but the charter should commit to only adding new features to the consensus versions. If there's not enough consensus on the new features to incorporate them into the core [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec, this WG could develop an extension specification that allows websites to mostly use the Baseline feature, with a few engine-specific extensions.
 
-**Response** The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
+**Response**
+The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
 the WG discussed on additional change over the PR but did not reach WG consensus. 
 
-**Resolution** 
 The Working Group has added expected progress status for these deliverables to the charter and 
 updated the "Status of this Document" section to provide clarity for developers and implementers.
 
+**Resolution** 
 And the draft charter has been updated following TAG proposal with adding amended text 
 as `including for security and privacy enhancements`
 to enable modification of adding new feature specifically related to security and privacy enhancements, 
@@ -84,14 +85,15 @@ at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818),
 
 > We want to ensure that the other specifications fill clear user needs and are making appropriate tradeoffs between those user needs and any potential abuse of the APIs. In many WGs, we can rely on all 3 browser engines to check this, but since this WG does not currently include participation from all major browser engines, we're more concerned here. Could you add this goal to the charter for each of the specifications in that class? We see, for example, https://github.com/w3c/vibration/issues/45 to do this for Vibration, but it would be good to use the charter to ensure it gets done.
 
-**Response** The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
+**Response**
+The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
 the WG discussed on additional change over the PR, but did not resolved. 
 
-**Resolution**
 The Working Group is committed to making appropriate tradeoffs between use cases and risks of abuse, as demonstrated by productive collaborations with privacy and security researchers and horizontal groups. This is codified in the Motivation and Background section.
 
 The Working Group continues to engage with non-participating browser engines as appropriate per the W3C Process.
 
+**Resolution**
 The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
 to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
 by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
@@ -105,18 +107,19 @@ Similar comments have been added to w3c/strategy #530, such as
 [comment](https://github.com/w3c/strategy/issues/530#issuecomment-4206018777),
 and [comment](https://github.com/w3c/strategy/issues/530#issuecomment-4210649633) by Marcos Cáceres. 
 
-**Response** The DAS WG resolved to add new implementation report for recently started Recommendation track specification 
+**Response**
+The DAS WG resolved to add new implementation report for recently started Recommendation track specification 
 from Candidate Resommendation Snapshot by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55). 
 
 The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
 to add text not limited to the Vibration specification, but even further in relateion to TAG point 1, 
 the WG did not reached a concensus to accept or reject the PR.
 
-**Resolution**
 The Working Group continues to follow the W3C Process when transitioning its deliverables from one maturity stage to another.
 
 The process changes drafted by the TAG are in the purview of the Process CG and the Advisory Board, to be discussed therein as appropriate. The Working Group does not adopt the proposed changes to the charter to ensure cohesion, separation of concerns and broad membership support for the procedures that govern the Working Groups.
 
+**Resolution**
 The draft charter has been updated following TAG porposal 
 with adding amended text to enable bringing specifications into CG as incubation along with publication as Discontinued Draft, 
 for making path clearer to continue incubation but not as completed end state, 
@@ -159,6 +162,11 @@ Christian Liebel confirmed [this point 4 has been resolved with set of PRs](http
 * https://github.com/w3c/gyroscope/pull/66
 * https://github.com/w3c/orientation-sensor/pull/87
 * https://github.com/w3c/ambient-light/pull/93
+
+Also the group maintains implementation status and standards positions in its 
+[wiki](https://www.w3.org/wiki/DAS/Implementations) and refers to 
+[wpt.fyi](https://wpt.fyi/) for test results. 
+These resources are referenced from the specification headers, as proposed by the TAG.
 
 
 #### Web Serial in tentative deliverables - Declined
