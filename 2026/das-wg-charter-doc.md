@@ -145,6 +145,10 @@ Christian Liebel confirmed [this point 4 has been resolved with set of PRs](http
 
 > We're concerned by the appearance of Web Serial in the [Tentative Deliverables](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html#tentative). At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead.
 
+In addition to concern raised at the TAG point 5, 
+[w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783) has been opened by Marcos Cáceres 
+which has [marked as not a TAG consensus comment by Jeffrey Yasskin](https://github.com/w3c/charter-drafts/issues/783#issuecomment-4171422602).
+
 **Response** 
 The group has consensus to take up Mozilla's proposal to add Web Serial and other related specifications as a Tentative Deliverable in this Working Group. We also note that Mozilla has also started a parallel effort to create a WHATWG workstream for peripheral APIs. This may offer an alternative path for a forum that all implementers are comfortable joining.
 
@@ -254,27 +258,6 @@ by Haik Aftandilian, [w3c/charter-drafts #772](https://github.com/w3c/charter-dr
 
 by Haik Aftandilian, [w3c/charter-drafts #773](https://github.com/w3c/charter-drafts/issues/773)
 
-#### Concern raised to Web Serial in tentative Deliverables - Rejected
-
-> **Context:** This issue tracks a concern raised in the TAG review of the 2026 DAS WG charter (w3ctag/design-reviews#1187).
-> 
-> The TAG review states *(charter-affecting section, verbatim)*:
-> 
-> > "We're concerned by the appearance of Web Serial in the Tentative Deliverables. At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead."
-> 
-> Issue #771 proposes moving Web Serial from Tentative Deliverable to full Deliverable based on Mozilla's intent to prototype. However, the TAG's concern is specifically about **venue** — which WG is the right home for this work — not solely about the number of implementations. Moving it to a full DAS deliverable without resolving the venue question does not address the TAG's concern; it reinforces it.
-> 
-> Before this charter proceeds to AC review, the charter should either:
-> 1. Document that the venue question has been discussed with the Web Applications WG and record the outcome, or
-> 2. Explicitly state that Web Serial will not advance to full Deliverable in DAS until the venue question is resolved, and commit to a process and timeline for making that decision.
-> 
-> Related: #770, #771, w3ctag/design-reviews#1187
-
-by Marcos Cáceres, [w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783)
-
-**Response** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
-We note this disagreement on this resolution. 
-
 #### Implementation across platform families - Noted
 
 > Posting as W3C Member (not TAG Member).
@@ -368,7 +351,7 @@ We note this disagreement on this resolution.
 
 > **Context:** This issue tracks concerns from both the W3C Council report and the TAG review of the 2026 DAS WG charter.
 > 
-? **W3C Council recommendation** (https://www.w3.org/2025/08/vibration2-council-report.html#recommendations, verbatim):
+> **W3C Council recommendation** (https://www.w3.org/2025/08/vibration2-council-report.html#recommendations, verbatim):
 > 
 > > "We recommend that the WG document what implementation experience the API currently has (issue 33). In the next rechartering process for the DAS WG, we anticipate that some W3C members will object to keeping a deliverable without a concrete plan and timeline for shipping in multiple major browser engines. We... recommend that the WG document the plan it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable."
 > 
@@ -406,7 +389,9 @@ by Léonie Watson, [w3c/charter-drafts #811](https://github.com/w3c/charter-draf
 
 **Response** Error fixed by [w3c/charter-drafts PR #813](https://github.com/w3c/charter-drafts/pull/813)
 
-#### Mentioning Haptics in DAS charter - Accepted
+#### Mentioning Haptics in DAS charter
+
+##### Remove `Haptics` from description of Vibration API - Accepted
 
 > **Note:** This concern is raised by @marcoscaceres in his personal capacity as a W3C member, not on behalf of the TAG. The TAG review (w3ctag/design-reviews#1187) was published before PR #770 introduced this specific language.
 > 
@@ -438,7 +423,7 @@ by Marcos Cáceres, [issue raised as w3c/charter-drafts #782](https://github.com
 
 **Response** The draft DAS charter has been updated by [w3c/charter-drafts #807](https://github.com/w3c/charter-drafts/pull/807). 
 
-#### Clarify haptics scope - Rejected
+##### Clarify haptics scope - Rejected
 
 Adding `semantic haptic feedback` into Scope, and `Gamepad haptics are out of scope for this WG` into Out of Scope
 
@@ -446,7 +431,7 @@ by Anssi Kostiainen, [w3c/charter-drafts PR #816](https://github.com/w3c/charter
 
 **Resolution** This change has not been integrated into the draft DAS charter.
 
-#### Adding Web Haptics API, Revise DAS WG charter with a new deliverable proposed by Microsoft - Deferred
+##### Adding Web Haptics API, Revise DAS WG charter with a new deliverable proposed by Microsoft - Deferred
 
 Adding `Web Haptics API` into tentative deliverables.
 
