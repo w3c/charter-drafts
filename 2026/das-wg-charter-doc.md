@@ -211,11 +211,14 @@ three specifications (out of five listed in whatwg/sg PR #264) has been proposed
 
 #### Proposals raised by Mozilla - Accepted
 
-**Resolution** The draft charter has been updated to include all three specifications proposed by issues to w3c/charter-drafts, 
+**Resolution**
+The draft charter has been updated to include all three specifications proposed by issues to w3c/charter-drafts, 
 and extended to 2 additional deliverables to allow the AC to weigh in, 
 by PRs [w3c/charter-drafts PR #786](https://github.com/w3c/charter-drafts/pull/786) and 
 [w3c/charter-drafts #820](https://github.com/w3c/charter-drafts/pull/820). 
 We note disagreement from Apple on this resolution. 
+
+These deliverables are not listed as joint deliverables with the Web Applications WG.
 
 ##### Web Serial API
 
@@ -359,50 +362,7 @@ by Marcos Cáceres, [w3c/charter-drafts #798](https://github.com/w3c/charter-dra
 We note this disagreement on this resolution. 
 
 
-#### Remove potential joint deliverables for three Peripheral APIs - Accepted
-
-> Update the notes that indicate Web Bluetooth, Web Serial, and Web USB may become joint deliverables with the WebApps WG, since WebApps is unable to accept any more specifications at this time.
-> 
-> @himorin , @anssiko, @reillyeon, @w3c/marcomm, @siusin  
-
-by Léonie Watson, [w3c/charter-drafts #810](https://github.com/w3c/charter-drafts/issues/810)
-
-**Response** The draft charter has been updated by [w3c/charter-drafts PR #812](https://github.com/w3c/charter-drafts/pull/812) to align with this comment. 
-
 ### Comments related to implementation status and language
-
-#### Revise DAS WG charter with clearer implementation status - Accepted
-
-> Each deliverable gets an "implementation status" and "expected progress" section to document the current state as of the time of chartering and the work the group will do to advance each deliverable.
-
-by Reilly Grant, [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770)
-
-**Resolution** Although this change does not satisfy concerns of the TAG, this change has been integrated into 
-the draft DAS charter for better explanation. 
-
-#### Support level of specification in each status section - Accepted
-
-> **Context:** This issue tracks a concern raised in the TAG review of the 2026 DAS WG charter (w3ctag/design-reviews#1187).
-> 
-> The TAG review states *(charter-affecting section, verbatim)*:
-> 
-> > "We would like the WG to find a way to signal the expected support level for each specification... At a minimum, each document's support level should be in its SotD section, but ideally the WG would find a way to ensure that *developers reading a specification can tell at a glance which kind of document they're reading*."
-> 
-> PR #770 adds implementation status text to the charter itself, which is a welcome step. However, the charter currently makes no commitment to reflect that status in the specifications that developers actually read.
-> 
-> The charter should include language along the following lines *(proposed in [#770 (comment)](https://github.com/w3c/charter-drafts/pull/770#discussion_r2881370853))*:
-> 
-> > The Working Group will ensure that each specification clearly communicates both its implementation status and its intended trajectory along the W3C Recommendation Track. At a minimum, the Status of This Document section of each specification will describe the current level of implementation support and whether the specification is expected to advance toward widely implemented Recommendation status.
-> >
-> > For specifications with limited or single-engine deployment, the Working Group will ensure that the specification clearly signals its role and intended direction — for example, whether it is an experimental abstraction, a transitional design that points developers toward a consensus alternative, or work with limited deployment serving as documentation.
-> >
-> > The Working Group will review specifications with limited implementation support at least annually to evaluate their progress, relevance, and intended trajectory, and will document the outcome of those evaluations publicly.
-> 
-> Related: #770, w3ctag/design-reviews#1187
-
-by Marcos Cáceres, [issue raised as w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780)
-
-**Response** Referenced PR [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770) has been integrated into the draft charter.
 
 #### Implementation report and WG plan for Vibration API - Won't fix
 
