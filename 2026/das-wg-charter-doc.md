@@ -21,7 +21,7 @@ Comments were received through:
 
 ## Horizontal reviews
 
-### Acceccibility - Noted
+### Accessibility - Noted
 
 > no comment or request from APA.
 
@@ -34,8 +34,9 @@ by Ruoxi Ran, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues
 by Simone Onofri, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-3848628218)
 
 **Response** The DAS WG appreciate the comment, and described situation in 
-[w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-4569236084), that these are 
-[captured in Generic Sensors specification](https://w3c.github.io/sensors/#security-and-privacy) for sensor API specifications.
+[w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-4569236084).
+
+> The group does not maintain a single list of main security and privacy threats. While there are some common themes among APIs (e.g. there are some threats common to sensor APIs that are captured in the [Generic Sensors specification](https://w3c.github.io/sensors/#security-and-privacy)) putting something together that covers all the specifications under the charter (e.g. [Contact Picker](https://www.w3.org/TR/contact-picker/#privacy), which has a very different set of considerations than sensor APIs) would risk creating overlap with W3C-level security and privacy guidance such as the [Threat Model for the Web](https://www.w3.org/TR/threat-model-web/) and the TAG's [Security and Privacy Questionnaire](https://www.w3.org/TR/security-privacy-questionnaire/). To the extend where it would be valuable to collect common security and privacy guidance in a single place, I think the Generic Sensors example is a good compromise between not duplicating high-level web platform design guidance and gathering domain-specific considerations.
 
 ### Privacy - Noted
 
@@ -62,7 +63,7 @@ by Atsushi Shimono, [w3c/strategy #530 comment](https://github.com/w3c/strategy/
 TAG raised 5 points of concerns ([w3ctag/design-reviews #1187 comment](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-3889788860)), 
 and provided PRs for 4 points.
 
-#### Specifications with one implementation - XXX (not Accepted, not Won't fix, ???)
+#### Specifications with one implementation - Accepted with amendment made
 
 > We're concerned to see the Chromium-only Accelerometer, Gyroscope, and Orientation Sensor specifications in the charter, now that the [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec is in Baseline. It makes sense to maintain non-consensus specifications while websites switch over to equivalent consensus APIs, but the charter should commit to only adding new features to the consensus versions. If there's not enough consensus on the new features to incorporate them into the core [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec, this WG could develop an extension specification that allows websites to mostly use the Baseline feature, with a few engine-specific extensions.
 
@@ -74,7 +75,7 @@ as `including for security and privacy enhancements`
 to enable modification of adding new feature specifically related to security and privacy enhancements, 
 at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818), 
 
-#### Involvement of multiple implementers - XXX (not Accepted, not Won't fix, ???)
+#### Involvement of multiple implementers - Accepted with amendment made
 
 > We want to ensure that the other specifications fill clear user needs and are making appropriate tradeoffs between those user needs and any potential abuse of the APIs. In many WGs, we can rely on all 3 browser engines to check this, but since this WG does not currently include participation from all major browser engines, we're more concerned here. Could you add this goal to the charter for each of the specifications in that class? We see, for example, https://github.com/w3c/vibration/issues/45 to do this for Vibration, but it would be good to use the charter to ensure it gets done.
 
@@ -85,7 +86,7 @@ the WG discussed on additional change over the PR, but did not resolved.
 to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
 by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 
-#### Vibration API council concern - XXX
+#### Vibration API council concern - Accepted with amendment made
 
 > The [Vibration Council recommended](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations) that "the WG document the plan [to ship in multiple major browser engines] it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable." We couldn't find such a plan in this rechartering effort, and we encourage the WG to write such plans for each single-engine specification, in order to head off this possible formal objection.
 
