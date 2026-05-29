@@ -139,6 +139,9 @@ and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4
 and the same text posted as 
 [first](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174) and [second](https://github.com/w3c/strategy/issues/530#issuecomment-4163144358)
 at w3c/strategy #530), and PRs have been closed without merging. 
+In parallel, issue [w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780) has been raised by Marcos Cáceres to track this concern, 
+and the draft DAS WG charter has been edited to include inplementation status and 
+expected progress by [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770).
 
 **Response** Accepted through 10 PRs.
 
@@ -208,7 +211,7 @@ by Marcos Cáceres, [w3c/charte-drafts PR #784](https://github.com/w3c/charter-d
 `Here are my current thoughts on the proposal in this PR. This is not TAG consensus—it's just me so far. 
 We'll be discussing this in a TAG breakout later today, and hopefully we can report some more-unanimous position after that.`, 
 and this change has been closed without integrating per other changes proposed by the TAG in consensus 
-([w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), [w3c/charter-drafts PR #80](https://github.com/w3c/charter-drafts/pull/808)
+([w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808)
 and [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809)).
 
 #### Flagging design review concerens - Noted
@@ -240,7 +243,9 @@ by PRs [w3c/charter-drafts PR #786](https://github.com/w3c/charter-drafts/pull/7
 [w3c/charter-drafts #820](https://github.com/w3c/charter-drafts/pull/820). 
 We note disagreement from Apple on this resolution. 
 
-These deliverables are not listed as joint deliverables with the Web Applications WG.
+These deliverables are not listed as joint deliverables with the Web Applications WG, 
+by change made at [w3c/charter-drafts PR #812](https://github.com/w3c/charter-drafts/pull/812) following 
+issue [w3c/charter-drafts #810](https://github.com/w3c/charter-drafts/issues/810) by Léonie Watson.
 
 ##### Web Serial API
 
@@ -395,6 +400,8 @@ by Marcos Cáceres, [issue raised as w3c/charter-drafts #781](https://github.com
 
 **Response** Part of concern resolved by implementation report has been added by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55).
 
+No conclusion has been made in consensus for specification update plan of Vibration specification. 
+
 ### Other comments
 
 #### Wrong listing of geolocation specification - Accepted
@@ -457,6 +464,6 @@ by Anssi Kostiainen, [w3c/charter-drafts PR #795](https://github.com/w3c/charter
 
 **Resolution** [Discussion has been postponed](https://github.com/w3c/charter-drafts/pull/795#issuecomment-4502569096), and 
 this change has not been integrated into the draft DAS charter. 
-And related issue `Venue and scope: Web Haptics API` has been filed at [w3c/charter-drafts 802#](https://github.com/w3c/charter-drafts/issues/802).
+And related issue `Venue and scope: Web Haptics API` has been filed at [w3c/charter-drafts #802](https://github.com/w3c/charter-drafts/issues/802).
 
 
