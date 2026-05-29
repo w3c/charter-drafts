@@ -100,7 +100,15 @@ by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
 
 > The [Vibration Council recommended](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations) that "the WG document the plan [to ship in multiple major browser engines] it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable." We couldn't find such a plan in this rechartering effort, and we encourage the WG to write such plans for each single-engine specification, in order to head off this possible formal objection.
 
-**Response** The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
+Similar comments have been added to w3c/strategy #530, such as 
+[comment](https://github.com/w3c/strategy/issues/530#issuecomment-3917515554), 
+[comment](https://github.com/w3c/strategy/issues/530#issuecomment-4206018777),
+and [comment](https://github.com/w3c/strategy/issues/530#issuecomment-4210649633) by Marcos Cáceres. 
+
+**Response** The DAS WG resolved to add new implementation report for recently started Recommendation track specification 
+from Candidate Resommendation Snapshot by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55). 
+
+The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
 to add text not limited to the Vibration specification, but even further in relateion to TAG point 1, 
 the WG did not reached a concensus to accept or reject the PR.
 
@@ -124,6 +132,14 @@ by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
 > 
 > At the same time, we recognize that this is the only status the Process defines for patent protection of these kinds of specifications. At a minimum, each document's support level should be in its SotD section, but ideally the WG would find a way to ensure that _developers reading a specification can tell at a glance which kind of document they're reading_.
 
+In addition to concern raised in TAG comment, several comments to w3ctag/design0reviews and w3c/strategy 
+has been made along with PRs to the DAS WG repositories by Marcos Cáceres 
+([first](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4159936835), 
+and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4163174410)) at w3ctag/design-reviews #1187, 
+and the same text posted as 
+[first](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174) and [second](https://github.com/w3c/strategy/issues/530#issuecomment-4163144358)
+at w3c/strategy #530), and PRs have been closed without merging. 
+
 **Response** Accepted through 10 PRs.
 
 The TAG opened 10 PRs to specifications, and all merged by the WG, 
@@ -145,8 +161,10 @@ Christian Liebel confirmed [this point 4 has been resolved with set of PRs](http
 
 > We're concerned by the appearance of Web Serial in the [Tentative Deliverables](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html#tentative). At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead.
 
-In addition to concern raised at the TAG point 5, 
-[w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783) has been opened by Marcos Cáceres 
+In addition to this concern, 
+[additional comment]((https://github.com/w3c/strategy/issues/530#issuecomment-4380513758)) made by Marcos Cáceres to expand 
+concern over other newly added tentative deliverables, and 
+issue [w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783) has been opened by Marcos Cáceres 
 which has [marked as not a TAG consensus comment by Jeffrey Yasskin](https://github.com/w3c/charter-drafts/issues/783#issuecomment-4171422602).
 
 **Response** 
