@@ -272,7 +272,7 @@ by Marcos Cáceres, [w3c/charter-drafts #783](https://github.com/w3c/charter-dra
 **Response** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
 We note this disagreement on this resolution. 
 
-#### Implementation across platform families - Deferred 
+#### Implementation across platform families - Noted
 
 > Posting as W3C Member (not TAG Member).
 > 
@@ -302,8 +302,11 @@ We note this disagreement on this resolution.
 
 by Marcos Cáceres, [w3c/charter-drafts #799](https://github.com/w3c/charter-drafts/issues/799)
 
-**Response** The DAS WG describes current implementation situation for sensor APIs, and demonstrated possibility of 
+**Response**
+The DAS WG describes current implementation situation for sensor APIs, and demonstrated possibility of 
 implementation accross multiple platforms like over CPUs and SoCs.
+
+The draft DAS WG charter has been update to consider of single implementation status following change proposed by the TAG.
 
 #### Potential security risk on sandbox escape via device APIs - Noted
 
