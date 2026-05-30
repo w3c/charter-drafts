@@ -7,24 +7,20 @@ Comments were received through:
 
 - [w3c/strategy #530](https://github.com/w3c/strategy/issues/530) — Strategy funnel issue (horizontal reviews)
 - [w3ctag/design-reviews #1187](https://github.com/w3ctag/design-reviews/issues/1187) — TAG review
-- [Issues](https://github.com/w3c/charter-drafts/issues?q=is%3Aissue+[wg%2Fdas]) and [PRs](https://github.com/w3c/charter-drafts/pulls?q=is%3Apr+%5Bwg%2Fdas%5D) to [w3c/charter-drafts](https://github.com/w3c/charter-drafts/) repository
+- [Issues](https://github.com/w3c/charter-drafts/issues?q=is%3Aissue+[wg%2Fdas]) and [pull requests](https://github.com/w3c/charter-drafts/pulls?q=is%3Apr+%5Bwg%2Fdas%5D) (PRs) in [w3c/charter-drafts](https://github.com/w3c/charter-drafts/) repository
 
 ## Executive summary
 
-All comments received during the charter refinement phase of the Devices and Sensors Working Group charter 
-have been discussed, and some resulted to charter changes, some are marked as continuing discussion for 
-later discussion for entire W3C strategy or to allow the AC to weigh in discussion,  
-and some have not been rejected without change made. 
+The charter refinement phase for the Devices and Sensors Working Group charter triggered substantive discussions between the Working Group, the TAG, other Members and the Team. This disposition of comments only tracks high-level comments. Please check the above channels for details. Of the 16 high-level comments received:
 
-Of the 19 comments (in category) received:
+* 4 were Accepted and the proposed text integrated in the draft charter;
+* 4 were Accepted with amended text or partially accepted;
+* 6 were Noted, without leading to further charter changes;
+* 2 were Declined.
 
-* 5 were Accepted, and resulted in charter changes.
-* 3 were Accepted with amended text, and resulted in charter changes.
-* 6 were Noted, without requiring charter change.
-* 1 was Deferred, to later discussion for entire W3C strategy.
-* 1 was Declined, to allow the AC to weigh in.
-* 2 were Rejected without change mage.
-* 1 was Won't fix.
+Some of the accepted changes do not have Working Group consensus. In general, the Chairs of the DAS Working Group note that the group strictly follows Process requirements, and that some of the proposed changes would better be brought to the Process document, within the Process Community Group and the Advisory Board, to ensure cohesion, separation of concerns and broad membership support for the procedures that govern Working Groups.
+
+Other changes such as the inclusion of 5 peripheral API specifications as tentative deliverables trigger additional concerns, about the right venue for the development of the specifications and support across implementers. The specifications were added to the draft charter to give the Advisory Committee the opportunity to weigh in during their review.
 
 ## Horizontal reviews
 
@@ -40,10 +36,7 @@ by Ruoxi Ran, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues
 
 by Simone Onofri, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-3848628218)
 
-**Response** The DAS WG appreciate the comment, and described situation in 
-[w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-4569236084).
-
-> The group does not maintain a single list of main security and privacy threats. While there are some common themes among APIs (e.g. there are some threats common to sensor APIs that are captured in the [Generic Sensors specification](https://w3c.github.io/sensors/#security-and-privacy)) putting something together that covers all the specifications under the charter (e.g. [Contact Picker](https://www.w3.org/TR/contact-picker/#privacy), which has a very different set of considerations than sensor APIs) would risk creating overlap with W3C-level security and privacy guidance such as the [Threat Model for the Web](https://www.w3.org/TR/threat-model-web/) and the TAG's [Security and Privacy Questionnaire](https://www.w3.org/TR/security-privacy-questionnaire/). To the extend where it would be valuable to collect common security and privacy guidance in a single place, I think the Generic Sensors example is a good compromise between not duplicating high-level web platform design guidance and gathering domain-specific considerations.
+**Response:** No changes were made to the draft charter. The DAS Working Group does not maintain a single list of main security and privacy threats. While there are some common themes among APIs (e.g. there are some threats common to sensor APIs that are captured in the [Generic Sensors specification](https://w3c.github.io/sensors/#security-and-privacy)), putting something together that covers all the specifications under the charter (e.g. [Contact Picker](https://www.w3.org/TR/contact-picker/#privacy), which has a very different set of considerations than sensor APIs) would risk creating overlap with W3C-level security and privacy guidance such as the [Threat Model for the Web](https://www.w3.org/TR/threat-model-web/) and the TAG's [Security and Privacy Questionnaire](https://www.w3.org/TR/security-privacy-questionnaire/). To the extent where it would be valuable to collect common security and privacy guidance in a single place, the Generic Sensors example is a good compromise between not duplicating high-level web platform design guidance and gathering domain-specific considerations.
 
 ### Privacy - Noted
 
@@ -61,79 +54,48 @@ by pes10k, [w3cping/privacy-request #192 comment](https://github.com/w3cping/pri
 
 by Atsushi Shimono, [w3c/strategy #530 comment](https://github.com/w3c/strategy/issues/530#issuecomment-4153917428)
 
-**Response** Internationalization WG has been added to the Coordination section by [w3c/charter-drafts PR #804](https://github.com/w3c/charter-drafts/pull/804)
+**Response:** Internationalization WG was added to the Coordination section through [w3c/charter-drafts PR #804](https://github.com/w3c/charter-drafts/pull/804).
 
 ## TAG review 
 
-### 5 points of concerns
+The TAG raised 5 main points of concerns ([w3ctag/design-reviews #1187 comment](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-3889788860)), and provided pull requests for 4 of these points.
 
-TAG raised 5 points of concerns ([w3ctag/design-reviews #1187 comment](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-3889788860)), 
-and provided PRs for 4 points.
+*Note:* A number of intermediary issues, pull requests and comments were made while attempting to resolve these concerns. This disposition of comments sticks to high-level comments for readibility. Please check the [Strategy issue](https://github.com/w3c/strategy/issues/530), [TAG design review issue](https://github.com/w3ctag/design-reviews/issues/1187) and [draft charter repository](https://github.com/w3c/charter-drafts) for details.
 
-#### Specifications with one implementation - Accepted with amendment made
+### Specifications with one implementation - Accepted with amended text, no WG consensus
 
 > We're concerned to see the Chromium-only Accelerometer, Gyroscope, and Orientation Sensor specifications in the charter, now that the [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec is in Baseline. It makes sense to maintain non-consensus specifications while websites switch over to equivalent consensus APIs, but the charter should commit to only adding new features to the consensus versions. If there's not enough consensus on the new features to incorporate them into the core [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) spec, this WG could develop an extension specification that allows websites to mostly use the Baseline feature, with a few engine-specific extensions.
 
-**Response**
-The TAG opened a PR [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), 
-the WG discussed on additional change over the PR but did not reach WG consensus. 
+The TAG provided [w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806) to address this concern.
 
-The Working Group has added expected progress status for these deliverables to the charter and 
-updated the "Status of this Document" section to provide clarity for developers and implementers.
+**Response:** Expected progress for the deliverables was added to the charter. The "Status of this Document" sections of these deliverables were also updated to clarify the implementation status for developers and implementers. Additionally, the proposal from the TAG was integrated in the draft charter, with amended text to call out the possibility to work on security and privacy enhancements, through [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818). This update does not have consensus in the DAS WG.
 
-**Resolution** 
-And the draft charter has been updated following TAG proposal with adding amended text 
-as `including for security and privacy enhancements`
-to enable modification of adding new feature specifically related to security and privacy enhancements, 
-at [w3c/charter-drafts PR #818](https://github.com/w3c/charter-drafts/pull/818), 
-
-#### Involvement of multiple implementers - Accepted with amendment made
+### Involvement of multiple implementers - Accepted with amended text, no WG consensus
 
 > We want to ensure that the other specifications fill clear user needs and are making appropriate tradeoffs between those user needs and any potential abuse of the APIs. In many WGs, we can rely on all 3 browser engines to check this, but since this WG does not currently include participation from all major browser engines, we're more concerned here. Could you add this goal to the charter for each of the specifications in that class? We see, for example, https://github.com/w3c/vibration/issues/45 to do this for Vibration, but it would be good to use the charter to ensure it gets done.
 
-**Response**
-The TAG opened a PR [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808), 
-the WG discussed on additional change over the PR, but did not resolved. 
+The TAG provided [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808) to address this comment.
 
-The Working Group is committed to making appropriate tradeoffs between use cases and risks of abuse, as demonstrated by productive collaborations with privacy and security researchers and horizontal groups. This is codified in the Motivation and Background section.
+**Response:** The proposal from the TAG was integrated in the draft charter (with minor text adjustments), through [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821). This change does not have consensus in the DAS WG though. The WG chairs note that the WG is committed to making appropriate tradeoffs between use cases and risks of abuse, as demonstrated by productive collaborations with privacy and security researchers and horizontal groups, and as codified in the Motivation and Background section in the draft charter, and that the WG continues to engage with non-participating browser engines as appropriate per the W3C Process.
 
-The Working Group continues to engage with non-participating browser engines as appropriate per the W3C Process.
-
-**Resolution**
-The draft charter has been updated following TAG proposal with integrating a change suggested by Anssi 
-to remove specifically mention to WebApps, and with adding links to the Process for making maturity level used in text clear, 
-by [w3c/charter-drafts PR #821](https://github.com/w3c/charter-drafts/pull/821).
-
-#### Vibration API council concern - Accepted with amendment made
+### Vibration API council concern - Accepted with amended text, no WG consensus
 
 > The [Vibration Council recommended](https://www.w3.org/2025/08/vibration2-council-report.html#recommendations) that "the WG document the plan [to ship in multiple major browser engines] it thinks is best, whether or not that plan includes implementation in multiple browser engines, and a compelling rationale to help any reviewers decide whether the plan is acceptable." We couldn't find such a plan in this rechartering effort, and we encourage the WG to write such plans for each single-engine specification, in order to head off this possible formal objection.
 
-Similar comments have been added to w3c/strategy #530, such as 
+Similar comments were made in the Strategy issue, including
 [comment](https://github.com/w3c/strategy/issues/530#issuecomment-3917515554), 
 [comment](https://github.com/w3c/strategy/issues/530#issuecomment-4206018777),
 and [comment](https://github.com/w3c/strategy/issues/530#issuecomment-4210649633) by Marcos Cáceres. 
 
-**Response**
-The DAS WG resolved to add new implementation report for recently started Recommendation track specification 
-from Candidate Resommendation Snapshot by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55). 
+The TAG proposed [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809), which goes beyond the Vibration API specification to cover all deliverables shipping in a single browser engine.
 
-The TAG opened a PR [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809) 
-to add text not limited to the Vibration specification, but even further in relateion to TAG point 1, 
-the WG did not reached a concensus to accept or reject the PR.
+**Response:** The proposal from the TAG was integrated in the draft charter, with amended text to making transition back to incubation possible for specifications that could end up being published as discontinued, through [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819). The WG disagrees with this change. The WG Chairs note that the WG follows all W3C Process requirements when transitioning its deliverables from one maturity stage to another, and that the proposed changes would better be brought to the Process document itself through the Process Community Group and the Advisory Board.
 
-The Working Group continues to follow the W3C Process when transitioning its deliverables from one maturity stage to another.
+Also note that a new implementation report was created for the Vibration API specification, as recommended by the Council, through [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55).
 
-The process changes drafted by the TAG are in the purview of the Process CG and the Advisory Board, to be discussed therein as appropriate. The Working Group does not adopt the proposed changes to the charter to ensure cohesion, separation of concerns and broad membership support for the procedures that govern the Working Groups.
+### Support level in status section of specification - Accepted
 
-**Resolution**
-The draft charter has been updated following TAG porposal 
-with adding amended text to enable bringing specifications into CG as incubation along with publication as Discontinued Draft, 
-for making path clearer to continue incubation but not as completed end state, 
-by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
-
-#### Support level in status section of specification - Accepted
-
-> We would like the WG to find a way to signal the expected support level for each specification. There's some discomfort on the TAG with using the same spec status?Candidate Recommendation?for all of:
+> We would like the WG to find a way to signal the expected support level for each specification. There's some discomfort on the TAG with using the same spec status "Candidate Recommendation" for all of:
 > * deprecated specs that are being maintained while websites migrate to a consensus replacement;
 > * features that are stable in one engine but opposed by the others;
 > * "living" consensus specs that never intend to advance to Recommendation; and
@@ -141,95 +103,23 @@ by [w3c/charter-drafts PR #819](https://github.com/w3c/charter-drafts/pull/819).
 > 
 > At the same time, we recognize that this is the only status the Process defines for patent protection of these kinds of specifications. At a minimum, each document's support level should be in its SotD section, but ideally the WG would find a way to ensure that _developers reading a specification can tell at a glance which kind of document they're reading_.
 
-In addition to concern raised in TAG comment, several comments to w3ctag/design0reviews and w3c/strategy 
-has been made along with PRs to the DAS WG repositories by Marcos Cáceres, 
-([first](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4159936835), 
-and [second](https://github.com/w3ctag/design-reviews/issues/1187#issuecomment-4163174410) at w3ctag/design-reviews #1187, 
-and the same text posted as 
-[first](https://github.com/w3c/strategy/issues/530#issuecomment-4159912174) and [second](https://github.com/w3c/strategy/issues/530#issuecomment-4163144358)
-at w3c/strategy #530), and PRs have been closed without merging. 
+Several comments and associated pull requests were raised on similar grounds in the discussion that followed in the TAG review issue, the strategy issue, and the draft charter's repository, including [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770) by Reilly Grant, and [w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780) by Marcos Cáceres.
 
-In parallel, issue [w3c/charter-drafts #780](https://github.com/w3c/charter-drafts/issues/780) has been raised by Marcos Cáceres to track this concern, 
-and the draft DAS WG charter has been edited to include inplementation status and 
-expected progress by [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770).
+The TAG prepared [pull requests](https://github.com/w3c/strategy/issues/530#issuecomment-4544003815) to add implementation status notes to the Status of this Document sections of individual specifications.
 
-**Response** Accepted through 10 PRs.
+**Response:** The pull requests prepared by the TAG to update the specifications were merged. The draft charter was also updated through [w3c/charter-drafts PR #770](https://github.com/w3c/charter-drafts/pull/770) to convey the implementation status of the group's deliverables (see also the response from the previous comment).
 
-The TAG opened 10 PRs to specifications, and all merged by the WG, 
-Christian Liebel confirmed [this point 4 has been resolved with set of PRs](https://github.com/w3c/strategy/issues/530#issuecomment-4549836034).
+Implementation status and standard positions of the different specifications are also maintained in [the WG's wiki](https://www.w3.org/wiki/DAS/Implementations), which also links to [wpt.fyi](https://wpt.fyi/) for test results. These resources are referenced from the specification headers, as proposed by the TAG.
 
-* https://github.com/w3c/sensors/pull/494
-* https://github.com/w3c/magnetometer/pull/78
-* https://github.com/w3c/device-posture/pull/173
-* https://github.com/w3c/proximity/pull/63
-* https://github.com/w3c/compute-pressure/pull/319
-* https://github.com/w3c/accelerometer/pull/85
-* https://github.com/w3c/vibration/pull/65
-* https://github.com/w3c/gyroscope/pull/66
-* https://github.com/w3c/orientation-sensor/pull/87
-* https://github.com/w3c/ambient-light/pull/93
-
-Also the group maintains implementation status and standards positions in its 
-[wiki](https://www.w3.org/wiki/DAS/Implementations) and refers to 
-[wpt.fyi](https://wpt.fyi/) for test results. 
-These resources are referenced from the specification headers, as proposed by the TAG.
-
-
-#### Web Serial in tentative deliverables - Declined
+### Web Serial in tentative deliverables - Declined
 
 > We're concerned by the appearance of Web Serial in the [Tentative Deliverables](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html#tentative). At least Mozilla seems inclined to start implementing that API, and we want it to live in a WG that all implementers are comfortable joining, to ensure that all of their potential concerns about engine/platform capabilities, privacy, and security can be easily raised. That said, its presence in this charter doesn't prevent it from being adopted by another WG instead.
 
-In addition to this concern, 
-[additional comment]((https://github.com/w3c/strategy/issues/530#issuecomment-4380513758)) made by Marcos Cáceres to expand 
-concern over other newly added tentative deliverables, and 
-issue [w3c/charter-drafts #783](https://github.com/w3c/charter-drafts/issues/783) has been opened by Marcos Cáceres 
-which has [marked as not a TAG consensus comment by Jeffrey Yasskin](https://github.com/w3c/charter-drafts/issues/783#issuecomment-4171422602).
+The concern about the venue for this spec was also raised as W3C Member by Marcos Cáceres both in [the Strategy issue]((https://github.com/w3c/strategy/issues/530#issuecomment-4380513758)) and the [draft charter repository](https://github.com/w3c/charter-drafts/issues/783).
 
-**Response** 
-The group has consensus to take up Mozilla's proposal to add Web Serial and other related specifications as a Tentative Deliverable in this Working Group. We also note that Mozilla has also started a parallel effort to create a WHATWG workstream for peripheral APIs. This may offer an alternative path for a forum that all implementers are comfortable joining.
+**Response:** Additional peripheral APIs were proposed for addition in the meantime by Mozilla, see below for details. Also these APIs do not have support from all implementers, multiple implementers expressed support for them. No change were made for Web Serial, which is still listed as a tentative deliverable in the draft charter.
 
-Conversation held in [email thread](https://lists.w3.org/Archives/Public/www-archive/2026May/0000.html), 
-no conclusion has made. 
-
-### Other feedbacks on TAG review
-
-#### Address TAG review and Council recommendation feedback - Rejected
-
-> This PR applies the charter text suggestions posted in #770 (comment), addressing outstanding TAG review and W3C Council concerns. It is intended to be merged into PR #770 or land alongside it.
-> 
-> ## Changes
-> 
-> **Success Criteria — SotD signaling commitment** (addresses TAG charter concern, w3ctag/design-reviews#1187):
-> Adds three paragraphs committing the WG to: signal implementation status and trajectory in each spec's SotD; clearly label the role of single-engine specs; and review limited-support specs at least annually with publicly documented outcomes. Closes #780.
-> 
-> **Vibration — Expected progress** (addresses TAG charter concern + Council recommendation):
-> Replaces the vague "device haptics capabilities" text with a concrete commitment to publish the Council-recommended plan before AC review, with a visible `<i class="todo">` placeholder URL that must be filled in before the charter proceeds to AC review. Also requires the updated implementation report (w3c/vibration#33) to be publicly available before AC review opens. Coordinates haptics work with the Web Applications WG. Addresses #781, #782.
-> 
-> **Generic Sensor — Expected progress**:
-> Removes "infrastructure for future sensor APIs" framing. Adds commitment not to charter new Generic Sensor-derived deliverables without first documenting the architectural rationale relative to single-layer API alternatives. HTML comment in source notes the grounding and TAG context.
-> 
-> **Ambient Light Sensor + Proximity Sensor — Expected progress**:
-> Replaces vague "collect feedback and may publish a WD" with: proactively seek published implementer positions from non-participating engines, publish a summary of responses (including non-responses), and document a trajectory decision publicly.
-> 
-> ## Tracking issues
-> 
-> - #780 — SotD signaling commitment
-> - #781 — Vibration Council plan before AC review
-> - #782 — Vibration haptics scope conflict with WebApps WG
-> - #783 — Web Serial venue (not addressed in this PR — tracked separately)
-> 
-> cc @reillyeon @jyasskin @anssiko @himorin
-
-by Marcos Cáceres, [w3c/charte-drafts PR #784](https://github.com/w3c/charter-drafts/pull/784)
-
-**Resolution** Jeffrey Yasskin noted on this change that 
-`Here are my current thoughts on the proposal in this PR. This is not TAG consensus—it's just me so far. 
-We'll be discussing this in a TAG breakout later today, and hopefully we can report some more-unanimous position after that.`, 
-and this change has been closed without integrating per other changes proposed by the TAG in consensus 
-([w3c/charter-drafts PR #806](https://github.com/w3c/charter-drafts/pull/806), [w3c/charter-drafts PR #808](https://github.com/w3c/charter-drafts/pull/808)
-and [w3c/charter-drafts PR #809](https://github.com/w3c/charter-drafts/pull/809)).
-
-#### Flagging design review concerens - Noted
+### Flagging design review concerns - Noted
 
 In parallel to 5 points of concerns, the TAG made a comment in the same post as:
 
@@ -240,63 +130,17 @@ to come up in future design reviews for the individual specifications:
 > * The Generic Sensor architecture seems overcomplicated overall. In reviews of features that use it, we'd appreciate some justification for why that architecture is better than defining APIs in a single layer, as [Device Orientation and Motion](https://www.w3.org/TR/orientation-event/) does.
 > * Are the signals in the Battery API still the right ones to help websites help users achieve their goals? Would a "please reduce power use" signal be sufficient, with the UA in charge of deciding how the precise battery level and charging state contribute to that signal?
 
-**Response** The DAS WG noted these comments and continue onversation during further design review over each specification.
+**Response:** These comments were noted by the DAS Working Group.
 
 ## Feedback provided to w3c/charter-drafts
 
-### Peripheral APIs
+### Peripheral APIs - Accepted
 
-Before submission by Mozilla to [whatwg/sg PR #264](https://github.com/whatwg/sg/pull/264/), 
-three specifications (out of five listed in whatwg/sg PR #264) has been proposed to be included into tentative deliverables. 
+Mozilla noted [support for Web Serial](https://github.com/w3c/charter-drafts/issues/771), and requested the [addition of WebUSB](https://github.com/w3c/charter-drafts/issues/772) and the [addition of Web Bluetooth](https://github.com/w3c/charter-drafts/issues/773) as [Tentative Deliverables](https://w3c.github.io/charter-drafts/2026/das-wg-charter.html#tentative). In parallel, Mozilla also proposed the creation of a [Peripheral APIs WHATWG workstream](https://github.com/whatwg/sg/pull/264/) with the WebNFC and WebHID specifications. The possible creation of the workstream at WHATWG is still under consideration as this disposition of comments is written.
 
-#### Proposals raised by Mozilla - Accepted
+**Response:** Following discussions with implementers, the DAS WG and Web Applications WG co-chairs who indicated that the Web Applications WG is unable to accept any more specifications at this time, the draft charter now lists all 5 peripheral APIs (Web Bluetooth, WebHID, WebNFC, Web Serial, WebUSB) as tentative deliverables (to be developed solely by the DAS WG). Should the WHATWG workstream be created, the expectation is that the WG would not adopt these tentative deliverables. The peripheral APIs do not have support from all implementers, and Marcos Cáceres noted in particular [in a PR comment](https://github.com/w3c/charter-drafts/pull/786#issuecomment-4348603681) that WebKit has published *oppose* positions on Web Serial, WebUSB and Web Bluetooth.
 
-**Resolution**
-The draft charter has been updated to include all three specifications proposed by issues to w3c/charter-drafts, 
-and extended to 2 additional deliverables to allow the AC to weigh in, 
-by PRs [w3c/charter-drafts PR #786](https://github.com/w3c/charter-drafts/pull/786) and 
-[w3c/charter-drafts #820](https://github.com/w3c/charter-drafts/pull/820). 
-We note disagreement from Apple on this resolution. 
-
-These deliverables are not listed as joint deliverables with the Web Applications WG, 
-by change made at [w3c/charter-drafts PR #812](https://github.com/w3c/charter-drafts/pull/812) following 
-issue [w3c/charter-drafts #810](https://github.com/w3c/charter-drafts/issues/810) by Léonie Watson.
-
-##### Web Serial API
-
-> Can Web Serial be moved from “tentative deliverable” to “deliverable” given Mozilla has announced an intent to prototype which would make two implementations?
-> 
-> Here's Mozilla’s intent to prototype: https://groups.google.com/a/mozilla.org/g/dev-platform/c/EDLTASS4Zik/m/LXJRL6yFCQAJ
-> 
-> We prefer to keep the existing note in the listing of the deliverable: "Note: This work may turn into a joint deliverable with the Web Applications Working Group."
-
-by Haik Aftandilian, [w3c/charter-drafts #771](https://github.com/w3c/charter-drafts/issues/771)
-
-##### WebUSB
-
-> We (Mozilla Firefox) are considering the WebUSB API ([Firefox bug 2022432](https://bugzilla.mozilla.org/show_bug.cgi?id=2022432)) and thus request adding the WebUSB API in the DAS WG charter "Tentative Deliverables" as follows:
-> 
-> [WebUSB API](https://wicg.github.io/webusb/)
-> An API for reading and writing from a USB device through script.
-> Draft state: Draft Community Group Report
-> Adopted Draft: [Adopted from WICG](https://wicg.github.io/webusb/)
-> Note: This work may turn into a joint deliverable with the [Web Applications Working Group](https://www.w3.org/groups/wg/webapps).
-
-by Haik Aftandilian, [w3c/charter-drafts #772](https://github.com/w3c/charter-drafts/issues/772)
-
-##### Web Bluetooth
-
-> We (Mozilla Firefox) are considering the Web Bluetooth API ([Firefox bug 2022433](https://bugzilla.mozilla.org/show_bug.cgi?id=2022433)) and thus request adding the Web Bluetooth API in the DAS WG charter "Tentative Deliverables" as follows:
-> 
-> [Web Bluetooth API](https://webbluetoothcg.github.io/web-bluetooth/)
-> An API to discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).
-> Draft state: Draft Community Group Report
-> Adopted Draft: [Adopted from Web Bluetooth Community Group](https://webbluetoothcg.github.io/web-bluetooth/)
-> Note: This work may turn into a joint deliverable with the [Web Applications Working Group](https://www.w3.org/groups/wg/webapps).
-
-by Haik Aftandilian, [w3c/charter-drafts #773](https://github.com/w3c/charter-drafts/issues/773)
-
-#### Implementation across platform families - Noted
+### Implementation across platform families - Noted
 
 > Posting as W3C Member (not TAG Member).
 > 
@@ -326,13 +170,10 @@ by Haik Aftandilian, [w3c/charter-drafts #773](https://github.com/w3c/charter-dr
 
 by Marcos Cáceres, [w3c/charter-drafts #799](https://github.com/w3c/charter-drafts/issues/799)
 
-**Response**
-The DAS WG describes current implementation situation for sensor APIs, and demonstrated possibility of 
-implementation accross multiple platforms like over CPUs and SoCs.
+**Response:** Proposals from the TAG that were integrated in the draft charter add constraints on deliverables shipping in a single browser engine. Additional support for some of the deliverables mentioned was provided during the charter refinement period. No further changes were made to the draft charter.
 
-The draft DAS WG charter has been update to consider of single implementation status following change proposed by the TAG.
 
-#### Potential security risk on sandbox escape via device APIs - Noted
+### Potential security risk on sandbox escape via device APIs - Noted
 
 > Posting as W3C Member (not TAG Member).
 > 
@@ -376,16 +217,9 @@ The draft DAS WG charter has been update to consider of single implementation st
 
 by Marcos Cáceres, [w3c/charter-drafts #798](https://github.com/w3c/charter-drafts/issues/798)
 
-**Response** In specifications in CG space, these attack scenarios are largely acknowledged by the 
-"Security Considerations" sections of these specifications.
+**Response:** The specifications were added as tentative deliverables to the draft charter. These attack scenarios are largely acknowledged by the "Security Considerations" sections of these specifications. Wide review on these specifications may also help detect and address more security risks.
 
-**Resolution** Five specifications of Peripheral APIs has been kept within the draft charter, to allow AC to weigh in. 
-We note this disagreement on this resolution. 
-
-
-### Comments related to implementation status and language
-
-#### Implementation report and WG plan for Vibration API - Won't fix
+### Implementation report and WG plan for Vibration API - Partially accepted
 
 > **Context:** This issue tracks concerns from both the W3C Council report and the TAG review of the 2026 DAS WG charter.
 > 
@@ -413,72 +247,18 @@ We note this disagreement on this resolution.
 
 by Marcos Cáceres, [issue raised as w3c/charter-drafts #781](https://github.com/w3c/charter-drafts/issues/781)
 
-**Response** Part of concern resolved by implementation report has been added by [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55).
+**Response:** The implementation report part was resolved through [w3c/vibration PR #55](https://github.com/w3c/vibration/pull/55). Integration of the text proposed by the TAG to address a similar councern (see TAG Vibration API council concern above) creates a plan for the Vibration API and other WG deliverables. There is no WG consensus on the plan though.
 
-No conclusion has been made in consensus for specification update plan of Vibration specification. 
-
-### Other comments
-
-#### Wrong listing of geolocation specification - Accepted
+### Wrong listing of geolocation specification - Accepted
 
 > GeoLocation is under active development, so it should be moved out of the maintenance section into the normative specs section.
-> 
-> @himorin , @anssiko, @reillyeon, @w3c/marcomm, @siusin  
 
 by Léonie Watson, [w3c/charter-drafts #811](https://github.com/w3c/charter-drafts/issues/811)
 
-**Response** Error fixed by [w3c/charter-drafts PR #813](https://github.com/w3c/charter-drafts/pull/813)
+**Response:** Error fixed by [w3c/charter-drafts PR #813](https://github.com/w3c/charter-drafts/pull/813)
 
-#### Mentioning Haptics in DAS charter
+### Adding Haptics to the DAS charter - Declined
 
-##### Remove `Haptics` from description of Vibration API - Accepted
+A proposal was made by Microsoft to add the [Web Haptics API](https://github.com/w3c/charter-drafts/pull/795). Other related comments were made to drop or clarify the scope of the DAS WG charter with regards to haptics, which is already in scope of the Web Applications WG, see [comment by Marcos](https://github.com/w3c/charter-drafts/issues/782), and [pull request by Anssi Kostiainen](https://github.com/w3c/charter-drafts/pull/816).
 
-> **Note:** This concern is raised by @marcoscaceres in his personal capacity as a W3C member, not on behalf of the TAG. The TAG review (w3ctag/design-reviews#1187) was published before PR #770 introduced this specific language.
-> 
-> PR #770 adds the following "Expected progress" text for Vibration:
-> 
-> > "The Working Group will update the specification to modern web platform design principles and **device haptics capabilities** and continue to solicit feedback."
-> 
-> The phrase "device haptics capabilities" is problematic. The current Web Applications WG 2026 charter (https://www.w3.org/2026/01/webappswg-charter-2026.html) explicitly includes in its scope:
-> 
-> > "Haptic input devices and their emitted events and/or data."
-> 
-> And lists as a WICG deliverable:
-> 
-> > "Haptics — An API allowing web applications to interface with haptic actuators, such as vibration motors found on gamepad controllers, and potentially other devices that provide haptic feedback."
-> 
-> Haptics is not listed as a joint deliverable between DAS and WebApps in either the current WebApps charter or the DAS draft charter. WebApps and the Immersive Web CG are also actively exploring related work (see https://github.com/immersive-web/proposals/issues/92).
-> 
-> The DAS charter text must either:
-> 1. Confirm that Vibration remains a minimal primitive and explicitly remove the "device haptics capabilities" language, or
-> 2. Explicitly establish a joint deliverable arrangement with the Web Applications WG for any haptics-related work, with a clear statement of scope differentiation.
-> 
-> As written, the language signals unilateral expansion into an area that is already in scope of another WG, without a coordination model.
-> 
-> Additionally, the TAG review (charter-affecting section) specifically called out Vibration for needing better documentation of user needs and tradeoffs, citing w3c/vibration#45. That issue ("Create an explainer") remains open with no progress.
-> 
-> Related: #770, w3ctag/design-reviews#1187, w3c/vibration#45, https://github.com/immersive-web/proposals/issues/92
-
-by Marcos Cáceres, [issue raised as w3c/charter-drafts #782](https://github.com/w3c/charter-drafts/issues/782)
-
-**Response** The draft DAS charter has been updated by [w3c/charter-drafts #807](https://github.com/w3c/charter-drafts/pull/807). 
-
-##### Clarify haptics scope - Rejected
-
-Adding `semantic haptic feedback` into Scope, and `Gamepad haptics are out of scope for this WG` into Out of Scope
-
-by Anssi Kostiainen, [w3c/charter-drafts PR #816](https://github.com/w3c/charter-drafts/pull/816)
-
-**Resolution** This change has not been integrated into the draft DAS charter.
-
-##### Adding Web Haptics API, Revise DAS WG charter with a new deliverable proposed by Microsoft - Deferred
-
-Adding `Web Haptics API` into tentative deliverables.
-
-by Anssi Kostiainen, [w3c/charter-drafts PR #795](https://github.com/w3c/charter-drafts/pull/795)
-
-**Resolution** [Discussion has been postponed](https://github.com/w3c/charter-drafts/pull/795#issuecomment-4502569096), and 
-this change has not been integrated into the draft DAS charter. 
-And related issue `Venue and scope: Web Haptics API` has been filed at [w3c/charter-drafts #802](https://github.com/w3c/charter-drafts/issues/802).
-
-
+**Response:** The Web Haptics API [was **not** added to the draft charter](https://github.com/w3c/charter-drafts/pull/795#issuecomment-4502569096), pending further incubation and discussion on the appropriate venue(s) for this proposal. Also, the draft charter no longer contains any reference to haptics.
