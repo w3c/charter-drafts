@@ -2,17 +2,17 @@
 <html lang="en-US"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebTransport Working Group Charter</title>
+    <title>Web Machine Learning Working Group Charter</title>
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
   <meta name="generator" content="w3c-charter-assistant"><script type="application/json" id="charter-assistant-settings">{
-  "group": "wg/webtransport",
+  "group": "wg/webmachinelearning",
   "workMode": "rec",
   "a11y-impact": "true",
   "template": {
     "sha": "b43b4eb5f52bb0fee2beeb8e98f8266e9ef6ad77",
     "date": "2026-01-29T10:38:13Z"
   },
-  "timeStamp": "2026-06-01T08:53:03.124Z"
+  "timeStamp": "2026-06-09T15:55:26.244Z"
 }</script><script src="https://www.w3.org/PM/Groups/lib/check-charter.js" type="module" id="charter-assistant-checker"></script></head>
   <body>
     <header id="header">
@@ -40,25 +40,26 @@
 
 
     <main>
-      <h1 id="title"><i class="todo">PROPOSED</i> WebTransport Working Group Charter</h1>
+      <h1 id="title"><i class="todo">DRAFT</i> Web Machine Learning Working Group Charter</h1>
       <!-- replace DRAFT with PROPOSED when the AC review starts -->
       <!-- delete PROPOSED after AC review completed -->
 
     
 
-    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webtransport/">WebTransport Working Group</a> is to develop APIs that enable data transfer between browsers and servers with support for multiple data flows, unidirectional data flows, out-of-order delivery, variable reliability and pluggable protocols.</p>
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webmachinelearning/">Web Machine Learning Working Group</a> is to develop APIs for enabling efficient machine learning inference in the browser.</p>
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
       <div class="noprint">
-        <p class="join"><a href="https://www.w3.org/groups/wg/webtransport/join/">Join the WebTransport Working Group.</a></p>
+        <p class="join"><a href="https://www.w3.org/groups/wg/webmachinelearning/join/">Join the Web Machine Learning Working Group.</a></p>
       </div>
 
       <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
       <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
       <!-- delete the whole paragraph after AC review completed -->
       <p class="issue"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/">GitHub</a>.
-    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+      on <a href="https://github.com/w3c/charter-drafts/">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue%20state%3Aopen%20webmachinelearning">issues</a>.
           </p>
 
       <div id="details">
@@ -68,7 +69,7 @@
               Charter Status
             </th>
             <td>
-              See the <a class="" href="https://www.w3.org/groups/wg/webtransport/charters/">group status page</a> and <a href="#history">detailed change history</a>.
+              See the <a class="" href="https://www.w3.org/groups/wg/webmachinelearning/charters/">group status page</a> and <a href="#history">detailed change history</a>.
             </td>
           </tr>
           <tr id="Duration">
@@ -84,48 +85,133 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i> (Two years after charter approval, minimum December 2027)
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
             </td>
           </tr>
           <tr id="Chairs">
             <th>
               Chairs
             </th>
-            <td><ul><li>Jan-Ivar Bruaroey (Mozilla Foundation)</li><li>Will Law (Akamai Technologies)</li></ul></td>
+            <td>Anssi Kostiainen (Intel Corporation)</td>
           </tr>
           <tr id="TeamContacts">
             <th>
               Team Contacts
             </th>
-            <td><a href="mailto:ylafon@w3.org">Yves Lafon</a> <i class="todo">(0.15 <abbr title="Full-Time Equivalent">FTE</abbr>)</i></td>
+            <td><a class="todo" href="mailto:###@w3.org">###</a> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</td>
           </tr>
           <tr id="MeetingSchedule">
             <th>
               Meeting Schedule
             </th>
             <td>
-              <strong>Teleconferences:</strong> approximately 1 per month
+              <strong>Teleconferences:</strong> bi-weekly
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
               <br>
-              See also this <a class="" href="https://www.w3.org/groups/wg/webtransport/calendar/">group calendar</a>
+              See also this <a class="" href="https://www.w3.org/groups/wg/webmachinelearning/calendar/">group calendar</a>
             </td>
           </tr>
         </tbody></table>
 
       </div>
 
-      <div id="background" class="background">
+      <section id="background">
         <h2>Motivation and Background</h2>
-        <p>The deployment of the QUIC protocol standardized in IETF (e.g. in the context of HTTP3) is expected to make QUIC support widely available, opening up the possibility to establish new types of network connections in Web applications for client-server data transfer (e.g. unreliable, unordered).</p>
-      </div>
+        <p>
+          Computer Vision enables computers to gain understanding from images
+          or videos. Natural Language Processing enables interaction between
+          computers and human languages. Speech Recognition and Speech
+          Synthesis enable computers to recognize and translate spoken language
+          into text and vice versa.
+          Bringing these experiences to the web in a privacy-preserving manner
+          requires efficient machine learning inference capabilities built into
+          the browser.
+        </p>
+        <p>Enabling Machine Learning inference in
+          the browser (as opposed e.g. to in the cloud) enhances privacy, since input
+          data such as locally sourced images or video streams stay within the
+          browser's sandbox. Local processing also enables machine learning use
+          cases that require low latency, such as object detection in real-time
+	  communications and immersive web experiences.
+        </p><p>
+          Currently, machine learning inference in the browser uses WebAssembly
+	  and the WebGL
+          graphics API with limited or no access to platform capabilities
+          beneficial for ML such as CPU parallelism, general-purpose GPU, or
+          dedicated ML hardware accelerators.
+        </p>
+
+      </section>
 
       <section id="scope" class="scope">
-        <h2>Scope</h2>
-        <p>The WebTransport Working Group, in collaboration with the <a href="https://datatracker.ietf.org/wg/webtrans/about/">IETF WebTransport Working Group</a> develops APIs that enable Web developers to make use of these new network capabilities, including possible fallback mechanisms to handle scenarios when a QUIC connection cannot be established.</p>
-        <p>The working group is also considering incubating mechanisms for peer-to-peer capability.</p>
-        <p>These capabilities are expected to be useful in a wide variety of contexts where network performance has perceivable impacts on user experience, such as media streaming or cloud gaming and real-time communications.</p>
-
+        <h2>
+          Scope
+        </h2>
+        <p>
+          The Web Machine Learning Working Group develops a Web API aiming to expose generic capabilities to the Web
+          required to provide close-to-native machine learning performance in
+          the browser. 
+          This Web API for neural network inference hardware acceleration:
+        </p>
+        <ul>
+          <li>Allows construction of a neural network computational graph by common
+          building blocks required by well-known model architectures: constant
+          values and base operations such as convolution, pooling, softmax,
+          normalization, fully connected, and activation;
+          </li>
+          <li>Allows compilation of the neural network to native optimized format
+          for hardware execution;
+          </li>
+          <li>Allows input to be set up from various sources on the Web, e.g. array
+          buffers and media streams, schedule the asynchronous hardware execution,
+          and retrieve the output when hardware execution completes.
+          </li>
+        </ul>
+        <p>
+          This Working Group puts priority on building blocks required by
+          well-known model architectures such as recurrent neural network
+          (RNN), long short-term memory (LSTM) and transformers in the fields
+          of Computer Vision, Natural Language Processing and Speech
+          Recognition.
+        </p>
+        <p>
+          The APIs in scope of this group are not tied to any particular
+          platform and are implementable on top of existing major platform
+          APIs, such as Android Neural Networks API, Windows DirectML, and
+          macOS/iOS Core ML and Basic Neural Network Subroutines.
+        </p>
+        <p>
+          For each high-level building block that decomposes into well-known
+          lower-level operations, the APIs will informatively define a generic
+          emulation path to allow for future extensibility.
+        </p>
+        <p>The Working Group may also work on a higher-level API to load a custom pre-trained Machine Learning model for inference in the browser.</p>
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">
+            Out of Scope
+          </h3>
+          <p>
+            The scope is limited to development of interfaces that expose
+            inference capabilities of the modern platforms beneficial or
+            purpose-built for ML. Training capabilities are out of scope due to
+            limited availability of respective platform APIs.
+          </p>
+          <p>
+            This Working Group will not define any hardware features or
+            algorithms.
+          </p>
+          <p>
+            To avoid overlap with existing work, alignment with the Basic
+            Linear Algebra Subprograms (BLAS) interface is out of scope. The
+            WebGPU shaders and WebAssembly SIMD are expected to address the
+            BLAS compatibility requirement, see the <a href="#coordination">Coordination section</a> for
+            details.
+          </p>
+          <p>
+            Integration between the WebNN and WebGL APIs is out of scope, as the group focuses its efforts on integration with WebGPU APIs.
+          </p>
+        </section>
       </section>
 
       <section id="deliverables">
@@ -133,9 +219,9 @@
           Deliverables
         </h2>
 
-        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/webtransport/publications/">group publication status page</a>.</p>
+        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/webmachinelearning/publications/">group publication status page</a>.</p>
 
-        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation.</p>
 
         <section id="normative">
           <h3>
@@ -145,27 +231,43 @@
             The Working Group will deliver the following W3C normative specifications:
           </p>
           
-          <!--  https://www.w3.org/groups/wg/webtransport/deliverables/ -->
-          <dl data-timestamp="2026-06-01T08:53:03.122Z">
-                                            <dt id="webtransport" class="spec"><a href="https://www.w3.org/TR/webtransport/" rel="versionof">WebTransport</a></dt>
+          <!--  https://www.w3.org/groups/wg/webmachinelearning/deliverables/ -->
+          <dl data-timestamp="2026-06-09T15:55:26.243Z">
+                                            <dt id="webnn" class="spec"><a href="https://www.w3.org/TR/webnn/" rel="versionof">Web Neural Network API</a></dt>
                         <dd>
-                            <p>This specification defines a set of ECMAScript APIs to allow data to be sent and received between a browser and server, implementing pluggable protocols underneath with common APIs on top.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q4 2027]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-webtransport-20260325/">2026-03-25</a></p>
+                            <p>This document describes a dedicated low-level API for neural network inference hardware acceleration.</p>
+                            <p><b>Draft state:</b> </p>
+                            <p><b>Expected completion:</b> Q1 2027</p>
+                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/CRD-webnn-20260521/">2026-05-21</a></p>
                             <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2021/WD-webtransport-20210504/">https://www.w3.org/TR/2021/WD-webtransport-20210504/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-8002-e0386c91931399dfc1955f34479d20db44a8f47d@w3.org">Exclusion period</a>
-                                began on 2021-05-04 and
-                                ended on 2021-10-01.
+                                <a href="https://www.w3.org/TR/2026/CR-webnn-20260122/">https://www.w3.org/TR/2026/CR-webnn-20260122/</a><br>
+                                <a href="https://www.w3.org/mid/cfe-16534-d676d74db9edb66797487339610bbdfd26e6b730@w3.org">Exclusion period</a>
+                                began on 2026-01-22 and
+                                ended on 2026-03-23.
                             </p>
                             <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2020/12/webtransport-wg-charter.html">https://www.w3.org/2020/12/webtransport-wg-charter.html</a>                                                            </p>
-                            <p>Note that the initial version of this deliverable is limited to client-server connections.</p>
+                                                                    <a href="https://www.w3.org/2025/03/webmachinelearning-charter.html">https://www.w3.org/2025/03/webmachinelearning-charter.html</a>                                                            </p>
                         </dd>
                                         </dl>
 
 
+        </section>
+
+        <section id="incubation">
+          <h3>
+            Tentative Deliverables
+          </h3>
+          <p>Depending on the <a href="https://www.w3.org/guide/incubation.html">incubation</a> progress, interest from multiple implementers, and the consensus
+            of the Group participants, the Working Group may adopt the following documents
+             as Rec-track specifications:</p>
+          <dl>
+            <dt id="web-incubated-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
+            <dd>
+              <p>This specification defines <i class="todo">[concrete description]</i>.</p>
+              <p class="draft-status"><b>Draft state:</b>
+                Proposal in <a href=""><i class="todo">[other name]</i> Community Group</a></p>
+            </dd>
+          </dl>
         </section>
 
         <section id="other-deliverables">
@@ -185,12 +287,7 @@
         <section id="timeline">
           <h3>Timeline</h3>
             <ul>
-              <li>September 2020: First teleconference</li>
-              <li>January 2021: FPWD For WebTransport</li>
-              <li>March 2026: Horizontal Review before CR for WebTransport</li>
-              <li>September 2026: CR for WebTransport</li>
-              <li>February 2027: FPWD for next version of WebTransport</li>
-              <li>December 2027: REC For WebTransport</li>
+        	    <li>Q1 2027: Recommendation for WebNN</li>
             </ul>
         </section>
       </section>
@@ -228,7 +325,6 @@ interoperability can be verified by passing open test suites. In order to advanc
       <li><a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>,</li>
       <li><a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</li>
     </ul>
-
 	</section>
 
       <section id="coordination">
@@ -253,27 +349,63 @@ interoperability can be verified by passing open test suites. In order to advanc
         <section>
           
           
-        <h3 id="w3c-coordination">W3C Groups</h3><dl>
+
+          
+          
+        <h3 id="w3c-coordination">
+            W3C Groups
+          </h3><dl>
+            <dt>
+              <a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a>
+            </dt>
+            <dd>
+              The Web Machine Learning Community Group developed the
+              Web Neural Network API adopted by this Working Group. It is
+              expected that the Community Group will continue drive technical
+              work around other specifications in its scope. This Working Group
+              will work with the Web Machine Learning Community Group
+              on shaping the <a href="#tentative">Tentative Specifications</a>
+              being worked on in the Community Group for the Recommendation
+              track.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/wg/gpu/">GPU for the Web Working Group</a>
+            </dt>
+            <dd>
+              The GPU for the Web Working Group defines access to GPU devices with the <a href="https://www.w3.org/TR/webgpu/">WebGPU API</a>, and a <a href="https://www.w3.org/TR/WGSL/">WebGPU Shading
+              Language</a> that may be used to implement traditional machine
+              learning algorithms efficiently. The Web Machine Learning Working
+              Group will coordinate with this group to avoid overlap and
+              to ensure proper integration of WebNN with WebGPU APIs.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/groups/cg/webassembly/">WebAssembly Community Group</a>
+            </dt>
+            <dd>
+              The WebAssembly Community Group incubates a proposal for a
+              128-bit SIMD support in WebAssembly that can be used to implement
+              traditional machine learning algorithms efficiently. The Web
+              Machine Learning Working Group will coordinate with this group
+              to avoid overlap.
+            </dd>
             <dt><a href="https://www.w3.org/groups/wg/webrtc/">Web Real-Time Communications Working Group</a></dt>
-            <dd>The WebRTC API developed by the WebRTC Working Group enables data transfer between peers with similar charactestics to the ones enabled by WebTransport, and may consider adopting the WebTransport API for peer-to-peer data transfer.</dd>
-            <dt><a href="https://www.w3.org/groups/ig/me/">Media and Entertainment Interest Group</a></dt>
-            <dd>The Media and Entertainment Interest Group gather use cases and requirements around media on the Web, including media streaming. Media streaming is expected to be a possible field of application of the WebTransport API.</dd>
-            <dt><a href="https://www.w3.org/groups/wg/media/">Media Working Group</a></dt>
-            <dd>The Media Working Group may develop an Encoders/Decoders API which, together with the WebTransport API, could be used to stream media content (e.g. in low-latency scenarios such as cloud gaming). Interoperability requirements between the APIs may need to be considered.</dd>
-           <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a></dt>
-            <dd>The mission of the Web Application Security Working Group is to develop security and policy mechanisms to improve the security of Web Applications, and enable secure cross-origin communication.</dd>
+            <dd>
+              The WebRTC Working Group defines the <code>MediaStream</code>
+              interface and related media processing APIs that enable integration
+              with Machine Learning capabilities afforded by the WebNN API.
+            </dd>
+            <dt><a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group</a></dt>
+            <dd>Given the well-known ethical risks of bias in the use of Machine Learning, the Web Machine Learning Working Group will work with the Technical Architecture Group to ensure its work align with the <a href="https://w3ctag.github.io/ethical-web-principles/">W3C TAG Ethical Web Principles</a>.</dd>
           </dl></section>
 
         <section>
           
           
-        <h3 id="external-coordination">External Organizations</h3><dl>
-            <dt><a href="https://datatracker.ietf.org/wg/webtrans/about/">IETF WebTransport Working Group</a></dt>
-            <dd>The IETF WebTransport Working Group defines the protocols and protocol extensions which the API will use to establish its client-server connections. The two groups expect to coordinate closely.</dd>
-            <dt><a href="https://datatracker.ietf.org/wg/masque/about/">IETF Multiplexed Application Substrate over QUIC Encryption Working Group</a></dt>
-            <dd>The IETF Multiplexed Application Substrate over QUIC Encryption Working Group develops mechanism(s) that allow configuring and concurrently running multiple proxied stream- and datagram-based flows inside an HTTPS connection.</dd>
-            <dt><a href="https://whatwg.org/">WHATWG</a></dt>
-            <dd>The WHATWG maintains the <a href="https://websockets.spec.whatwg.org/">WebSockets API</a> which may play a role in fallback scenarios when a WebTransport connection cannot be established. It also maintains the <a href="https://streams.spec.whatwg.org/">Streams Standard</a> which is expected to inform how WebTransport exposes data transfer, and <a href="https://fetch.spec.whatwg.org/">Fetch</a> which might be impacted by the use of WebTransport.</dd>
+        <h3 id="external-coordination">
+            External Organizations
+          </h3><dl>
+            <dt><a href="https://tc39.es/">ECMA TC39</a></dt>
+            <dd>TC39 defines the JavaScript language whose primitives are key in how WebNN accesses data (e.g. <code>ArrayBuffer</code>). Possible work on <a href="https://github.com/tc39/proposal-operator-overloading#matrixvector-computations">operator overloading</a> would also impact possible evolutions of the WebNN API.</dd>
           </dl></section>
       </section>
 
@@ -288,7 +420,8 @@ interoperability can be verified by passing open test suites. In order to advanc
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href="#communication">Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
         <p>
-          The Chairs should periodically look through the non-W3C-Member contributors to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/webtransport/instructions/">apply to be an Invited Expert</a>.
+          The Chairs should periodically look through the non-W3C-Member contributors to the 
+          <a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a> and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/webmachinelearning/instructions/">apply to be an Invited Expert</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
@@ -303,14 +436,13 @@ interoperability can be verified by passing open test suites. In order to advanc
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/wg/webtransport/">WebTransport Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/wg/webmachinelearning/">Web Machine Learning Working Group home page.</a>
         </p>
         <p>
-          Most WebTransport Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most Web Machine Learning Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work 
-          on <a class="" id="public-github" href="https://github.com/w3c/webtransport">GitHub issues</a>.
+          This group primarily conducts its technical work on <a class="" id="public-github" href="https://www.w3.org/groups/wg/webmachinelearning/tools/#repositories">GitHub issues</a>.
           The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
@@ -355,7 +487,7 @@ interoperability can be verified by passing open test suites. In order to advanc
         <p>
           This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 May 2025). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webtransport/ipr/">licensing information</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webmachinelearning/ipr/">licensing information</a>.
         </p>
 
         
@@ -383,6 +515,7 @@ interoperability can be verified by passing open test suites. In order to advanc
           <h3>
             Charter History
           </h3>
+          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
 
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
@@ -404,102 +537,44 @@ interoperability can be verified by passing open test suites. In order to advanc
               </tr>
               <tr>
                 <th>
-                  <a href="https://www.w3.org/2020/09/webtransport-wg-charter.html">Initial Charter</a>
+                  <a href="https://www.w3.org/2021/04/web-machine-learning-charter.html">Initial Charter</a>
                 </th>
                 <td>
-                  08 September 2020
+                  2021-04-20
                 </td>
                 <td>
-                  30 September 2022
+                  2023-04-30
                 </td>
                 <td>
-                  Initial Charter
+                  Initial charter
                 </td>
               </tr>
               <tr>
                 <th>
-                  <a href="https://www.w3.org/2020/12/webtransport-wg-charter.html">Rechartered</a>
+                  Second charter
                 </th>
                 <td>
-                  15 December 2020
+                  2023-04-06
                 </td>
                 <td>
-                  30 September 2022
+                  2025-04-30
                 </td>
                 <td>
-                  New Patent Policy
+                  Update to latest status of work and charter template
                 </td>
               </tr>
               <tr>
                 <th>
-                  <a href="https://www.w3.org/2023/01/webtransport-wg-charter.html">Rechartered</a>
+                  This charter
                 </th>
                 <td>
-                  18 January 2023
+                  2025-03-10
                 </td>
                 <td>
-                  31 December 2023
+                  2027-04-30
                 </td>
                 <td>
-                  Charter Extension
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024JanMar/0012.html">Charter Extension</a>
-                </th>
-                <td>
-                  24 January 2024
-                </td>
-                <td>
-                  31 May 2024
-                </td>
-                <td>
-                  Current charter extended. The group plans to work on a new charter during the extension. See the <a href="https://w3c.github.io/charter-drafts/wt-2024.html">draft charter</a> and raise comments via <a href="https://github.com/w3c/charter-drafts/">GitHub issues</a>. 
-                </td>
-              </tr>
-
-              <tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024AprJun/0047.html">Charter Extension</a>
-                </th>
-                <td>
-                  24 June 2024
-                </td>
-                <td>
-                  31 August 2024
-                </td>
-                <td>
-                  Current charter extended to finish the new Charter review.
-                </td>
-              </tr>
-
-             <tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024AprJun/0047.html">Rechartered</a>
-                </th>
-                <td>
-                  9 September 2024
-                </td>
-                <td>
-                  31 December 2025
-                </td>
-                <td>
-                  Clarified entrance criteria.
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2026JanMar/0001.html">Charter Extension</a>
-                </th>
-                <td>
-                  6 January 2026
-                </td>
-                <td>
-                  30 June 2026
-                </td>
-                <td>
-                  Current charter extended. The group plans to work on a new charter during the extension. See the <a href="https://w3c.github.io/charter-drafts/2026/webtransport-wg-charter.html">draft charter</a> and raise comments via <a href="https://github.com/w3c/charter-drafts/">GitHub issues</a>.
+                  Update to latest status of work (removing tentative deliverable on model loader API) and charter template
                 </td>
               </tr>
             </tbody>
@@ -525,7 +600,7 @@ interoperability can be verified by passing open test suites. In order to advanc
 
     <footer>
       <address>
-        <a class="" href="mailto:ylafon@w3.org">Yves Lafon</a>
+        <a class="" href="mailto:dom@w3.org">Dominique Hazaël-Massieux</a>
       </address>
 
 <p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
