@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
+<html lang="en-US">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Application Security Working Group Charter</title>
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
-  <meta name="generator" content="w3c-charter-assistant"><script type="application/json" id="charter-assistant-settings">{
-  "group": "wg/webappsec",
-  "workMode": "cr-snapshot",
-  "a11y-impact": "true",
-  "template": {
-    "sha": "b43b4eb5f52bb0fee2beeb8e98f8266e9ef6ad77",
-    "date": "2026-01-29T10:38:13Z"
-  },
-  "timeStamp": "2026-04-07T14:56:30.375Z"
-}</script><script src="https://www.w3.org/PM/Groups/lib/check-charter.js" type="module" id="charter-assistant-checker"></script></head>
+  </head>
   <body>
     <header id="header">
       <aside>
@@ -26,9 +18,7 @@
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
           <li><a href="#decisions">Decision Policy</a></li>
-          
           <li><a href="#patentpolicy">Patent Policy</a></li>
-          <li></li>
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
@@ -40,13 +30,11 @@
 
 
     <main>
-      <h1 id="title"><i class="todo">DRAFT</i> Web Application Security Working Group Charter</h1>
+      <h1 id="title">DRAFT Web Application Security Working Group Charter</h1>
       <!-- replace DRAFT with PROPOSED when the AC review starts -->
       <!-- delete PROPOSED after AC review completed -->
 
-    
-
-    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a> is to develop mechanisms and best practices which improve the security of Web Applications.</p>
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a> is to to develop mechanisms and best practices which improve the security of Web Applications.</p>
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
       <div class="noprint">
@@ -56,20 +44,16 @@
       <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
       <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
       <!-- delete the whole paragraph after AC review completed -->
-      <p class="issue"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html?todo=@@">GitHub</a>.
-
-    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue%20state%3Aopen%20label%3Atemplate&amp;todo=@@">issues</a></i>.
-          </p>
+      <p class="issue">This draft charter is available on <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2026/charter-wg-webappsec-2026.html">GitHub</a>. Review comments are tracked in <a href="https://github.com/w3c/strategy/issues/551">w3c/strategy issue 551</a>.</p>
 
       <div id="details">
         <table class="summary-table">
-          <tbody><tr id="Status">
+          <tr id="Status">
             <th>
               Charter Status
             </th>
             <td>
-              See the <a class="" href="https://www.w3.org/groups/wg/webappsec/charters/">group status page</a> and <a href="#history">detailed change history</a>.
+              See the <a href="https://www.w3.org/groups/wg/webappsec/charters/">group status page</a> and <a href="#history">detailed change history</a>.
             </td>
           </tr>
           <tr id="Duration">
@@ -77,7 +61,7 @@
               Start date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              The date of the Call for Participation
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -85,167 +69,92 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+              Two years after the start date
             </td>
           </tr>
           <tr id="Chairs">
             <th>
               Chairs
             </th>
-            <td><ul><li>Daniel Veditz (Mozilla Foundation)</li><li>Mike West (Google LLC)</li></ul></td>
+            <td>
+              Dan Veditz (Mozilla), Mike West (Google)
+            </td>
           </tr>
           <tr id="TeamContacts">
             <th>
               Team Contacts
             </th>
-            <td><a href="mailto:simone@w3.org">Simone Onofri</a> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i></td>
+            <td>
+              <a href="mailto:simone@w3.org">Simone Onofri</a> (0.20 <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
           </tr>
           <tr id="MeetingSchedule">
             <th>
               Meeting Schedule
             </th>
             <td>
-              <strong>Teleconferences:</strong> <i class="todo">topic-specific calls may be held</i> or <i class="todo">something else</i>
+              <strong>Teleconferences:</strong> Monthly or as needed.
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
               <br>
-              See also this <a class="" href="https://www.w3.org/groups/wg/webappsec/calendar/">group calendar</a>
+              See also the <a href="https://www.w3.org/groups/wg/webappsec/calendar/">group calendar</a>.
             </td>
           </tr>
-        </tbody></table>
+        </table>
 
       </div>
 
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
-
-        <p>Modern web applications are composed of many parts and
-          technologies, creating a complex tapestry of resource and data
-          flows between origins. This complexity, as well as the
-          historically coarse-grained nature of the security boundaries
-          and principals defined for such applications, makes web
-          applications very difficult to secure. At the same time,
-          securing these applications is ever more critical, as the web
-          becomes more and more critical to users' lives.</p>
+        <p>Modern web applications are composed of many parts and technologies, creating a complex tapestry of resource and data flows between origins. This complexity, as well as the historically coarse-grained nature of the security boundaries and principals defined for such applications, makes web applications very difficult to secure. At the same time, securing these applications is ever more critical, as the web becomes more and more critical to users' lives.</p>
       </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-  
-    <p>This group focuses on the client side of the problem,
-      designing mechanisms user agents can provide to web
-      developers which mitigate the risk of common web attacks,
-      and reduce the surface area that applications expose to
-      attackers. Areas of scope for this working group
-      include:</p>
-  
-    <dl>
-      <dt><b>Vulnerability Mitigation</b></dt>
-      <dd>
-        <p>Sufficiently complex applications involve handling
-        input from untrusted sources in ways that can lead to
-        unexpected code execution, data manipulation, or
-        exfiltration. This Working Group will design mechanisms which reduce
-        the scope, exploitability, and impact of common
-        vulnerabilities and vulnerability classes in web
-        applications (e.g. cross-site scripting, clickjacking, and
-        so on).</p>
-      </dd>
-  
+        <p>This group focuses on the client side of the problem, designing mechanisms user agents can provide to web developers which mitigate the risk of common web attacks, and reduce the surface area that applications expose to attackers. Areas of scope for this working group include:</p>
+
+        <dl>
+          <dt><b>Vulnerability Mitigation</b></dt>
+          <dd>
+            <p>Sufficiently complex applications involve handling input from untrusted sources in ways that can lead to unexpected code execution, data manipulation, or exfiltration. This Working Group will design mechanisms which reduce the scope, exploitability, and impact of common vulnerabilities and vulnerability classes in web applications (e.g. cross-site scripting, clickjacking, and so on).</p>
+          </dd>
+
           <dt><b>Attack Surface Reduction</b></dt>
-  
-            <dd>
-        <p>The Working Group will design mechanisms which prevent certain
-        categories of threat by reducing the privilege of a given
-        context. This effort will result in tools developers can
-        opt-into which:</p>
-  
-        <ul>
-          <li>Allow applications to restrict or forbid potentially dangerous features which they do not intend to use</li>
-          
-          <li>Govern information and content flows into and out of an application</li>
-  
-          <li>Allow applications to isolate themselves from other origins</li>
-          
-          <li>Reduce the privilege of potentially untrusted content and allow it to be interacted with more safely</li>
-      
-          <li>Ensure that application content modification may be detected and prevented</li>
-          
-          <li>Replace or augment error-prone APIs in the browser
-          with safer alternatives (e.g. sanitization, strict
-          contextual autoescaping, validation and encoding
-          requirements, and so on)</li>
-          
-          <li>Enforce requirements on content which loads in a
-          given context (e.g. transport security, embedder/embedee
-          constraints, CORS, etc.)</li>
-        </ul>
-        <p>To the extent possible, these restrictions may also be
-          imposed by default to uniformly reduce risk at scale, or
-          may be positioned as prerequisites to some capability or
-          set of capabilities applications may wish to
-          exercise.</p>
-            </dd>
-  
-      <dt><b>Manageability</b></dt>
-            <dd>
-        <p>
-          Given the ad-hoc nature in which many important security
-        features of the Web have evolved, providing uniformly
-        secure experiences to users is difficult for
-        developers. The Working Group will document and create uniform
-        experiences for several areas of major utility,
-        including:</p>
-        <ul>
-          <li>Providing hinting and direct support for credential
-        managers, whether integrated into the user-agent or
-        3rd-party, to assist users in managing the complexities of
-        secure passwords</li>
-  
-          <li>Application awareness of features which may require
-          explicit user permission to enable.</li>
-        </ul>
-      </dd>
-      
-            <dt><b>The Web Security Model</b></dt>
-            <dd>
-        <p>The WG may be called on to advise other WGs or the TAG
-        on the fundamental security model of the Web Platform. In
-        doing so, the WG may produce Recommendations for
-        addressing legacy issues with the model (e.g. deprecations
-        and removals), as well as improvements to the baseline it
-        sets (e.g. mitigating cross-origin data leaks or
-        side-channel attacks).</p>
-      </dd>
-      <dt><b>WebCrypto</b></dt>
-      <dd>The WG may adopt well-supported proposals from incubation for the
-        evolution and maintenance of the
-        <a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web
-        Cryptography API</a>, including support for additional algorithms,
-        primitives, or API updates where there is implementer interest,
-        Web-platform suitability, and Working Group consensus.</dd>
-    </dl>
-  
-    <p>In addition to developing Recommendation Track documents in
-      support of these goals, the Web Application Security Working
-      Group may provide review of specifications from other
-      Working Groups, in particular as these specifications touch
-      on chartered deliverables of this group (in particular CSP),
-      or the Web security model, and may also develop
-      non-normative documents in support of Web security, such as
-      developer and user guides for its normative specifications.</p>
-          
-<!--
-  Not applicable
-
-  <section id="section-out-of-scope">
-          <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
-
-            <ul class="out-of-scope">
+          <dd>
+            <p>The Working Group will design mechanisms which prevent certain categories of threat by reducing the privilege of a given context. This effort will result in tools developers can opt-into which:</p>
+            <ul>
+              <li>Allow applications to restrict or forbid potentially dangerous features which they do not intend to use</li>
+              <li>Govern information and content flows into and out of an application</li>
+              <li>Allow applications to isolate themselves from other origins</li>
+              <li>Reduce the privilege of potentially untrusted content and allow it to be interacted with more safely</li>
+              <li>Ensure that application content modification may be detected and prevented</li>
+              <li>Replace or augment error-prone APIs in the browser with safer alternatives (e.g. sanitization, strict contextual autoescaping, validation and encoding requirements, and so on)</li>
+              <li>Enforce requirements on content which loads in a given context (e.g. transport security, embedder/embedee constraints, CORS, etc.)</li>
             </ul>
-        </section>
--->
+            <p>To the extent possible, these restrictions may also be imposed by default to uniformly reduce risk at scale, or may be positioned as prerequisites to some capability or set of capabilities applications may wish to exercise.</p>
+          </dd>
+
+          <dt><b>Manageability</b></dt>
+          <dd>
+            <p>Given the ad-hoc nature in which many important security features of the Web have evolved, providing uniformly secure experiences to users is difficult for developers. The Working Group will document and create uniform experiences for several areas of major utility, including:</p>
+            <ul>
+              <li>Providing hinting and direct support for credential managers, whether integrated into the user-agent or 3rd-party, to assist users in managing the complexities of secure passwords</li>
+              <li>Application awareness of features which may require explicit user permission to enable.</li>
+            </ul>
+          </dd>
+
+          <dt><b>The Web Security Model</b></dt>
+          <dd>
+            <p>The WG may be called on to advise other WGs or the TAG on the fundamental security model of the Web Platform. In doing so, the WG may produce Recommendations for addressing legacy issues with the model (e.g. deprecations and removals), as well as improvements to the baseline it sets (e.g. mitigating cross-origin data leaks or side-channel attacks).</p>
+          </dd>
+
+          <dt><b>WebCrypto</b></dt>
+          <dd>
+            <p>The WG may adopt well-supported proposals from incubation for the evolution and maintenance of the <a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a>, including support for additional algorithms, primitives, or API updates where there is implementer interest, Web-platform suitability, and Working Group consensus.</p>
+          </dd>
+        </dl>
+
+        <p>In addition to developing Recommendation Track documents in support of these goals, the Web Application Security Working Group may provide review of specifications from other Working Groups, in particular as these specifications touch on chartered deliverables of this group (in particular CSP), or the Web security model, and may also develop non-normative documents in support of Web security, such as developer and user guides for its normative specifications.</p>
 
       </section>
 
@@ -256,8 +165,7 @@
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/webappsec/publications/">group publication status page</a>.</p>
 
-        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. Expected completion indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.
-        The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation.</p>
+        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation.</p>
 
         <section id="normative">
           <h3>
@@ -266,322 +174,203 @@
           <p>
             The Working Group will deliver the following W3C normative specifications:
           </p>
-          
-          <!--  https://www.w3.org/groups/wg/webappsec/deliverables/ -->
-          <dl data-timestamp="2026-04-07T14:56:30.373Z">
-                                            <dt id="change-password-url" class="spec"><a href="https://www.w3.org/TR/change-password-url/" rel="versionof">A Well-Known URL for Changing Passwords</a></dt>
-                        <dd>
-                            <p>This specification defines a well-known URL that sites can use to make their change password forms discoverable by tools. This simple affordance provides a way for software to help the user find the way to change their password.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2024/WD-change-password-url-20240603/">2024-06-03</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2022/WD-change-password-url-20220927/">https://www.w3.org/TR/2022/WD-change-password-url-20220927/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-10490-0fbb4d178bbe352c1f4f0d1abe619d01b30dd09f@w3.org">Exclusion period</a>
-                                began on 2022-09-27 and
-                                ended on 2023-02-24.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2022/06/webappsec-charter-2022.html">https://www.w3.org/2022/06/webappsec-charter-2022.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="passkey-endpoints-1" class="spec"><a href="https://www.w3.org/TR/passkey-endpoints-1/" rel="versionof">A Well-Known URL for Relying Party Passkey Endpoints</a></dt>
-                        <dd>
-                            <p>This specification defines a well-known URL that WebAuthn Relying Parties (RPs) can host to make their creation and management endpoints discoverable by WebAuthn clients and authenticators.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-passkey-endpoints-1-20260114/">2026-01-14</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2025/WD-passkey-endpoints-1-20250821/">https://www.w3.org/TR/2025/WD-passkey-endpoints-1-20250821/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-15917-6d97eaca53e0c049d8fce1214315d4952286fd8c@w3.org">Exclusion period</a>
-                                began on 2025-08-21 and
-                                ended on 2026-01-18.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">https://www.w3.org/2024/04/wg-webappsec-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="clear-site-data" class="spec"><a href="https://www.w3.org/TR/clear-site-data/" rel="versionof">Clear Site Data</a></dt>
-                        <dd>
-                            <p>This document defines an imperative mechanism which allows web developers to instruct a user agent to clear a user’s locally stored data related to a host and its subdomains.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2017/WD-clear-site-data-20171130/">2017-11-30</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/WD-clear-site-data-20150804/">https://www.w3.org/TR/2015/WD-clear-site-data-20150804/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Aug/0000.html">Exclusion period</a>
-                                began on 2015-08-05 and
-                                ended on 2016-01-02.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="COWL" class="spec"><a href="https://www.w3.org/TR/COWL/" rel="versionof">Confinement with Origin Web Labels</a></dt>
-                        <dd>
-                            <p>This specification defines an API for specifying privacy and integrity policies on data, in the form of origin labels, and a mechanism for confining code according to such policies. This allows Web application authors and server operators to shared data with untrusted - buggy but not malicious - code (e.g., in a mashup scenario) yet impose restrictions on how the code can share the data further.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2015/WD-COWL-20151015/">2015-10-15</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/WD-COWL-20151015/">https://www.w3.org/TR/2015/WD-COWL-20151015/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Oct/0006.html">Exclusion period</a>
-                                began on 2015-10-15 and
-                                ended on 2016-03-13.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="CSP3" class="spec"><a href="https://www.w3.org/TR/CSP3/" rel="versionof">Content Security Policy Level 3</a></dt>
-                        <dd>
-                            <p>This document defines a mechanism by which web developers can control the resources which a particular page can fetch or execute, as well as a number of security-relevant policy decisions.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-CSP3-20260401/">2026-04-01</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2016/WD-CSP3-20160126/">https://www.w3.org/TR/2016/WD-CSP3-20160126/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jan/0007.html">Exclusion period</a>
-                                began on 2016-01-26 and
-                                ended on 2016-06-24.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="csp-embedded-enforcement" class="spec"><a href="https://www.w3.org/TR/csp-embedded-enforcement/" rel="versionof">Content Security Policy: Embedded Enforcement</a></dt>
-                        <dd>
-                            <p>This document defines a mechanism by which a web page can embed a nested browsing context if and only if it agrees to enforce a particular set of restrictions upon itself.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">2016-09-09</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/WD-csp-embedded-enforcement-20151215/">https://www.w3.org/TR/2015/WD-csp-embedded-enforcement-20151215/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Dec/0005.html">Exclusion period</a>
-                                began on 2015-12-15 and
-                                ended on 2016-05-13.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="credential-management-1" class="spec"><a href="https://www.w3.org/TR/credential-management-1/" rel="versionof">Credential Management Level 1</a></dt>
-                        <dd>
-                            <p>This specification describes an imperative API enabling a website to
-request a user’s credentials from a user agent, and to help the user agent
-correctly store user credentials for future use.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-credential-management-1-20260213/">2026-02-13</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/WD-credential-management-1-20150430/">https://www.w3.org/TR/2015/WD-credential-management-1-20150430/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0012.html">Exclusion period</a>
-                                began on 2015-04-30 and
-                                ended on 2015-09-27.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="dbsc-1" class="spec"><a href="https://www.w3.org/TR/dbsc-1/" rel="versionof">Device Bound Session Credentials</a></dt>
-                        <dd>
-                            <p>Device Bound Sessions Credentials (DBSC) aims to prevent hijacking via cookie theft by building a protocol and infrastructure that allows a user agent to assert possession of a securely-stored private key. DBSC is a Web API and a protocol between user agents and servers to achieve this binding.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2025/WD-dbsc-1-20250821/">2025-08-21</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2025/WD-dbsc-1-20250821/">https://www.w3.org/TR/2025/WD-dbsc-1-20250821/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-15916-9833bebb42d3a019154329885792e0367e9867ab@w3.org">Exclusion period</a>
-                                began on 2025-08-21 and
-                                ended on 2026-01-18.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">https://www.w3.org/2024/04/wg-webappsec-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="fetch-metadata" class="spec"><a href="https://www.w3.org/TR/fetch-metadata/" rel="versionof">Fetch Metadata Request Headers</a></dt>
-                        <dd>
-                            <p>This document defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2025/WD-fetch-metadata-20250401/">2025-04-01</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2019/WD-fetch-metadata-20190627/">https://www.w3.org/TR/2019/WD-fetch-metadata-20190627/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-7058-c040b34e1edca8d0c7165291e97c969a18d05be2@w3.org">Exclusion period</a>
-                                began on 2019-06-27 and
-                                ended on 2019-11-24.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">https://www.w3.org/2019/03/webappsec-2019-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="mixed-content" class="spec"><a href="https://www.w3.org/TR/mixed-content/" rel="versionof">Mixed Content</a></dt>
-                        <dd>
-                            <p>This specification describes how and why user agents disallow
-rendering and execution of content loaded over unencrypted or
-unauthenticated connections in the context of an encrypted and
-authenticated document.</p>
-                            <p><b>Draft state:</b> </p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2023/CRD-mixed-content-20230223/">2023-02-23</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2016/CR-mixed-content-20160802/">https://www.w3.org/TR/2016/CR-mixed-content-20160802/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Aug/0000.html">Exclusion period</a>
-                                began on 2016-08-02 and
-                                ended on 2016-10-01.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="permissions" class="spec"><a href="https://www.w3.org/TR/permissions/" rel="versionof">Permissions</a></dt>
-                        <dd>
-                            <p>The Permissions API allows a web application to be aware of the status of a given permission, to know whether it is granted, denied or if the user will be asked whether the permission should be granted.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2025/WD-permissions-20251006/">2025-10-06</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/WD-permissions-20150407/">https://www.w3.org/TR/2015/WD-permissions-20150407/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0001.html">Exclusion period</a>
-                                began on 2015-04-09 and
-                                ended on 2015-09-06.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="permissions-policy-1" class="spec"><a href="https://www.w3.org/TR/permissions-policy-1/" rel="versionof">Permissions Policy</a></dt>
-                        <dd>
-                            <p>This specification defines a mechanism that allows developers to selectively enable and disable use of various browser features and APIs.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2025/WD-permissions-policy-1-20251006/">2025-10-06</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2019/WD-feature-policy-1-20190416/">https://www.w3.org/TR/2019/WD-feature-policy-1-20190416/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-6972-2b02ecda0275dbc6a16322d0aa2715bb1b0c7f16@w3.org">Exclusion period</a>
-                                began on 2019-04-16 and
-                                ended on 2019-09-13.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">https://www.w3.org/2019/03/webappsec-2019-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="referrer-policy" class="spec"><a href="https://www.w3.org/TR/referrer-policy/" rel="versionof">Referrer Policy</a></dt>
-                        <dd>
-                            <p>This document describes how an author can set a referrer
-policy for documents they create, and the impact of such a policy on the
-referer HTTP header for outgoing requests and navigations.</p>
-                            <p><b>Draft state:</b> Candidate Recommendation</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">2017-01-26</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">https://www.w3.org/TR/2017/CR-referrer-policy-20170126/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Jan/0002.html">Exclusion period</a>
-                                began on 2017-01-27 and
-                                ended on 2017-03-28.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="secure-contexts" class="spec"><a href="https://www.w3.org/TR/secure-contexts/" rel="versionof">Secure Contexts</a></dt>
-                        <dd>
-                            <p>This specification provides guidelines for user agent implementors and
-spec authors for implementing features whose properties dictate that
-they be exposed to the web only within a trustworthy environment.</p>
-                            <p><b>Draft state:</b> </p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2023/CRD-secure-contexts-20231110/">2023-11-10</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">https://www.w3.org/TR/2016/CR-secure-contexts-20160915/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Sep/0007.html">Exclusion period</a>
-                                began on 2016-09-16 and
-                                ended on 2016-11-15.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="sri-2" class="spec"><a href="https://www.w3.org/TR/sri-2/" rel="versionof">Subresource Integrity</a></dt>
-                        <dd>
-                            <p>This specification defines a mechanism by which user agents may verify that a fetched resource has been delivered without unexpected manipulation.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-sri-2-20260320/">2026-03-20</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2025/WD-sri-2-20250422/">https://www.w3.org/TR/2025/WD-sri-2-20250422/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-15378-d0b8ad91fc39a9beb48e35304c9f430f0a69862b@w3.org">Exclusion period</a>
-                                began on 2025-04-22 and
-                                ended on 2025-09-19.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">https://www.w3.org/2024/04/wg-webappsec-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="trusted-types" class="spec"><a href="https://www.w3.org/TR/trusted-types/" rel="versionof">Trusted Types</a></dt>
-                        <dd>
-                            <p>An API that allows applications to lock down powerful APIs to only accept non-spoofable, typed values in place of strings to prevent vulnerabilities caused by using these APIs with attacker-controlled inputs.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-trusted-types-20260224/">2026-02-24</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2022/WD-trusted-types-20220927/">https://www.w3.org/TR/2022/WD-trusted-types-20220927/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-10489-bbf3f0cb2c9cd2650c1a090a531af44cd91ba47e@w3.org">Exclusion period</a>
-                                began on 2022-09-27 and
-                                ended on 2023-02-24.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2022/06/webappsec-charter-2022.html">https://www.w3.org/2022/06/webappsec-charter-2022.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="upgrade-insecure-requests" class="spec"><a href="https://www.w3.org/TR/upgrade-insecure-requests/" rel="versionof">Upgrade Insecure Requests</a></dt>
-                        <dd>
-                            <p>This document defines a mechanism which allows authors to instruct a user agent to upgrade a priori insecure resource requests to secure transport before fetching them.</p>
-                            <p><b>Draft state:</b> Candidate Recommendation</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">2015-10-08</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">https://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Oct/0004.html">Exclusion period</a>
-                                began on 2015-10-09 and
-                                ended on 2015-12-08.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">https://www.w3.org/2015/03/webappsec-charter-2015.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="UISecurity" class="spec"><a href="https://www.w3.org/TR/UISecurity/" rel="versionof">User Interface Security and the Visibility API</a></dt>
-                        <dd>
-                            <p>This document defines directives for the Content Security Policy mechanism to declare a set of input protections for a web resource's user interface, defines a non-normative set of heuristics for Web user agents to implement these input protections, and a reporting mechanism for when they are triggered.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2016/WD-UISecurity-20160607/">2016-06-07</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2014/WD-UISecurity-20140318/">https://www.w3.org/TR/2014/WD-UISecurity-20140318/</a><br>
-                                <a href="https://lists.w3.org/Archives/Member/member-cfe/2014Mar/0003.html">Exclusion period</a>
-                                began on 2014-03-18 and
-                                ended on 2014-05-17.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2013/07/webappsec-charter.html">https://www.w3.org/2013/07/webappsec-charter.html</a>                                                            </p>
-                        </dd>
-                                            <dt id="webcrypto-2" class="spec"><a href="https://www.w3.org/TR/webcrypto-2/" rel="versionof">Web Cryptography Level 2</a></dt>
-                        <dd>
-                            <p>This specification describes a JavaScript API for performing basic cryptographic operations in web applications, such as hashing, signature generation and verification, and encryption and decryption. Additionally, it describes an API for applications to generate and/or manage the keying material necessary to perform these operations. Uses for this API range from user or service authentication, document or code signing, and the confidentiality and integrity of communications.</p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
-                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2025/WD-webcrypto-2-20250422/">2025-04-22</a></p>
-                            <p><b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2025/WD-webcrypto-2-20250422/">https://www.w3.org/TR/2025/WD-webcrypto-2-20250422/</a><br>
-                                <a href="https://www.w3.org/mid/cfe-15381-0e1c731124d9ec839b1ac8c63ee96d78dad14812@w3.org">Exclusion period</a>
-                                began on 2025-04-22 and
-                                ended on 2025-09-19.
-                            </p>
-                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                                                    <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">https://www.w3.org/2024/04/wg-webappsec-charter.html</a>                                                            </p>
-                        </dd>
-                                        </dl>
+          <dl>
+            <dt id="fetch-metadata" class="spec"><a href="https://www.w3.org/TR/fetch-metadata/">Fetch Metadata Request Headers</a></dt>
+            <dd>
+              <p>Defines a set of Fetch metadata request headers that aim to provide servers with enough information to make a priori decisions about whether or not to service a request based on the way it was made, and the context in which it will be used.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> will be incorporated into the WHATWG Fetch spec</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-fetch-metadata-20250401/">1 April 2025</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2019/WD-fetch-metadata-20190627/">27 June 2019</a>; exclusion period <a href="https://www.w3.org/mid/cfe-7058-c040b34e1edca8d0c7165291e97c969a18d05be2@w3.org">began 27 June 2019 and ended 24 November 2019</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">2019 charter</a></p>
+            </dd>
+
+            <dt id="change-password-url" class="spec"><a href="https://www.w3.org/TR/change-password-url/">A Well-Known URL for Changing Passwords</a></dt>
+            <dd>
+              <p>A well-known URL that sites can use to make their change password forms discoverable by tools. This simple affordance provides a way for software to help the user find the way to change their password.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2024/WD-change-password-url-20240603/">3 June 2024</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2022/WD-change-password-url-20220927/">27 September 2022</a>; exclusion period <a href="https://www.w3.org/mid/cfe-10490-0fbb4d178bbe352c1f4f0d1abe619d01b30dd09f@w3.org">began 27 September 2022 and ended 24 February 2023</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/06/webappsec-charter-2022.html">2022 charter</a></p>
+            </dd>
+
+            <dt id="passkey-endpoints-1" class="spec"><a href="https://www.w3.org/TR/passkey-endpoints-1/">A Well-Known URL for Relying Party Passkey Endpoints</a></dt>
+            <dd>
+              <p>Similar to the well-known URLs for changing passwords, this proposes a well-known URL which WebAuthn Relying Parties (RPs) can host to make their creation and management endpoints discoverable by WebAuthn clients and authenticators.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-passkey-endpoints-1-20260114/">14 January 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2025/WD-passkey-endpoints-1-20250821/">21 August 2025</a>; exclusion period <a href="https://www.w3.org/mid/cfe-15917-6d97eaca53e0c049d8fce1214315d4952286fd8c@w3.org">began 21 August 2025 and ended 18 January 2026</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">2024 charter</a></p>
+            </dd>
+
+            <dt id="trusted-types" class="spec"><a href="https://www.w3.org/TR/trusted-types/">Trusted Types</a></dt>
+            <dd>
+              <p>An API that allows applications to lock down powerful APIs to only accept non-spoofable, typed values in place of strings to prevent vulnerabilities caused by using these APIs with attacker-controlled inputs.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-trusted-types-20260623/">23 June 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2022/WD-trusted-types-20220927/">27 September 2022</a>; exclusion period <a href="https://www.w3.org/mid/cfe-10489-bbf3f0cb2c9cd2650c1a090a531af44cd91ba47e@w3.org">began 27 September 2022 and ended 24 February 2023</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2022/06/webappsec-charter-2022.html">2022 charter</a></p>
+            </dd>
+
+            <dt id="CSP3" class="spec"><a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a></dt>
+            <dd>
+              <p>A policy language intended to enable web designers or server administrators to declare a security policy for a web resource. The goal of this specification is to reduce attack surface by specifying overall rules for what content may or may not do, thus preventing violation of security assumptions by attackers who are able to partially manipulate that content. Content Security Policy (CSP) Level 3 succeeds CSP2, which is now a Recommendation.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-CSP3-20260505/">5 May 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2016/WD-CSP3-20160126/">26 January 2016</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jan/0007.html">began 26 January 2016 and ended 24 June 2016</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="mixed-content" class="spec"><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a></dt>
+            <dd>
+              <p>Guidance for user agents dealing with resources loaded over insecure channels in a secure web application. Use cases includes standard behaviors for user agents to follow when encountering insecure resource loads in a secure context.</p>
+              <p class="draft-status"><b>Draft state:</b> Candidate Recommendation Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2023/CRD-mixed-content-20230223/">23 February 2023</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2016/CR-mixed-content-20160802/">2 August 2016</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Aug/0000.html">began 2 August 2016 and ended 1 October 2016</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="upgrade-insecure-requests" class="spec"><a href="https://www.w3.org/TR/upgrade-insecure-requests/">Upgrade Insecure Requests</a></dt>
+            <dd>
+              <p>A mechanism to assist sites migrating from HTTP to HTTPS by allowing them to assert to a user agent that they intend a site to load only secure resources, and that insecure URLs ought to be treated as though they had been replaced with secure URLs.</p>
+              <p class="draft-status"><b>Draft state:</b> Candidate Recommendation</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">8 October 2015</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">8 October 2015</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Oct/0004.html">began 9 October 2015 and ended 8 December 2015</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="secure-contexts" class="spec"><a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a></dt>
+            <dd>
+              <p>A definition for "secure contexts" allowing user agent implementers and specification authors to enable certain features only when certain minimum standards of authentication and confidentiality are met.</p>
+              <p class="draft-status"><b>Draft state:</b> Candidate Recommendation Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2023/CRD-secure-contexts-20231110/">10 November 2023</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">15 September 2016</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Sep/0007.html">began 16 September 2016 and ended 15 November 2016</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="clear-site-data" class="spec"><a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a></dt>
+            <dd>
+              <p>An imperative mechanism which allows web developers to instruct a user agent to clear a site’s locally stored data related to a host.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2017/WD-clear-site-data-20171130/">30 November 2017</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/WD-clear-site-data-20150804/">4 August 2015</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Aug/0000.html">began 5 August 2015 and ended 2 January 2016</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="referrer-policy" class="spec"><a href="https://www.w3.org/TR/referrer-policy/">Referrer Policy</a></dt>
+            <dd>
+              <p>A header and meta tag allowing resource authors to specify a policy for the values sent as part of the HTTP Referer (sic) header. Use cases include making this policy more restrictive to protect applications which include security capability tokens in the URL, or allowing more permissive sharing of referrer information from secure to insecure origins to remove barriers which today prevent applications from moving to secure origins.</p>
+              <p class="draft-status"><b>Draft state:</b> Candidate Recommendation</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">26 January 2017</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">26 January 2017</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2017Jan/0002.html">began 27 January 2017 and ended 28 March 2017</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="credential-management-1" class="spec"><a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a></dt>
+            <dd>
+              <p>A standardized API to address use cases related to assisted management of user credentials, including traditional username/password pairs, username/federated identity provider pairs. The API should allow for explicit and interoperable imperative mechanisms for use and lifecycle management of these common credential types.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-credential-management-1-20260702/">2 July 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/WD-credential-management-1-20150430/">30 April 2015</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0012.html">began 30 April 2015 and ended 27 September 2015</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="permissions" class="spec"><a href="https://www.w3.org/TR/permissions/">Permissions</a></dt>
+            <dd>
+              <p>An API to allow web applications to be aware of the status of a given permission, to know whether it is granted, denied, or if the user will be asked whether the permission should be granted.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-permissions-20251006/">6 October 2025</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2015/WD-permissions-20150407/">7 April 2015</a>; exclusion period <a href="https://lists.w3.org/Archives/Member/member-cfe/2015Apr/0001.html">began 9 April 2015 and ended 6 September 2015</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">2015 charter</a></p>
+            </dd>
+
+            <dt id="permissions-policy-1" class="spec"><a href="https://www.w3.org/TR/permissions-policy-1/">Permissions Policy</a></dt>
+            <dd>
+              <p>A mechanism that allows developers to selectively enable and disable use of various browser features and APIs. Formerly known as Feature Policy.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-permissions-policy-1-20260618/">18 June 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2019/WD-feature-policy-1-20190416/">16 April 2019</a>; exclusion period <a href="https://www.w3.org/mid/cfe-6972-2b02ecda0275dbc6a16322d0aa2715bb1b0c7f16@w3.org">began 16 April 2019 and ended 13 September 2019</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">2019 charter</a></p>
+            </dd>
+
+            <dt id="document-policy" class="spec"><a href="https://wicg.github.io/document-policy/">Document Policy</a></dt>
+            <dd>
+              <p>A framework for designing configurable features as part of the web platform, and for allowing web developers to configure those features as part of their site deployment.</p>
+              <p class="draft-status"><b>Draft state:</b> Incubation in the Web Platform Incubator Community Group</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Initial Text:</b> <a href="https://wicg.github.io/document-policy/">Document Policy Editor's Draft</a></p>
+            </dd>
+
+            <dt id="sri-2" class="spec"><a href="https://www.w3.org/TR/sri-2/">Subresource Integrity Level 2</a></dt>
+            <dd>
+              <p>This specification defines a mechanism by which user agents may verify that a fetched resource has been delivered without unexpected manipulation.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2026/WD-sri-2-20260320/">20 March 2026</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2025/WD-sri-2-20250422/">22 April 2025</a>; exclusion period <a href="https://www.w3.org/mid/cfe-15378-d0b8ad91fc39a9beb48e35304c9f430f0a69862b@w3.org">began 22 April 2025 and ended 19 September 2025</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">2024 charter</a></p>
+            </dd>
+
+            <dt id="dbsc-1" class="spec new"><a href="https://www.w3.org/TR/dbsc-1/">Device Bound Session Credentials</a></dt>
+            <dd>
+              <p>This specification defines a Web API and a protocol through which a user agent can assert possession of a securely stored private key to bind a session to a device and reduce the risk of cookie theft.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-dbsc-1-20250821/">21 August 2025</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2025/WD-dbsc-1-20250821/">21 August 2025</a>; exclusion period <a href="https://www.w3.org/mid/cfe-15916-9833bebb42d3a019154329885792e0367e9867ab@w3.org">began 21 August 2025 and ended 18 January 2026</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">2024 charter</a></p>
+            </dd>
+
+            <dt id="webcrypto-2" class="spec new"><a href="https://www.w3.org/TR/webcrypto-2/">Web Cryptography Level 2</a></dt>
+            <dd>
+              <p>This specification defines a JavaScript API for performing basic cryptographic operations in web applications and for generating or managing the keying material needed for those operations.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+              <p class="milestone"><b>Expected completion:</b> Undetermined</p>
+              <p><b>Adopted Draft:</b> <a href="https://www.w3.org/TR/2025/WD-webcrypto-2-20250422/">22 April 2025</a></p>
+              <p><b>Exclusion Draft:</b> <a href="https://www.w3.org/TR/2025/WD-webcrypto-2-20250422/">22 April 2025</a>; exclusion period <a href="https://www.w3.org/mid/cfe-15381-0e1c731124d9ec839b1ac8c63ee96d78dad14812@w3.org">began 22 April 2025 and ended 19 September 2025</a>.</p>
+              <p><b>Exclusion Draft Charter:</b> <a href="https://www.w3.org/2024/04/wg-webappsec-charter.html">2024 charter</a></p>
+            </dd>
+          </dl>
 
 
         </section>
 
         <section id="incubation">
-          <!-- If no incubation or not a Working Group, delete the section. -->
           <h3>
             Tentative Deliverables
           </h3>
           <p>Depending on the <a href="https://www.w3.org/guide/incubation.html">incubation</a> progress, interest from multiple implementers, and the consensus
-            of the Group participants, the Working Group may adopt the following documents
-             as Rec-track specifications:</p>
+            of the Group participants, the Group may also produce Recommendation-track specifications for the
+            following documents:</p>
           <dl>
-            <dt id="web-incubated-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
+            <dt id="source-code-transparency" class="spec"><a href="https://github.com/w3c/webappsec/blob/main/meetings/2023/2023-09-15-TPAC-minutes.md#source-code-transparency-sketch">Source Code Transparency</a></dt>
             <dd>
-              <p>This specification defines <i class="todo">[concrete description]</i>.</p>
-              <p class="draft-status"><b>Draft state:</b>
-                Proposal in <a href=""><i class="todo">[other name]</i> Community Group</a></p>
+              <p>The goal would be to have a mechanism to verify that the source code of a web app appears in some transparency log (similar to Certificate Transparency), to allow auditors to check the source code, and make it impossible to surreptitiously serve a malicious version of a web app to one user, for example.</p>
+              <p class="draft-status"><b>Draft state:</b> Early proposal discussed by the Working Group</p>
+            </dd>
+
+            <dt id="securer-contexts" class="spec"><a href="https://github.com/mikewest/securer-contexts">Securer Contexts</a></dt>
+            <dd>
+              <p>Securer context is a proposal to extend the threat model beyond encrypting the transport layer, and bring attention to application layer threats that rely on either injection or insufficient isolation.</p>
+              <p class="draft-status"><b>Draft state:</b> Incubation proposal</p>
+            </dd>
+
+            <dt id="dbsc-sso" class="spec new"><a href="https://github.com/WICG/dbsc-sso">Device Bound Session Credentials for Single Sign-On</a></dt>
+            <dd>
+              <p>This proposal extends Device Bound Session Credentials to support cross-origin single sign-on scenarios.</p>
+              <p class="draft-status"><b>Draft state:</b> Incubation in the Web Platform Incubator Community Group</p>
             </dd>
           </dl>
         </section>
@@ -590,6 +379,30 @@ they be exposed to the web only within a trustworthy environment.</p>
           <h3>
             Other Deliverables
           </h3>
+          <dl>
+            <dt id="post-spectre-webdev" class="spec"><a href="https://www.w3.org/TR/post-spectre-webdev/">Post-Spectre Web Development</a></dt>
+            <dd>
+              <p>A description of Spectre-type attacks as well as mitigations, targeted at web developers.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+            </dd>
+
+            <dt id="csp-embedded-enforcement" class="spec"><a href="https://www.w3.org/TR/csp-embedded-enforcement/">Content Security Policy: Embedded Enforcement</a></dt>
+            <dd>
+              <p>A mechanism by which a web page can embed a nested browsing context if and only if it agrees to enforce a particular set of restrictions upon itself.</p>
+              <p>Previously published as a Working Draft, CSP:EE will be repubished as a WG note, and work will continue in WICG.</p>
+              <p class="draft-status"><b>Draft state:</b> Working Draft</p>
+            </dd>
+
+            <dt id="cookie-security-privacy-model" class="spec">Security and privacy model for cookies</dt>
+            <dd>
+              <p>A Group Note to outline the desired security and privacy model for cookies post third-party cookie deprecation, including cookie behaviors by default and mechanisms for reenabling them in third-party contexts (SAA, user controls, etc).</p>
+            </dd>
+
+            <dt id="permissions-best-practices" class="spec">Permissions best practices</dt>
+            <dd>
+              <p>A Group Note to outline some of the best practices when requesting permissions from users and adding new permission prompts to the Web platform.</p>
+            </dd>
+          </dl>
           <p>
             Other non-normative documents may be created such as:
           </p>
@@ -602,27 +415,18 @@ they be exposed to the web only within a trustworthy environment.</p>
 
         <section id="timeline">
           <h3>Timeline</h3>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
-              <li>Month YYYY: First teleconference</li>
-              <li>Month YYYY: First face-to-face meeting</li>
-              <li>Month YYYY: Requirements and Use Cases for FooML</li>
-              <li>Month YYYY: FPWD for FooML</li>
-              <li>Month YYYY: Requirements and Use Cases for BarML</li>
-              <li>Month YYYY: FPWD FooML Primer</li>
-            </ul>
+          <p>The Working Group expects to publish Candidate Recommendation Snapshots as specifications become ready. Current publication status is available on the <a href="https://www.w3.org/groups/wg/webappsec/publications/">group publication status page</a>; specification-specific milestones are tracked in the relevant repositories.</p>
         </section>
       </section>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
 
-    <!-- Testing and interop -->
-    <p>
-      To promote interoperability, all changes made to specifications
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+    <p>To promote interoperability, all changes made to specifications
       in Candidate Recommendation
       or to features that have deployed implementations
-      should have <a href="https://www.w3.org/policies/testing/">tests</a>.
+      should have <a href='https://www.w3.org/policies/testing/'>tests</a>.
       Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
 
     <!-- Horizontal review -->
@@ -630,8 +434,7 @@ they be exposed to the web only within a trustworthy environment.</p>
     <p>Each specification should contain separate sections detailing all known security and
       privacy implications for implementers, Web authors, and users.</p>
 
-	  <p id="a11y-section">
-		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+	  <p id="a11y-section">Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
 		recommendations for maximising accessibility in implementations.</p>
 
     <!-- W3C Statements and Web Platform Design Principles -->
@@ -643,12 +446,11 @@ they be exposed to the web only within a trustworthy environment.</p>
     </ul>
 
     <!-- Relevance and momentum -->
-	  <p></p>All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
+	  <p>All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
 	</section>
 
       <section id="coordination">
         <h2>Coordination</h2>
-        
         <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/guide/documentreview/#how-to-get-horizontal-review">horizontal review</a> for
         accessibility, internationalization, privacy, and security with the relevant Working and
         Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>.
@@ -659,19 +461,11 @@ they be exposed to the web only within a trustworthy environment.</p>
         <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
         to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
-        
-        
-
-
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
 
         <section>
-          
-          
-
-          
-          
-        <h3 id="w3c-coordination">W3C Groups</h3><dl>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
             <dt><a href="https://www.w3.org/groups/wg/webauthn/">Web Authentication Working Group</a></dt>
             <dd>The WG will liaise with the Web Authentication WG on Credential Management.</dd>
 
@@ -679,32 +473,23 @@ they be exposed to the web only within a trustworthy environment.</p>
             <dd>The WG may work with the Devices and Sensors WG on the security of their client-side APIs.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/privacy/">Privacy Working Group</a></dt>
-            <dd>
-              The mission of the Privacy Working Group is to improve privacy on the Web both by advising groups developing standards on how to avoid and mitigate privacy issues with Web technologies and by standardizing mechanisms that improve user privacy on the Web.
-            </dd>
-          </dl></section>
+            <dd>The work on Security and privacy model for cookies, Permissions best practices and APIs, and End-to-End Encryption email should be coordinated with the Privacy group.</dd>
+
+            <dt><a href="https://www.w3.org/groups/ig/security/">Security Interest Group (SING)</a></dt>
+            <dd>The Working Group will collaborate with the Security Interest Group on horizontal security review and the Web Security Model.</dd>
+          </dl>
+        </section>
 
         <section>
-          
-          
-        <h3 id="external-coordination">External Organizations</h3><dl>
-            <dt><a href="https://whatwg.org/">Web Hypertext Application Technology Working Group
-              (WHATWG)</a></dt>
-            <dd>
-              Specifications such as CSP provide inputs into the algorithms defined by, e.g., the
-              Fetch specification, and portions of CSP and Mixed Content may be defined in terms of
-              Fetch. The Working Group should also pay attention to work, such as <a href="https://github.com/WICG/PEPC/blob/main/explainer.md">Page Embedded Permission Control (PEPC)</a>
-              and <a href="https://github.com/shhnjk/allow-unique-origin">Sandbox <code>allow-unique-origin</code></a>.
-            </dd>
-            <dt><a title="IETF Home Page" href="https://www.ietf.org/" id="ietf">Internet Engineering Task Force</a></dt>
-            <dd>
-              The IETF is responsible for defining robust and secure protocols for Internet
-              functionality, in particular HTTP. The Working Group should coordinate
-              protocol-related work (e.g. cookies) with the appropriate IETF WGs.
-              For Web Cryptography API work, the Working Group should coordinate
-              as appropriate with relevant IETF work, including the CFRG.
-            </dd>
-          </dl></section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="https://whatwg.org/">Web Hypertext Application Technology Working Group (WHATWG)</a></dt>
+            <dd>Specifications such as CSP provide inputs into the algorithms defined by, e.g., the Fetch specification, and portions of CSP and Mixed Content may be defined in terms of Fetch. The Working Group should also pay attention to work, such as <a href="https://github.com/WICG/PEPC/blob/main/explainer.md">Page Embedded Permission Control (PEPC)</a> and <a href="https://github.com/shhnjk/allow-unique-origin">Sandbox <code>allow-unique-origin</code></a>.</dd>
+
+            <dt><a href="https://www.ietf.org/">Internet Engineering Task Force</a></dt>
+            <dd>The IETF is responsible for defining robust and secure protocols for Internet functionality, in particular HTTP. The Working Group should coordinate protocol-related work (e.g. cookies) with the appropriate IETF WGs. For Web Cryptography API work, the Working Group should coordinate as appropriate with relevant IETF work, including the CFRG.</dd>
+          </dl>
+        </section>
       </section>
 
       <section class="participation">
@@ -712,13 +497,16 @@ they be exposed to the web only within a trustworthy environment.</p>
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 10 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
         </p>
         <p>
-          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href="#communication">Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The Chairs should periodically look through the non-W3C-Member contributors to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/webappsec/instructions/">apply to be an Invited Expert</a>.
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+        </p>
+        <p>
+          The Chairs should periodically review non-W3C-Member contributors to the Working Group and related Community Groups and consider whether they should be invited to participate as <a href="https://www.w3.org/invited-experts/">Invited Experts</a>. Non-W3C-Member contributors who would like to participate in meetings are encouraged to <a href="https://www.w3.org/groups/wg/webappsec/instructions/">apply to be an Invited Expert</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
@@ -740,7 +528,7 @@ they be exposed to the web only within a trustworthy environment.</p>
         </p>
         <p>
           This group primarily conducts its technical work on the public mailing list <a id="public-name" href="mailto:public-webappsec@w3.org">public-webappsec@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-webappsec/">archive</a>)
-          or on <a class="" id="public-github" href="https://www.w3.org/groups/wg/webappsec/tools/#repositories">GitHub issues</a>.
+          and in issues in <a id="public-github" href="https://github.com/w3c/webappsec/">GitHub repositories</a>.
           The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
@@ -762,7 +550,7 @@ they be exposed to the web only within a trustworthy environment.</p>
         <p>
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id="cfc">7 to 10 working days</span>, depending on the chair's evaluation of the group consensus on the issue.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>7 to 10 working days</span>, depending on the chair's evaluation of the group consensus on the issue.
 
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
@@ -777,8 +565,6 @@ they be exposed to the web only within a trustworthy environment.</p>
 
 
       <section id="patentpolicy">
-      
-
         <h2>
           Patent Policy
         </h2>
@@ -787,9 +573,6 @@ they be exposed to the web only within a trustworthy environment.</p>
 
           For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/webappsec/ipr/">licensing information</a>.
         </p>
-
-        
-        
       </section>
 
 
@@ -813,8 +596,6 @@ they be exposed to the web only within a trustworthy environment.</p>
           <h3>
             Charter History
           </h3>
-          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
-
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
           <table class="history">
@@ -833,7 +614,7 @@ they be exposed to the web only within a trustworthy environment.</p>
                   Changes
                 </th>
               </tr>
-             <tr>
+              <tr>
                 <th>
                   <a href="https://www.w3.org/2011/08/appsecwg-charter">Initial Charter</a>
                 </th>
@@ -848,21 +629,21 @@ they be exposed to the web only within a trustworthy environment.</p>
                 </td>
               </tr>
               <tr>
-                  <th>
-                    <a href="https://www.w3.org/2013/07/webappsec-charter.html">Rechartered</a>
-                  </th>
-                  <td>
-                    24 October 2013
-                  </td>
-                  <td>
-                    30 September 2014
-                  </td>
-                  <td>
-                    <p>Added CSP 1.1, Secure Mixed Content, Lightweight Isolated / Safe Content.</p>
-                    <p>Secure Cross-Domain Resource Sharing becomes CORS. Secure Cross-Domain Framing becomes User Interface Security Directives for Content Security Policy </p>
-                  </td>
-                </tr>
-                <tr>
+                <th>
+                  <a href="https://www.w3.org/2013/07/webappsec-charter.html">Rechartered</a>
+                </th>
+                <td>
+                  24 October 2013
+                </td>
+                <td>
+                  30 September 2014
+                </td>
+                <td>
+                  <p>Added CSP 1.1, Secure Mixed Content, Lightweight Isolated / Safe Content.</p>
+                  <p>Secure Cross-Domain Resource Sharing becomes CORS. Secure Cross-Domain Framing becomes User Interface Security Directives for Content Security Policy </p>
+                </td>
+              </tr>
+              <tr>
                 <th>
                   <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2015JanMar/0027.html">Charter Extension</a>
                 </th>
@@ -877,145 +658,94 @@ they be exposed to the web only within a trustworthy environment.</p>
                 </td>
               </tr>
               <tr>
-                <th>
-                  <a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">Rechartered</a>
-                </th>
-                <td>
-                  18 March 2015
-                </td>
-                <td>
-                  31 December 2016
-                </td>
+                <th><a href="https://www.w3.org/2015/03/webappsec-charter-2015.html">Rechartered</a></th>
+                <td>18 March 2015</td>
+                <td>31 December 2016</td>
                 <td>
                   <p>Added CSP2, Content Security Policy Pinning, Upgrade Insecure Requests, Privileged Contexts, Subresource Integrity, Referrer Policy, Credential Management API, Suborigin Namespaces, Confinement with Origin Web Labels, Entry Point Regulation for Web Applications, Permissions API.</p>
-                  <p>Dropped CORS, Lightweight Isolated / Safe Content.
-                  </p>
+                  <p>Dropped CORS, Lightweight Isolated / Safe Content.</p>
                   <p>Added WHATWG liaison for Fetch.</p>
                 </td>
               </tr>
-		    <tr>
-              <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2016OctDec/0071.html">Charter Extension</a>
-                </th>
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2016OctDec/0071.html">Charter Extension</a></th>
+                <td>22 December 2016</td>
+                <td>31 March 2017</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <th><a href="https://www.w3.org/2011/webappsec/charter-2017.html">Rechartered</a></th>
+                <td>27 March 2017</td>
+                <td>31 December 2018</td>
                 <td>
-                  22 December 2016
-                </td>
-                <td>
-                  31 March 2017
-                </td>
-                <td>
-                  none
+                  <p>Added CSP3, Content Security Policy: Embedded Enforcement, User Interface Security and the Visibility API, Clear Site Data, Subresource Integrity Level 2, Suborigins, Site-Wide Policy</p>
+                  <p>Dropped Content Security Policy Pinning, User Interface Security Directives for Content Security Policy and Entry Point Regulation for Web Applications.</p>
+                  <p>Privileged Contexts becomes Secure Contexts.</p>
                 </td>
               </tr>
               <tr>
-                  <th>
-                    <a href="https://www.w3.org/2011/webappsec/charter-2017.html">Rechartered</a>
-                  </th>
-                  <td>
-                    27 March 2017
-                  </td>
-                  <td>
-                    31 December 2018
-                  </td>
-                  <td>
-                    <p>Added CSP3, Content Security Policy: Embedded Enforcement, User Interface Security and the Visibility API, Clear Site Data,
-                        Subresource Integrity Level 2, Suborigins, Site-Wide Policy
-                    </p>
-                    <p>
-                      Dropped Content Security Policy Pinning, User Interface Security Directives for Content Security Policy and Entry Point Regulation for Web Applications.
-                    </p>
-                    <p>
-                      Privileged Contexts becomes Secure Contexts.
-                    </p>
-                  </td>
-                </tr>
-		    <tr>
-                <th>
-                    <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2018OctDec/0068.html">Charter Extension</a>
-                  </th>
-                  <td>
-                    22 December 2018
-                  </td>
-                  <td>
-                    31 March 2019
-                  </td>
-                  <td>
-                    none
-                  </td>
-                </tr>
-                  <tr>
-                    <th>
-                      <a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">Rechartered</a>
-                    </th>
-                    <td>
-                      31 March 2019
-                    </td>
-                    <td>
-                      31 March 2021
-                    </td>
-                    <td>
-                      <p>Added <a href="https://w3c.github.io/webappsec-feature-policy/" class="new">Feature Policy</a></p>
-                      <p>Dropped User Interface Security and the Visibility API, Confinement with Origin Web Labels</p>
-                      <p>Origin-Wide Policy becomes Site-Wide Policy</p>
-                    </td>
-		     </tr>
-		<tr>
-		<th>
-                    <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021JanMar/0061.html">Charter Extension</a>
-                  </th>
-                  <td>
-                    31 March 2021
-                  </td>
-                  <td>
-                    30 June 2021
-                  </td>
-                  <td>
-                    none
-                  </td>
-                </tr>
-
-		<tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0051.html">Rechartered</a>
-                </th>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2018OctDec/0068.html">Charter Extension</a></th>
+                <td>22 December 2018</td>
+                <td>31 March 2019</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <th><a href="https://www.w3.org/2019/03/webappsec-2019-charter.html">Rechartered</a></th>
+                <td>31 March 2019</td>
+                <td>31 March 2021</td>
                 <td>
-                  09 June 2022
-                </td>
-                <td>
-                  31 July 2023
-                </td>
-                <td>
-			<p>Added Document Policy, Trusted Types, Change Password URL, and Fetch Metadata.</p>
-			<p>Removed SRI2, Suborigins, and Origin Policy, none of which were ever published as WG WDs.</p>
-			<p>Moving CSP:EE back to WICG.  Publishing a last version (for now) as a WG Note.</p>
-			<p>Moved most specs to snapshot (evergreen) publication.</p>
-			<p>Updated scope text, reflecting a changing world.  Allow WG to do WebCrypto maintenance.</p>
-			<p>Updated charter consistent with modern templates.</p>
- 		        <p>Added Mike Smith as an additional team contact.</p>
+                  <p>Added <a href="https://w3c.github.io/webappsec-feature-policy/" class="new">Feature Policy</a></p>
+                  <p>Dropped User Interface Security and the Visibility API, Confinement with Origin Web Labels</p>
+                  <p>Origin-Wide Policy becomes Site-Wide Policy</p>
                 </td>
               </tr>
-
               <tr>
-                <th>
-                  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024AprJun/0018.html">Rechartered</a>
-                </th>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021JanMar/0061.html">Charter Extension</a></th>
+                <td>31 March 2021</td>
+                <td>30 June 2021</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2022AprJun/0051.html">Rechartered</a></th>
+                <td>09 June 2022</td>
+                <td>31 July 2023</td>
                 <td>
-                  30 April 2024
+                  <p>Added Document Policy, Trusted Types, Change Password URL, and Fetch Metadata.</p>
+                  <p>Removed SRI2, Suborigins, and Origin Policy, none of which were ever published as WG WDs.</p>
+                  <p>Moving CSP:EE back to WICG.  Publishing a last version (for now) as a WG Note.</p>
+                  <p>Moved most specs to snapshot (evergreen) publication.</p>
+                  <p>Updated scope text, reflecting a changing world.  Allow WG to do WebCrypto maintenance.</p>
+                  <p>Updated charter consistent with modern templates.</p>
+                  <p>Added Mike Smith as an additional team contact.</p>
                 </td>
-                <td>
-                  30 April 2026
-                </td>
+              </tr>
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2024AprJun/0018.html">Rechartered</a></th>
+                <td>30 April 2024</td>
+                <td>30 April 2026</td>
                 <td>
                   <p>Moved all specs to snapshot (evergreen) publication.</p>
-                  <p>Added new Rec track deliverables:
-                    Source Code Transparency,
-                    Passkey Endpoints Well-Known URL,
-                    Securer Contexts.</p>
-                    <p>Added back missing Rec track deliverable: 
-                      Subresource Integrity</p>
-                    <p>Added Note track deliverables: Security and privacy model for cookies,  Permissions best practices</p>
-                    <p>Added Privacy Interest Group explicitely in coordination</p>
-                    <p>Added IETF in coordination</p>
+                  <p>Added new Rec track deliverables: Source Code Transparency, Passkey Endpoints Well-Known URL, Securer Contexts.</p>
+                  <p>Added back missing Rec track deliverable: Subresource Integrity</p>
+                  <p>Added Note track deliverables: Security and privacy model for cookies,  Permissions best practices</p>
+                  <p>Added Privacy Interest Group explicitely in coordination</p>
+                  <p>Added IETF in coordination</p>
+                </td>
+              </tr>
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2026AprJun/0021.html">Charter Extension</a></th>
+                <td>28 April 2026</td>
+                <td>30 July 2026</td>
+                <td>The group is developing a new charter. See <a href="https://w3c.github.io/charter-drafts/2026/charter-wg-webappsec-2026.html">draft charter</a>. </td>
+              </tr>
+              <tr>
+                <th>Proposed Recharter</th>
+                <td>Date of the Call for Participation</td>
+                <td>Two years after the start date</td>
+                <td>
+                  <p>Updated the charter to the 2026 template and refreshed publication and patent-policy information.</p>
+                  <p>Expanded the Web Cryptography scope from maintenance to evolution and maintenance, made <a href="#webcrypto-2">Web Cryptography Level 2</a> and <a href="#dbsc-1">Device Bound Session Credentials</a> explicit normative deliverables, added coordination with the Crypto Forum Research Group, and added collaboration with the Security Interest Group on horizontal security review and the Web Security Model.</p>
+                  <p>Added <a href="#dbsc-sso">Device Bound Session Credentials for Single Sign-On</a> as a tentative deliverable.</p>
                 </td>
               </tr>
             </tbody>
@@ -1027,12 +757,6 @@ they be exposed to the web only within a trustworthy environment.</p>
 
           <!-- Use this section for changes _after_ the charter was approved by the Director. -->
           <p>Changes to this document are documented in this section.</p>
-          <!--
-          <dl id='changes'>
-            <dt>YYYY-MM-DD</dt>
-            <dd>[changes]]</dd>
-          </dl>
-          -->
         </section>
       </section>
     </main>
@@ -1041,7 +765,7 @@ they be exposed to the web only within a trustworthy environment.</p>
 
     <footer>
       <address>
-        <a class="" href="mailto:simone@w3.org">Simone Onofri</a>
+        <a href="mailto:simone@w3.org">Simone Onofri</a>
       </address>
 
 <p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
@@ -1049,9 +773,7 @@ they be exposed to the web only within a trustworthy environment.</p>
   <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
   <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
       <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
-
-      <hr>
-      
     </footer>
 
-</body></html>
+  </body>
+</html>
