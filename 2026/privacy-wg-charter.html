@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Working Group Charter</title>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
+  <meta name="generator" content="w3c-charter-assistant"><script type="application/json" id="charter-assistant-settings">{
+  "group": "wg/privacy",
+  "workMode": "rec",
+  "a11y-impact": "true",
+  "template": {
+    "sha": "5d95fbad34407c9a976e09e51959a0c97c590cb9",
+    "date": "2026-07-03T16:44:03Z"
+  },
+  "timeStamp": "2026-09-01T19:50:33.797Z"
+}</script><script src="https://www.w3.org/PM/Groups/lib/check-charter.js" type="module" id="charter-assistant-checker"></script></head>
+  <body>
+    <header id="header">
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		      <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="120" src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c.svg" width="120"></a>
+      </p>
+    </header>
+
+
+    <main>
+      <h1 id="title"><i class="todo">DRAFT</i> Privacy Working Group Charter</h1>
+      <!-- replace DRAFT with PROPOSED when the AC review starts -->
+      <!-- delete PROPOSED after AC review completed -->
+
+    
+
+    <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/privacy/">Privacy Working Group</a> is to improve privacy on the Web both by advising groups developing standards on how to avoid and mitigate privacy issues with Web technologies and by standardizing mechanisms that improve user privacy on the Web.</p>
+      <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
+
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/groups/wg/privacy/join/">Join the Privacy Working Group.</a></p>
+      </div>
+
+      <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
+      <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
+      <!-- delete the whole paragraph after AC review completed -->
+      <p class="issue"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html?todo=@@">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue%20state%3Aopen%20label%3Atemplate&amp;todo=@@">issues</a></i>.
+          </p>
+
+      <div id="details">
+        <table class="summary-table">
+          <tbody><tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a class="" href="https://www.w3.org/groups/wg/privacy/charters/">group status page</a> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              The date of the "Call for Participation"
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              Two years after the start date
+            </td>
+          </tr>
+          <tr id="Chairs">
+            <th>
+              Chairs
+            </th>
+              <td>
+            Christine Runnegar (Invited Expert) <br>
+            Pete Snyder (Brave) <br>
+            Nick Doty (Center for Democracy &amp; Technology)
+          </td>
+          </tr>
+          <tr id="TeamContacts">
+            <th>
+              Team Contacts
+            </th>
+              <td>
+            <span><a href="mailto:tara@w3.org">Tara Whalen</a></span> 
+            (0.25 <abbr title="Full-Time Equivalent">FTE</abbr>)
+          </td>
+          </tr>
+          <tr id="MeetingSchedule">
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+             <strong>Teleconferences:</strong> every 2 weeks, as needed, alternating with PrivacyCG meetings. 
+            <br>
+            <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional
+            face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+                <br>
+              See also this <a class="" href="https://www.w3.org/groups/wg/privacy/calendar/">group calendar</a>
+            </td>
+          </tr>
+        </tbody></table>
+
+      </div>
+
+      <div id="background" class="background">
+      <h2>Motivation and Background</h2>
+      <p>
+        Privacy is a human right that must be protected and it is essential to the success of the Web platform. So many
+        of the features of the Web and its usage involve information about people and their communications that privacy
+        must be considered consistently across the design of the platform. To affirmatively realize the privacy of
+        people using the Web and address privacy threats that have already arisen, some dedicated privacy features must
+        also be developed.
+      </p>
+      <p>
+        Horizontal review for privacy was previously conducted by the Privacy Interest Group (PING), which also served
+        as a general discussion point for potential new privacy work and had been chartered to include incubation of new
+        work but typically didn't do so. Because incubation is now more directly handled elsewhere, there is a need for
+        a Working Group to adopt and standardize some new privacy mechanisms for the Web and a significant overlap with
+        the privacy expertise needed for horizontal reviews. This Working Group would replace the Interest
+        Group.
+      </p>        
+    </div>
+
+      <section id="scope" class="scope">
+      <h2>Scope</h2>
+      <p>
+        The Privacy Working Group will standardize technical mechanisms that improve privacy on the Web. Privacy is a
+        broad and contested concept, but the Working Group will focus on mechanisms for adoption by user agents, web
+        sites and other actors in order to realize <a href="https://www.w3.org/TR/privacy-principles/">privacy
+          principles for the
+          Web</a>.
+      </p>
+      <p>
+        The Privacy Working Group will conduct reviews and provide guidance to <a href="https://www.w3.org/groups">other groups</a> about ways to improve user
+        privacy through the development of Web standards.
+      </p>
+      <p>
+        The Privacy Working Group will work on only the normative specifications listed in the deliverables section
+        below. Future revisions to the charter may update the proposed deliverables when there is opportunity for
+        sufficient impact for improving privacy, when privacy-focused deliverables do not fit more specifically within
+        the scope of another Working Group, and when the Working Group has sufficient capacity.
+      </p>
+
+      <section id="section-out-of-scope">
+        <h3 id="out-of-scope">Out of Scope</h3>
+        <p>
+          Incubation is preferred through the Community Group process. The Privacy CG incubates privacy-focused web
+          features for implementation in browsers and similar user agents. Other privacy-focused features may be
+          incubated in WICG or other Community Groups. Features are typically ready to leave incubation for
+          standardization when: there is a basic technical design; there is significant implementer interest and
+          activity; there is willingness from the proponents to cede control to consensus decision-making.
+        </p>
+        <p>
+          Privacy-focused features that are specific to technical features or vertical areas covered by another Working
+          Group are typically best developed in those Working Groups, alongside related technical features. For example,
+          privacy-focused features specific to online advertising should instead be developed at the Private Advertising
+          Technology Community Group or Working Group.
+        </p>
+        <p>
+          Policy statements and guidance are out of scope for this Working Group. Community Groups may take on
+          policy-focused outputs and W3C participants may be interested in collaborating on input to policymakers
+          outside of the Working Group.
+        </p>
+      </section>
+
+    </section>
+
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+          <p>Updated document status is available on the <a
+            href="https://www.w3.org/groups/wg/privacy/publications">group publication status page</a>.</p>
+
+      <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to
+        become a Recommendation, or otherwise reach a stable state.
+      </p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
+          
+          <!--  https://www.w3.org/groups/wg/privacy/deliverables/ -->
+          <dl data-timestamp="2026-09-01T19:50:33.794Z">
+                                            <dt id="gpc" class="spec"><a href="https://www.w3.org/TR/gpc/" rel="versionof">Global Privacy Control (GPC)</a></dt>
+                        <dd>
+                            <p>This document defines a signal, transmitted over HTTP and through the DOM, that conveys a person's request to websites and services to not sell or share their personal information with third parties. This standard is intended to work with existing and upcoming legal frameworks that render such requests enforceable.</p>
+                            <p><b>Draft state:</b> Working Draft</p>
+                            <p><b>Expected completion:</b> [Q1–4 YYYY]</p>
+                            <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2026/WD-gpc-20260611/">2026-06-11</a></p>
+                            <p><b>Exclusion Draft:</b>
+                                <a href="https://www.w3.org/TR/2024/WD-gpc-20241121/">https://www.w3.org/TR/2024/WD-gpc-20241121/</a><br>
+                                <a href="https://www.w3.org/mid/cfe-14762-6b7d644a873b26ca759d9ed08e9ba12e040564b9@w3.org">Exclusion period</a>
+                                began on 2024-11-21 and
+                                ended on 2025-04-20.
+                            </p>
+                            <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                                                    <a href="https://www.w3.org/2024/10/wg-privacy-charter.html">https://www.w3.org/2024/10/wg-privacy-charter.html</a>                                                            </p>
+                        </dd>
+                                        </dl>
+
+            <p>
+            The Working Group may choose to develop the following normative specification:
+          </p>
+          <dl>
+          <dt id="btm" class="spec">
+            <a href="https://github.com/privacycg/nav-tracking-mitigations/blob/main/bounce-tracking-explainer.md">Bounce Tracking Mitigation</a></dt>
+          <dd>
+            <p>
+              Browsers are working to prevent cross-site tracking, which threatens user privacy. Navigational tracking, including bounce tracking, correlates user identities across sites during navigations between sites. This specification defines mechanisms to mitigate the privacy impact of bounce trackers.
+            </p>
+          </dd>
+        </dl>
+
+            
+        </section>
+        
+      <section id="horizontal-review">
+        <h3>
+          Horizontal Review
+        </h3>
+
+        <p>
+          The Working Group will regularly produce privacy reviews as part of <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a>, of proposals and specifications under development by other Working Groups and Community Groups, and of charters for other W3C groups.
+        </p>
+
+        <p>
+          The Working Group will maintain documentation on its general practices for conducting privacy reviews, including: <a href="https://github.com/w3c/ping/blob/main/howto-conduct-a-privacy-review.md">How to Conduct a Privacy Review</a>.
+        </p>
+
+        <p>
+          The Working Group may decide to publish additional guidance as needed to facilitate privacy-protective design across Web standards.
+        </p>
+      </section>
+
+      <section id="ig-other-deliverables">
+        <h3>
+          Other Deliverables
+        </h3>
+
+        <p>
+          The Working Group will maintain and update the <a href="https://www.w3.org/TR/fingerprinting-guidance/">Mitigating Browser Fingerprinting in Web Specifications</a>.
+        </p>
+        <p>
+          The Working Group will contribute to privacy-focused documents maintained by
+          the <a href="https://www.w3.org/groups/other/tag/"><abbr title="W3C Technical Architecture Group"></abbr>W3C TAG</a>:
+        </p>
+        <ul>
+          <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a></li>
+          <li><a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a></li>
+        </ul>
+
+        <p>
+          Other non-normative documents may be created such as:
+        </p>
+        <ul>
+          <li>Use case and requirement documents;</li>
+          <li>Test suites and implementation reports for normative specifications;</li>
+          <li>Best Practice documents to support web developers when designing applications;</li>
+          <li>Guidance for privacy-protective design in particular areas of Web standards.</li>
+        </ul>
+      </section>
+
+
+        <section id="timeline">
+          <h3>Timeline</h3>
+            <p class="todo">Put here a timeline view of all deliverables.</p>
+            <ul class="todo">
+              
+            </ul>
+        </section>
+      </section>
+
+	<section id="success-criteria">
+      <h2>Success Criteria</h2>
+      <p>
+        This Working Group develops both Recommendation-track normative specifications and non-Recommendation-track guidance, include Notes and privacy reviews.
+      </p>
+      <!-- Testing and interop -->
+      <p>In order to advance
+        beyond
+        <a href="https://www.w3.org/policies/process/#RecsCR">Candidate
+          Recommendation</a>, each normative specification is expected to have
+        <a href="https://www.w3.org/policies/process/#implementation-experience">at least two independent
+          interoperable
+          implementations</a> of every feature defined in the specification, where
+        interoperability can be verified by passing open test suites, and two or
+        more implementations interoperating with each other. In order to advance to
+        Proposed Recommendation, each normative specification must have an open
+        test suite of every feature defined in the specification.
+      </p>
+      <p>
+        To promote interoperability, there should be testing plans for each normative specification, starting from the earliest drafts. 
+        Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.
+        Normative changes to specifications in Candidate Recommendation or subsequent maturity levels, or to features that have widely deployed implementations, should have accompanying tests, as described in the <a href="https://www.w3.org/2019/02/testing-policy.html">Testing Policy</a>.
+      </p>
+
+      <!-- Horizontal review -->
+      <p>Each specification should contain sections detailing 
+        all known security and privacy implications for implementers, 
+        Web authors, and end users, 
+        as well as recommendations for mitigations.
+        There should be a clear description of the residual risk 
+        to the user or operator of that protocol 
+        after threat mitigation has been deployed.</p>
+
+      <p>
+        Each specification should contain a section on accessibility that describes the benefits and impacts, including
+        ways specification features can be used to address them, and
+        recommendations for maximising accessibility in implementations.</p>
+      
+      <p>
+        Guidance documents and reviews should be useful to the Privacy Working Group and to other groups in identifying and addressing privacy in specifications. Generalized principles derived from reviews should be incorporated into the Privacy Principles, Questionnaire and other guidance documents. Guidance should be interpreted consistently. Reviewed specifications should show better support for user privacy on the Web.
+      </p>
+
+      <p>
+        In order to be most helpful and have the greatest success in encouraging privacy-supportive designs, privacy reviews should be conducted regularly and promptly.
+      </p>
+
+      <!-- Design principles -->
+      <p>This Working Group expects to follow the
+        <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>, 
+        <a href="https://www.w3.org/TR/ethical-web-principles/">W3C TAG Ethical Web Principles</a>, and 
+        <a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>.
+      </p>
+    </section>
+
+     <section id="coordination">
+      <h2>Coordination</h2>
+      <p>For all specifications, this Working Group will seek <a
+          href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+        accessibility, internationalization, privacy, and security with the relevant Working and
+        Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/"
+          title="Technical Architecture Group">TAG</a>.
+        Invitation for review must be issued during each major standards-track document transition, including
+        <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>. The
+        Working Group is encouraged to engage collaboratively with the horizontal review groups
+        throughout development of
+        each specification. The Working Group is advised to seek a review at least 3 months before
+        first entering
+        <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and is
+        encouraged
+        to proactively notify the horizontal review groups when major changes occur in a specification following a
+        review.
+      </p>
+
+      <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
+
+      <section>
+        <h3 id="w3c-coordination">W3C Groups</h3>
+        <dl>
+          <dt><a href="https://www.w3.org/groups/cg/patcg/">Private Advertising Technology Community
+          Group</a></dt>
+          <dd>The mission of the Private Advertising Technology Community Group is to incubate web
+          features and APIs that support advertising while acting in the interests of users, in
+          particular providing strong privacy assurances. The Working Group may provide input to
+          designing for privacy on advertising-specific features.</dd>
+
+          <dt><a href="https://www.w3.org/groups/cg/privacycg/">Privacy Community Group</a></dt>
+          <dd>The mission of the Privacy Community Group is to develop privacy-focused web standards
+          and APIs to improve user privacy on the web through enhanced browser behavior. Some work
+          incubated in the Privacy Community Group may be adopted by the Working Group, including
+          Global Privacy Control.</dd>
+
+          <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working
+          Group</a></dt>
+          <dd>The mission of the Web Application Security Working Group is to develop security and
+          policy mechanisms to improve the security of Web applications, and enable secure
+          cross-site communication. Guidance related to permissions and the security and privacy
+          models of the Web may be coordinated with WebAppSec.</dd>
+
+          <dt><a href="https://www.w3.org/groups/wg/webauthn/">Web Authentication Working
+          Group</a></dt>
+          <dd>The mission of the Web Authentication Working Group is to define a client-side API
+          providing strong authentication functionality to Web applications. The Privacy Working
+          Group may coordinate with WebAuthn on authentication-related topics.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3 id="external-coordination">External Organizations</h3>
+        <dl>
+          <dt><a href="https://www.whatwg.org/">WHATWG</a></dt>
+          <dd>The Global Privacy Control (GPC) specification augments the <code>Navigator</code>
+            interface defined in the DOM specification.</dd>
+          <dt><a href="https://datatracker.ietf.org/wg/httpbis/about/">IETF HTTP (httpbis)
+            Working Group</a></dt>
+          <dd>The Global Privacy Control (GPC) specification provides a new HTTP header field
+            for expressing a person's preference for a do-not-sell-or-share interaction
+            in an HTTP request.
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section class="participation">
+      <h2 id="participation">
+        Participation
+      </h2>
+      <p>
+        To be successful, this Working Group is expected to have 6 or more active participants for
+        its duration, including representatives from the key implementors of each specification, and active Editors and
+        Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute
+        half of a working day per week towards the Working Group. There is no minimum requirement
+        for other Participants.
+      </p>
+      <p>
+        The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+        described in <a href='#communication'>Communication</a>.
+      </p>
+      <p>
+        The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement
+        to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+      </p>
+      <p>
+        Individuals not employed by a W3C Member who wish to contribute to both privacy reviews and standardization of
+        privacy mechanisms may apply to be considered as Invited Experts; those individuals should contact the chairs and Team
+        Contact. Although the Working Group will typically conduct its work in public, Invited Experts will by default
+        be granted access to W3C Member-only content.
+      </p>
+      <p>Participants in the group are required (by the <a
+          href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+        W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
+    </section>
+
+     
+
+    <section id="communication">
+      <h2>
+        Communication
+      </h2>
+      <p id="public">
+        Technical discussions for this Working Group are conducted in <a
+          href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from
+        teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue
+        tracking will be conducted in a manner that can be both read and written to by the general public. Working
+        Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct
+        public contribution requests.
+        The meetings themselves are not open to public participation, however.
+      </p>
+      <p>
+        Information about the group (including details about deliverables, issues, actions, status, participants, and
+        meetings) will be available from the <a href="https://www.w3.org/groups/wg/privacy/">Privacy Working Group home page.</a>
+      </p>
+      <p>
+        Working Group teleconferences will focus on discussion of particular specifications or privacy review of specifications from other groups. Teleconferences will be conducted on an as-needed basis but typically with a frequency of every two weeks.
+      </p>
+      <p>
+        This group primarily conducts its technical work on GitHub repositories, but will also use the public mailing list <a id="public-name" href="mailto:public-privacy@w3.org">public-privacy@w3.org</a> (<a
+        href="https://lists.w3.org/Archives/Public/public-privacy/">archive</a>) and archived asynchronous chat. The public is invited to review, discuss and contribute to this work.
+      </p>
+
+      <p>
+        The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+        Chairs and members of the group, for member-only discussions in special cases when a participant requests such a
+        discussion.
+      </p>
+    </section>
+
+
+<section id="decisions">
+      <h2>
+        Decision Policy
+      </h2>
+      <p>
+        This group will seek to make decisions through consensus and due process, per the <a
+          href="https://www.w3.org/policies/process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>.
+        Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with
+        members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+      <p>
+        However, if a decision is necessary for timely progress and consensus is not achieved after careful
+        consideration of the range of views presented, the Chairs may call for a group vote and record a decision along
+        with any objections.
+      </p>
+      <p>
+        To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+        decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+        A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based
+        survey), with a response period of at least one week, depending on the chair's evaluation of the group consensus on the issue.
+
+        If no objections are raised by the end of the response period, the resolution will be considered to have
+        consensus as a resolution of the Working Group.
+      </p>
+      <p>
+        All decisions made by the group should be considered resolved unless and until new information becomes available
+        or unless reopened at the discretion of the Chairs.
+      </p>
+      <p>
+        This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C
+          Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the
+        Process Document requires.
+      </p>
+    </section>
+
+
+      <section id="patentpolicy">
+      
+
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 May 2025). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/privacy/ipr/">licensing information</a>.
+        </p>
+
+        
+        
+      </section>
+
+
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+        This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section
+          3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a
+        conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take
+        precedence.
+      </p>
+      <p>
+        The Privacy Working Group was preceded by the <a href="https://www.w3.org/groups/ig/privacy">Privacy Interest Group (PING)</a>, which primarily conducted horizontal reviews for privacy, from 2011 through 2023.
+      </p>
+          
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
+
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+
+          <table class="history">
+          <tbody>
+            <tr>
+              <th>
+                Charter Period
+              </th>
+              <th>
+                Start Date
+              </th>
+              <th>
+                End Date
+              </th>
+              <th>
+                Changes
+              </th>
+            </tr>
+            <tr>
+              <th>
+                Initial Charter
+              </th>
+              <td>
+                11 October 2024
+              </td>
+              <td>
+                8 October 2026
+              </td>
+              <td>
+                Initial charter for the Privacy Working Group, taking over from previous <a href="https://www.w3.org/groups/ig/privacy">Privacy Interest Group (PING)</a>.
+              </td>
+            </tr>
+            <!-- <tr>
+              <th>
+                <a class="todo" href="">Charter Extension</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">none</i>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="todo" href="">Rechartered</a>
+              </th>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <i class="todo">[dd monthname yyyy]</i>
+              </td>
+              <td>
+                <p class="todo">[description of change to charter, with link to new deliverable item in charter]
+                  <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.
+                </p>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+        </section>
+
+        <section id="changelog">
+          <h3>Change log</h3>
+
+          <!-- Use this section for changes _after_ the charter was approved by the Director. -->
+          <p>Changes to this document are documented in this section.</p>
+          <!--
+          <dl id='changes'>
+            <dt>YYYY-MM-DD</dt>
+            <dd>[changes]]</dd>
+          </dl>
+          -->
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <address>
+        <a class="" href="mailto:tara@w3.org">Tara Whalen</a>
+      </address>
+
+<p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+  <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+
+      <hr>
+      
+    </footer>
+
+  
+
+</body></html>
