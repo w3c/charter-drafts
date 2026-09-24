@@ -149,10 +149,12 @@
           Scope
         </h2>
         <p>
-          The Web Machine Learning Working Group develops a Web API aiming to expose generic capabilities to the Web
+          The Web Machine Learning Working Group develops Web APIs aiming to expose generic capabilities to the Web
           required to provide close-to-native machine learning performance in
-          the browser. 
-          This Web API for neural network inference hardware acceleration:
+          the browser and native AI agent integration in the browser.
+        </p>
+        <p>
+          The Web API for neural network inference hardware acceleration:
         </p>
         <ul>
           <li>Allows construction of a neural network computational graph by common
@@ -187,14 +189,20 @@
           emulation path to allow for future extensibility.
         </p>
         <p>The Working Group may also work on a higher-level API to load a custom pre-trained Machine Learning model for inference in the browser.</p>
+
+        <p>The Web API for bridging the gap between web content and AI agents:</p>
+        <ul>
+          <li>Defines an imperative API via standard browser interfaces (e.g., navigator.modelContext) that enables web applications to dynamically register, update, and unregister client-side JavaScript functions as structured "tools" complete with natural language descriptions and JSON schema inputs;</li>
+          <li>Defines a Declarative API mapping directly to standard HTML, allowing developers to annotate existing interactive components, such as HTML <form> elements, to automatically expose them as discoverable and machine-readable actions;</li>
+          <li>Establishes Secure Boundaries for tool discovery, user authorization, and execution mediation within the browser, ensuring that AI-driven web interaction respects the same-origin policy, user consent, and client-side application state;</li>
+          <li>Facilitates Human-in-the-Loop Collaboration by enabling agents to directly actuate page features, modify application UI, and handle data sampling securely within the active browser tab without relying on fragile, vision-based DOM-scraping or external headless automation.</li>
+        </ul>
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">
             Out of Scope
           </h3>
           <p>
-            The scope is limited to development of interfaces that expose
-            inference capabilities of the modern platforms beneficial or
-            purpose-built for ML. Training capabilities are out of scope due to
+            Training capabilities are out of scope due to
             limited availability of respective platform APIs.
           </p>
           <p>
@@ -261,11 +269,11 @@
             of the Group participants, the Working Group may adopt the following documents
              as Rec-track specifications:</p>
           <dl>
-            <dt id="web-incubated-foo" class="spec"><a href="#">Web <i class="todo">[spec name]</i></a></dt>
+            <dt id="webmcp" class="spec"><a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a></dt>
             <dd>
-              <p>This specification defines <i class="todo">[concrete description]</i>.</p>
+              <p>This specification allows websites to communicate directly and natively with AI agents. Instead of forcing an AI agent to use fragile "computer-use" methods—like taking screenshots, scraping the DOM, or guessing where to click a button—WebMCP allows a website to explicitly tell <a href='https://www.w3.org/TR/web-user-agents/'>web user agents</a> how to get exposed to AI agents.</p>
               <p class="draft-status"><b>Draft state:</b>
-                Proposal in <a href=""><i class="todo">[other name]</i> Community Group</a></p>
+                Proposal in the <a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a></p>
             </dd>
           </dl>
         </section>
