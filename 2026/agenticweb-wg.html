@@ -119,7 +119,7 @@
 
         <ul>
           <li>describing the site capabilities and relevant context for agents</li>
-          <li>representing agent identity, delegation, and interaction context</li>
+          <li>representing agent identity, the party an agent acts for, delegation, and interaction context</li>
           <li>supporting transparency about agent and the Web interactions, including status and lifecycle</li>
           <li>handing off between different agentic interaction modes</li>
           <li>expressing permissions, policies, and constraints on agent actions</li>
@@ -171,6 +171,7 @@
                 <li>providing agents with instructions and reference material for the tasks a page supports, for example as skills scoped to the page;</li>
                 <li>how user agents make that functionality available to the agents they host or mediate, such as agents integrated into the browser, agents in browser extensions, and web-based agents running in the page itself or in cross-origin frames, and the lifecycle of its invocation, including results, errors, cancellation, and navigation;</li>
                 <li>keeping users informed and in control, including confirmation of consequential actions and handing steps back to the user;</li>
+                <li>how site capabilities relate to the page's human-facing interface, including its accessibility;</li>
                 <li>the security and privacy model for exposing functionality across origins and frames.</li>
               </ul>
               <p>The initial input for this deliverable is the <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a> specification.</p>
@@ -179,7 +180,7 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
           </dl>
-          <p id="automation">The Working Group's specifications may include extensions to <a href="https://www.w3.org/TR/webdriver2/">WebDriver</a> and <a href="https://www.w3.org/TR/webdriver-bidi/">WebDriver BiDi</a>, to enable automated testing of their features and to let automation clients, including agents that drive a browser through WebDriver BiDi, use those features.</p>
+          <p id="automation">The Working Group's specifications may include extensions to <a href="https://www.w3.org/TR/webdriver2/">WebDriver</a> and <a href="https://www.w3.org/TR/webdriver-bidi/">WebDriver BiDi</a>, to enable automated testing of their features and to let automation clients, including agents that drive a browser through WebDriver BiDi, use those features, subject to the same permission and consent requirements as other agents.</p>
 
 
         </section>
@@ -194,12 +195,12 @@
           <dl>
             <dt id="agent-identity" class="spec new">Agent Identity</dt>
             <dd>
-              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives, but it may build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as OAuth client authentication or the mechanisms developed by the IETF Web Bot Auth Working Group.</p>
+              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives; it is expected to build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as OAuth client authentication or the mechanisms developed by the IETF Web Bot Auth Working Group, rather than duplicate them.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. Related requirements have been discussed in the Web Machine Learning Community Group, for example in <a href="https://github.com/webmachinelearning/webmcp/issues/54">webmcp#54</a> (agent identity) and <a href="https://github.com/webmachinelearning/webmcp/issues/365">webmcp#365</a> (attribution of agent-originated events).</p>
             </dd>
             <dt id="agent-delegation" class="spec new">Agent Delegation</dt>
             <dd>
-              <p>Mechanisms for users to grant an agent limited, revocable authority to act on their behalf on a site (for example, restricted to specific actions, amounts, or time periods), and for sites to express what authority an action requires and verify that it was granted. This includes carrying a user's authenticated context into a headless or remote agent session, bound to the agent and recognizable by the site as delegated, rather than sharing the user's credentials or session with the agent. This work is expected to build on existing mechanisms, such as Web Authentication, Federated Credential Management, the Digital Credentials API, OAuth, and Privacy Pass, rather than to define new cryptographic primitives.</p>
+              <p>Mechanisms for users to grant an agent limited, revocable authority to act on their behalf on a site (for example, restricted to specific actions, amounts, or time periods), and for sites to express what authority an action requires and verify that it was granted. This includes carrying a user's authenticated context into a headless or remote agent session, bound to the agent and recognizable by the site as delegated, rather than sharing the user's credentials or session with the agent. This work is expected to build on existing mechanisms, such as Web Authentication, Federated Credential Management, the Digital Credentials API, verifiable credentials, OAuth, and Privacy Pass, rather than duplicate them or define new cryptographic primitives.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. Related requirements have been discussed in the Web Machine Learning Community Group, for example in <a href="https://github.com/webmachinelearning/webmcp/issues/44">webmcp#44</a> (action-specific permissions) and <a href="https://github.com/webmachinelearning/webmcp/issues/54">webmcp#54</a> (agents as separately authorized clients).</p>
             </dd>
             <dt id="agent-measurement" class="spec new">Agent Interaction Measurement</dt>
@@ -316,16 +317,20 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>Verifiable credentials are a possible building block for conveying agent identity and delegated authority.</dd>
             <dt><a href="https://www.w3.org/groups/wg/browser-tools-testing/">Browser Testing and Tools Working Group</a></dt>
             <dd>This group develops WebDriver and WebDriver BiDi, for automated testing and for agentic browsing. The groups will coordinate on the WebDriver extensions needed to test this group's specifications, including their use in the <a href="https://web-platform-tests.org/">web-platform-tests</a>, and to let automation clients use the capabilities defined by this group, as well as on keeping agentic browsing through WebDriver BiDi consistent with this group's specifications.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/did/">Decentralized Identifier Working Group</a></dt>
+            <dd>Coordination on controlled identifiers and delegation of control, as possible building blocks for agent identity and delegation.</dd>
             <dt><a href="https://www.w3.org/groups/wg/fedid/">Federated Identity Working Group</a></dt>
             <dd>Coordination on agent identity and delegation mechanisms that may build on Federated Credential Management (FedCM) and the Digital Credentials API.</dd>
             <dt><a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group (TAG)</a></dt>
-            <dd>The Working Group will help the TAG in areas related to the agentic web that require expertise in this space, for example in reviews of other groups' specifications that affect how agents interact with the Web, or in relevant principles documents.</dd>
+            <dd>The Working Group will help the TAG in areas related to the agentic web that require expertise in this space, for example in reviews of other groups' specifications that affect how agents interact with the Web, or in relevant findings and principles documents.</dd>
             <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a></dt>
             <dd>Coordination on agent identity, on permissions constraining agent actions, and on the security model for exposing site capabilities to agents, including cross-origin exposure, Permissions Policy, and isolation.</dd>
             <dt><a href="https://www.w3.org/groups/wg/webapps/">Web Applications Working Group</a></dt>
             <dd>Coordination on the attribution of agent-originated events, to be specified in event specifications maintained by that group, such as UI Events.</dd>
             <dt><a href="https://www.w3.org/groups/wg/webauthn/">Web Authentication Working Group</a></dt>
             <dd>Coordination on agent delegation mechanisms that let users authorize an agent, for example by authenticating with a passkey, without sharing their credentials with it.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/payments/">Web Payments Working Group</a></dt>
+            <dd>Coordination on agent-initiated payments through browser-mediated payment flows, which can keep reusable payment credentials out of the agent's reach.</dd>
             <dt><a href="https://www.w3.org/groups/wg/webperf/">Web Performance Working Group</a></dt>
             <dd>Coordination on the measurement of agent interactions, which is expected to build on the Performance Timeline, Event Timing, and Reporting API specifications.</dd>
             <dt><a href="https://www.w3.org/groups/cg/wicg/">Web Platform Incubator Community Group</a></dt>
@@ -345,8 +350,14 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>This group develops OAuth, including mechanisms for the authorization of automated agents acting on behalf of users. The groups will coordinate so that agent identity and delegation mechanisms for the Web platform build on, rather than duplicate, this work.</dd>
             <dt>IETF <a href="https://datatracker.ietf.org/wg/privacypass/about/">Privacy Pass (privacypass)</a></dt>
             <dd>This group standardizes Privacy Pass, a protocol for issuing and anonymously redeeming unforgeable, unlinkable tokens. The groups will coordinate on its use as a building block for agent identity and delegation.</dd>
+            <dt>IETF <a href="https://datatracker.ietf.org/wg/jsonschema/about/">JSON Schema (jsonschema)</a></dt>
+            <dd>This group standardizes JSON Schema, which site capabilities may use to describe their inputs and outputs. The groups will coordinate on its use in web platform APIs.</dd>
             <dt><a href="https://aaif.io/">Agentic AI Foundation (AAIF)</a></dt>
             <dd>The AAIF hosts open agentic AI projects, including the Model Context Protocol (MCP). The groups will coordinate on how this group's specifications relate to MCP, and on related work, such as agent identity and observability.</dd>
+            <dt><a href="https://identity.foundation/working-groups/trusted-agents.html">Decentralized Identity Foundation (DIF) Trusted AI Agents Working Group</a></dt>
+            <dd>This group develops specifications for the identity, delegated authority, and governance of AI agents, such as KYA-OS. The groups will coordinate on agent identity and delegation.</dd>
+            <dt><a href="https://fidoalliance.org/fido-alliance-agentic-ai/">FIDO Alliance Agentic Authentication Technical Working Group</a></dt>
+            <dd>This group extends FIDO2/WebAuthn and digital credentials for AI agents acting on behalf of users, for example with delegated credentials and intent-bound assertions. The groups will coordinate on agent delegation, and on distinguishing user-initiated from agent-initiated actions.</dd>
             <dt><a href="https://modelcontextprotocol.io/community/working-groups/apps">MCP Apps Working Group</a></dt>
             <dd>This group defines the MCP extension for interactive user interfaces, which agent applications render as web content. The groups will coordinate on how such content exposes capabilities to agents, such as tools provided by apps.</dd>
             <dt><a href="https://whatwg.org/">WHATWG</a></dt>
