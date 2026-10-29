@@ -121,6 +121,7 @@
           <li>describing the site capabilities and relevant context for agents</li>
           <li>representing agent identity, delegation, and interaction context</li>
           <li>supporting transparency about agent and the Web interactions, including status and lifecycle</li>
+          <li>handing off between different agentic interaction modes</li>
           <li>expressing permissions, policies, and constraints on agent actions</li>
           <li>attribution of agent-originated interaction to the page it acts on</li>
           <li>measuring the performance, reliability, and outcomes of agent interactions with web pages and applications</li>
@@ -164,10 +165,9 @@
           <dl>
             <dt id="site-capabilities" class="spec new">Site Capabilities for Agents</dt>
             <dd>
-              <p>This deliverable defines how web pages and applications can describe the functionality they offer, and relevant context, in a structured form that agents acting on behalf of users can discover and invoke reliably, rather than having to infer it from the page's presentation. This includes:</p>
+              <p>This deliverable defines how web pages and applications can describe the functionality they offer, and relevant context, in a structured form that agents acting on behalf of users can discover and use reliably, rather than having to infer it from the page's presentation. It covers both imperative descriptions, provided through script, and declarative ones, provided through markup, including annotations of existing content such as HTML forms and controls. This includes:</p>
               <ul>
                 <li>describing site functionality, for example as tools with a name, a natural-language description, input and output schemas, and hints such as whether an action is read-only or consequential;</li>
-                <li>declaring that functionality both imperatively through script and declaratively through markup (for example, by annotating existing HTML forms);</li>
                 <li>how user agents make that functionality available to the agents they host or mediate, such as agents integrated into the browser, agents in browser extensions, and agents embedded in web pages, and the lifecycle of its invocation, including results, errors, cancellation, and navigation;</li>
                 <li>keeping users informed and in control, including confirmation of consequential actions and handing steps back to the user;</li>
                 <li>the security and privacy model for exposing functionality across origins and frames.</li>
@@ -193,12 +193,12 @@
           <dl>
             <dt id="agent-identity" class="spec new">Agent Identity</dt>
             <dd>
-              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives, but it may build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as the mechanisms developed by the IETF Web Bot Auth Working Group.</p>
+              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives, but it may build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as OAuth client authentication or the mechanisms developed by the IETF Web Bot Auth Working Group.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. Related requirements have been discussed in the Web Machine Learning Community Group, for example in <a href="https://github.com/webmachinelearning/webmcp/issues/54">webmcp#54</a> (agent identity) and <a href="https://github.com/webmachinelearning/webmcp/issues/365">webmcp#365</a> (attribution of agent-originated events).</p>
             </dd>
             <dt id="agent-delegation" class="spec new">Agent Delegation</dt>
             <dd>
-              <p>Mechanisms through which users can grant an agent limited authority to act on their behalf on a site (for example, restricted to specific actions, amounts, or time periods, and revocable), without sharing their own credentials with the agent or giving it unrestricted access to their account or session, and through which sites can express what authority an action requires and determine whether it has been granted. This work is expected to build on existing authentication and authorization mechanisms and cryptographic building blocks, such as Web Authentication, Federated Credential Management, the Digital Credentials API, OAuth, and Privacy Pass, rather than to define new cryptographic primitives.</p>
+              <p>Mechanisms for users to grant an agent limited, revocable authority to act on their behalf on a site (for example, restricted to specific actions, amounts, or time periods), and for sites to express what authority an action requires and verify that it was granted. This includes carrying a user's authenticated context into a headless or remote agent session, bound to the agent and recognizable by the site as delegated, rather than sharing the user's credentials or session with the agent. This work is expected to build on existing mechanisms, such as Web Authentication, Federated Credential Management, the Digital Credentials API, OAuth, and Privacy Pass, rather than to define new cryptographic primitives.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. Related requirements have been discussed in the Web Machine Learning Community Group, for example in <a href="https://github.com/webmachinelearning/webmcp/issues/44">webmcp#44</a> (action-specific permissions) and <a href="https://github.com/webmachinelearning/webmcp/issues/54">webmcp#54</a> (agents as separately authorized clients).</p>
             </dd>
             <dt id="agent-measurement" class="spec new">Agent Interaction Measurement</dt>
@@ -206,19 +206,17 @@
               <p>APIs that enable web pages and applications to measure how agents interact with them in the field, for example: the timing and status of invocations of site capabilities; the timing and composition of an agent's interactions with a page, such as capability invocations, DOM actuation, navigations, and time spent waiting for the user; and coarse outcome signals, such as explicit user feedback, or whether the agent assessed a task as completed. These APIs are expected to integrate with the Performance Timeline and the Reporting API, in coordination with the Web Performance Working Group. They must not expose the content of the user's conversations with the agent, and are expected to leave users in control of whether outcome signals are shared.</p>
               <p class="draft-status"><b>Draft state:</b> Proposal in the Web Machine Learning Community Group (<a href="https://github.com/webmachinelearning/webmcp/issues/186">webmcp#186</a>)</p>
             </dd>
+            <dt id="interaction-modes" class="spec new">Agentic Interaction Modes</dt>
+            <dd>
+              <p>The different modes in which agents interact with the Web and the transitions between them, how each relates to the Working Group's specifications, and the mechanisms these modes require. Modes differ, for example, in where the agent runs (integrated into the browser, in a browser extension, embedded in a web page, driving a browser remotely through an automation protocol such as WebDriver BiDi, or accessing the Web without a browser), in how it acts on content (through capabilities exposed by the site, through the DOM or the accessibility tree, or through screenshots and synthesized input), and in whether the user is present and able to see and control the session. Mechanisms may include letting web pages know, where appropriate, whether a user can see and control the session (for example, before requesting the user's input), and handing off an interaction that an agent started in a headless or remote user agent to a user agent in front of the user, and back, preserving the relevant state (such as navigation, form state, and in-progress capability invocations), with the user's consent and without exposing that state to parties other than the user and the site.</p>
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
+            </dd>
           </dl>
         </section>
         <section id="other-deliverables">
           <h3>
             Other Deliverables
           </h3>
-          <dl>
-            <dt id="interaction-modes" class="spec new">Agentic Interaction Modes</dt>
-            <dd>
-              <p>A Group Note describing the different modes in which agents interact with the Web, and how each of them relates to the Working Group's specifications, so that those specifications account for the full range of modes. Modes differ, for example, in where the agent runs (integrated into the browser, in a browser extension, embedded in a web page, driving a browser remotely through an automation protocol such as WebDriver BiDi, or accessing the Web without a browser), in how it acts on content (through capabilities exposed by the site, through the DOM or the accessibility tree, or through screenshots and synthesized input), and in whether the user is present while the agent acts. For each mode, the Note is expected to describe which of the Working Group's specifications apply, the trust relationships between the user, the agent, the user agent, and the site, and where the work of other groups applies instead.</p>
-              <p class="draft-status"><b>Draft state:</b> No draft</p>
-            </dd>
-          </dl>
           <p>
             Other non-normative documents may be created such as:
           </p>
@@ -341,9 +339,13 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dt>IETF <a href="https://datatracker.ietf.org/wg/aipref/about/">AI Preferences (aipref)</a></dt>
             <dd>This group standardizes building blocks that allow for the expression of preferences about how content is collected and processed for Artificial Intelligence (AI) model development, deployment, and use.</dd>
             <dt>IETF <a href="https://datatracker.ietf.org/wg/oauth/about/">Web Authorization Protocol (oauth)</a></dt>
-            <dd>This group develops OAuth, including mechanisms for the authorization of automated agents acting on behalf of users. The groups will coordinate so that agent delegation mechanisms for the Web platform build on, rather than duplicate, this work.</dd>
+            <dd>This group develops OAuth, including mechanisms for the authorization of automated agents acting on behalf of users. The groups will coordinate so that agent identity and delegation mechanisms for the Web platform build on, rather than duplicate, this work.</dd>
             <dt>IETF <a href="https://datatracker.ietf.org/wg/privacypass/about/">Privacy Pass (privacypass)</a></dt>
             <dd>This group standardizes Privacy Pass, a protocol for issuing and anonymously redeeming unforgeable, unlinkable tokens. The groups will coordinate on its use as a building block for agent identity and delegation.</dd>
+            <dt><a href="https://aaif.io/">Agentic AI Foundation (AAIF)</a></dt>
+            <dd>The AAIF hosts open agentic AI projects, including the Model Context Protocol (MCP). The groups will coordinate on how this group's specifications relate to MCP, and on related work, such as agent identity and observability.</dd>
+            <dt><a href="https://modelcontextprotocol.io/community/working-groups/apps">MCP Apps Working Group</a></dt>
+            <dd>This group defines the MCP extension for interactive user interfaces, which agent applications render as web content. The groups will coordinate on how such content exposes capabilities to agents, such as tools provided by apps.</dd>
             <dt><a href="https://whatwg.org/">WHATWG</a></dt>
             <dd>Coordination on integration with the HTML and DOM standards, such as declarative mechanisms for exposing site capabilities (for example, by annotating forms) and the attribution of agent-originated events.</dd>
           </dl>
