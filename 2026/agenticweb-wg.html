@@ -223,7 +223,7 @@
           <dl>
             <dt id="threat-model" class="spec new">Agentic Web Threat Model</dt>
             <dd>
-              <p>A Group Note analyzing the privacy and security threats that arise when agents interact with the Web on behalf of users, such as prompt injection, exfiltration of user data, cross-site tracking, and actions the user did not intend, and the mitigations expected from the Working Group's specifications, user agents, agents, and sites. It is expected to follow the <a href="https://www.w3.org/TR/threat-modeling-guide/">W3C Threat Modeling Guide</a>, and to inform the security and privacy considerations of the Working Group's specifications.</p>
+              <p>A Group Note analyzing the privacy and security threats that arise when agents interact with the Web on behalf of users, such as prompt injection and misleading capability descriptions or outputs that trick agents, exfiltration of user data, cross-site tracking, inferring sensitive information such as accessibility needs from an agent's behavior, blocking or discriminating against users who rely on agents, and actions the user did not intend, and the mitigations expected from the Working Group's specifications, user agents, agents, and sites. It is expected to follow the <a href="https://www.w3.org/TR/threat-modeling-guide/">W3C Threat Modeling Guide</a>, and to inform the security and privacy considerations of the Working Group's specifications.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. The <a href="https://w3c.github.io/threat-model-webmcp/">Threat Model for WebMCP</a> is an initial input.</p>
             </dd>
           </dl>
@@ -321,6 +321,8 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>Coordination on agentic payments, including how agent identity and delegation apply to payment authorization.</dd>
             <dt><a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a></dt>
             <dd>This group incubated WebMCP, the initial input for <a href="#site-capabilities">Site Capabilities for Agents</a>, and hosts the proposal for <a href="#agent-measurement">Agent Interaction Measurement</a>.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/webmachinelearning/">Web Machine Learning Working Group</a></dt>
+            <dd>This group develops APIs for machine learning inference in the browser, which are out of scope for this Working Group. The groups will coordinate where agentic features depend on such APIs.</dd>
             <dt><a href="https://www.w3.org/groups/wg/vc/">Verifiable Credentials Working Group</a></dt>
             <dd>Verifiable credentials are a possible building block for conveying agent identity and delegated authority.</dd>
             <dt><a href="https://www.w3.org/groups/wg/browser-tools-testing/">Browser Testing and Tools Working Group</a></dt>
@@ -364,6 +366,8 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>This group standardizes JSON Schema, which site capabilities may use to describe their inputs and outputs. The groups will coordinate on its use in web platform APIs.</dd>
             <dt><a href="https://aaif.io/">Agentic AI Foundation (AAIF)</a></dt>
             <dd>The AAIF hosts open agentic AI projects, including the Model Context Protocol (MCP). The groups will coordinate on how this group's specifications relate to MCP, and on related work, such as agent identity and observability.</dd>
+            <dt><a href="https://c2pa.org/">Coalition for Content Provenance and Authenticity (C2PA)</a></dt>
+            <dd>This group develops standards for certifying the source and history of media content, which are out of scope for this Working Group. The groups will coordinate where agents consume or produce content whose provenance matters.</dd>
             <dt><a href="https://identity.foundation/working-groups/trusted-agents.html">Decentralized Identity Foundation (DIF) Trusted AI Agents Working Group</a></dt>
             <dd>This group develops specifications for the identity, delegated authority, and governance of AI agents, such as KYA-OS. The groups will coordinate on agent identity and delegation.</dd>
             <dt><a href="https://fidoalliance.org/fido-alliance-agentic-ai/">FIDO Alliance Agentic Authentication Technical Working Group</a></dt>
