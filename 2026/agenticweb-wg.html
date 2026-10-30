@@ -126,6 +126,7 @@
           <li>attribution of agent-originated interaction to the page it acts on</li>
           <li>measuring the performance, reliability, and outcomes of agent interactions with web pages and applications</li>
           <li>automation and testing support for the above, such as WebDriver extensions</li>
+          <li>a privacy and security threat model for agent interactions with the Web</li>
           <li>guidance for web authors on managing agent interactions</li>
         </ul>
 
@@ -219,6 +220,13 @@
           <h3>
             Other Deliverables
           </h3>
+          <dl>
+            <dt id="threat-model" class="spec new">Agentic Web Threat Model</dt>
+            <dd>
+              <p>A Group Note analyzing the privacy and security threats that arise when agents interact with the Web on behalf of users, such as prompt injection, exfiltration of user data, cross-site tracking, and actions the user did not intend, and the mitigations expected from the Working Group's specifications, user agents, agents, and sites. It is expected to follow the <a href="https://www.w3.org/TR/threat-modeling-guide/">W3C Threat Modeling Guide</a>, and to inform the security and privacy considerations of the Working Group's specifications.</p>
+              <p class="draft-status"><b>Draft state:</b> No draft. The <a href="https://w3c.github.io/threat-model-webmcp/">Threat Model for WebMCP</a> is an initial input.</p>
+            </dd>
+          </dl>
           <p>
             Other non-normative documents may be created such as:
           </p>
@@ -308,7 +316,7 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dt><a href="https://www.w3.org/groups/wg/aria/">Accessible Rich Internet Applications Working Group</a></dt>
             <dd></dd>
             <dt><a href="https://www.w3.org/groups/ig/security/">Security Interest Group</a> SING</dt>
-            <dd></dd>
+            <dd>Coordination on the <a href="#threat-model">Agentic Web Threat Model</a>, building on that group's threat modeling work.</dd>
             <dt><a href="https://www.w3.org/groups/ig/securepay/">Web Payment Security Interest Group</a></dt>
             <dd>Coordination on agentic payments, including how agent identity and delegation apply to payment authorization.</dd>
             <dt><a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a></dt>
@@ -321,6 +329,8 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>Coordination on controlled identifiers and delegation of control, as possible building blocks for agent identity and delegation.</dd>
             <dt><a href="https://www.w3.org/groups/wg/fedid/">Federated Identity Working Group</a></dt>
             <dd>Coordination on agent identity and delegation mechanisms that may build on Federated Credential Management (FedCM) and the Digital Credentials API.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/privacy/">Privacy Working Group</a></dt>
+            <dd>Coordination on the privacy aspects of the <a href="#threat-model">Agentic Web Threat Model</a>.</dd>
             <dt><a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group (TAG)</a></dt>
             <dd>The Working Group will help the TAG in areas related to the agentic web that require expertise in this space, for example in reviews of other groups' specifications that affect how agents interact with the Web, or in relevant findings and principles documents.</dd>
             <dt><a href="https://www.w3.org/groups/wg/webappsec/">Web Application Security Working Group</a></dt>
