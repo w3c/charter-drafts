@@ -119,7 +119,7 @@
 
         <ul>
           <li>describing the site capabilities and relevant context for agents</li>
-          <li>representing agent identity, the party an agent acts for, delegation, and interaction context</li>
+          <li>representing agent and site identity, the party an agent acts for, delegation, and interaction context, including negotiating which identity information agents and sites reveal to each other</li>
           <li>supporting transparency about agent and the Web interactions, including status and lifecycle</li>
           <li>handing off between different agentic interaction modes</li>
           <li>expressing permissions, policies, and constraints on agent actions</li>
@@ -196,7 +196,7 @@
           <dl>
             <dt id="agent-identity" class="spec new">Agent Identity</dt>
             <dd>
-              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives; it is expected to build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as OAuth client authentication or the mechanisms developed by the IETF Web Bot Auth Working Group, rather than duplicate them.</p>
+              <p>Mechanisms for conveying to web pages and applications that an interaction is performed by an agent on a user's behalf rather than by the user directly and, where appropriate, information about the agent and on whose behalf it acts, so that sites can make informed decisions, for example about which actions require the user's direct involvement. This also includes conveying site identity to agents, and letting agents and sites negotiate what each reveals to the other. Such mechanisms are expected to minimize the information they disclose, and to carefully consider their privacy and accessibility implications, including for users who rely on agents as assistive technology. This work does not include detecting agents that do not disclose themselves, nor defining cryptographic authentication primitives; it is expected to build on existing cryptographic building blocks, such as Privacy Pass, and on agent identity established by other means, such as OAuth client authentication or the mechanisms developed by the IETF Web Bot Auth Working Group, rather than duplicate them.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. Related requirements have been discussed in the Web Machine Learning Community Group, for example in <a href="https://github.com/webmachinelearning/webmcp/issues/54">webmcp#54</a> (agent identity) and <a href="https://github.com/webmachinelearning/webmcp/issues/365">webmcp#365</a> (attribution of agent-originated events).</p>
             </dd>
             <dt id="agent-delegation" class="spec new">Agent Delegation</dt>
