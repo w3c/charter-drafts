@@ -173,6 +173,7 @@
                 <li>how user agents make that functionality available to the agents they host or mediate, such as agents integrated into the browser, agents in browser extensions, and web-based agents running in the page itself or in cross-origin frames, and the lifecycle of its invocation, including results, errors, cancellation, and navigation;</li>
                 <li>keeping users informed and in control, including confirmation of consequential actions and handing steps back to the user;</li>
                 <li>how site capabilities relate to the page's human-facing interface, including its accessibility;</li>
+                <li>how sites can express varying levels of trust in different parts of their content, such as user-generated content;</li>
                 <li>the security and privacy model for exposing functionality across origins and frames.</li>
               </ul>
               <p>The initial input for this deliverable is the <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a> specification.</p>
@@ -223,7 +224,18 @@
           <dl>
             <dt id="threat-model" class="spec new">Agentic Web Threat Model</dt>
             <dd>
-              <p>A Group Note analyzing the privacy and security threats that arise when agents interact with the Web on behalf of users, such as prompt injection and misleading capability descriptions or outputs that trick agents, exfiltration of user data, cross-site tracking, inferring sensitive information such as accessibility needs from an agent's behavior, blocking or discriminating against users who rely on agents, and actions the user did not intend, and the mitigations expected from the Working Group's specifications, user agents, agents, and sites. It is expected to follow the <a href="https://www.w3.org/TR/threat-modeling-guide/">W3C Threat Modeling Guide</a>, and to inform the security and privacy considerations of the Working Group's specifications.</p>
+              <p>A Group Note analyzing the privacy and security threats that arise when agents interact with the Web on behalf of users, and the mitigations expected from the Working Group's specifications, user agents, agents, and sites. Threats to analyze include:</p>
+              <ul>
+                <li>prompt injection, including through user-generated content on otherwise benign sites;</li>
+                <li>misleading capability descriptions or outputs that trick agents;</li>
+                <li>exfiltration of user data;</li>
+                <li>cross-site tracking;</li>
+                <li>exposing or inferring sensitive information, such as accessibility needs or other protected characteristics, through the Working Group's mechanisms or from an agent's behavior;</li>
+                <li>blocking or discriminating against agents and the users who rely on them, including by using the Working Group's mechanisms;</li>
+                <li>wasting an agent's resources, for example through tarpits designed to exhaust its time or tokens;</li>
+                <li>actions the user did not intend.</li>
+              </ul>
+              <p>The Note is expected to follow the <a href="https://www.w3.org/TR/threat-modeling-guide/">W3C Threat Modeling Guide</a>, and to inform the security and privacy considerations of the Working Group's specifications.</p>
               <p class="draft-status"><b>Draft state:</b> No draft. The <a href="https://w3c.github.io/threat-model-webmcp/">Threat Model for WebMCP</a> is an initial input.</p>
             </dd>
           </dl>
