@@ -21,4 +21,4 @@ Before proposing a charter for review to the Advisory Committee, mark the charte
 
 You are encouraged to give a pointer in the call for review to previous issue discussion, e.g. the charter-drafts github repo.
 
-Older drafts may be found in the /archive/ folder.
+Older drafts may be found in the [/archive/](https://github.com/w3c/charter-drafts/tree/gh-pages/archive) folder.
