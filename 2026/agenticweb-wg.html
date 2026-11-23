@@ -177,6 +177,7 @@
                 <li>how site capabilities relate to the page's human-facing interface, including its accessibility;</li>
                 <li>the security and privacy model for exposing functionality across origins and frames.</li>
               </ul>
+			  <p>The specification will consider internationalization requirements for natural-language information exchanged over Agents, including mechanisms for preserving or conveying language and base direction metadata where appropriate.</p>
               <p>The initial input for this deliverable is the <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a> specification.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a>, adopted from the <a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a></p>
@@ -267,7 +268,7 @@ interoperability can be verified by passing open test suites. In order to advanc
       To promote interoperability, all changes made to specifications
       in Candidate Recommendation
       or to features that have deployed implementations
-      should have <a href='https://www.w3.org/policies/testing/'>tests</a>.
+      should have <a href='https://www.w3.org/policies/testing/'>tests</a>. Specifications developed by the Working Group should include tests demonstrating interoperable handling of multilingual content and locale-sensitive data.
       Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
     <p>Where the behavior of a feature depends on actions by an agent or the user agent that cannot be triggered from page script (for example, agent-initiated invocation of site capabilities, user confirmation, or agent-originated input), the specification should define the automation hooks needed to test it, for example as WebDriver or WebDriver BiDi extensions, in coordination with the <a href="https://www.w3.org/groups/wg/browser-tools-testing/">Browser Testing and Tools Working Group</a>.</p>
 
