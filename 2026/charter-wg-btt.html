@@ -7,20 +7,20 @@
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
     <meta name="generator" content="w3c-charter-assistant">
     <script type="application/json" id="charter-assistant-settings">{
-      "group": "wg/browser-tools-testing",
-      "workMode": "cr-snapshot",
-      "a11y-impact": "false",
-      "template": {
-        "sha": "b43b4eb5f52bb0fee2beeb8e98f8266e9ef6ad77",
-        "date": "2026-01-29T10:38:13Z"
-      },
-      "timeStamp": "2026-04-15T09:24:40.288Z"
-    }</script>
+  "group": "wg/browser-tools-testing",
+  "workMode": "cr-snapshot",
+  "a11y-impact": "false",
+  "template": {
+    "sha": "7a2a349d116181d665e1bbb8dc611c3377b32ccb",
+    "date": "2026-09-22T03:00:28Z"
+  },
+  "timeStamp": "2026-04-15T09:24:40.288Z"
+}</script>
     <script src="https://www.w3.org/PM/Groups/lib/check-charter.js" type="module" id="charter-assistant-checker"></script>
   </head>
   <body>
     <header id="header">
-      <aside>
+      <nav aria-label="Table of Contents">
         <ul id="navbar">
           <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
@@ -36,7 +36,7 @@
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
-      </aside>
+      </nav>
       <p>
         <a href="https://www.w3.org/"><img alt="W3C" height="120" src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c.svg" width="120"></a>
       </p>
@@ -55,11 +55,10 @@
       </div>
 
       <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
-      <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
       <!-- delete the whole paragraph after AC review completed -->
       <p class="issue">
-        This proposed charter is available on <a href="https://github.com/w3c/charter-drafts">GitHub</a>.
-        Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a></i>.
+        This proposed charter is available on <a href="https://github.com/w3c/charter-drafts/blob/gh-pages/2026/charter-wg-btt.html">GitHub</a>.
+        Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues?q=is%3Aissue%20state%3Aopen%20%5Bwg%2Fbrowser-testing-tools%5D">issues</a></i>.
       </p>
 
       <div id="details">
@@ -99,7 +98,7 @@
               <th>
                 Team Contacts
               </th>
-              <td><a href="mailto:fd@w3.org">François Daoust</a> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i></td>
+              <td><a href="mailto:xiaoqian@w3.org">Xiaoqian Wu</a> <i class="todo">(0.05 <abbr title="Full-Time Equivalent">FTE</abbr>)</i></td>
             </tr>
             <tr id="MeetingSchedule">
               <th>
@@ -121,7 +120,7 @@
         <h2>Motivation and Background</h2>
 
         <p>
-          Automation is essential for web authors to develop and test their web applications across browsers and devices. This automation requires a stable, interoperable API for remote controlling browsers, including loading web applications in a browser, adjusting browser parameters, as well as inspecting and manipulating the DOM, running scripts, and monitoring performances.
+          Browser automation is essential for web developers, and end users. Automation allows web authors to develop and test their web applications across multiple browsers and devices. It also allows users to perform "agentic browsing" in which they use tools to drive browsers to perform complex actions on their behalf. This automation requires a stable, interoperable API for remote controlling browsers, including loading web applications in a browser, adjusting browser parameters, as well as inspecting and manipulating the DOM, running scripts, and monitoring performances.
         </p>
         <p>
           Proprietary solutions and protocols have emerged, including browser automation frameworks such as <a href="https://www.selenium.dev/">Selenium</a> and <a href="https://pptr.dev/">Puppeteer</a>. The Browser Testing and Tools Working Group leverages these efforts to standardize interoperable protocols and APIs that allow web applications to orchestrate complex automation workflows across browsers.
@@ -139,8 +138,9 @@
           Scope
         </h2>
         <p>The scope of the Browser Testing and Tools Working Group includes protocols and APIs
-          for the purpose of automating testing of Web applications running in browsers—for example,
-          to simulate user actions such as clicking links, entering text, and submitting forms.</p>
+          for automation of web browsers, for purposes including automated testing of web applications,
+          and agentic browsing where a user interacts with their browser through an automation API.
+          This requires APIs that can simulate user actions such as clicking links, entering text, and submitting forms.</p>
       </section>
 
       <section id="deliverables">
@@ -189,11 +189,6 @@
               </p>
               <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
                                                         <a href="https://www.w3.org/2024/btt-wg-charter.html">https://www.w3.org/2024/btt-wg-charter.html</a>                                                            </p>
-            </dd>
-            <dt id="at-driver" class="spec"><a href="https://w3c.github.io/at-driver/">AT Driver</a></dt>
-            <dd>
-              <p>AT Driver defines a protocol for introspection and remote control of assistive technology (AT) such as screen readers, using a bidirectional communication channel.</p>
-              <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/at-driver/">Editor's Draft</a></p>
             </dd>
           </dl>
         </section>
@@ -269,6 +264,10 @@
             <dt><a href="https://www.w3.org/groups/wg/apa/">Accessible Platform Architectures Working Group</a></dt>
             <dd>This group ensures W3C specifications provide support for accessibility to people with disabilities, and
               there is a possibility of relevant accessibility considerations in APIs for browser testing.</dd>
+            <dt><a href="https://www.w3.org/groups/wg/aria/">ARIA Working Group</a></dt>
+            <dd>This group develops supplemental attributes that can be applied to native host language interactive elements and exposed via platform accessibility application programming interfaces (APIs). The Browser Testing and Tools Working Group will coordinate with the ARIA Working Group on the <a href="https://w3c.github.io/at-driver/">AT Driver</a> specification that used to be in scope of the Browser Testing and Tools Working Group and that the ARIA Working Group may adopt when it recharters.</dd>
+            <dt><a href="https://www.w3.org/community/webmachinelearning/">Web Machine Learning Community Group</a></dt>
+            <dd>This group <a href="https://webmachinelearning.github.io/charter/#webmcp-api">incubates the WebMCP API</a>.</dd>
           </dl>
         </section>
 
@@ -320,7 +319,6 @@
         <ul>
           <li><a href="https://github.com/w3c/webdriver">WebDriver spec repo</a></li>
           <li><a href="https://github.com/w3c/webdriver-bidi">WebDriver BiDi spec repo</a></li>
-          <li><a href="https://github.com/w3c/at-driver">AT-Driver spec repo</a></li>
         </ul>
         <p>
           The public is invited to review, discuss and contribute to this work.
@@ -565,7 +563,7 @@
                   <i class="todo">[dd monthname yyyy] (Start date + 2 years)</i>
                 </td>
                 <td>
-                  Content aligned with charter template. No changes in scope or deliverables.
+                  Content aligned with charter template. AT Driver deliverable dropped. Motivation and Background section added. Team contact updated. Scope section broadened to include end users and agentic browsing use-cases.
                 </td>
               </tr>
             </tbody>

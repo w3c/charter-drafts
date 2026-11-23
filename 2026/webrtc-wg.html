@@ -85,7 +85,7 @@
             <th>
               Chairs
             </th>
-            <td><ul><li>Guido Urdaneta (Google LLC)</li><li>Jan-Ivar Bruaroey (Mozilla Foundation)</li><li>youenn fablet (Apple Inc.)</li></ul></td>
+            <td><ul><li>Guido Urdaneta (Google LLC)</li><li>Jan-Ivar Bruaroey (Mozilla.org)</li><li>youenn fablet (Apple Inc.)</li></ul></td>
           </tr>
           <tr id="TeamContacts">
             <th>
@@ -171,7 +171,8 @@
           <!--  https://www.w3.org/groups/wg/webrtc/deliverables/ -->
             <dl>
                         <dt id="webrtc-pc" class="spec"><a href="https://www.w3.org/TR/webrtc/" rel="versionof">WebRTC: Real-Time Communication in Browsers</a></dt>
-                        <dd><b>state:</b> Recommendation
+                        <dd><p><b>State:</b> Recommendation</p>
+							<p></p>
                         </dd>
                         
                         <dt id="audio-output" class="spec"><a href="https://www.w3.org/TR/audio-output/" rel="versionof">Audio Output Devices API</a></dt>
@@ -366,6 +367,25 @@
                                                                     <a href="https://www.w3.org/2020/09/webrtc-charter.html">https://www.w3.org/2020/09/webrtc-charter.html</a>                                                            </p>
                         </dd>
             </dl>
+			<p>
+				In addition to the work items identified above, the Working Group will consider developing further extensions to the WebRTC 1.0 core API. 
+				In developing these new APIs, the Working Group will adhere to the following principles:</p>
+			<ul>
+<li>Direct control: The new APIs are intended to provide direct control over the details of real-time communication, where the application can directly specify how information should be transmitted, without any built-in negotiation semantics.</li>
+<li>Standalone operation: The new APIs will be complete enough to allow applications to write solely to the new APIs to complete common tasks.</li>
+<li>Backwards-compatibility: The new APIs will extend the WebRTC 1.0 APIs, rather than replace them. Applications that use the PeerConnection API will continue to function, unless there is a clear and compelling reason to deprecate specific 1.0 functionality.</li>
+<li>Feature independence: Features may be introduced in the new APIs that are not available when using the PeerConnection API.</li>
+</ul>
+			<p>The specified API Functions and the requirements on their implementation must offer functionality that ensures that users' expectations of privacy and control over their devices are met - this includes, but is not limited to, ensuring that users can control what local  devices an application can access for capturing media, and are able to at any time revoke that access.</p>
+			<p>Similarly, all the deliverables must address issues of security. </p>
+			<p>Similarly, all deliverables must address issues of accessibility
+including relevant requirements listed in the <a href="https://www.w3.org/TR/media-accessibility-reqs//">Media User Accessibility
+Requirements document (MAUR)</a>, such as multiple well-synchronized
+instances of the same media type. The accessibility goals and requirements
+will be developed in coordination with the <a href="https://www.w3.org/groups/wg/apa/">Accessible Platform Architectures Working Group</a>.</p>
+			<p>This Working Group expects to follow the
+    TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+    </p>
         </section>
 
         <section id="Discontinued">
@@ -392,7 +412,7 @@
                         <dd>
                             <p>This document defines a set of ECMAScript APIs in WebIDL to allow and application using WebRTC to assert an identity, and to mark media streams as only viewable by another identity. This specification is being developed in conjunction with a protocol specification developed by the IETF RTCWEB group.</p>
                             <p><b>Draft state:</b> Candidate Recommendation</p>
-                            <p><b>Proposed plan:</b> Secure Frame (SFrame) added in WebRTC extension should replace this, covering data in addition to audio and video, so this document will be discontinued.</p>
+                            <p><b>Proposed plan:</b> This document will be discontinued due to lack of interest. Secure Frame (SFrame) added in WebRTC Encoded Transform  will cover a limited set of use cases mentioned in WebRTC-Identity.</p>
                             <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/">2018-09-27</a></p>
                             <p><b>Exclusion Draft:</b>
                                 <a href="https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/">https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/</a><br>
@@ -529,7 +549,6 @@ interoperability can be verified by passing open test suites. In order to advanc
 
 
         <section>
-      
         <h3 id="w3c-coordination">W3C Groups</h3><dl>
         <dt><a href="https://www.w3.org/groups/wg/media/">Media Working Group</a></dt>
         <dd>The Media Working Group develops client-side media processing APIs and features that are likely to intersect with the WebRTC Working Group developments.</dd>
@@ -548,17 +567,18 @@ interoperability can be verified by passing open test suites. In order to advanc
         <dt><a href="https://www.w3.org/groups/wg/apa/">Accessible Platform Architectures Working Group</a></dt>
         <dd>The Accessible Platform Architectures identifies use cases for users with disabilities and reviews technologies to avoid unintentional introduction of barriers. Its <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a> and <a href="https://www.w3.org/TR/raur/">Real-Time Communication Accessibility User Requirements</a> provide important input to the work of this group.</dd>
         </dl>
+		</section>
           
         <section>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
             <dt><a href="https://datatracker.ietf.org/wg/#art">IETF Applications and Real-Time Area</a> (ART)</dt>
 
-	    <dd>The RTC APIs developed by this group will build upon the protocols and formats developed in the IETF RTCWeb Working Group.
+	    <dd>The RTC APIs developed by this group will build upon the protocols and formats developed in the former IETF RTCWeb Working Group.
             Subsequent to the termination of that WG, this WG will liaise with other groups
-            of the ART area  and elsewhere in the IETF as appropriate; of particular interest are the MMUSIC, AVTEXT, ICE and QUIC working groups.</dd>
-            <dt><a href="https://tools.ietf.org/wg/tsvwg/">IETF Transport Area Working Group</a> (TSVWG)</dt>
-            <dd>The TSVWG develops SCTP on which WebRTC data channels relies.</dd>
+            of the ART area  and elsewhere in the IETF as appropriate.</dd>
+            <dt><a href="https://datatracker.ietf.org/wg/#WIT">IETF Web and Internet Transport Area</a> (WIT)</dt>
+            <dd>Several Working Groups in the WIT area develop transport specifications.</dd>
              <dt><a href="https://spec.whatwg.org/">Web Hypertext Application Technology Working Group</a> (WHATWG)</dt>
 	    <dd>The RTC APIs developed by this group will potentially reference the Fetch, Streams and other
             API specifications maintained by the WHATWG</dd>

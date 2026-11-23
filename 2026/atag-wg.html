@@ -8,7 +8,7 @@
   </head>
   <body>
     <header id="header">
-      <aside>
+      <nav aria-label="Table of Contents">
         <ul id="navbar">
           <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
@@ -22,15 +22,14 @@
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
-      </aside>
+      </nav>
       <p>
         <a href="https://www.w3.org/"><img alt="W3C" height="120" src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c.svg" width="120"></a>
       </p>
     </header>
 
     <main>
-      <h1 id="title"><i class="todo">DRAFT</i> Authoring Tool Accessibility Guidelines Working Group Charter</h1>
-      <!-- replace DRAFT with PROPOSED when the AC review starts -->
+      <h1 id="title"><i class="todo">PROPOSED</i> Authoring Tool Accessibility Guidelines Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/atag/">Authoring Tool Accessibility Guidelines Working Group</a> (ATAG WG) is to produce guidelines for the development of authoring tools that are accessible to authors with disabilities and enable the creation of accessible content for end users. The group develops the Authoring Tool Accessibility Guidelines (ATAG) and support materials.</p>
@@ -39,9 +38,8 @@
         <p class="join"><a href="https://www.w3.org/groups/wg/atag/join/">Join the Authoring Tool Accessibility Guidelines Working Group.</a></p>
       </div>
 
-      <!-- replace "draft charter" with "proposed charter" when the AC review starts -->
       <!-- delete the whole paragraph after AC review completed -->
-      <p class="issue"> This draft charter is available on <a href="https://w3c.github.io/charter-drafts/2026/atag-wg.html">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.</p>
+      <p class="issue"> This proposed charter is available on <a href="https://w3c.github.io/charter-drafts/2026/atag-wg.html">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/charter-drafts/issues">issues</a>.</p>
 
       <div id="details">
         <table class="summary-table">
@@ -74,7 +72,10 @@
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name] (affiliation)</i> (<i class="todo">Remember that Listing W3C-Member organizations names is a W3C Member benefit. Non-W3C-Member (co)-Chair(s) are to be affiliated as 'W3C Invited Expert'.</i>)
+              <ul>
+                <li>Miriam Fukushima (W3C Invited Expert)</li>
+                <li>Wendy Reid (W3C Invited Expert)</li>
+              </ul>
             </td>
           </tr>
           <tr id="TeamContacts">
@@ -84,7 +85,7 @@
             <td>
               <ul>
                 <li><a href="mailto:remi@w3.org">Rémi Bétin</a> (0.08 <abbr title="Full-Time Equivalent">FTE</abbr>)</li>
-                <li><a href="mailto:shawn@w3.org">Shawn Lawton Henry</a> (0.05 FTE)</li>
+                <li><a href="mailto:shawn@w3.org">Shawn Lawton Henry</a> (0.01 FTE)</li>
               </ul>
             </td>
           </tr>
@@ -126,11 +127,11 @@
         <h2>Scope</h2>
         <p>The Authoring Tool Accessibility Guidelines Working Group (ATAG WG) plans to explore the following topics with the goal of developing an update to the Authoring Tool Accessibility Guidelines (ATAG):</p>
         <ul>
-          <li>review ATAG 2.0 and identify areas for updating, including references to WCAG 2.2, areas needing clarification, and any outdated references and definitions</li>
-          <li>identify any challenges or gaps in implementation and guidance in ATAG 2.0 that may be addressed in future specifications or supporting documentation</li>
-          <li>explore developments in authoring tools and platforms since ATAG 2.0 was published, including the rise of generative AI in content creation, the increased use of API-driven, headless, and web-based platforms for content development and consumption, and segment-specific content development requirements</li>
-          <li>assess the needs of end users and how they have changed or evolved with the development of new authoring tools and platforms</li>
-          <li>develop requirements and guidance for accessible AI- or automation-driven authoring tools, including the tools themselves and the content they produce</li>
+          <li>opportunities for updating ATAG 2.0, including references to WCAG 2.2, areas needing clarification, and any outdated references and definitions</li>
+          <li>challenges or gaps in implementation and guidance in ATAG 2.0 that may be addressed in future specifications or supporting documentation</li>
+          <li>developments in authoring tools and platforms since ATAG 2.0 was published, including the rise of generative AI in content creation, the increased use of API-driven, headless, and web-based platforms for content development and consumption, and segment-specific content development requirements</li>
+          <li>needs of end users and how they have changed or evolved with the development of new authoring tools and platforms</li>
+          <li>requirements and guidance for accessible AI- or automation-driven authoring tools, including the tools themselves and the content they produce</li>
         </ul>
 
         <section id="section-out-of-scope">
@@ -191,11 +192,10 @@
         <section id="timeline">
           <h3>Timeline</h3>
             <ul>
-              <li>September 2026: First teleconference</li>
-              <li>October 2026 (TPAC): First face-to-face meeting</li>
-              <li>Q1 2027: Editorial revision of ATAG 2.0 and Implementing ATAG 2.0</li>
+              <li>December 2026: First teleconference</li>
+              <li>Q2 2027: Editorial revision of ATAG 2.0 and Implementing ATAG 2.0</li>
               <li>Q3 2027: Use cases and requirements for the next version of ATAG</li>
-              <li>Q1 2028: First Public Working Draft (FPWD) of the next version of ATAG</li>
+              <li>Q2 2028: First Public Working Draft (FPWD) of the next version of ATAG</li>
             </ul>
           These dates are not meant as deadlines. Work may need to continue after these dates to ensure the quality of the deliverables.
         </section>
@@ -246,6 +246,7 @@ interoperability can be verified by passing open test suites. In order to advanc
 
         <section>
           <h3 id="w3c-coordination">W3C Groups</h3>
+          <h4 id="w3c-coordination-wg">Working Groups and Interest Groups</h4>
           <dl>
             <dt><a href="https://www.w3.org/groups/wg/ag/">Accessibility Guidelines (AG) Working Group</a></dt>
             <dd>The ATAG Working Group will liaise with the AG Working Group to ensure that the guidance in ATAG is consistent with the latest developments in Web Content Accessibility Guidelines (WCAG) 2 and WCAG 3.</dd>
@@ -271,20 +272,24 @@ interoperability can be verified by passing open test suites. In order to advanc
             <dd>The ATAG Working Group will coordinate with the Timed Text Working Group to ensure guidance is inclusive of use cases in the media ecosystem and reflects the requirements or best practices for media production.</dd>
           </dl>
           <dl>
+            <dt><a href="https://www.w3.org/groups/ig/webai/">Web & AI Interest Group</a></dt>
+            <dd>The ATAG Working Group will coordinate with the Web & AI Interest Group on AI-related aspects of its work, including any use cases and developments to consider.</dd>
+          </dl>
+          <h4 id="w3c-coordination-cg">Community Groups</h4>
+          <dl>
             <dt><a href="https://www.w3.org/community/atag/">Authoring Tool Accessibility Guidelines Community Group (ATAG CG)</a></dt>
             <dd>The ATAG CG functions as an incubator group to explore, test, and possibly specify new ideas. Some work incubated in the ATAG CG may be adopted by the working group.</dd>
           </dl>
+          The working group may coordinate with other community groups, such as the Web Developer Experience (WebDX) Community Group.
         </section>
 
         <section>
           <h3 id="external-coordination">External Organizations</h3>
-          <dl>
-            <dt><a href="https://accessible.canada.ca/">Accessibility Standards Canada (ASC)</a></dt>
-            <dd>
-              <p>The ATAG Working Group will liaise with ASC on the development of accessibility standards for authoring tools.</p>
-              <p><i>Note: The W3C Team is considering a memorandum of understanding (MoU) for a joint W3C-ASC standard.</i></p>
-            </dd>
-          </dl>
+          <h4 id="coordination-asc">Accessibility Standards Canada</h4>
+          <p>W3C and <a href="https://accessible.canada.ca/">Accessibility Standards Canada (ASC)</a> will work jointly to develop authoring tool accessibility guidelines, in accordance with <a href="#" class="todo">ASC–W3C Memorandum of Understanding</a>.</p>
+          <h4 id="coordination-other">Other Organizations</h4>
+          <p>The working group will liaise with stakeholder organizations such as <a href="https://www.arso-oran.org">African Organisation for Standardisation (ARSO)</a>, <a href="https://www.cdpf.org.cn/">Chinese Disabled People's Federation (CDPF)</a>, <a href="https://ec.europa.eu/">European Commission</a>, <a href="https://www.etsi.org/">European Telecommunications Standards Institute (ETSI)</a>, <a href="https://www.jisc.go.jp/">Japanese Industry Standards Organization (JIS)</a>, <a href="https://eng.nia.or.kr/">National Information Society Agency (NIA)</a>, and <a href="https://www.access-board.gov/">U.S. Access Board</a>.
+          </p>
         </section>
       </section>
 
