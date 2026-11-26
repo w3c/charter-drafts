@@ -155,37 +155,24 @@
 
         <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/agenticweb/publications/">group publication status page</a>.</p>
 
-        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <span class='todo'>Choose one:</span> <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
-          <span class='todo'>The Working Group intends to publish the latest state of their work as Candidate Recommendation (with Snapshots) and does not intend to advance their documents to Recommendation</span>.</p>
+        <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
         <section id="normative">
           <h3>
             Normative Specifications
           </h3>
           <p>
-            The Working Group will deliver the following W3C normative specifications:
+            The Working Group will deliver the following normative specification:
           </p>
           <dl>
             <dt id="site-capabilities" class="spec new">Site Capabilities for Agents</dt>
             <dd>
-              <p>This deliverable defines how web pages and applications can describe the functionality they offer, and relevant context, in a structured form that agents acting on behalf of users can discover and use reliably, rather than having to infer it from the page's presentation. It covers both imperative descriptions, provided through script, and declarative ones, provided through markup, including annotations of existing content such as HTML forms and controls. This includes:</p>
-              <ul>
-                <li>describing site functionality, for example as tools with a name, a natural-language description, input and output schemas, and hints such as whether an action is read-only, consequential, or requires explicit user acknowledgement;</li>
-                <li>providing agents with instructions and reference material for the tasks a page supports, for example as skills scoped to the page;</li>
-                <li>how user agents make that functionality available to the agents they host or mediate, such as agents integrated into the browser, agents in browser extensions, and web-based agents running in the page itself or in cross-origin frames, and the lifecycle of its invocation, including results, errors, cancellation, and navigation;</li>
-                <li>keeping users informed and in control, including confirmation of consequential actions and handing steps back to the user;</li>
-                <li>how site capabilities relate to the page's human-facing interface, including its accessibility;</li>
-                <li>how sites can express varying levels of trust in different parts of their content, such as user-generated content;</li>
-                <li>the security and privacy model for exposing functionality across origins and frames.</li>
-              </ul>
-			  <p>The specification will consider internationalization requirements for natural-language information exchanged over Agents, including mechanisms for preserving or conveying language and base direction metadata where appropriate.</p>
-              <p>The initial input for this deliverable is the <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a> specification.</p>
+              <p>The specification covers all the normative work listed in the <a href="#scope">Scope</a>. The specification will include internationalization requirements for natural-language information that agents exchange, including mechanisms for preserving or conveying language and base direction metadata where appropriate. The initial input for this specification is the <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a> specification, which lets a web page offer functions that an agent can call.</p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a>, adopted from the <a href="https://www.w3.org/groups/cg/webmachinelearning/">Web Machine Learning Community Group</a></p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
           </dl>
-          <p id="automation">The Working Group's specifications may include extensions to <a href="https://www.w3.org/TR/webdriver2/">WebDriver</a> and <a href="https://www.w3.org/TR/webdriver-bidi/">WebDriver BiDi</a>, to enable automated testing of their features and to let automation clients, including agents that drive a browser through WebDriver BiDi, use those features, subject to the same permission and consent requirements as other agents.</p>
 
 
         </section>
