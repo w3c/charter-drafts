@@ -134,16 +134,21 @@
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-            <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
+            <p>The following are out of scope.</p>
 
             <ul class="out-of-scope">
-              <li>Model APIs, inference and execution</li>
-              <li>Cryptographic authentication primitives</li>
-              <li>Crawler controls</li>
-              <li>Agent-specific protocols for server communication</li>
-              <li>Content provenance and disclosures</li>
-              <li>Bot detection</li>
+              <li>Machine learning models, including how to call, configure, or run them.</li>
+              <li>The inner workings of agents, such as how an agent plans, chooses a site capability, or writes the text that an agent sends to a model.</li>
+              <li>Cryptographic primitives, and authentication or authorization protocols, including ways to tie a session, credential, or token to an agent.</li>
+              <li>Agent-specific protocols for server communication, such as the Model Context Protocol and its transports.</li>
+              <li>Agents that act on the Web without a user agent, such as an agent that sends HTTP requests to a site directly.</li>
+              <li>Native applications and their operating-system integrations. A browser or web view inside a native application is not part of this exclusion; the APIs through which a native application configures or controls a web view remain out of scope.</li>
+              <li>Site-wide files or headers that tell crawlers and agents which pages they may fetch, such as robots.txt.</li>
+              <li>Detecting or classifying automated or agent-originated traffic, whether or not the agent discloses itself.</li>
+              <li>Content provenance and disclosures, including labeling content as generated or modified by an agent or model.</li>
             </ul>
+
+            <p>Where a Tentative Deliverable and this Out of Scope list conflict, this Out of Scope list prevails.</p>
         </section>
 
       </section>
